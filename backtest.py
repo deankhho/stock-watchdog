@@ -76,7 +76,7 @@ def detect_events(hist: list, market: str) -> list:
                            "text": f"{q} 淨值 {nv} 跌破 10 元 → 依{rule_margin}應停止融資融券"})
             if prev10 and not h["hit10"]:
                 ev.append({"q": q, "type": "margin_recover",
-                           "text": f"{q} 淨值 {nv} 回到 10 元以上 → 依{rule_margin}恢復融資融券（單季即可）"})
+                           "text": f"{q} 淨值 {nv} 回到 10 元以上 → 符合{rule_margin}恢復條件（單季即可）；⚠️ 若仍為全額交割股，期間一律停止信用交易"})
         else:
             in_full = h["hit5"]                  # 序列起點已在門檻下
         if in_full:
