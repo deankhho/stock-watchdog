@@ -146,3 +146,26 @@ gh api repos/deankhho/stock-watchdog/commits --jq '.[0].sha[0:7]'   # read-back
 - 網站加「歷史驗證」籤頁：每檔一列迷你時間線（8 季淨值，<5 紅點、<10 黃點），
   可與官方名單 since 日期對照
 - 驗收：抽 2 檔已知全額交割股，其歷史淨值跌破 5 的季度 應早於/等於 官方列入時點
+
+## S8 現況/處置欄位（進行中，2026-07-07 斷點）
+
+需求：每檔顯示官方實際狀態（是否已全額交割/處置中/停止信用），解決「信用警戒只是推算、看不出現況」。
+已實證的資料源（直接用，勿重探）：
+- 處置股：TWSE `openapi /announcement/punish`（35筆，含 ReasonsOfDisposition/DispositionPeriod/DispositionMeasures）；
+  TPEx `openapi /tpex_disposal_information`（41筆）
+- 停止信用（上市）：`exchangeReport/MI_MARGN?response=json&selectType=ALL` → tables[1] 逐股表，
+  末欄「註記」（樣本 'X '＝停止信用註記，正式實作前先抓官方註記代號說明表核對 X/O 等含義）
+- 停止信用（上櫃）：`openapi /tpex_mainboard_margin_balance` 有 `Note` 欄（8444 綠河在表內，
+  單純「在表內」不能當可信用代理——全板都在表內，**必須看 Note 欄**）
+實作：fetch_official.py 加 punish+註記 → analyze 每檔 status flags → gen_site 加「現況」欄
+（chips：⚪全額交割/⚠處置中(至X日)/🚫停信用/✓正常），五籤頁通用。
+
+## S9 新財報 Email 通知（待實作，2026-07-07 使用者需求）
+
+- 財報常在截止前 ~20 天陸續公布 → 現有每日 Actions 排程已覆蓋；截止前可手動加密
+- **偵測到新增目標交出財報（new_reports_count>0）→ email 至 khho@nlma.gov.tw**
+- 建議實作：GitHub Actions 步驟判斷 report.json 的 new_reports_count>0 →
+  呼叫使用者既有 GAS webhook（GAS MailApp.sendEmail，token 存 Script Properties，
+  沿用 LINE Bot 那支 GAS 加一個 doGet 分支）；或 Actions 直接用 SMTP secret。
+  優先 GAS 路線（重用既有基礎設施、免新 secret）。
+- 信件內容：新財報檔數、各檔 代號/名稱/季度/Δ淨值/門檻穿越警示、網站連結
