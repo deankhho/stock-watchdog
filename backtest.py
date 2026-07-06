@@ -82,8 +82,11 @@ def detect_events(hist: list, market: str) -> list:
         if in_full:
             streak5 = streak5 + 1 if not h["hit5"] else 0
             if streak5 >= 2:
+                # 注意：49條有多款列入事由，淨值只是其一（2026-07-07 大飲案例實證：
+                # 淨值11.16仍在名單）。僅能說「符合淨值款恢復條件」，不能斷言恢復。
                 ev.append({"q": q, "type": "full_recover",
-                           "text": f"{q} 已連續兩季淨值 ≥5（{hist[hist.index(h)-1]['quarter']}→{q}）→ 依{rule_full}恢復普通交易"})
+                           "text": f"{q} 已連續兩季淨值 ≥5（{hist[hist.index(h)-1]['quarter']}→{q}）→ 符合{rule_full}的淨值款恢復條件；"
+                                   f"⚠️ 若係因其他事由列入（會計師意見/財報未依限公告/重整等），需該原因消滅才恢復"})
                 in_full = False
         prev5, prev10 = h["hit5"], h["hit10"]
     return ev
