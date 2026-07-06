@@ -31,11 +31,14 @@ def gen_backtest_page():
             f'title="{h["quarter"]} 淨值 {h["net_value"]}">'
             f'<span>{h["quarter"]}</span>{h["net_value"]:.1f}</div>'
             for h in s["history"])
+        evs = "".join(f'<div class="ev">📌 {e["text"]}</div>'
+                      for e in s.get("events", []))
         rows.append(f"""<div class="row">
   <div class="head"><a href="https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID={code}"
     target="_blank">{code}</a> {s['name']} <span class="mk">{s.get('market','')}</span>
   <span class="grp">{GROUP_LABEL.get(s['group'], s['group'])}</span></div>
-  <div class="tl">{cells or '（無資料）'}</div></div>""")
+  <div class="tl">{cells or '（無資料）'}</div>
+  {evs or '<div class="ev dim">近兩年未觸發門檻事件</div>'}</div>""")
     html = f"""<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>歷史驗證（近兩年淨值）</title>
@@ -55,6 +58,8 @@ h1 {{ font-size:20px; }} a {{ color:#60a5fa; text-decoration:none; }}
 .q.r {{ background:#7f1d1d; color:#fecaca; }}
 .q.y {{ background:#713f12; color:#fde68a; }}
 .q.g {{ background:#14532d; color:#bbf7d0; }}
+.ev {{ font-size:12px; color:#93c5fd; margin-top:6px; line-height:1.7; }}
+.ev.dim {{ color:#5C6474; }}
 </style></head><body>
 <h1>歷史驗證：近兩年每季淨值</h1>
 <div class="meta"><a href="index.html">← 回預警表</a>・紅=淨值&lt;5（全額交割門檻）・
@@ -65,12 +70,15 @@ h1 {{ font-size:20px; }} a {{ color:#60a5fa; text-decoration:none; }}
     (DOCS / "backtest.html").write_text(html)
     return True
 
+RULE_NOTE = ("⚠️ 上市／上櫃規定不同：上市依證交所營業細則第49條、上櫃依櫃買中心業務規則"
+             "（上櫃另有管理股票/分盤交易制度）——表格「市場」欄區分適用規定，細節見規則頁")
+
 TABS = [
-    ("predict_in", "🔴 預測打入", "淨值<5、尚未列全額交割——下次財報後恐公告，提前留意"),
-    ("recover", "🟢 恢復候選", "已全額交割但最新淨值≥5——連兩季達標可恢復普通交易"),
-    ("edge", "🟠 危險邊緣", "淨值 5~6——再虧一季恐跌破 5 元門檻"),
-    ("margin_risk", "🟡 信用警戒", "淨值 6~10——低於 10 元將停止融資融券"),
-    ("official", "⚪ 全額交割中", "官方現行變更交易方法名單"),
+    ("predict_in", "🔴 預測打入", "淨值<5、尚未列全額交割——下次財報後恐公告，提前留意。" + RULE_NOTE),
+    ("recover", "🟢 恢復候選", "已全額交割但最新淨值≥5——連續兩次財報達標可恢復普通交易（上市/上櫃分別依各自規則認定）。"),
+    ("edge", "🟠 危險邊緣", "淨值 5~6——再虧一季恐跌破 5 元門檻。" + RULE_NOTE),
+    ("margin_risk", "🟡 信用警戒", "淨值 6~10——低於 10 元將停止融資融券（依「有價證券得為融資融券標準」，上市上櫃同適用；恢復單季回 10 即可）。"),
+    ("official", "⚪ 全額交割中", "官方現行變更交易方法名單（上市：證交所 TWT85U；上櫃：櫃買 cmode）。"),
 ]
 
 
@@ -78,23 +86,48 @@ def fmt(v, nd=2):
     return "-" if v is None else f"{v:.{nd}f}" if isinstance(v, float) else str(v)
 
 
+def history_row(code: str, bt_stocks: dict) -> str:
+    """個股展開列：近八季淨值 chips + 事件判讀（無資料則提示）"""
+    s = bt_stocks.get(code)
+    if not s:
+        return ('<div class="hist-none">近八季資料未納入回測股池'
+                '（v1 僅含預測打入/邊緣/恢復/名單股）</div>')
+    if s.get("unreliable"):
+        return ('<div class="hist-none">歷史淨值資料單位異常（FinMind 對部分 KY 股'
+                '欄位不一致），為避免誤導不顯示——請以 goodinfo 個股頁為準</div>')
+    if s.get("par_factor", 1) != 1:
+        note = (f'<div class="hist-none">此股面額非 10 元'
+                f'（已按 1/{s["par_factor"]} 校準歷史淨值）</div>')
+    else:
+        note = ""
+    chips = "".join(
+        f'<div class="q {"r" if h["hit5"] else "y" if h["hit10"] else "g"}">'
+        f'<span>{h["quarter"]}</span>{h["net_value"]:.1f}</div>'
+        for h in s["history"])
+    evs = "".join(f'<div class="ev">{e["text"]}</div>' for e in s.get("events", []))
+    return f'{note}<div class="tl">{chips}</div>{evs or "<div class=ev>近兩年未觸發門檻事件</div>"}'
+
+
 def main():
     rep = json.loads(REPORT.read_text())
     g = rep["groups"]
+    bt_stocks = (json.loads(BACKTEST.read_text())["stocks"]
+                 if BACKTEST.exists() else {})
 
     tab_btns, panels = [], []
     for key, label, desc in TABS:
         rows = g.get(key, [])
         tab_btns.append(f'<button class="tab" data-t="{key}">{label}'
                         f'<span class="n">{len(rows)}</span></button>')
-        trs = "".join(f"""<tr>
-  <td><a href="{r['goodinfo_url']}" target="_blank">{r['code']}</a></td>
+        trs = "".join(f"""<tr class="main" onclick="tog(this)">
+  <td><a href="{r['goodinfo_url']}" target="_blank" onclick="event.stopPropagation()">{r['code']}</a></td>
   <td>{r['name']}</td><td>{r.get('market','')}</td>
   <td class="num">{fmt(r.get('price'))}</td>
   <td class="num nv">{fmt(r.get('net_value'))}</td>
   <td class="num {'neg' if (r.get('gap') or 0) < 0 else 'pos'}">{fmt(r.get('gap'))}</td>
-  <td>{r.get('nv_quarter','')}{('<span class=note>' + r['note'] + '</span>') if r.get('note') else ''}</td>
-</tr>""" for r in rows)
+  <td>{r.get('nv_quarter','')}{('<span class=note>' + r['note'] + '</span>') if r.get('note') else ''} <span class="exp">▾</span></td>
+</tr>
+<tr class="detail"><td colspan="7">{history_row(r['code'], bt_stocks)}</td></tr>""" for r in rows)
         panels.append(f"""<section class="panel" data-t="{key}">
   <p class="desc">{desc}</p>
   <table><thead><tr><th>代號</th><th>名稱</th><th>市場</th><th>股價</th>
@@ -132,6 +165,22 @@ td a {{ color:#60a5fa; text-decoration:none; font-family:ui-monospace,monospace;
 .neg {{ color:#f87171; }} .pos {{ color:#34d399; }}
 .empty {{ color:#5C6474; text-align:center; padding:24px; }}
 .note {{ display:block; font-size:11px; color:#f59e0b; }}
+tr.main {{ cursor:pointer; }}
+tr.detail {{ display:none; background:#0F1116; }}
+tr.detail.on {{ display:table-row; }}
+tr.detail td {{ padding:12px; }}
+.exp {{ color:#5C6474; font-size:11px; }}
+.tl {{ display:flex; gap:4px; flex-wrap:wrap; margin-bottom:8px; }}
+.q {{ min-width:58px; text-align:center; padding:4px 2px; border-radius:6px;
+  font-size:12px; font-weight:700; font-variant-numeric:tabular-nums; }}
+.q span {{ display:block; font-size:9px; font-weight:400; opacity:.75; }}
+.q.r {{ background:#7f1d1d; color:#fecaca; }}
+.q.y {{ background:#713f12; color:#fde68a; }}
+.q.g {{ background:#14532d; color:#bbf7d0; }}
+.ev {{ font-size:12px; color:#93c5fd; line-height:1.7; }}
+.hist-none {{ font-size:12px; color:#5C6474; }}
+.updbtn {{ display:inline-block; margin-left:8px; padding:2px 10px; border-radius:8px;
+  background:#1d4ed8; color:#dbeafe; font-size:12px; text-decoration:none; }}
 @media (max-width:640px) {{
   body {{ padding:12px; }}
   th:nth-child(7), td:nth-child(7) {{ display:none; }}
@@ -142,7 +191,9 @@ td a {{ color:#60a5fa; text-decoration:none; font-family:ui-monospace,monospace;
 <div class="meta">淨值資料：{rep['nv_fetched_at'][:16].replace('T',' ')}（goodinfo）・
 官方名單：{rep['official_fetched_at'][:16].replace('T',' ')}（證交所/櫃買中心）・
 <a href="rules.html">分級規則與法規依據</a>・<a href="backtest.html">歷史驗證</a><br>
-<span class="deadline">下一財報截止：{rep['next_report_deadline']}（{rep['days_to_report']} 天後）</span></div>
+<span class="deadline">下一財報截止：{rep['next_report_deadline']}（{rep['days_to_report']} 天後）</span>
+<a class="updbtn" href="https://github.com/deankhho/stock-watchdog/actions/workflows/update.yml"
+  target="_blank">🔄 觸發更新</a></div>
 <div class="tabs">{''.join(tab_btns)}</div>
 {''.join(panels)}
 <script>
@@ -151,18 +202,20 @@ function show(t){{tabs.forEach(b=>b.classList.toggle('on',b.dataset.t===t));
  panels.forEach(p=>p.classList.toggle('on',p.dataset.t===t));}}
 tabs.forEach(b=>b.onclick=()=>show(b.dataset.t));
 show('predict_in');
+function tog(tr){{ tr.nextElementSibling.classList.toggle('on'); }}
 // 點表頭排序
 document.querySelectorAll('th').forEach((th)=>th.onclick=()=>{{
   const tb=th.closest('table').querySelector('tbody');
   const i=[...th.parentNode.children].indexOf(th);
-  const rows=[...tb.querySelectorAll('tr')];
+  // 主列+展開列成對排序（否則展開內容會錯位）
+  const pairs=[...tb.querySelectorAll('tr.main')].map(m=>[m,m.nextElementSibling]);
   const asc=th.dataset.asc!=='1'; th.dataset.asc=asc?'1':'0';
-  rows.sort((a,b)=>{{
+  pairs.sort(([a],[b])=>{{
     const x=a.children[i]?.textContent.trim(), y=b.children[i]?.textContent.trim();
     const nx=parseFloat(x), ny=parseFloat(y);
     const c=(isNaN(nx)||isNaN(ny))?x.localeCompare(y):nx-ny;
     return asc?c:-c;}});
-  rows.forEach(r=>tb.appendChild(r));}});
+  pairs.forEach(([m,d])=>{{tb.appendChild(m); if(d) tb.appendChild(d);}});}});
 </script></body></html>"""
 
     DOCS.mkdir(exist_ok=True)
@@ -191,12 +244,21 @@ th,td {{ border:1px solid rgba(255,255,255,.12); padding:8px; text-align:left; }
 <tr><td>⚪ 全額交割中</td><td>官方現行名單</td><td>買賣需預收全額款券</td></tr>
 </table>
 
-<h2>法規依據</h2>
-<p><b>變更交易方法（全額交割）</b>：臺灣證券交易所營業細則第 49 條——上市公司最近期財務報告
-顯示每股淨值低於 5 元者，列為變更交易方法股票；其後連續兩次財務報告每股淨值達 5 元以上，
-得恢復普通交易。上櫃公司依櫃買中心「證券商營業處所買賣有價證券業務規則」相關條文辦理。<br>
-<span class="src">出處：<a href="https://twse-regulation.twse.com.tw/" target="_blank">證交所法規知識庫</a>／
-<a href="https://www.tpex.org.tw/" target="_blank">櫃買中心</a>（條文全文請以官方最新版本為準）</span></p>
+<h2>法規依據（上市／上櫃分別適用）</h2>
+<table>
+<tr><th></th><th>上市（證交所）</th><th>上櫃（櫃買中心）</th></tr>
+<tr><td><b>打入全額交割</b></td>
+<td>營業細則第 49 條：最近期財報每股淨值低於 5 元 → 列為變更交易方法股票</td>
+<td>業務規則（櫃買）：最近期財報每股淨值低於 5 元 → 變更交易；另有<b>管理股票、分盤交易、停止買賣</b>等狀態（本站「全額交割中」籤頁另列旗標）</td></tr>
+<tr><td><b>恢復普通交易</b></td>
+<td>連續兩次財務報告每股淨值達 5 元以上 → 恢復</td>
+<td>同為連續兩次財報達 5 元以上，但依櫃買中心規則認定（時點與程序可能與上市不同，以櫃買公告為準）</td></tr>
+<tr><td><b>停止信用交易</b></td>
+<td colspan="2">「有價證券得為融資融券標準」：每股淨值低於 10 元 → 停止融資融券（上市上櫃同適用）；最近期財報回 10 元以上 → 恢復（單季即可，與全額交割的「連續兩季」不同）</td></tr>
+</table>
+<p class="src">出處：<a href="https://twse-regulation.twse.com.tw/" target="_blank">證交所法規知識庫</a>／
+<a href="https://www.tpex.org.tw/" target="_blank">櫃買中心</a>／
+<a href="https://law.moj.gov.tw/" target="_blank">全國法規資料庫</a>（條文全文以官方最新版本為準；兩市場規定細節不同，實際以主管機關公告日為準）</p>
 <p><b>停止融資融券</b>：「有價證券得為融資融券標準」——每股淨值低於 10 元者停止融資融券；
 回升達 10 元以上恢復。<br>
 <span class="src">出處：<a href="https://law.moj.gov.tw/" target="_blank">全國法規資料庫</a></span></p>

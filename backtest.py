@@ -53,6 +53,42 @@ def fetch_balance(code: str) -> list:
     return out
 
 
+def detect_events(hist: list, market: str) -> list:
+    """從淨值序列偵測 打入/恢復 事件（含依據說明，上市/上櫃分別引用規定）
+    全額交割：跌破5→打入；之後連續兩季≥5→第二季恢復
+    信用交易：跌破10→停止；回到10以上→恢復（單季即可）"""
+    rule_full = ("證交所營業細則第49條" if market == "上市"
+                 else "櫃買中心業務規則（上櫃）")
+    rule_margin = "有價證券得為融資融券標準"
+    ev = []
+    prev5 = prev10 = None
+    streak5 = 0                       # 連續 ≥5 的季數（處於全額交割狀態中）
+    in_full = False
+    for h in hist:
+        nv, q = h["net_value"], h["quarter"]
+        if prev5 is not None:
+            if not prev5 and h["hit5"]:          # ≥5 → <5
+                ev.append({"q": q, "type": "full_in",
+                           "text": f"{q} 淨值 {nv} 跌破 5 元 → 依{rule_full}應列為全額交割"})
+                in_full, streak5 = True, 0
+            if not prev10 and h["hit10"] and not h["hit5"]:
+                ev.append({"q": q, "type": "margin_stop",
+                           "text": f"{q} 淨值 {nv} 跌破 10 元 → 依{rule_margin}應停止融資融券"})
+            if prev10 and not h["hit10"]:
+                ev.append({"q": q, "type": "margin_recover",
+                           "text": f"{q} 淨值 {nv} 回到 10 元以上 → 依{rule_margin}恢復融資融券（單季即可）"})
+        else:
+            in_full = h["hit5"]                  # 序列起點已在門檻下
+        if in_full:
+            streak5 = streak5 + 1 if not h["hit5"] else 0
+            if streak5 >= 2:
+                ev.append({"q": q, "type": "full_recover",
+                           "text": f"{q} 已連續兩季淨值 ≥5（{hist[hist.index(h)-1]['quarter']}→{q}）→ 依{rule_full}恢復普通交易"})
+                in_full = False
+        prev5, prev10 = h["hit5"], h["hit10"]
+    return ev
+
+
 def main():
     rep = json.loads(REPORT.read_text())
     pool = []
@@ -69,11 +105,34 @@ def main():
             print(f"  ✗ {code} {e}")
             failed.append(code)
             continue
+        # 面額校準：公式假設面額10元，但台股有面額1元/5元股（如華義面額1元，
+        # 算出來會高10倍——2026-07-06 實測發現）。用 goodinfo 現值比對最新一季校準。
+        hist8 = hist[-8:]
+        cur_nv = s.get("net_value")
+        factor, unreliable = 1, False
+        if cur_nv and hist8:
+            ratio = hist8[-1]["net_value"] / cur_nv
+            if ratio > 1.5 or ratio < 0.67:      # 明顯偏離 → 面額非 10 或資料異常
+                snapped = round(ratio)
+                # 合理面額倍率：面額5→2倍、2.5→4、1→10、0.5→20
+                if snapped in (2, 4, 5, 10, 20):
+                    factor = snapped
+                    for h in hist8:
+                        h["net_value"] = round(h["net_value"] / factor, 2)
+                        h["hit5"] = h["net_value"] < 5
+                        h["hit10"] = h["net_value"] < 10
+                else:
+                    # 非面額問題（如 KY 股 FinMind 欄位單位異常，4157 實測比值 343）
+                    # → 標記不可靠，不顯示錯誤歷史誤導判斷
+                    unreliable = True
+                    hist8 = []
         result[code] = {"name": s["name"], "market": s.get("market", ""),
-                        "current_nv": s.get("net_value"),
+                        "current_nv": cur_nv,
+                        "par_factor": factor, "unreliable": unreliable,
                         "group": next(k for k in ("predict_in","edge","recover","official")
                                       if s in rep["groups"][k]),
-                        "history": hist[-8:]}
+                        "history": hist8,
+                        "events": detect_events(hist8, s.get("market", ""))}
         if i % 10 == 0:
             print(f"  {i}/{len(pool)}")
         time.sleep(0.6)          # FinMind 免 token 限速保守值

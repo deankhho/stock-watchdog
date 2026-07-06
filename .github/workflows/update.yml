@@ -1,0 +1,42 @@
+# 網站「🔄 觸發更新」按鈕 → 本 workflow 的 Run workflow（需登入 GitHub）
+# 注意：goodinfo 可能封鎖 GitHub 雲端 IP——首跑驗證；若被擋，雲端只更新官方名單+回測，
+# 淨值需在家用機跑 update.sh（STATUS.md 記錄實測結果）
+name: 更新預警資料
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 10 * * 1-5"   # UTC 10:30 = 台灣 18:30 平日（備援，可移除）
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: 安裝依賴
+        run: |
+          pip install playwright pandas requests lxml
+          playwright install chromium --with-deps
+      - name: 抓資料與生成網站
+        run: |
+          # Actions 環境用 playwright 內建 chromium（無系統 chrome）
+          sed -i 's|CHROME = "/usr/bin/google-chrome"|CHROME = None|' fetch_goodinfo.py
+          sed -i 's|executable_path=CHROME, ||' fetch_goodinfo.py
+          python fetch_goodinfo.py || echo "goodinfo 失敗（可能封鎖雲端 IP），沿用上次 netvalue.json"
+          python fetch_official.py
+          python analyze.py
+          python backtest.py
+          python gen_site.py
+      - name: Commit 結果
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add data docs
+          git commit -m "data: Actions 自動更新 $(date '+%Y-%m-%d %H:%M')" || echo "無變更"
+          git push
