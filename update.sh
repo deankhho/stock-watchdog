@@ -6,6 +6,7 @@ cd "$(dirname "$0")"
 .venv/bin/python fetch_official.py
 .venv/bin/python analyze.py
 .venv/bin/python backtest.py          # 有快取，只補新季度
+.venv/bin/python fetch_listing_dates.py   # 列入日期（有快取）
 .venv/bin/python gen_site.py
 git add -A
 git commit -m "data: 更新 $(date '+%Y-%m-%d %H:%M')" || { echo "無變更"; exit 0; }

@@ -11,7 +11,23 @@ from pathlib import Path
 BASE = Path(__file__).parent
 REPORT = BASE / "data" / "report.json"
 BACKTEST = BASE / "data" / "backtest.json"
+LISTING = BASE / "data" / "listing_dates.json"
 DOCS = BASE / "docs"
+
+
+def listing_line(code: str, market: str, listing: dict) -> str:
+    """官方名單股的列入日期說明行（來源：歷史名單首次出現日）"""
+    info = listing.get(code)
+    if not info:
+        return ""
+    rule = "證交所營業細則第49條" if market == "上市" else "櫃買中心業務規則"
+    if info["precision"] == "day" and info["since"]:
+        return (f'<div class="ev">📅 依{rule}於 <b>{info["since"]}</b> 列為全額交割'
+                f'（歷史名單首次出現日；實際公告事由請查官方公告）</div>')
+    if info["precision"] == "before_window" and info["since"]:
+        return (f'<div class="ev">📅 {info["since"]} 觀測窗起點前已列為全額交割'
+                f'（列入超過兩年，依{rule}）</div>')
+    return ""
 
 GROUP_LABEL = {"predict_in": "🔴 預測打入", "recover": "🟢 恢復候選",
                "edge": "🟠 危險邊緣", "official": "⚪ 全額交割中"}
@@ -88,7 +104,7 @@ def fmt(v, nd=2):
     return "-" if v is None else f"{v:.{nd}f}" if isinstance(v, float) else str(v)
 
 
-def history_row(code: str, bt_stocks: dict) -> str:
+def history_row(code: str, bt_stocks: dict, market: str = "", listing: dict = None) -> str:
     """個股展開列：近八季淨值 chips + 事件判讀（無資料則提示）"""
     s = bt_stocks.get(code)
     if not s:
@@ -107,7 +123,8 @@ def history_row(code: str, bt_stocks: dict) -> str:
         f'<span>{h["quarter"]}</span>{h["net_value"]:.1f}</div>'
         for h in s["history"])
     evs = "".join(f'<div class="ev">{e["text"]}</div>' for e in s.get("events", []))
-    return f'{note}<div class="tl">{chips}</div>{evs or "<div class=ev>近兩年未觸發門檻事件</div>"}'
+    lst = listing_line(code, market, listing or {})
+    return f'{note}<div class="tl">{chips}</div>{lst}{evs or "<div class=ev>近兩年未觸發門檻事件</div>"}'
 
 
 def main():
@@ -115,6 +132,7 @@ def main():
     g = rep["groups"]
     bt_stocks = (json.loads(BACKTEST.read_text())["stocks"]
                  if BACKTEST.exists() else {})
+    listing = json.loads(LISTING.read_text()) if LISTING.exists() else {}
 
     tab_btns, panels = [], []
     for key, label, desc in TABS:
@@ -129,7 +147,7 @@ def main():
   <td class="num {'neg' if (r.get('gap') or 0) < 0 else 'pos'}">{fmt(r.get('gap'))}</td>
   <td>{r.get('nv_quarter','')}{('<span class=note>' + r['note'] + '</span>') if r.get('note') else ''} <span class="exp">▾</span></td>
 </tr>
-<tr class="detail"><td colspan="7">{history_row(r['code'], bt_stocks)}</td></tr>""" for r in rows)
+<tr class="detail"><td colspan="7">{history_row(r['code'], bt_stocks, r.get('market',''), listing)}</td></tr>""" for r in rows)
         panels.append(f"""<section class="panel" data-t="{key}">
   <p class="desc">{desc}</p>
   <table><thead><tr><th>代號</th><th>名稱</th><th>市場</th><th>股價</th>

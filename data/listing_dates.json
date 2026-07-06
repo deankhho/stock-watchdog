@@ -1,0 +1,122 @@
+{
+ "1213": {
+  "since": "2024-07-01",
+  "precision": "before_window"
+ },
+ "1538": {
+  "since": "2024-07-01",
+  "precision": "before_window"
+ },
+ "2314": {
+  "since": "2025-03-18",
+  "precision": "day"
+ },
+ "2321": {
+  "since": "2024-07-01",
+  "precision": "before_window"
+ },
+ "2380": {
+  "since": "2024-07-01",
+  "precision": "before_window"
+ },
+ "2424": {
+  "since": "2026-06-01",
+  "precision": "day"
+ },
+ "3018": {
+  "since": "2024-07-01",
+  "precision": "before_window"
+ },
+ "3593": {
+  "since": "2024-11-19",
+  "precision": "day"
+ },
+ "4943": {
+  "since": "2024-07-01",
+  "precision": "before_window"
+ },
+ "6225": {
+  "since": "2024-07-01",
+  "precision": "before_window"
+ },
+ "8101": {
+  "since": "2024-07-01",
+  "precision": "before_window"
+ },
+ "9110": {
+  "since": "2024-07-01",
+  "precision": "before_window"
+ },
+ "3064": {
+  "since": "2026-04-07",
+  "precision": "day"
+ },
+ "3508": {
+  "since": "2026-04-07",
+  "precision": "day"
+ },
+ "3629": {
+  "since": "2024-07-01",
+  "precision": "before_window"
+ },
+ "3632": {
+  "since": "2024-07-01",
+  "precision": "before_window"
+ },
+ "3664": {
+  "since": "2026-04-07",
+  "precision": "day"
+ },
+ "3710": {
+  "since": "2025-11-19",
+  "precision": "day"
+ },
+ "4529": {
+  "since": "2024-07-01",
+  "precision": "before_window"
+ },
+ "4609": {
+  "since": "2024-07-01",
+  "precision": "before_window"
+ },
+ "4744": {
+  "since": "2026-06-16",
+  "precision": "day"
+ },
+ "5301": {
+  "since": "2024-07-01",
+  "precision": "before_window"
+ },
+ "5355": {
+  "since": "2025-11-19",
+  "precision": "day"
+ },
+ "5701": {
+  "since": "2024-07-01",
+  "precision": "before_window"
+ },
+ "6236": {
+  "since": "2024-07-01",
+  "precision": "before_window"
+ },
+ "8093": {
+  "since": "2025-11-19",
+  "precision": "day"
+ },
+ "8277": {
+  "since": "2025-11-19",
+  "precision": "day"
+ },
+ "8291": {
+  "since": "2024-07-01",
+  "precision": "before_window"
+ },
+ "8444": {
+  "since": "2026-04-07",
+  "precision": "day"
+ },
+ "8933": {
+  "since": "2026-05-20",
+  "precision": "day"
+ }
+}

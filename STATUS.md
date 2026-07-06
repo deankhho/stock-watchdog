@@ -6,3 +6,4 @@
 - [x] S6 完成 07-06 23:05：repo 已公開、Pages 上線 https://deankhho.github.io/stock-watchdog/（200 OK 實測）
 - [x] v2 完成 07-06 23:03：市場別規定標註、個股展開近8季、事件判讀（打入/恢復依據）、Actions 更新按鈕、面額校準（華義10x/合騏4x）+ KY股資料異常防護（4157排除）
 - [x] Actions 實測成功 07-06 23:07：雲端跑 goodinfo 也通（300檔）、全鏈完成並自動 commit（1770a8c）——按鈕全功能
+- [x] 列入日期功能 07-06 23:30：TWT85U/chtm 歷史月掃+二分收斂，13檔到日、其餘 before_window；TPEx 端點靠 playwright 攔 XHR 找到（/www/zh-tw/afterTrading/chtm?date=）；坑：TWSE 假日回 OK+空、2026-04-01 異常39檔需過濾

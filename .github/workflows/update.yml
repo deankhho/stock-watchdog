@@ -32,6 +32,7 @@ jobs:
           python fetch_official.py
           python analyze.py
           python backtest.py
+          python fetch_listing_dates.py
           python gen_site.py
       - name: Commit 結果
         run: |
