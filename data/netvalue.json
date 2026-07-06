@@ -1,0 +1,2407 @@
+{
+ "fetched_at": "2026-07-06T22:35:03.064828",
+ "source": "goodinfo.tw 每股淨值最低排行",
+ "count": 300,
+ "rows": [
+  {
+   "code": "8444",
+   "name": "綠河-KY",
+   "price": 5.14,
+   "net_value": 0.05,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "2314",
+   "name": "台揚",
+   "price": 13.9,
+   "net_value": 0.53,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3664",
+   "name": "安瑞-KY",
+   "price": 7.6,
+   "net_value": 0.8,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3086",
+   "name": "華義*",
+   "price": 32.15,
+   "net_value": 1.15,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "4943",
+   "name": "康控-KY",
+   "price": 8.88,
+   "net_value": 1.38,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3629",
+   "name": "地心引力",
+   "price": 14.85,
+   "net_value": 1.4,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "4157",
+   "name": "太景*-KY",
+   "price": 9.2,
+   "net_value": 1.47,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "4609",
+   "name": "唐鋒",
+   "price": 5.3,
+   "net_value": 2.86,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3632",
+   "name": "研勤",
+   "price": 7.8,
+   "net_value": 2.98,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6225",
+   "name": "天瀚",
+   "price": 23.5,
+   "net_value": 3.0,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "7827",
+   "name": "漢康-KY創",
+   "price": 156.0,
+   "net_value": 3.29,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "4529",
+   "name": "淳紳",
+   "price": 4.47,
+   "net_value": 3.37,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "5701",
+   "name": "劍湖山",
+   "price": 5.0,
+   "net_value": 3.5,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6236",
+   "name": "中湛",
+   "price": 17.05,
+   "net_value": 3.74,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "8291",
+   "name": "尚茂",
+   "price": 37.0,
+   "net_value": 3.74,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "1538",
+   "name": "正峰",
+   "price": 10.7,
+   "net_value": 3.89,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3593",
+   "name": "力銘",
+   "price": 14.75,
+   "net_value": 4.14,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3710",
+   "name": "連展投控",
+   "price": 6.0,
+   "net_value": 4.14,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3064",
+   "name": "泰偉",
+   "price": 20.0,
+   "net_value": 4.37,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "5355",
+   "name": "佳總",
+   "price": 6.2,
+   "net_value": 4.38,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "2424",
+   "name": "隴華",
+   "price": 10.0,
+   "net_value": 4.64,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "8101",
+   "name": "華冠",
+   "price": 13.3,
+   "net_value": 4.75,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3508",
+   "name": "位速",
+   "price": 18.0,
+   "net_value": 4.76,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "8277",
+   "name": "商丞",
+   "price": 8.93,
+   "net_value": 4.84,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "8933",
+   "name": "愛地雅",
+   "price": 4.68,
+   "net_value": 4.94,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "4304",
+   "name": "勝昱",
+   "price": 18.8,
+   "net_value": 5.02,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "1516",
+   "name": "川飛",
+   "price": 18.65,
+   "net_value": 5.11,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "2067",
+   "name": "嘉鋼",
+   "price": 6.8,
+   "net_value": 5.13,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3625",
+   "name": "西勝",
+   "price": 18.4,
+   "net_value": 5.15,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3259",
+   "name": "鑫創",
+   "price": 16.75,
+   "net_value": 5.21,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6141",
+   "name": "柏承",
+   "price": 37.5,
+   "net_value": 5.23,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "8477",
+   "name": "創業家",
+   "price": 16.0,
+   "net_value": 5.32,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3191",
+   "name": "雲嘉南",
+   "price": 18.9,
+   "net_value": 5.52,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6461",
+   "name": "益得",
+   "price": 15.7,
+   "net_value": 5.56,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6550",
+   "name": "北極星藥業-KY",
+   "price": 13.85,
+   "net_value": 5.58,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "5345",
+   "name": "馥鴻",
+   "price": 27.5,
+   "net_value": 5.63,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "4419",
+   "name": "皇家美食",
+   "price": 47.25,
+   "net_value": 5.68,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6431",
+   "name": "光麗-KY",
+   "price": 19.6,
+   "net_value": 5.68,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "8937",
+   "name": "合騏*",
+   "price": 27.7,
+   "net_value": 5.68,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3085",
+   "name": "新零售",
+   "price": 12.15,
+   "net_value": 5.7,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "2208",
+   "name": "台船",
+   "price": 20.3,
+   "net_value": 5.76,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "1799",
+   "name": "易威",
+   "price": 33.9,
+   "net_value": 5.77,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "2321",
+   "name": "東訊",
+   "price": 13.6,
+   "net_value": 5.8,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3494",
+   "name": "誠研",
+   "price": 7.95,
+   "net_value": 5.8,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "8059",
+   "name": "凱碩",
+   "price": 16.6,
+   "net_value": 5.86,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "1441",
+   "name": "大東",
+   "price": 9.55,
+   "net_value": 5.93,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6919",
+   "name": "康霈*",
+   "price": 100.0,
+   "net_value": 6.02,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "7803",
+   "name": "雲象科技-創",
+   "price": 23.35,
+   "net_value": 6.06,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "5205",
+   "name": "中茂",
+   "price": 23.95,
+   "net_value": 6.12,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3523",
+   "name": "迎輝",
+   "price": 16.0,
+   "net_value": 6.18,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "2438",
+   "name": "翔耀",
+   "price": 21.9,
+   "net_value": 6.21,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "8067",
+   "name": "志旭",
+   "price": 14.2,
+   "net_value": 6.27,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "5344",
+   "name": "立衛",
+   "price": 17.5,
+   "net_value": 6.34,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3234",
+   "name": "光環",
+   "price": 130.0,
+   "net_value": 6.39,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "4154",
+   "name": "樂威科-KY",
+   "price": 11.75,
+   "net_value": 6.39,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "5227",
+   "name": "立凱-KY",
+   "price": 36.15,
+   "net_value": 6.4,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "4806",
+   "name": "桂田文創",
+   "price": 10.1,
+   "net_value": 6.44,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "5324",
+   "name": "士開",
+   "price": 12.15,
+   "net_value": 6.5,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "4195",
+   "name": "基米-創",
+   "price": 17.45,
+   "net_value": 6.51,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "5314",
+   "name": "世紀*",
+   "price": 67.6,
+   "net_value": 6.52,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "1781",
+   "name": "合世",
+   "price": 12.1,
+   "net_value": 6.57,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3093",
+   "name": "港建*",
+   "price": 68.4,
+   "net_value": 6.57,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6598",
+   "name": "ABC-KY",
+   "price": 23.25,
+   "net_value": 6.57,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3288",
+   "name": "點晶",
+   "price": 20.2,
+   "net_value": 6.59,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "4192",
+   "name": "杏國",
+   "price": 21.3,
+   "net_value": 6.62,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3018",
+   "name": "隆銘綠能",
+   "price": 12.05,
+   "net_value": 6.78,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "4934",
+   "name": "太極",
+   "price": 17.75,
+   "net_value": 6.79,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "7780",
+   "name": "大研生醫*",
+   "price": 18.35,
+   "net_value": 6.81,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "9912",
+   "name": "偉聯",
+   "price": 12.7,
+   "net_value": 6.81,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "2035",
+   "name": "唐榮",
+   "price": 27.9,
+   "net_value": 6.83,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "8093",
+   "name": "保銳",
+   "price": 20.0,
+   "net_value": 6.84,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "1512",
+   "name": "瑞利",
+   "price": 7.21,
+   "net_value": 6.85,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6443",
+   "name": "元晶",
+   "price": 34.6,
+   "net_value": 6.91,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3349",
+   "name": "寶德",
+   "price": 24.2,
+   "net_value": 6.98,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "1435",
+   "name": "中福",
+   "price": 26.8,
+   "net_value": 7.02,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6264",
+   "name": "富裔",
+   "price": 6.15,
+   "net_value": 7.04,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "2724",
+   "name": "藝舍-KY",
+   "price": 11.5,
+   "net_value": 7.08,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3432",
+   "name": "台端",
+   "price": 18.4,
+   "net_value": 7.12,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "4131",
+   "name": "浩泰",
+   "price": 32.9,
+   "net_value": 7.12,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "8932",
+   "name": "智通*",
+   "price": 116.0,
+   "net_value": 7.12,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "2258",
+   "name": "鴻華先進-創",
+   "price": 32.25,
+   "net_value": 7.14,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "4726",
+   "name": "永昕",
+   "price": 26.55,
+   "net_value": 7.18,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "8201",
+   "name": "無敵",
+   "price": 13.25,
+   "net_value": 7.21,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "2444",
+   "name": "兆勁",
+   "price": 12.7,
+   "net_value": 7.35,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6152",
+   "name": "百一",
+   "price": 13.7,
+   "net_value": 7.36,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6645",
+   "name": "金萬林-創",
+   "price": 16.15,
+   "net_value": 7.39,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3115",
+   "name": "富榮綱",
+   "price": 9.18,
+   "net_value": 7.46,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6872",
+   "name": "浩宇生醫",
+   "price": 16.7,
+   "net_value": 7.47,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "5475",
+   "name": "德宏",
+   "price": 226.5,
+   "net_value": 7.49,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "2007",
+   "name": "燁興",
+   "price": 7.46,
+   "net_value": 7.51,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6573",
+   "name": "虹揚-KY",
+   "price": 27.6,
+   "net_value": 7.51,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3672",
+   "name": "康聯訊",
+   "price": 13.65,
+   "net_value": 7.62,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "5348",
+   "name": "正能量智能",
+   "price": 15.8,
+   "net_value": 7.63,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "8038",
+   "name": "長園科",
+   "price": 44.15,
+   "net_value": 7.66,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "8935",
+   "name": "邦泰",
+   "price": 23.35,
+   "net_value": 7.67,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3522",
+   "name": "御嵿",
+   "price": 14.05,
+   "net_value": 7.69,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "5703",
+   "name": "亞都",
+   "price": 13.75,
+   "net_value": 7.71,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "8084",
+   "name": "巨虹",
+   "price": 49.75,
+   "net_value": 7.71,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "5484",
+   "name": "慧友",
+   "price": 47.75,
+   "net_value": 7.72,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3058",
+   "name": "立德",
+   "price": 9.65,
+   "net_value": 7.73,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6241",
+   "name": "鑫永洋",
+   "price": 15.4,
+   "net_value": 7.76,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3419",
+   "name": "譁裕",
+   "price": 14.25,
+   "net_value": 7.8,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "5302",
+   "name": "太欣",
+   "price": 15.45,
+   "net_value": 7.8,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6492",
+   "name": "生華科",
+   "price": 43.7,
+   "net_value": 7.8,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3321",
+   "name": "同泰",
+   "price": 24.15,
+   "net_value": 7.81,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3713",
+   "name": "新晶投控",
+   "price": 15.0,
+   "net_value": 7.81,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6144",
+   "name": "得利影",
+   "price": 14.45,
+   "net_value": 7.82,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "2349",
+   "name": "錸德",
+   "price": 13.4,
+   "net_value": 7.89,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "4188",
+   "name": "安克",
+   "price": 11.1,
+   "net_value": 7.93,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "5301",
+   "name": "寶得利",
+   "price": 6.17,
+   "net_value": 7.96,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3576",
+   "name": "聯合再生",
+   "price": 16.85,
+   "net_value": 8.04,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "4168",
+   "name": "醣聯",
+   "price": 26.35,
+   "net_value": 8.05,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3499",
+   "name": "環天科",
+   "price": 14.85,
+   "net_value": 8.08,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6733",
+   "name": "博晟生醫",
+   "price": 25.65,
+   "net_value": 8.1,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "9929",
+   "name": "秋雨",
+   "price": 11.25,
+   "net_value": 8.16,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "4534",
+   "name": "慶騰",
+   "price": 36.1,
+   "net_value": 8.25,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "8080",
+   "name": "泰霖",
+   "price": 27.85,
+   "net_value": 8.29,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "8176",
+   "name": "智捷",
+   "price": 10.85,
+   "net_value": 8.3,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6535",
+   "name": "順藥",
+   "price": 106.5,
+   "net_value": 8.33,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "2014",
+   "name": "中鴻",
+   "price": 17.6,
+   "net_value": 8.34,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "8450",
+   "name": "霹靂",
+   "price": 15.5,
+   "net_value": 8.43,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "1413",
+   "name": "宏洲",
+   "price": 9.5,
+   "net_value": 8.44,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "5543",
+   "name": "桓鼎-KY",
+   "price": 28.15,
+   "net_value": 8.44,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "2740",
+   "name": "華軒",
+   "price": 32.4,
+   "net_value": 8.47,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "1460",
+   "name": "宏遠",
+   "price": 8.08,
+   "net_value": 8.5,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3372",
+   "name": "典範",
+   "price": 21.3,
+   "net_value": 8.54,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "2429",
+   "name": "銘旺科",
+   "price": 49.05,
+   "net_value": 8.56,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6142",
+   "name": "友勁",
+   "price": 9.74,
+   "net_value": 8.57,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3122",
+   "name": "笙泉",
+   "price": 31.4,
+   "net_value": 8.61,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6109",
+   "name": "亞元",
+   "price": 14.2,
+   "net_value": 8.63,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "1721",
+   "name": "三晃",
+   "price": 29.05,
+   "net_value": 8.69,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "4178",
+   "name": "永笙-KY",
+   "price": 18.6,
+   "net_value": 8.7,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3686",
+   "name": "達能",
+   "price": 17.3,
+   "net_value": 8.73,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "4402",
+   "name": "郡都開發",
+   "price": 16.9,
+   "net_value": 8.73,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "9950",
+   "name": "萬國通",
+   "price": 10.55,
+   "net_value": 8.73,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6921",
+   "name": "嘉雨思-創",
+   "price": 69.0,
+   "net_value": 8.79,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3049",
+   "name": "精金",
+   "price": 13.1,
+   "net_value": 8.8,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6576",
+   "name": "逸達",
+   "price": 83.5,
+   "net_value": 8.85,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "8024",
+   "name": "佑華",
+   "price": 16.1,
+   "net_value": 8.88,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "2924",
+   "name": "宏太-KY",
+   "price": 17.85,
+   "net_value": 8.9,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3228",
+   "name": "金麗科",
+   "price": 184.5,
+   "net_value": 8.91,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "4198",
+   "name": "欣大健康",
+   "price": 41.8,
+   "net_value": 8.97,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "8085",
+   "name": "福華",
+   "price": 12.25,
+   "net_value": 8.98,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "1447",
+   "name": "力鵬",
+   "price": 9.51,
+   "net_value": 9.02,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "1468",
+   "name": "昶和",
+   "price": 12.3,
+   "net_value": 9.07,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3685",
+   "name": "元創精密",
+   "price": 30.3,
+   "net_value": 9.07,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "5516",
+   "name": "雙喜",
+   "price": 10.5,
+   "net_value": 9.11,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "2601",
+   "name": "益航",
+   "price": 6.6,
+   "net_value": 9.12,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6129",
+   "name": "普誠",
+   "price": 20.85,
+   "net_value": 9.13,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6160",
+   "name": "欣技",
+   "price": 16.7,
+   "net_value": 9.14,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "4950",
+   "name": "金耘國際",
+   "price": 16.35,
+   "net_value": 9.16,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "4108",
+   "name": "懷特",
+   "price": 12.5,
+   "net_value": 9.24,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "8047",
+   "name": "星雲",
+   "price": 44.7,
+   "net_value": 9.29,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6228",
+   "name": "全譜",
+   "price": 20.3,
+   "net_value": 9.3,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "1506",
+   "name": "正道",
+   "price": 10.55,
+   "net_value": 9.32,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "2516",
+   "name": "新建",
+   "price": 14.0,
+   "net_value": 9.35,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "2460",
+   "name": "建通",
+   "price": 39.5,
+   "net_value": 9.37,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6169",
+   "name": "昱泉",
+   "price": 14.75,
+   "net_value": 9.39,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "4139",
+   "name": "馬光-KY",
+   "price": 24.75,
+   "net_value": 9.43,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "8092",
+   "name": "建暐",
+   "price": 14.6,
+   "net_value": 9.43,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3325",
+   "name": "旭品",
+   "price": 13.4,
+   "net_value": 9.49,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "5310",
+   "name": "天剛",
+   "price": 25.95,
+   "net_value": 9.49,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "8422",
+   "name": "可寧衛*",
+   "price": 28.6,
+   "net_value": 9.51,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "2380",
+   "name": "虹光",
+   "price": 22.2,
+   "net_value": 9.54,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "5468",
+   "name": "凱鈺",
+   "price": 34.05,
+   "net_value": 9.54,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6838",
+   "name": "台新藥",
+   "price": 24.75,
+   "net_value": 9.55,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "8121",
+   "name": "越峰",
+   "price": 47.05,
+   "net_value": 9.57,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "1471",
+   "name": "首利",
+   "price": 10.9,
+   "net_value": 9.58,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6276",
+   "name": "安鈦克",
+   "price": 22.5,
+   "net_value": 9.58,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "2025",
+   "name": "千興",
+   "price": 13.45,
+   "net_value": 9.59,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6140",
+   "name": "訊達",
+   "price": 21.0,
+   "net_value": 9.59,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "2431",
+   "name": "聯昌",
+   "price": 12.1,
+   "net_value": 9.62,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "8443",
+   "name": "阿瘦",
+   "price": 11.45,
+   "net_value": 9.62,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "2712",
+   "name": "遠雄來",
+   "price": 14.75,
+   "net_value": 9.64,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3057",
+   "name": "喬鼎",
+   "price": 19.5,
+   "net_value": 9.65,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "4502",
+   "name": "健信",
+   "price": 15.75,
+   "net_value": 9.66,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6657",
+   "name": "華安",
+   "price": 36.75,
+   "net_value": 9.66,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "2726",
+   "name": "雅茗-KY",
+   "price": 9.25,
+   "net_value": 9.78,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "5905",
+   "name": "南仁湖",
+   "price": 8.83,
+   "net_value": 9.82,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "1444",
+   "name": "力麗",
+   "price": 9.15,
+   "net_value": 9.83,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3229",
+   "name": "晟鈦",
+   "price": 41.7,
+   "net_value": 9.87,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6210",
+   "name": "慶生",
+   "price": 19.5,
+   "net_value": 9.92,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "8409",
+   "name": "商之器",
+   "price": 19.2,
+   "net_value": 9.96,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3313",
+   "name": "斐成",
+   "price": 12.2,
+   "net_value": 9.99,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "5210",
+   "name": "寶碩",
+   "price": 30.25,
+   "net_value": 10.0,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "2022",
+   "name": "聚亨",
+   "price": 8.13,
+   "net_value": 10.03,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "4513",
+   "name": "福裕",
+   "price": 16.65,
+   "net_value": 10.08,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "2405",
+   "name": "輔信",
+   "price": 17.5,
+   "net_value": 10.09,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3041",
+   "name": "揚智",
+   "price": 28.4,
+   "net_value": 10.09,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "4171",
+   "name": "瑞基",
+   "price": 17.2,
+   "net_value": 10.18,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "5531",
+   "name": "鄉林",
+   "price": 8.06,
+   "net_value": 10.26,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3339",
+   "name": "泰谷",
+   "price": 41.25,
+   "net_value": 10.28,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "9919",
+   "name": "康那香",
+   "price": 14.0,
+   "net_value": 10.32,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6113",
+   "name": "亞矽",
+   "price": 26.15,
+   "net_value": 10.34,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3011",
+   "name": "今皓",
+   "price": 13.7,
+   "net_value": 10.36,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "5398",
+   "name": "慕康生醫",
+   "price": 16.4,
+   "net_value": 10.38,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6901",
+   "name": "鑽石投資",
+   "price": 18.9,
+   "net_value": 10.4,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "2406",
+   "name": "國碩",
+   "price": 41.45,
+   "net_value": 10.42,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6226",
+   "name": "光鼎",
+   "price": 23.1,
+   "net_value": 10.42,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "4562",
+   "name": "穎漢",
+   "price": 35.9,
+   "net_value": 10.51,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "2646",
+   "name": "星宇航空",
+   "price": 21.35,
+   "net_value": 10.59,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "4426",
+   "name": "利勤",
+   "price": 8.52,
+   "net_value": 10.6,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "5211",
+   "name": "蒙恬",
+   "price": 22.3,
+   "net_value": 10.7,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "4166",
+   "name": "友霖",
+   "price": 25.9,
+   "net_value": 10.71,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6547",
+   "name": "高端疫苗",
+   "price": 48.0,
+   "net_value": 10.71,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3176",
+   "name": "基亞",
+   "price": 37.05,
+   "net_value": 10.73,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "2302",
+   "name": "麗正",
+   "price": 52.2,
+   "net_value": 10.74,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "4924",
+   "name": "欣厚-KY",
+   "price": 13.8,
+   "net_value": 10.74,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "4989",
+   "name": "榮科",
+   "price": 111.0,
+   "net_value": 10.77,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6127",
+   "name": "九豪",
+   "price": 84.0,
+   "net_value": 10.77,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "1455",
+   "name": "集盛",
+   "price": 10.9,
+   "net_value": 10.81,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3360",
+   "name": "尚立",
+   "price": 20.6,
+   "net_value": 10.83,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "1454",
+   "name": "台富",
+   "price": 13.1,
+   "net_value": 10.92,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "5381",
+   "name": "光譜",
+   "price": 29.55,
+   "net_value": 10.92,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3024",
+   "name": "憶聲",
+   "price": 12.5,
+   "net_value": 10.95,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "8906",
+   "name": "花王",
+   "price": 29.45,
+   "net_value": 10.95,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3149",
+   "name": "正達",
+   "price": 87.9,
+   "net_value": 10.96,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "2719",
+   "name": "燦星旅",
+   "price": 24.7,
+   "net_value": 10.99,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3230",
+   "name": "錦明",
+   "price": 51.0,
+   "net_value": 10.99,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "4127",
+   "name": "天良",
+   "price": 76.7,
+   "net_value": 11.0,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "5488",
+   "name": "松普",
+   "price": 14.1,
+   "net_value": 11.02,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6246",
+   "name": "臺龍",
+   "price": 16.1,
+   "net_value": 11.03,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "2061",
+   "name": "風青",
+   "price": 80.1,
+   "net_value": 11.06,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6969",
+   "name": "成信實業*-創",
+   "price": 25.6,
+   "net_value": 11.06,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6101",
+   "name": "寬魚國際",
+   "price": 42.0,
+   "net_value": 11.08,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3047",
+   "name": "訊舟",
+   "price": 16.8,
+   "net_value": 11.13,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "4174",
+   "name": "浩鼎",
+   "price": 29.95,
+   "net_value": 11.14,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "5364",
+   "name": "力麗店",
+   "price": 8.99,
+   "net_value": 11.14,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "1459",
+   "name": "聯發",
+   "price": 12.15,
+   "net_value": 11.15,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "1213",
+   "name": "大飲",
+   "price": 7.58,
+   "net_value": 11.16,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3354",
+   "name": "律勝",
+   "price": 27.3,
+   "net_value": 11.18,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6103",
+   "name": "合邦",
+   "price": 34.25,
+   "net_value": 11.2,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "1528",
+   "name": "恩德",
+   "price": 24.05,
+   "net_value": 11.23,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "5498",
+   "name": "凱崴",
+   "price": 61.2,
+   "net_value": 11.23,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "7777",
+   "name": "能率亞洲",
+   "price": 41.75,
+   "net_value": 11.26,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "4142",
+   "name": "國光生",
+   "price": 17.95,
+   "net_value": 11.28,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "4183",
+   "name": "福永生技",
+   "price": 14.6,
+   "net_value": 11.29,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "4413",
+   "name": "飛寶企業",
+   "price": 14.9,
+   "net_value": 11.31,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6875",
+   "name": "國邑*",
+   "price": 38.0,
+   "net_value": 11.34,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6244",
+   "name": "茂迪",
+   "price": 27.55,
+   "net_value": 11.36,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "4903",
+   "name": "聯光通",
+   "price": 40.6,
+   "net_value": 11.47,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "9949",
+   "name": "琉園",
+   "price": 28.45,
+   "net_value": 11.47,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "1470",
+   "name": "大統新創",
+   "price": 21.7,
+   "net_value": 11.48,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "8476",
+   "name": "台境*",
+   "price": 23.95,
+   "net_value": 11.52,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6465",
+   "name": "威潤",
+   "price": 59.0,
+   "net_value": 11.54,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "5521",
+   "name": "工信",
+   "price": 10.7,
+   "net_value": 11.56,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6283",
+   "name": "淳安",
+   "price": 24.1,
+   "net_value": 11.56,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "2734",
+   "name": "易飛網",
+   "price": 15.4,
+   "net_value": 11.58,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "2024",
+   "name": "志聯",
+   "price": 13.95,
+   "net_value": 11.59,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "2305",
+   "name": "全友",
+   "price": 42.65,
+   "net_value": 11.6,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "4406",
+   "name": "新昕纖",
+   "price": 9.96,
+   "net_value": 11.62,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "1732",
+   "name": "毛寶",
+   "price": 26.6,
+   "net_value": 11.63,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3520",
+   "name": "華盈",
+   "price": 17.8,
+   "net_value": 11.63,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "5340",
+   "name": "建榮",
+   "price": 88.8,
+   "net_value": 11.63,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "4167",
+   "name": "松瑞藥",
+   "price": 21.2,
+   "net_value": 11.66,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6164",
+   "name": "華興",
+   "price": 15.7,
+   "net_value": 11.71,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "9962",
+   "name": "有益",
+   "price": 9.85,
+   "net_value": 11.72,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "2466",
+   "name": "冠西電",
+   "price": 94.8,
+   "net_value": 11.74,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6167",
+   "name": "久正",
+   "price": 12.65,
+   "net_value": 11.78,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6661",
+   "name": "威健生技",
+   "price": 18.55,
+   "net_value": 11.8,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6116",
+   "name": "彩晶",
+   "price": 18.2,
+   "net_value": 11.81,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "4714",
+   "name": "永捷",
+   "price": 12.75,
+   "net_value": 11.84,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6148",
+   "name": "驊宏資",
+   "price": 33.7,
+   "net_value": 11.84,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "1529",
+   "name": "樂事綠能",
+   "price": 23.2,
+   "net_value": 11.85,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "1324",
+   "name": "地球",
+   "price": 10.6,
+   "net_value": 11.87,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3322",
+   "name": "建舜電",
+   "price": 14.35,
+   "net_value": 11.89,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "5321",
+   "name": "美而快",
+   "price": 59.0,
+   "net_value": 11.89,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "9955",
+   "name": "佳龍",
+   "price": 27.15,
+   "net_value": 11.92,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "2530",
+   "name": "華建",
+   "price": 19.65,
+   "net_value": 11.95,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3095",
+   "name": "及成",
+   "price": 38.25,
+   "net_value": 11.98,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6130",
+   "name": "上亞科技",
+   "price": 24.0,
+   "net_value": 11.98,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6885",
+   "name": "全福生技",
+   "price": 21.75,
+   "net_value": 11.98,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "1616",
+   "name": "億泰",
+   "price": 23.65,
+   "net_value": 12.0,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "8111",
+   "name": "立碁",
+   "price": 52.9,
+   "net_value": 12.03,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3521",
+   "name": "台鋼建設",
+   "price": 13.0,
+   "net_value": 12.06,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "5251",
+   "name": "天鉞電",
+   "price": 32.65,
+   "net_value": 12.08,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "2939",
+   "name": "永邑-KY",
+   "price": 19.5,
+   "net_value": 12.09,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "4716",
+   "name": "大立",
+   "price": 23.4,
+   "net_value": 12.1,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3712",
+   "name": "永崴投控",
+   "price": 19.45,
+   "net_value": 12.11,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3094",
+   "name": "聯傑",
+   "price": 42.9,
+   "net_value": 12.17,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "5328",
+   "name": "華容",
+   "price": 80.6,
+   "net_value": 12.17,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "1611",
+   "name": "中電",
+   "price": 13.85,
+   "net_value": 12.19,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "1805",
+   "name": "寶徠",
+   "price": 10.2,
+   "net_value": 12.19,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "2491",
+   "name": "吉祥全",
+   "price": 39.45,
+   "net_value": 12.19,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "2901",
+   "name": "欣欣",
+   "price": 23.7,
+   "net_value": 12.21,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3276",
+   "name": "宇環",
+   "price": 16.45,
+   "net_value": 12.21,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6548",
+   "name": "長科*",
+   "price": 94.2,
+   "net_value": 12.24,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "2017",
+   "name": "官田鋼",
+   "price": 9.45,
+   "net_value": 12.28,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "1417",
+   "name": "嘉裕",
+   "price": 9.1,
+   "net_value": 12.31,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6674",
+   "name": "鋐寶科技",
+   "price": 17.1,
+   "net_value": 12.32,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "1467",
+   "name": "南緯",
+   "price": 9.31,
+   "net_value": 12.35,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3067",
+   "name": "全域",
+   "price": 18.95,
+   "net_value": 12.39,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "9902",
+   "name": "台火",
+   "price": 13.95,
+   "net_value": 12.42,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "1316",
+   "name": "上曜",
+   "price": 10.75,
+   "net_value": 12.44,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "2109",
+   "name": "華豐",
+   "price": 14.95,
+   "net_value": 12.46,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "8071",
+   "name": "能率網通",
+   "price": 30.95,
+   "net_value": 12.49,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "3623",
+   "name": "富晶通",
+   "price": 25.2,
+   "net_value": 12.5,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6616",
+   "name": "特昇-KY",
+   "price": 9.03,
+   "net_value": 12.5,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "2426",
+   "name": "鼎元",
+   "price": 79.2,
+   "net_value": 12.51,
+   "nv_quarter": "26Q1",
+   "market": ""
+  },
+  {
+   "code": "6118",
+   "name": "建達",
+   "price": 17.35,
+   "net_value": 12.51,
+   "nv_quarter": "26Q1",
+   "market": ""
+  }
+ ]
+}

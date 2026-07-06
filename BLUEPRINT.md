@@ -134,3 +134,15 @@ gh api repos/deankhho/stock-watchdog/commits --jq '.[0].sha[0:7]'   # read-back
 | goodinfo 封鎖加劇 | FinMind `TaiwanStockBalanceSheet`（`~/stock-analysis/data_fetcher.py` 的 `_finmind()` 直接複製），全市場逐檔慢但可行；只算官方名單±淨值<12 的股池 |
 | TWSE openapi 無對應端點 | Playwright 抓公告頁（S1 同模式） |
 | Pages 不想公開 repo | 退為本機 docs/index.html + 手機用 \\wsl.localhost 路徑（降級體驗） |
+
+## S7 backtest.py — 近兩年歷史驗證（2026-07-06 使用者追加）
+
+需求：抓股池（S1 全部 300 檔＋官方名單股）**近兩年（8 季）每季淨值與財報**，
+對照規則推算「歷史上哪季應打入全額交割/停信用/恢復」，供使用者驗證規則有效性。
+- 資料源：FinMind `TaiwanStockBalanceSheet`（權益總額÷股本×10=每股淨值），
+  包裝器抄 `~/stock-analysis/data_fetcher.py` `_finmind()`；免 token 有速率限制，
+  加 sleep 0.5s/檔與進度續跑（cache data/history/<code>.json）
+- 輸出 `data/backtest.json`：每檔 8 季 [{quarter, net_value, hit_5, hit_10}]
+- 網站加「歷史驗證」籤頁：每檔一列迷你時間線（8 季淨值，<5 紅點、<10 黃點），
+  可與官方名單 since 日期對照
+- 驗收：抽 2 檔已知全額交割股，其歷史淨值跌破 5 的季度 應早於/等於 官方列入時點
