@@ -1,9 +1,11 @@
 {
- "generated_at": "2026-07-06T15:06:47.519257",
+ "generated_at": "2026-07-06T23:52:56.121404",
  "nv_fetched_at": "2026-07-06T15:05:28.376730",
  "official_fetched_at": "2026-07-06T15:06:47.457057",
  "days_to_report": 39,
  "next_report_deadline": "2026-08-14",
+ "new_reports_count": 0,
+ "new_reports_crossings": 0,
  "groups": {
   "predict_in": [
    {

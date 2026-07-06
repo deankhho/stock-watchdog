@@ -66,6 +66,51 @@ def selftest():
     print("selftest OK")
 
 
+QSEEN_FILE = BASE / "data" / "quarter_seen.json"
+
+
+def detect_new_reports(rows: list) -> dict:
+    """偵測「交出新財報」：與上次記錄的財報季度比對（quarter_seen.json）
+    回傳 {code: {"delta": Δ淨值, "prev_nv":, "prev_q":, "crossing": 警示, "since": 首見日}}
+    首次建檔（無基準）不標記，只建基準。"""
+    seen = json.loads(QSEEN_FILE.read_text()) if QSEEN_FILE.exists() else {}
+    first_init = not seen
+    today = date.today().isoformat()
+    new_map = {}
+    for r in rows:
+        code, q, nv = r["code"], r.get("nv_quarter", ""), r["net_value"]
+        prev = seen.get(code)
+        if prev and q and q != prev["quarter"]:
+            delta = round(nv - prev["nv"], 2)
+            crossing = None
+            if prev["nv"] >= 5 and nv < 5:
+                crossing = "跌破5元（恐列全額交割）"
+            elif prev["nv"] < 5 and nv >= 5:
+                crossing = "回升5元以上（恢復條件累計中）"
+            elif prev["nv"] >= 10 and nv < 10:
+                crossing = "跌破10元（恐停信用交易）"
+            elif prev["nv"] < 10 and nv >= 10:
+                crossing = "回升10元以上（信用恢復條件）"
+            seen[code] = {"quarter": q, "nv": nv, "first_seen": today,
+                          "prev_nv": prev["nv"], "prev_q": prev["quarter"]}
+        elif not prev:
+            seen[code] = {"quarter": q, "nv": nv, "first_seen": today}
+        # 🆕 標記維持 14 天（新財報季內給使用者充分注意時間）
+        cur = seen.get(code, {})
+        if not first_init and cur.get("prev_q") and \
+           (date.today() - date.fromisoformat(cur["first_seen"])).days <= 14:
+            new_map[code] = {"delta": round(cur["nv"] - cur["prev_nv"], 2),
+                             "prev_nv": cur["prev_nv"], "prev_q": cur["prev_q"],
+                             "since": cur["first_seen"],
+                             "crossing": (
+                                 "跌破5元（恐列全額交割）" if cur["prev_nv"] >= 5 > cur["nv"] else
+                                 "回升5元以上（恢復條件累計中）" if cur["prev_nv"] < 5 <= cur["nv"] else
+                                 "跌破10元（恐停信用交易）" if cur["prev_nv"] >= 10 > cur["nv"] else
+                                 "回升10元以上（信用恢復條件）" if cur["prev_nv"] < 10 <= cur["nv"] else None)}
+    QSEEN_FILE.write_text(json.dumps(seen, ensure_ascii=False, indent=1))
+    return new_map
+
+
 def main():
     if "--selftest" in sys.argv:
         selftest()
@@ -78,6 +123,7 @@ def main():
     market_map = of_data["market_map"]
 
     days, next_dl = days_to_next_report()
+    new_reports = detect_new_reports(nv_data["rows"])
     groups = {"predict_in": [], "edge": [], "margin_risk": [],
               "recover": [], "official": []}
 
@@ -87,6 +133,8 @@ def main():
         if cat == "safe":
             continue
         item = dict(r)
+        if r["code"] in new_reports:
+            item["new_report"] = new_reports[r["code"]]
         item["market"] = market_map.get(r["code"], "")
         item["gap"] = round(r["net_value"] - NET_VALUE_FULL_DELIVERY, 2)
         item["goodinfo_url"] = f"https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID={r['code']}"
@@ -108,6 +156,8 @@ def main():
         "nv_fetched_at": nv_data["fetched_at"],
         "official_fetched_at": of_data["fetched_at"],
         "days_to_report": days, "next_report_deadline": next_dl,
+        "new_reports_count": len(new_reports),
+        "new_reports_crossings": sum(1 for v in new_reports.values() if v["crossing"]),
         "groups": groups,
         "tpex_other_flags": of_data.get("tpex_other_flags", []),
     }, ensure_ascii=False, indent=1))

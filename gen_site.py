@@ -139,15 +139,30 @@ def main():
         rows = g.get(key, [])
         tab_btns.append(f'<button class="tab" data-t="{key}">{label}'
                         f'<span class="n">{len(rows)}</span></button>')
-        trs = "".join(f"""<tr class="main" onclick="tog(this)">
+        def nr_badge(r):
+            nr = r.get("new_report")
+            if not nr:
+                return "", ""
+            d = nr["delta"]
+            cross = f'<span class="cross">⚡{nr["crossing"]}</span>' if nr["crossing"] else ""
+            badge = f'<span class="newb">🆕新財報</span>'
+            delta = (f'<span class="delta {"neg" if d < 0 else "pos"}">'
+                     f'{"▼" if d < 0 else "▲"}{abs(d):.2f}（{nr["prev_q"]}→）</span>{cross}')
+            return badge, delta
+        trs_list = []
+        # 新財報排前面
+        for r in sorted(rows, key=lambda x: not x.get("new_report")):
+            badge, delta = nr_badge(r)
+            trs_list.append(f"""<tr class="main{' isnew' if badge else ''}" onclick="tog(this)">
   <td><a href="{r['goodinfo_url']}" target="_blank" onclick="event.stopPropagation()">{r['code']}</a></td>
-  <td>{r['name']}</td><td>{r.get('market','')}</td>
+  <td>{r['name']} {badge}</td><td>{r.get('market','')}</td>
   <td class="num">{fmt(r.get('price'))}</td>
-  <td class="num nv">{fmt(r.get('net_value'))}</td>
+  <td class="num nv">{fmt(r.get('net_value'))}{delta}</td>
   <td class="num {'neg' if (r.get('gap') or 0) < 0 else 'pos'}">{fmt(r.get('gap'))}</td>
   <td>{r.get('nv_quarter','')}{('<span class=note>' + r['note'] + '</span>') if r.get('note') else ''} <span class="exp">▾</span></td>
 </tr>
-<tr class="detail"><td colspan="7">{history_row(r['code'], bt_stocks, r.get('market',''), listing)}</td></tr>""" for r in rows)
+<tr class="detail"><td colspan="7">{history_row(r['code'], bt_stocks, r.get('market',''), listing)}</td></tr>""")
+        trs = "".join(trs_list)
         panels.append(f"""<section class="panel" data-t="{key}">
   <p class="desc">{desc}</p>
   <table><thead><tr><th>代號</th><th>名稱</th><th>市場</th><th>股價</th>
@@ -201,6 +216,13 @@ tr.detail td {{ padding:12px; }}
 .hist-none {{ font-size:12px; color:#5C6474; }}
 .updbtn {{ display:inline-block; margin-left:8px; padding:2px 10px; border-radius:8px;
   background:#1d4ed8; color:#dbeafe; font-size:12px; text-decoration:none; }}
+.banner {{ margin:12px 0 0; padding:10px 14px; border-radius:10px; background:#172554;
+  border:1px solid #1d4ed8; font-size:13px; line-height:1.7; }}
+.newb {{ background:#facc15; color:#713f12; font-size:10px; font-weight:700;
+  padding:1px 6px; border-radius:6px; margin-left:4px; vertical-align:middle; }}
+.delta {{ display:block; font-size:11px; font-weight:400; }}
+.cross {{ display:block; font-size:11px; color:#fbbf24; font-weight:700; }}
+tr.isnew {{ background:rgba(250,204,21,.06); }}
 @media (max-width:640px) {{
   body {{ padding:12px; }}
   th:nth-child(7), td:nth-child(7) {{ display:none; }}
@@ -214,6 +236,11 @@ tr.detail td {{ padding:12px; }}
 <span class="deadline">下一財報截止：{rep['next_report_deadline']}（{rep['days_to_report']} 天後）</span>
 <a class="updbtn" href="https://github.com/deankhho/stock-watchdog/actions/workflows/update.yml"
   target="_blank">🔄 觸發更新</a></div>
+{f'''<div class="banner">🆕 <b>偵測到 {rep["new_reports_count"]} 檔交出新財報</b>
+（14 天內），其中 <b style="color:#fbbf24">{rep["new_reports_crossings"]} 檔穿越門檻</b>
+（跌破5元恐列全額交割／跌破10元恐停信用／回升）——各表 🆕 列已排最前，
+淨值欄顯示變化量 ▲▼</div>''' if rep.get("new_reports_count") else
+'<div class="banner" style="opacity:.7">目前名單內尚無新一季財報（各檔財報季度見表末欄）；新財報公布後此處會醒目提示「哪些股票交出財報、淨值變化、是否穿越門檻」</div>'}
 <div class="tabs">{''.join(tab_btns)}</div>
 {''.join(panels)}
 <script>
