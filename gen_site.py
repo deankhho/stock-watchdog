@@ -10,7 +10,60 @@ from pathlib import Path
 
 BASE = Path(__file__).parent
 REPORT = BASE / "data" / "report.json"
+BACKTEST = BASE / "data" / "backtest.json"
 DOCS = BASE / "docs"
+
+GROUP_LABEL = {"predict_in": "🔴 預測打入", "recover": "🟢 恢復候選",
+               "edge": "🟠 危險邊緣", "official": "⚪ 全額交割中"}
+
+
+def gen_backtest_page():
+    """docs/backtest.html — 近兩年每季淨值時間線（<5 紅、<10 黃、其餘綠）"""
+    if not BACKTEST.exists():
+        return False
+    bt = json.loads(BACKTEST.read_text())
+    rows = []
+    stocks = sorted(bt["stocks"].items(),
+                    key=lambda kv: (kv[1]["group"], kv[1]["current_nv"] or 0))
+    for code, s in stocks:
+        cells = "".join(
+            f'<div class="q {"r" if h["hit5"] else "y" if h["hit10"] else "g"}" '
+            f'title="{h["quarter"]} 淨值 {h["net_value"]}">'
+            f'<span>{h["quarter"]}</span>{h["net_value"]:.1f}</div>'
+            for h in s["history"])
+        rows.append(f"""<div class="row">
+  <div class="head"><a href="https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID={code}"
+    target="_blank">{code}</a> {s['name']} <span class="mk">{s.get('market','')}</span>
+  <span class="grp">{GROUP_LABEL.get(s['group'], s['group'])}</span></div>
+  <div class="tl">{cells or '（無資料）'}</div></div>""")
+    html = f"""<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>歷史驗證（近兩年淨值）</title>
+<style>
+body {{ font-family:"Noto Sans TC","Microsoft JhengHei",sans-serif; background:#0B0C10;
+  color:#F2F4F8; padding:20px; max-width:900px; margin:0 auto; }}
+h1 {{ font-size:20px; }} a {{ color:#60a5fa; text-decoration:none; }}
+.meta {{ font-size:12px; color:#9BA3B4; margin:6px 0 16px; }}
+.row {{ background:#13151B; border-radius:12px; padding:12px 14px; margin-bottom:10px; }}
+.head {{ font-size:14px; font-weight:600; margin-bottom:8px; }}
+.mk {{ font-size:11px; color:#9BA3B4; font-weight:400; }}
+.grp {{ float:right; font-size:12px; font-weight:400; }}
+.tl {{ display:flex; gap:4px; flex-wrap:wrap; }}
+.q {{ flex:1; min-width:64px; text-align:center; padding:6px 2px; border-radius:6px;
+  font-size:13px; font-weight:700; font-variant-numeric:tabular-nums; }}
+.q span {{ display:block; font-size:10px; font-weight:400; opacity:.75; }}
+.q.r {{ background:#7f1d1d; color:#fecaca; }}
+.q.y {{ background:#713f12; color:#fde68a; }}
+.q.g {{ background:#14532d; color:#bbf7d0; }}
+</style></head><body>
+<h1>歷史驗證：近兩年每季淨值</h1>
+<div class="meta"><a href="index.html">← 回預警表</a>・紅=淨值&lt;5（全額交割門檻）・
+黃=&lt;10（停信用門檻）・綠=安全・資料 FinMind（{bt['generated_at'][:16].replace('T',' ')}）・
+用途：對照各股跌破門檻的季度與官方列入時點，驗證規則有效性</div>
+{''.join(rows)}
+</body></html>"""
+    (DOCS / "backtest.html").write_text(html)
+    return True
 
 TABS = [
     ("predict_in", "🔴 預測打入", "淨值<5、尚未列全額交割——下次財報後恐公告，提前留意"),
@@ -88,7 +141,7 @@ td a {{ color:#60a5fa; text-decoration:none; font-family:ui-monospace,monospace;
 <h1>全額交割／信用交易預警</h1>
 <div class="meta">淨值資料：{rep['nv_fetched_at'][:16].replace('T',' ')}（goodinfo）・
 官方名單：{rep['official_fetched_at'][:16].replace('T',' ')}（證交所/櫃買中心）・
-<a href="rules.html">分級規則與法規依據</a><br>
+<a href="rules.html">分級規則與法規依據</a>・<a href="backtest.html">歷史驗證</a><br>
 <span class="deadline">下一財報截止：{rep['next_report_deadline']}（{rep['days_to_report']} 天後）</span></div>
 <div class="tabs">{''.join(tab_btns)}</div>
 {''.join(panels)}
@@ -158,7 +211,8 @@ th,td {{ border:1px solid rgba(255,255,255,.12); padding:8px; text-align:left; }
 <p class="src">⚠️ 本站僅供研究參考，非投資建議。資料可能延遲或有誤，交易前請以官方公告為準。</p>
 </body></html>"""
     (DOCS / "rules.html").write_text(rules)
-    print(f"已生成 docs/index.html + docs/rules.html")
+    bt = gen_backtest_page()
+    print(f"已生成 docs/index.html + rules.html" + ("+ backtest.html" if bt else "（backtest.json 未就緒，略過歷史頁）"))
 
 
 if __name__ == "__main__":
