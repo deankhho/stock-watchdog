@@ -1,0 +1,1909 @@
+{
+ "generated_at": "2026-07-06T22:39:03.913733",
+ "nv_fetched_at": "2026-07-06T22:35:03.064828",
+ "official_fetched_at": "2026-07-06T22:38:23.297725",
+ "days_to_report": 39,
+ "next_report_deadline": "2026-08-14",
+ "groups": {
+  "predict_in": [
+   {
+    "code": "3086",
+    "name": "華義*",
+    "price": 32.15,
+    "net_value": 1.15,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": -3.85,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3086"
+   },
+   {
+    "code": "4157",
+    "name": "太景*-KY",
+    "price": 9.2,
+    "net_value": 1.47,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": -3.53,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4157"
+   },
+   {
+    "code": "7827",
+    "name": "漢康-KY創",
+    "price": 156.0,
+    "net_value": 3.29,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": -1.71,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=7827"
+   }
+  ],
+  "edge": [
+   {
+    "code": "4304",
+    "name": "勝昱",
+    "price": 18.8,
+    "net_value": 5.02,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 0.02,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4304"
+   },
+   {
+    "code": "1516",
+    "name": "川飛",
+    "price": 18.65,
+    "net_value": 5.11,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 0.11,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1516"
+   },
+   {
+    "code": "2067",
+    "name": "嘉鋼",
+    "price": 6.8,
+    "net_value": 5.13,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 0.13,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2067"
+   },
+   {
+    "code": "3625",
+    "name": "西勝",
+    "price": 18.4,
+    "net_value": 5.15,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 0.15,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3625"
+   },
+   {
+    "code": "3259",
+    "name": "鑫創",
+    "price": 16.75,
+    "net_value": 5.21,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 0.21,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3259"
+   },
+   {
+    "code": "6141",
+    "name": "柏承",
+    "price": 37.5,
+    "net_value": 5.23,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 0.23,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6141"
+   },
+   {
+    "code": "8477",
+    "name": "創業家",
+    "price": 16.0,
+    "net_value": 5.32,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 0.32,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8477"
+   },
+   {
+    "code": "3191",
+    "name": "雲嘉南",
+    "price": 18.9,
+    "net_value": 5.52,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 0.52,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3191"
+   },
+   {
+    "code": "6461",
+    "name": "益得",
+    "price": 15.7,
+    "net_value": 5.56,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 0.56,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6461"
+   },
+   {
+    "code": "6550",
+    "name": "北極星藥業-KY",
+    "price": 13.85,
+    "net_value": 5.58,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 0.58,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6550"
+   },
+   {
+    "code": "5345",
+    "name": "馥鴻",
+    "price": 27.5,
+    "net_value": 5.63,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 0.63,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5345"
+   },
+   {
+    "code": "4419",
+    "name": "皇家美食",
+    "price": 47.25,
+    "net_value": 5.68,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 0.68,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4419"
+   },
+   {
+    "code": "6431",
+    "name": "光麗-KY",
+    "price": 19.6,
+    "net_value": 5.68,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 0.68,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6431"
+   },
+   {
+    "code": "8937",
+    "name": "合騏*",
+    "price": 27.7,
+    "net_value": 5.68,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 0.68,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8937"
+   },
+   {
+    "code": "3085",
+    "name": "新零售",
+    "price": 12.15,
+    "net_value": 5.7,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 0.7,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3085"
+   },
+   {
+    "code": "2208",
+    "name": "台船",
+    "price": 20.3,
+    "net_value": 5.76,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 0.76,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2208"
+   },
+   {
+    "code": "1799",
+    "name": "易威",
+    "price": 33.9,
+    "net_value": 5.77,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 0.77,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1799"
+   },
+   {
+    "code": "3494",
+    "name": "誠研",
+    "price": 7.95,
+    "net_value": 5.8,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 0.8,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3494"
+   },
+   {
+    "code": "8059",
+    "name": "凱碩",
+    "price": 16.6,
+    "net_value": 5.86,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 0.86,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8059"
+   },
+   {
+    "code": "1441",
+    "name": "大東",
+    "price": 9.55,
+    "net_value": 5.93,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 0.93,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1441"
+   }
+  ],
+  "margin_risk": [
+   {
+    "code": "6919",
+    "name": "康霈*",
+    "price": 100.0,
+    "net_value": 6.02,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 1.02,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6919"
+   },
+   {
+    "code": "7803",
+    "name": "雲象科技-創",
+    "price": 23.35,
+    "net_value": 6.06,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 1.06,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=7803"
+   },
+   {
+    "code": "5205",
+    "name": "中茂",
+    "price": 23.95,
+    "net_value": 6.12,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 1.12,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5205"
+   },
+   {
+    "code": "3523",
+    "name": "迎輝",
+    "price": 16.0,
+    "net_value": 6.18,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 1.18,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3523"
+   },
+   {
+    "code": "2438",
+    "name": "翔耀",
+    "price": 21.9,
+    "net_value": 6.21,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 1.21,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2438"
+   },
+   {
+    "code": "8067",
+    "name": "志旭",
+    "price": 14.2,
+    "net_value": 6.27,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 1.27,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8067"
+   },
+   {
+    "code": "5344",
+    "name": "立衛",
+    "price": 17.5,
+    "net_value": 6.34,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 1.34,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5344"
+   },
+   {
+    "code": "3234",
+    "name": "光環",
+    "price": 130.0,
+    "net_value": 6.39,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 1.39,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3234"
+   },
+   {
+    "code": "4154",
+    "name": "樂威科-KY",
+    "price": 11.75,
+    "net_value": 6.39,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 1.39,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4154"
+   },
+   {
+    "code": "5227",
+    "name": "立凱-KY",
+    "price": 36.15,
+    "net_value": 6.4,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 1.4,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5227"
+   },
+   {
+    "code": "4806",
+    "name": "桂田文創",
+    "price": 10.1,
+    "net_value": 6.44,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 1.44,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4806"
+   },
+   {
+    "code": "5324",
+    "name": "士開",
+    "price": 12.15,
+    "net_value": 6.5,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 1.5,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5324"
+   },
+   {
+    "code": "4195",
+    "name": "基米-創",
+    "price": 17.45,
+    "net_value": 6.51,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 1.51,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4195"
+   },
+   {
+    "code": "5314",
+    "name": "世紀*",
+    "price": 67.6,
+    "net_value": 6.52,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 1.52,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5314"
+   },
+   {
+    "code": "1781",
+    "name": "合世",
+    "price": 12.1,
+    "net_value": 6.57,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 1.57,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1781"
+   },
+   {
+    "code": "3093",
+    "name": "港建*",
+    "price": 68.4,
+    "net_value": 6.57,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 1.57,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3093"
+   },
+   {
+    "code": "6598",
+    "name": "ABC-KY",
+    "price": 23.25,
+    "net_value": 6.57,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 1.57,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6598"
+   },
+   {
+    "code": "3288",
+    "name": "點晶",
+    "price": 20.2,
+    "net_value": 6.59,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 1.59,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3288"
+   },
+   {
+    "code": "4192",
+    "name": "杏國",
+    "price": 21.3,
+    "net_value": 6.62,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 1.62,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4192"
+   },
+   {
+    "code": "4934",
+    "name": "太極",
+    "price": 17.75,
+    "net_value": 6.79,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 1.79,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4934"
+   },
+   {
+    "code": "7780",
+    "name": "大研生醫*",
+    "price": 18.35,
+    "net_value": 6.81,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 1.81,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=7780"
+   },
+   {
+    "code": "9912",
+    "name": "偉聯",
+    "price": 12.7,
+    "net_value": 6.81,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 1.81,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=9912"
+   },
+   {
+    "code": "2035",
+    "name": "唐榮",
+    "price": 27.9,
+    "net_value": 6.83,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 1.83,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2035"
+   },
+   {
+    "code": "1512",
+    "name": "瑞利",
+    "price": 7.21,
+    "net_value": 6.85,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 1.85,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1512"
+   },
+   {
+    "code": "6443",
+    "name": "元晶",
+    "price": 34.6,
+    "net_value": 6.91,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 1.91,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6443"
+   },
+   {
+    "code": "3349",
+    "name": "寶德",
+    "price": 24.2,
+    "net_value": 6.98,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 1.98,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3349"
+   },
+   {
+    "code": "1435",
+    "name": "中福",
+    "price": 26.8,
+    "net_value": 7.02,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 2.02,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1435"
+   },
+   {
+    "code": "6264",
+    "name": "富裔",
+    "price": 6.15,
+    "net_value": 7.04,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 2.04,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6264"
+   },
+   {
+    "code": "2724",
+    "name": "藝舍-KY",
+    "price": 11.5,
+    "net_value": 7.08,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 2.08,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2724"
+   },
+   {
+    "code": "3432",
+    "name": "台端",
+    "price": 18.4,
+    "net_value": 7.12,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 2.12,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3432"
+   },
+   {
+    "code": "4131",
+    "name": "浩泰",
+    "price": 32.9,
+    "net_value": 7.12,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 2.12,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4131"
+   },
+   {
+    "code": "8932",
+    "name": "智通*",
+    "price": 116.0,
+    "net_value": 7.12,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 2.12,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8932"
+   },
+   {
+    "code": "2258",
+    "name": "鴻華先進-創",
+    "price": 32.25,
+    "net_value": 7.14,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 2.14,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2258"
+   },
+   {
+    "code": "4726",
+    "name": "永昕",
+    "price": 26.55,
+    "net_value": 7.18,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 2.18,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4726"
+   },
+   {
+    "code": "8201",
+    "name": "無敵",
+    "price": 13.25,
+    "net_value": 7.21,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 2.21,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8201"
+   },
+   {
+    "code": "2444",
+    "name": "兆勁",
+    "price": 12.7,
+    "net_value": 7.35,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 2.35,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2444"
+   },
+   {
+    "code": "6152",
+    "name": "百一",
+    "price": 13.7,
+    "net_value": 7.36,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 2.36,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6152"
+   },
+   {
+    "code": "6645",
+    "name": "金萬林-創",
+    "price": 16.15,
+    "net_value": 7.39,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 2.39,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6645"
+   },
+   {
+    "code": "3115",
+    "name": "富榮綱",
+    "price": 9.18,
+    "net_value": 7.46,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 2.46,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3115"
+   },
+   {
+    "code": "6872",
+    "name": "浩宇生醫",
+    "price": 16.7,
+    "net_value": 7.47,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 2.47,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6872"
+   },
+   {
+    "code": "5475",
+    "name": "德宏",
+    "price": 226.5,
+    "net_value": 7.49,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 2.49,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5475"
+   },
+   {
+    "code": "2007",
+    "name": "燁興",
+    "price": 7.46,
+    "net_value": 7.51,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 2.51,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2007"
+   },
+   {
+    "code": "6573",
+    "name": "虹揚-KY",
+    "price": 27.6,
+    "net_value": 7.51,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 2.51,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6573"
+   },
+   {
+    "code": "3672",
+    "name": "康聯訊",
+    "price": 13.65,
+    "net_value": 7.62,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 2.62,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3672"
+   },
+   {
+    "code": "5348",
+    "name": "正能量智能",
+    "price": 15.8,
+    "net_value": 7.63,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 2.63,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5348"
+   },
+   {
+    "code": "8038",
+    "name": "長園科",
+    "price": 44.15,
+    "net_value": 7.66,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 2.66,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8038"
+   },
+   {
+    "code": "8935",
+    "name": "邦泰",
+    "price": 23.35,
+    "net_value": 7.67,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 2.67,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8935"
+   },
+   {
+    "code": "3522",
+    "name": "御嵿",
+    "price": 14.05,
+    "net_value": 7.69,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 2.69,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3522"
+   },
+   {
+    "code": "5703",
+    "name": "亞都",
+    "price": 13.75,
+    "net_value": 7.71,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 2.71,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5703"
+   },
+   {
+    "code": "8084",
+    "name": "巨虹",
+    "price": 49.75,
+    "net_value": 7.71,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 2.71,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8084"
+   },
+   {
+    "code": "5484",
+    "name": "慧友",
+    "price": 47.75,
+    "net_value": 7.72,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 2.72,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5484"
+   },
+   {
+    "code": "3058",
+    "name": "立德",
+    "price": 9.65,
+    "net_value": 7.73,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 2.73,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3058"
+   },
+   {
+    "code": "6241",
+    "name": "鑫永洋",
+    "price": 15.4,
+    "net_value": 7.76,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 2.76,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6241"
+   },
+   {
+    "code": "3419",
+    "name": "譁裕",
+    "price": 14.25,
+    "net_value": 7.8,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 2.8,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3419"
+   },
+   {
+    "code": "5302",
+    "name": "太欣",
+    "price": 15.45,
+    "net_value": 7.8,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 2.8,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5302"
+   },
+   {
+    "code": "6492",
+    "name": "生華科",
+    "price": 43.7,
+    "net_value": 7.8,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 2.8,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6492"
+   },
+   {
+    "code": "3321",
+    "name": "同泰",
+    "price": 24.15,
+    "net_value": 7.81,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 2.81,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3321"
+   },
+   {
+    "code": "3713",
+    "name": "新晶投控",
+    "price": 15.0,
+    "net_value": 7.81,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 2.81,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3713"
+   },
+   {
+    "code": "6144",
+    "name": "得利影",
+    "price": 14.45,
+    "net_value": 7.82,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 2.82,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6144"
+   },
+   {
+    "code": "2349",
+    "name": "錸德",
+    "price": 13.4,
+    "net_value": 7.89,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 2.89,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2349"
+   },
+   {
+    "code": "4188",
+    "name": "安克",
+    "price": 11.1,
+    "net_value": 7.93,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 2.93,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4188"
+   },
+   {
+    "code": "3576",
+    "name": "聯合再生",
+    "price": 16.85,
+    "net_value": 8.04,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 3.04,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3576"
+   },
+   {
+    "code": "4168",
+    "name": "醣聯",
+    "price": 26.35,
+    "net_value": 8.05,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 3.05,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4168"
+   },
+   {
+    "code": "3499",
+    "name": "環天科",
+    "price": 14.85,
+    "net_value": 8.08,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 3.08,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3499"
+   },
+   {
+    "code": "6733",
+    "name": "博晟生醫",
+    "price": 25.65,
+    "net_value": 8.1,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 3.1,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6733"
+   },
+   {
+    "code": "9929",
+    "name": "秋雨",
+    "price": 11.25,
+    "net_value": 8.16,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 3.16,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=9929"
+   },
+   {
+    "code": "4534",
+    "name": "慶騰",
+    "price": 36.1,
+    "net_value": 8.25,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 3.25,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4534"
+   },
+   {
+    "code": "8080",
+    "name": "泰霖",
+    "price": 27.85,
+    "net_value": 8.29,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 3.29,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8080"
+   },
+   {
+    "code": "8176",
+    "name": "智捷",
+    "price": 10.85,
+    "net_value": 8.3,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 3.3,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8176"
+   },
+   {
+    "code": "6535",
+    "name": "順藥",
+    "price": 106.5,
+    "net_value": 8.33,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 3.33,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6535"
+   },
+   {
+    "code": "2014",
+    "name": "中鴻",
+    "price": 17.6,
+    "net_value": 8.34,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 3.34,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2014"
+   },
+   {
+    "code": "8450",
+    "name": "霹靂",
+    "price": 15.5,
+    "net_value": 8.43,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 3.43,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8450"
+   },
+   {
+    "code": "1413",
+    "name": "宏洲",
+    "price": 9.5,
+    "net_value": 8.44,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 3.44,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1413"
+   },
+   {
+    "code": "5543",
+    "name": "桓鼎-KY",
+    "price": 28.15,
+    "net_value": 8.44,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 3.44,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5543"
+   },
+   {
+    "code": "2740",
+    "name": "華軒",
+    "price": 32.4,
+    "net_value": 8.47,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 3.47,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2740"
+   },
+   {
+    "code": "1460",
+    "name": "宏遠",
+    "price": 8.08,
+    "net_value": 8.5,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 3.5,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1460"
+   },
+   {
+    "code": "3372",
+    "name": "典範",
+    "price": 21.3,
+    "net_value": 8.54,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 3.54,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3372"
+   },
+   {
+    "code": "2429",
+    "name": "銘旺科",
+    "price": 49.05,
+    "net_value": 8.56,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 3.56,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2429"
+   },
+   {
+    "code": "6142",
+    "name": "友勁",
+    "price": 9.74,
+    "net_value": 8.57,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 3.57,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6142"
+   },
+   {
+    "code": "3122",
+    "name": "笙泉",
+    "price": 31.4,
+    "net_value": 8.61,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 3.61,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3122"
+   },
+   {
+    "code": "6109",
+    "name": "亞元",
+    "price": 14.2,
+    "net_value": 8.63,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 3.63,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6109"
+   },
+   {
+    "code": "1721",
+    "name": "三晃",
+    "price": 29.05,
+    "net_value": 8.69,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 3.69,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1721"
+   },
+   {
+    "code": "4178",
+    "name": "永笙-KY",
+    "price": 18.6,
+    "net_value": 8.7,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 3.7,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4178"
+   },
+   {
+    "code": "3686",
+    "name": "達能",
+    "price": 17.3,
+    "net_value": 8.73,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 3.73,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3686"
+   },
+   {
+    "code": "4402",
+    "name": "郡都開發",
+    "price": 16.9,
+    "net_value": 8.73,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 3.73,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4402"
+   },
+   {
+    "code": "9950",
+    "name": "萬國通",
+    "price": 10.55,
+    "net_value": 8.73,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 3.73,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=9950"
+   },
+   {
+    "code": "6921",
+    "name": "嘉雨思-創",
+    "price": 69.0,
+    "net_value": 8.79,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 3.79,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6921"
+   },
+   {
+    "code": "3049",
+    "name": "精金",
+    "price": 13.1,
+    "net_value": 8.8,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 3.8,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3049"
+   },
+   {
+    "code": "6576",
+    "name": "逸達",
+    "price": 83.5,
+    "net_value": 8.85,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 3.85,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6576"
+   },
+   {
+    "code": "8024",
+    "name": "佑華",
+    "price": 16.1,
+    "net_value": 8.88,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 3.88,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8024"
+   },
+   {
+    "code": "2924",
+    "name": "宏太-KY",
+    "price": 17.85,
+    "net_value": 8.9,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 3.9,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2924"
+   },
+   {
+    "code": "3228",
+    "name": "金麗科",
+    "price": 184.5,
+    "net_value": 8.91,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 3.91,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3228"
+   },
+   {
+    "code": "4198",
+    "name": "欣大健康",
+    "price": 41.8,
+    "net_value": 8.97,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 3.97,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4198"
+   },
+   {
+    "code": "8085",
+    "name": "福華",
+    "price": 12.25,
+    "net_value": 8.98,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 3.98,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8085"
+   },
+   {
+    "code": "1447",
+    "name": "力鵬",
+    "price": 9.51,
+    "net_value": 9.02,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 4.02,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1447"
+   },
+   {
+    "code": "1468",
+    "name": "昶和",
+    "price": 12.3,
+    "net_value": 9.07,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 4.07,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1468"
+   },
+   {
+    "code": "3685",
+    "name": "元創精密",
+    "price": 30.3,
+    "net_value": 9.07,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 4.07,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3685"
+   },
+   {
+    "code": "5516",
+    "name": "雙喜",
+    "price": 10.5,
+    "net_value": 9.11,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 4.11,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5516"
+   },
+   {
+    "code": "2601",
+    "name": "益航",
+    "price": 6.6,
+    "net_value": 9.12,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 4.12,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2601"
+   },
+   {
+    "code": "6129",
+    "name": "普誠",
+    "price": 20.85,
+    "net_value": 9.13,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 4.13,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6129"
+   },
+   {
+    "code": "6160",
+    "name": "欣技",
+    "price": 16.7,
+    "net_value": 9.14,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 4.14,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6160"
+   },
+   {
+    "code": "4950",
+    "name": "金耘國際",
+    "price": 16.35,
+    "net_value": 9.16,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 4.16,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4950"
+   },
+   {
+    "code": "4108",
+    "name": "懷特",
+    "price": 12.5,
+    "net_value": 9.24,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 4.24,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4108"
+   },
+   {
+    "code": "8047",
+    "name": "星雲",
+    "price": 44.7,
+    "net_value": 9.29,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 4.29,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8047"
+   },
+   {
+    "code": "6228",
+    "name": "全譜",
+    "price": 20.3,
+    "net_value": 9.3,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 4.3,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6228"
+   },
+   {
+    "code": "1506",
+    "name": "正道",
+    "price": 10.55,
+    "net_value": 9.32,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 4.32,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1506"
+   },
+   {
+    "code": "2516",
+    "name": "新建",
+    "price": 14.0,
+    "net_value": 9.35,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 4.35,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2516"
+   },
+   {
+    "code": "2460",
+    "name": "建通",
+    "price": 39.5,
+    "net_value": 9.37,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 4.37,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2460"
+   },
+   {
+    "code": "6169",
+    "name": "昱泉",
+    "price": 14.75,
+    "net_value": 9.39,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 4.39,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6169"
+   },
+   {
+    "code": "4139",
+    "name": "馬光-KY",
+    "price": 24.75,
+    "net_value": 9.43,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 4.43,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4139"
+   },
+   {
+    "code": "8092",
+    "name": "建暐",
+    "price": 14.6,
+    "net_value": 9.43,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 4.43,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8092"
+   },
+   {
+    "code": "3325",
+    "name": "旭品",
+    "price": 13.4,
+    "net_value": 9.49,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 4.49,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3325"
+   },
+   {
+    "code": "5310",
+    "name": "天剛",
+    "price": 25.95,
+    "net_value": 9.49,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 4.49,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5310"
+   },
+   {
+    "code": "8422",
+    "name": "可寧衛*",
+    "price": 28.6,
+    "net_value": 9.51,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 4.51,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8422"
+   },
+   {
+    "code": "5468",
+    "name": "凱鈺",
+    "price": 34.05,
+    "net_value": 9.54,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 4.54,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5468"
+   },
+   {
+    "code": "6838",
+    "name": "台新藥",
+    "price": 24.75,
+    "net_value": 9.55,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 4.55,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6838"
+   },
+   {
+    "code": "8121",
+    "name": "越峰",
+    "price": 47.05,
+    "net_value": 9.57,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 4.57,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8121"
+   },
+   {
+    "code": "1471",
+    "name": "首利",
+    "price": 10.9,
+    "net_value": 9.58,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 4.58,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1471"
+   },
+   {
+    "code": "6276",
+    "name": "安鈦克",
+    "price": 22.5,
+    "net_value": 9.58,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 4.58,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6276"
+   },
+   {
+    "code": "2025",
+    "name": "千興",
+    "price": 13.45,
+    "net_value": 9.59,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 4.59,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2025"
+   },
+   {
+    "code": "6140",
+    "name": "訊達",
+    "price": 21.0,
+    "net_value": 9.59,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 4.59,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6140"
+   },
+   {
+    "code": "2431",
+    "name": "聯昌",
+    "price": 12.1,
+    "net_value": 9.62,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 4.62,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2431"
+   },
+   {
+    "code": "8443",
+    "name": "阿瘦",
+    "price": 11.45,
+    "net_value": 9.62,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 4.62,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8443"
+   },
+   {
+    "code": "2712",
+    "name": "遠雄來",
+    "price": 14.75,
+    "net_value": 9.64,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 4.64,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2712"
+   },
+   {
+    "code": "3057",
+    "name": "喬鼎",
+    "price": 19.5,
+    "net_value": 9.65,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 4.65,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3057"
+   },
+   {
+    "code": "4502",
+    "name": "健信",
+    "price": 15.75,
+    "net_value": 9.66,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 4.66,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4502"
+   },
+   {
+    "code": "6657",
+    "name": "華安",
+    "price": 36.75,
+    "net_value": 9.66,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 4.66,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6657"
+   },
+   {
+    "code": "2726",
+    "name": "雅茗-KY",
+    "price": 9.25,
+    "net_value": 9.78,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 4.78,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2726"
+   },
+   {
+    "code": "5905",
+    "name": "南仁湖",
+    "price": 8.83,
+    "net_value": 9.82,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 4.82,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5905"
+   },
+   {
+    "code": "1444",
+    "name": "力麗",
+    "price": 9.15,
+    "net_value": 9.83,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 4.83,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1444"
+   },
+   {
+    "code": "3229",
+    "name": "晟鈦",
+    "price": 41.7,
+    "net_value": 9.87,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 4.87,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3229"
+   },
+   {
+    "code": "6210",
+    "name": "慶生",
+    "price": 19.5,
+    "net_value": 9.92,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 4.92,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6210"
+   },
+   {
+    "code": "8409",
+    "name": "商之器",
+    "price": 19.2,
+    "net_value": 9.96,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 4.96,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8409"
+   },
+   {
+    "code": "3313",
+    "name": "斐成",
+    "price": 12.2,
+    "net_value": 9.99,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 4.99,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3313"
+   }
+  ],
+  "recover": [
+   {
+    "code": "2321",
+    "name": "東訊",
+    "price": 13.6,
+    "net_value": 5.8,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 0.8,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2321"
+   },
+   {
+    "code": "3018",
+    "name": "隆銘綠能",
+    "price": 12.05,
+    "net_value": 6.78,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 1.78,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3018"
+   },
+   {
+    "code": "8093",
+    "name": "保銳",
+    "price": 20.0,
+    "net_value": 6.84,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 1.84,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8093"
+   },
+   {
+    "code": "5301",
+    "name": "寶得利",
+    "price": 6.17,
+    "net_value": 7.96,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": 2.96,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5301"
+   },
+   {
+    "code": "2380",
+    "name": "虹光",
+    "price": 22.2,
+    "net_value": 9.54,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 4.54,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2380"
+   },
+   {
+    "code": "1213",
+    "name": "大飲",
+    "price": 7.58,
+    "net_value": 11.16,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": 6.16,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1213"
+   }
+  ],
+  "official": [
+   {
+    "code": "8444",
+    "name": "綠河-KY",
+    "price": 5.14,
+    "net_value": 0.05,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": -4.95,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8444"
+   },
+   {
+    "code": "2314",
+    "name": "台揚",
+    "price": 13.9,
+    "net_value": 0.53,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": -4.47,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2314"
+   },
+   {
+    "code": "3664",
+    "name": "安瑞-KY",
+    "price": 7.6,
+    "net_value": 0.8,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": -4.2,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3664"
+   },
+   {
+    "code": "4943",
+    "name": "康控-KY",
+    "price": 8.88,
+    "net_value": 1.38,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": -3.62,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4943"
+   },
+   {
+    "code": "3629",
+    "name": "地心引力",
+    "price": 14.85,
+    "net_value": 1.4,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": -3.6,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3629"
+   },
+   {
+    "code": "4609",
+    "name": "唐鋒",
+    "price": 5.3,
+    "net_value": 2.86,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": -2.14,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4609"
+   },
+   {
+    "code": "3632",
+    "name": "研勤",
+    "price": 7.8,
+    "net_value": 2.98,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": -2.02,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3632"
+   },
+   {
+    "code": "6225",
+    "name": "天瀚",
+    "price": 23.5,
+    "net_value": 3.0,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": -2.0,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6225"
+   },
+   {
+    "code": "4529",
+    "name": "淳紳",
+    "price": 4.47,
+    "net_value": 3.37,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": -1.63,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4529"
+   },
+   {
+    "code": "5701",
+    "name": "劍湖山",
+    "price": 5.0,
+    "net_value": 3.5,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": -1.5,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5701"
+   },
+   {
+    "code": "6236",
+    "name": "中湛",
+    "price": 17.05,
+    "net_value": 3.74,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": -1.26,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6236"
+   },
+   {
+    "code": "8291",
+    "name": "尚茂",
+    "price": 37.0,
+    "net_value": 3.74,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": -1.26,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8291"
+   },
+   {
+    "code": "1538",
+    "name": "正峰",
+    "price": 10.7,
+    "net_value": 3.89,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": -1.11,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1538"
+   },
+   {
+    "code": "3593",
+    "name": "力銘",
+    "price": 14.75,
+    "net_value": 4.14,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": -0.86,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3593"
+   },
+   {
+    "code": "3710",
+    "name": "連展投控",
+    "price": 6.0,
+    "net_value": 4.14,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": -0.86,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3710"
+   },
+   {
+    "code": "3064",
+    "name": "泰偉",
+    "price": 20.0,
+    "net_value": 4.37,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": -0.63,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3064"
+   },
+   {
+    "code": "5355",
+    "name": "佳總",
+    "price": 6.2,
+    "net_value": 4.38,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": -0.62,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5355"
+   },
+   {
+    "code": "2424",
+    "name": "隴華",
+    "price": 10.0,
+    "net_value": 4.64,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": -0.36,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2424"
+   },
+   {
+    "code": "8101",
+    "name": "華冠",
+    "price": 13.3,
+    "net_value": 4.75,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "gap": -0.25,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8101"
+   },
+   {
+    "code": "3508",
+    "name": "位速",
+    "price": 18.0,
+    "net_value": 4.76,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": -0.24,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3508"
+   },
+   {
+    "code": "8277",
+    "name": "商丞",
+    "price": 8.93,
+    "net_value": 4.84,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": -0.16,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8277"
+   },
+   {
+    "code": "8933",
+    "name": "愛地雅",
+    "price": 4.68,
+    "net_value": 4.94,
+    "nv_quarter": "26Q1",
+    "market": "上櫃",
+    "gap": -0.06,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8933"
+   },
+   {
+    "code": "9110",
+    "name": "越南控-DR",
+    "market": "上市",
+    "price": null,
+    "net_value": null,
+    "nv_quarter": "",
+    "gap": null,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=9110",
+    "note": "淨值排行未見（可能停止交易）"
+   },
+   {
+    "code": "4744",
+    "name": "皇將",
+    "market": "上櫃",
+    "price": null,
+    "net_value": null,
+    "nv_quarter": "",
+    "gap": null,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4744",
+    "note": "淨值排行未見（可能停止交易）"
+   }
+  ]
+ },
+ "tpex_other_flags": [
+  {
+   "code": "1591",
+   "name": "駿吉-KY",
+   "market": "上櫃",
+   "flags": [
+    "SuspensionOfTrading"
+   ]
+  },
+  {
+   "code": "4804",
+   "name": "大略-KY",
+   "market": "上櫃",
+   "flags": [
+    "SuspensionOfTrading"
+   ]
+  }
+ ]
+}
