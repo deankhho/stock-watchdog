@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-07-06T23:52:56.121404",
+ "generated_at": "2026-07-07T13:24:30.361431",
  "nv_fetched_at": "2026-07-06T15:05:28.376730",
- "official_fetched_at": "2026-07-06T15:06:47.457057",
- "days_to_report": 39,
+ "official_fetched_at": "2026-07-07T13:22:06.644381",
+ "days_to_report": 38,
  "next_report_deadline": "2026-08-14",
  "new_reports_count": 0,
  "new_reports_crossings": 0,
@@ -15,6 +15,11 @@
     "net_value": 1.15,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": -3.85,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3086"
    },
@@ -25,6 +30,11 @@
     "net_value": 1.47,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "可信用交易"
+    },
     "gap": -3.53,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4157"
    },
@@ -35,6 +45,11 @@
     "net_value": 3.29,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "非信用交易標的"
+    },
     "gap": -1.71,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=7827"
    }
@@ -47,6 +62,11 @@
     "net_value": 5.02,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 0.02,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4304"
    },
@@ -57,6 +77,11 @@
     "net_value": 5.11,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 0.11,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1516"
    },
@@ -67,6 +92,11 @@
     "net_value": 5.13,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 0.13,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2067"
    },
@@ -77,6 +107,11 @@
     "net_value": 5.15,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 0.15,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3625"
    },
@@ -87,6 +122,11 @@
     "net_value": 5.21,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 0.21,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3259"
    },
@@ -97,6 +137,14 @@
     "net_value": 5.23,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": {
+      "reason": "最近十個營業日已有六次",
+      "period": "115/06/26～115/07/09"
+     },
+     "credit": "停資停券"
+    },
     "gap": 0.23,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6141"
    },
@@ -107,6 +155,11 @@
     "net_value": 5.32,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 0.32,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8477"
    },
@@ -117,6 +170,11 @@
     "net_value": 5.52,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 0.52,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3191"
    },
@@ -127,6 +185,11 @@
     "net_value": 5.56,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 0.56,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6461"
    },
@@ -137,6 +200,11 @@
     "net_value": 5.58,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 0.58,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6550"
    },
@@ -147,6 +215,11 @@
     "net_value": 5.63,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 0.63,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5345"
    },
@@ -157,6 +230,11 @@
     "net_value": 5.68,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "非信用交易標的"
+    },
     "gap": 0.68,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4419"
    },
@@ -167,6 +245,11 @@
     "net_value": 5.68,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 0.68,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6431"
    },
@@ -177,6 +260,11 @@
     "net_value": 5.68,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 0.68,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8937"
    },
@@ -187,6 +275,11 @@
     "net_value": 5.7,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 0.7,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3085"
    },
@@ -197,6 +290,11 @@
     "net_value": 5.76,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 0.76,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2208"
    },
@@ -207,6 +305,11 @@
     "net_value": 5.77,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 0.77,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1799"
    },
@@ -217,6 +320,11 @@
     "net_value": 5.8,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 0.8,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3494"
    },
@@ -227,6 +335,11 @@
     "net_value": 5.86,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 0.86,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8059"
    },
@@ -237,6 +350,11 @@
     "net_value": 5.93,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 0.93,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1441"
    }
@@ -249,6 +367,11 @@
     "net_value": 6.02,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 1.02,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6919"
    },
@@ -259,6 +382,11 @@
     "net_value": 6.06,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "非信用交易標的"
+    },
     "gap": 1.06,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=7803"
    },
@@ -269,6 +397,11 @@
     "net_value": 6.12,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "非信用交易標的"
+    },
     "gap": 1.12,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5205"
    },
@@ -279,6 +412,11 @@
     "net_value": 6.18,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 1.18,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3523"
    },
@@ -289,6 +427,11 @@
     "net_value": 6.21,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 1.21,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2438"
    },
@@ -299,6 +442,11 @@
     "net_value": 6.27,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "非信用交易標的"
+    },
     "gap": 1.27,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8067"
    },
@@ -309,6 +457,11 @@
     "net_value": 6.34,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 1.34,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5344"
    },
@@ -319,6 +472,11 @@
     "net_value": 6.39,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 1.39,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3234"
    },
@@ -329,6 +487,11 @@
     "net_value": 6.39,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "非信用交易標的"
+    },
     "gap": 1.39,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4154"
    },
@@ -339,6 +502,14 @@
     "net_value": 6.4,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": {
+      "reason": "因連續3個營業日達本中心作業要點第四條第",
+      "period": "1150624~1150707"
+     },
+     "credit": "停資停券"
+    },
     "gap": 1.4,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5227"
    },
@@ -349,6 +520,11 @@
     "net_value": 6.44,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 1.44,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4806"
    },
@@ -359,6 +535,11 @@
     "net_value": 6.5,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 1.5,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5324"
    },
@@ -369,6 +550,11 @@
     "net_value": 6.51,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "非信用交易標的"
+    },
     "gap": 1.51,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4195"
    },
@@ -379,6 +565,11 @@
     "net_value": 6.52,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "可信用交易"
+    },
     "gap": 1.52,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5314"
    },
@@ -389,6 +580,11 @@
     "net_value": 6.57,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 1.57,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1781"
    },
@@ -399,6 +595,11 @@
     "net_value": 6.57,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "可信用交易"
+    },
     "gap": 1.57,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3093"
    },
@@ -409,6 +610,11 @@
     "net_value": 6.57,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 1.57,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6598"
    },
@@ -419,6 +625,11 @@
     "net_value": 6.59,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 1.59,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3288"
    },
@@ -429,6 +640,11 @@
     "net_value": 6.62,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "非信用交易標的"
+    },
     "gap": 1.62,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4192"
    },
@@ -439,6 +655,11 @@
     "net_value": 6.79,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 1.79,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4934"
    },
@@ -449,6 +670,11 @@
     "net_value": 6.81,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "非信用交易標的"
+    },
     "gap": 1.81,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=7780"
    },
@@ -459,6 +685,11 @@
     "net_value": 6.81,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 1.81,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=9912"
    },
@@ -469,6 +700,11 @@
     "net_value": 6.83,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 1.83,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2035"
    },
@@ -479,6 +715,11 @@
     "net_value": 6.85,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 1.85,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1512"
    },
@@ -489,6 +730,11 @@
     "net_value": 6.91,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 1.91,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6443"
    },
@@ -499,6 +745,11 @@
     "net_value": 6.98,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "非信用交易標的"
+    },
     "gap": 1.98,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3349"
    },
@@ -509,6 +760,14 @@
     "net_value": 7.02,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": {
+      "reason": "連續三次",
+      "period": "115/06/30～115/07/13"
+     },
+     "credit": "停資停券"
+    },
     "gap": 2.02,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1435"
    },
@@ -519,6 +778,11 @@
     "net_value": 7.04,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 2.04,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6264"
    },
@@ -529,6 +793,11 @@
     "net_value": 7.08,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 2.08,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2724"
    },
@@ -539,6 +808,11 @@
     "net_value": 7.12,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 2.12,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3432"
    },
@@ -549,6 +823,11 @@
     "net_value": 7.12,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "非信用交易標的"
+    },
     "gap": 2.12,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4131"
    },
@@ -559,6 +838,11 @@
     "net_value": 7.12,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "可信用交易"
+    },
     "gap": 2.12,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8932"
    },
@@ -569,6 +853,11 @@
     "net_value": 7.14,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "非信用交易標的"
+    },
     "gap": 2.14,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2258"
    },
@@ -579,6 +868,11 @@
     "net_value": 7.18,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 2.18,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4726"
    },
@@ -589,6 +883,11 @@
     "net_value": 7.21,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 2.21,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8201"
    },
@@ -599,6 +898,11 @@
     "net_value": 7.35,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 2.35,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2444"
    },
@@ -609,6 +913,11 @@
     "net_value": 7.36,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 2.36,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6152"
    },
@@ -619,6 +928,11 @@
     "net_value": 7.39,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 2.39,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6645"
    },
@@ -629,6 +943,11 @@
     "net_value": 7.46,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "非信用交易標的"
+    },
     "gap": 2.46,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3115"
    },
@@ -639,6 +958,11 @@
     "net_value": 7.47,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "非信用交易標的"
+    },
     "gap": 2.47,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6872"
    },
@@ -649,6 +973,11 @@
     "net_value": 7.49,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 2.49,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5475"
    },
@@ -659,6 +988,11 @@
     "net_value": 7.51,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 2.51,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2007"
    },
@@ -669,6 +1003,11 @@
     "net_value": 7.51,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 2.51,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6573"
    },
@@ -679,6 +1018,11 @@
     "net_value": 7.62,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 2.62,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3672"
    },
@@ -689,6 +1033,11 @@
     "net_value": 7.63,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "非信用交易標的"
+    },
     "gap": 2.63,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5348"
    },
@@ -699,6 +1048,11 @@
     "net_value": 7.66,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "非信用交易標的"
+    },
     "gap": 2.66,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8038"
    },
@@ -709,6 +1063,11 @@
     "net_value": 7.67,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 2.67,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8935"
    },
@@ -719,6 +1078,11 @@
     "net_value": 7.69,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 2.69,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3522"
    },
@@ -729,6 +1093,11 @@
     "net_value": 7.71,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 2.71,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5703"
    },
@@ -739,6 +1108,11 @@
     "net_value": 7.71,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "非信用交易標的"
+    },
     "gap": 2.71,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8084"
    },
@@ -749,6 +1123,11 @@
     "net_value": 7.72,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 2.72,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5484"
    },
@@ -759,6 +1138,11 @@
     "net_value": 7.73,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 2.73,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3058"
    },
@@ -769,6 +1153,11 @@
     "net_value": 7.76,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 2.76,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6241"
    },
@@ -779,6 +1168,11 @@
     "net_value": 7.8,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 2.8,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3419"
    },
@@ -789,6 +1183,11 @@
     "net_value": 7.8,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 2.8,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5302"
    },
@@ -799,6 +1198,11 @@
     "net_value": 7.8,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 2.8,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6492"
    },
@@ -809,6 +1213,11 @@
     "net_value": 7.81,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 2.81,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3321"
    },
@@ -819,6 +1228,11 @@
     "net_value": 7.81,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "非信用交易標的"
+    },
     "gap": 2.81,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3713"
    },
@@ -829,6 +1243,11 @@
     "net_value": 7.82,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 2.82,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6144"
    },
@@ -839,6 +1258,11 @@
     "net_value": 7.89,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 2.89,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2349"
    },
@@ -849,6 +1273,11 @@
     "net_value": 7.93,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "非信用交易標的"
+    },
     "gap": 2.93,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4188"
    },
@@ -859,6 +1288,11 @@
     "net_value": 8.04,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 3.04,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3576"
    },
@@ -869,6 +1303,11 @@
     "net_value": 8.05,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 3.05,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4168"
    },
@@ -879,6 +1318,11 @@
     "net_value": 8.08,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 3.08,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3499"
    },
@@ -889,6 +1333,11 @@
     "net_value": 8.1,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "非信用交易標的"
+    },
     "gap": 3.1,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6733"
    },
@@ -899,6 +1348,11 @@
     "net_value": 8.16,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 3.16,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=9929"
    },
@@ -909,6 +1363,11 @@
     "net_value": 8.25,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 3.25,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4534"
    },
@@ -919,6 +1378,11 @@
     "net_value": 8.29,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 3.29,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8080"
    },
@@ -929,6 +1393,11 @@
     "net_value": 8.3,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 3.3,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8176"
    },
@@ -939,6 +1408,11 @@
     "net_value": 8.33,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "非信用交易標的"
+    },
     "gap": 3.33,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6535"
    },
@@ -949,6 +1423,11 @@
     "net_value": 8.34,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 3.34,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2014"
    },
@@ -959,6 +1438,11 @@
     "net_value": 8.43,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 3.43,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8450"
    },
@@ -969,6 +1453,11 @@
     "net_value": 8.44,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 3.44,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1413"
    },
@@ -979,6 +1468,11 @@
     "net_value": 8.44,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 3.44,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5543"
    },
@@ -989,6 +1483,11 @@
     "net_value": 8.47,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "非信用交易標的"
+    },
     "gap": 3.47,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2740"
    },
@@ -999,6 +1498,11 @@
     "net_value": 8.5,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 3.5,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1460"
    },
@@ -1009,6 +1513,11 @@
     "net_value": 8.54,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 3.54,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3372"
    },
@@ -1019,6 +1528,11 @@
     "net_value": 8.56,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 3.56,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2429"
    },
@@ -1029,6 +1543,11 @@
     "net_value": 8.57,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 3.57,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6142"
    },
@@ -1039,6 +1558,11 @@
     "net_value": 8.61,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 3.61,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3122"
    },
@@ -1049,6 +1573,11 @@
     "net_value": 8.63,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 3.63,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6109"
    },
@@ -1059,6 +1588,11 @@
     "net_value": 8.69,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 3.69,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1721"
    },
@@ -1069,6 +1603,11 @@
     "net_value": 8.7,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "非信用交易標的"
+    },
     "gap": 3.7,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4178"
    },
@@ -1079,6 +1618,11 @@
     "net_value": 8.73,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 3.73,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3686"
    },
@@ -1089,6 +1633,11 @@
     "net_value": 8.73,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "非信用交易標的"
+    },
     "gap": 3.73,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4402"
    },
@@ -1099,6 +1648,11 @@
     "net_value": 8.73,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 3.73,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=9950"
    },
@@ -1109,6 +1663,11 @@
     "net_value": 8.79,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "非信用交易標的"
+    },
     "gap": 3.79,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6921"
    },
@@ -1119,6 +1678,11 @@
     "net_value": 8.8,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 3.8,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3049"
    },
@@ -1129,6 +1693,11 @@
     "net_value": 8.85,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "非信用交易標的"
+    },
     "gap": 3.85,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6576"
    },
@@ -1139,6 +1708,14 @@
     "net_value": 8.88,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": {
+      "reason": "因連續3個營業日達本中心作業要點第四條第",
+      "period": "1150630~1150713"
+     },
+     "credit": "停資停券"
+    },
     "gap": 3.88,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8024"
    },
@@ -1149,6 +1726,11 @@
     "net_value": 8.9,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 3.9,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2924"
    },
@@ -1159,6 +1741,11 @@
     "net_value": 8.91,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 3.91,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3228"
    },
@@ -1169,6 +1756,11 @@
     "net_value": 8.97,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "非信用交易標的"
+    },
     "gap": 3.97,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4198"
    },
@@ -1179,6 +1771,11 @@
     "net_value": 8.98,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 3.98,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8085"
    },
@@ -1189,6 +1786,14 @@
     "net_value": 9.02,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": {
+      "reason": "連續三次",
+      "period": "115/07/06～115/07/17"
+     },
+     "credit": "停資停券"
+    },
     "gap": 4.02,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1447"
    },
@@ -1199,6 +1804,11 @@
     "net_value": 9.07,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 4.07,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1468"
    },
@@ -1209,6 +1819,11 @@
     "net_value": 9.07,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 4.07,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3685"
    },
@@ -1219,6 +1834,11 @@
     "net_value": 9.11,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 4.11,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5516"
    },
@@ -1229,6 +1849,11 @@
     "net_value": 9.12,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 4.12,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2601"
    },
@@ -1239,6 +1864,11 @@
     "net_value": 9.13,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 4.13,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6129"
    },
@@ -1249,6 +1879,11 @@
     "net_value": 9.14,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 4.14,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6160"
    },
@@ -1259,6 +1894,11 @@
     "net_value": 9.16,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "非信用交易標的"
+    },
     "gap": 4.16,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4950"
    },
@@ -1269,6 +1909,11 @@
     "net_value": 9.24,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 4.24,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4108"
    },
@@ -1279,6 +1924,11 @@
     "net_value": 9.29,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 4.29,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8047"
    },
@@ -1289,6 +1939,11 @@
     "net_value": 9.3,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 4.3,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6228"
    },
@@ -1299,6 +1954,11 @@
     "net_value": 9.32,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 4.32,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1506"
    },
@@ -1309,6 +1969,11 @@
     "net_value": 9.35,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 4.35,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2516"
    },
@@ -1319,6 +1984,11 @@
     "net_value": 9.37,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 4.37,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2460"
    },
@@ -1329,6 +1999,11 @@
     "net_value": 9.39,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 4.39,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6169"
    },
@@ -1339,6 +2014,11 @@
     "net_value": 9.43,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 4.43,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4139"
    },
@@ -1349,6 +2029,11 @@
     "net_value": 9.43,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "非信用交易標的"
+    },
     "gap": 4.43,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8092"
    },
@@ -1359,6 +2044,11 @@
     "net_value": 9.49,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 4.49,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3325"
    },
@@ -1369,6 +2059,11 @@
     "net_value": 9.49,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 4.49,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5310"
    },
@@ -1379,6 +2074,11 @@
     "net_value": 9.51,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "可信用交易"
+    },
     "gap": 4.51,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8422"
    },
@@ -1389,6 +2089,14 @@
     "net_value": 9.54,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": {
+      "reason": "因連續3個營業日達本中心作業要點第四條第",
+      "period": "1150624~1150707"
+     },
+     "credit": "停資停券"
+    },
     "gap": 4.54,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5468"
    },
@@ -1399,6 +2107,11 @@
     "net_value": 9.55,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 4.55,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6838"
    },
@@ -1409,6 +2122,11 @@
     "net_value": 9.57,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 4.57,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8121"
    },
@@ -1419,6 +2137,11 @@
     "net_value": 9.58,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 4.58,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1471"
    },
@@ -1429,6 +2152,11 @@
     "net_value": 9.58,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 4.58,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6276"
    },
@@ -1439,6 +2167,11 @@
     "net_value": 9.59,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 4.59,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2025"
    },
@@ -1449,6 +2182,11 @@
     "net_value": 9.59,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 4.59,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6140"
    },
@@ -1459,6 +2197,11 @@
     "net_value": 9.62,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 4.62,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2431"
    },
@@ -1469,6 +2212,11 @@
     "net_value": 9.62,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 4.62,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8443"
    },
@@ -1479,6 +2227,11 @@
     "net_value": 9.64,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 4.64,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2712"
    },
@@ -1489,6 +2242,11 @@
     "net_value": 9.65,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 4.65,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3057"
    },
@@ -1499,6 +2257,11 @@
     "net_value": 9.66,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 4.66,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4502"
    },
@@ -1509,6 +2272,11 @@
     "net_value": 9.66,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 4.66,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6657"
    },
@@ -1519,6 +2287,11 @@
     "net_value": 9.78,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 4.78,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2726"
    },
@@ -1529,6 +2302,11 @@
     "net_value": 9.82,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 4.82,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5905"
    },
@@ -1539,6 +2317,11 @@
     "net_value": 9.83,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 4.83,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1444"
    },
@@ -1549,6 +2332,11 @@
     "net_value": 9.87,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 4.87,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3229"
    },
@@ -1559,6 +2347,11 @@
     "net_value": 9.92,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 4.92,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6210"
    },
@@ -1569,6 +2362,11 @@
     "net_value": 9.96,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "非信用交易標的"
+    },
     "gap": 4.96,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8409"
    },
@@ -1579,6 +2377,11 @@
     "net_value": 9.99,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
     "gap": 4.99,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3313"
    }
@@ -1591,6 +2394,11 @@
     "net_value": 5.8,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": true,
+     "disposal": null,
+     "credit": "停止信用（全額交割）"
+    },
     "gap": 0.8,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2321"
    },
@@ -1601,6 +2409,11 @@
     "net_value": 6.78,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": true,
+     "disposal": null,
+     "credit": "停止信用（全額交割）"
+    },
     "gap": 1.78,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3018"
    },
@@ -1611,6 +2424,11 @@
     "net_value": 6.84,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": true,
+     "disposal": null,
+     "credit": "停止信用（全額交割）"
+    },
     "gap": 1.84,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8093"
    },
@@ -1621,6 +2439,11 @@
     "net_value": 7.96,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": true,
+     "disposal": null,
+     "credit": "停止信用（全額交割）"
+    },
     "gap": 2.96,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5301"
    },
@@ -1631,6 +2454,11 @@
     "net_value": 9.54,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": true,
+     "disposal": null,
+     "credit": "停止信用（全額交割）"
+    },
     "gap": 4.54,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2380"
    },
@@ -1641,6 +2469,11 @@
     "net_value": 11.16,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": true,
+     "disposal": null,
+     "credit": "停止信用（全額交割）"
+    },
     "gap": 6.16,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1213"
    }
@@ -1653,6 +2486,11 @@
     "net_value": 0.05,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": true,
+     "disposal": null,
+     "credit": "停止信用（全額交割）"
+    },
     "gap": -4.95,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8444"
    },
@@ -1663,6 +2501,11 @@
     "net_value": 0.53,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": true,
+     "disposal": null,
+     "credit": "停止信用（全額交割）"
+    },
     "gap": -4.47,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2314"
    },
@@ -1673,6 +2516,11 @@
     "net_value": 0.8,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": true,
+     "disposal": null,
+     "credit": "停止信用（全額交割）"
+    },
     "gap": -4.2,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3664"
    },
@@ -1683,6 +2531,11 @@
     "net_value": 1.38,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": true,
+     "disposal": null,
+     "credit": "停止信用（全額交割）"
+    },
     "gap": -3.62,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4943"
    },
@@ -1693,6 +2546,11 @@
     "net_value": 1.4,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": true,
+     "disposal": null,
+     "credit": "停止信用（全額交割）"
+    },
     "gap": -3.6,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3629"
    },
@@ -1703,6 +2561,11 @@
     "net_value": 2.86,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": true,
+     "disposal": null,
+     "credit": "停止信用（全額交割）"
+    },
     "gap": -2.14,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4609"
    },
@@ -1713,6 +2576,11 @@
     "net_value": 2.98,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": true,
+     "disposal": null,
+     "credit": "停止信用（全額交割）"
+    },
     "gap": -2.02,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3632"
    },
@@ -1723,6 +2591,11 @@
     "net_value": 3.0,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": true,
+     "disposal": null,
+     "credit": "停止信用（全額交割）"
+    },
     "gap": -2.0,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6225"
    },
@@ -1733,6 +2606,11 @@
     "net_value": 3.37,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": true,
+     "disposal": null,
+     "credit": "停止信用（全額交割）"
+    },
     "gap": -1.63,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4529"
    },
@@ -1743,6 +2621,11 @@
     "net_value": 3.5,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": true,
+     "disposal": null,
+     "credit": "停止信用（全額交割）"
+    },
     "gap": -1.5,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5701"
    },
@@ -1753,6 +2636,11 @@
     "net_value": 3.74,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": true,
+     "disposal": null,
+     "credit": "停止信用（全額交割）"
+    },
     "gap": -1.26,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6236"
    },
@@ -1763,6 +2651,11 @@
     "net_value": 3.74,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": true,
+     "disposal": null,
+     "credit": "停止信用（全額交割）"
+    },
     "gap": -1.26,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8291"
    },
@@ -1773,6 +2666,11 @@
     "net_value": 3.89,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": true,
+     "disposal": null,
+     "credit": "停止信用（全額交割）"
+    },
     "gap": -1.11,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1538"
    },
@@ -1783,6 +2681,11 @@
     "net_value": 4.14,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": true,
+     "disposal": null,
+     "credit": "停止信用（全額交割）"
+    },
     "gap": -0.86,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3593"
    },
@@ -1793,6 +2696,11 @@
     "net_value": 4.14,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": true,
+     "disposal": null,
+     "credit": "停止信用（全額交割）"
+    },
     "gap": -0.86,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3710"
    },
@@ -1803,6 +2711,11 @@
     "net_value": 4.37,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": true,
+     "disposal": null,
+     "credit": "停止信用（全額交割）"
+    },
     "gap": -0.63,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3064"
    },
@@ -1813,6 +2726,11 @@
     "net_value": 4.38,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": true,
+     "disposal": null,
+     "credit": "停止信用（全額交割）"
+    },
     "gap": -0.62,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5355"
    },
@@ -1823,6 +2741,11 @@
     "net_value": 4.64,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": true,
+     "disposal": null,
+     "credit": "停止信用（全額交割）"
+    },
     "gap": -0.36,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2424"
    },
@@ -1833,6 +2756,11 @@
     "net_value": 4.75,
     "nv_quarter": "26Q1",
     "market": "上市",
+    "status": {
+     "full_delivery": true,
+     "disposal": null,
+     "credit": "停止信用（全額交割）"
+    },
     "gap": -0.25,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8101"
    },
@@ -1843,6 +2771,11 @@
     "net_value": 4.76,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": true,
+     "disposal": null,
+     "credit": "停止信用（全額交割）"
+    },
     "gap": -0.24,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3508"
    },
@@ -1853,6 +2786,11 @@
     "net_value": 4.84,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": true,
+     "disposal": null,
+     "credit": "停止信用（全額交割）"
+    },
     "gap": -0.16,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8277"
    },
@@ -1863,6 +2801,11 @@
     "net_value": 4.94,
     "nv_quarter": "26Q1",
     "market": "上櫃",
+    "status": {
+     "full_delivery": true,
+     "disposal": null,
+     "credit": "停止信用（全額交割）"
+    },
     "gap": -0.06,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8933"
    },

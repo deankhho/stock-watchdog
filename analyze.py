@@ -69,6 +69,35 @@ def selftest():
 QSEEN_FILE = BASE / "data" / "quarter_seen.json"
 
 
+def stock_status(code: str, is_full: bool, disposal: dict, margin: dict, market: str) -> dict:
+    """官方現況（S8）：全額交割/處置/信用交易實際狀態
+    信用註記（MI_MARGN 官方說明實測）：O=停止融資、X=停止融券、!=停止買賣；
+    上市不在餘額表＝非融資融券標的；上櫃全板在表、看 Note 內 O/X。"""
+    st = {"full_delivery": is_full}
+    d = disposal.get(code)
+    st["disposal"] = {"reason": d["reason"][:20], "period": d["period"]} if d else None
+    m = margin.get(code)
+    if is_full:
+        credit = "停止信用（全額交割）"
+    elif m is None:
+        credit = "非信用交易標的"   # 雙市場同義：停止中的股仍會留在餘額表（8444實證），不在表=非標的
+    else:
+        mark = m["mark"]
+        has_o, has_x = "O" in mark, "X" in mark
+        if "!" in mark:
+            credit = "停止買賣"
+        elif has_o and has_x:
+            credit = "停資停券"
+        elif has_o:
+            credit = "停止融資"
+        elif has_x:
+            credit = "停止融券"
+        else:
+            credit = "可信用交易"
+    st["credit"] = credit
+    return st
+
+
 def detect_new_reports(rows: list) -> dict:
     """偵測「交出新財報」：與上次記錄的財報季度比對（quarter_seen.json）
     回傳 {code: {"delta": Δ淨值, "prev_nv":, "prev_q":, "crossing": 警示, "since": 首見日}}
@@ -135,6 +164,10 @@ def main():
         item = dict(r)
         if r["code"] in new_reports:
             item["new_report"] = new_reports[r["code"]]
+        item["status"] = stock_status(r["code"], r["code"] in official_codes,
+                                      of_data.get("disposal", {}),
+                                      of_data.get("margin_status", {}),
+                                      market_map.get(r["code"], ""))
         item["market"] = market_map.get(r["code"], "")
         item["gap"] = round(r["net_value"] - NET_VALUE_FULL_DELIVERY, 2)
         item["goodinfo_url"] = f"https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID={r['code']}"

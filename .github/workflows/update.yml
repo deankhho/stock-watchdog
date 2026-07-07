@@ -34,6 +34,15 @@ jobs:
           python backtest.py
           python fetch_listing_dates.py
           python gen_site.py
+      - name: 新財報 Email 通知（S9）
+        run: |
+          COUNT=$(python -c "import json;print(json.load(open('data/report.json'))['new_reports_count'])")
+          if [ "$COUNT" -gt 0 ]; then
+            echo "偵測到 $COUNT 檔新財報，觸發 GAS 寄信"
+            curl -s "https://script.google.com/macros/s/AKfycbwW-9Oy2EJZ8suKmMA1reeYOgZ9NByR_yfSKgmxWSYHl2dMDe7LY-uYjUSuf9zWo6o/exec?token=stockmail2026" || echo "GAS 呼叫失敗（不阻斷流程）"
+          else
+            echo "無新財報，不寄信"
+          fi
       - name: Commit 結果
         run: |
           git config user.name "github-actions"

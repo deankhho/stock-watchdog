@@ -55,6 +55,47 @@ def fetch_tpex_cmode() -> tuple:
     return full, other
 
 
+def fetch_disposal() -> dict:
+    """處置股（雙市場）→ {code: {reason, period, market}}（濾掉權證等非 4-6 碼個股）"""
+    out = {}
+    r = requests.get("https://openapi.twse.com.tw/v1/announcement/punish",
+                     timeout=20, headers=H)
+    for d in r.json():
+        code = d.get("Code", "").strip()
+        if re.match(r"^\d{4}$", code):        # 個股（權證 6 碼濾掉）
+            out[code] = {"reason": d.get("ReasonsOfDisposition", ""),
+                         "period": d.get("DispositionPeriod", ""), "market": "上市"}
+    r = requests.get("https://www.tpex.org.tw/openapi/v1/tpex_disposal_information",
+                     timeout=20, headers=H, verify=False)
+    for d in r.json():
+        code = d.get("SecuritiesCompanyCode", "").strip()
+        if re.match(r"^\d{4}$", code):
+            out[code] = {"reason": d.get("DispositionReasons", ""),
+                         "period": d.get("DispositionPeriod", ""), "market": "上櫃"}
+    return out
+
+
+def fetch_margin_status() -> dict:
+    """信用交易現況 → {code: {"in_universe": bool, "mark": "O/X/OX/..."}}
+    官方註記（MI_MARGN notes 實測）：O=停止融資, X=停止融券, !=停止買賣；
+    不在餘額表內（上市）＝非融資融券標的。上櫃全板都在表內，只看 Note。"""
+    st = {}
+    j = requests.get("https://www.twse.com.tw/exchangeReport/MI_MARGN"
+                     "?response=json&selectType=ALL", timeout=30, headers=H).json()
+    t = next(t for t in j.get("tables", []) if any("代號" in str(f) for f in t.get("fields", [])))
+    for row in t["data"]:
+        code = str(row[0]).strip()
+        if re.match(r"^\d{4}$", code):
+            st[code] = {"in_universe": True, "mark": str(row[-1]).strip()}
+    r = requests.get("https://www.tpex.org.tw/openapi/v1/tpex_mainboard_margin_balance",
+                     timeout=20, headers=H, verify=False)
+    for d in r.json():
+        code = d.get("SecuritiesCompanyCode", "").strip()
+        if re.match(r"^\d{4}$", code):
+            st[code] = {"in_universe": True, "mark": (d.get("Note") or "").strip()}
+    return st
+
+
 def fetch_market_map() -> dict:
     """isin.twse.com.tw 上市(2)/上櫃(4) 全清單 → {code: 市場}"""
     mp = {}
@@ -72,6 +113,8 @@ def main():
         twse = fetch_twse_full_delivery()
         tpex_full, tpex_other = fetch_tpex_cmode()
         market_map = fetch_market_map()
+        disposal = fetch_disposal()
+        margin_status = fetch_margin_status()
     except Exception as e:
         sys.exit(f"官方資料抓取失敗：{e}（不產出舊資料）")
 
@@ -84,9 +127,11 @@ def main():
         "full_delivery": twse + tpex_full,
         "tpex_other_flags": tpex_other,
         "market_map": market_map,
+        "disposal": disposal,
+        "margin_status": margin_status,
     }, ensure_ascii=False))
     print(f"完成：全額交割 上市 {len(twse)} + 上櫃 {len(tpex_full)} 檔；"
-          f"其他狀態 {len(tpex_other)}；市場對照 {len(market_map)} 檔 → {OUT}")
+          f"處置 {len(disposal)}；信用現況 {len(margin_status)} 檔 → {OUT}")
 
 
 if __name__ == "__main__":

@@ -139,6 +139,21 @@ def main():
         rows = g.get(key, [])
         tab_btns.append(f'<button class="tab" data-t="{key}">{label}'
                         f'<span class="n">{len(rows)}</span></button>')
+        def status_chip(r):
+            st = r.get("status") or {}
+            chips = []
+            if st.get("full_delivery"):
+                chips.append('<span class="chip cfull">全額交割</span>')
+            if st.get("disposal"):
+                chips.append(f'<span class="chip cdisp" title="{st["disposal"]["reason"]}">'
+                             f'處置至{st["disposal"]["period"].split("～")[-1]}</span>')
+            credit = st.get("credit", "")
+            if credit == "可信用交易":
+                chips.append('<span class="chip cok">可信用</span>')
+            elif credit:
+                chips.append(f'<span class="chip cstop">{credit}</span>')
+            return "".join(chips) or "-"
+
         def nr_badge(r):
             nr = r.get("new_report")
             if not nr:
@@ -156,18 +171,19 @@ def main():
             trs_list.append(f"""<tr class="main{' isnew' if badge else ''}" onclick="tog(this)">
   <td><a href="{r['goodinfo_url']}" target="_blank" onclick="event.stopPropagation()">{r['code']}</a></td>
   <td>{r['name']} {badge}</td><td>{r.get('market','')}</td>
+  <td class="stcell">{status_chip(r)}</td>
   <td class="num">{fmt(r.get('price'))}</td>
   <td class="num nv">{fmt(r.get('net_value'))}{delta}</td>
   <td class="num {'neg' if (r.get('gap') or 0) < 0 else 'pos'}">{fmt(r.get('gap'))}</td>
   <td>{r.get('nv_quarter','')}{('<span class=note>' + r['note'] + '</span>') if r.get('note') else ''} <span class="exp">▾</span></td>
 </tr>
-<tr class="detail"><td colspan="7">{history_row(r['code'], bt_stocks, r.get('market',''), listing)}</td></tr>""")
+<tr class="detail"><td colspan="8">{history_row(r['code'], bt_stocks, r.get('market',''), listing)}</td></tr>""")
         trs = "".join(trs_list)
         panels.append(f"""<section class="panel" data-t="{key}">
   <p class="desc">{desc}</p>
-  <table><thead><tr><th>代號</th><th>名稱</th><th>市場</th><th>股價</th>
+  <table><thead><tr><th>代號</th><th>名稱</th><th>市場</th><th>官方現況</th><th>股價</th>
     <th>每股淨值</th><th>距5元</th><th>財報季度</th></tr></thead>
-  <tbody>{trs or '<tr><td colspan=7 class=empty>（目前無）</td></tr>'}</tbody></table>
+  <tbody>{trs or '<tr><td colspan=8 class=empty>（目前無）</td></tr>'}</tbody></table>
 </section>""")
 
     html = f"""<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="UTF-8">
@@ -223,9 +239,19 @@ tr.detail td {{ padding:12px; }}
 .delta {{ display:block; font-size:11px; font-weight:400; }}
 .cross {{ display:block; font-size:11px; color:#fbbf24; font-weight:700; }}
 tr.isnew {{ background:rgba(250,204,21,.06); }}
+.stcell {{ white-space:nowrap; }}
+.chip {{ display:inline-block; font-size:10px; font-weight:600; padding:2px 7px;
+  border-radius:6px; margin:1px 2px 1px 0; }}
+.chip.cfull {{ background:#3f3f46; color:#e4e4e7; }}
+.chip.cdisp {{ background:#7c2d12; color:#fdba74; }}
+.chip.cstop {{ background:#7f1d1d; color:#fecaca; }}
+.chip.cok {{ background:#14532d; color:#86efac; }}
+@media (max-width:640px) {{
+  th:nth-child(5), td:nth-child(5) {{ display:none; }}   /* 手機藏股價，保留現況 */
+}}
 @media (max-width:640px) {{
   body {{ padding:12px; }}
-  th:nth-child(7), td:nth-child(7) {{ display:none; }}
+  th:nth-child(8), td:nth-child(8) {{ display:none; }}
   table {{ font-size:12px; }}
 }}
 </style></head><body>
