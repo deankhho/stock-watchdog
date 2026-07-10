@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-07-09T13:32:17.259884",
- "nv_fetched_at": "2026-07-09T13:31:08.233222",
- "official_fetched_at": "2026-07-09T13:32:17.189893",
- "days_to_report": 36,
+ "generated_at": "2026-07-10T12:42:04.601623",
+ "nv_fetched_at": "2026-07-10T12:41:29.514368",
+ "official_fetched_at": "2026-07-10T12:42:04.531365",
+ "days_to_report": 35,
  "next_report_deadline": "2026-08-14",
  "new_reports_count": 0,
  "new_reports_crossings": 0,
@@ -139,10 +139,7 @@
     "market": "上市",
     "status": {
      "full_delivery": false,
-     "disposal": {
-      "reason": "最近十個營業日已有六次",
-      "period": "115/06/26～115/07/09"
-     },
+     "disposal": null,
      "credit": "停資停券"
     },
     "gap": 0.23,
