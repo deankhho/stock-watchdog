@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-07-16T12:04:26.175304",
+ "generated_at": "2026-07-17T11:54:38.501127",
  "nv_fetched_at": "2026-07-14T11:55:21.137071",
- "official_fetched_at": "2026-07-16T12:04:26.103892",
- "days_to_report": 29,
+ "official_fetched_at": "2026-07-17T11:54:38.431718",
+ "days_to_report": 28,
  "next_report_deadline": "2026-08-14",
  "new_reports_count": 0,
  "new_reports_crossings": 0,
@@ -756,10 +756,7 @@
     "market": "上市",
     "status": {
      "full_delivery": false,
-     "disposal": {
-      "reason": "連續三次",
-      "period": "115/07/03～115/07/16"
-     },
+     "disposal": null,
      "credit": "停資停券"
     },
     "gap": 2.02,
@@ -2836,6 +2833,14 @@
   {
    "code": "4804",
    "name": "大略-KY",
+   "market": "上櫃",
+   "flags": [
+    "SuspensionOfTrading"
+   ]
+  },
+  {
+   "code": "020027",
+   "name": "元大上櫃ESG成長N",
    "market": "上櫃",
    "flags": [
     "SuspensionOfTrading"
