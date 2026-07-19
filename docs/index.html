@@ -1866,7 +1866,8 @@ function loadTV(code,market,btn){
   s.innerHTML=JSON.stringify({symbol:(market==='\u4e0a\u5e02'?'TWSE:':'TPEX:')+code,
     autosize:false,width:'100%',height:440,interval:'D',timezone:'Asia/Taipei',
     theme:'dark',style:'1',locale:'zh_TW',allow_symbol_change:false,save_image:false,
-    hide_top_toolbar:false,support_host:'https://www.tradingview.com'});
+    hide_top_toolbar:false,studies:['BB@tv-basicstudies'],
+    support_host:'https://www.tradingview.com'});
   wrap.appendChild(s);
   btn.disabled=true; btn.textContent='\ud83d\udcc8 K線圖已開啟（日K，可用上方工具列加均線）';
 }
