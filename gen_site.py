@@ -127,6 +127,74 @@ def history_row(code: str, bt_stocks: dict, market: str = "", listing: dict = No
     return f'{note}<div class="tl">{chips}</div>{lst}{evs or "<div class=ev>近兩年未觸發門檻事件</div>"}'
 
 
+# ===== S8：watchlist 自選 + TradingView 迷你圖（純前端，普通字串注入避免 f-string 雙括號地獄）=====
+S8_CSS = """
+.star { cursor:pointer; margin-right:6px; font-size:13px; user-select:none; }
+tr.watched { background:rgba(96,165,250,.07); }
+#watchbar { margin:10px 0 0; display:flex; flex-wrap:wrap; gap:6px; }
+.wchip { display:inline-flex; align-items:center; gap:6px; background:#13151B;
+  border:1px solid rgba(255,255,255,.1); border-radius:10px; padding:5px 10px;
+  font-size:12px; cursor:pointer; }
+.wchip .al { color:#fbbf24; font-weight:700; }
+.wchip .wt { color:#9BA3B4; font-size:11px; }
+.tvrow { margin-bottom:8px; display:flex; gap:10px; align-items:center; flex-wrap:wrap; }
+.tvbtn { background:#1d4ed8; color:#dbeafe; border:none; border-radius:8px;
+  padding:5px 10px; font-size:12px; cursor:pointer; }
+.tvbtn:disabled { opacity:.6; cursor:default; }
+.tvlink { font-size:12px; }
+.tvbox { margin-bottom:10px; }
+"""
+
+S8_JS = """
+// ===== S8：watchlist 自選（localStorage）+ TradingView 迷你圖 lazy-load =====
+const WKEY='sw_watchlist';
+function getW(){try{return JSON.parse(localStorage.getItem(WKEY))||[]}catch(e){return[]}}
+function setW(a){localStorage.setItem(WKEY,JSON.stringify(a));}
+function togWatch(code){const w=getW();const i=w.indexOf(code);
+  if(i>=0)w.splice(i,1);else w.push(code);setW(w);refreshStars();renderWatchBar();}
+// 從表格列反查該檔資訊（名稱/所在籤頁），避免另存第二份資料
+function rowInfo(code){
+  const s=document.querySelector('.star[data-code="'+code+'"]');
+  if(!s)return null;
+  const tr=s.closest('tr'), p=s.closest('.panel');
+  return {tr:tr, tab:p.dataset.t, name:tr.children[1].textContent.trim().split(' ')[0]};
+}
+const TABL={}; tabs.forEach(b=>TABL[b.dataset.t]=b.textContent.replace(/\\d+$/,'').trim());
+function refreshStars(){const w=getW();document.querySelectorAll('.star').forEach(s=>{
+  const on=w.indexOf(s.dataset.code)>=0;
+  s.textContent=on?'\\u2b50':'\\u2606';
+  s.closest('tr').classList.toggle('watched',on);});}
+function renderWatchBar(){
+  const bar=document.getElementById('watchbar'); const w=getW();
+  if(!w.length){bar.innerHTML='<span class="wchip" style="cursor:default;opacity:.6">\\u2606 點列表左側星號可釘選自選股，重新整理仍保留（僅存於本機瀏覽器）</span>';return;}
+  bar.innerHTML=w.map(c=>{
+    const info=rowInfo(c);
+    if(!info)return '<span class="wchip" onclick="togWatch(\\''+c+'\\')">'+c+'（不在本期名單，點此移除）</span>';
+    const alert=(info.tab==='predict_in'||info.tab==='official')?' <span class="al">\\u26a0</span>':'';
+    return '<span class="wchip" onclick="gotoRow(\\''+c+'\\')">\\u2b50 '+c+' '+info.name+alert+'<span class="wt">'+(TABL[info.tab]||info.tab)+'</span></span>';
+  }).join('');
+}
+function gotoRow(code){const info=rowInfo(code);if(!info)return;
+  show(info.tab);info.tr.nextElementSibling.classList.add('on');
+  info.tr.scrollIntoView({behavior:'smooth',block:'center'});}
+// TradingView 迷你圖：點按鈕才動態注入 embed script（lazy-load，避免整頁嵌數百個 widget）
+function loadTV(code,market,btn){
+  const box=btn.closest('td').querySelector('.tvbox');
+  if(box.dataset.loaded)return; box.dataset.loaded='1';
+  const wrap=document.createElement('div'); wrap.className='tradingview-widget-container';
+  box.appendChild(wrap);
+  const s=document.createElement('script');
+  s.src='https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js';
+  s.async=true;
+  s.innerHTML=JSON.stringify({symbol:(market==='\\u4e0a\\u5e02'?'TWSE:':'TPEX:')+code,
+    width:'100%',height:220,locale:'zh_TW',dateRange:'6M',colorTheme:'dark',isTransparent:true});
+  wrap.appendChild(s);
+  btn.disabled=true; btn.textContent='\\ud83d\\udcc8 圖表載入中\\u2026（TradingView）';
+}
+refreshStars(); renderWatchBar();
+"""
+
+
 def main():
     rep = json.loads(REPORT.read_text())
     g = rep["groups"]
@@ -168,8 +236,10 @@ def main():
         # 新財報排前面
         for r in sorted(rows, key=lambda x: not x.get("new_report")):
             badge, delta = nr_badge(r)
+            # S8：TradingView symbol 前綴（上市 TWSE、上櫃 TPEX）
+            tvp = 'TWSE' if r.get('market') == '上市' else 'TPEX'
             trs_list.append(f"""<tr class="main{' isnew' if badge else ''}" onclick="tog(this)">
-  <td><a href="{r['goodinfo_url']}" target="_blank" onclick="event.stopPropagation()">{r['code']}</a></td>
+  <td><span class="star" data-code="{r['code']}" onclick="event.stopPropagation();togWatch('{r['code']}')">☆</span><a href="{r['goodinfo_url']}" target="_blank" onclick="event.stopPropagation()">{r['code']}</a></td>
   <td>{r['name']} {badge}</td><td>{r.get('market','')}</td>
   <td class="stcell">{status_chip(r)}</td>
   <td class="num">{fmt(r.get('price'))}</td>
@@ -177,7 +247,7 @@ def main():
   <td class="num {'neg' if (r.get('gap') or 0) < 0 else 'pos'}">{fmt(r.get('gap'))}</td>
   <td>{r.get('nv_quarter','')}{('<span class=note>' + r['note'] + '</span>') if r.get('note') else ''} <span class="exp">▾</span></td>
 </tr>
-<tr class="detail"><td colspan="8">{history_row(r['code'], bt_stocks, r.get('market',''), listing)}</td></tr>""")
+<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadTV('{r['code']}','{r.get('market','')}',this)">📈 載入K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol={tvp}%3A{r['code']}">在 TradingView 開啟 ↗</a></div><div class="tvbox"></div>{history_row(r['code'], bt_stocks, r.get('market',''), listing)}</td></tr>""")
         trs = "".join(trs_list)
         panels.append(f"""<section class="panel" data-t="{key}">
   <p class="desc">{desc}</p>
@@ -254,7 +324,7 @@ tr.isnew {{ background:rgba(250,204,21,.06); }}
   th:nth-child(8), td:nth-child(8) {{ display:none; }}
   table {{ font-size:12px; }}
 }}
-</style></head><body>
+{S8_CSS}</style></head><body>
 <h1>全額交割／信用交易預警</h1>
 <div class="meta">淨值資料：{rep['nv_fetched_at'][:16].replace('T',' ')}（goodinfo）・
 官方名單：{rep['official_fetched_at'][:16].replace('T',' ')}（證交所/櫃買中心）・
@@ -267,6 +337,7 @@ tr.isnew {{ background:rgba(250,204,21,.06); }}
 （跌破5元恐列全額交割／跌破10元恐停信用／回升）——各表 🆕 列已排最前，
 淨值欄顯示變化量 ▲▼</div>''' if rep.get("new_reports_count") else
 '<div class="banner" style="opacity:.7">目前名單內尚無新一季財報（各檔財報季度見表末欄）；新財報公布後此處會醒目提示「哪些股票交出財報、淨值變化、是否穿越門檻」</div>'}
+<div id="watchbar"></div>
 <div class="tabs">{''.join(tab_btns)}</div>
 {''.join(panels)}
 <script>
@@ -289,6 +360,7 @@ document.querySelectorAll('th').forEach((th)=>th.onclick=()=>{{
     const c=(isNaN(nx)||isNaN(ny))?x.localeCompare(y):nx-ny;
     return asc?c:-c;}});
   pairs.forEach(([m,d])=>{{tb.appendChild(m); if(d) tb.appendChild(d);}});}});
+{S8_JS}
 </script></body></html>"""
 
     DOCS.mkdir(exist_ok=True)

@@ -12,3 +12,4 @@
 - [ ] S9 Email 通知：需求已記（藍圖）
 - [x] S8 完成 07-07 13:26：官方現況欄（全額交割/處置至X日/停資停券/停融資/停融券/非信用標的/可信用），信用警戒籤頁現況一目了然
 - [x] S9 完成 07-07 13:26：GAS sendStockMail（token=stockmail2026）+ Actions 步驟；⚠️ 待使用者重新部署 GAS 生效（與 ppt 佇列同一次部署）
+- [x] S8+ watchlist/線圖 07-19：⭐釘選(localStorage sw_watchlist)+watchbar(predict_in/official亮⚠、點chip跳籤頁展開)+展開列TradingView迷你圖lazy-load(上市TWSE:/上櫃TPEX:，點按鈕才注入embed，防重複)；11項DOM stub測試全過；來源=OpenStock想法分析僅移植功能點子
