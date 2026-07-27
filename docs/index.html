@@ -84,14 +84,14 @@ tr.watched { background:rgba(96,165,250,.07); }
 </style></head><body>
 <h1>全額交割／信用交易預警</h1>
 <div class="meta">淨值資料：2026-07-14 11:55（goodinfo）・
-官方名單：2026-07-24 12:03（證交所/櫃買中心）・
+官方名單：2026-07-27 13:27（證交所/櫃買中心）・
 <a href="rules.html">分級規則與法規依據</a>・<a href="backtest.html">歷史驗證</a><br>
-<span class="deadline">下一財報截止：2026-08-14（21 天後）</span>
+<span class="deadline">下一財報截止：2026-08-14（18 天後）</span>
 <a class="updbtn" href="https://github.com/deankhho/stock-watchdog/actions/workflows/update.yml"
   target="_blank">🔄 觸發更新</a></div>
 <div class="banner" style="opacity:.7">目前名單內尚無新一季財報（各檔財報季度見表末欄）；新財報公布後此處會醒目提示「哪些股票交出財報、淨值變化、是否穿越門檻」</div>
 <div id="watchbar"></div>
-<div class="tabs"><button class="tab" data-t="predict_in">🔴 預測打入<span class="n">3</span></button><button class="tab" data-t="recover">🟢 恢復候選<span class="n">6</span></button><button class="tab" data-t="edge">🟠 危險邊緣<span class="n">20</span></button><button class="tab" data-t="margin_risk">🟡 信用警戒<span class="n">134</span></button><button class="tab" data-t="official">⚪ 全額交割中<span class="n">24</span></button></div>
+<div class="tabs"><button class="tab" data-t="predict_in">🔴 預測打入<span class="n">3</span></button><button class="tab" data-t="recover">🟢 恢復候選<span class="n">5</span></button><button class="tab" data-t="edge">🟠 危險邊緣<span class="n">20</span></button><button class="tab" data-t="margin_risk">🟡 信用警戒<span class="n">135</span></button><button class="tab" data-t="official">⚪ 全額交割中<span class="n">24</span></button></div>
 <section class="panel" data-t="predict_in">
   <p class="desc">淨值<5、尚未列全額交割——下次財報後恐公告，提前留意。⚠️ 上市／上櫃規定不同：上市依證交所營業細則第49條、上櫃依櫃買中心業務規則（上櫃另有管理股票/分盤交易制度）——表格「市場」欄區分適用規定，細節見規則頁</p>
   <table><thead><tr><th>代號</th><th>名稱</th><th>市場</th><th>官方現況</th><th>股價</th>
@@ -138,15 +138,6 @@ tr.watched { background:rgba(96,165,250,.07); }
   <td>26Q1 <span class="exp">▾</span></td>
 </tr>
 <tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadTV('2321','上市',this)">📈 載入K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TWSE%3A2321">在 TradingView 開啟 ↗</a></div><div class="tvbox"></div><div class="tl"><div class="q g"><span>24Q3</span>15.0</div><div class="q g"><span>24Q4</span>14.0</div><div class="q g"><span>25Q1</span>12.9</div><div class="q g"><span>25Q2</span>13.9</div><div class="q g"><span>25Q3</span>14.1</div><div class="q y"><span>25Q4</span>6.4</div><div class="q y"><span>26Q1</span>5.8</div></div><div class="ev">📅 2024-07-01 觀測窗起點前已列為全額交割（列入超過兩年，依證交所營業細則第49條）</div><div class="ev">25Q4 淨值 6.36 跌破 10 元 → 依有價證券得為融資融券標準應停止融資融券</div></td></tr><tr class="main" onclick="tog(this)">
-  <td><span class="star" data-code="3018" onclick="event.stopPropagation();togWatch('3018')">☆</span><a href="https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3018" target="_blank" onclick="event.stopPropagation()">3018</a></td>
-  <td>隆銘綠能 </td><td>上市</td>
-  <td class="stcell"><span class="chip cfull">全額交割</span><span class="chip cstop">停止信用（全額交割）</span></td>
-  <td class="num">11.70</td>
-  <td class="num nv">6.78</td>
-  <td class="num pos">1.78</td>
-  <td>26Q1 <span class="exp">▾</span></td>
-</tr>
-<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadTV('3018','上市',this)">📈 載入K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TWSE%3A3018">在 TradingView 開啟 ↗</a></div><div class="tvbox"></div><div class="tl"><div class="q g"><span>24Q3</span>10.1</div><div class="q y"><span>24Q4</span>9.7</div><div class="q y"><span>25Q1</span>9.6</div><div class="q y"><span>25Q2</span>8.9</div><div class="q y"><span>25Q3</span>7.5</div><div class="q y"><span>25Q4</span>7.5</div><div class="q y"><span>26Q1</span>6.8</div></div><div class="ev">📅 2024-07-01 觀測窗起點前已列為全額交割（列入超過兩年，依證交所營業細則第49條）</div><div class="ev">24Q4 淨值 9.69 跌破 10 元 → 依有價證券得為融資融券標準應停止融資融券</div></td></tr><tr class="main" onclick="tog(this)">
   <td><span class="star" data-code="8093" onclick="event.stopPropagation();togWatch('8093')">☆</span><a href="https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8093" target="_blank" onclick="event.stopPropagation()">8093</a></td>
   <td>保銳 </td><td>上櫃</td>
   <td class="stcell"><span class="chip cfull">全額交割</span><span class="chip cstop">停止信用（全額交割）</span></td>
@@ -544,6 +535,15 @@ tr.watched { background:rgba(96,165,250,.07); }
   <td>26Q1 <span class="exp">▾</span></td>
 </tr>
 <tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadTV('4192','上櫃',this)">📈 載入K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TPEX%3A4192">在 TradingView 開啟 ↗</a></div><div class="tvbox"></div><div class="hist-none">近八季資料未納入回測股池（v1 僅含預測打入/邊緣/恢復/名單股）</div></td></tr><tr class="main" onclick="tog(this)">
+  <td><span class="star" data-code="3018" onclick="event.stopPropagation();togWatch('3018')">☆</span><a href="https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3018" target="_blank" onclick="event.stopPropagation()">3018</a></td>
+  <td>隆銘綠能 </td><td>上市</td>
+  <td class="stcell"><span class="chip cstop">停資停券</span></td>
+  <td class="num">11.70</td>
+  <td class="num nv">6.78</td>
+  <td class="num pos">1.78</td>
+  <td>26Q1 <span class="exp">▾</span></td>
+</tr>
+<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadTV('3018','上市',this)">📈 載入K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TWSE%3A3018">在 TradingView 開啟 ↗</a></div><div class="tvbox"></div><div class="hist-none">近八季資料未納入回測股池（v1 僅含預測打入/邊緣/恢復/名單股）</div></td></tr><tr class="main" onclick="tog(this)">
   <td><span class="star" data-code="4934" onclick="event.stopPropagation();togWatch('4934')">☆</span><a href="https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4934" target="_blank" onclick="event.stopPropagation()">4934</a></td>
   <td>太極 </td><td>上市</td>
   <td class="stcell"><span class="chip cstop">停資停券</span></td>

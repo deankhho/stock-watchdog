@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-07-24T12:03:40.458355",
+ "generated_at": "2026-07-27T13:27:40.544874",
  "nv_fetched_at": "2026-07-14T11:55:21.137071",
- "official_fetched_at": "2026-07-24T12:03:40.387417",
- "days_to_report": 21,
+ "official_fetched_at": "2026-07-27T13:27:40.476891",
+ "days_to_report": 18,
  "next_report_deadline": "2026-08-14",
  "new_reports_count": 0,
  "new_reports_crossings": 0,
@@ -644,6 +644,21 @@
     },
     "gap": 1.62,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4192"
+   },
+   {
+    "code": "3018",
+    "name": "隆銘綠能",
+    "price": 11.7,
+    "net_value": 6.78,
+    "nv_quarter": "26Q1",
+    "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停資停券"
+    },
+    "gap": 1.78,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3018"
    },
    {
     "code": "4934",
@@ -2389,21 +2404,6 @@
     },
     "gap": 0.8,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2321"
-   },
-   {
-    "code": "3018",
-    "name": "隆銘綠能",
-    "price": 11.7,
-    "net_value": 6.78,
-    "nv_quarter": "26Q1",
-    "market": "上市",
-    "status": {
-     "full_delivery": true,
-     "disposal": null,
-     "credit": "停止信用（全額交割）"
-    },
-    "gap": 1.78,
-    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3018"
    },
    {
     "code": "8093",
