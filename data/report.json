@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-07-27T13:27:40.544874",
+ "generated_at": "2026-07-28T12:23:45.964778",
  "nv_fetched_at": "2026-07-14T11:55:21.137071",
- "official_fetched_at": "2026-07-27T13:27:40.476891",
- "days_to_report": 18,
+ "official_fetched_at": "2026-07-28T12:23:45.894678",
+ "days_to_report": 17,
  "next_report_deadline": "2026-08-14",
  "new_reports_count": 0,
  "new_reports_crossings": 0,
@@ -2825,14 +2825,6 @@
   ]
  },
  "tpex_other_flags": [
-  {
-   "code": "4130",
-   "name": "健亞",
-   "market": "上櫃",
-   "flags": [
-    "SuspensionOfTrading"
-   ]
-  },
   {
    "code": "4804",
    "name": "大略-KY",
