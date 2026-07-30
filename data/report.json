@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-07-29T12:33:05.671443",
+ "generated_at": "2026-07-30T12:16:40.800058",
  "nv_fetched_at": "2026-07-14T11:55:21.137071",
- "official_fetched_at": "2026-07-29T12:33:05.601090",
- "days_to_report": 16,
+ "official_fetched_at": "2026-07-30T12:16:40.730735",
+ "days_to_report": 15,
  "next_report_deadline": "2026-08-14",
  "new_reports_count": 0,
  "new_reports_crossings": 0,
@@ -2828,6 +2828,14 @@
   {
    "code": "4804",
    "name": "大略-KY",
+   "market": "上櫃",
+   "flags": [
+    "SuspensionOfTrading"
+   ]
+  },
+  {
+   "code": "5904",
+   "name": "寶雅",
    "market": "上櫃",
    "flags": [
     "SuspensionOfTrading"
