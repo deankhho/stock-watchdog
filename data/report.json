@@ -1,43 +1,13 @@
 {
- "generated_at": "2026-07-31T12:31:20.733609",
+ "generated_at": "2026-08-03T13:27:51.704084",
  "nv_fetched_at": "2026-07-14T11:55:21.137071",
- "official_fetched_at": "2026-07-31T12:31:20.664583",
- "days_to_report": 14,
+ "official_fetched_at": "2026-08-03T13:27:51.638854",
+ "days_to_report": 11,
  "next_report_deadline": "2026-08-14",
  "new_reports_count": 0,
  "new_reports_crossings": 0,
  "groups": {
   "predict_in": [
-   {
-    "code": "3086",
-    "name": "華義*",
-    "price": 29.0,
-    "net_value": 1.15,
-    "nv_quarter": "26Q1",
-    "market": "上櫃",
-    "status": {
-     "full_delivery": false,
-     "disposal": null,
-     "credit": "停資停券"
-    },
-    "gap": -3.85,
-    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3086"
-   },
-   {
-    "code": "4157",
-    "name": "太景*-KY",
-    "price": 8.6,
-    "net_value": 1.47,
-    "nv_quarter": "26Q1",
-    "market": "上櫃",
-    "status": {
-     "full_delivery": false,
-     "disposal": null,
-     "credit": "可信用交易"
-    },
-    "gap": -3.53,
-    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4157"
-   },
    {
     "code": "7827",
     "name": "漢康-KY創",

@@ -84,28 +84,19 @@ tr.watched { background:rgba(96,165,250,.07); }
 </style></head><body>
 <h1>全額交割／信用交易預警</h1>
 <div class="meta">淨值資料：2026-07-14 11:55（goodinfo）・
-官方名單：2026-07-31 12:31（證交所/櫃買中心）・
+官方名單：2026-08-03 13:27（證交所/櫃買中心）・
 <a href="rules.html">分級規則與法規依據</a>・<a href="backtest.html">歷史驗證</a><br>
-<span class="deadline">下一財報截止：2026-08-14（14 天後）</span>
+<span class="deadline">下一財報截止：2026-08-14（11 天後）</span>
 <a class="updbtn" href="https://github.com/deankhho/stock-watchdog/actions/workflows/update.yml"
   target="_blank">🔄 觸發更新</a></div>
 <div class="banner" style="opacity:.7">目前名單內尚無新一季財報（各檔財報季度見表末欄）；新財報公布後此處會醒目提示「哪些股票交出財報、淨值變化、是否穿越門檻」</div>
 <div id="watchbar"></div>
-<div class="tabs"><button class="tab" data-t="predict_in">🔴 預測打入<span class="n">3</span></button><button class="tab" data-t="recover">🟢 恢復候選<span class="n">5</span></button><button class="tab" data-t="edge">🟠 危險邊緣<span class="n">20</span></button><button class="tab" data-t="margin_risk">🟡 信用警戒<span class="n">135</span></button><button class="tab" data-t="official">⚪ 全額交割中<span class="n">24</span></button></div>
+<div class="tabs"><button class="tab" data-t="predict_in">🔴 預測打入<span class="n">1</span></button><button class="tab" data-t="recover">🟢 恢復候選<span class="n">5</span></button><button class="tab" data-t="edge">🟠 危險邊緣<span class="n">20</span></button><button class="tab" data-t="margin_risk">🟡 信用警戒<span class="n">135</span></button><button class="tab" data-t="official">⚪ 全額交割中<span class="n">24</span></button></div>
 <section class="panel" data-t="predict_in">
   <p class="desc">淨值<5、尚未列全額交割——下次財報後恐公告，提前留意。⚠️ 上市／上櫃規定不同：上市依證交所營業細則第49條、上櫃依櫃買中心業務規則（上櫃另有管理股票/分盤交易制度）——表格「市場」欄區分適用規定，細節見規則頁</p>
   <table><thead><tr><th>代號</th><th>名稱</th><th>市場</th><th>官方現況</th><th>股價</th>
     <th>每股淨值</th><th>距5元</th><th>財報季度</th></tr></thead>
   <tbody><tr class="main" onclick="tog(this)">
-  <td><span class="star" data-code="3086" onclick="event.stopPropagation();togWatch('3086')">☆</span><a href="https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3086" target="_blank" onclick="event.stopPropagation()">3086</a></td>
-  <td>華義* </td><td>上櫃</td>
-  <td class="stcell"><span class="chip cstop">停資停券</span></td>
-  <td class="num">29.00</td>
-  <td class="num nv">1.15</td>
-  <td class="num neg">-3.85</td>
-  <td>26Q1 <span class="exp">▾</span></td>
-</tr>
-<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('3086','上櫃',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TPEX%3A3086">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/3086/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="hist-none">此股面額非 10 元（已按 1/10 校準歷史淨值）</div><div class="tl"><div class="q r"><span>24Q3</span>1.3</div><div class="q r"><span>24Q4</span>1.3</div><div class="q r"><span>25Q1</span>1.3</div><div class="q r"><span>25Q2</span>1.2</div><div class="q r"><span>25Q3</span>1.2</div><div class="q r"><span>25Q4</span>1.2</div><div class="q r"><span>26Q1</span>1.1</div></div><div class=ev>近兩年未觸發門檻事件</div></td></tr><tr class="main" onclick="tog(this)">
   <td><span class="star" data-code="7827" onclick="event.stopPropagation();togWatch('7827')">☆</span><a href="https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=7827" target="_blank" onclick="event.stopPropagation()">7827</a></td>
   <td>漢康-KY創 </td><td>上市</td>
   <td class="stcell"><span class="chip cstop">非信用交易標的</span></td>
@@ -1843,24 +1834,7 @@ function renderWatchBar(){
 }
 function gotoRow(code){const info=rowInfo(code);if(!info)return;
   show(info.tab);info.tr.nextElementSibling.classList.add('on');
-  info.tr.scrollIntoView({behavior:'smooth',block:'center'});}refreshStars(); renderWatchBar();
-
-
-function loadWantgoo(code,btn){
-  const box=btn.closest('td').querySelector('.tvbox');
-  if(box.dataset.wg)return; box.dataset.wg='1';
-  const f=document.createElement('iframe');
-  f.src='https://www.wantgoo.com/stock/'+code+'/technical-chart';
-  f.width='100%'; f.height='460';
-  f.style.cssText='border:none;border-radius:8px;background:#0f172a;';
-  box.insertBefore(f,box.firstChild);
-  const fb=document.createElement('div');
-  fb.style='font-size:12px;color:#9BA3B4;margin-top:4px;';
-  fb.innerHTML='iframe 受阻時請<a href="https://www.wantgoo.com/stock/'+code+'/technical-chart" target="_blank" style="color:#60a5fa">在新分頁開啟 Wantgoo K線 ↗</a>';
-  box.appendChild(fb);
-  btn.disabled=true;btn.textContent='📊 Wantgoo K線(載入中)';
-}
-
+  info.tr.scrollIntoView({behavior:'smooth',block:'center'});}
 // K線圖：TradingView Lightweight Charts (MIT) + Yahoo Finance
 // 台股慣例：紅漲（up）綠跌（down）
 function loadScript(src){
@@ -1874,8 +1848,8 @@ function loadScript(src){
 async function loadChart(code,market,btn){
   const box=btn.closest('td').querySelector('.tvbox');
   if(box.dataset.lwc)return; box.dataset.lwc='1';
-  btn.disabled=true; btn.textContent='\u23f3 \u8f09\u5165\u4e2d...';
-  const sfx=market==='\u4e0a\u5e02'?'.TW':'.TWO';
+  btn.disabled=true; btn.textContent='⏳ 載入中...';
+  const sfx=market==='上市'?'.TW':'.TWO';
   try{
     await loadScript('https://unpkg.com/lightweight-charts@4/dist/lightweight-charts.standalone.production.js');
     const resp=await fetch(
@@ -1883,13 +1857,13 @@ async function loadChart(code,market,btn){
     );
     if(!resp.ok)throw new Error('HTTP '+resp.status);
     const j=await resp.json();
-    if(!j.chart.result)throw new Error(j.chart.error?.description||'\u7121\u8cc7\u6599');
+    if(!j.chart.result)throw new Error(j.chart.error?.description||'無資料');
     const res=j.chart.result[0];
     const ts=res.timestamp, q=res.indicators.quote[0];
     const candles=ts.map((t,i)=>({
       time:t,open:q.open[i],high:q.high[i],low:q.low[i],close:q.close[i]
     })).filter(c=>c.open!=null);
-    if(!candles.length)throw new Error('\u7121\u6709\u6548\u8cc7\u6599');
+    if(!candles.length)throw new Error('無有效資料');
     const wrap=document.createElement('div');
     wrap.style='height:400px;';
     box.insertBefore(wrap,box.firstChild);
@@ -1901,7 +1875,7 @@ async function loadChart(code,market,btn){
       width:box.clientWidth||680,height:400,
       crosshair:{mode:1},
     });
-    // \u53f0\u80a1\uff1a\u7d05\u6f32\u7da0\u8dcc
+    // 台股：紅漲綠跌
     const series=chart.addCandlestickSeries({
       upColor:'#ef4444',downColor:'#22c55e',
       borderUpColor:'#ef4444',borderDownColor:'#22c55e',
@@ -1910,14 +1884,15 @@ async function loadChart(code,market,btn){
     series.setData(candles);
     chart.timeScale().fitContent();
     new ResizeObserver(()=>chart.applyOptions({width:box.clientWidth})).observe(box);
-    btn.textContent='\U0001F4C8 K\u7dda\u5716\uff08\u65e5K\uff0c\u8fd13\u500b\u6708\uff09';
+    btn.textContent='📈 K線圖（日K，近3個月）';
   }catch(e){
     const err=document.createElement('div');
     err.style='color:#f87171;font-size:12px;padding:8px 10px;background:#220000;border-radius:6px;margin-bottom:6px;';
-    err.innerHTML='\u26a0\ufe0f K\u7dda\u8f09\u5165\u5931\u6557\uff08'+e.message+'\uff09\u2014\u2014 unpkg.com / Yahoo Finance \u53ef\u80fd\u88ab\u5c01\u9396\uff0c\u8acb\u6539\u7528\u4e0b\u65b9\u9023\u7d50\u3002';
+    err.innerHTML='⚠️ K線載入失敗（'+e.message+'）—— unpkg.com / Yahoo Finance 可能被封鎖，請改用下方連結。';
     box.insertBefore(err,box.firstChild);
     box.dataset.lwc='';
-    btn.disabled=false; btn.textContent='\U0001F4C8 K\u7dda\u5716\uff08\u91cd\u8a66\uff09';
+    btn.disabled=false; btn.textContent='📈 K線圖（重試）';
   }
 }
+
 </script></body></html>
