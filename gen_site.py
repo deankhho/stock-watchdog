@@ -177,41 +177,65 @@ function renderWatchBar(){
 function gotoRow(code){const info=rowInfo(code);if(!info)return;
   show(info.tab);info.tr.nextElementSibling.classList.add('on');
   info.tr.scrollIntoView({behavior:'smooth',block:'center'});}
-// TradingView 迷你圖：點按鈕才動態注入 embed script（lazy-load，避免整頁嵌數百個 widget）
-function loadTV(code,market,btn){
-  const box=btn.closest('td').querySelector('.tvbox');
-  if(box.dataset.loaded)return; box.dataset.loaded='1';
-  const wrap=document.createElement('div'); wrap.className='tradingview-widget-container';
-  box.appendChild(wrap);
-  const s=document.createElement('script');
-  // Advanced Chart widget：真 K 線（style:'1'=蠟燭圖），保留頂部工具列可自行加 EMA 等指標
-  s.src='https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js';
-  s.async=true;
-  s.innerHTML=JSON.stringify({symbol:(market==='\\u4e0a\\u5e02'?'TWSE:':'TPEX:')+code,
-    autosize:false,width:'100%',height:440,interval:'D',timezone:'Asia/Taipei',
-    theme:'dark',style:'1',locale:'zh_TW',allow_symbol_change:false,save_image:false,
-    hide_top_toolbar:false,studies:['BB@tv-basicstudies'],
-    support_host:'https://www.tradingview.com'});
-  wrap.appendChild(s);
-  btn.disabled=true; btn.textContent='\\ud83d\\udcc8 K線圖已開啟（日K，可用上方工具列加均線）';
+// K線圖：TradingView Lightweight Charts (MIT) + Yahoo Finance
+// 台股慣例：紅漲（up）綠跌（down）
+function loadScript(src){
+  return new Promise((ok,fail)=>{
+    if(window.LightweightCharts){ok();return;}
+    const s=document.createElement('script');
+    s.src=src; s.onload=ok; s.onerror=fail;
+    document.head.appendChild(s);
+  });
 }
-refreshStars(); renderWatchBar();
-// Wantgoo K-line: lazy iframe + fallback link
-function loadWantgoo(code,btn){
+async function loadChart(code,market,btn){
   const box=btn.closest('td').querySelector('.tvbox');
-  if(box.dataset.wg)return; box.dataset.wg='1';
-  const f=document.createElement('iframe');
-  f.src='https://www.wantgoo.com/stock/'+code+'/technical-chart';
-  f.width='100%'; f.height='460';
-  f.style.cssText='border:none;border-radius:8px;background:#0f172a;';
-  box.insertBefore(f,box.firstChild);
-  const fb=document.createElement('div');
-  fb.style='font-size:12px;color:#9BA3B4;margin-top:4px;';
-  fb.innerHTML='iframe 受阻時請<a href="https://www.wantgoo.com/stock/'+code+'/technical-chart" target="_blank" style="color:#60a5fa">在新分頁開啟 Wantgoo K線 ↗</a>';
-  box.appendChild(fb);
-  btn.disabled=true; btn.textContent='📊 Wantgoo K線(載入中)';
+  if(box.dataset.lwc)return; box.dataset.lwc='1';
+  btn.disabled=true; btn.textContent='\u23f3 \u8f09\u5165\u4e2d...';
+  const sfx=market==='\u4e0a\u5e02'?'.TW':'.TWO';
+  try{
+    await loadScript('https://unpkg.com/lightweight-charts@4/dist/lightweight-charts.standalone.production.js');
+    const resp=await fetch(
+      'https://query1.finance.yahoo.com/v8/finance/chart/'+code+sfx+'?range=3mo&interval=1d'
+    );
+    if(!resp.ok)throw new Error('HTTP '+resp.status);
+    const j=await resp.json();
+    if(!j.chart.result)throw new Error(j.chart.error?.description||'\u7121\u8cc7\u6599');
+    const res=j.chart.result[0];
+    const ts=res.timestamp, q=res.indicators.quote[0];
+    const candles=ts.map((t,i)=>({
+      time:t,open:q.open[i],high:q.high[i],low:q.low[i],close:q.close[i]
+    })).filter(c=>c.open!=null);
+    if(!candles.length)throw new Error('\u7121\u6709\u6548\u8cc7\u6599');
+    const wrap=document.createElement('div');
+    wrap.style='height:400px;';
+    box.insertBefore(wrap,box.firstChild);
+    const chart=LightweightCharts.createChart(wrap,{
+      layout:{background:{color:'#13151B'},textColor:'#F2F4F8'},
+      grid:{vertLines:{color:'#1e2030'},horzLines:{color:'#1e2030'}},
+      rightPriceScale:{borderColor:'#2a2d3a'},
+      timeScale:{borderColor:'#2a2d3a',timeVisible:true},
+      width:box.clientWidth||680,height:400,
+      crosshair:{mode:1},
+    });
+    // \u53f0\u80a1\uff1a\u7d05\u6f32\u7da0\u8dcc
+    const series=chart.addCandlestickSeries({
+      upColor:'#ef4444',downColor:'#22c55e',
+      borderUpColor:'#ef4444',borderDownColor:'#22c55e',
+      wickUpColor:'#ef4444',wickDownColor:'#22c55e',
+    });
+    series.setData(candles);
+    chart.timeScale().fitContent();
+    new ResizeObserver(()=>chart.applyOptions({width:box.clientWidth})).observe(box);
+    btn.textContent='\U0001F4C8 K\u7dda\u5716\uff08\u65e5K\uff0c\u8fd13\u500b\u6708\uff09';
+  }catch(e){
+    const err=document.createElement('div');
+    err.style='color:#f87171;font-size:12px;padding:8px 10px;background:#220000;border-radius:6px;margin-bottom:6px;';
+    err.innerHTML='\u26a0\ufe0f K\u7dda\u8f09\u5165\u5931\u6557\uff08'+e.message+'\uff09\u2014\u2014 unpkg.com / Yahoo Finance \u53ef\u80fd\u88ab\u5c01\u9396\uff0c\u8acb\u6539\u7528\u4e0b\u65b9\u9023\u7d50\u3002';
+    box.insertBefore(err,box.firstChild);
+    box.dataset.lwc='';
+    btn.disabled=false; btn.textContent='\U0001F4C8 K\u7dda\u5716\uff08\u91cd\u8a66\uff09';
+  }
 }
-
 """
 
 
@@ -267,7 +291,7 @@ def main():
   <td class="num {'neg' if (r.get('gap') or 0) < 0 else 'pos'}">{fmt(r.get('gap'))}</td>
   <td>{r.get('nv_quarter','')}{('<span class=note>' + r['note'] + '</span>') if r.get('note') else ''} <span class="exp">▾</span></td>
 </tr>
-<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadTV('{r['code']}','{r.get('market','')}',this)">📈 TradingView K線</button><button class="tvbtn" style="background:#0d7a5f" onclick="loadWantgoo('{r['code']}',this)">📊 Wantgoo K線</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol={tvp}%3A{r['code']}">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/{r['code']}/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div>{history_row(r['code'], bt_stocks, r.get('market',''), listing)}</td></tr>""")
+<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('{r['code']}','{r.get('market','')}',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol={tvp}%3A{r['code']}">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/{r['code']}/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div>{history_row(r['code'], bt_stocks, r.get('market',''), listing)}</td></tr>""")
         trs = "".join(trs_list)
         panels.append(f"""<section class="panel" data-t="{key}">
   <p class="desc">{desc}</p>
