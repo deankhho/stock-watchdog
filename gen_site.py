@@ -196,6 +196,22 @@ function loadTV(code,market,btn){
   btn.disabled=true; btn.textContent='\\ud83d\\udcc8 K線圖已開啟（日K，可用上方工具列加均線）';
 }
 refreshStars(); renderWatchBar();
+// Wantgoo K-line: lazy iframe + fallback link
+function loadWantgoo(code,btn){
+  const box=btn.closest('td').querySelector('.tvbox');
+  if(box.dataset.wg)return; box.dataset.wg='1';
+  const f=document.createElement('iframe');
+  f.src='https://www.wantgoo.com/stock/'+code+'/technical-chart';
+  f.width='100%'; f.height='460';
+  f.style.cssText='border:none;border-radius:8px;background:#0f172a;';
+  box.insertBefore(f,box.firstChild);
+  const fb=document.createElement('div');
+  fb.style='font-size:12px;color:#9BA3B4;margin-top:4px;';
+  fb.innerHTML='iframe 受阻時請<a href="https://www.wantgoo.com/stock/'+code+'/technical-chart" target="_blank" style="color:#60a5fa">在新分頁開啟 Wantgoo K線 ↗</a>';
+  box.appendChild(fb);
+  btn.disabled=true; btn.textContent='📊 Wantgoo K線(載入中)';
+}
+
 """
 
 
@@ -251,7 +267,7 @@ def main():
   <td class="num {'neg' if (r.get('gap') or 0) < 0 else 'pos'}">{fmt(r.get('gap'))}</td>
   <td>{r.get('nv_quarter','')}{('<span class=note>' + r['note'] + '</span>') if r.get('note') else ''} <span class="exp">▾</span></td>
 </tr>
-<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadTV('{r['code']}','{r.get('market','')}',this)">📈 載入K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol={tvp}%3A{r['code']}">在 TradingView 開啟 ↗</a></div><div class="tvbox"></div>{history_row(r['code'], bt_stocks, r.get('market',''), listing)}</td></tr>""")
+<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadTV('{r['code']}','{r.get('market','')}',this)">📈 TradingView K線</button><button class="tvbtn" style="background:#0d7a5f" onclick="loadWantgoo('{r['code']}',this)">📊 Wantgoo K線</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol={tvp}%3A{r['code']}">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/{r['code']}/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div>{history_row(r['code'], bt_stocks, r.get('market',''), listing)}</td></tr>""")
         trs = "".join(trs_list)
         panels.append(f"""<section class="panel" data-t="{key}">
   <p class="desc">{desc}</p>
