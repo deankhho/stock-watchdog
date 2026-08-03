@@ -161,6 +161,9 @@ def main():
         cat = classify(r["net_value"], r["code"] in official_codes)
         if cat == "safe":
             continue
+        # KY (* in name): FinMind net_value unreliable -> skip predict_in
+        if '*' in r.get('name', '') and cat == 'predict_in':
+            continue
         item = dict(r)
         if r["code"] in new_reports:
             item["new_report"] = new_reports[r["code"]]
