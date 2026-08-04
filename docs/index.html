@@ -84,9 +84,9 @@ tr.watched { background:rgba(96,165,250,.07); }
 </style></head><body>
 <h1>全額交割／信用交易預警</h1>
 <div class="meta">淨值資料：2026-07-14 11:55（goodinfo）・
-官方名單：2026-08-03 13:27（證交所/櫃買中心）・
+官方名單：2026-08-04 12:28（證交所/櫃買中心）・
 <a href="rules.html">分級規則與法規依據</a>・<a href="backtest.html">歷史驗證</a><br>
-<span class="deadline">下一財報截止：2026-08-14（11 天後）</span>
+<span class="deadline">下一財報截止：2026-08-14（10 天後）</span>
 <a class="updbtn" href="https://github.com/deankhho/stock-watchdog/actions/workflows/update.yml"
   target="_blank">🔄 觸發更新</a></div>
 <div class="banner" style="opacity:.7">目前名單內尚無新一季財報（各檔財報季度見表末欄）；新財報公布後此處會醒目提示「哪些股票交出財報、淨值變化、是否穿越門檻」</div>
@@ -1835,32 +1835,28 @@ function renderWatchBar(){
 function gotoRow(code){const info=rowInfo(code);if(!info)return;
   show(info.tab);info.tr.nextElementSibling.classList.add('on');
   info.tr.scrollIntoView({behavior:'smooth',block:'center'});}
-// K線圖：TradingView Lightweight Charts (MIT) + Yahoo Finance
-// 台股慣例：紅漲（up）綠跌（down）
-
-
 // K線：TWSE/TPEx 政府API（無需外部CDN）+ Canvas 自繪
 // 台股慣例：紅漲綠跌
 async function loadChart(code,market,btn){
   const box=btn.closest('td').querySelector('.tvbox');
   if(box.dataset.lwc)return; box.dataset.lwc='1';
-  btn.disabled=true; btn.textContent='\u23f3 \u8f09\u5165\u4e2d...';
+  btn.disabled=true; btn.textContent='⏳ 載入中...';
   try{
     const candles=await _fetchTW(code,market);
-    if(!candles.length)throw new Error('\u7121\u8cc7\u6599');
+    if(!candles.length)throw new Error('無資料');
     const cv=document.createElement('canvas');
     cv.style='width:100%;display:block;';
     cv.width=box.clientWidth||680; cv.height=320;
     box.insertBefore(cv,box.firstChild);
     _drawK(cv,candles);
     new ResizeObserver(()=>{cv.width=box.clientWidth;_drawK(cv,candles);}).observe(box);
-    btn.textContent='\U0001f4c8 K\u7dda\u5716\uff08\u65e5K\uff0c\u8fd13\u500b\u6708\uff09';
+    btn.textContent='📈 K線圖（日K，近3個月）';
   }catch(e){
     const err=document.createElement('div');
     err.style='color:#f87171;font-size:12px;padding:8px;background:#220000;border-radius:6px;margin-bottom:6px;';
-    err.textContent='\u26a0\ufe0f K\u7dda\u8f09\u5165\u5931\u6557\uff1a'+e.message;
+    err.textContent='⚠️ K線載入失敗：'+e.message;
     box.insertBefore(err,box.firstChild);
-    box.dataset.lwc=''; btn.disabled=false; btn.textContent='\U0001f4c8 K\u7dda\u5716\uff08\u91cd\u8a66\uff09';
+    box.dataset.lwc=''; btn.disabled=false; btn.textContent='📈 K線圖（重試）';
   }
 }
 async function _fetchTW(code,market){
@@ -1869,7 +1865,7 @@ async function _fetchTW(code,market){
     const d=new Date(now.getFullYear(),now.getMonth()-m,1);
     const y=d.getFullYear(); const mm=String(d.getMonth()+1).padStart(2,'0');
     try{
-      if(market==='\u4e0a\u5e02'){
+      if(market==='上市'){
         const j=await fetch('https://www.twse.com.tw/exchangeReport/STOCK_DAY?response=json&date='+y+mm+'01&stockNo='+code).then(r=>r.json());
         if(j.stat!=='OK'||!j.data)continue;
         for(const r of j.data){
