@@ -1837,62 +1837,92 @@ function gotoRow(code){const info=rowInfo(code);if(!info)return;
   info.tr.scrollIntoView({behavior:'smooth',block:'center'});}
 // K線圖：TradingView Lightweight Charts (MIT) + Yahoo Finance
 // 台股慣例：紅漲（up）綠跌（down）
-function loadScript(src){
-  return new Promise((ok,fail)=>{
-    if(window.LightweightCharts){ok();return;}
-    const s=document.createElement('script');
-    s.src=src; s.onload=ok; s.onerror=fail;
-    document.head.appendChild(s);
-  });
-}
+
+
+// K線：TWSE/TPEx 政府API（無需外部CDN）+ Canvas 自繪
+// 台股慣例：紅漲綠跌
 async function loadChart(code,market,btn){
   const box=btn.closest('td').querySelector('.tvbox');
   if(box.dataset.lwc)return; box.dataset.lwc='1';
-  btn.disabled=true; btn.textContent='⏳ 載入中...';
-  const sfx=market==='上市'?'.TW':'.TWO';
+  btn.disabled=true; btn.textContent='\u23f3 \u8f09\u5165\u4e2d...';
   try{
-    await loadScript('https://unpkg.com/lightweight-charts@4/dist/lightweight-charts.standalone.production.js');
-    const resp=await fetch(
-      'https://query1.finance.yahoo.com/v8/finance/chart/'+code+sfx+'?range=3mo&interval=1d'
-    );
-    if(!resp.ok)throw new Error('HTTP '+resp.status);
-    const j=await resp.json();
-    if(!j.chart.result)throw new Error(j.chart.error?.description||'無資料');
-    const res=j.chart.result[0];
-    const ts=res.timestamp, q=res.indicators.quote[0];
-    const candles=ts.map((t,i)=>({
-      time:t,open:q.open[i],high:q.high[i],low:q.low[i],close:q.close[i]
-    })).filter(c=>c.open!=null);
-    if(!candles.length)throw new Error('無有效資料');
-    const wrap=document.createElement('div');
-    wrap.style='height:400px;';
-    box.insertBefore(wrap,box.firstChild);
-    const chart=LightweightCharts.createChart(wrap,{
-      layout:{background:{color:'#13151B'},textColor:'#F2F4F8'},
-      grid:{vertLines:{color:'#1e2030'},horzLines:{color:'#1e2030'}},
-      rightPriceScale:{borderColor:'#2a2d3a'},
-      timeScale:{borderColor:'#2a2d3a',timeVisible:true},
-      width:box.clientWidth||680,height:400,
-      crosshair:{mode:1},
-    });
-    // 台股：紅漲綠跌
-    const series=chart.addCandlestickSeries({
-      upColor:'#ef4444',downColor:'#22c55e',
-      borderUpColor:'#ef4444',borderDownColor:'#22c55e',
-      wickUpColor:'#ef4444',wickDownColor:'#22c55e',
-    });
-    series.setData(candles);
-    chart.timeScale().fitContent();
-    new ResizeObserver(()=>chart.applyOptions({width:box.clientWidth})).observe(box);
-    btn.textContent='📈 K線圖（日K，近3個月）';
+    const candles=await _fetchTW(code,market);
+    if(!candles.length)throw new Error('\u7121\u8cc7\u6599');
+    const cv=document.createElement('canvas');
+    cv.style='width:100%;display:block;';
+    cv.width=box.clientWidth||680; cv.height=320;
+    box.insertBefore(cv,box.firstChild);
+    _drawK(cv,candles);
+    new ResizeObserver(()=>{cv.width=box.clientWidth;_drawK(cv,candles);}).observe(box);
+    btn.textContent='\U0001f4c8 K\u7dda\u5716\uff08\u65e5K\uff0c\u8fd13\u500b\u6708\uff09';
   }catch(e){
     const err=document.createElement('div');
-    err.style='color:#f87171;font-size:12px;padding:8px 10px;background:#220000;border-radius:6px;margin-bottom:6px;';
-    err.innerHTML='⚠️ K線載入失敗（'+e.message+'）—— unpkg.com / Yahoo Finance 可能被封鎖，請改用下方連結。';
+    err.style='color:#f87171;font-size:12px;padding:8px;background:#220000;border-radius:6px;margin-bottom:6px;';
+    err.textContent='\u26a0\ufe0f K\u7dda\u8f09\u5165\u5931\u6557\uff1a'+e.message;
     box.insertBefore(err,box.firstChild);
-    box.dataset.lwc='';
-    btn.disabled=false; btn.textContent='📈 K線圖（重試）';
+    box.dataset.lwc=''; btn.disabled=false; btn.textContent='\U0001f4c8 K\u7dda\u5716\uff08\u91cd\u8a66\uff09';
   }
+}
+async function _fetchTW(code,market){
+  const now=new Date(); const candles=[];
+  for(let m=2;m>=0;m--){
+    const d=new Date(now.getFullYear(),now.getMonth()-m,1);
+    const y=d.getFullYear(); const mm=String(d.getMonth()+1).padStart(2,'0');
+    try{
+      if(market==='\u4e0a\u5e02'){
+        const j=await fetch('https://www.twse.com.tw/exchangeReport/STOCK_DAY?response=json&date='+y+mm+'01&stockNo='+code).then(r=>r.json());
+        if(j.stat!=='OK'||!j.data)continue;
+        for(const r of j.data){
+          const p=s=>parseFloat(s.replace(/,/g,''));
+          const o=p(r[3]),h=p(r[4]),l=p(r[5]),c=p(r[6]);
+          if(isNaN(o))continue;
+          const dt=r[0].split('/'); candles.push({dt:dt[1]+'/'+dt[2],o,h,l,c});
+        }
+      }else{
+        const roc=y-1911;
+        const j=await fetch('https://www.tpex.org.tw/web/stock/aftertrading/daily_trading_info/st43_result.php?l=zh-tw&d='+roc+'/'+mm+'/01&s=0,asc&stk_no='+code+'&_='+Date.now()).then(r=>r.json());
+        if(!j.aaData)continue;
+        for(const r of j.aaData){
+          const p=s=>parseFloat(String(s).replace(/,/g,''));
+          const o=p(r[3]),h=p(r[4]),l=p(r[5]),c=p(r[6]);
+          if(isNaN(o))continue;
+          const dt=r[0].split('/'); candles.push({dt:dt[1]+'/'+dt[2],o,h,l,c});
+        }
+      }
+    }catch(e){}
+  }
+  return candles;
+}
+function _drawK(cv,data){
+  const ctx=cv.getContext('2d');
+  const W=cv.width,H=cv.height,PT=10,PR=55,PB=28,PL=8;
+  const cw=W-PL-PR,ch=H-PT-PB;
+  const ps=data.flatMap(c=>[c.h,c.l]);
+  const mn=Math.min(...ps),mx=Math.max(...ps),rng=mx-mn||1;
+  ctx.fillStyle='#13151B'; ctx.fillRect(0,0,W,H);
+  const toY=p=>PT+ch-(p-mn)/rng*ch;
+  const bg=cw/data.length;
+  const bw=Math.max(2,Math.floor(bg)-1);
+  [0,.25,.5,.75,1].forEach(f=>{
+    const y=toY(mn+rng*f);
+    ctx.strokeStyle='#1e2030'; ctx.lineWidth=0.5;
+    ctx.beginPath(); ctx.moveTo(PL,y); ctx.lineTo(W-PR,y); ctx.stroke();
+    ctx.fillStyle='#9CA3AF'; ctx.font='10px monospace'; ctx.textAlign='left';
+    ctx.fillText((mn+rng*f).toFixed(1),W-PR+3,y+4);
+  });
+  data.forEach((c,i)=>{
+    const x=PL+(i+0.5)*bg;
+    const up=c.c>=c.o;
+    ctx.strokeStyle=ctx.fillStyle=up?'#ef4444':'#22c55e';
+    ctx.lineWidth=1;
+    ctx.beginPath(); ctx.moveTo(x,toY(c.h)); ctx.lineTo(x,toY(c.l)); ctx.stroke();
+    const by=toY(Math.max(c.o,c.c)),bh=Math.max(1,toY(Math.min(c.o,c.c))-by);
+    ctx.fillRect(x-bw/2,by,bw,bh);
+  });
+  ctx.fillStyle='#9CA3AF'; ctx.font='10px sans-serif'; ctx.textAlign='center';
+  [0,Math.floor(data.length/2),data.length-1].forEach(i=>{
+    if(data[i])ctx.fillText(data[i].dt,PL+(i+0.5)*bg,H-6);
+  });
 }
 
 </script></body></html>
