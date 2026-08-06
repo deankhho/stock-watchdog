@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-08-05T12:26:30.486590",
+ "generated_at": "2026-08-06T12:28:24.700821",
  "nv_fetched_at": "2026-07-14T11:55:21.137071",
- "official_fetched_at": "2026-08-05T12:26:30.420166",
- "days_to_report": 9,
+ "official_fetched_at": "2026-08-06T12:28:24.644902",
+ "days_to_report": 8,
  "next_report_deadline": "2026-08-14",
  "new_reports_count": 0,
  "new_reports_crossings": 0,
@@ -591,10 +591,7 @@
     "market": "上櫃",
     "status": {
      "full_delivery": false,
-     "disposal": {
-      "reason": "因連續3個營業日達本中心作業要點第四條第",
-      "period": "1150722~1150804"
-     },
+     "disposal": null,
      "credit": "停資停券"
     },
     "gap": 1.59,
