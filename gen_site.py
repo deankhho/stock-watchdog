@@ -326,6 +326,9 @@ def main():
   <tbody>{trs or '<tr><td colspan=8 class=empty>（目前無）</td></tr>'}</tbody></table>
 </section>""")
 
+    # 只把 source_fetched_at 傳給前端，年齡由瀏覽器當下算（存下來的天數會凍結）
+    degraded_json = json.dumps(rep.get("degraded", {}), ensure_ascii=False)
+
     html = f"""<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>全額交割／信用交易預警</title>
@@ -374,6 +377,10 @@ tr.detail td {{ padding:12px; }}
   background:#1d4ed8; color:#dbeafe; font-size:12px; text-decoration:none; }}
 .banner {{ margin:12px 0 0; padding:10px 14px; border-radius:10px; background:#172554;
   border:1px solid #1d4ed8; font-size:13px; line-height:1.7; }}
+.banner.warn {{ background:#422006; border-color:#a16207; color:#fde68a; }}
+.banner.bad {{ background:#450a0a; border-color:#b91c1c; color:#fecaca; font-weight:600; }}
+.age.warn {{ color:#fbbf24; font-weight:600; }}
+.age.bad {{ color:#f87171; font-weight:700; }}
 .newb {{ background:#facc15; color:#713f12; font-size:10px; font-weight:700;
   padding:1px 6px; border-radius:6px; margin-left:4px; vertical-align:middle; }}
 .delta {{ display:block; font-size:11px; font-weight:400; }}
@@ -396,12 +403,17 @@ tr.isnew {{ background:rgba(250,204,21,.06); }}
 }}
 {S8_CSS}</style></head><body>
 <h1>全額交割／信用交易預警</h1>
-<div class="meta">淨值資料：{rep['nv_fetched_at'][:16].replace('T',' ')}（goodinfo）・
-官方名單：{rep['official_fetched_at'][:16].replace('T',' ')}（證交所/櫃買中心）・
+<div class="meta">淨值資料：{rep['nv_fetched_at'][:16].replace('T',' ')}（goodinfo）
+<span class="age" data-testid="nv-age" data-ts="{rep['nv_fetched_at']}"></span>・
+官方名單：{rep['official_fetched_at'][:16].replace('T',' ')}（證交所/櫃買中心）
+<span class="age" data-testid="official-age" data-ts="{rep['official_fetched_at']}"></span>・
 <a href="rules.html">分級規則與法規依據</a>・<a href="backtest.html">歷史驗證</a><br>
 <span class="deadline">下一財報截止：{rep['next_report_deadline']}（{rep['days_to_report']} 天後）</span>
 <a class="updbtn" href="https://github.com/deankhho/stock-watchdog/actions/workflows/update.yml"
   target="_blank">🔄 觸發更新</a></div>
+<noscript><div class="banner bad">本頁的「資料是否過期」指標需要 JavaScript 才會顯示。
+請開啟 JS，否則無法判斷下方數字是不是舊資料。</div></noscript>
+<div id="freshness"></div>
 {f'''<div class="banner">🆕 <b>偵測到 {rep["new_reports_count"]} 檔交出新財報</b>
 （14 天內），其中 <b style="color:#fbbf24">{rep["new_reports_crossings"]} 檔穿越門檻</b>
 （跌破5元恐列全額交割／跌破10元恐停信用／回升）——各表 🆕 列已排最前，
@@ -411,6 +423,54 @@ tr.isnew {{ background:rgba(250,204,21,.06); }}
 <div class="tabs">{''.join(tab_btns)}</div>
 {''.join(panels)}
 <script>
+/* 資料新鮮度：年齡一律在瀏覽器端、以「經過時間」計算。
+   為什麼不在產生網頁時算好：若整條管線停擺，烤死的天數會凍結在最後一次成功的值，
+   資料明明越來越舊、頁面卻永遠顯示同一個數字——監控指標自己變成謊報。
+   為什麼用經過時間而非日曆日相減：時間戳是絕對時刻，這樣算與瀏覽器時區無關。 */
+const DEGRADED = {degraded_json};
+const DEG_LABEL = {{tpex_cmode:'上櫃變更交易名單', disposal:'處置股名單',
+                    margin_status:'信用交易現況'}};
+const NV_WARN=5, NV_BAD=10, DEG_BAD=3;
+const ageDays = ts => Math.floor((Date.now() - Date.parse(ts)) / 86400000);
+
+document.querySelectorAll('.age').forEach(el => {{
+  const d = ageDays(el.dataset.ts);
+  if (!isFinite(d)) return;
+  el.textContent = d <= 0 ? '（今日）' : '（已 ' + d + ' 天未更新）';
+  if (el.dataset.testid === 'nv-age') {{
+    if (d >= NV_BAD) el.classList.add('bad');
+    else if (d >= NV_WARN) el.classList.add('warn');
+  }}
+}});
+
+(function(){{
+  const box = document.getElementById('freshness');
+  const nvEl = document.querySelector('[data-testid="nv-age"]');
+  const nvAge = nvEl ? ageDays(nvEl.dataset.ts) : 0;
+  if (nvAge >= NV_BAD) {{
+    box.insertAdjacentHTML('beforeend',
+      '<div class="banner bad" data-testid="stale-banner">🔴 淨值資料已 ' + nvAge +
+      ' 天未更新——「預測即將打入」「危險邊緣」等欄位是用舊淨值算的，<u>目前不可信</u>。' +
+      '請在家用機執行 update.sh 補資料。</div>');
+  }} else if (nvAge >= NV_WARN) {{
+    box.insertAdjacentHTML('beforeend',
+      '<div class="banner warn" data-testid="stale-banner">⚠️ 淨值資料已 ' + nvAge +
+      ' 天未更新，預測欄位的即時性下降。</div>');
+  }}
+  const degs = Object.entries(DEGRADED).map(([k, v]) =>
+    ({{name: DEG_LABEL[k] || k, age: v.source_fetched_at ? ageDays(v.source_fetched_at) : null}}));
+  if (degs.length) {{
+    const worst = Math.max(...degs.map(d => d.age === null ? 99 : d.age));
+    /* 明講是「哪一塊」舊了——頁面同時混著新舊資料時，只說「部分降級」無從判斷哪個欄位能信 */
+    const detail = degs.map(d => d.name + '沿用 ' +
+      (d.age === null ? '舊' : d.age + ' 天前') + '資料').join('、');
+    box.insertAdjacentHTML('beforeend',
+      '<div class="banner ' + (worst >= DEG_BAD ? 'bad' : 'warn') +
+      '" data-testid="degraded-banner">' + (worst >= DEG_BAD ? '🔴 ' : '⚠️ ') +
+      detail + '，其餘為最新。</div>');
+  }}
+}})();
+
 const tabs=document.querySelectorAll('.tab'), panels=document.querySelectorAll('.panel');
 function show(t){{tabs.forEach(b=>b.classList.toggle('on',b.dataset.t===t));
  panels.forEach(p=>p.classList.toggle('on',p.dataset.t===t));}}

@@ -23,17 +23,60 @@ jobs:
         run: |
           pip install playwright pandas requests lxml
           playwright install chromium --with-deps
-      - name: 抓資料與生成網站
+      - name: 自我檢查（selftest）
+        run: |
+          python analyze.py --selftest
+          python fetch_goodinfo.py --selftest
+          python fetch_official.py --selftest
+          python backtest.py --selftest
+
+      # goodinfo 自 2026-07-15 起封鎖 Actions 雲端 IP。失敗不讓 run 變紅（天天紅燈＝狼來了），
+      # 但一定要留下痕跡：Actions 註記 + job summary + 網站上的資料年齡橫幅。
+      # 舊寫法 `python fetch_goodinfo.py || echo "..."` 把離開碼整個吞掉，
+      # 結果 8/3~8/6 四個綠勾其實都沒更新淨值，靜默停擺 27 天沒人發現。
+      - name: 抓淨值（goodinfo，失敗不阻斷）
+        id: nv
         run: |
           # Actions 環境用 playwright 內建 chromium（無系統 chrome）
           sed -i 's|CHROME = "/usr/bin/google-chrome"|CHROME = None|' fetch_goodinfo.py
           sed -i 's|executable_path=CHROME, ||' fetch_goodinfo.py
-          python fetch_goodinfo.py || echo "goodinfo 失敗（可能封鎖雲端 IP），沿用上次 netvalue.json"
+          if python fetch_goodinfo.py; then
+            echo "ok=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "ok=false" >> "$GITHUB_OUTPUT"
+            echo "::warning title=goodinfo 抓取失敗::沿用上次 netvalue.json。淨值資料會逐日變舊，請在家用機執行 update.sh 補資料。"
+          fi
+
+      - name: 抓官方名單與生成網站
+        run: |
           python fetch_official.py
           python analyze.py
           python backtest.py
           python fetch_listing_dates.py
           python gen_site.py
+
+      - name: 資料新鮮度回報
+        run: |
+          python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json
+          r = json.load(open("data/report.json"))
+          nv, off = r["nv_age_days"], r["official_age_days"]
+          icon = "🔴" if nv >= 10 else ("⚠️" if nv >= 5 else "✅")
+          print(f"### 資料新鮮度\n")
+          print(f"| 項目 | 最後更新 | 已幾天 |")
+          print(f"|---|---|---|")
+          print(f"| 淨值（goodinfo） | {r['nv_fetched_at'][:16]} | {icon} {nv} 天 |")
+          print(f"| 官方名單 | {r['official_fetched_at'][:16]} | {off} 天 |")
+          for k, v in (r.get("degraded") or {}).items():
+              print(f"| ⚠️ {k}（降級） | {(v.get('source_fetched_at') or '?')[:16]} | 沿用舊資料 |")
+          PY
+          NV=$(python -c "import json;print(json.load(open('data/report.json'))['nv_age_days'])")
+          if [ "$NV" -ge 10 ]; then
+            echo "::warning title=淨值資料過期::已 $NV 天未更新，網站上的預測欄位不可信，請在家用機執行 update.sh。"
+          fi
+          if [ "$(python -c "import json;print(len(json.load(open('data/report.json')).get('degraded') or {}))")" != "0" ]; then
+            echo "::warning title=官方資料降級::部分次要來源抓取失敗，已沿用舊資料（詳見 job summary）。"
+          fi
       - name: 新財報 Email 通知（S9）
         run: |
           COUNT=$(python -c "import json;print(json.load(open('data/report.json'))['new_reports_count'])")

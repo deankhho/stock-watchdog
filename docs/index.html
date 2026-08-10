@@ -46,6 +46,10 @@ tr.detail td { padding:12px; }
   background:#1d4ed8; color:#dbeafe; font-size:12px; text-decoration:none; }
 .banner { margin:12px 0 0; padding:10px 14px; border-radius:10px; background:#172554;
   border:1px solid #1d4ed8; font-size:13px; line-height:1.7; }
+.banner.warn { background:#422006; border-color:#a16207; color:#fde68a; }
+.banner.bad { background:#450a0a; border-color:#b91c1c; color:#fecaca; font-weight:600; }
+.age.warn { color:#fbbf24; font-weight:600; }
+.age.bad { color:#f87171; font-weight:700; }
 .newb { background:#facc15; color:#713f12; font-size:10px; font-weight:700;
   padding:1px 6px; border-radius:6px; margin-left:4px; vertical-align:middle; }
 .delta { display:block; font-size:11px; font-weight:400; }
@@ -83,12 +87,17 @@ tr.watched { background:rgba(96,165,250,.07); }
 .tvbox { margin-bottom:10px; }
 </style></head><body>
 <h1>全額交割／信用交易預警</h1>
-<div class="meta">淨值資料：2026-08-10 10:25（goodinfo）・
-官方名單：2026-08-10 10:26（證交所/櫃買中心）・
+<div class="meta">淨值資料：2026-08-10 12:25（goodinfo）
+<span class="age" data-testid="nv-age" data-ts="2026-08-10T12:25:27.564782+08:00"></span>・
+官方名單：2026-08-10 12:29（證交所/櫃買中心）
+<span class="age" data-testid="official-age" data-ts="2026-08-10T12:29:21.075080+08:00"></span>・
 <a href="rules.html">分級規則與法規依據</a>・<a href="backtest.html">歷史驗證</a><br>
 <span class="deadline">下一財報截止：2026-08-14（4 天後）</span>
 <a class="updbtn" href="https://github.com/deankhho/stock-watchdog/actions/workflows/update.yml"
   target="_blank">🔄 觸發更新</a></div>
+<noscript><div class="banner bad">本頁的「資料是否過期」指標需要 JavaScript 才會顯示。
+請開啟 JS，否則無法判斷下方數字是不是舊資料。</div></noscript>
+<div id="freshness"></div>
 <div class="banner">🆕 <b>偵測到 33 檔交出新財報</b>
 （14 天內），其中 <b style="color:#fbbf24">0 檔穿越門檻</b>
 （跌破5元恐列全額交割／跌破10元恐停信用／回升）——各表 🆕 列已排最前，
@@ -1805,6 +1814,54 @@ tr.watched { background:rgba(96,165,250,.07); }
 <tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('4744','上櫃',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TPEX%3A4744">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/4744/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="tl"><div class="q g"><span>24Q2</span>21.1</div><div class="q g"><span>24Q3</span>20.8</div><div class="q g"><span>24Q4</span>21.3</div><div class="q g"><span>25Q1</span>21.1</div><div class="q g"><span>25Q2</span>20.5</div><div class="q g"><span>25Q3</span>21.4</div><div class="q g"><span>25Q4</span>23.4</div><div class="q g"><span>26Q1</span>21.6</div></div><div class="ev">📅 依櫃買中心業務規則於 <b>2026-06-16</b> 列為全額交割（歷史名單首次出現日；實際公告事由請查官方公告）</div><div class=ev>近兩年未觸發門檻事件</div></td></tr></tbody></table>
 </section>
 <script>
+/* 資料新鮮度：年齡一律在瀏覽器端、以「經過時間」計算。
+   為什麼不在產生網頁時算好：若整條管線停擺，烤死的天數會凍結在最後一次成功的值，
+   資料明明越來越舊、頁面卻永遠顯示同一個數字——監控指標自己變成謊報。
+   為什麼用經過時間而非日曆日相減：時間戳是絕對時刻，這樣算與瀏覽器時區無關。 */
+const DEGRADED = {};
+const DEG_LABEL = {tpex_cmode:'上櫃變更交易名單', disposal:'處置股名單',
+                    margin_status:'信用交易現況'};
+const NV_WARN=5, NV_BAD=10, DEG_BAD=3;
+const ageDays = ts => Math.floor((Date.now() - Date.parse(ts)) / 86400000);
+
+document.querySelectorAll('.age').forEach(el => {
+  const d = ageDays(el.dataset.ts);
+  if (!isFinite(d)) return;
+  el.textContent = d <= 0 ? '（今日）' : '（已 ' + d + ' 天未更新）';
+  if (el.dataset.testid === 'nv-age') {
+    if (d >= NV_BAD) el.classList.add('bad');
+    else if (d >= NV_WARN) el.classList.add('warn');
+  }
+});
+
+(function(){
+  const box = document.getElementById('freshness');
+  const nvEl = document.querySelector('[data-testid="nv-age"]');
+  const nvAge = nvEl ? ageDays(nvEl.dataset.ts) : 0;
+  if (nvAge >= NV_BAD) {
+    box.insertAdjacentHTML('beforeend',
+      '<div class="banner bad" data-testid="stale-banner">🔴 淨值資料已 ' + nvAge +
+      ' 天未更新——「預測即將打入」「危險邊緣」等欄位是用舊淨值算的，<u>目前不可信</u>。' +
+      '請在家用機執行 update.sh 補資料。</div>');
+  } else if (nvAge >= NV_WARN) {
+    box.insertAdjacentHTML('beforeend',
+      '<div class="banner warn" data-testid="stale-banner">⚠️ 淨值資料已 ' + nvAge +
+      ' 天未更新，預測欄位的即時性下降。</div>');
+  }
+  const degs = Object.entries(DEGRADED).map(([k, v]) =>
+    ({name: DEG_LABEL[k] || k, age: v.source_fetched_at ? ageDays(v.source_fetched_at) : null}));
+  if (degs.length) {
+    const worst = Math.max(...degs.map(d => d.age === null ? 99 : d.age));
+    /* 明講是「哪一塊」舊了——頁面同時混著新舊資料時，只說「部分降級」無從判斷哪個欄位能信 */
+    const detail = degs.map(d => d.name + '沿用 ' +
+      (d.age === null ? '舊' : d.age + ' 天前') + '資料').join('、');
+    box.insertAdjacentHTML('beforeend',
+      '<div class="banner ' + (worst >= DEG_BAD ? 'bad' : 'warn') +
+      '" data-testid="degraded-banner">' + (worst >= DEG_BAD ? '🔴 ' : '⚠️ ') +
+      detail + '，其餘為最新。</div>');
+  }
+})();
+
 const tabs=document.querySelectorAll('.tab'), panels=document.querySelectorAll('.panel');
 function show(t){tabs.forEach(b=>b.classList.toggle('on',b.dataset.t===t));
  panels.forEach(p=>p.classList.toggle('on',p.dataset.t===t));}

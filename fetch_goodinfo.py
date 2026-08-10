@@ -16,6 +16,7 @@ import sys
 import time
 from datetime import datetime
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 import pandas as pd
 from playwright.sync_api import sync_playwright
@@ -61,6 +62,63 @@ def pick_col(cols, *keywords):
         if all(k in c for k in keywords):
             return c
     return None
+
+
+TPE = ZoneInfo("Asia/Taipei")
+MIN_ROWS = 250              # 正常 300 檔；低於此視為抓取不完整
+MAX_BLANK_RATIO = 0.05      # 關鍵欄位空白比例上限
+
+
+def check_rows_health(rows: list) -> tuple:
+    """寫檔前的內容健全性檢查 → (致命訊息, 警告訊息)。
+
+    為什麼需要：時間戳只證明「程序跑完了」，不證明「抓到好資料」。
+    若 goodinfo 改版讓某欄解析不到，流程仍會走完並寫下新的 fetched_at，
+    網站上的「資料年齡」就會顯示 0 天——用來監控靜默失敗的指標本身被繞過。
+
+    只檢查「會安靜壞掉」的欄位：
+      - nv_quarter：欄位改名時 pick_col 回 None → 全部變 ""，
+        analyze.detect_new_reports 的 `q != prev["quarter"]` 永遠不成立，
+        新財報偵測整組靜默死亡（不會有任何錯誤訊息）
+      - price：欄位改名 → 全部 None，不影響分級，故僅警告
+    code/name/net_value 欄位若消失會直接 KeyError 崩掉，屬吵鬧失敗，不需在此攔。
+    """
+    fatal, warn = [], []
+    n = len(rows)
+    if n < MIN_ROWS:
+        fatal.append(f"僅 {n} 筆（< {MIN_ROWS}），抓取不完整")
+    if n:
+        blank_q = sum(1 for r in rows if not r.get("nv_quarter"))
+        if blank_q / n > MAX_BLANK_RATIO:
+            fatal.append(f"財報季度欄空白 {blank_q}/{n}——欄位可能改名，"
+                         f"新財報偵測會靜默失效")
+        if all(r.get("price") is None for r in rows):
+            warn.append("股價欄全為 None——欄位可能改名（不影響分級）")
+    return fatal, warn
+
+
+def selftest():
+    ok = [{"code": "1234", "name": "測試", "price": 5.0,
+           "net_value": 4.0, "nv_quarter": "26Q2", "market": ""}] * 300
+    assert check_rows_health(ok) == ([], [])
+
+    assert check_rows_health(ok[:200])[0], "筆數不足應為致命"
+
+    bad_q = [dict(r) for r in ok]
+    for r in bad_q[:30]:                       # 10% 空白 > 5% 門檻
+        r["nv_quarter"] = ""
+    assert bad_q is not ok and check_rows_health(bad_q)[0], "季度欄大量空白應為致命"
+
+    edge_q = [dict(r) for r in ok]
+    for r in edge_q[:12]:                      # 4% < 5% 門檻，不該觸發
+        r["nv_quarter"] = ""
+    assert check_rows_health(edge_q)[0] == [], "4% 空白不應致命"
+
+    no_price = [dict(r, price=None) for r in ok]
+    f, w = check_rows_health(no_price)
+    assert f == [] and w, "股價欄全空應只警告不致命"
+
+    print("selftest OK")
 
 
 def main():
@@ -138,22 +196,34 @@ def main():
             time.sleep(random.uniform(3, 6))
         browser.close()
 
-    if len(rows) < 50:
-        sys.exit(f"僅抓到 {len(rows)} 筆（<50），視為失敗，不輸出")
+    # 健全性檢查：不通過就非零退出、不覆寫 netvalue.json
+    # （沿用本檔既有「失敗不頂替」原則——這也是網站「資料年齡」指標可信的前提）
+    fatal, warn = check_rows_health(rows)
+    for w in warn:
+        print(f"⚠️  {w}")
+    if fatal:
+        sys.exit("內容健全性檢查未過，不輸出：" + "；".join(fatal))
 
     rows.sort(key=lambda r: r["net_value"])
     OUT.parent.mkdir(exist_ok=True)
     OUT.write_text(json.dumps({
-        "fetched_at": datetime.now().isoformat(),
+        # 帶 +08:00：runner 跑 UTC、家用機跑 Taipei，無時區字串會讓兩邊語意差 8 小時，
+        # 前端 Date.parse() 又當本地時間解讀 → 資料年齡無法精確計算
+        "fetched_at": datetime.now(TPE).isoformat(),
         "source": "goodinfo.tw 每股淨值最低排行",
         "count": len(rows),
         "rows": rows,
     }, ensure_ascii=False, indent=1))
-    mk = {}
+    # 註：market 欄本表無資料，一律留空由 analyze.py 以官方 ISIN 清單補（見上方 rows.append）。
+    # 舊版這裡印「市場分佈 {'': 300}」，看起來像解析壞掉，實際是設計行為——改印真正有意義的欄位。
+    qs = {}
     for r in rows:
-        mk[r["market"]] = mk.get(r["market"], 0) + 1
-    print(f"完成：{len(rows)} 檔 → {OUT}；市場分佈 {mk}")
+        qs[r["nv_quarter"]] = qs.get(r["nv_quarter"], 0) + 1
+    print(f"完成：{len(rows)} 檔 → {OUT}；財報季度分佈 {qs}")
 
 
 if __name__ == "__main__":
-    main()
+    if "--selftest" in sys.argv:
+        selftest()
+    else:
+        main()

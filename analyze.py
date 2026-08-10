@@ -15,23 +15,76 @@ analyze.py — S3：分級引擎（純本地）
 
 import json
 import sys
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 BASE = Path(__file__).parent
 NV_FILE = BASE / "data" / "netvalue.json"
 OF_FILE = BASE / "data" / "official.json"
 OUT = BASE / "data" / "report.json"
 
+# 🔴 兩套時間語意，不得混用（計畫實作護欄 A）：
+#   業務日期（今天是哪一天）→ Asia/Taipei 當地日曆日。GitHub runner 跑 UTC，
+#     台灣凌晨 00:00-08:00 會被算成前一天，讓季別早退一季。
+#   資料年齡（timestamp age）→ elapsed time 絕對時刻相減，與時區無關，
+#     前端 JS 用同一套語意（Date.now() - Date.parse()）。
+TPE = ZoneInfo("Asia/Taipei")
+
 # 業務規則常數（出處見 BLUEPRINT / docs/rules.html）
 NET_VALUE_FULL_DELIVERY = 5.0    # 證交所營業細則第49條；櫃買中心業務規則
 NET_VALUE_NO_MARGIN = 10.0       # 有價證券得為融資融券標準
 REPORT_DEADLINES = [(3, 31), (5, 15), (8, 14), (11, 14)]  # 年報/Q1/Q2/Q3
+# 截止日 →（季別歸屬年份偏移, 第幾季）。3/31 交的是「去年」年報，故偏移 -1。
+DEADLINE_QUARTER = {(3, 31): (-1, 4), (5, 15): (0, 1), (8, 14): (0, 2), (11, 14): (0, 3)}
+# 公告期＝季末次日 ~ 截止日＋3 天（早鳥公告都落在這段，實證 3523 迎輝 8/10 就交了 26Q2）
+FILING_WINDOWS = [((1, 1), (4, 3)), ((4, 1), (5, 18)),
+                  ((7, 1), (8, 17)), ((10, 1), (11, 17))]
+
+
+def taipei_today() -> date:
+    """業務用「今天」——一律台北，不吃 runner 的 UTC"""
+    return datetime.now(TPE).date()
+
+
+def data_age_days(iso_str: str, now: datetime = None) -> int:
+    """資料年齡＝經過時間（天），非日曆日差。
+
+    🔴 參數是「時刻」不是「日期」。無 offset 的舊字串視為 Asia/Taipei
+    （歷史資料多由家用機寫入；下次成功執行就會換成帶 offset 的新格式）。
+    """
+    ts = datetime.fromisoformat(iso_str)
+    if ts.tzinfo is None:
+        ts = ts.replace(tzinfo=TPE)
+    now = now or datetime.now(TPE)
+    if now.tzinfo is None:
+        now = now.replace(tzinfo=TPE)
+    return int((now - ts).total_seconds() // 86400)
+
+
+def latest_expected_quarter(today: date = None) -> str:
+    """今天理論上「應該已公告」的最新季別，如 '26Q2'（台北日曆日）。
+    用途：backtest 快取失效判斷——快取比這個舊就代表沒跟上。"""
+    today = today or taipei_today()
+    best = None
+    for y in (today.year - 1, today.year):
+        for (m, d), (off, q) in DEADLINE_QUARTER.items():
+            dl = date(y, m, d)
+            if dl <= today and (best is None or dl > best[0]):
+                best = (dl, f"{(y + off) % 100:02d}Q{q}")
+    return best[1]
+
+
+def in_filing_window(today: date = None) -> bool:
+    """是否落在財報公告期（台北日曆日）。公告期內每天補抓一次，以免漏掉早鳥。"""
+    today = today or taipei_today()
+    return any(date(today.year, *s) <= today <= date(today.year, *e)
+               for s, e in FILING_WINDOWS)
 
 
 def days_to_next_report(today: date = None) -> tuple:
     """距最近一個財報截止日的天數與日期字串"""
-    today = today or date.today()
+    today = today or taipei_today()
     candidates = []
     for y in (today.year, today.year + 1):
         for m, d in REPORT_DEADLINES:
@@ -63,6 +116,26 @@ def selftest():
     assert classify(11.0, False) == "safe"
     d, s = days_to_next_report(date(2026, 7, 6))
     assert s == "2026-08-14" and d == 39, (d, s)
+
+    # --- 資料年齡：elapsed time（絕對時刻相減），不是台北日曆日差 ---
+    now = datetime(2026, 8, 10, 11, 55, 21, tzinfo=TPE)
+    assert data_age_days("2026-07-14T11:55:21+08:00", now) == 27
+    # 差一秒不足整天 → 仍算 26 天（證明是 floor 經過時間，不是日期相減）
+    assert data_age_days("2026-07-14T11:55:22+08:00", now) == 26
+    # 無 offset 的舊字串視為 Asia/Taipei，結果與帶 offset 相同（向後相容）
+    assert data_age_days("2026-07-14T11:55:21", now) == 27
+    # 同一時刻的不同表示法必須算出相同年齡（證明是絕對時刻運算）
+    assert data_age_days("2026-07-14T03:55:21+00:00", now) == 27
+
+    # --- 業務日期：Asia/Taipei 日曆日 ---
+    assert latest_expected_quarter(date(2026, 8, 10)) == "26Q1"
+    assert latest_expected_quarter(date(2026, 8, 14)) == "26Q2"
+    assert latest_expected_quarter(date(2026, 4, 1)) == "25Q4"
+    assert latest_expected_quarter(date(2026, 1, 5)) == "25Q3"
+    assert in_filing_window(date(2026, 7, 1)) is True
+    assert in_filing_window(date(2026, 8, 17)) is True
+    assert in_filing_window(date(2026, 9, 25)) is False
+
     print("selftest OK")
 
 
@@ -104,7 +177,7 @@ def detect_new_reports(rows: list) -> dict:
     首次建檔（無基準）不標記，只建基準。"""
     seen = json.loads(QSEEN_FILE.read_text()) if QSEEN_FILE.exists() else {}
     first_init = not seen
-    today = date.today().isoformat()
+    today = taipei_today().isoformat()
     new_map = {}
     for r in rows:
         code, q, nv = r["code"], r.get("nv_quarter", ""), r["net_value"]
@@ -127,7 +200,7 @@ def detect_new_reports(rows: list) -> dict:
         # 🆕 標記維持 14 天（新財報季內給使用者充分注意時間）
         cur = seen.get(code, {})
         if not first_init and cur.get("prev_q") and \
-           (date.today() - date.fromisoformat(cur["first_seen"])).days <= 14:
+           (taipei_today() - date.fromisoformat(cur["first_seen"])).days <= 14:
             new_map[code] = {"delta": round(cur["nv"] - cur["prev_nv"], 2),
                              "prev_nv": cur["prev_nv"], "prev_q": cur["prev_q"],
                              "since": cur["first_seen"],
@@ -187,10 +260,17 @@ def main():
                 "goodinfo_url": f"https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID={x['code']}",
                 "note": "淨值排行未見（可能停止交易）"})
 
+    # 🔴 年齡一律算自「資料最後一次成功抓取的時間」（netvalue.json / official.json
+    # 的 fetched_at），禁止改用 report 產生時間／workflow 執行時間／commit 時間——
+    # 否則會變成「CI 今天跑成功→看起來新鮮→其實裡面是 27 天前的淨值」。
+    # 此指標依賴 fetch_goodinfo.py「失敗即退出、不覆寫舊檔」的行為，改動該行為會使本指標失效。
     OUT.write_text(json.dumps({
-        "generated_at": datetime.now().isoformat(),
+        "generated_at": datetime.now(TPE).isoformat(),
         "nv_fetched_at": nv_data["fetched_at"],
         "official_fetched_at": of_data["fetched_at"],
+        "nv_age_days": data_age_days(nv_data["fetched_at"]),
+        "official_age_days": data_age_days(of_data["fetched_at"]),
+        "degraded": of_data.get("degraded", {}),
         "days_to_report": days, "next_report_deadline": next_dl,
         "new_reports_count": len(new_reports),
         "new_reports_crossings": sum(1 for v in new_reports.values() if v["crossing"]),

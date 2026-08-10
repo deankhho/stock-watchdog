@@ -9,11 +9,15 @@ backtest.py — S7：近兩年（8 季）淨值歷史，驗證規則有效性
 """
 
 import json
+import os
+import sys
 import time
 from datetime import date, datetime
 from pathlib import Path
 
 import requests
+
+from analyze import TPE, in_filing_window, latest_expected_quarter, taipei_today
 
 BASE = Path(__file__).parent
 REPORT = BASE / "data" / "report.json"
@@ -21,14 +25,52 @@ CACHE = BASE / "data" / "history"
 OUT = BASE / "data" / "backtest.json"
 
 FINMIND_URL = "https://api.finmindtrade.com/api/v4/data"
-START = f"{date.today().year - 2}-01-01"
+START = f"{taipei_today().year - 2}-01-01"
+
+req_count = 0        # 實際打出去的 FinMind 請求數（驗證每日上限是否真的生效）
+
+
+def read_cache(fp: Path) -> tuple:
+    """→ (rows, fetched_at)。舊的裸 list 格式視為 fetched_at=None（會補抓一次升級）"""
+    d = json.loads(fp.read_text())
+    if isinstance(d, list):
+        return d, None
+    return d.get("rows", []), d.get("fetched_at")
+
+
+def write_cache(fp: Path, rows: list, today: date = None) -> None:
+    """原子寫入：先寫暫存再 os.replace，避免中斷留下半截 JSON 讓下次讀取炸掉"""
+    today = today or taipei_today()
+    fp.parent.mkdir(parents=True, exist_ok=True)
+    tmp = fp.with_suffix(".tmp")
+    tmp.write_text(json.dumps({"fetched_at": today.isoformat(), "rows": rows},
+                              ensure_ascii=False))
+    os.replace(tmp, fp)
+
+
+def cache_needs_refetch(rows: list, fetched_at: str, today: date = None) -> bool:
+    """快取是否需要重抓（決策表見計畫；日期一律台北）"""
+    today = today or taipei_today()
+    if fetched_at is None:                       # 舊裸 list → 補抓一次升級格式
+        return True
+    if fetched_at == today.isoformat():          # 今天抓過就不再抓 ← 配額上限
+        return False
+    if not rows:
+        return True
+    if rows[-1]["quarter"] < latest_expected_quarter(today):
+        return True                              # 截止日已過但快取沒跟上
+    return in_filing_window(today)               # 公告期內每天補一次早鳥
 
 
 def fetch_balance(code: str) -> list:
-    """FinMind 資產負債表 → 每季每股淨值（快取）"""
+    """FinMind 資產負債表 → 每季每股淨值（快取，季別失效）"""
+    global req_count
     fp = CACHE / f"{code}.json"
     if fp.exists():
-        return json.loads(fp.read_text())
+        rows, fetched_at = read_cache(fp)
+        if not cache_needs_refetch(rows, fetched_at):
+            return rows
+    req_count += 1
     r = requests.get(FINMIND_URL, params={
         "dataset": "TaiwanStockBalanceSheet",
         "data_id": code, "start_date": START}, timeout=20)
@@ -48,8 +90,7 @@ def fetch_balance(code: str) -> list:
         quarter = f"{d[2:4]}Q{ {3: 1, 6: 2, 9: 3, 12: 4}.get(m, (m - 1) // 3 + 1) }"
         out.append({"date": d, "quarter": quarter, "net_value": nv,
                     "hit5": nv < 5, "hit10": nv < 10})
-    fp.parent.mkdir(parents=True, exist_ok=True)
-    fp.write_text(json.dumps(out, ensure_ascii=False))
+    write_cache(fp, out)
     return out
 
 
@@ -141,13 +182,55 @@ def main():
         time.sleep(0.6)          # FinMind 免 token 限速保守值
 
     OUT.write_text(json.dumps({
-        "generated_at": datetime.now().isoformat(),
+        "generated_at": datetime.now(TPE).isoformat(),
         "start": START, "count": len(result), "failed": failed,
         "stocks": result,
     }, ensure_ascii=False))
     ok8 = sum(1 for v in result.values() if len(v["history"]) >= 6)
     print(f"完成 {len(result)} 檔（≥6季資料:{ok8}，失敗:{len(failed)}）→ {OUT}")
+    # 實數而非「無失敗」——後者證明不了 rate-limit guard 有作用
+    print(f"FinMind 實際請求數：{req_count}（股池 {len(pool)} 檔，免 token 上限 300/hr）")
+
+
+def selftest():
+    import tempfile
+    from datetime import date as _date
+
+    q1 = [{"date": "2026-03-31", "quarter": "26Q1", "net_value": 5.0,
+           "hit5": False, "hit10": True}]
+    q2 = [{"date": "2026-06-30", "quarter": "26Q2", "net_value": 5.0,
+           "hit5": False, "hit10": True}]
+    d0810, d0925 = _date(2026, 8, 10), _date(2026, 9, 25)
+
+    # 1. 舊的裸 list 格式（無 fetched_at）→ 補抓一次升級格式
+    assert cache_needs_refetch(q1, None, d0810) is True
+    # 2. 今天已經抓過 → 不再抓（配額上限就靠這條；季別過期也不例外）
+    assert cache_needs_refetch(q1, "2026-09-25", d0925) is False
+    # 3. 截止日已過但快取沒跟上 → 重抓
+    assert cache_needs_refetch(q1, "2026-09-24", d0925) is True
+    # 4. 季別已達標，但在公告期內 → 每天補抓一次早鳥（3523 迎輝 8/10 就交了 26Q2）
+    assert cache_needs_refetch(q1, "2026-08-09", d0810) is True
+    # 5. 季別已達標且不在公告期 → 完全不動（11 月前不再有無謂重抓）
+    assert cache_needs_refetch(q2, "2026-09-24", d0925) is False
+
+    with tempfile.TemporaryDirectory() as td:
+        fp = Path(td) / "1234.json"
+        # 裸 list 舊檔要讀得回來且被視為無 fetched_at
+        fp.write_text(json.dumps(q1, ensure_ascii=False))
+        rows, fa = read_cache(fp)
+        assert rows == q1 and fa is None, (rows, fa)
+
+        # 原子寫入：寫完可完整 parse，且不留 .tmp 殘檔
+        write_cache(fp, q2, d0810)
+        rows, fa = read_cache(fp)
+        assert rows == q2 and fa == "2026-08-10", (rows, fa)
+        assert list(Path(td).glob("*.tmp")) == [], "不應留下暫存檔"
+
+    print("selftest OK")
 
 
 if __name__ == "__main__":
-    main()
+    if "--selftest" in sys.argv:
+        selftest()
+    else:
+        main()
