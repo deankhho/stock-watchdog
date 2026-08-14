@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-08-13T13:54:02.879483+08:00",
+ "generated_at": "2026-08-14T09:34:06.289663+08:00",
  "nv_fetched_at": "2026-08-13T13:44:49.774050+08:00",
- "official_fetched_at": "2026-08-13T13:54:02.802769+08:00",
+ "official_fetched_at": "2026-08-14T09:34:06.227716+08:00",
  "nv_age_days": 0,
  "official_age_days": 0,
  "degraded": {},
- "days_to_report": 1,
+ "days_to_report": 0,
  "next_report_deadline": "2026-08-14",
  "new_reports_count": 83,
  "new_reports_crossings": 2,
@@ -613,7 +613,7 @@
     "status": {
      "full_delivery": false,
      "disposal": null,
-     "credit": "停止融券"
+     "credit": "可信用交易"
     },
     "gap": 1.52,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5314"
@@ -3131,17 +3131,6 @@
     "nv_quarter": "",
     "gap": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=9110",
-    "note": "淨值排行未見（可能停止交易）"
-   },
-   {
-    "code": "4744",
-    "name": "皇將",
-    "market": "上櫃",
-    "price": null,
-    "net_value": null,
-    "nv_quarter": "",
-    "gap": null,
-    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4744",
     "note": "淨值排行未見（可能停止交易）"
    }
   ]
