@@ -4,7 +4,8 @@ fetch_goodinfo.py — S1：抓 goodinfo.tw 每股淨值最低排行（上市＋�
 輸出：data/netvalue.json
 
 已實證（BLUEPRINT）：goodinfo 擋非瀏覽器抓取 → Playwright + 系統 Chrome。
-策略：淨值由低到高逐頁抓，抓到淨值 ≥ 12 元即停（門檻 10 元留 buffer）。
+策略：淨值由低到高逐頁抓，抓到淨值 ≥ 17 元即停（門檻 15 元留 buffer，
+供「最近一季掉落」判定保留前季基準，見 crossings.py）。
 失敗即報錯退出，不得用舊資料靜默頂替。
 """
 
@@ -29,7 +30,7 @@ UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36")
 LAUNCH_ARGS = ["--no-sandbox", "--disable-blink-features=AutomationControlled"]
 
-STOP_NET_VALUE = 12.0     # 抓到這個淨值就停
+STOP_NET_VALUE = 17.0     # 抓到這個淨值就停
 MAX_PAGES = 30            # 保險上限
 
 # goodinfo 排行頁：MARKET_CAT=熱門排行 + INDUSTRY_CAT=每股淨值最低

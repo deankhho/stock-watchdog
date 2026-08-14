@@ -15,10 +15,16 @@ on:
 permissions:
   contents: write
 
+# runtime 因新增 fetch_netvalue_history 而拉長，排程與手動 workflow_dispatch 有機會重疊，
+# 會競爭 FinMind 額度、data/ 快取與 git push → 排隊而非並行（見計畫第7節「併發防護」）
+concurrency:
+  group: update
+  cancel-in-progress: false
+
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -34,6 +40,8 @@ jobs:
           python fetch_goodinfo.py --selftest
           python fetch_official.py --selftest
           python backtest.py --selftest
+          python crossings.py --selftest
+          python fetch_netvalue_history.py --selftest
 
       # goodinfo 自 2026-07-15 起封鎖 Actions 雲端 IP。失敗不讓 run 變紅（天天紅燈＝狼來了），
       # 但一定要留下痕跡：Actions 註記 + job summary + 網站上的資料年齡橫幅。
@@ -56,6 +64,9 @@ jobs:
         run: |
           python fetch_official.py
           python analyze.py
+          # fetch_netvalue_history 與 backtest 互不依賴，順序不拘（各自獨立快取，第4節解耦設計）；
+          # 失敗不阻斷（P1 超額不 hard fail 是腳本自己的設計，這裡的 || 是防未預期例外）
+          python fetch_netvalue_history.py || echo "⚠️ 淨值歷史抓取失敗，沿用舊快取（dropped 頁籤可能顯示較多 unknown）"
           python backtest.py
           python fetch_listing_dates.py
           python gen_site.py

@@ -34,6 +34,7 @@ TPE = ZoneInfo("Asia/Taipei")
 # 業務規則常數（出處見 BLUEPRINT / docs/rules.html）
 NET_VALUE_FULL_DELIVERY = 5.0    # 證交所營業細則第49條；櫃買中心業務規則
 NET_VALUE_NO_MARGIN = 10.0       # 有價證券得為融資融券標準
+NET_VALUE_WATCH = 15.0           # 觀察池門檻（Phase B 用）；非法規門檻，是抓取/顯示範圍
 REPORT_DEADLINES = [(3, 31), (5, 15), (8, 14), (11, 14)]  # 年報/Q1/Q2/Q3
 # 截止日 →（季別歸屬年份偏移, 第幾季）。3/31 交的是「去年」年報，故偏移 -1。
 DEADLINE_QUARTER = {(3, 31): (-1, 4), (5, 15): (0, 1), (8, 14): (0, 2), (11, 14): (0, 3)}
@@ -95,6 +96,11 @@ def days_to_next_report(today: date = None) -> tuple:
     return (nxt - today).days, nxt.isoformat()
 
 
+# 🔴 15~17 元歸 safe 是刻意的（發現 F）：STOP_NET_VALUE 拉高到 17 是為了讓
+# crossings.py 的「前季 ≥10、最新季 <10」判定能有前季基準，不代表 15~17 要在網站分級呈現。
+# safe 不進 report.json 的 groups，但淨值與季度仍寫入 quarter_seen.json（detect_new_reports
+# 迭代全部 netvalue rows，不是 report groups）。勿因「抓了卻沒用在分級」而把
+# STOP_NET_VALUE 改回 12——那會讓 crossings.py 的母體重新失去前季基準。
 def classify(nv: float, in_official: bool) -> str:
     if in_official:
         return "recover" if nv >= NET_VALUE_FULL_DELIVERY else "official"
@@ -104,6 +110,8 @@ def classify(nv: float, in_official: bool) -> str:
         return "edge"
     if nv < NET_VALUE_NO_MARGIN:
         return "margin_risk"
+    if nv < NET_VALUE_WATCH:
+        return "watch"
     return "safe"
 
 
@@ -113,7 +121,10 @@ def selftest():
     assert classify(4.2, False) == "predict_in"
     assert classify(5.5, False) == "edge"
     assert classify(8.0, False) == "margin_risk"
-    assert classify(11.0, False) == "safe"
+    assert classify(12.0, False) == "watch"
+    assert classify(14.99, False) == "watch"
+    assert classify(15.0, False) == "safe"
+    assert classify(16.5, False) == "safe"
     d, s = days_to_next_report(date(2026, 7, 6))
     assert s == "2026-08-14" and d == 39, (d, s)
 
@@ -183,16 +194,6 @@ def detect_new_reports(rows: list) -> dict:
         code, q, nv = r["code"], r.get("nv_quarter", ""), r["net_value"]
         prev = seen.get(code)
         if prev and q and q != prev["quarter"]:
-            delta = round(nv - prev["nv"], 2)
-            crossing = None
-            if prev["nv"] >= 5 and nv < 5:
-                crossing = "跌破5元（恐列全額交割）"
-            elif prev["nv"] < 5 and nv >= 5:
-                crossing = "回升5元以上（恢復條件累計中）"
-            elif prev["nv"] >= 10 and nv < 10:
-                crossing = "跌破10元（恐停信用交易）"
-            elif prev["nv"] < 10 and nv >= 10:
-                crossing = "回升10元以上（信用恢復條件）"
             seen[code] = {"quarter": q, "nv": nv, "first_seen": today,
                           "prev_nv": prev["nv"], "prev_q": prev["quarter"]}
         elif not prev:
@@ -227,7 +228,7 @@ def main():
     days, next_dl = days_to_next_report()
     new_reports = detect_new_reports(nv_data["rows"])
     groups = {"predict_in": [], "edge": [], "margin_risk": [],
-              "recover": [], "official": []}
+              "recover": [], "official": [], "watch": []}
 
     seen = set()
     for r in nv_data["rows"]:

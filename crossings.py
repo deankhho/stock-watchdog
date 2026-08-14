@@ -1,0 +1,307 @@
+#!/usr/bin/env python3
+"""
+crossings.py — 掉落判定引擎：偵測「前季淨值 ≥10、最新季 <10」的最近一次跨越
+不吃 report、不吃 backtest.json，母體與歷史資料來源見 detect_margin_drops() docstring。
+用法：python crossings.py --selftest
+"""
+
+import sys
+
+CROSS_NV = 10.0
+SUSPECT_RATIO = 3.0
+SOURCE_CONFLICT_TOLERANCE = 0.5
+PAR_FACTORS = (2, 4, 5, 10, 20)   # 合理面額倍率：面額5→2、2.5→4、1→10、0.5→20
+
+# unknown 判定優先序（先報「管線出問題」再報「資料本來就沒有」）
+UNKNOWN_PRIORITY = ["fetch_failed", "budget_exhausted", "quarter_mismatch", "not_adjacent", "no_prev"]
+
+
+def quarter_index(q: str) -> int:
+    """'26Q1' → 105（年份是西元後兩碼，不是民國，見發現 U；年*4+季，供相鄰判定）"""
+    year = int(q[:2])
+    quarter = int(q[3])
+    return year * 4 + quarter
+
+
+def _latest_by_quarter(hist_rows: list) -> dict:
+    """同季多筆（更正申報）→ 取 date 最新的一筆，不可當成兩季"""
+    by_q = {}
+    for x in hist_rows:
+        q = x["quarter"]
+        if q not in by_q or x["date"] > by_q[q]["date"]:
+            by_q[q] = x
+    return by_q
+
+
+def detect_margin_drops(netvalue: dict, history: dict, status: dict) -> dict:
+    """該檔最新相鄰兩季：前季淨值 ≥10、後季 <10。
+    history/status 來自 fetch_netvalue_history.py，不是 backtest.json（第 4 節）。
+
+    🔴 不吃 report：
+    這個判定不該依賴 UI 分級，母體直接從 netvalue 算，避免多一個隱性耦合。
+
+    與 backtest.detect_events 的 margin_stop 不同（見發現 D）：
+    - 不排除同時跌破 5 元的個案（11→4 也算掉落）
+    - 只認序列最後一組相鄰季，不回溯歷史事件
+    - 兩季必須相鄰（如 26Q1→26Q2）；中間缺季一律 unknown，不跨季比較
+
+    參數：
+      netvalue — data/netvalue.json 內容（{"rows": [{code,name,market,net_value,nv_quarter}, ...]}）
+      history  — {code: {"fetched_at": ..., "rows": [{date,quarter,net_value}, ...]}}
+                 （來自 fetch_netvalue_history.py 的 data/netvalue_history/<code>.json，只含最新 3 季）
+      status   — data/netvalue_history_status.json 內容，取 incomplete_codes 分辨
+                 budget_exhausted（沒輪到）與 fetch_failed（抓了但失敗）
+    """
+    incomplete = status.get("incomplete_codes", {}) if status else {}
+    universe_rows = [r for r in netvalue["rows"] if r["net_value"] < CROSS_NV]
+    universe = len(universe_rows)
+
+    rows = []
+    counts = {"confirmed": 0, "no_drop": 0, "unknown": 0,
+              "unreliable": 0, "suspect": 0, "source_conflict": 0}
+    unknown_reasons = {}
+
+    def add_row(code, name, market, nv_q, data_state, reason=None,
+                from_q=None, prev_nv=None, cur_nv=None):
+        counts[data_state] += 1
+        if data_state == "unknown":
+            unknown_reasons[reason] = unknown_reasons.get(reason, 0) + 1
+        rows.append({"code": code, "name": name, "market": market,
+                     "data_state": data_state, "reason": reason,
+                     "from_q": from_q, "to_q": nv_q,
+                     "prev_nv": prev_nv, "cur_nv": cur_nv})
+
+    for r in universe_rows:
+        code, name, market = r["code"], r.get("name", ""), r.get("market", "")
+        cur_nv, nv_q = r["net_value"], r.get("nv_quarter", "")
+
+        if code in incomplete:
+            reason = incomplete[code]
+            reason = reason if reason in ("fetch_failed", "budget_exhausted") else "budget_exhausted"
+            add_row(code, name, market, nv_q, "unknown", reason)
+            continue
+
+        h = history.get(code)
+        hist_rows = h.get("rows", []) if h else []
+        if not hist_rows:
+            add_row(code, name, market, nv_q, "unknown", "no_prev")
+            continue
+
+        by_q = _latest_by_quarter(hist_rows)
+        if nv_q not in by_q:
+            add_row(code, name, market, nv_q, "unknown", "quarter_mismatch")
+            continue
+
+        # 面額 factor：只拿「同季」兩來源值計算，不可跨季比（發現 W）
+        finmind_cur = by_q[nv_q]["net_value"]
+        if cur_nv == 0:
+            factor = 1
+        else:
+            ratio = finmind_cur / cur_nv
+            if ratio > 1.5 or ratio < 0.67:
+                snapped = round(ratio)
+                if snapped in PAR_FACTORS:
+                    factor = snapped
+                else:
+                    add_row(code, name, market, nv_q, "unreliable")
+                    continue
+            else:
+                factor = 1
+
+        # 只有當季自己一筆（無任何前季資料）→ no_prev；
+        # 有前季但不是緊鄰前一季（中間缺季）→ not_adjacent
+        if len(by_q) < 2:
+            add_row(code, name, market, nv_q, "unknown", "no_prev")
+            continue
+        idx = quarter_index(nv_q)
+        prev_candidates = [v for k, v in by_q.items() if quarter_index(k) == idx - 1]
+        if not prev_candidates:
+            add_row(code, name, market, nv_q, "unknown", "not_adjacent")
+            continue
+        prev_row = prev_candidates[0]
+
+        # factor 只套用在這一個季度跨距（前一季＋最新季），不套更早的資料（發現 W 續）
+        prev_nv = round(prev_row["net_value"] / factor, 2)
+        cur_nv_calibrated = round(finmind_cur / factor, 2)
+
+        # 可信度守門：prev/cur 任一 <=0 或符號翻轉 → suspect（不算倍率，除零／負值防呆）
+        if prev_nv <= 0 or cur_nv_calibrated <= 0 or (prev_nv > 0) != (cur_nv_calibrated > 0):
+            add_row(code, name, market, nv_q, "suspect",
+                    from_q=prev_row["quarter"], prev_nv=prev_nv, cur_nv=cur_nv_calibrated)
+            continue
+        ratio2 = max(prev_nv, cur_nv_calibrated) / min(prev_nv, cur_nv_calibrated)
+        if ratio2 > SUSPECT_RATIO:
+            add_row(code, name, market, nv_q, "suspect",
+                    from_q=prev_row["quarter"], prev_nv=prev_nv, cur_nv=cur_nv_calibrated)
+            continue
+
+        # source_conflict：goodinfo 當期值與 FinMind 同季校準值，需落在 10 元同一側
+        # 才算一致；容差 ≤0.5 元
+        if abs(cur_nv_calibrated - cur_nv) > SOURCE_CONFLICT_TOLERANCE and \
+           (cur_nv_calibrated >= CROSS_NV) != (cur_nv >= CROSS_NV):
+            add_row(code, name, market, nv_q, "source_conflict",
+                    from_q=prev_row["quarter"], prev_nv=prev_nv, cur_nv=cur_nv_calibrated)
+            continue
+
+        data_state = "confirmed" if prev_nv >= CROSS_NV > cur_nv_calibrated else "no_drop"
+        add_row(code, name, market, nv_q, data_state,
+                from_q=prev_row["quarter"], prev_nv=prev_nv, cur_nv=cur_nv_calibrated)
+
+    return {"rows": rows, "universe": universe, "counts": counts,
+            "unknown_reasons": unknown_reasons}
+
+
+def selftest():
+    def nv(rows):
+        return {"rows": rows}
+
+    def h(code, rows, fetched_at="2026-08-14"):
+        return {code: {"fetched_at": fetched_at, "rows": rows}}
+
+    def hrow(date_, quarter, net_value):
+        return {"date": date_, "quarter": quarter, "net_value": net_value}
+
+    empty_status = {"incomplete_codes": {}}
+
+    # 1. 正常掉落：25Q4=10.5 → 26Q2=9.5（26Q1→26Q2 相鄰，最新一季 <10）
+    result = detect_margin_drops(
+        nv([{"code": "1111", "name": "A", "market": "上市", "net_value": 9.5, "nv_quarter": "26Q2"}]),
+        h("1111", [hrow("2025-12-31", "25Q4", 10.5), hrow("2026-03-31", "26Q1", 10.2),
+                   hrow("2026-06-30", "26Q2", 9.5)]),
+        empty_status)
+    assert result["counts"]["confirmed"] == 1, result
+    assert result["rows"][0]["from_q"] == "26Q1" and result["rows"][0]["to_q"] == "26Q2"
+    assert result["rows"][0]["data_state"] == "confirmed"
+
+    # 2. 11→4（直接跌破 5 元也算掉落，不可被排除——發現 D 回歸）
+    result = detect_margin_drops(
+        nv([{"code": "2222", "name": "B", "market": "上市", "net_value": 4.0, "nv_quarter": "26Q2"}]),
+        h("2222", [hrow("2026-03-31", "26Q1", 11.0), hrow("2026-06-30", "26Q2", 4.0)]),
+        empty_status)
+    assert result["counts"]["confirmed"] == 1, result
+
+    # 3. 回升（<10→≥10）→ no_drop，不是 confirmed
+    #    goodinfo 當期 9.9（<10，仍在母體內）；FinMind 同季校準值 10.3（差 0.4 在容差內，
+    #    不觸發 source_conflict）；prev 8.0<10、cur_calibrated 10.3>=10 → 判定往上穿越，非掉落
+    result = detect_margin_drops(
+        nv([{"code": "3333", "name": "C", "market": "上市", "net_value": 9.9, "nv_quarter": "26Q2"}]),
+        h("3333", [hrow("2026-03-31", "26Q1", 8.0), hrow("2026-06-30", "26Q2", 10.3)]),
+        empty_status)
+    assert result["counts"]["no_drop"] == 1 and result["counts"]["confirmed"] == 0, result
+
+    # 4. 只有一季資料（無任何前季）→ unknown(no_prev)
+    result = detect_margin_drops(
+        nv([{"code": "4444", "name": "D", "market": "上市", "net_value": 9.0, "nv_quarter": "26Q2"}]),
+        h("4444", [hrow("2026-06-30", "26Q2", 9.0)]),
+        empty_status)
+    assert result["counts"]["unknown"] == 1
+    assert result["unknown_reasons"]["no_prev"] == 1, result
+
+    # 4b. 真正沒有任何歷史（rows=[]）→ unknown(no_prev)
+    result = detect_margin_drops(
+        nv([{"code": "44b", "name": "D2", "market": "上市", "net_value": 9.0, "nv_quarter": "26Q2"}]),
+        h("44b", []),
+        empty_status)
+    assert result["unknown_reasons"].get("no_prev") == 1, result
+
+    # 5. 兩季不相鄰（26Q1→26Q3，中間缺 26Q2）→ unknown(not_adjacent)
+    result = detect_margin_drops(
+        nv([{"code": "5555", "name": "E", "market": "上市", "net_value": 9.0, "nv_quarter": "26Q3"}]),
+        h("5555", [hrow("2026-03-31", "26Q1", 11.0), hrow("2026-09-30", "26Q3", 9.0)]),
+        empty_status)
+    assert result["unknown_reasons"].get("not_adjacent") == 1, result
+
+    # 6. FinMind 停在舊季（goodinfo 已到 26Q2，FinMind 只有到 26Q1）→ unknown(quarter_mismatch)
+    result = detect_margin_drops(
+        nv([{"code": "6666", "name": "F", "market": "上市", "net_value": 9.0, "nv_quarter": "26Q2"}]),
+        h("6666", [hrow("2025-12-31", "25Q4", 11.0), hrow("2026-03-31", "26Q1", 10.5)]),
+        empty_status)
+    assert result["unknown_reasons"].get("quarter_mismatch") == 1, result
+
+    # 7. unreliable 旗標：同季比值不落在合理面額倍率內 → unreliable，不判定
+    result = detect_margin_drops(
+        nv([{"code": "7777", "name": "G-KY*", "market": "上市", "net_value": 8.0, "nv_quarter": "26Q2"}]),
+        h("7777", [hrow("2026-03-31", "26Q1", 274.0), hrow("2026-06-30", "26Q2", 274.4)]),  # ratio=34.3, 不在允許清單
+        empty_status)
+    assert result["counts"]["unreliable"] == 1, result
+
+    # 8. 倍率 >3 → suspect（減資/資料異常表徵；用同季 factor=1 情境，避免與 unreliable 分支混淆）
+    result = detect_margin_drops(
+        nv([{"code": "8888", "name": "H", "market": "上市", "net_value": 1.0, "nv_quarter": "26Q2"}]),
+        h("8888", [hrow("2026-03-31", "26Q1", 8.0), hrow("2026-06-30", "26Q2", 1.0)]),  # ratio2=8 > 3
+        empty_status)
+    assert result["counts"]["suspect"] == 1, result
+
+    # 8b. prev<=0 → suspect（不算倍率，除零防呆）
+    result = detect_margin_drops(
+        nv([{"code": "88b", "name": "H2", "market": "上市", "net_value": 3.0, "nv_quarter": "26Q2"}]),
+        h("88b", [hrow("2026-03-31", "26Q1", -1.0), hrow("2026-06-30", "26Q2", 3.0)]),
+        empty_status)
+    assert result["counts"]["suspect"] == 1, result
+
+    # 8c. 符號翻轉（正→負）→ suspect
+    result = detect_margin_drops(
+        nv([{"code": "88c", "name": "H3", "market": "上市", "net_value": -2.0, "nv_quarter": "26Q2"}]),
+        h("88c", [hrow("2026-03-31", "26Q1", 5.0), hrow("2026-06-30", "26Q2", -2.0)]),
+        empty_status)
+    assert result["counts"]["suspect"] == 1, result
+
+    # 9. 同季兩來源分居 10 元兩側 → source_conflict，不可判 confirmed
+    #    goodinfo 當期 9.4（<10），FinMind 同季 10.3（>=10），差 0.9 > 容差 0.5
+    result = detect_margin_drops(
+        nv([{"code": "9999", "name": "I", "market": "上市", "net_value": 9.4, "nv_quarter": "26Q2"}]),
+        h("9999", [hrow("2026-03-31", "26Q1", 11.0), hrow("2026-06-30", "26Q2", 10.3)]),
+        empty_status)
+    assert result["counts"]["source_conflict"] == 1, result
+    assert result["counts"]["confirmed"] == 0, result
+
+    # 10. 3086/4157 型已知面額異常股：同季 factor 校準後不產生假掉落（發現 W 續回歸）
+    #     真實序列 25Q4=1.05 → 26Q1=0.95（面額1元，FinMind 恆高 10 倍），goodinfo 當期 0.95
+    result = detect_margin_drops(
+        nv([{"code": "3086", "name": "華義*", "market": "上市", "net_value": 0.95, "nv_quarter": "26Q1"}]),
+        h("3086", [hrow("2025-12-31", "25Q4", 10.5), hrow("2026-03-31", "26Q1", 9.5)]),
+        empty_status)
+    assert result["counts"]["confirmed"] == 0, result   # 校準後 1.05→0.95，從未接近10，不可判掉落
+    assert result["rows"][0]["data_state"] == "no_drop", result
+    # KY * 股仍在母體內（不被排除），且母體計數含它
+    assert result["universe"] == 1
+
+    # 11. budget_exhausted → unknown，且 reason 正確
+    status_incomplete = {"incomplete_codes": {"1234": "budget_exhausted"}}
+    result = detect_margin_drops(
+        nv([{"code": "1234", "name": "J", "market": "上市", "net_value": 9.0, "nv_quarter": "26Q2"}]),
+        {}, status_incomplete)
+    assert result["unknown_reasons"].get("budget_exhausted") == 1, result
+
+    # 12. fetch_failed → unknown，reason 與 budget_exhausted 分開計數
+    status_incomplete2 = {"incomplete_codes": {"1234": "fetch_failed"}}
+    result = detect_margin_drops(
+        nv([{"code": "1234", "name": "J", "market": "上市", "net_value": 9.0, "nv_quarter": "26Q2"}]),
+        {}, status_incomplete2)
+    assert result["unknown_reasons"].get("fetch_failed") == 1, result
+
+    # 13. 同季多筆更正申報 → 取 date 最新一筆，不可當成兩季
+    result = detect_margin_drops(
+        nv([{"code": "1357", "name": "K", "market": "上市", "net_value": 9.0, "nv_quarter": "26Q2"}]),
+        h("1357", [hrow("2026-03-31", "26Q1", 11.0),
+                   hrow("2026-06-30", "26Q2", 15.0),   # 原始申報（錯誤，未使用）
+                   hrow("2026-07-20", "26Q2", 9.0)]),  # 更正申報（date 較新）
+        empty_status)
+    assert result["counts"]["confirmed"] == 1, result   # 用更正後的 9.0，不是原始 15.0
+
+    # 14. universe 只算 netvalue <10 的列，watch/safe(<10門檻以上) 不進母體
+    result = detect_margin_drops(
+        nv([{"code": "aaaa", "name": "L", "market": "上市", "net_value": 9.9, "nv_quarter": "26Q1"},
+            {"code": "bbbb", "name": "M", "market": "上市", "net_value": 12.0, "nv_quarter": "26Q1"}]),
+        {}, empty_status)
+    assert result["universe"] == 1, result
+
+    print("selftest OK")
+
+
+if __name__ == "__main__":
+    if "--selftest" in sys.argv:
+        selftest()
+    else:
+        print("crossings.py 無 CLI 主流程，供 gen_site.py 呼叫 detect_margin_drops()。"
+              "用 --selftest 跑測試。")

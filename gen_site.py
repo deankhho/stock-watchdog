@@ -8,10 +8,15 @@ import json
 from datetime import datetime
 from pathlib import Path
 
+import crossings
+
 BASE = Path(__file__).parent
 REPORT = BASE / "data" / "report.json"
 BACKTEST = BASE / "data" / "backtest.json"
 LISTING = BASE / "data" / "listing_dates.json"
+NV_FILE = BASE / "data" / "netvalue.json"
+NV_HISTORY_DIR = BASE / "data" / "netvalue_history"
+NV_HISTORY_STATUS = BASE / "data" / "netvalue_history_status.json"
 DOCS = BASE / "docs"
 
 
@@ -30,7 +35,69 @@ def listing_line(code: str, market: str, listing: dict) -> str:
     return ""
 
 GROUP_LABEL = {"predict_in": "🔴 預測打入", "recover": "🟢 恢復候選",
-               "edge": "🟠 危險邊緣", "official": "⚪ 全額交割中"}
+               "edge": "🟠 危險邊緣", "official": "⚪ 全額交割中",
+               "dropped": "⬇️ 最近一季掉落"}
+
+CROSS_STATE_LABEL = {
+    "confirmed": ("🔴", "確認掉落"), "no_drop": ("🟢", "未掉落"),
+    "unknown": ("❔", "資料不明"), "unreliable": ("⚠️", "資料不可靠"),
+    "suspect": ("⚠️", "疑似異常"), "source_conflict": ("⚠️", "來源矛盾"),
+}
+CROSS_REASON_LABEL = {
+    "fetch_failed": "抓取失敗", "budget_exhausted": "本輪未輪到",
+    "quarter_mismatch": "兩來源季別不同步", "not_adjacent": "缺中間季度",
+    "no_prev": "無前季資料",
+}
+CROSS_STATE_ORDER = {"confirmed": 0, "source_conflict": 1, "suspect": 2,
+                     "unreliable": 3, "unknown": 4, "no_drop": 5}
+
+
+def render_dropped_panel(cross: dict) -> tuple:
+    """dropped 頁籤：回傳 (tab_btn_html, panel_html)。
+    🔴 不依賴 backtest.json，cross 完全來自 crossings.detect_margin_drops()（第 4 節解耦）。
+    表格逐列列出母體全部個股（不只 confirmed），data_state 標色顯示——
+    讓「0 檔掉落」與「0 檔掉落但 N 檔資料不明」可以被使用者親眼分辨（發現 G/M）。"""
+    counts, universe = cross["counts"], cross["universe"]
+    rows_sorted = sorted(cross["rows"], key=lambda r: CROSS_STATE_ORDER.get(r["data_state"], 9))
+    n_confirmed = counts.get("confirmed", 0)
+
+    tab_btn = (f'<button class="tab" data-t="dropped">⬇️ 最近一季掉落'
+              f'<span class="n">{n_confirmed}</span></button>')
+
+    reason_bits = "、".join(f'{CROSS_REASON_LABEL.get(k, k)} {v} 檔'
+                            for k, v in cross["unknown_reasons"].items())
+    summary = (f'母體 {universe} 檔（現況淨值 &lt;10 全部個股，非官方名單聯集）・'
+              f'確認掉落 {n_confirmed} 檔・未掉落 {counts.get("no_drop", 0)} 檔・'
+              f'資料不明 {counts.get("unknown", 0)} 檔'
+              + (f'（{reason_bits}）' if reason_bits else '') +
+              f'・資料不可靠 {counts.get("unreliable", 0)} 檔・'
+              f'疑似異常 {counts.get("suspect", 0)} 檔・'
+              f'來源矛盾 {counts.get("source_conflict", 0)} 檔')
+
+    trs = []
+    for r in rows_sorted:
+        icon, label = CROSS_STATE_LABEL.get(r["data_state"], ("", r["data_state"]))
+        period = f'{r["from_q"]} → {r["to_q"]}' if r.get("from_q") else (r.get("to_q") or "-")
+        reason = CROSS_REASON_LABEL.get(r.get("reason"), r.get("reason") or "")
+        trs.append(f"""<tr class="main">
+  <td><a href="https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID={r['code']}" target="_blank">{r['code']}</a></td>
+  <td>{r['name']}</td><td>{r.get('market','')}</td>
+  <td>{icon} {label}{('<span class=note>' + reason + '</span>') if reason else ''}</td>
+  <td>{period}</td>
+  <td class="num">{fmt(r.get('prev_nv'))}</td>
+  <td class="num">{fmt(r.get('cur_nv'))}</td>
+</tr>""")
+    table = f"""<table><thead><tr><th>代號</th><th>名稱</th><th>市場</th><th>狀態</th>
+    <th>期間</th><th>前季淨值</th><th>本季淨值</th></tr></thead>
+  <tbody>{''.join(trs) or '<tr><td colspan=7 class=empty>（目前無）</td></tr>'}</tbody></table>"""
+
+    panel = f"""<section class="panel" data-t="dropped">
+  <p class="desc">前季淨值 ≥10、最新季 &lt;10——已跌破融資融券標準。各檔比較期間不同，逐列標示。
+  依現有資料判定，不等於已驗證的財報事件；本清單依當前資料每輪重算，公司更正申報後可能異動。</p>
+  <p class="desc" style="opacity:.8">{summary}</p>
+  {table}
+</section>"""
+    return tab_btn, panel
 
 
 def gen_backtest_page():
@@ -97,6 +164,7 @@ TABS = [
     ("edge", "🟠 危險邊緣", "淨值 5~6——再虧一季恐跌破 5 元門檻。" + RULE_NOTE),
     ("margin_risk", "🟡 信用警戒", "淨值 6~10——低於 10 元將停止融資融券（依「有價證券得為融資融券標準」，上市上櫃同適用；恢復單季回 10 即可）。"),
     ("official", "⚪ 全額交割中", "官方現行變更交易方法名單（上市：證交所 TWT85U；上櫃：櫃買 cmode）。"),
+    ("dropped", "⬇️ 最近一季掉落", "前季淨值 ≥10、最新季 <10——已跌破融資融券標準。各檔比較期間不同，逐列標示。"),
 ]
 
 
@@ -272,8 +340,23 @@ def main():
                  if BACKTEST.exists() else {})
     listing = json.loads(LISTING.read_text()) if LISTING.exists() else {}
 
+    # 🔴 dropped 頁籤完全不依賴 backtest.json，獨立讀 netvalue_history（第 4 節解耦）
+    nv_data = json.loads(NV_FILE.read_text()) if NV_FILE.exists() else {"rows": []}
+    nv_history = {}
+    if NV_HISTORY_DIR.exists():
+        for fp in NV_HISTORY_DIR.glob("*.json"):
+            nv_history[fp.stem] = json.loads(fp.read_text())
+    nv_history_status = (json.loads(NV_HISTORY_STATUS.read_text())
+                         if NV_HISTORY_STATUS.exists() else {})
+    cross = crossings.detect_margin_drops(nv_data, nv_history, nv_history_status)
+
     tab_btns, panels = [], []
     for key, label, desc in TABS:
+        if key == "dropped":
+            tab_btn, panel = render_dropped_panel(cross)
+            tab_btns.append(tab_btn)
+            panels.append(panel)
+            continue
         rows = g.get(key, [])
         tab_btns.append(f'<button class="tab" data-t="{key}">{label}'
                         f'<span class="n">{len(rows)}</span></button>')
