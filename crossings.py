@@ -62,14 +62,15 @@ def detect_margin_drops(netvalue: dict, history: dict, status: dict) -> dict:
     unknown_reasons = {}
 
     def add_row(code, name, market, nv_q, data_state, reason=None,
-                from_q=None, prev_nv=None, cur_nv=None):
+                from_q=None, prev_nv=None, cur_nv=None, trail=None):
         counts[data_state] += 1
         if data_state == "unknown":
             unknown_reasons[reason] = unknown_reasons.get(reason, 0) + 1
         rows.append({"code": code, "name": name, "market": market,
                      "data_state": data_state, "reason": reason,
                      "from_q": from_q, "to_q": nv_q,
-                     "prev_nv": prev_nv, "cur_nv": cur_nv})
+                     "prev_nv": prev_nv, "cur_nv": cur_nv,
+                     "trail": trail or []})
 
     for r in universe_rows:
         code, name, market = r["code"], r.get("name", ""), r.get("market", "")
@@ -108,15 +109,24 @@ def detect_margin_drops(netvalue: dict, history: dict, status: dict) -> dict:
             else:
                 factor = 1
 
+        # 多季回溯顯示用（不影響判定）：把 by_q 全部季度用同一組 factor 校準、排序。
+        # 🔴 factor 只在 nv_q 這一季有跨來源校準依據；nv_q 與緊鄰前一季（判定用的那一對）
+        # 是 Phase A 正式邏輯已驗證的範圍，再更早的季度是「套用同一比例回推，未逐季驗證」
+        # （同計畫發現 W續：無法排除更早期間曾發生面額變更），trail 逐項標 confidence 讓
+        # 前端能視覺區分，不可讓使用者誤以為整條 trail 都跟判定同等可信。
+        idx = quarter_index(nv_q)
+        trail = [{"quarter": q, "net_value": round(v["net_value"] / factor, 2),
+                 "confidence": "high" if quarter_index(q) >= idx - 1 else "extrapolated"}
+                for q, v in sorted(by_q.items(), key=lambda kv: quarter_index(kv[0]))]
+
         # 只有當季自己一筆（無任何前季資料）→ no_prev；
         # 有前季但不是緊鄰前一季（中間缺季）→ not_adjacent
         if len(by_q) < 2:
-            add_row(code, name, market, nv_q, "unknown", "no_prev")
+            add_row(code, name, market, nv_q, "unknown", "no_prev", trail=trail)
             continue
-        idx = quarter_index(nv_q)
         prev_candidates = [v for k, v in by_q.items() if quarter_index(k) == idx - 1]
         if not prev_candidates:
-            add_row(code, name, market, nv_q, "unknown", "not_adjacent")
+            add_row(code, name, market, nv_q, "unknown", "not_adjacent", trail=trail)
             continue
         prev_row = prev_candidates[0]
 
@@ -127,12 +137,14 @@ def detect_margin_drops(netvalue: dict, history: dict, status: dict) -> dict:
         # 可信度守門：prev/cur 任一 <=0 或符號翻轉 → suspect（不算倍率，除零／負值防呆）
         if prev_nv <= 0 or cur_nv_calibrated <= 0 or (prev_nv > 0) != (cur_nv_calibrated > 0):
             add_row(code, name, market, nv_q, "suspect",
-                    from_q=prev_row["quarter"], prev_nv=prev_nv, cur_nv=cur_nv_calibrated)
+                    from_q=prev_row["quarter"], prev_nv=prev_nv, cur_nv=cur_nv_calibrated,
+                    trail=trail)
             continue
         ratio2 = max(prev_nv, cur_nv_calibrated) / min(prev_nv, cur_nv_calibrated)
         if ratio2 > SUSPECT_RATIO:
             add_row(code, name, market, nv_q, "suspect",
-                    from_q=prev_row["quarter"], prev_nv=prev_nv, cur_nv=cur_nv_calibrated)
+                    from_q=prev_row["quarter"], prev_nv=prev_nv, cur_nv=cur_nv_calibrated,
+                    trail=trail)
             continue
 
         # source_conflict：goodinfo 當期值與 FinMind 同季校準值，需落在 10 元同一側
@@ -140,12 +152,14 @@ def detect_margin_drops(netvalue: dict, history: dict, status: dict) -> dict:
         if abs(cur_nv_calibrated - cur_nv) > SOURCE_CONFLICT_TOLERANCE and \
            (cur_nv_calibrated >= CROSS_NV) != (cur_nv >= CROSS_NV):
             add_row(code, name, market, nv_q, "source_conflict",
-                    from_q=prev_row["quarter"], prev_nv=prev_nv, cur_nv=cur_nv_calibrated)
+                    from_q=prev_row["quarter"], prev_nv=prev_nv, cur_nv=cur_nv_calibrated,
+                    trail=trail)
             continue
 
         data_state = "confirmed" if prev_nv >= CROSS_NV > cur_nv_calibrated else "no_drop"
         add_row(code, name, market, nv_q, data_state,
-                from_q=prev_row["quarter"], prev_nv=prev_nv, cur_nv=cur_nv_calibrated)
+                from_q=prev_row["quarter"], prev_nv=prev_nv, cur_nv=cur_nv_calibrated,
+                trail=trail)
 
     return {"rows": rows, "universe": universe, "counts": counts,
             "unknown_reasons": unknown_reasons}
@@ -172,6 +186,11 @@ def selftest():
     assert result["counts"]["confirmed"] == 1, result
     assert result["rows"][0]["from_q"] == "26Q1" and result["rows"][0]["to_q"] == "26Q2"
     assert result["rows"][0]["data_state"] == "confirmed"
+    # trail：3 季全部出現、依季序排列；判定用的那一對（26Q1/26Q2）標 high，更早的 25Q4 標 extrapolated
+    trail = result["rows"][0]["trail"]
+    assert [t["quarter"] for t in trail] == ["25Q4", "26Q1", "26Q2"], trail
+    assert [t["confidence"] for t in trail] == ["extrapolated", "high", "high"], trail
+    assert trail[-1]["net_value"] == 9.5, trail
 
     # 2. 11→4（直接跌破 5 元也算掉落，不可被排除——發現 D 回歸）
     result = detect_margin_drops(
@@ -265,6 +284,17 @@ def selftest():
     assert result["rows"][0]["data_state"] == "no_drop", result
     # KY * 股仍在母體內（不被排除），且母體計數含它
     assert result["universe"] == 1
+
+    # 10b. trail 的 factor 必須跟判定用的是同一組（不可對不同季分別重算），
+    #      即使 4 季全部都遠高於 10（面額異常股原始值），校準後全部落在 1 元附近
+    result = detect_margin_drops(
+        nv([{"code": "3086b", "name": "華義*", "market": "上市", "net_value": 0.95, "nv_quarter": "26Q1"}]),
+        h("3086b", [hrow("2025-06-30", "25Q2", 11.2), hrow("2025-09-30", "25Q3", 10.9),
+                   hrow("2025-12-31", "25Q4", 10.5), hrow("2026-03-31", "26Q1", 9.5)]),
+        empty_status)
+    trail = result["rows"][0]["trail"]
+    assert [t["net_value"] for t in trail] == [1.12, 1.09, 1.05, 0.95], trail
+    assert [t["confidence"] for t in trail] == ["extrapolated", "extrapolated", "high", "high"], trail
 
     # 11. budget_exhausted → unknown，且 reason 正確
     status_incomplete = {"incomplete_codes": {"1234": "budget_exhausted"}}

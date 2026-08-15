@@ -9,8 +9,10 @@ fetch_netvalue_history.py — crossings.py 專用的淨值歷史抓取器
 股池＝ data/netvalue.json 中 net_value <10 的全部代號——與 crossings.py 母體同一定義，
 不經 report groups（避免 KY `*` 股被 analyze.py 排除掉造成的落差，見計畫發現 T）。
 
-只保留最新 3 季（判定用 2 季 + 1 季緩衝），不比照 backtest.py 留 8 季——
-面額 factor 只在同季比對時計算並只套用最新一個季度跨距，縮小曝險面（見計畫發現 W 續）。
+只保留最新 4 季（判定用 2 季 + 2 季供 crossings.py 的多季回溯 trail 顯示），
+不比照 backtest.py 留 8 季——面額 factor 只在同季比對時計算並只套用最新一個季度跨距，
+判定（confirmed/no_drop 等）邏輯不變，多出的較舊季度只供 trail 顯示，逐季標
+confidence（見 crossings.py），不可讓使用者誤讀成整條 trail 都經過同等驗證。
 
 預算：每檔最多 1 次請求 + 1 次重試（最多 2 requests/檔）；MAX_REQ=250（300/hr 留餘裕）。
 優先序：P1（季別落後，真的缺資料，必抓）> P2（公告期內補早鳥，依 fetched_at 舊到新）。
@@ -40,7 +42,7 @@ CACHE = BASE / "data" / "netvalue_history"
 STATUS_OUT = BASE / "data" / "netvalue_history_status.json"
 
 FINMIND_URL = "https://api.finmindtrade.com/api/v4/data"
-KEEP_QUARTERS = 3            # 只留最新 3 季，不比照 backtest.py 留 8 季
+KEEP_QUARTERS = 4            # 判定用最新 2 季 + 2 季供多季回溯顯示，不比照 backtest.py 留 8 季
 MAX_REQ = 250                 # FinMind 免 token 300/hr，留 50 餘裕
 
 
@@ -107,6 +109,11 @@ def fetch_one(code: str) -> tuple:
             r = requests.get(FINMIND_URL, params={
                 "dataset": "TaiwanStockBalanceSheet",
                 "data_id": code, "start_date": start}, timeout=20)
+            # 🔴 FinMind 配額用完時回 HTTP 402、data 是空陣列——r.json() 不會拋例外，
+            # 沒有 raise_for_status() 會把「額度用完」誤判成「這檔真的沒有歷史資料」，
+            # 靜默寫成 rows=[] 快取（2026-08-15 實測抓到：6210 等 58 檔真實遇到 402，
+            # data 筆數 0，若不擋下來就會被 crossings.py 當成 no_prev，混進正常的空歷史）
+            r.raise_for_status()
             data = r.json().get("data", [])
             by_date = {}
             for x in data:
@@ -293,10 +300,12 @@ def selftest():
     assert status5["p1_count"] == 1, status5
     assert status5["fetched_count"] == 1, status5
 
-    # --- 只留最新 3 季：fetch_one 的裁切邏輯（純函式部分，不含網路）---
+    # --- 只留最新 4 季：fetch_one 的裁切邏輯（純函式部分，不含網路）---
     class _FakeResp:
         def __init__(self, rows):
             self._rows = rows
+        def raise_for_status(self):
+            pass
         def json(self):
             return {"data": self._rows}
     import fetch_netvalue_history as m
@@ -310,8 +319,29 @@ def selftest():
     try:
         rows, used = fetch_one("TEST")
         assert used == 1, used
-        assert len(rows) == 3, rows                 # 5 季資料只留最新 3 季
+        assert len(rows) == 4, rows                 # 5 季資料只留最新 4 季
         assert rows[-1]["quarter"] == "26Q1", rows
+        assert rows[0]["quarter"] == "25Q2", rows    # 確認裁掉的是最舊那季（25Q1），不是隨意砍
+    finally:
+        m.requests.get = orig_get
+
+    # --- 🔴 配額用完（HTTP 402，data 空陣列）必須視為失敗，不可靜默當成「無歷史資料」---
+    # 2026-08-15 實測：FinMind 額度用完時回 402、data: []，r.json() 不拋例外，
+    # 沒有 raise_for_status() 就會把「額度用完」誤判成「這檔真的沒有歷史資料」
+    class _Fake402:
+        status_code = 402
+        def raise_for_status(self):
+            import requests as _rq
+            raise _rq.HTTPError("402 Requests reach the upper limit")
+        def json(self):
+            return {"data": [], "msg": "Requests reach the upper limit"}
+    m.requests.get = lambda *a, **kw: _Fake402()
+    try:
+        try:
+            fetch_one("TEST")
+            raise AssertionError("402 應該要拋 FetchFailed，不可靜默回傳空 rows")
+        except FetchFailed as e:
+            assert e.used == 2, e.used   # 重試過一次，兩次都 402
     finally:
         m.requests.get = orig_get
 

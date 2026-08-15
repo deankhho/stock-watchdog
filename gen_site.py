@@ -79,21 +79,33 @@ def render_dropped_panel(cross: dict) -> tuple:
         icon, label = CROSS_STATE_LABEL.get(r["data_state"], ("", r["data_state"]))
         period = f'{r["from_q"]} → {r["to_q"]}' if r.get("from_q") else (r.get("to_q") or "-")
         reason = CROSS_REASON_LABEL.get(r.get("reason"), r.get("reason") or "")
-        trs.append(f"""<tr class="main">
-  <td><a href="https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID={r['code']}" target="_blank">{r['code']}</a></td>
+        trail = r.get("trail") or []
+        chips = "".join(
+            f'<div class="q {"r" if t["net_value"] < 5 else "y" if t["net_value"] < 10 else "g"}'
+            f'{" lowconf" if t["confidence"] == "extrapolated" else ""}">'
+            f'<span>{t["quarter"]}</span>{t["net_value"]:.2f}</div>'
+            for t in trail)
+        detail = (f'<div class="tl">{chips}</div>'
+                  '<div class="ev">虛線／淡色＝較舊季度，套用同一比例回推、未逐季驗證，'
+                  '信心低於判定用的最新一對（見上方期間欄）</div>') if trail else \
+                 '<div class="hist-none">無多季歷史資料</div>'
+        trs.append(f"""<tr class="main" onclick="tog(this)">
+  <td><a href="https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID={r['code']}" target="_blank" onclick="event.stopPropagation()">{r['code']}</a></td>
   <td>{r['name']}</td><td>{r.get('market','')}</td>
   <td>{icon} {label}{('<span class=note>' + reason + '</span>') if reason else ''}</td>
-  <td>{period}</td>
+  <td>{period} <span class="exp">▾</span></td>
   <td class="num">{fmt(r.get('prev_nv'))}</td>
   <td class="num">{fmt(r.get('cur_nv'))}</td>
-</tr>""")
+</tr>
+<tr class="detail"><td colspan="7">{detail}</td></tr>""")
     table = f"""<table><thead><tr><th>代號</th><th>名稱</th><th>市場</th><th>狀態</th>
     <th>期間</th><th>前季淨值</th><th>本季淨值</th></tr></thead>
   <tbody>{''.join(trs) or '<tr><td colspan=7 class=empty>（目前無）</td></tr>'}</tbody></table>"""
 
     panel = f"""<section class="panel" data-t="dropped">
-  <p class="desc">前季淨值 ≥10、最新季 &lt;10——已跌破融資融券標準。各檔比較期間不同，逐列標示。
-  依現有資料判定，不等於已驗證的財報事件；本清單依當前資料每輪重算，公司更正申報後可能異動。</p>
+  <p class="desc">前季淨值 ≥10、最新季 &lt;10——已跌破融資融券標準。各檔比較期間不同，逐列標示，
+  點列展開可看多季淨值軌跡。依現有資料判定，不等於已驗證的財報事件；
+  本清單依當前資料每輪重算，公司更正申報後可能異動。</p>
   <p class="desc" style="opacity:.8">{summary}</p>
   {table}
 </section>"""
@@ -454,6 +466,7 @@ tr.detail td {{ padding:12px; }}
 .q.r {{ background:#7f1d1d; color:#fecaca; }}
 .q.y {{ background:#713f12; color:#fde68a; }}
 .q.g {{ background:#14532d; color:#bbf7d0; }}
+.q.lowconf {{ opacity:.55; border:1px dashed rgba(255,255,255,.35); }}
 .ev {{ font-size:12px; color:#93c5fd; line-height:1.7; }}
 .hist-none {{ font-size:12px; color:#5C6474; }}
 .updbtn {{ display:inline-block; margin-left:8px; padding:2px 10px; border-radius:8px;
