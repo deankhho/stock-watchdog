@@ -1,0 +1,126 @@
+
+
+
+<html>
+<head>
+	<title>公開資訊觀測站</title>
+	
+	
+	<link href="css/css2.css" rel="stylesheet" type="text/css" Media="Screen"/> 
+	
+	<script type="text/javascript" src="js/mops2.js"></script>
+	
+	
+	
+</head>
+
+<body>
+
+
+<div id="div01" >
+<table class='noBorder' align='center'><tr><td align='center' class='compName'>本資料由　(上市公司)台積電　公司提供</td></tr></table><table class='noBorder' width='70%' align='center' id='col_R'><tr><td>『該公司毋需出具個別財務報告』</td></tr></table><br><table class='noBorder' width='70%' align='center' id='col_Z_Y'><table class='hasBorder' width='100%'><tr><th class='tblHead' nowrap>日期</th><th class='tblHead' nowrap>民國</th><td class='odd' nowrap>115</td><th class='tblHead' nowrap>年</th><th class='tblHead' nowrap>第</th><td class='odd' nowrap>2</td><th colspan='2' class='tblHead' nowrap>季</th></tr><tr><th colspan='2' class='tblHead' nowrap>事務所名稱</th><td class='even' colspan='2' style='text-align:left !important;' nowrap>&nbsp;勤業眾信聯合會計師事務所</td><th colspan='2' class='tblHead' nowrap>簽證會計師</th><td class='even'>&nbsp;吳世宗</td><td class='even'>&nbsp;陳彥君</td></tr><tr><th colspan='2' class='tblHead' nowrap>查核日期</th><td class='odd' colspan='2'>115/08/11&nbsp;</td><th colspan='2' class='tblHead' nowrap>查核類型</th><td class='odd' colspan='2' style='text-align:left !important;'>無保留結論/意見-</td></tr><tr style='text-align:left !important;' class='even'><td colspan='8'><pre>會計師核閱報告
+
+台灣積體電路製造股份有限公司　公鑒：
+
+前　　言
+　　台灣積體電路製造股份有限公司及其子公司（以下簡稱台積公司及其子公司）
+民國115年及114年6月30日之合併資產負債表，暨民國115年及114年4月1日至6
+月30日與民國115年及114年1月1日至6月30日之合併綜合損益表、民國115年及
+114年1月1日至6月30日之合併權益變動表與合併現金流量表，以及合併財務報表
+附註（包括重大會計政策彙總），業經本會計師核閱竣事。依證券發行人財務報告
+編製準則及經金融監督管理委員會認可並發布生效之國際會計準則第34號「期中
+財務報導」編製允當表達之財務報表係管理階層之責任，本會計師之責任係依據核
+閱結果對合併財務報表作成結論。
+範　　圍
+　　本會計師係依照核閱準則2410號「財務報表之核閱」執行核閱工作。核閱合
+併財務報表時所執行之程序包括查詢（主要向負責財務與會計事務之人員查詢）、
+分析性程序及其他核閱程序。核閱工作之範圍明顯小於查核工作之範圍，因此本會
+計師可能無法察覺所有可藉由查核工作辨認之重大事項，故無法表示查核意見。
+結　　論
+　　依本會計師核閱結果，並未發現上開合併財務報表在所有重大方面有未依照證
+券發行人財務報告編製準則及經金融監督管理委員會認可並發布生效之國際會計準
+則第34號「期中財務報導」編製，致無法允當表達台積公司及其子公司民國115年
+及114年6月30日之合併財務狀況，暨民國115年及114年4月1日至6月30日之合併
+財務績效及民國115年及114年1月1日至6月30日之合併財務績效及合併現金流量
+之情事。
+
+勤業眾信聯合會計師事務所
+會 計 師    吳    世    宗	       會 計 師    陳    彥    君
+
+
+
+金融監督管理委員會核准文號             金融監督管理委員會核准文號
+　金管證審字第1010028123號             　金管證審字第1140350638號
+
+中　　  華　　  民　　  國　　115　　年　　8　　月　　11　　日</pre></td></tr></table>
+
+</div>
+
+
+</body>
+
+
+
+<script>
+	try {
+		if(!document.querySelector('#table01')){
+			var table01 = document.createElement("div");
+			table01.id = "table01"; 
+			document.body.appendChild(table01);
+			if(document.querySelector("#div01")){
+				table01.appendChild(div01);
+			};
+		};
+
+		if (document.autoForm!=null && document.autoForm!=undefined && document.autoForm.run.value==''){
+			ajax1(document.autoForm,'div01');
+			document.querySelector('form[name=autoForm]').remove();
+		};
+
+		if (document.autoForm1!=null && document.autoForm1!=undefined && document.autoForm1.run.value==''){
+			ajax1(document.autoForm1,'div01');
+			document.querySelector('form[name=autoForm1]').remove();
+		};
+
+		if (document.autoRunScript!=null && document.autoRunScript!=undefined && document.autoRunScript.run!=null && document.autoRunScript.run.value!=''){
+			let s = document.autoRunScript.run.value;
+			let script = document.createElement("script");
+
+			script.innerText = s;
+			document.body.appendChild(script);
+			document.querySelector('form[name=autoRunScript] > input[name=run]').remove();
+		};
+
+		if (document.autoRunScript1!=null && document.autoRunScript1!=undefined){
+			if (document.autoRunScript1.count!=null && document.autoRunScript1.count!=undefined && document.autoRunScript1.count.value!=''){
+				var count = parseInt(document.autoRunScript1.count.value);
+				for (var i=0;i<count;i++){
+					var run = eval("document.autoRunScript1.run"+i);
+					if (run!=null && run!=undefined && run.value!=''){
+						var s = run.value;
+
+						var script = document.createElement("script");
+						script.textContent = s;
+						document.querySelector("body").appendChild(script);
+
+						run.remove();
+					};
+				};
+			}else if (document.autoRunScript1.run!=null && document.autoRunScript1.run!=undefined && document.autoRunScript1.run.value!=''){
+				var s = document.autoRunScript1.run.value;
+				s = htmlEncode(s);
+				var script = document.createElement("script");
+				script.textContent = s;
+				document.querySelector("body").appendChild(script);
+
+				document.querySelector('form[name=autoRunScript1] > input[name=run]').remove();
+			};
+		};
+	} catch (error) {
+		console.error("Script Error:", error);
+	};
+</script>
+
+
+
+</html>

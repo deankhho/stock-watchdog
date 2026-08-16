@@ -35,6 +35,7 @@ from pathlib import Path
 import requests
 
 from analyze import in_filing_window, latest_expected_quarter, taipei_today
+from crossings import low_netvalue_pool
 
 BASE = Path(__file__).parent
 NV_FILE = BASE / "data" / "netvalue.json"
@@ -201,7 +202,7 @@ def run_budgeted_fetch(pool: list, cache_lookup: dict, today: date,
 
 def main():
     nv_data = json.loads(NV_FILE.read_text())
-    pool = sorted({r["code"] for r in nv_data["rows"] if r["net_value"] < 10})
+    pool = sorted({r["code"] for r in low_netvalue_pool(nv_data)})
     today = taipei_today()
 
     cache_lookup = {}

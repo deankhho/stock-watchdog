@@ -42,6 +42,7 @@ jobs:
           python backtest.py --selftest
           python crossings.py --selftest
           python fetch_netvalue_history.py --selftest
+          python fetch_audit.py --selftest
 
       # goodinfo 自 2026-07-15 起封鎖 Actions 雲端 IP。失敗不讓 run 變紅（天天紅燈＝狼來了），
       # 但一定要留下痕跡：Actions 註記 + job summary + 網站上的資料年齡橫幅。
@@ -64,9 +65,11 @@ jobs:
         run: |
           python fetch_official.py
           python analyze.py
-          # fetch_netvalue_history 與 backtest 互不依賴，順序不拘（各自獨立快取，第4節解耦設計）；
-          # 失敗不阻斷（P1 超額不 hard fail 是腳本自己的設計，這裡的 || 是防未預期例外）
+          # fetch_netvalue_history／fetch_audit／backtest 三者互不依賴，順序不拘（各自獨立資料源）；
+          # 失敗不阻斷（P1 超額不 hard fail 是腳本自己的設計，這裡的 || 是防未預期例外；
+          # fetch_audit 的降級狀態寫在 audit.json 檔案本身，不靠這裡的 exit code）
           python fetch_netvalue_history.py || echo "⚠️ 淨值歷史抓取失敗，沿用舊快取（dropped 頁籤可能顯示較多 unknown）"
+          python fetch_audit.py || echo "⚠️ 會計師查核意見抓取失敗，沿用舊資料"
           python backtest.py
           python fetch_listing_dates.py
           python gen_site.py

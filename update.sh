@@ -11,8 +11,10 @@ done
 .venv/bin/python fetch_goodinfo.py
 .venv/bin/python fetch_official.py
 .venv/bin/python analyze.py
-# fetch_netvalue_history 與 backtest 互不依賴，順序不拘（各自獨立快取，見計畫第4節解耦設計）
+# fetch_netvalue_history／fetch_audit／backtest 三者互不依賴，順序不拘（各自獨立資料源，
+# fetch_audit 排在 analyze 之後讀到最終股池；失敗不阻斷，state 寫在 audit.json 檔案本身）
 .venv/bin/python fetch_netvalue_history.py
+.venv/bin/python fetch_audit.py || echo "⚠️ 會計師查核意見抓取失敗，沿用舊資料（audit.json state 會標記 degraded/empty）"
 .venv/bin/python backtest.py          # 有快取，只補新季度
 .venv/bin/python fetch_listing_dates.py   # 列入日期（有快取）
 .venv/bin/python gen_site.py

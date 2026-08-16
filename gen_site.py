@@ -17,6 +17,7 @@ LISTING = BASE / "data" / "listing_dates.json"
 NV_FILE = BASE / "data" / "netvalue.json"
 NV_HISTORY_DIR = BASE / "data" / "netvalue_history"
 NV_HISTORY_STATUS = BASE / "data" / "netvalue_history_status.json"
+AUDIT_FILE = BASE / "data" / "audit.json"
 DOCS = BASE / "docs"
 
 
@@ -36,7 +37,43 @@ def listing_line(code: str, market: str, listing: dict) -> str:
 
 GROUP_LABEL = {"predict_in": "🔴 預測打入", "recover": "🟢 恢復候選",
                "edge": "🟠 危險邊緣", "official": "⚪ 全額交割中",
-               "dropped": "⬇️ 最近一季掉落"}
+               "dropped": "⬇️ 最近一季掉落", "margin_risk": "🟡 信用警戒",
+               "watch": "🔵 觀察池"}
+
+AUDIT_TIER_LABEL = {"clean": "無保留意見", "note": "保留意見（樣板性質常見，非個股特有警訊）",
+                    "danger": "⚠️ 繼續經營疑慮／無法表示意見", "unknown_type": "查核類型格式未知"}
+AUDIT_TIER_CLASS = {"clean": "g", "note": "", "danger": "r", "unknown_type": ""}
+AUDIT_STATE_LABEL = {"not_filed": "尚未申報", "unknown_code": "查無資料", "fetch_error": "抓取失敗"}
+
+
+def render_audit_block(code: str, audit: dict) -> str:
+    """會計師查核意見展開區塊。🔴 逐檔判斷差集（發現：舊快照差集必須逐檔處理）：
+    在 audit.json 的 rows 內 → 顯示（含是否過期，由前端 JS 依 fetched_at 當下算）；
+    不在快照內 → 「本輪尚無查核資料」，不顯示任何 tier。"""
+    if not audit or audit.get("state") == "empty":
+        return '<div class="hist-none">會計師查核資料尚未取得</div>'
+    row = (audit.get("rows") or {}).get(code)
+    if not row:
+        return '<div class="hist-none">本輪尚無查核資料</div>'
+    if row.get("state") != "ok":
+        label = AUDIT_STATE_LABEL.get(row["state"], row["state"])
+        return f'<div class="hist-none">會計師查核：{label}</div>'
+
+    tier = row.get("tier") or "unknown_type"
+    cls = AUDIT_TIER_CLASS.get(tier, "")
+    label = AUDIT_TIER_LABEL.get(tier, tier)
+    fetched_at = row.get("fetched_at", "")
+    firm = row.get("firm") or ""
+    quarter = row.get("quarter") or ""
+    extra_note = ('保留意見在一般上市股出現率約 50%（2026-08-13 抽樣 30 檔），非個股特有警訊。'
+                  if tier == "note" else "")
+    return (f'<div class="audit-block" data-audit-fetched-at="{fetched_at}">'
+           f'<span class="audit-chip {cls}" data-audit-chip>{label}</span> '
+           f'<span class="note" style="display:inline">{quarter}・{firm}・'
+           f'<span data-audit-age></span></span>'
+           f'<div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。'
+           f'{extra_note}</div>'
+           f'</div>')
 
 CROSS_STATE_LABEL = {
     "confirmed": ("🔴", "確認掉落"), "no_drop": ("🟢", "未掉落"),
@@ -177,6 +214,7 @@ TABS = [
     ("margin_risk", "🟡 信用警戒", "淨值 6~10——低於 10 元將停止融資融券（依「有價證券得為融資融券標準」，上市上櫃同適用；恢復單季回 10 即可）。"),
     ("official", "⚪ 全額交割中", "官方現行變更交易方法名單（上市：證交所 TWT85U；上櫃：櫃買 cmode）。"),
     ("dropped", "⬇️ 最近一季掉落", "前季淨值 ≥10、最新季 <10——已跌破融資融券標準。各檔比較期間不同，逐列標示。"),
+    ("watch", "🔵 觀察池 10~15", "淨值 10~15 且未列官方名單——尚未觸及停信用門檻，再虧一季可能跌破 10 元。"),
 ]
 
 
@@ -362,6 +400,13 @@ def main():
                          if NV_HISTORY_STATUS.exists() else {})
     cross = crossings.detect_margin_drops(nv_data, nv_history, nv_history_status)
 
+    # Phase B：讀 audit.json（會計師查核意見）。缺檔或壞檔一律等同 state:empty，
+    # 絕不讓整站產不出來（見計畫 §5「讀取端防呆」）
+    try:
+        audit = json.loads(AUDIT_FILE.read_text()) if AUDIT_FILE.exists() else {"state": "empty", "rows": {}}
+    except Exception:
+        audit = {"state": "empty", "rows": {}}
+
     tab_btns, panels = [], []
     for key, label, desc in TABS:
         if key == "dropped":
@@ -412,7 +457,7 @@ def main():
   <td class="num {'neg' if (r.get('gap') or 0) < 0 else 'pos'}">{fmt(r.get('gap'))}</td>
   <td>{r.get('nv_quarter','')}{('<span class=note>' + r['note'] + '</span>') if r.get('note') else ''} <span class="exp">▾</span></td>
 </tr>
-<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('{r['code']}','{r.get('market','')}',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol={tvp}%3A{r['code']}">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/{r['code']}/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div>{history_row(r['code'], bt_stocks, r.get('market',''), listing)}</td></tr>""")
+<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('{r['code']}','{r.get('market','')}',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol={tvp}%3A{r['code']}">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/{r['code']}/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div>{history_row(r['code'], bt_stocks, r.get('market',''), listing)}<div class="audit-heading">會計師查核意見</div>{render_audit_block(r['code'], audit)}</td></tr>""")
         trs = "".join(trs_list)
         panels.append(f"""<section class="panel" data-t="{key}">
   <p class="desc">{desc}</p>
@@ -423,6 +468,9 @@ def main():
 
     # 只把 source_fetched_at 傳給前端，年齡由瀏覽器當下算（存下來的天數會凍結）
     degraded_json = json.dumps(rep.get("degraded", {}), ensure_ascii=False)
+    # 只傳 state/fetched_at/reason，不傳整包 rows（rows 已經逐檔渲染進各列的 audit-block 了）
+    audit_state_json = json.dumps({"state": audit.get("state"), "fetched_at": audit.get("fetched_at"),
+                                   "reason": audit.get("reason")}, ensure_ascii=False)
 
     html = f"""<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -468,7 +516,16 @@ tr.detail td {{ padding:12px; }}
 .q.g {{ background:#14532d; color:#bbf7d0; }}
 .q.lowconf {{ opacity:.55; border:1px dashed rgba(255,255,255,.35); }}
 .ev {{ font-size:12px; color:#93c5fd; line-height:1.7; }}
+.ev.dim {{ color:#5C6474; }}
 .hist-none {{ font-size:12px; color:#5C6474; }}
+.audit-heading {{ font-size:11px; color:#5C6474; text-transform:uppercase; letter-spacing:.04em;
+  margin:12px 0 6px; padding-top:10px; border-top:1px solid rgba(255,255,255,.08); }}
+.audit-block {{ font-size:12px; }}
+.audit-chip {{ display:inline-block; font-size:11px; font-weight:600; padding:2px 8px;
+  border-radius:6px; background:#3f3f46; color:#e4e4e7; }}
+.audit-chip.g {{ background:#14532d; color:#86efac; }}
+.audit-chip.r {{ background:#7f1d1d; color:#fecaca; }}
+.audit-chip.stale {{ opacity:.5; }}
 .updbtn {{ display:inline-block; margin-left:8px; padding:2px 10px; border-radius:8px;
   background:#1d4ed8; color:#dbeafe; font-size:12px; text-decoration:none; }}
 .banner {{ margin:12px 0 0; padding:10px 14px; border-radius:10px; background:#172554;
@@ -524,6 +581,8 @@ tr.isnew {{ background:rgba(250,204,21,.06); }}
    資料明明越來越舊、頁面卻永遠顯示同一個數字——監控指標自己變成謊報。
    為什麼用經過時間而非日曆日相減：時間戳是絕對時刻，這樣算與瀏覽器時區無關。 */
 const DEGRADED = {degraded_json};
+const AUDIT_STATE = {audit_state_json};
+const AUDIT_STALE_DAYS = 30;
 const DEG_LABEL = {{tpex_cmode:'上櫃變更交易名單', disposal:'處置股名單',
                     margin_status:'信用交易現況'}};
 const NV_WARN=5, NV_BAD=10, DEG_BAD=3;
@@ -536,6 +595,24 @@ document.querySelectorAll('.age').forEach(el => {{
   if (el.dataset.testid === 'nv-age') {{
     if (d >= NV_BAD) el.classList.add('bad');
     else if (d >= NV_WARN) el.classList.add('warn');
+  }}
+}});
+
+/* 會計師查核意見逐列年齡：超過 30 天不顯示 tier 色塊，只留純文字＋過期天數
+   （同樣不在產生網頁時凍結天數，理由同上——見發現「陳舊上限」） */
+document.querySelectorAll('[data-audit-fetched-at]').forEach(el => {{
+  const ts = el.dataset.auditFetchedAt;
+  const ageEl = el.querySelector('[data-audit-age]');
+  if (!ts) {{ if (ageEl) ageEl.textContent = '時間未知'; return; }}
+  const d = ageDays(ts);
+  if (!isFinite(d)) {{ if (ageEl) ageEl.textContent = '時間未知'; return; }}
+  if (ageEl) ageEl.textContent = d <= 0 ? '今日' : d + ' 天前';
+  if (d > AUDIT_STALE_DAYS) {{
+    const chip = el.querySelector('[data-audit-chip]');
+    if (chip) {{
+      chip.classList.add('stale');
+      chip.textContent = '資料已過期 ' + d + ' 天（不顯示查核結論）';
+    }}
   }}
 }});
 
@@ -564,6 +641,18 @@ document.querySelectorAll('.age').forEach(el => {{
       '<div class="banner ' + (worst >= DEG_BAD ? 'bad' : 'warn') +
       '" data-testid="degraded-banner">' + (worst >= DEG_BAD ? '🔴 ' : '⚠️ ') +
       detail + '，其餘為最新。</div>');
+  }}
+  /* empty 與 degraded 是不同性質（沒有資料 vs 有舊資料且已過期），渲染成不同畫面 */
+  if (AUDIT_STATE.state === 'degraded') {{
+    const d = AUDIT_STATE.fetched_at ? ageDays(AUDIT_STATE.fetched_at) : null;
+    box.insertAdjacentHTML('beforeend',
+      '<div class="banner warn" data-testid="audit-degraded-banner">⚠️ 會計師查核資料為' +
+      (d === null ? '較舊' : d + ' 天前') + '的舊資料（' + (AUDIT_STATE.reason || '本輪抓取未通過') +
+      '），展開列仍顯示上次抓到的結果。</div>');
+  }} else if (AUDIT_STATE.state === 'empty') {{
+    box.insertAdjacentHTML('beforeend',
+      '<div class="banner" style="opacity:.7" data-testid="audit-empty-banner">' +
+      '會計師查核資料尚未取得。</div>');
   }}
 }})();
 

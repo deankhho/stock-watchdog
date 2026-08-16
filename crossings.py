@@ -23,6 +23,14 @@ def quarter_index(q: str) -> int:
     return year * 4 + quarter
 
 
+def low_netvalue_pool(netvalue: dict) -> list:
+    """母體：netvalue.json 中 net_value < CROSS_NV 的全部列（不經 report groups，
+    避免 KY * 股被 analyze.py 排除掉造成落差，見發現 T）。
+    crossings／fetch_netvalue_history／fetch_audit 三處共用同一函式算出，
+    避免母體定義各自漂移（見驗證 §4「股池一致性斷言」的動機）。"""
+    return [r for r in netvalue["rows"] if r["net_value"] < CROSS_NV]
+
+
 def _latest_by_quarter(hist_rows: list) -> dict:
     """同季多筆（更正申報）→ 取 date 最新的一筆，不可當成兩季"""
     by_q = {}
@@ -53,7 +61,7 @@ def detect_margin_drops(netvalue: dict, history: dict, status: dict) -> dict:
                  budget_exhausted（沒輪到）與 fetch_failed（抓了但失敗）
     """
     incomplete = status.get("incomplete_codes", {}) if status else {}
-    universe_rows = [r for r in netvalue["rows"] if r["net_value"] < CROSS_NV]
+    universe_rows = low_netvalue_pool(netvalue)
     universe = len(universe_rows)
 
     rows = []
