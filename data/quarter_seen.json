@@ -5,9 +5,11 @@
   "first_seen": "2026-07-06"
  },
  "2314": {
-  "quarter": "26Q1",
-  "nv": 0.53,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 0.27,
+  "first_seen": "2026-08-16",
+  "prev_nv": 0.53,
+  "prev_q": "26Q1"
  },
  "3664": {
   "quarter": "26Q1",
@@ -15,9 +17,11 @@
   "first_seen": "2026-07-06"
  },
  "3086": {
-  "quarter": "26Q1",
-  "nv": 1.15,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 1.1,
+  "first_seen": "2026-08-16",
+  "prev_nv": 1.15,
+  "prev_q": "26Q1"
  },
  "4943": {
   "quarter": "26Q1",
@@ -25,9 +29,11 @@
   "first_seen": "2026-07-06"
  },
  "3629": {
-  "quarter": "26Q1",
-  "nv": 1.4,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 1.31,
+  "first_seen": "2026-08-16",
+  "prev_nv": 1.4,
+  "prev_q": "26Q1"
  },
  "4157": {
   "quarter": "26Q1",
@@ -42,14 +48,18 @@
   "prev_q": "26Q1"
  },
  "3632": {
-  "quarter": "26Q1",
-  "nv": 2.98,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 2.83,
+  "first_seen": "2026-08-16",
+  "prev_nv": 2.98,
+  "prev_q": "26Q1"
  },
  "6225": {
-  "quarter": "26Q1",
-  "nv": 3.0,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 3.06,
+  "first_seen": "2026-08-16",
+  "prev_nv": 3.0,
+  "prev_q": "26Q1"
  },
  "7827": {
   "quarter": "26Q1",
@@ -57,9 +67,11 @@
   "first_seen": "2026-07-06"
  },
  "4529": {
-  "quarter": "26Q1",
-  "nv": 3.37,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 2.5,
+  "first_seen": "2026-08-16",
+  "prev_nv": 3.37,
+  "prev_q": "26Q1"
  },
  "5701": {
   "quarter": "26Q2",
@@ -69,49 +81,67 @@
   "prev_q": "26Q1"
  },
  "6236": {
-  "quarter": "26Q1",
+  "quarter": "26Q2",
   "nv": 3.74,
-  "first_seen": "2026-07-06"
+  "first_seen": "2026-08-16",
+  "prev_nv": 3.74,
+  "prev_q": "26Q1"
  },
  "8291": {
-  "quarter": "26Q1",
-  "nv": 3.74,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 3.32,
+  "first_seen": "2026-08-16",
+  "prev_nv": 3.74,
+  "prev_q": "26Q1"
  },
  "1538": {
-  "quarter": "26Q1",
-  "nv": 3.89,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 3.63,
+  "first_seen": "2026-08-16",
+  "prev_nv": 3.89,
+  "prev_q": "26Q1"
  },
  "3593": {
-  "quarter": "26Q1",
-  "nv": 4.14,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 3.42,
+  "first_seen": "2026-08-16",
+  "prev_nv": 4.14,
+  "prev_q": "26Q1"
  },
  "3710": {
-  "quarter": "26Q1",
-  "nv": 4.14,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 3.63,
+  "first_seen": "2026-08-16",
+  "prev_nv": 4.14,
+  "prev_q": "26Q1"
  },
  "3064": {
-  "quarter": "26Q1",
-  "nv": 4.37,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 3.91,
+  "first_seen": "2026-08-16",
+  "prev_nv": 4.37,
+  "prev_q": "26Q1"
  },
  "5355": {
-  "quarter": "26Q1",
-  "nv": 4.38,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 4.35,
+  "first_seen": "2026-08-16",
+  "prev_nv": 4.38,
+  "prev_q": "26Q1"
  },
  "2424": {
-  "quarter": "26Q1",
-  "nv": 4.64,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 4.23,
+  "first_seen": "2026-08-16",
+  "prev_nv": 4.64,
+  "prev_q": "26Q1"
  },
  "8101": {
-  "quarter": "26Q1",
-  "nv": 4.75,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 4.23,
+  "first_seen": "2026-08-16",
+  "prev_nv": 4.75,
+  "prev_q": "26Q1"
  },
  "3508": {
   "quarter": "26Q2",
@@ -121,59 +151,81 @@
   "prev_q": "26Q1"
  },
  "8277": {
-  "quarter": "26Q1",
-  "nv": 4.84,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 4.75,
+  "first_seen": "2026-08-16",
+  "prev_nv": 4.84,
+  "prev_q": "26Q1"
  },
  "8933": {
-  "quarter": "26Q1",
-  "nv": 4.94,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 4.7,
+  "first_seen": "2026-08-16",
+  "prev_nv": 4.94,
+  "prev_q": "26Q1"
  },
  "4304": {
-  "quarter": "26Q1",
-  "nv": 5.02,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 5.1,
+  "first_seen": "2026-08-16",
+  "prev_nv": 5.02,
+  "prev_q": "26Q1"
  },
  "1516": {
-  "quarter": "26Q1",
-  "nv": 5.11,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 5.03,
+  "first_seen": "2026-08-16",
+  "prev_nv": 5.11,
+  "prev_q": "26Q1"
  },
  "2067": {
-  "quarter": "26Q1",
-  "nv": 5.13,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 4.26,
+  "first_seen": "2026-08-16",
+  "prev_nv": 5.13,
+  "prev_q": "26Q1"
  },
  "3625": {
-  "quarter": "26Q1",
-  "nv": 5.15,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 4.72,
+  "first_seen": "2026-08-16",
+  "prev_nv": 5.15,
+  "prev_q": "26Q1"
  },
  "3259": {
-  "quarter": "26Q1",
-  "nv": 5.21,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 4.64,
+  "first_seen": "2026-08-16",
+  "prev_nv": 5.21,
+  "prev_q": "26Q1"
  },
  "6141": {
-  "quarter": "26Q1",
-  "nv": 5.23,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 5.29,
+  "first_seen": "2026-08-16",
+  "prev_nv": 5.23,
+  "prev_q": "26Q1"
  },
  "8477": {
-  "quarter": "26Q1",
-  "nv": 5.32,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 8.41,
+  "first_seen": "2026-08-16",
+  "prev_nv": 5.32,
+  "prev_q": "26Q1"
  },
  "3191": {
-  "quarter": "26Q1",
-  "nv": 5.52,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 5.6,
+  "first_seen": "2026-08-16",
+  "prev_nv": 5.52,
+  "prev_q": "26Q1"
  },
  "6461": {
-  "quarter": "26Q1",
-  "nv": 5.56,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 8.11,
+  "first_seen": "2026-08-16",
+  "prev_nv": 5.56,
+  "prev_q": "26Q1"
  },
  "6550": {
   "quarter": "26Q1",
@@ -181,14 +233,18 @@
   "first_seen": "2026-07-06"
  },
  "5345": {
-  "quarter": "26Q1",
+  "quarter": "26Q2",
   "nv": 5.63,
-  "first_seen": "2026-07-06"
+  "first_seen": "2026-08-16",
+  "prev_nv": 5.63,
+  "prev_q": "26Q1"
  },
  "4419": {
-  "quarter": "26Q1",
-  "nv": 5.68,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 5.38,
+  "first_seen": "2026-08-16",
+  "prev_nv": 5.68,
+  "prev_q": "26Q1"
  },
  "6431": {
   "quarter": "26Q1",
@@ -196,9 +252,11 @@
   "first_seen": "2026-07-06"
  },
  "8937": {
-  "quarter": "26Q1",
-  "nv": 5.68,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 5.54,
+  "first_seen": "2026-08-16",
+  "prev_nv": 5.68,
+  "prev_q": "26Q1"
  },
  "3085": {
   "quarter": "26Q2",
@@ -215,9 +273,11 @@
   "prev_q": "26Q1"
  },
  "1799": {
-  "quarter": "26Q1",
-  "nv": 5.77,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 5.69,
+  "first_seen": "2026-08-16",
+  "prev_nv": 5.77,
+  "prev_q": "26Q1"
  },
  "2321": {
   "quarter": "26Q2",
@@ -227,14 +287,18 @@
   "prev_q": "26Q1"
  },
  "3494": {
-  "quarter": "26Q1",
-  "nv": 5.8,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 5.54,
+  "first_seen": "2026-08-16",
+  "prev_nv": 5.8,
+  "prev_q": "26Q1"
  },
  "8059": {
-  "quarter": "26Q1",
-  "nv": 5.86,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 8.84,
+  "first_seen": "2026-08-16",
+  "prev_nv": 5.86,
+  "prev_q": "26Q1"
  },
  "1441": {
   "quarter": "26Q2",
@@ -251,14 +315,18 @@
   "prev_q": "26Q1"
  },
  "7803": {
-  "quarter": "26Q1",
-  "nv": 6.06,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 6.15,
+  "first_seen": "2026-08-16",
+  "prev_nv": 6.06,
+  "prev_q": "26Q1"
  },
  "5205": {
-  "quarter": "26Q1",
-  "nv": 6.12,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 5.51,
+  "first_seen": "2026-08-16",
+  "prev_nv": 6.12,
+  "prev_q": "26Q1"
  },
  "3523": {
   "quarter": "26Q2",
@@ -268,14 +336,18 @@
   "prev_q": "26Q1"
  },
  "2438": {
-  "quarter": "26Q1",
-  "nv": 6.21,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 5.58,
+  "first_seen": "2026-08-16",
+  "prev_nv": 6.21,
+  "prev_q": "26Q1"
  },
  "8067": {
-  "quarter": "26Q1",
-  "nv": 6.27,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 7.02,
+  "first_seen": "2026-08-16",
+  "prev_nv": 6.27,
+  "prev_q": "26Q1"
  },
  "5344": {
   "quarter": "26Q2",
@@ -297,9 +369,11 @@
   "first_seen": "2026-07-06"
  },
  "5227": {
-  "quarter": "26Q1",
-  "nv": 6.4,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 7.99,
+  "first_seen": "2026-08-16",
+  "prev_nv": 6.4,
+  "prev_q": "26Q1"
  },
  "4806": {
   "quarter": "26Q2",
@@ -309,9 +383,11 @@
   "prev_q": "26Q1"
  },
  "5324": {
-  "quarter": "26Q1",
-  "nv": 6.5,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 6.51,
+  "first_seen": "2026-08-16",
+  "prev_nv": 6.5,
+  "prev_q": "26Q1"
  },
  "4195": {
   "quarter": "26Q2",
@@ -321,19 +397,25 @@
   "prev_q": "26Q1"
  },
  "5314": {
-  "quarter": "26Q1",
-  "nv": 6.52,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 6.19,
+  "first_seen": "2026-08-16",
+  "prev_nv": 6.52,
+  "prev_q": "26Q1"
  },
  "1781": {
-  "quarter": "26Q1",
-  "nv": 6.57,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 6.4,
+  "first_seen": "2026-08-16",
+  "prev_nv": 6.57,
+  "prev_q": "26Q1"
  },
  "3093": {
-  "quarter": "26Q1",
-  "nv": 6.57,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 10.84,
+  "first_seen": "2026-08-16",
+  "prev_nv": 6.57,
+  "prev_q": "26Q1"
  },
  "6598": {
   "quarter": "26Q1",
@@ -341,29 +423,39 @@
   "first_seen": "2026-07-06"
  },
  "3288": {
-  "quarter": "26Q1",
-  "nv": 6.59,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 6.55,
+  "first_seen": "2026-08-16",
+  "prev_nv": 6.59,
+  "prev_q": "26Q1"
  },
  "4192": {
-  "quarter": "26Q1",
-  "nv": 6.62,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 6.23,
+  "first_seen": "2026-08-16",
+  "prev_nv": 6.62,
+  "prev_q": "26Q1"
  },
  "3018": {
-  "quarter": "26Q1",
-  "nv": 6.78,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 5.28,
+  "first_seen": "2026-08-16",
+  "prev_nv": 6.78,
+  "prev_q": "26Q1"
  },
  "4934": {
-  "quarter": "26Q1",
-  "nv": 6.79,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 7.59,
+  "first_seen": "2026-08-16",
+  "prev_nv": 6.79,
+  "prev_q": "26Q1"
  },
  "7780": {
-  "quarter": "26Q1",
-  "nv": 6.81,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 6.05,
+  "first_seen": "2026-08-16",
+  "prev_nv": 6.81,
+  "prev_q": "26Q1"
  },
  "9912": {
   "quarter": "26Q2",
@@ -380,19 +472,25 @@
   "prev_q": "26Q1"
  },
  "8093": {
-  "quarter": "26Q1",
-  "nv": 6.84,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 9.7,
+  "first_seen": "2026-08-16",
+  "prev_nv": 6.84,
+  "prev_q": "26Q1"
  },
  "1512": {
-  "quarter": "26Q1",
-  "nv": 6.85,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 6.84,
+  "first_seen": "2026-08-16",
+  "prev_nv": 6.85,
+  "prev_q": "26Q1"
  },
  "6443": {
-  "quarter": "26Q1",
-  "nv": 6.91,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 6.5,
+  "first_seen": "2026-08-16",
+  "prev_nv": 6.91,
+  "prev_q": "26Q1"
  },
  "3349": {
   "quarter": "26Q2",
@@ -402,14 +500,18 @@
   "prev_q": "26Q1"
  },
  "1435": {
-  "quarter": "26Q1",
-  "nv": 7.02,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 6.57,
+  "first_seen": "2026-08-16",
+  "prev_nv": 7.02,
+  "prev_q": "26Q1"
  },
  "6264": {
-  "quarter": "26Q1",
-  "nv": 7.04,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 6.76,
+  "first_seen": "2026-08-16",
+  "prev_nv": 7.04,
+  "prev_q": "26Q1"
  },
  "2724": {
   "quarter": "26Q1",
@@ -417,9 +519,11 @@
   "first_seen": "2026-07-06"
  },
  "3432": {
-  "quarter": "26Q1",
-  "nv": 7.12,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 6.97,
+  "first_seen": "2026-08-16",
+  "prev_nv": 7.12,
+  "prev_q": "26Q1"
  },
  "4131": {
   "quarter": "26Q2",
@@ -429,9 +533,11 @@
   "prev_q": "26Q1"
  },
  "8932": {
-  "quarter": "26Q1",
-  "nv": 7.12,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 6.93,
+  "first_seen": "2026-08-16",
+  "prev_nv": 7.12,
+  "prev_q": "26Q1"
  },
  "2258": {
   "quarter": "26Q2",
@@ -441,19 +547,25 @@
   "prev_q": "26Q1"
  },
  "4726": {
-  "quarter": "26Q1",
-  "nv": 7.18,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 6.8,
+  "first_seen": "2026-08-16",
+  "prev_nv": 7.18,
+  "prev_q": "26Q1"
  },
  "8201": {
-  "quarter": "26Q1",
-  "nv": 7.21,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 7.16,
+  "first_seen": "2026-08-16",
+  "prev_nv": 7.21,
+  "prev_q": "26Q1"
  },
  "2444": {
-  "quarter": "26Q1",
-  "nv": 7.35,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 6.57,
+  "first_seen": "2026-08-16",
+  "prev_nv": 7.35,
+  "prev_q": "26Q1"
  },
  "6152": {
   "quarter": "26Q2",
@@ -470,9 +582,11 @@
   "prev_q": "26Q1"
  },
  "3115": {
-  "quarter": "26Q1",
-  "nv": 7.46,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 7.49,
+  "first_seen": "2026-08-16",
+  "prev_nv": 7.46,
+  "prev_q": "26Q1"
  },
  "6872": {
   "quarter": "26Q2",
@@ -482,14 +596,18 @@
   "prev_q": "26Q1"
  },
  "5475": {
-  "quarter": "26Q1",
-  "nv": 7.49,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 8.57,
+  "first_seen": "2026-08-16",
+  "prev_nv": 7.49,
+  "prev_q": "26Q1"
  },
  "2007": {
-  "quarter": "26Q1",
-  "nv": 7.51,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 7.4,
+  "first_seen": "2026-08-16",
+  "prev_nv": 7.51,
+  "prev_q": "26Q1"
  },
  "6573": {
   "quarter": "26Q1",
@@ -497,19 +615,25 @@
   "first_seen": "2026-07-06"
  },
  "3672": {
-  "quarter": "26Q1",
-  "nv": 7.62,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 7.16,
+  "first_seen": "2026-08-16",
+  "prev_nv": 7.62,
+  "prev_q": "26Q1"
  },
  "5348": {
-  "quarter": "26Q1",
-  "nv": 7.63,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 7.35,
+  "first_seen": "2026-08-16",
+  "prev_nv": 7.63,
+  "prev_q": "26Q1"
  },
  "8038": {
-  "quarter": "26Q1",
-  "nv": 7.66,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 7.75,
+  "first_seen": "2026-08-16",
+  "prev_nv": 7.66,
+  "prev_q": "26Q1"
  },
  "8935": {
   "quarter": "26Q2",
@@ -519,39 +643,53 @@
   "prev_q": "26Q1"
  },
  "3522": {
-  "quarter": "26Q1",
-  "nv": 7.69,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 6.85,
+  "first_seen": "2026-08-16",
+  "prev_nv": 7.69,
+  "prev_q": "26Q1"
  },
  "5703": {
-  "quarter": "26Q1",
-  "nv": 7.71,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 7.87,
+  "first_seen": "2026-08-16",
+  "prev_nv": 7.71,
+  "prev_q": "26Q1"
  },
  "8084": {
-  "quarter": "26Q1",
-  "nv": 7.71,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 7.33,
+  "first_seen": "2026-08-16",
+  "prev_nv": 7.71,
+  "prev_q": "26Q1"
  },
  "5484": {
-  "quarter": "26Q1",
-  "nv": 7.72,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 8.27,
+  "first_seen": "2026-08-16",
+  "prev_nv": 7.72,
+  "prev_q": "26Q1"
  },
  "3058": {
-  "quarter": "26Q1",
-  "nv": 7.73,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 7.81,
+  "first_seen": "2026-08-16",
+  "prev_nv": 7.73,
+  "prev_q": "26Q1"
  },
  "6241": {
-  "quarter": "26Q1",
-  "nv": 7.76,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 7.57,
+  "first_seen": "2026-08-16",
+  "prev_nv": 7.76,
+  "prev_q": "26Q1"
  },
  "3419": {
-  "quarter": "26Q1",
-  "nv": 7.8,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 7.41,
+  "first_seen": "2026-08-16",
+  "prev_nv": 7.8,
+  "prev_q": "26Q1"
  },
  "5302": {
   "quarter": "26Q2",
@@ -561,9 +699,11 @@
   "prev_q": "26Q1"
  },
  "6492": {
-  "quarter": "26Q1",
-  "nv": 7.8,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 6.9,
+  "first_seen": "2026-08-16",
+  "prev_nv": 7.8,
+  "prev_q": "26Q1"
  },
  "3321": {
   "quarter": "26Q2",
@@ -573,19 +713,25 @@
   "prev_q": "26Q1"
  },
  "3713": {
-  "quarter": "26Q1",
-  "nv": 7.81,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 7.84,
+  "first_seen": "2026-08-16",
+  "prev_nv": 7.81,
+  "prev_q": "26Q1"
  },
  "6144": {
-  "quarter": "26Q1",
-  "nv": 7.82,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 8.21,
+  "first_seen": "2026-08-16",
+  "prev_nv": 7.82,
+  "prev_q": "26Q1"
  },
  "2349": {
-  "quarter": "26Q1",
-  "nv": 7.89,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 8.09,
+  "first_seen": "2026-08-16",
+  "prev_nv": 7.89,
+  "prev_q": "26Q1"
  },
  "4188": {
   "quarter": "26Q2",
@@ -595,24 +741,32 @@
   "prev_q": "26Q1"
  },
  "5301": {
-  "quarter": "26Q1",
-  "nv": 7.96,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 7.72,
+  "first_seen": "2026-08-16",
+  "prev_nv": 7.96,
+  "prev_q": "26Q1"
  },
  "3576": {
-  "quarter": "26Q1",
-  "nv": 8.04,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 7.93,
+  "first_seen": "2026-08-16",
+  "prev_nv": 8.04,
+  "prev_q": "26Q1"
  },
  "4168": {
-  "quarter": "26Q1",
-  "nv": 8.05,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 7.56,
+  "first_seen": "2026-08-16",
+  "prev_nv": 8.05,
+  "prev_q": "26Q1"
  },
  "3499": {
-  "quarter": "26Q1",
-  "nv": 8.08,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 7.79,
+  "first_seen": "2026-08-16",
+  "prev_nv": 8.08,
+  "prev_q": "26Q1"
  },
  "6733": {
   "quarter": "26Q2",
@@ -622,14 +776,18 @@
   "prev_q": "26Q1"
  },
  "9929": {
-  "quarter": "26Q1",
-  "nv": 8.16,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 8.43,
+  "first_seen": "2026-08-16",
+  "prev_nv": 8.16,
+  "prev_q": "26Q1"
  },
  "4534": {
-  "quarter": "26Q1",
-  "nv": 8.25,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 8.24,
+  "first_seen": "2026-08-16",
+  "prev_nv": 8.25,
+  "prev_q": "26Q1"
  },
  "8080": {
   "quarter": "26Q2",
@@ -639,9 +797,11 @@
   "prev_q": "26Q1"
  },
  "8176": {
-  "quarter": "26Q1",
-  "nv": 8.3,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 8.51,
+  "first_seen": "2026-08-16",
+  "prev_nv": 8.3,
+  "prev_q": "26Q1"
  },
  "6535": {
   "quarter": "26Q2",
@@ -658,9 +818,11 @@
   "prev_q": "26Q1"
  },
  "8450": {
-  "quarter": "26Q1",
-  "nv": 8.43,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 7.95,
+  "first_seen": "2026-08-16",
+  "prev_nv": 8.43,
+  "prev_q": "26Q1"
  },
  "1413": {
   "quarter": "26Q2",
@@ -675,14 +837,18 @@
   "first_seen": "2026-07-06"
  },
  "2740": {
-  "quarter": "26Q1",
-  "nv": 8.47,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 7.65,
+  "first_seen": "2026-08-16",
+  "prev_nv": 8.47,
+  "prev_q": "26Q1"
  },
  "1460": {
-  "quarter": "26Q1",
-  "nv": 8.5,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 8.36,
+  "first_seen": "2026-08-16",
+  "prev_nv": 8.5,
+  "prev_q": "26Q1"
  },
  "3372": {
   "quarter": "26Q2",
@@ -692,14 +858,18 @@
   "prev_q": "26Q1"
  },
  "2429": {
-  "quarter": "26Q1",
-  "nv": 8.56,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 8.3,
+  "first_seen": "2026-08-16",
+  "prev_nv": 8.56,
+  "prev_q": "26Q1"
  },
  "6142": {
-  "quarter": "26Q1",
-  "nv": 8.57,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 8.52,
+  "first_seen": "2026-08-16",
+  "prev_nv": 8.57,
+  "prev_q": "26Q1"
  },
  "3122": {
   "quarter": "26Q2",
@@ -716,9 +886,11 @@
   "prev_q": "26Q1"
  },
  "1721": {
-  "quarter": "26Q1",
-  "nv": 8.69,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 8.7,
+  "first_seen": "2026-08-16",
+  "prev_nv": 8.69,
+  "prev_q": "26Q1"
  },
  "4178": {
   "quarter": "26Q1",
@@ -726,39 +898,53 @@
   "first_seen": "2026-07-06"
  },
  "3686": {
-  "quarter": "26Q1",
-  "nv": 8.73,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 8.61,
+  "first_seen": "2026-08-16",
+  "prev_nv": 8.73,
+  "prev_q": "26Q1"
  },
  "4402": {
-  "quarter": "26Q1",
-  "nv": 8.73,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 8.44,
+  "first_seen": "2026-08-16",
+  "prev_nv": 8.73,
+  "prev_q": "26Q1"
  },
  "9950": {
-  "quarter": "26Q1",
-  "nv": 8.73,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 8.44,
+  "first_seen": "2026-08-16",
+  "prev_nv": 8.73,
+  "prev_q": "26Q1"
  },
  "6921": {
-  "quarter": "26Q1",
-  "nv": 8.79,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 8.34,
+  "first_seen": "2026-08-16",
+  "prev_nv": 8.79,
+  "prev_q": "26Q1"
  },
  "3049": {
-  "quarter": "26Q1",
-  "nv": 8.8,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 10.21,
+  "first_seen": "2026-08-16",
+  "prev_nv": 8.8,
+  "prev_q": "26Q1"
  },
  "6576": {
-  "quarter": "26Q1",
-  "nv": 8.85,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 8.08,
+  "first_seen": "2026-08-16",
+  "prev_nv": 8.85,
+  "prev_q": "26Q1"
  },
  "8024": {
-  "quarter": "26Q1",
-  "nv": 8.88,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 8.69,
+  "first_seen": "2026-08-16",
+  "prev_nv": 8.88,
+  "prev_q": "26Q1"
  },
  "2924": {
   "quarter": "26Q1",
@@ -780,19 +966,25 @@
   "prev_q": "26Q1"
  },
  "8085": {
-  "quarter": "26Q1",
-  "nv": 8.98,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 8.26,
+  "first_seen": "2026-08-16",
+  "prev_nv": 8.98,
+  "prev_q": "26Q1"
  },
  "1447": {
-  "quarter": "26Q1",
-  "nv": 9.02,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 9.62,
+  "first_seen": "2026-08-16",
+  "prev_nv": 9.02,
+  "prev_q": "26Q1"
  },
  "1468": {
-  "quarter": "26Q1",
-  "nv": 9.07,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 9.09,
+  "first_seen": "2026-08-16",
+  "prev_nv": 9.07,
+  "prev_q": "26Q1"
  },
  "3685": {
   "quarter": "26Q2",
@@ -802,24 +994,32 @@
   "prev_q": "26Q1"
  },
  "5516": {
-  "quarter": "26Q1",
-  "nv": 9.11,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 9.02,
+  "first_seen": "2026-08-16",
+  "prev_nv": 9.11,
+  "prev_q": "26Q1"
  },
  "2601": {
-  "quarter": "26Q1",
-  "nv": 9.12,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 8.91,
+  "first_seen": "2026-08-16",
+  "prev_nv": 9.12,
+  "prev_q": "26Q1"
  },
  "6129": {
-  "quarter": "26Q1",
-  "nv": 9.13,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 9.1,
+  "first_seen": "2026-08-16",
+  "prev_nv": 9.13,
+  "prev_q": "26Q1"
  },
  "6160": {
-  "quarter": "26Q1",
-  "nv": 9.14,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 8.6,
+  "first_seen": "2026-08-16",
+  "prev_nv": 9.14,
+  "prev_q": "26Q1"
  },
  "4950": {
   "quarter": "26Q2",
@@ -836,9 +1036,11 @@
   "prev_q": "26Q1"
  },
  "8047": {
-  "quarter": "26Q1",
-  "nv": 9.29,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 9.26,
+  "first_seen": "2026-08-16",
+  "prev_nv": 9.29,
+  "prev_q": "26Q1"
  },
  "6228": {
   "quarter": "26Q2",
@@ -848,19 +1050,25 @@
   "prev_q": "26Q1"
  },
  "1506": {
-  "quarter": "26Q1",
-  "nv": 9.32,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 9.33,
+  "first_seen": "2026-08-16",
+  "prev_nv": 9.32,
+  "prev_q": "26Q1"
  },
  "2516": {
-  "quarter": "26Q1",
-  "nv": 9.35,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 9.76,
+  "first_seen": "2026-08-16",
+  "prev_nv": 9.35,
+  "prev_q": "26Q1"
  },
  "2460": {
-  "quarter": "26Q1",
-  "nv": 9.37,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 9.63,
+  "first_seen": "2026-08-16",
+  "prev_nv": 9.37,
+  "prev_q": "26Q1"
  },
  "6169": {
   "quarter": "26Q2",
@@ -875,9 +1083,11 @@
   "first_seen": "2026-07-06"
  },
  "8092": {
-  "quarter": "26Q1",
+  "quarter": "26Q2",
   "nv": 9.43,
-  "first_seen": "2026-07-06"
+  "first_seen": "2026-08-16",
+  "prev_nv": 9.43,
+  "prev_q": "26Q1"
  },
  "3325": {
   "quarter": "26Q2",
@@ -887,19 +1097,25 @@
   "prev_q": "26Q1"
  },
  "5310": {
-  "quarter": "26Q1",
-  "nv": 9.49,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 11.56,
+  "first_seen": "2026-08-16",
+  "prev_nv": 9.49,
+  "prev_q": "26Q1"
  },
  "8422": {
-  "quarter": "26Q1",
-  "nv": 9.51,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 7.57,
+  "first_seen": "2026-08-16",
+  "prev_nv": 9.51,
+  "prev_q": "26Q1"
  },
  "2380": {
-  "quarter": "26Q1",
-  "nv": 9.54,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 9.84,
+  "first_seen": "2026-08-16",
+  "prev_nv": 9.54,
+  "prev_q": "26Q1"
  },
  "5468": {
   "quarter": "26Q2",
@@ -923,39 +1139,53 @@
   "prev_q": "26Q1"
  },
  "1471": {
-  "quarter": "26Q1",
-  "nv": 9.58,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 9.71,
+  "first_seen": "2026-08-16",
+  "prev_nv": 9.58,
+  "prev_q": "26Q1"
  },
  "6276": {
-  "quarter": "26Q1",
-  "nv": 9.58,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 5.71,
+  "first_seen": "2026-08-16",
+  "prev_nv": 9.58,
+  "prev_q": "26Q1"
  },
  "2025": {
-  "quarter": "26Q1",
-  "nv": 9.59,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 12.08,
+  "first_seen": "2026-08-16",
+  "prev_nv": 9.59,
+  "prev_q": "26Q1"
  },
  "6140": {
-  "quarter": "26Q1",
-  "nv": 9.59,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 9.86,
+  "first_seen": "2026-08-16",
+  "prev_nv": 9.59,
+  "prev_q": "26Q1"
  },
  "2431": {
-  "quarter": "26Q1",
-  "nv": 9.62,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 9.72,
+  "first_seen": "2026-08-16",
+  "prev_nv": 9.62,
+  "prev_q": "26Q1"
  },
  "8443": {
-  "quarter": "26Q1",
-  "nv": 9.62,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 9.38,
+  "first_seen": "2026-08-16",
+  "prev_nv": 9.62,
+  "prev_q": "26Q1"
  },
  "2712": {
-  "quarter": "26Q1",
-  "nv": 9.64,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 9.56,
+  "first_seen": "2026-08-16",
+  "prev_nv": 9.64,
+  "prev_q": "26Q1"
  },
  "3057": {
   "quarter": "26Q2",
@@ -965,14 +1195,18 @@
   "prev_q": "26Q1"
  },
  "4502": {
-  "quarter": "26Q1",
-  "nv": 9.66,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 9.6,
+  "first_seen": "2026-08-16",
+  "prev_nv": 9.66,
+  "prev_q": "26Q1"
  },
  "6657": {
-  "quarter": "26Q1",
-  "nv": 9.66,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 8.11,
+  "first_seen": "2026-08-16",
+  "prev_nv": 9.66,
+  "prev_q": "26Q1"
  },
  "2726": {
   "quarter": "26Q1",
@@ -980,14 +1214,18 @@
   "first_seen": "2026-07-06"
  },
  "5905": {
-  "quarter": "26Q1",
-  "nv": 9.82,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 9.98,
+  "first_seen": "2026-08-16",
+  "prev_nv": 9.82,
+  "prev_q": "26Q1"
  },
  "1444": {
-  "quarter": "26Q1",
-  "nv": 9.83,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 10.19,
+  "first_seen": "2026-08-16",
+  "prev_nv": 9.83,
+  "prev_q": "26Q1"
  },
  "3229": {
   "quarter": "26Q2",
@@ -1018,19 +1256,25 @@
   "prev_q": "26Q1"
  },
  "5210": {
-  "quarter": "26Q1",
-  "nv": 10.0,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 10.29,
+  "first_seen": "2026-08-16",
+  "prev_nv": 10.0,
+  "prev_q": "26Q1"
  },
  "2022": {
-  "quarter": "26Q1",
-  "nv": 10.03,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 9.9,
+  "first_seen": "2026-08-16",
+  "prev_nv": 10.03,
+  "prev_q": "26Q1"
  },
  "4513": {
-  "quarter": "26Q1",
-  "nv": 10.08,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 10.84,
+  "first_seen": "2026-08-16",
+  "prev_nv": 10.08,
+  "prev_q": "26Q1"
  },
  "2405": {
   "quarter": "26Q2",
@@ -1040,14 +1284,18 @@
   "prev_q": "26Q1"
  },
  "3041": {
-  "quarter": "26Q1",
-  "nv": 10.09,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 10.01,
+  "first_seen": "2026-08-16",
+  "prev_nv": 10.09,
+  "prev_q": "26Q1"
  },
  "4171": {
-  "quarter": "26Q1",
-  "nv": 10.18,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 10.07,
+  "first_seen": "2026-08-16",
+  "prev_nv": 10.18,
+  "prev_q": "26Q1"
  },
  "5531": {
   "quarter": "26Q2",
@@ -1057,14 +1305,18 @@
   "prev_q": "26Q1"
  },
  "3339": {
-  "quarter": "26Q1",
-  "nv": 10.28,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 11.08,
+  "first_seen": "2026-08-16",
+  "prev_nv": 10.28,
+  "prev_q": "26Q1"
  },
  "9919": {
-  "quarter": "26Q1",
-  "nv": 10.32,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 9.53,
+  "first_seen": "2026-08-16",
+  "prev_nv": 10.32,
+  "prev_q": "26Q1"
  },
  "6113": {
   "quarter": "26Q2",
@@ -1074,44 +1326,60 @@
   "prev_q": "26Q1"
  },
  "3011": {
-  "quarter": "26Q1",
-  "nv": 10.36,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 10.25,
+  "first_seen": "2026-08-16",
+  "prev_nv": 10.36,
+  "prev_q": "26Q1"
  },
  "5398": {
-  "quarter": "26Q1",
-  "nv": 10.38,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 10.49,
+  "first_seen": "2026-08-16",
+  "prev_nv": 10.38,
+  "prev_q": "26Q1"
  },
  "6901": {
-  "quarter": "26Q1",
-  "nv": 10.4,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 14.43,
+  "first_seen": "2026-08-16",
+  "prev_nv": 10.4,
+  "prev_q": "26Q1"
  },
  "2406": {
-  "quarter": "26Q1",
-  "nv": 10.42,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 10.57,
+  "first_seen": "2026-08-16",
+  "prev_nv": 10.42,
+  "prev_q": "26Q1"
  },
  "6226": {
-  "quarter": "26Q1",
-  "nv": 10.42,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 10.85,
+  "first_seen": "2026-08-16",
+  "prev_nv": 10.42,
+  "prev_q": "26Q1"
  },
  "4562": {
-  "quarter": "26Q1",
-  "nv": 10.51,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 10.38,
+  "first_seen": "2026-08-16",
+  "prev_nv": 10.51,
+  "prev_q": "26Q1"
  },
  "2646": {
-  "quarter": "26Q1",
-  "nv": 10.59,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 10.22,
+  "first_seen": "2026-08-16",
+  "prev_nv": 10.59,
+  "prev_q": "26Q1"
  },
  "4426": {
-  "quarter": "26Q1",
-  "nv": 10.6,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 10.09,
+  "first_seen": "2026-08-16",
+  "prev_nv": 10.6,
+  "prev_q": "26Q1"
  },
  "5211": {
   "quarter": "26Q2",
@@ -1121,24 +1389,32 @@
   "prev_q": "26Q1"
  },
  "4166": {
-  "quarter": "26Q1",
-  "nv": 10.71,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 10.94,
+  "first_seen": "2026-08-16",
+  "prev_nv": 10.71,
+  "prev_q": "26Q1"
  },
  "6547": {
-  "quarter": "26Q1",
-  "nv": 10.71,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 10.81,
+  "first_seen": "2026-08-16",
+  "prev_nv": 10.71,
+  "prev_q": "26Q1"
  },
  "3176": {
-  "quarter": "26Q1",
-  "nv": 10.73,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 10.6,
+  "first_seen": "2026-08-16",
+  "prev_nv": 10.73,
+  "prev_q": "26Q1"
  },
  "2302": {
-  "quarter": "26Q1",
-  "nv": 10.74,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 11.05,
+  "first_seen": "2026-08-16",
+  "prev_nv": 10.74,
+  "prev_q": "26Q1"
  },
  "4924": {
   "quarter": "26Q1",
@@ -1146,14 +1422,18 @@
   "first_seen": "2026-07-06"
  },
  "4989": {
-  "quarter": "26Q1",
-  "nv": 10.77,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 10.86,
+  "first_seen": "2026-08-16",
+  "prev_nv": 10.77,
+  "prev_q": "26Q1"
  },
  "6127": {
-  "quarter": "26Q1",
-  "nv": 10.77,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 10.57,
+  "first_seen": "2026-08-16",
+  "prev_nv": 10.77,
+  "prev_q": "26Q1"
  },
  "1455": {
   "quarter": "26Q2",
@@ -1163,9 +1443,11 @@
   "prev_q": "26Q1"
  },
  "3360": {
-  "quarter": "26Q1",
+  "quarter": "26Q2",
   "nv": 10.83,
-  "first_seen": "2026-07-06"
+  "first_seen": "2026-08-16",
+  "prev_nv": 10.83,
+  "prev_q": "26Q1"
  },
  "1454": {
   "quarter": "26Q2",
@@ -1175,9 +1457,11 @@
   "prev_q": "26Q1"
  },
  "5381": {
-  "quarter": "26Q1",
-  "nv": 10.92,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 11.1,
+  "first_seen": "2026-08-16",
+  "prev_nv": 10.92,
+  "prev_q": "26Q1"
  },
  "3024": {
   "quarter": "26Q2",
@@ -1194,14 +1478,18 @@
   "prev_q": "26Q1"
  },
  "3149": {
-  "quarter": "26Q1",
-  "nv": 10.96,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 10.47,
+  "first_seen": "2026-08-16",
+  "prev_nv": 10.96,
+  "prev_q": "26Q1"
  },
  "2719": {
-  "quarter": "26Q1",
-  "nv": 10.99,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 10.78,
+  "first_seen": "2026-08-16",
+  "prev_nv": 10.99,
+  "prev_q": "26Q1"
  },
  "3230": {
   "quarter": "26Q2",
@@ -1218,19 +1506,25 @@
   "prev_q": "26Q1"
  },
  "5488": {
-  "quarter": "26Q1",
-  "nv": 11.02,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 11.08,
+  "first_seen": "2026-08-16",
+  "prev_nv": 11.02,
+  "prev_q": "26Q1"
  },
  "6246": {
-  "quarter": "26Q1",
-  "nv": 11.03,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 10.94,
+  "first_seen": "2026-08-16",
+  "prev_nv": 11.03,
+  "prev_q": "26Q1"
  },
  "2061": {
-  "quarter": "26Q1",
-  "nv": 11.06,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 11.83,
+  "first_seen": "2026-08-16",
+  "prev_nv": 11.06,
+  "prev_q": "26Q1"
  },
  "6969": {
   "quarter": "26Q2",
@@ -1254,19 +1548,25 @@
   "prev_q": "26Q1"
  },
  "4174": {
-  "quarter": "26Q1",
-  "nv": 11.14,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 11.3,
+  "first_seen": "2026-08-16",
+  "prev_nv": 11.14,
+  "prev_q": "26Q1"
  },
  "5364": {
-  "quarter": "26Q1",
-  "nv": 11.14,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 10.83,
+  "first_seen": "2026-08-16",
+  "prev_nv": 11.14,
+  "prev_q": "26Q1"
  },
  "1459": {
-  "quarter": "26Q1",
-  "nv": 11.15,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 13.06,
+  "first_seen": "2026-08-16",
+  "prev_nv": 11.15,
+  "prev_q": "26Q1"
  },
  "1213": {
   "quarter": "26Q2",
@@ -1297,19 +1597,25 @@
   "prev_q": "26Q1"
  },
  "5498": {
-  "quarter": "26Q1",
-  "nv": 11.23,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 11.32,
+  "first_seen": "2026-08-16",
+  "prev_nv": 11.23,
+  "prev_q": "26Q1"
  },
  "7777": {
-  "quarter": "26Q1",
-  "nv": 11.26,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 12.51,
+  "first_seen": "2026-08-16",
+  "prev_nv": 11.26,
+  "prev_q": "26Q1"
  },
  "4142": {
-  "quarter": "26Q1",
-  "nv": 11.28,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 10.97,
+  "first_seen": "2026-08-16",
+  "prev_nv": 11.28,
+  "prev_q": "26Q1"
  },
  "4183": {
   "quarter": "26Q2",
@@ -1319,14 +1625,18 @@
   "prev_q": "26Q1"
  },
  "4413": {
-  "quarter": "26Q1",
-  "nv": 11.31,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 10.92,
+  "first_seen": "2026-08-16",
+  "prev_nv": 11.31,
+  "prev_q": "26Q1"
  },
  "6875": {
-  "quarter": "26Q1",
-  "nv": 11.34,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 10.58,
+  "first_seen": "2026-08-16",
+  "prev_nv": 11.34,
+  "prev_q": "26Q1"
  },
  "6244": {
   "quarter": "26Q2",
@@ -1336,24 +1646,32 @@
   "prev_q": "26Q1"
  },
  "4903": {
-  "quarter": "26Q1",
-  "nv": 11.47,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 11.09,
+  "first_seen": "2026-08-16",
+  "prev_nv": 11.47,
+  "prev_q": "26Q1"
  },
  "9949": {
-  "quarter": "26Q1",
-  "nv": 11.47,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 11.13,
+  "first_seen": "2026-08-16",
+  "prev_nv": 11.47,
+  "prev_q": "26Q1"
  },
  "1470": {
-  "quarter": "26Q1",
-  "nv": 11.48,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 11.76,
+  "first_seen": "2026-08-16",
+  "prev_nv": 11.48,
+  "prev_q": "26Q1"
  },
  "8476": {
-  "quarter": "26Q1",
-  "nv": 11.52,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 11.56,
+  "first_seen": "2026-08-16",
+  "prev_nv": 11.52,
+  "prev_q": "26Q1"
  },
  "6465": {
   "quarter": "26Q2",
@@ -1363,9 +1681,11 @@
   "prev_q": "26Q1"
  },
  "5521": {
-  "quarter": "26Q1",
-  "nv": 11.56,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 11.87,
+  "first_seen": "2026-08-16",
+  "prev_nv": 11.56,
+  "prev_q": "26Q1"
  },
  "6283": {
   "quarter": "26Q2",
@@ -1375,19 +1695,25 @@
   "prev_q": "26Q1"
  },
  "2734": {
-  "quarter": "26Q1",
-  "nv": 11.58,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 11.42,
+  "first_seen": "2026-08-16",
+  "prev_nv": 11.58,
+  "prev_q": "26Q1"
  },
  "2024": {
-  "quarter": "26Q1",
-  "nv": 11.59,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 11.7,
+  "first_seen": "2026-08-16",
+  "prev_nv": 11.59,
+  "prev_q": "26Q1"
  },
  "2305": {
-  "quarter": "26Q1",
-  "nv": 11.6,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 12.02,
+  "first_seen": "2026-08-16",
+  "prev_nv": 11.6,
+  "prev_q": "26Q1"
  },
  "4406": {
   "quarter": "26Q2",
@@ -1397,14 +1723,18 @@
   "prev_q": "26Q1"
  },
  "1732": {
-  "quarter": "26Q1",
-  "nv": 11.63,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 11.89,
+  "first_seen": "2026-08-16",
+  "prev_nv": 11.63,
+  "prev_q": "26Q1"
  },
  "3520": {
-  "quarter": "26Q1",
-  "nv": 11.63,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 11.55,
+  "first_seen": "2026-08-16",
+  "prev_nv": 11.63,
+  "prev_q": "26Q1"
  },
  "5340": {
   "quarter": "26Q2",
@@ -1414,14 +1744,18 @@
   "prev_q": "26Q1"
  },
  "4167": {
-  "quarter": "26Q1",
-  "nv": 11.66,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 14.15,
+  "first_seen": "2026-08-16",
+  "prev_nv": 11.66,
+  "prev_q": "26Q1"
  },
  "6164": {
-  "quarter": "26Q1",
-  "nv": 11.71,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 11.89,
+  "first_seen": "2026-08-16",
+  "prev_nv": 11.71,
+  "prev_q": "26Q1"
  },
  "9962": {
   "quarter": "26Q2",
@@ -1431,14 +1765,18 @@
   "prev_q": "26Q1"
  },
  "2466": {
-  "quarter": "26Q1",
-  "nv": 11.74,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 11.17,
+  "first_seen": "2026-08-16",
+  "prev_nv": 11.74,
+  "prev_q": "26Q1"
  },
  "6167": {
-  "quarter": "26Q1",
-  "nv": 11.78,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 11.72,
+  "first_seen": "2026-08-16",
+  "prev_nv": 11.78,
+  "prev_q": "26Q1"
  },
  "6661": {
   "quarter": "26Q2",
@@ -1448,19 +1786,25 @@
   "prev_q": "26Q1"
  },
  "6116": {
-  "quarter": "26Q1",
-  "nv": 11.81,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 13.04,
+  "first_seen": "2026-08-16",
+  "prev_nv": 11.81,
+  "prev_q": "26Q1"
  },
  "4714": {
-  "quarter": "26Q1",
-  "nv": 11.84,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 11.93,
+  "first_seen": "2026-08-16",
+  "prev_nv": 11.84,
+  "prev_q": "26Q1"
  },
  "6148": {
-  "quarter": "26Q1",
-  "nv": 11.84,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 11.94,
+  "first_seen": "2026-08-16",
+  "prev_nv": 11.84,
+  "prev_q": "26Q1"
  },
  "1529": {
   "quarter": "26Q2",
@@ -1470,39 +1814,53 @@
   "prev_q": "26Q1"
  },
  "1324": {
-  "quarter": "26Q1",
-  "nv": 11.87,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 11.93,
+  "first_seen": "2026-08-16",
+  "prev_nv": 11.87,
+  "prev_q": "26Q1"
  },
  "3322": {
-  "quarter": "26Q1",
-  "nv": 11.89,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 11.49,
+  "first_seen": "2026-08-16",
+  "prev_nv": 11.89,
+  "prev_q": "26Q1"
  },
  "5321": {
-  "quarter": "26Q1",
-  "nv": 11.89,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 13.38,
+  "first_seen": "2026-08-16",
+  "prev_nv": 11.89,
+  "prev_q": "26Q1"
  },
  "9955": {
-  "quarter": "26Q1",
-  "nv": 11.92,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 12.88,
+  "first_seen": "2026-08-16",
+  "prev_nv": 11.92,
+  "prev_q": "26Q1"
  },
  "2530": {
-  "quarter": "26Q1",
-  "nv": 11.95,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 11.88,
+  "first_seen": "2026-08-16",
+  "prev_nv": 11.95,
+  "prev_q": "26Q1"
  },
  "3095": {
-  "quarter": "26Q1",
-  "nv": 11.98,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 12.43,
+  "first_seen": "2026-08-16",
+  "prev_nv": 11.98,
+  "prev_q": "26Q1"
  },
  "6130": {
-  "quarter": "26Q1",
-  "nv": 11.98,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 12.72,
+  "first_seen": "2026-08-16",
+  "prev_nv": 11.98,
+  "prev_q": "26Q1"
  },
  "6885": {
   "quarter": "26Q2",
@@ -1512,14 +1870,18 @@
   "prev_q": "26Q1"
  },
  "1616": {
-  "quarter": "26Q1",
-  "nv": 12.0,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 10.86,
+  "first_seen": "2026-08-16",
+  "prev_nv": 12.0,
+  "prev_q": "26Q1"
  },
  "8111": {
-  "quarter": "26Q1",
-  "nv": 12.03,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 12.67,
+  "first_seen": "2026-08-16",
+  "prev_nv": 12.03,
+  "prev_q": "26Q1"
  },
  "3521": {
   "quarter": "26Q2",
@@ -1529,9 +1891,11 @@
   "prev_q": "26Q1"
  },
  "5251": {
-  "quarter": "26Q1",
-  "nv": 12.08,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 12.79,
+  "first_seen": "2026-08-16",
+  "prev_nv": 12.08,
+  "prev_q": "26Q1"
  },
  "2939": {
   "quarter": "26Q1",
@@ -1558,14 +1922,18 @@
   "prev_q": "26Q1"
  },
  "5328": {
-  "quarter": "26Q1",
-  "nv": 12.17,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 13.15,
+  "first_seen": "2026-08-16",
+  "prev_nv": 12.17,
+  "prev_q": "26Q1"
  },
  "1611": {
-  "quarter": "26Q1",
-  "nv": 12.19,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 12.52,
+  "first_seen": "2026-08-16",
+  "prev_nv": 12.19,
+  "prev_q": "26Q1"
  },
  "1805": {
   "quarter": "26Q2",
@@ -1594,14 +1962,18 @@
   "prev_q": "26Q1"
  },
  "6548": {
-  "quarter": "26Q1",
-  "nv": 12.24,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 14.03,
+  "first_seen": "2026-08-16",
+  "prev_nv": 12.24,
+  "prev_q": "26Q1"
  },
  "2017": {
-  "quarter": "26Q1",
-  "nv": 12.28,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 15.18,
+  "first_seen": "2026-08-16",
+  "prev_nv": 12.28,
+  "prev_q": "26Q1"
  },
  "1417": {
   "quarter": "26Q2",
@@ -1611,44 +1983,60 @@
   "prev_q": "26Q1"
  },
  "6674": {
-  "quarter": "26Q1",
-  "nv": 12.32,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 11.38,
+  "first_seen": "2026-08-16",
+  "prev_nv": 12.32,
+  "prev_q": "26Q1"
  },
  "1467": {
-  "quarter": "26Q1",
-  "nv": 12.35,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 12.3,
+  "first_seen": "2026-08-16",
+  "prev_nv": 12.35,
+  "prev_q": "26Q1"
  },
  "3067": {
-  "quarter": "26Q1",
+  "quarter": "26Q2",
   "nv": 12.39,
-  "first_seen": "2026-07-06"
+  "first_seen": "2026-08-16",
+  "prev_nv": 12.39,
+  "prev_q": "26Q1"
  },
  "9902": {
-  "quarter": "26Q1",
-  "nv": 12.42,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 13.26,
+  "first_seen": "2026-08-16",
+  "prev_nv": 12.42,
+  "prev_q": "26Q1"
  },
  "1316": {
-  "quarter": "26Q1",
-  "nv": 12.44,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 12.01,
+  "first_seen": "2026-08-16",
+  "prev_nv": 12.44,
+  "prev_q": "26Q1"
  },
  "2109": {
-  "quarter": "26Q1",
-  "nv": 12.46,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 12.68,
+  "first_seen": "2026-08-16",
+  "prev_nv": 12.46,
+  "prev_q": "26Q1"
  },
  "8071": {
-  "quarter": "26Q1",
-  "nv": 12.49,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 12.98,
+  "first_seen": "2026-08-16",
+  "prev_nv": 12.49,
+  "prev_q": "26Q1"
  },
  "3623": {
-  "quarter": "26Q1",
-  "nv": 12.5,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 12.89,
+  "first_seen": "2026-08-16",
+  "prev_nv": 12.5,
+  "prev_q": "26Q1"
  },
  "6616": {
   "quarter": "26Q1",
@@ -1656,24 +2044,32 @@
   "first_seen": "2026-07-06"
  },
  "2426": {
-  "quarter": "26Q1",
-  "nv": 12.51,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 12.76,
+  "first_seen": "2026-08-16",
+  "prev_nv": 12.51,
+  "prev_q": "26Q1"
  },
  "6118": {
-  "quarter": "26Q1",
-  "nv": 12.51,
-  "first_seen": "2026-07-06"
+  "quarter": "26Q2",
+  "nv": 12.42,
+  "first_seen": "2026-08-16",
+  "prev_nv": 12.51,
+  "prev_q": "26Q1"
  },
  "7835": {
-  "quarter": "26Q1",
-  "nv": 5.12,
-  "first_seen": "2026-08-10"
+  "quarter": "26Q2",
+  "nv": 4.0,
+  "first_seen": "2026-08-16",
+  "prev_nv": 5.12,
+  "prev_q": "26Q1"
  },
  "7814": {
-  "quarter": "26Q1",
+  "quarter": "26Q2",
   "nv": 7.29,
-  "first_seen": "2026-08-10"
+  "first_seen": "2026-08-16",
+  "prev_nv": 7.29,
+  "prev_q": "26Q1"
  },
  "1591": {
   "quarter": "26Q1",
@@ -1696,9 +2092,11 @@
   "first_seen": "2026-08-10"
  },
  "2237": {
-  "quarter": "26Q1",
-  "nv": 11.23,
-  "first_seen": "2026-08-11"
+  "quarter": "26Q2",
+  "nv": 12.21,
+  "first_seen": "2026-08-16",
+  "prev_nv": 11.23,
+  "prev_q": "26Q1"
  },
  "4960": {
   "quarter": "26Q2",
@@ -1714,5 +2112,1465 @@
   "quarter": "26Q2",
   "nv": 12.32,
   "first_seen": "2026-08-13"
+ },
+ "3489": {
+  "quarter": "26Q2",
+  "nv": 10.35,
+  "first_seen": "2026-08-16"
+ },
+ "2540": {
+  "quarter": "26Q2",
+  "nv": 11.4,
+  "first_seen": "2026-08-16"
+ },
+ "3092": {
+  "quarter": "26Q2",
+  "nv": 11.62,
+  "first_seen": "2026-08-16"
+ },
+ "1219": {
+  "quarter": "26Q2",
+  "nv": 11.67,
+  "first_seen": "2026-08-16"
+ },
+ "3609": {
+  "quarter": "26Q2",
+  "nv": 11.68,
+  "first_seen": "2026-08-16"
+ },
+ "5202": {
+  "quarter": "26Q2",
+  "nv": 11.8,
+  "first_seen": "2026-08-16"
+ },
+ "1310": {
+  "quarter": "26Q2",
+  "nv": 11.88,
+  "first_seen": "2026-08-16"
+ },
+ "2390": {
+  "quarter": "26Q2",
+  "nv": 12.23,
+  "first_seen": "2026-08-16"
+ },
+ "3646": {
+  "quarter": "26Q2",
+  "nv": 12.28,
+  "first_seen": "2026-08-16"
+ },
+ "1432": {
+  "quarter": "26Q2",
+  "nv": 12.29,
+  "first_seen": "2026-08-16"
+ },
+ "2538": {
+  "quarter": "26Q2",
+  "nv": 12.33,
+  "first_seen": "2026-08-16"
+ },
+ "3666": {
+  "quarter": "26Q2",
+  "nv": 12.38,
+  "first_seen": "2026-08-16"
+ },
+ "4530": {
+  "quarter": "26Q2",
+  "nv": 12.44,
+  "first_seen": "2026-08-16"
+ },
+ "5278": {
+  "quarter": "26Q2",
+  "nv": 12.5,
+  "first_seen": "2026-08-16"
+ },
+ "2241": {
+  "quarter": "26Q2",
+  "nv": 12.53,
+  "first_seen": "2026-08-16"
+ },
+ "3002": {
+  "quarter": "26Q2",
+  "nv": 12.6,
+  "first_seen": "2026-08-16"
+ },
+ "1710": {
+  "quarter": "26Q2",
+  "nv": 12.65,
+  "first_seen": "2026-08-16"
+ },
+ "5460": {
+  "quarter": "26Q2",
+  "nv": 12.67,
+  "first_seen": "2026-08-16"
+ },
+ "6222": {
+  "quarter": "26Q2",
+  "nv": 12.68,
+  "first_seen": "2026-08-16"
+ },
+ "6499": {
+  "quarter": "26Q2",
+  "nv": 12.69,
+  "first_seen": "2026-08-16"
+ },
+ "1464": {
+  "quarter": "26Q2",
+  "nv": 12.74,
+  "first_seen": "2026-08-16"
+ },
+ "8076": {
+  "quarter": "26Q2",
+  "nv": 12.75,
+  "first_seen": "2026-08-16"
+ },
+ "2243": {
+  "quarter": "26Q1",
+  "nv": 12.81,
+  "first_seen": "2026-08-16"
+ },
+ "2889": {
+  "quarter": "26Q1",
+  "nv": 12.81,
+  "first_seen": "2026-08-16"
+ },
+ "6794": {
+  "quarter": "26Q2",
+  "nv": 12.86,
+  "first_seen": "2026-08-16"
+ },
+ "1220": {
+  "quarter": "26Q2",
+  "nv": 12.93,
+  "first_seen": "2026-08-16"
+ },
+ "2911": {
+  "quarter": "26Q2",
+  "nv": 12.95,
+  "first_seen": "2026-08-16"
+ },
+ "2440": {
+  "quarter": "26Q2",
+  "nv": 12.99,
+  "first_seen": "2026-08-16"
+ },
+ "2926": {
+  "quarter": "26Q2",
+  "nv": 12.99,
+  "first_seen": "2026-08-16"
+ },
+ "2547": {
+  "quarter": "26Q2",
+  "nv": 13.01,
+  "first_seen": "2026-08-16"
+ },
+ "3434": {
+  "quarter": "26Q2",
+  "nv": 13.04,
+  "first_seen": "2026-08-16"
+ },
+ "3541": {
+  "quarter": "26Q2",
+  "nv": 13.04,
+  "first_seen": "2026-08-16"
+ },
+ "6133": {
+  "quarter": "26Q2",
+  "nv": 13.04,
+  "first_seen": "2026-08-16"
+ },
+ "8908": {
+  "quarter": "26Q2",
+  "nv": 13.04,
+  "first_seen": "2026-08-16"
+ },
+ "5902": {
+  "quarter": "26Q2",
+  "nv": 13.08,
+  "first_seen": "2026-08-16"
+ },
+ "4994": {
+  "quarter": "26Q2",
+  "nv": 13.09,
+  "first_seen": "2026-08-16"
+ },
+ "6512": {
+  "quarter": "26Q2",
+  "nv": 13.12,
+  "first_seen": "2026-08-16"
+ },
+ "2369": {
+  "quarter": "26Q2",
+  "nv": 13.13,
+  "first_seen": "2026-08-16"
+ },
+ "3296": {
+  "quarter": "26Q2",
+  "nv": 13.22,
+  "first_seen": "2026-08-16"
+ },
+ "9907": {
+  "quarter": "26Q2",
+  "nv": 13.22,
+  "first_seen": "2026-08-16"
+ },
+ "1789": {
+  "quarter": "26Q2",
+  "nv": 13.23,
+  "first_seen": "2026-08-16"
+ },
+ "1305": {
+  "quarter": "26Q2",
+  "nv": 13.25,
+  "first_seen": "2026-08-16"
+ },
+ "2033": {
+  "quarter": "26Q2",
+  "nv": 13.25,
+  "first_seen": "2026-08-16"
+ },
+ "8440": {
+  "quarter": "26Q2",
+  "nv": 13.26,
+  "first_seen": "2026-08-16"
+ },
+ "1453": {
+  "quarter": "26Q2",
+  "nv": 13.27,
+  "first_seen": "2026-08-16"
+ },
+ "3150": {
+  "quarter": "26Q2",
+  "nv": 13.3,
+  "first_seen": "2026-08-16"
+ },
+ "7723": {
+  "quarter": "26Q2",
+  "nv": 13.35,
+  "first_seen": "2026-08-16"
+ },
+ "8927": {
+  "quarter": "26Q2",
+  "nv": 13.35,
+  "first_seen": "2026-08-16"
+ },
+ "6174": {
+  "quarter": "26Q2",
+  "nv": 13.37,
+  "first_seen": "2026-08-16"
+ },
+ "2064": {
+  "quarter": "26Q2",
+  "nv": 13.39,
+  "first_seen": "2026-08-16"
+ },
+ "2012": {
+  "quarter": "26Q2",
+  "nv": 13.44,
+  "first_seen": "2026-08-16"
+ },
+ "6153": {
+  "quarter": "26Q2",
+  "nv": 13.44,
+  "first_seen": "2026-08-16"
+ },
+ "6482": {
+  "quarter": "26Q2",
+  "nv": 13.45,
+  "first_seen": "2026-08-16"
+ },
+ "6708": {
+  "quarter": "26Q2",
+  "nv": 13.45,
+  "first_seen": "2026-08-16"
+ },
+ "1108": {
+  "quarter": "26Q2",
+  "nv": 13.51,
+  "first_seen": "2026-08-16"
+ },
+ "1714": {
+  "quarter": "26Q2",
+  "nv": 13.52,
+  "first_seen": "2026-08-16"
+ },
+ "1309": {
+  "quarter": "26Q2",
+  "nv": 13.53,
+  "first_seen": "2026-08-16"
+ },
+ "4147": {
+  "quarter": "26Q2",
+  "nv": 13.58,
+  "first_seen": "2026-08-16"
+ },
+ "1337": {
+  "quarter": "26Q1",
+  "nv": 13.61,
+  "first_seen": "2026-08-16"
+ },
+ "2614": {
+  "quarter": "26Q2",
+  "nv": 13.61,
+  "first_seen": "2026-08-16"
+ },
+ "8222": {
+  "quarter": "26Q2",
+  "nv": 13.61,
+  "first_seen": "2026-08-16"
+ },
+ "1806": {
+  "quarter": "26Q2",
+  "nv": 13.62,
+  "first_seen": "2026-08-16"
+ },
+ "8421": {
+  "quarter": "26Q2",
+  "nv": 13.64,
+  "first_seen": "2026-08-16"
+ },
+ "3025": {
+  "quarter": "26Q2",
+  "nv": 13.68,
+  "first_seen": "2026-08-16"
+ },
+ "6530": {
+  "quarter": "26Q2",
+  "nv": 13.68,
+  "first_seen": "2026-08-16"
+ },
+ "4109": {
+  "quarter": "26Q2",
+  "nv": 13.69,
+  "first_seen": "2026-08-16"
+ },
+ "1617": {
+  "quarter": "26Q2",
+  "nv": 13.72,
+  "first_seen": "2026-08-16"
+ },
+ "1742": {
+  "quarter": "26Q2",
+  "nv": 13.73,
+  "first_seen": "2026-08-16"
+ },
+ "8068": {
+  "quarter": "26Q2",
+  "nv": 13.74,
+  "first_seen": "2026-08-16"
+ },
+ "5276": {
+  "quarter": "26Q1",
+  "nv": 13.75,
+  "first_seen": "2026-08-16"
+ },
+ "2332": {
+  "quarter": "26Q2",
+  "nv": 13.76,
+  "first_seen": "2026-08-16"
+ },
+ "4911": {
+  "quarter": "26Q2",
+  "nv": 13.76,
+  "first_seen": "2026-08-16"
+ },
+ "2032": {
+  "quarter": "26Q2",
+  "nv": 13.84,
+  "first_seen": "2026-08-16"
+ },
+ "3268": {
+  "quarter": "26Q2",
+  "nv": 13.86,
+  "first_seen": "2026-08-16"
+ },
+ "2365": {
+  "quarter": "26Q2",
+  "nv": 13.89,
+  "first_seen": "2026-08-16"
+ },
+ "1780": {
+  "quarter": "26Q2",
+  "nv": 13.9,
+  "first_seen": "2026-08-16"
+ },
+ "4538": {
+  "quarter": "26Q2",
+  "nv": 13.9,
+  "first_seen": "2026-08-16"
+ },
+ "5245": {
+  "quarter": "26Q2",
+  "nv": 14.01,
+  "first_seen": "2026-08-16"
+ },
+ "3071": {
+  "quarter": "26Q2",
+  "nv": 14.03,
+  "first_seen": "2026-08-16"
+ },
+ "6578": {
+  "quarter": "26Q2",
+  "nv": 14.03,
+  "first_seen": "2026-08-16"
+ },
+ "1466": {
+  "quarter": "26Q2",
+  "nv": 14.1,
+  "first_seen": "2026-08-16"
+ },
+ "4102": {
+  "quarter": "26Q2",
+  "nv": 14.14,
+  "first_seen": "2026-08-16"
+ },
+ "3607": {
+  "quarter": "26Q2",
+  "nv": 14.15,
+  "first_seen": "2026-08-16"
+ },
+ "6558": {
+  "quarter": "26Q2",
+  "nv": 14.18,
+  "first_seen": "2026-08-16"
+ },
+ "2482": {
+  "quarter": "26Q2",
+  "nv": 14.19,
+  "first_seen": "2026-08-16"
+ },
+ "4720": {
+  "quarter": "26Q2",
+  "nv": 14.21,
+  "first_seen": "2026-08-16"
+ },
+ "2908": {
+  "quarter": "26Q2",
+  "nv": 14.22,
+  "first_seen": "2026-08-16"
+ },
+ "3535": {
+  "quarter": "26Q2",
+  "nv": 14.22,
+  "first_seen": "2026-08-16"
+ },
+ "6185": {
+  "quarter": "26Q2",
+  "nv": 14.28,
+  "first_seen": "2026-08-16"
+ },
+ "2073": {
+  "quarter": "26Q2",
+  "nv": 14.32,
+  "first_seen": "2026-08-16"
+ },
+ "3284": {
+  "quarter": "26Q2",
+  "nv": 14.33,
+  "first_seen": "2026-08-16"
+ },
+ "8431": {
+  "quarter": "26Q2",
+  "nv": 14.33,
+  "first_seen": "2026-08-16"
+ },
+ "3630": {
+  "quarter": "26Q2",
+  "nv": 14.36,
+  "first_seen": "2026-08-16"
+ },
+ "2401": {
+  "quarter": "26Q2",
+  "nv": 14.37,
+  "first_seen": "2026-08-16"
+ },
+ "2836": {
+  "quarter": "26Q1",
+  "nv": 14.38,
+  "first_seen": "2026-08-16"
+ },
+ "3055": {
+  "quarter": "26Q2",
+  "nv": 14.39,
+  "first_seen": "2026-08-16"
+ },
+ "4976": {
+  "quarter": "26Q2",
+  "nv": 14.43,
+  "first_seen": "2026-08-16"
+ },
+ "2515": {
+  "quarter": "26Q2",
+  "nv": 14.44,
+  "first_seen": "2026-08-16"
+ },
+ "5014": {
+  "quarter": "26Q2",
+  "nv": 14.45,
+  "first_seen": "2026-08-16"
+ },
+ "5490": {
+  "quarter": "26Q2",
+  "nv": 14.48,
+  "first_seen": "2026-08-16"
+ },
+ "2340": {
+  "quarter": "26Q2",
+  "nv": 14.5,
+  "first_seen": "2026-08-16"
+ },
+ "2465": {
+  "quarter": "26Q2",
+  "nv": 14.51,
+  "first_seen": "2026-08-16"
+ },
+ "4207": {
+  "quarter": "26Q2",
+  "nv": 14.56,
+  "first_seen": "2026-08-16"
+ },
+ "6015": {
+  "quarter": "26Q1",
+  "nv": 14.56,
+  "first_seen": "2026-08-16"
+ },
+ "4414": {
+  "quarter": "26Q2",
+  "nv": 14.59,
+  "first_seen": "2026-08-16"
+ },
+ "8472": {
+  "quarter": "26Q2",
+  "nv": 14.59,
+  "first_seen": "2026-08-16"
+ },
+ "8923": {
+  "quarter": "26Q2",
+  "nv": 14.59,
+  "first_seen": "2026-08-16"
+ },
+ "6767": {
+  "quarter": "26Q2",
+  "nv": 14.6,
+  "first_seen": "2026-08-16"
+ },
+ "2342": {
+  "quarter": "26Q2",
+  "nv": 14.62,
+  "first_seen": "2026-08-16"
+ },
+ "3631": {
+  "quarter": "26Q2",
+  "nv": 14.62,
+  "first_seen": "2026-08-16"
+ },
+ "2845": {
+  "quarter": "26Q1",
+  "nv": 14.63,
+  "first_seen": "2026-08-16"
+ },
+ "3285": {
+  "quarter": "26Q2",
+  "nv": 14.65,
+  "first_seen": "2026-08-16"
+ },
+ "6934": {
+  "quarter": "26Q2",
+  "nv": 14.66,
+  "first_seen": "2026-08-16"
+ },
+ "2611": {
+  "quarter": "26Q2",
+  "nv": 14.69,
+  "first_seen": "2026-08-16"
+ },
+ "5450": {
+  "quarter": "26Q2",
+  "nv": 14.69,
+  "first_seen": "2026-08-16"
+ },
+ "5452": {
+  "quarter": "26Q2",
+  "nv": 14.71,
+  "first_seen": "2026-08-16"
+ },
+ "2897": {
+  "quarter": "26Q1",
+  "nv": 14.72,
+  "first_seen": "2026-08-16"
+ },
+ "1776": {
+  "quarter": "26Q2",
+  "nv": 14.74,
+  "first_seen": "2026-08-16"
+ },
+ "3272": {
+  "quarter": "26Q2",
+  "nv": 14.74,
+  "first_seen": "2026-08-16"
+ },
+ "2028": {
+  "quarter": "26Q2",
+  "nv": 14.77,
+  "first_seen": "2026-08-16"
+ },
+ "6910": {
+  "quarter": "26Q2",
+  "nv": 14.78,
+  "first_seen": "2026-08-16"
+ },
+ "3205": {
+  "quarter": "26Q2",
+  "nv": 14.82,
+  "first_seen": "2026-08-16"
+ },
+ "6496": {
+  "quarter": "26Q2",
+  "nv": 14.83,
+  "first_seen": "2026-08-16"
+ },
+ "3232": {
+  "quarter": "26Q2",
+  "nv": 14.84,
+  "first_seen": "2026-08-16"
+ },
+ "4729": {
+  "quarter": "26Q2",
+  "nv": 14.85,
+  "first_seen": "2026-08-16"
+ },
+ "1813": {
+  "quarter": "26Q2",
+  "nv": 14.87,
+  "first_seen": "2026-08-16"
+ },
+ "5272": {
+  "quarter": "26Q2",
+  "nv": 14.88,
+  "first_seen": "2026-08-16"
+ },
+ "4923": {
+  "quarter": "26Q2",
+  "nv": 14.91,
+  "first_seen": "2026-08-16"
+ },
+ "6418": {
+  "quarter": "26Q2",
+  "nv": 14.92,
+  "first_seen": "2026-08-16"
+ },
+ "6698": {
+  "quarter": "26Q2",
+  "nv": 14.92,
+  "first_seen": "2026-08-16"
+ },
+ "6134": {
+  "quarter": "26Q2",
+  "nv": 14.94,
+  "first_seen": "2026-08-16"
+ },
+ "6606": {
+  "quarter": "26Q2",
+  "nv": 14.95,
+  "first_seen": "2026-08-16"
+ },
+ "1463": {
+  "quarter": "26Q2",
+  "nv": 14.96,
+  "first_seen": "2026-08-16"
+ },
+ "6259": {
+  "quarter": "26Q2",
+  "nv": 14.96,
+  "first_seen": "2026-08-16"
+ },
+ "8066": {
+  "quarter": "26Q2",
+  "nv": 14.97,
+  "first_seen": "2026-08-16"
+ },
+ "8215": {
+  "quarter": "26Q2",
+  "nv": 14.97,
+  "first_seen": "2026-08-16"
+ },
+ "3083": {
+  "quarter": "26Q2",
+  "nv": 14.98,
+  "first_seen": "2026-08-16"
+ },
+ "2419": {
+  "quarter": "26Q2",
+  "nv": 14.99,
+  "first_seen": "2026-08-16"
+ },
+ "1414": {
+  "quarter": "26Q2",
+  "nv": 15.06,
+  "first_seen": "2026-08-16"
+ },
+ "1465": {
+  "quarter": "26Q2",
+  "nv": 15.06,
+  "first_seen": "2026-08-16"
+ },
+ "5514": {
+  "quarter": "26Q2",
+  "nv": 15.11,
+  "first_seen": "2026-08-16"
+ },
+ "8089": {
+  "quarter": "26Q2",
+  "nv": 15.12,
+  "first_seen": "2026-08-16"
+ },
+ "2254": {
+  "quarter": "26Q2",
+  "nv": 15.17,
+  "first_seen": "2026-08-16"
+ },
+ "2537": {
+  "quarter": "26Q2",
+  "nv": 15.17,
+  "first_seen": "2026-08-16"
+ },
+ "6909": {
+  "quarter": "26Q2",
+  "nv": 15.17,
+  "first_seen": "2026-08-16"
+ },
+ "5529": {
+  "quarter": "26Q2",
+  "nv": 15.18,
+  "first_seen": "2026-08-16"
+ },
+ "3597": {
+  "quarter": "26Q2",
+  "nv": 15.2,
+  "first_seen": "2026-08-16"
+ },
+ "1517": {
+  "quarter": "26Q2",
+  "nv": 15.23,
+  "first_seen": "2026-08-16"
+ },
+ "3164": {
+  "quarter": "26Q2",
+  "nv": 15.23,
+  "first_seen": "2026-08-16"
+ },
+ "8423": {
+  "quarter": "26Q1",
+  "nv": 15.23,
+  "first_seen": "2026-08-16"
+ },
+ "5228": {
+  "quarter": "26Q2",
+  "nv": 15.24,
+  "first_seen": "2026-08-16"
+ },
+ "9935": {
+  "quarter": "26Q2",
+  "nv": 15.27,
+  "first_seen": "2026-08-16"
+ },
+ "6988": {
+  "quarter": "26Q2",
+  "nv": 15.31,
+  "first_seen": "2026-08-16"
+ },
+ "6649": {
+  "quarter": "26Q2",
+  "nv": 15.33,
+  "first_seen": "2026-08-16"
+ },
+ "2834": {
+  "quarter": "26Q1",
+  "nv": 15.34,
+  "first_seen": "2026-08-16"
+ },
+ "3437": {
+  "quarter": "26Q2",
+  "nv": 15.34,
+  "first_seen": "2026-08-16"
+ },
+ "6506": {
+  "quarter": "26Q2",
+  "nv": 15.39,
+  "first_seen": "2026-08-16"
+ },
+ "6240": {
+  "quarter": "26Q2",
+  "nv": 15.44,
+  "first_seen": "2026-08-16"
+ },
+ "4939": {
+  "quarter": "26Q2",
+  "nv": 15.45,
+  "first_seen": "2026-08-16"
+ },
+ "1808": {
+  "quarter": "26Q2",
+  "nv": 15.46,
+  "first_seen": "2026-08-16"
+ },
+ "6743": {
+  "quarter": "26Q2",
+  "nv": 15.46,
+  "first_seen": "2026-08-16"
+ },
+ "6916": {
+  "quarter": "26Q2",
+  "nv": 15.49,
+  "first_seen": "2026-08-16"
+ },
+ "1905": {
+  "quarter": "26Q2",
+  "nv": 15.5,
+  "first_seen": "2026-08-16"
+ },
+ "1225": {
+  "quarter": "26Q2",
+  "nv": 15.51,
+  "first_seen": "2026-08-16"
+ },
+ "1233": {
+  "quarter": "26Q2",
+  "nv": 15.51,
+  "first_seen": "2026-08-16"
+ },
+ "1735": {
+  "quarter": "26Q2",
+  "nv": 15.51,
+  "first_seen": "2026-08-16"
+ },
+ "1217": {
+  "quarter": "26Q2",
+  "nv": 15.53,
+  "first_seen": "2026-08-16"
+ },
+ "6204": {
+  "quarter": "26Q2",
+  "nv": 15.56,
+  "first_seen": "2026-08-16"
+ },
+ "6218": {
+  "quarter": "26Q2",
+  "nv": 15.58,
+  "first_seen": "2026-08-16"
+ },
+ "3051": {
+  "quarter": "26Q2",
+  "nv": 15.59,
+  "first_seen": "2026-08-16"
+ },
+ "2913": {
+  "quarter": "26Q2",
+  "nv": 15.62,
+  "first_seen": "2026-08-16"
+ },
+ "7839": {
+  "quarter": "26Q2",
+  "nv": 15.66,
+  "first_seen": "2026-08-16"
+ },
+ "1201": {
+  "quarter": "26Q2",
+  "nv": 15.72,
+  "first_seen": "2026-08-16"
+ },
+ "3050": {
+  "quarter": "26Q2",
+  "nv": 15.77,
+  "first_seen": "2026-08-16"
+ },
+ "9934": {
+  "quarter": "26Q2",
+  "nv": 15.77,
+  "first_seen": "2026-08-16"
+ },
+ "2910": {
+  "quarter": "26Q2",
+  "nv": 15.78,
+  "first_seen": "2026-08-16"
+ },
+ "2230": {
+  "quarter": "26Q2",
+  "nv": 15.82,
+  "first_seen": "2026-08-16"
+ },
+ "2511": {
+  "quarter": "26Q2",
+  "nv": 15.84,
+  "first_seen": "2026-08-16"
+ },
+ "6219": {
+  "quarter": "26Q2",
+  "nv": 15.87,
+  "first_seen": "2026-08-16"
+ },
+ "8489": {
+  "quarter": "26Q2",
+  "nv": 15.87,
+  "first_seen": "2026-08-16"
+ },
+ "2399": {
+  "quarter": "26Q2",
+  "nv": 15.9,
+  "first_seen": "2026-08-16"
+ },
+ "6026": {
+  "quarter": "26Q2",
+  "nv": 15.91,
+  "first_seen": "2026-08-16"
+ },
+ "3379": {
+  "quarter": "26Q2",
+  "nv": 15.92,
+  "first_seen": "2026-08-16"
+ },
+ "8097": {
+  "quarter": "26Q2",
+  "nv": 15.92,
+  "first_seen": "2026-08-16"
+ },
+ "3511": {
+  "quarter": "26Q2",
+  "nv": 15.93,
+  "first_seen": "2026-08-16"
+ },
+ "6266": {
+  "quarter": "26Q2",
+  "nv": 15.93,
+  "first_seen": "2026-08-16"
+ },
+ "8929": {
+  "quarter": "26Q2",
+  "nv": 15.93,
+  "first_seen": "2026-08-16"
+ },
+ "2020": {
+  "quarter": "26Q2",
+  "nv": 15.94,
+  "first_seen": "2026-08-16"
+ },
+ "6603": {
+  "quarter": "26Q2",
+  "nv": 15.94,
+  "first_seen": "2026-08-16"
+ },
+ "2812": {
+  "quarter": "26Q2",
+  "nv": 15.95,
+  "first_seen": "2026-08-16"
+ },
+ "5426": {
+  "quarter": "26Q2",
+  "nv": 15.99,
+  "first_seen": "2026-08-16"
+ },
+ "3447": {
+  "quarter": "26Q2",
+  "nv": 16.02,
+  "first_seen": "2026-08-16"
+ },
+ "6154": {
+  "quarter": "26Q2",
+  "nv": 16.02,
+  "first_seen": "2026-08-16"
+ },
+ "2904": {
+  "quarter": "26Q2",
+  "nv": 16.09,
+  "first_seen": "2026-08-16"
+ },
+ "5212": {
+  "quarter": "26Q2",
+  "nv": 16.09,
+  "first_seen": "2026-08-16"
+ },
+ "1909": {
+  "quarter": "26Q2",
+  "nv": 16.1,
+  "first_seen": "2026-08-16"
+ },
+ "2312": {
+  "quarter": "26Q2",
+  "nv": 16.11,
+  "first_seen": "2026-08-16"
+ },
+ "4128": {
+  "quarter": "26Q2",
+  "nv": 16.15,
+  "first_seen": "2026-08-16"
+ },
+ "2630": {
+  "quarter": "26Q2",
+  "nv": 16.16,
+  "first_seen": "2026-08-16"
+ },
+ "8931": {
+  "quarter": "26Q2",
+  "nv": 16.16,
+  "first_seen": "2026-08-16"
+ },
+ "8917": {
+  "quarter": "26Q2",
+  "nv": 16.18,
+  "first_seen": "2026-08-16"
+ },
+ "6763": {
+  "quarter": "26Q2",
+  "nv": 16.2,
+  "first_seen": "2026-08-16"
+ },
+ "4533": {
+  "quarter": "26Q2",
+  "nv": 16.23,
+  "first_seen": "2026-08-16"
+ },
+ "5547": {
+  "quarter": "26Q2",
+  "nv": 16.24,
+  "first_seen": "2026-08-16"
+ },
+ "6823": {
+  "quarter": "26Q2",
+  "nv": 16.24,
+  "first_seen": "2026-08-16"
+ },
+ "3550": {
+  "quarter": "26Q2",
+  "nv": 16.26,
+  "first_seen": "2026-08-16"
+ },
+ "1711": {
+  "quarter": "26Q2",
+  "nv": 16.27,
+  "first_seen": "2026-08-16"
+ },
+ "5315": {
+  "quarter": "26Q2",
+  "nv": 16.27,
+  "first_seen": "2026-08-16"
+ },
+ "6243": {
+  "quarter": "26Q2",
+  "nv": 16.27,
+  "first_seen": "2026-08-16"
+ },
+ "2610": {
+  "quarter": "26Q2",
+  "nv": 16.29,
+  "first_seen": "2026-08-16"
+ },
+ "2906": {
+  "quarter": "26Q2",
+  "nv": 16.3,
+  "first_seen": "2026-08-16"
+ },
+ "5906": {
+  "quarter": "26Q1",
+  "nv": 16.31,
+  "first_seen": "2026-08-16"
+ },
+ "1445": {
+  "quarter": "26Q2",
+  "nv": 16.33,
+  "first_seen": "2026-08-16"
+ },
+ "8099": {
+  "quarter": "26Q2",
+  "nv": 16.33,
+  "first_seen": "2026-08-16"
+ },
+ "7823": {
+  "quarter": "26Q1",
+  "nv": 16.38,
+  "first_seen": "2026-08-16"
+ },
+ "3567": {
+  "quarter": "26Q2",
+  "nv": 16.39,
+  "first_seen": "2026-08-16"
+ },
+ "1304": {
+  "quarter": "26Q2",
+  "nv": 16.42,
+  "first_seen": "2026-08-16"
+ },
+ "5201": {
+  "quarter": "26Q2",
+  "nv": 16.47,
+  "first_seen": "2026-08-16"
+ },
+ "3128": {
+  "quarter": "26Q2",
+  "nv": 16.48,
+  "first_seen": "2026-08-16"
+ },
+ "4153": {
+  "quarter": "26Q2",
+  "nv": 16.49,
+  "first_seen": "2026-08-16"
+ },
+ "1731": {
+  "quarter": "26Q2",
+  "nv": 16.5,
+  "first_seen": "2026-08-16"
+ },
+ "3373": {
+  "quarter": "26Q2",
+  "nv": 16.53,
+  "first_seen": "2026-08-16"
+ },
+ "4161": {
+  "quarter": "26Q2",
+  "nv": 16.53,
+  "first_seen": "2026-08-16"
+ },
+ "6441": {
+  "quarter": "26Q2",
+  "nv": 16.54,
+  "first_seen": "2026-08-16"
+ },
+ "1540": {
+  "quarter": "26Q2",
+  "nv": 16.55,
+  "first_seen": "2026-08-16"
+ },
+ "8463": {
+  "quarter": "26Q2",
+  "nv": 16.55,
+  "first_seen": "2026-08-16"
+ },
+ "6120": {
+  "quarter": "26Q2",
+  "nv": 16.56,
+  "first_seen": "2026-08-16"
+ },
+ "2495": {
+  "quarter": "26Q2",
+  "nv": 16.58,
+  "first_seen": "2026-08-16"
+ },
+ "8171": {
+  "quarter": "26Q2",
+  "nv": 16.58,
+  "first_seen": "2026-08-16"
+ },
+ "3027": {
+  "quarter": "26Q2",
+  "nv": 16.6,
+  "first_seen": "2026-08-16"
+ },
+ "3118": {
+  "quarter": "26Q2",
+  "nv": 16.63,
+  "first_seen": "2026-08-16"
+ },
+ "6692": {
+  "quarter": "26Q2",
+  "nv": 16.63,
+  "first_seen": "2026-08-16"
+ },
+ "3518": {
+  "quarter": "26Q2",
+  "nv": 16.65,
+  "first_seen": "2026-08-16"
+ },
+ "5704": {
+  "quarter": "26Q2",
+  "nv": 16.65,
+  "first_seen": "2026-08-16"
+ },
+ "1110": {
+  "quarter": "26Q2",
+  "nv": 16.66,
+  "first_seen": "2026-08-16"
+ },
+ "7794": {
+  "quarter": "26Q2",
+  "nv": 16.67,
+  "first_seen": "2026-08-16"
+ },
+ "6662": {
+  "quarter": "26Q2",
+  "nv": 16.69,
+  "first_seen": "2026-08-16"
+ },
+ "3031": {
+  "quarter": "26Q2",
+  "nv": 16.7,
+  "first_seen": "2026-08-16"
+ },
+ "1783": {
+  "quarter": "26Q2",
+  "nv": 16.71,
+  "first_seen": "2026-08-16"
+ },
+ "6841": {
+  "quarter": "26Q2",
+  "nv": 16.76,
+  "first_seen": "2026-08-16"
+ },
+ "2539": {
+  "quarter": "26Q2",
+  "nv": 16.77,
+  "first_seen": "2026-08-16"
+ },
+ "5465": {
+  "quarter": "26Q2",
+  "nv": 16.77,
+  "first_seen": "2026-08-16"
+ },
+ "9906": {
+  "quarter": "26Q2",
+  "nv": 16.79,
+  "first_seen": "2026-08-16"
+ },
+ "1474": {
+  "quarter": "26Q2",
+  "nv": 16.8,
+  "first_seen": "2026-08-16"
+ },
+ "3021": {
+  "quarter": "26Q2",
+  "nv": 16.8,
+  "first_seen": "2026-08-16"
+ },
+ "3297": {
+  "quarter": "26Q2",
+  "nv": 16.8,
+  "first_seen": "2026-08-16"
+ },
+ "2485": {
+  "quarter": "26Q2",
+  "nv": 16.81,
+  "first_seen": "2026-08-16"
+ },
+ "4956": {
+  "quarter": "26Q2",
+  "nv": 16.85,
+  "first_seen": "2026-08-16"
+ },
+ "1727": {
+  "quarter": "26Q2",
+  "nv": 16.87,
+  "first_seen": "2026-08-16"
+ },
+ "4711": {
+  "quarter": "26Q2",
+  "nv": 16.89,
+  "first_seen": "2026-08-16"
+ },
+ "6216": {
+  "quarter": "26Q2",
+  "nv": 16.92,
+  "first_seen": "2026-08-16"
+ },
+ "3073": {
+  "quarter": "26Q2",
+  "nv": 16.93,
+  "first_seen": "2026-08-16"
+ },
+ "3717": {
+  "quarter": "26Q2",
+  "nv": 16.93,
+  "first_seen": "2026-08-16"
+ },
+ "3380": {
+  "quarter": "26Q2",
+  "nv": 16.94,
+  "first_seen": "2026-08-16"
+ },
+ "1410": {
+  "quarter": "26Q2",
+  "nv": 16.95,
+  "first_seen": "2026-08-16"
+ },
+ "6516": {
+  "quarter": "26Q2",
+  "nv": 16.95,
+  "first_seen": "2026-08-16"
+ },
+ "4564": {
+  "quarter": "26Q2",
+  "nv": 16.98,
+  "first_seen": "2026-08-16"
+ },
+ "2034": {
+  "quarter": "26Q2",
+  "nv": 17.02,
+  "first_seen": "2026-08-16"
+ },
+ "6742": {
+  "quarter": "26Q2",
+  "nv": 17.03,
+  "first_seen": "2026-08-16"
+ },
+ "3236": {
+  "quarter": "26Q2",
+  "nv": 17.05,
+  "first_seen": "2026-08-16"
+ },
+ "8401": {
+  "quarter": "26Q2",
+  "nv": 17.05,
+  "first_seen": "2026-08-16"
+ },
+ "4121": {
+  "quarter": "26Q2",
+  "nv": 17.08,
+  "first_seen": "2026-08-16"
+ },
+ "2364": {
+  "quarter": "26Q2",
+  "nv": 17.13,
+  "first_seen": "2026-08-16"
+ },
+ "2509": {
+  "quarter": "26Q2",
+  "nv": 17.13,
+  "first_seen": "2026-08-16"
+ },
+ "2736": {
+  "quarter": "26Q2",
+  "nv": 17.13,
+  "first_seen": "2026-08-16"
+ },
+ "6423": {
+  "quarter": "26Q2",
+  "nv": 17.14,
+  "first_seen": "2026-08-16"
+ },
+ "6199": {
+  "quarter": "26Q2",
+  "nv": 17.16,
+  "first_seen": "2026-08-16"
+ },
+ "6757": {
+  "quarter": "26Q2",
+  "nv": 17.16,
+  "first_seen": "2026-08-16"
+ },
+ "6542": {
+  "quarter": "26Q2",
+  "nv": 17.19,
+  "first_seen": "2026-08-16"
+ },
+ "8930": {
+  "quarter": "26Q2",
+  "nv": 17.19,
+  "first_seen": "2026-08-16"
+ },
+ "6884": {
+  "quarter": "26Q2",
+  "nv": 17.2,
+  "first_seen": "2026-08-16"
+ },
+ "5410": {
+  "quarter": "26Q2",
+  "nv": 17.21,
+  "first_seen": "2026-08-16"
+ },
+ "6124": {
+  "quarter": "26Q2",
+  "nv": 17.23,
+  "first_seen": "2026-08-16"
+ },
+ "4510": {
+  "quarter": "26Q2",
+  "nv": 17.25,
+  "first_seen": "2026-08-16"
+ },
+ "4114": {
+  "quarter": "26Q2",
+  "nv": 17.26,
+  "first_seen": "2026-08-16"
+ },
+ "2528": {
+  "quarter": "26Q2",
+  "nv": 17.27,
+  "first_seen": "2026-08-16"
+ },
+ "1440": {
+  "quarter": "26Q2",
+  "nv": 17.28,
+  "first_seen": "2026-08-16"
+ },
+ "8404": {
+  "quarter": "26Q1",
+  "nv": 17.29,
+  "first_seen": "2026-08-16"
+ },
+ "3052": {
+  "quarter": "26Q2",
+  "nv": 17.3,
+  "first_seen": "2026-08-16"
+ },
+ "1340": {
+  "quarter": "26Q1",
+  "nv": 17.31,
+  "first_seen": "2026-08-16"
+ },
+ "2023": {
+  "quarter": "26Q2",
+  "nv": 17.31,
+  "first_seen": "2026-08-16"
+ },
+ "2722": {
+  "quarter": "26Q2",
+  "nv": 17.32,
+  "first_seen": "2026-08-16"
+ },
+ "6695": {
+  "quarter": "26Q2",
+  "nv": 17.37,
+  "first_seen": "2026-08-16"
+ },
+ "6168": {
+  "quarter": "26Q2",
+  "nv": 17.42,
+  "first_seen": "2026-08-16"
+ },
+ "2367": {
+  "quarter": "26Q2",
+  "nv": 17.44,
+  "first_seen": "2026-08-16"
+ },
+ "6834": {
+  "quarter": "26Q2",
+  "nv": 17.44,
+  "first_seen": "2026-08-16"
+ },
+ "2880": {
+  "quarter": "26Q1",
+  "nv": 17.5,
+  "first_seen": "2026-08-16"
+ },
+ "1809": {
+  "quarter": "26Q2",
+  "nv": 17.54,
+  "first_seen": "2026-08-16"
+ },
+ "6202": {
+  "quarter": "26Q2",
+  "nv": 17.56,
+  "first_seen": "2026-08-16"
+ },
+ "2884": {
+  "quarter": "26Q1",
+  "nv": 17.6,
+  "first_seen": "2026-08-16"
+ },
+ "3056": {
+  "quarter": "26Q2",
+  "nv": 17.6,
+  "first_seen": "2026-08-16"
+ },
+ "2427": {
+  "quarter": "26Q2",
+  "nv": 17.61,
+  "first_seen": "2026-08-16"
  }
 }
