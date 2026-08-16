@@ -11,6 +11,7 @@ done
 .venv/bin/python fetch_goodinfo.py
 .venv/bin/python fetch_official.py
 .venv/bin/python fetch_sbl.py || echo "⚠️ 借券標的清單抓取失敗，沿用舊資料（sbl.json state 會標記 degraded/empty）"
+.venv/bin/python fetch_warrants.py || echo "⚠️ 認售權證標的清單抓取失敗，沿用舊資料（warrants.json state 會標記 degraded/empty）"
 .venv/bin/python analyze.py
 # fetch_netvalue_history／fetch_audit／backtest 三者互不依賴，順序不拘（各自獨立資料源，
 # fetch_audit 排在 analyze 之後讀到最終股池；失敗不阻斷，state 寫在 audit.json 檔案本身）

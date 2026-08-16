@@ -18,8 +18,8 @@ NV_FILE = BASE / "data" / "netvalue.json"
 NV_HISTORY_DIR = BASE / "data" / "netvalue_history"
 NV_HISTORY_STATUS = BASE / "data" / "netvalue_history_status.json"
 AUDIT_FILE = BASE / "data" / "audit.json"
-OFFICIAL_FILE = BASE / "data" / "official.json"
 SBL_FILE = BASE / "data" / "sbl.json"
+WARRANTS_FILE = BASE / "data" / "warrants.json"
 DOCS = BASE / "docs"
 
 
@@ -78,15 +78,29 @@ def render_audit_block(code: str, audit: dict) -> str:
            f'</div>')
 
 
-def render_short_channel_block(code: str, margin_status: dict, sbl: dict) -> str:
+def render_short_channel_block(code: str, status: dict, sbl: dict, warrants: dict) -> str:
     """放空管道揭露（發現 K／§8）：只用於 predict_in／edge 頁籤展開列。
     🔴 三個管道語意各自獨立，不可合併成單一結論：
-      融資融券：不在 margin_status 表內 → ✗（既有資料，不必新抓）
+      融資融券：用既有 status['credit']（analyze.stock_status() 已解析 O/X/! mark）——
+      🔴 不可只判斷「代號有沒有在 margin_status 表內」：3259 這種「結構上在表內，
+      但目前 mark=OX（停資停券）」的案例會被誤判成「具資格」，已修正
+      （2026-08-16 使用者用真實個股發現此 bug）
       借券 SBL：不在清單 → ✗；在清單內只講「具資格」，不講「有券可借」（發現 K 的語意上限）
-      認售權證：沒有逐檔資料源，永遠「未知」，不可判 ✗（文案不可寫「三者皆✗」，該條件不可達）
-    sbl 資料過期或降級時，一律回退成「借券資格未知」，不可顯示 ✓／具資格（見 §8 freshness 契約）。"""
-    margin_ok = code in margin_status
-    margin_text = "非融資融券標的（✗ 不可融資）" if not margin_ok else None
+      認售權證：原計畫判定沒有逐檔端點、永遠「未知」；2026-08-16 使用者追問後找到
+      TWSE t187ap37_L＋ISIN cp950 橋接（fetch_warrants.py），資料新鮮時可给定判斷；
+      資料降級/未取得時才回退「未知」——此時三者皆✗才是真的不可達，資料齊全時
+      三者皆✗是可能發生的真實狀態，不必迴避
+    sbl／warrants 資料過期或降級時，一律回退成「未知」，不可顯示 ✓／具資格（見 §8 freshness 契約）。"""
+    credit = (status or {}).get("credit", "")
+    margin_ok = credit == "可信用交易"
+    if credit == "可信用交易":
+        margin_text = None
+    elif credit == "非信用交易標的":
+        margin_text = "✗ 非融資融券標的"
+    elif credit:
+        margin_text = f"✗ 結構上為信用交易標的，但現況「{credit}」不可用"
+    else:
+        margin_text = "融資融券狀態未知"
 
     sbl_state = sbl.get("state")
     sbl_fetched_at = sbl.get("fetched_at", "")
@@ -100,15 +114,39 @@ def render_short_channel_block(code: str, margin_status: dict, sbl: dict) -> str
     else:
         sbl_text = "✗ 不在借券標的清單"
 
-    both_neg = (not margin_ok) and (not sbl_degraded) and (not sbl_avail)
-    summary = ("已知管道（融券／借券）皆無；認售權證需自行確認" if both_neg else "")
+    warrants_state = warrants.get("state")
+    warrants_fetched_at = warrants.get("fetched_at", "")
+    warrant_avail = code in (warrants.get("codes") or [])
+    warrants_degraded = warrants_state not in ("ok",)
+
+    if warrants_degraded:
+        warrant_text = ("需自行查詢（資料未取得）"
+                        '（<a href="https://www.twse.com.tw/zh/products/warrant/summary.html" '
+                        'target="_blank" onclick="event.stopPropagation()">TWSE 權證專區</a>）')
+    elif warrant_avail:
+        warrant_text = "具有效認售權證，實際成交量／流動性需另查"
+    else:
+        warrant_text = "✗ 目前無有效認售權證"
+
+    unknown_any = sbl_degraded or warrants_degraded
+    all_neg = (not margin_ok) and (not sbl_degraded) and (not sbl_avail) \
+             and (not warrants_degraded) and (not warrant_avail)
+    partial_neg = (not margin_ok) and (not sbl_degraded) and (not sbl_avail) and unknown_any
+
+    if all_neg:
+        summary = "已知管道（融資融券／借券／認售權證）皆無可用放空工具"
+    elif partial_neg:
+        summary = "已知管道（融券／借券）皆無；認售權證資料未取得，需自行確認"
+    else:
+        summary = ""
 
     return (f'''<div class="short-block" data-sbl-fetched-at="{sbl_fetched_at}"
-     data-sbl-state="{sbl_state or ''}" data-sbl-avail="{'1' if sbl_avail else '0'}">
-  <div class="ev">融資融券：{margin_text or '具融資融券資格（實際狀態見上方官方現況欄）'}</div>
+     data-sbl-state="{sbl_state or ''}" data-sbl-avail="{'1' if sbl_avail else '0'}"
+     data-warrants-fetched-at="{warrants_fetched_at}" data-warrants-state="{warrants_state or ''}"
+     data-warrants-avail="{'1' if warrant_avail else '0'}">
+  <div class="ev">融資融券：{margin_text or '具融資融券資格（可信用交易）'}</div>
   <div class="ev" data-sbl-line>借券：{sbl_text}</div>
-  <div class="ev">認售權證：需自行查詢（<a href="https://www.taifex.com.tw/cht/2/callsAndPuts"
-    target="_blank" onclick="event.stopPropagation()">期交所</a>／券商 App）</div>
+  <div class="ev" data-warrants-line>認售權證：{warrant_text}</div>
   {f'<div class="ev dim">{summary}</div>' if summary else ''}
 </div>''')
 
@@ -198,7 +236,7 @@ def gen_backtest_page():
         cells = "".join(
             f'<div class="q {"r" if h["hit5"] else "y" if h["hit10"] else "g"}" '
             f'title="{h["quarter"]} 淨值 {h["net_value"]}">'
-            f'<span>{h["quarter"]}</span>{h["net_value"]:.1f}</div>'
+            f'<span>{h["quarter"]}</span>{h["net_value"]:.2f}</div>'
             for h in s["history"])
         evs = "".join(f'<div class="ev">📌 {e["text"]}</div>'
                       for e in s.get("events", []))
@@ -278,7 +316,7 @@ def history_row(code: str, bt_stocks: dict, market: str = "", listing: dict = No
         note = ""
     chips = "".join(
         f'<div class="q {"r" if h["hit5"] else "y" if h["hit10"] else "g"}">'
-        f'<span>{h["quarter"]}</span>{h["net_value"]:.1f}</div>'
+        f'<span>{h["quarter"]}</span>{h["net_value"]:.2f}</div>'
         for h in s["history"])
     evs = "".join(f'<div class="ev">{e["text"]}</div>' for e in s.get("events", []))
     lst = listing_line(code, market, listing or {})
@@ -447,17 +485,18 @@ def main():
     except Exception:
         audit = {"state": "empty", "rows": {}}
 
-    # §8：放空管道揭露（predict_in／edge 專用）。margin_status 來自 official.json（既有資料，
-    # 不必新抓）；sbl 獨立檔案，缺檔或壞檔一律等同 state:empty，絕不讓整站產不出來
-    try:
-        official_raw = json.loads(OFFICIAL_FILE.read_text()) if OFFICIAL_FILE.exists() else {}
-    except Exception:
-        official_raw = {}
-    margin_status = official_raw.get("margin_status", {})
+    # §8：放空管道揭露（predict_in／edge 專用）。融資融券用既有 r['status']['credit']
+    # （report.json 每列已含，analyze.stock_status() 算好的，不必另讀 official.json）；
+    # sbl 獨立檔案，缺檔或壞檔一律等同 state:empty，絕不讓整站產不出來
     try:
         sbl = json.loads(SBL_FILE.read_text()) if SBL_FILE.exists() else {"state": "empty", "codes": []}
     except Exception:
         sbl = {"state": "empty", "codes": []}
+    try:
+        warrants = (json.loads(WARRANTS_FILE.read_text()) if WARRANTS_FILE.exists()
+                   else {"state": "empty", "codes": []})
+    except Exception:
+        warrants = {"state": "empty", "codes": []}
 
     tab_btns, panels = [], []
     for key, label, desc in TABS:
@@ -501,7 +540,7 @@ def main():
             # S8：TradingView symbol 前綴（上市 TWSE、上櫃 TPEX）
             tvp = 'TWSE' if r.get('market') == '上市' else 'TPEX'
             short_html = (f'<div class="audit-heading">可否放空</div>'
-                         f'{render_short_channel_block(r["code"], margin_status, sbl)}'
+                         f'{render_short_channel_block(r["code"], r.get("status"), sbl, warrants)}'
                          if key in ("predict_in", "edge") else "")
             trs_list.append(f"""<tr class="main{' isnew' if badge else ''}" onclick="tog(this)">
   <td><span class="star" data-code="{r['code']}" onclick="event.stopPropagation();togWatch('{r['code']}')">☆</span><a href="{r['goodinfo_url']}" target="_blank" onclick="event.stopPropagation()">{r['code']}</a></td>
@@ -686,6 +725,21 @@ document.querySelectorAll('[data-sbl-fetched-at]').forEach(el => {{
   const stale = state !== 'ok' || d === null || !isFinite(d) || d > SBL_STALE_DAYS;
   if (stale && avail) {{
     line.textContent = '借券：借券資格未知（資料' + (d === null || !isFinite(d) ? '時間未知' : d + ' 天前') + '，暫無法判斷）';
+  }}
+}});
+
+/* 認售權證同款過期回退（同一套 freshness 契約）——過期時不可再顯示「具有效認售權證」
+   這種肯定判斷，一律回退未知，理由同 SBL */
+document.querySelectorAll('[data-warrants-fetched-at]').forEach(el => {{
+  const ts = el.dataset.warrantsFetchedAt;
+  const state = el.dataset.warrantsState;
+  const avail = el.dataset.warrantsAvail === '1';
+  const line = el.querySelector('[data-warrants-line]');
+  if (!line) return;
+  const d = ts ? ageDays(ts) : null;
+  const stale = state !== 'ok' || d === null || !isFinite(d) || d > SBL_STALE_DAYS;
+  if (stale && avail) {{
+    line.textContent = '認售權證：需自行查詢（資料' + (d === null || !isFinite(d) ? '時間未知' : d + ' 天前') + '，暫無法判斷）';
   }}
 }});
 

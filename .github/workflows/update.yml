@@ -44,6 +44,7 @@ jobs:
           python fetch_netvalue_history.py --selftest
           python fetch_audit.py --selftest
           python fetch_sbl.py --selftest
+          python fetch_warrants.py --selftest
 
       # goodinfo 自 2026-07-15 起封鎖 Actions 雲端 IP。失敗不讓 run 變紅（天天紅燈＝狼來了），
       # 但一定要留下痕跡：Actions 註記 + job summary + 網站上的資料年齡橫幅。
@@ -66,6 +67,7 @@ jobs:
         run: |
           python fetch_official.py
           python fetch_sbl.py || echo "⚠️ 借券標的清單抓取失敗，沿用舊資料（sbl.json state 會標記 degraded/empty）"
+          python fetch_warrants.py || echo "⚠️ 認售權證標的清單抓取失敗，沿用舊資料（warrants.json state 會標記 degraded/empty）"
           python analyze.py
           # fetch_netvalue_history／fetch_audit／backtest 三者互不依賴，順序不拘（各自獨立資料源）；
           # 失敗不阻斷（P1 超額不 hard fail 是腳本自己的設計，這裡的 || 是防未預期例外；
