@@ -97,10 +97,10 @@ tr.watched { background:rgba(96,165,250,.07); }
 .tvbox { margin-bottom:10px; }
 </style></head><body>
 <h1>全額交割／信用交易預警</h1>
-<div class="meta">淨值資料：2026-08-16 22:02（goodinfo）
-<span class="age" data-testid="nv-age" data-ts="2026-08-16T22:02:09.963832+08:00"></span>・
-官方名單：2026-08-16 22:02（證交所/櫃買中心）
-<span class="age" data-testid="official-age" data-ts="2026-08-16T22:02:25.576758+08:00"></span>・
+<div class="meta">淨值資料：2026-08-16 22:40（goodinfo）
+<span class="age" data-testid="nv-age" data-ts="2026-08-16T22:40:48.108719+08:00"></span>・
+官方名單：2026-08-16 22:41（證交所/櫃買中心）
+<span class="age" data-testid="official-age" data-ts="2026-08-16T22:41:04.622659+08:00"></span>・
 <a href="rules.html">分級規則與法規依據</a>・<a href="backtest.html">歷史驗證</a><br>
 <span class="deadline">下一財報截止：2026-11-14（90 天後）</span>
 <a class="updbtn" href="https://github.com/deankhho/stock-watchdog/actions/workflows/update.yml"
@@ -115,7 +115,7 @@ tr.watched { background:rgba(96,165,250,.07); }
 <div id="watchbar"></div>
 <div class="tabs"><button class="tab" data-t="predict_in">🔴 預測打入<span class="n">5</span></button><button class="tab" data-t="recover">🟢 恢復候選<span class="n">6</span></button><button class="tab" data-t="edge">🟠 危險邊緣<span class="n">20</span></button><button class="tab" data-t="margin_risk">🟡 信用警戒<span class="n">129</span></button><button class="tab" data-t="official">⚪ 全額交割中<span class="n">22</span></button><button class="tab" data-t="dropped">⬇️ 最近一季掉落<span class="n">3</span></button><button class="tab" data-t="watch">🔵 觀察池 10~15<span class="n">262</span></button></div>
 <section class="panel" data-t="predict_in">
-  <p class="desc">淨值<5、尚未列全額交割——下次財報後恐公告，提前留意。⚠️ 上市／上櫃規定不同：上市依證交所營業細則第49條、上櫃依櫃買中心業務規則（上櫃另有管理股票/分盤交易制度）——表格「市場」欄區分適用規定，細節見規則頁</p>
+  <p class="desc">淨值<5、尚未列全額交割——下次財報後恐公告，提前留意。⚠️ 上市／上櫃規定不同：上市依證交所營業細則第49條、上櫃依櫃買中心業務規則（上櫃另有管理股票/分盤交易制度）——表格「市場」欄區分適用規定，細節見規則頁 ⚠️ 本站只判斷淨值門檻，不代表存在可執行的交易機會；展開列「可否放空」逐檔顯示融資融券／借券資格，認售權證請自行查詢，勿依單一管道推論其餘管道狀態。</p>
   <table><thead><tr><th>代號</th><th>名稱</th><th>市場</th><th>官方現況</th><th>股價</th>
     <th>每股淨值</th><th>距5元</th><th>財報季度</th></tr></thead>
   <tbody><tr class="main isnew" onclick="tog(this)">
@@ -127,7 +127,14 @@ tr.watched { background:rgba(96,165,250,.07); }
   <td class="num neg">-1.00</td>
   <td>26Q2 <span class="exp">▾</span></td>
 </tr>
-<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('7835','上市',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TWSE%3A7835">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/7835/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="tl"><div class="q y"><span>25Q1</span>6.4</div><div class="q r"><span>25Q2</span>5.0</div><div class="q y"><span>25Q4</span>6.4</div><div class="q y"><span>26Q1</span>5.1</div><div class="q r"><span>26Q2</span>4.0</div></div><div class="ev">25Q2 淨值 4.99 跌破 5 元 → 依證交所營業細則第49條應列為全額交割</div><div class="ev">26Q1 已連續兩季淨值 ≥5（25Q4→26Q1）→ 符合證交所營業細則第49條的淨值款恢復條件；⚠️ 若係因其他事由列入（會計師意見/財報未依限公告/重整等），需該原因消滅才恢復</div><div class="ev">26Q2 淨值 4.0 跌破 5 元 → 依證交所營業細則第49條應列為全額交割</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-16"><span class="audit-chip " data-audit-chip>保留意見（樣板性質常見，非個股特有警訊）</span> <span class="note" style="display:inline">26Q2・資誠聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。保留意見在一般上市股出現率約 50%（2026-08-13 抽樣 30 檔），非個股特有警訊。</div></div></td></tr><tr class="main isnew" onclick="tog(this)">
+<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('7835','上市',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TWSE%3A7835">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/7835/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="tl"><div class="q y"><span>25Q1</span>6.4</div><div class="q r"><span>25Q2</span>5.0</div><div class="q y"><span>25Q4</span>6.4</div><div class="q y"><span>26Q1</span>5.1</div><div class="q r"><span>26Q2</span>4.0</div></div><div class="ev">25Q2 淨值 4.99 跌破 5 元 → 依證交所營業細則第49條應列為全額交割</div><div class="ev">26Q1 已連續兩季淨值 ≥5（25Q4→26Q1）→ 符合證交所營業細則第49條的淨值款恢復條件；⚠️ 若係因其他事由列入（會計師意見/財報未依限公告/重整等），需該原因消滅才恢復</div><div class="ev">26Q2 淨值 4.0 跌破 5 元 → 依證交所營業細則第49條應列為全額交割</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-16"><span class="audit-chip " data-audit-chip>保留意見（樣板性質常見，非個股特有警訊）</span> <span class="note" style="display:inline">26Q2・資誠聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。保留意見在一般上市股出現率約 50%（2026-08-13 抽樣 30 檔），非個股特有警訊。</div></div><div class="audit-heading">可否放空</div><div class="short-block" data-sbl-fetched-at="2026-08-16"
+     data-sbl-state="ok" data-sbl-avail="0">
+  <div class="ev">融資融券：非融資融券標的（✗ 不可融資）</div>
+  <div class="ev" data-sbl-line>借券：✗ 不在借券標的清單</div>
+  <div class="ev">認售權證：需自行查詢（<a href="https://www.taifex.com.tw/cht/2/callsAndPuts"
+    target="_blank" onclick="event.stopPropagation()">期交所</a>／券商 App）</div>
+  <div class="ev dim">已知管道（融券／借券）皆無；認售權證需自行確認</div>
+</div></td></tr><tr class="main isnew" onclick="tog(this)">
   <td><span class="star" data-code="2067" onclick="event.stopPropagation();togWatch('2067')">☆</span><a href="https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2067" target="_blank" onclick="event.stopPropagation()">2067</a></td>
   <td>嘉鋼 <span class="newb">🆕新財報</span></td><td>上櫃</td>
   <td class="stcell"><span class="chip cstop">停資停券</span></td>
@@ -136,7 +143,14 @@ tr.watched { background:rgba(96,165,250,.07); }
   <td class="num neg">-0.74</td>
   <td>26Q2 <span class="exp">▾</span></td>
 </tr>
-<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('2067','上櫃',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TPEX%3A2067">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/2067/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="tl"><div class="q y"><span>24Q3</span>5.9</div><div class="q y"><span>24Q4</span>5.2</div><div class="q r"><span>25Q1</span>4.7</div><div class="q y"><span>25Q2</span>7.0</div><div class="q y"><span>25Q3</span>6.0</div><div class="q y"><span>25Q4</span>5.8</div><div class="q y"><span>26Q1</span>5.1</div><div class="q r"><span>26Q2</span>4.3</div></div><div class="ev">25Q1 淨值 4.66 跌破 5 元 → 依櫃買中心業務規則（上櫃）應列為全額交割</div><div class="ev">25Q3 已連續兩季淨值 ≥5（25Q2→25Q3）→ 符合櫃買中心業務規則（上櫃）的淨值款恢復條件；⚠️ 若係因其他事由列入（會計師意見/財報未依限公告/重整等），需該原因消滅才恢復</div><div class="ev">26Q2 淨值 4.26 跌破 5 元 → 依櫃買中心業務規則（上櫃）應列為全額交割</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-16"><span class="audit-chip r" data-audit-chip>⚠️ 繼續經營疑慮／無法表示意見</span> <span class="note" style="display:inline">26Q2・國富浩華聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。</div></div></td></tr><tr class="main isnew" onclick="tog(this)">
+<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('2067','上櫃',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TPEX%3A2067">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/2067/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="tl"><div class="q y"><span>24Q3</span>5.9</div><div class="q y"><span>24Q4</span>5.2</div><div class="q r"><span>25Q1</span>4.7</div><div class="q y"><span>25Q2</span>7.0</div><div class="q y"><span>25Q3</span>6.0</div><div class="q y"><span>25Q4</span>5.8</div><div class="q y"><span>26Q1</span>5.1</div><div class="q r"><span>26Q2</span>4.3</div></div><div class="ev">25Q1 淨值 4.66 跌破 5 元 → 依櫃買中心業務規則（上櫃）應列為全額交割</div><div class="ev">25Q3 已連續兩季淨值 ≥5（25Q2→25Q3）→ 符合櫃買中心業務規則（上櫃）的淨值款恢復條件；⚠️ 若係因其他事由列入（會計師意見/財報未依限公告/重整等），需該原因消滅才恢復</div><div class="ev">26Q2 淨值 4.26 跌破 5 元 → 依櫃買中心業務規則（上櫃）應列為全額交割</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-16"><span class="audit-chip r" data-audit-chip>⚠️ 繼續經營疑慮／無法表示意見</span> <span class="note" style="display:inline">26Q2・國富浩華聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。</div></div><div class="audit-heading">可否放空</div><div class="short-block" data-sbl-fetched-at="2026-08-16"
+     data-sbl-state="ok" data-sbl-avail="0">
+  <div class="ev">融資融券：具融資融券資格（實際狀態見上方官方現況欄）</div>
+  <div class="ev" data-sbl-line>借券：✗ 不在借券標的清單</div>
+  <div class="ev">認售權證：需自行查詢（<a href="https://www.taifex.com.tw/cht/2/callsAndPuts"
+    target="_blank" onclick="event.stopPropagation()">期交所</a>／券商 App）</div>
+  
+</div></td></tr><tr class="main isnew" onclick="tog(this)">
   <td><span class="star" data-code="3259" onclick="event.stopPropagation();togWatch('3259')">☆</span><a href="https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3259" target="_blank" onclick="event.stopPropagation()">3259</a></td>
   <td>鑫創 <span class="newb">🆕新財報</span></td><td>上櫃</td>
   <td class="stcell"><span class="chip cstop">停資停券</span></td>
@@ -145,7 +159,14 @@ tr.watched { background:rgba(96,165,250,.07); }
   <td class="num neg">-0.36</td>
   <td>26Q2 <span class="exp">▾</span></td>
 </tr>
-<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('3259','上櫃',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TPEX%3A3259">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/3259/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="tl"><div class="q y"><span>24Q3</span>5.0</div><div class="q y"><span>24Q4</span>8.2</div><div class="q y"><span>25Q1</span>7.7</div><div class="q y"><span>25Q2</span>7.0</div><div class="q y"><span>25Q3</span>6.5</div><div class="q y"><span>25Q4</span>5.8</div><div class="q y"><span>26Q1</span>5.2</div><div class="q r"><span>26Q2</span>4.6</div></div><div class="ev">26Q2 淨值 4.64 跌破 5 元 → 依櫃買中心業務規則（上櫃）應列為全額交割</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-16"><span class="audit-chip g" data-audit-chip>無保留意見</span> <span class="note" style="display:inline">26Q2・聯捷聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。</div></div></td></tr><tr class="main isnew" onclick="tog(this)">
+<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('3259','上櫃',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TPEX%3A3259">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/3259/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="tl"><div class="q y"><span>24Q3</span>5.0</div><div class="q y"><span>24Q4</span>8.2</div><div class="q y"><span>25Q1</span>7.7</div><div class="q y"><span>25Q2</span>7.0</div><div class="q y"><span>25Q3</span>6.5</div><div class="q y"><span>25Q4</span>5.8</div><div class="q y"><span>26Q1</span>5.2</div><div class="q r"><span>26Q2</span>4.6</div></div><div class="ev">26Q2 淨值 4.64 跌破 5 元 → 依櫃買中心業務規則（上櫃）應列為全額交割</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-16"><span class="audit-chip g" data-audit-chip>無保留意見</span> <span class="note" style="display:inline">26Q2・聯捷聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。</div></div><div class="audit-heading">可否放空</div><div class="short-block" data-sbl-fetched-at="2026-08-16"
+     data-sbl-state="ok" data-sbl-avail="0">
+  <div class="ev">融資融券：具融資融券資格（實際狀態見上方官方現況欄）</div>
+  <div class="ev" data-sbl-line>借券：✗ 不在借券標的清單</div>
+  <div class="ev">認售權證：需自行查詢（<a href="https://www.taifex.com.tw/cht/2/callsAndPuts"
+    target="_blank" onclick="event.stopPropagation()">期交所</a>／券商 App）</div>
+  
+</div></td></tr><tr class="main isnew" onclick="tog(this)">
   <td><span class="star" data-code="3625" onclick="event.stopPropagation();togWatch('3625')">☆</span><a href="https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3625" target="_blank" onclick="event.stopPropagation()">3625</a></td>
   <td>西勝 <span class="newb">🆕新財報</span></td><td>上櫃</td>
   <td class="stcell"><span class="chip cstop">停資停券</span></td>
@@ -154,7 +175,14 @@ tr.watched { background:rgba(96,165,250,.07); }
   <td class="num neg">-0.28</td>
   <td>26Q2 <span class="exp">▾</span></td>
 </tr>
-<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('3625','上櫃',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TPEX%3A3625">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/3625/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="tl"><div class="q y"><span>24Q3</span>5.7</div><div class="q y"><span>24Q4</span>5.2</div><div class="q y"><span>25Q1</span>5.0</div><div class="q y"><span>25Q2</span>5.0</div><div class="q y"><span>25Q3</span>5.0</div><div class="q r"><span>25Q4</span>4.8</div><div class="q r"><span>26Q1</span>5.0</div><div class="q r"><span>26Q2</span>4.5</div></div><div class="ev">25Q4 淨值 4.83 跌破 5 元 → 依櫃買中心業務規則（上櫃）應列為全額交割</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-16"><span class="audit-chip g" data-audit-chip>無保留意見</span> <span class="note" style="display:inline">26Q2・勤業眾信聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。</div></div></td></tr><tr class="main" onclick="tog(this)">
+<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('3625','上櫃',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TPEX%3A3625">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/3625/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="tl"><div class="q y"><span>24Q3</span>5.7</div><div class="q y"><span>24Q4</span>5.2</div><div class="q y"><span>25Q1</span>5.0</div><div class="q y"><span>25Q2</span>5.0</div><div class="q y"><span>25Q3</span>5.0</div><div class="q r"><span>25Q4</span>4.8</div><div class="q r"><span>26Q1</span>5.0</div><div class="q r"><span>26Q2</span>4.5</div></div><div class="ev">25Q4 淨值 4.83 跌破 5 元 → 依櫃買中心業務規則（上櫃）應列為全額交割</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-16"><span class="audit-chip g" data-audit-chip>無保留意見</span> <span class="note" style="display:inline">26Q2・勤業眾信聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。</div></div><div class="audit-heading">可否放空</div><div class="short-block" data-sbl-fetched-at="2026-08-16"
+     data-sbl-state="ok" data-sbl-avail="0">
+  <div class="ev">融資融券：具融資融券資格（實際狀態見上方官方現況欄）</div>
+  <div class="ev" data-sbl-line>借券：✗ 不在借券標的清單</div>
+  <div class="ev">認售權證：需自行查詢（<a href="https://www.taifex.com.tw/cht/2/callsAndPuts"
+    target="_blank" onclick="event.stopPropagation()">期交所</a>／券商 App）</div>
+  
+</div></td></tr><tr class="main" onclick="tog(this)">
   <td><span class="star" data-code="7827" onclick="event.stopPropagation();togWatch('7827')">☆</span><a href="https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=7827" target="_blank" onclick="event.stopPropagation()">7827</a></td>
   <td>漢康-KY創 </td><td>上市</td>
   <td class="stcell"><span class="chip cstop">非信用交易標的</span></td>
@@ -163,7 +191,14 @@ tr.watched { background:rgba(96,165,250,.07); }
   <td class="num neg">-1.71</td>
   <td>26Q1 <span class="exp">▾</span></td>
 </tr>
-<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('7827','上市',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TWSE%3A7827">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/7827/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="tl"><div class="q r"><span>24Q3</span>-932.2</div><div class="q r"><span>24Q4</span>1.9</div><div class="q r"><span>25Q1</span>1.1</div><div class="q r"><span>25Q2</span>0.0</div><div class="q y"><span>25Q3</span>5.8</div><div class="q y"><span>25Q4</span>5.1</div><div class="q r"><span>26Q1</span>3.3</div></div><div class="ev">25Q4 已連續兩季淨值 ≥5（25Q3→25Q4）→ 符合證交所營業細則第49條的淨值款恢復條件；⚠️ 若係因其他事由列入（會計師意見/財報未依限公告/重整等），需該原因消滅才恢復</div><div class="ev">26Q1 淨值 3.29 跌破 5 元 → 依證交所營業細則第49條應列為全額交割</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-16"><span class="audit-chip g" data-audit-chip>無保留意見</span> <span class="note" style="display:inline">26Q1・資誠聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。</div></div></td></tr></tbody></table>
+<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('7827','上市',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TWSE%3A7827">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/7827/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="tl"><div class="q r"><span>24Q3</span>-932.2</div><div class="q r"><span>24Q4</span>1.9</div><div class="q r"><span>25Q1</span>1.1</div><div class="q r"><span>25Q2</span>0.0</div><div class="q y"><span>25Q3</span>5.8</div><div class="q y"><span>25Q4</span>5.1</div><div class="q r"><span>26Q1</span>3.3</div></div><div class="ev">25Q4 已連續兩季淨值 ≥5（25Q3→25Q4）→ 符合證交所營業細則第49條的淨值款恢復條件；⚠️ 若係因其他事由列入（會計師意見/財報未依限公告/重整等），需該原因消滅才恢復</div><div class="ev">26Q1 淨值 3.29 跌破 5 元 → 依證交所營業細則第49條應列為全額交割</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-16"><span class="audit-chip g" data-audit-chip>無保留意見</span> <span class="note" style="display:inline">26Q1・資誠聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。</div></div><div class="audit-heading">可否放空</div><div class="short-block" data-sbl-fetched-at="2026-08-16"
+     data-sbl-state="ok" data-sbl-avail="0">
+  <div class="ev">融資融券：非融資融券標的（✗ 不可融資）</div>
+  <div class="ev" data-sbl-line>借券：✗ 不在借券標的清單</div>
+  <div class="ev">認售權證：需自行查詢（<a href="https://www.taifex.com.tw/cht/2/callsAndPuts"
+    target="_blank" onclick="event.stopPropagation()">期交所</a>／券商 App）</div>
+  <div class="ev dim">已知管道（融券／借券）皆無；認售權證需自行確認</div>
+</div></td></tr></tbody></table>
 </section><section class="panel" data-t="recover">
   <p class="desc">已全額交割但最新淨值≥5。⚠️ 淨值只是列入事由之一（營業細則49條共有多款：會計師意見、財報未依限公告、重整等）——若係因淨值列入，連兩季達標可恢復；若因其他事由列入，淨值回升不生效（如大飲淨值11元仍在名單）。各股實際列入原因官方 API 不提供，需查證交所/櫃買公告。</p>
   <table><thead><tr><th>代號</th><th>名稱</th><th>市場</th><th>官方現況</th><th>股價</th>
@@ -224,7 +259,7 @@ tr.watched { background:rgba(96,165,250,.07); }
 </tr>
 <tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('1213','上市',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TWSE%3A1213">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/1213/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="tl"><div class="q r"><span>24Q3</span>3.3</div><div class="q g"><span>24Q4</span>12.7</div><div class="q g"><span>25Q1</span>12.5</div><div class="q g"><span>25Q2</span>11.9</div><div class="q g"><span>25Q3</span>11.7</div><div class="q g"><span>25Q4</span>11.5</div><div class="q g"><span>26Q1</span>11.2</div><div class="q g"><span>26Q2</span>11.0</div></div><div class="ev">📅 2024-07-01 觀測窗起點前已列為全額交割（列入超過兩年，依證交所營業細則第49條）</div><div class="ev">24Q4 淨值 12.72 回到 10 元以上 → 符合有價證券得為融資融券標準恢復條件（單季即可）；⚠️ 若仍為全額交割股，期間一律停止信用交易</div><div class="ev">25Q1 已連續兩季淨值 ≥5（24Q4→25Q1）→ 符合證交所營業細則第49條的淨值款恢復條件；⚠️ 若係因其他事由列入（會計師意見/財報未依限公告/重整等），需該原因消滅才恢復</div><div class="audit-heading">會計師查核意見</div><div class="hist-none">本輪尚無查核資料</div></td></tr></tbody></table>
 </section><section class="panel" data-t="edge">
-  <p class="desc">淨值 5~6——再虧一季恐跌破 5 元門檻。⚠️ 上市／上櫃規定不同：上市依證交所營業細則第49條、上櫃依櫃買中心業務規則（上櫃另有管理股票/分盤交易制度）——表格「市場」欄區分適用規定，細節見規則頁</p>
+  <p class="desc">淨值 5~6——再虧一季恐跌破 5 元門檻。⚠️ 上市／上櫃規定不同：上市依證交所營業細則第49條、上櫃依櫃買中心業務規則（上櫃另有管理股票/分盤交易制度）——表格「市場」欄區分適用規定，細節見規則頁 ⚠️ 展開列「可否放空」逐檔顯示融資融券／借券資格，不代表存在可執行的交易機會。</p>
   <table><thead><tr><th>代號</th><th>名稱</th><th>市場</th><th>官方現況</th><th>股價</th>
     <th>每股淨值</th><th>距5元</th><th>財報季度</th></tr></thead>
   <tbody><tr class="main isnew" onclick="tog(this)">
@@ -236,7 +271,14 @@ tr.watched { background:rgba(96,165,250,.07); }
   <td class="num pos">0.03</td>
   <td>26Q2 <span class="exp">▾</span></td>
 </tr>
-<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('1516','上市',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TWSE%3A1516">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/1516/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="tl"><div class="q g"><span>24Q3</span>11.9</div><div class="q y"><span>24Q4</span>5.1</div><div class="q y"><span>25Q1</span>5.1</div><div class="q y"><span>25Q2</span>5.0</div><div class="q y"><span>25Q3</span>5.2</div><div class="q y"><span>25Q4</span>5.2</div><div class="q y"><span>26Q1</span>5.1</div><div class="q y"><span>26Q2</span>5.0</div></div><div class="ev">24Q4 淨值 5.12 跌破 10 元 → 依有價證券得為融資融券標準應停止融資融券</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-16"><span class="audit-chip g" data-audit-chip>無保留意見</span> <span class="note" style="display:inline">26Q2・安永聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。</div></div></td></tr><tr class="main isnew" onclick="tog(this)">
+<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('1516','上市',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TWSE%3A1516">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/1516/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="tl"><div class="q g"><span>24Q3</span>11.9</div><div class="q y"><span>24Q4</span>5.1</div><div class="q y"><span>25Q1</span>5.1</div><div class="q y"><span>25Q2</span>5.0</div><div class="q y"><span>25Q3</span>5.2</div><div class="q y"><span>25Q4</span>5.2</div><div class="q y"><span>26Q1</span>5.1</div><div class="q y"><span>26Q2</span>5.0</div></div><div class="ev">24Q4 淨值 5.12 跌破 10 元 → 依有價證券得為融資融券標準應停止融資融券</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-16"><span class="audit-chip g" data-audit-chip>無保留意見</span> <span class="note" style="display:inline">26Q2・安永聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。</div></div><div class="audit-heading">可否放空</div><div class="short-block" data-sbl-fetched-at="2026-08-16"
+     data-sbl-state="ok" data-sbl-avail="0">
+  <div class="ev">融資融券：具融資融券資格（實際狀態見上方官方現況欄）</div>
+  <div class="ev" data-sbl-line>借券：✗ 不在借券標的清單</div>
+  <div class="ev">認售權證：需自行查詢（<a href="https://www.taifex.com.tw/cht/2/callsAndPuts"
+    target="_blank" onclick="event.stopPropagation()">期交所</a>／券商 App）</div>
+  
+</div></td></tr><tr class="main isnew" onclick="tog(this)">
   <td><span class="star" data-code="1441" onclick="event.stopPropagation();togWatch('1441')">☆</span><a href="https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1441" target="_blank" onclick="event.stopPropagation()">1441</a></td>
   <td>大東 <span class="newb">🆕新財報</span></td><td>上市</td>
   <td class="stcell"><span class="chip cstop">停資停券</span></td>
@@ -245,7 +287,14 @@ tr.watched { background:rgba(96,165,250,.07); }
   <td class="num pos">0.07</td>
   <td>26Q2 <span class="exp">▾</span></td>
 </tr>
-<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('1441','上市',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TWSE%3A1441">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/1441/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="tl"><div class="q y"><span>24Q3</span>8.4</div><div class="q y"><span>24Q4</span>7.9</div><div class="q y"><span>25Q1</span>8.3</div><div class="q y"><span>25Q2</span>6.6</div><div class="q y"><span>25Q3</span>6.5</div><div class="q y"><span>25Q4</span>6.5</div><div class="q y"><span>26Q1</span>5.9</div><div class="q y"><span>26Q2</span>5.1</div></div><div class=ev>近兩年未觸發門檻事件</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-16"><span class="audit-chip " data-audit-chip>保留意見（樣板性質常見，非個股特有警訊）</span> <span class="note" style="display:inline">26Q2・資誠聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。保留意見在一般上市股出現率約 50%（2026-08-13 抽樣 30 檔），非個股特有警訊。</div></div></td></tr><tr class="main isnew" onclick="tog(this)">
+<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('1441','上市',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TWSE%3A1441">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/1441/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="tl"><div class="q y"><span>24Q3</span>8.4</div><div class="q y"><span>24Q4</span>7.9</div><div class="q y"><span>25Q1</span>8.3</div><div class="q y"><span>25Q2</span>6.6</div><div class="q y"><span>25Q3</span>6.5</div><div class="q y"><span>25Q4</span>6.5</div><div class="q y"><span>26Q1</span>5.9</div><div class="q y"><span>26Q2</span>5.1</div></div><div class=ev>近兩年未觸發門檻事件</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-16"><span class="audit-chip " data-audit-chip>保留意見（樣板性質常見，非個股特有警訊）</span> <span class="note" style="display:inline">26Q2・資誠聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。保留意見在一般上市股出現率約 50%（2026-08-13 抽樣 30 檔），非個股特有警訊。</div></div><div class="audit-heading">可否放空</div><div class="short-block" data-sbl-fetched-at="2026-08-16"
+     data-sbl-state="ok" data-sbl-avail="0">
+  <div class="ev">融資融券：具融資融券資格（實際狀態見上方官方現況欄）</div>
+  <div class="ev" data-sbl-line>借券：✗ 不在借券標的清單</div>
+  <div class="ev">認售權證：需自行查詢（<a href="https://www.taifex.com.tw/cht/2/callsAndPuts"
+    target="_blank" onclick="event.stopPropagation()">期交所</a>／券商 App）</div>
+  
+</div></td></tr><tr class="main isnew" onclick="tog(this)">
   <td><span class="star" data-code="4304" onclick="event.stopPropagation();togWatch('4304')">☆</span><a href="https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4304" target="_blank" onclick="event.stopPropagation()">4304</a></td>
   <td>勝昱 <span class="newb">🆕新財報</span></td><td>上櫃</td>
   <td class="stcell"><span class="chip cstop">停資停券</span></td>
@@ -254,7 +303,14 @@ tr.watched { background:rgba(96,165,250,.07); }
   <td class="num pos">0.10</td>
   <td>26Q2 <span class="exp">▾</span></td>
 </tr>
-<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('4304','上櫃',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TPEX%3A4304">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/4304/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="tl"><div class="q r"><span>24Q3</span>1.6</div><div class="q r"><span>24Q4</span>1.1</div><div class="q r"><span>25Q1</span>0.6</div><div class="q r"><span>25Q2</span>0.2</div><div class="q r"><span>25Q3</span>0.1</div><div class="q y"><span>25Q4</span>5.2</div><div class="q y"><span>26Q1</span>5.0</div><div class="q y"><span>26Q2</span>5.1</div></div><div class="ev">26Q1 已連續兩季淨值 ≥5（25Q4→26Q1）→ 符合櫃買中心業務規則（上櫃）的淨值款恢復條件；⚠️ 若係因其他事由列入（會計師意見/財報未依限公告/重整等），需該原因消滅才恢復</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-16"><span class="audit-chip " data-audit-chip>保留意見（樣板性質常見，非個股特有警訊）</span> <span class="note" style="display:inline">26Q2・正風聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。保留意見在一般上市股出現率約 50%（2026-08-13 抽樣 30 檔），非個股特有警訊。</div></div></td></tr><tr class="main isnew" onclick="tog(this)">
+<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('4304','上櫃',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TPEX%3A4304">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/4304/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="tl"><div class="q r"><span>24Q3</span>1.6</div><div class="q r"><span>24Q4</span>1.1</div><div class="q r"><span>25Q1</span>0.6</div><div class="q r"><span>25Q2</span>0.2</div><div class="q r"><span>25Q3</span>0.1</div><div class="q y"><span>25Q4</span>5.2</div><div class="q y"><span>26Q1</span>5.0</div><div class="q y"><span>26Q2</span>5.1</div></div><div class="ev">26Q1 已連續兩季淨值 ≥5（25Q4→26Q1）→ 符合櫃買中心業務規則（上櫃）的淨值款恢復條件；⚠️ 若係因其他事由列入（會計師意見/財報未依限公告/重整等），需該原因消滅才恢復</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-16"><span class="audit-chip " data-audit-chip>保留意見（樣板性質常見，非個股特有警訊）</span> <span class="note" style="display:inline">26Q2・正風聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。保留意見在一般上市股出現率約 50%（2026-08-13 抽樣 30 檔），非個股特有警訊。</div></div><div class="audit-heading">可否放空</div><div class="short-block" data-sbl-fetched-at="2026-08-16"
+     data-sbl-state="ok" data-sbl-avail="0">
+  <div class="ev">融資融券：具融資融券資格（實際狀態見上方官方現況欄）</div>
+  <div class="ev" data-sbl-line>借券：✗ 不在借券標的清單</div>
+  <div class="ev">認售權證：需自行查詢（<a href="https://www.taifex.com.tw/cht/2/callsAndPuts"
+    target="_blank" onclick="event.stopPropagation()">期交所</a>／券商 App）</div>
+  
+</div></td></tr><tr class="main isnew" onclick="tog(this)">
   <td><span class="star" data-code="3018" onclick="event.stopPropagation();togWatch('3018')">☆</span><a href="https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3018" target="_blank" onclick="event.stopPropagation()">3018</a></td>
   <td>隆銘綠能 <span class="newb">🆕新財報</span></td><td>上市</td>
   <td class="stcell"><span class="chip cstop">停資停券</span></td>
@@ -263,7 +319,14 @@ tr.watched { background:rgba(96,165,250,.07); }
   <td class="num pos">0.28</td>
   <td>26Q2 <span class="exp">▾</span></td>
 </tr>
-<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('3018','上市',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TWSE%3A3018">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/3018/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="tl"><div class="q g"><span>24Q3</span>10.1</div><div class="q y"><span>24Q4</span>9.7</div><div class="q y"><span>25Q1</span>9.6</div><div class="q y"><span>25Q2</span>8.9</div><div class="q y"><span>25Q3</span>7.5</div><div class="q y"><span>25Q4</span>7.5</div><div class="q y"><span>26Q1</span>6.8</div><div class="q y"><span>26Q2</span>5.3</div></div><div class="ev">📅 2024-07-01 觀測窗起點前已列為全額交割（列入超過兩年，依證交所營業細則第49條）</div><div class="ev">24Q4 淨值 9.69 跌破 10 元 → 依有價證券得為融資融券標準應停止融資融券</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-16"><span class="audit-chip " data-audit-chip>保留意見（樣板性質常見，非個股特有警訊）</span> <span class="note" style="display:inline">26Q2・冠恆聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。保留意見在一般上市股出現率約 50%（2026-08-13 抽樣 30 檔），非個股特有警訊。</div></div></td></tr><tr class="main isnew" onclick="tog(this)">
+<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('3018','上市',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TWSE%3A3018">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/3018/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="tl"><div class="q g"><span>24Q3</span>10.1</div><div class="q y"><span>24Q4</span>9.7</div><div class="q y"><span>25Q1</span>9.6</div><div class="q y"><span>25Q2</span>8.9</div><div class="q y"><span>25Q3</span>7.5</div><div class="q y"><span>25Q4</span>7.5</div><div class="q y"><span>26Q1</span>6.8</div><div class="q y"><span>26Q2</span>5.3</div></div><div class="ev">📅 2024-07-01 觀測窗起點前已列為全額交割（列入超過兩年，依證交所營業細則第49條）</div><div class="ev">24Q4 淨值 9.69 跌破 10 元 → 依有價證券得為融資融券標準應停止融資融券</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-16"><span class="audit-chip " data-audit-chip>保留意見（樣板性質常見，非個股特有警訊）</span> <span class="note" style="display:inline">26Q2・冠恆聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。保留意見在一般上市股出現率約 50%（2026-08-13 抽樣 30 檔），非個股特有警訊。</div></div><div class="audit-heading">可否放空</div><div class="short-block" data-sbl-fetched-at="2026-08-16"
+     data-sbl-state="ok" data-sbl-avail="0">
+  <div class="ev">融資融券：具融資融券資格（實際狀態見上方官方現況欄）</div>
+  <div class="ev" data-sbl-line>借券：✗ 不在借券標的清單</div>
+  <div class="ev">認售權證：需自行查詢（<a href="https://www.taifex.com.tw/cht/2/callsAndPuts"
+    target="_blank" onclick="event.stopPropagation()">期交所</a>／券商 App）</div>
+  
+</div></td></tr><tr class="main isnew" onclick="tog(this)">
   <td><span class="star" data-code="6141" onclick="event.stopPropagation();togWatch('6141')">☆</span><a href="https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6141" target="_blank" onclick="event.stopPropagation()">6141</a></td>
   <td>柏承 <span class="newb">🆕新財報</span></td><td>上市</td>
   <td class="stcell"><span class="chip cstop">停資停券</span></td>
@@ -272,7 +335,14 @@ tr.watched { background:rgba(96,165,250,.07); }
   <td class="num pos">0.29</td>
   <td>26Q2 <span class="exp">▾</span></td>
 </tr>
-<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('6141','上市',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TWSE%3A6141">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/6141/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="tl"><div class="q g"><span>24Q3</span>11.9</div><div class="q y"><span>24Q4</span>10.0</div><div class="q g"><span>25Q1</span>11.2</div><div class="q y"><span>25Q2</span>9.3</div><div class="q y"><span>25Q3</span>8.9</div><div class="q y"><span>25Q4</span>5.9</div><div class="q y"><span>26Q1</span>5.2</div><div class="q y"><span>26Q2</span>5.3</div></div><div class="ev">24Q4 淨值 9.99 跌破 10 元 → 依有價證券得為融資融券標準應停止融資融券</div><div class="ev">25Q1 淨值 11.22 回到 10 元以上 → 符合有價證券得為融資融券標準恢復條件（單季即可）；⚠️ 若仍為全額交割股，期間一律停止信用交易</div><div class="ev">25Q2 淨值 9.29 跌破 10 元 → 依有價證券得為融資融券標準應停止融資融券</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-16"><span class="audit-chip " data-audit-chip>保留意見（樣板性質常見，非個股特有警訊）</span> <span class="note" style="display:inline">26Q2・正風聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。保留意見在一般上市股出現率約 50%（2026-08-13 抽樣 30 檔），非個股特有警訊。</div></div></td></tr><tr class="main isnew" onclick="tog(this)">
+<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('6141','上市',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TWSE%3A6141">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/6141/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="tl"><div class="q g"><span>24Q3</span>11.9</div><div class="q y"><span>24Q4</span>10.0</div><div class="q g"><span>25Q1</span>11.2</div><div class="q y"><span>25Q2</span>9.3</div><div class="q y"><span>25Q3</span>8.9</div><div class="q y"><span>25Q4</span>5.9</div><div class="q y"><span>26Q1</span>5.2</div><div class="q y"><span>26Q2</span>5.3</div></div><div class="ev">24Q4 淨值 9.99 跌破 10 元 → 依有價證券得為融資融券標準應停止融資融券</div><div class="ev">25Q1 淨值 11.22 回到 10 元以上 → 符合有價證券得為融資融券標準恢復條件（單季即可）；⚠️ 若仍為全額交割股，期間一律停止信用交易</div><div class="ev">25Q2 淨值 9.29 跌破 10 元 → 依有價證券得為融資融券標準應停止融資融券</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-16"><span class="audit-chip " data-audit-chip>保留意見（樣板性質常見，非個股特有警訊）</span> <span class="note" style="display:inline">26Q2・正風聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。保留意見在一般上市股出現率約 50%（2026-08-13 抽樣 30 檔），非個股特有警訊。</div></div><div class="audit-heading">可否放空</div><div class="short-block" data-sbl-fetched-at="2026-08-16"
+     data-sbl-state="ok" data-sbl-avail="0">
+  <div class="ev">融資融券：具融資融券資格（實際狀態見上方官方現況欄）</div>
+  <div class="ev" data-sbl-line>借券：✗ 不在借券標的清單</div>
+  <div class="ev">認售權證：需自行查詢（<a href="https://www.taifex.com.tw/cht/2/callsAndPuts"
+    target="_blank" onclick="event.stopPropagation()">期交所</a>／券商 App）</div>
+  
+</div></td></tr><tr class="main isnew" onclick="tog(this)">
   <td><span class="star" data-code="4419" onclick="event.stopPropagation();togWatch('4419')">☆</span><a href="https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4419" target="_blank" onclick="event.stopPropagation()">4419</a></td>
   <td>皇家美食 <span class="newb">🆕新財報</span></td><td>上櫃</td>
   <td class="stcell"><span class="chip cstop">非信用交易標的</span></td>
@@ -281,7 +351,14 @@ tr.watched { background:rgba(96,165,250,.07); }
   <td class="num pos">0.38</td>
   <td>26Q2 <span class="exp">▾</span></td>
 </tr>
-<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('4419','上櫃',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TPEX%3A4419">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/4419/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="tl"><div class="q y"><span>24Q3</span>5.7</div><div class="q y"><span>24Q4</span>5.2</div><div class="q y"><span>25Q1</span>7.1</div><div class="q y"><span>25Q2</span>6.8</div><div class="q y"><span>25Q3</span>6.4</div><div class="q y"><span>25Q4</span>6.0</div><div class="q y"><span>26Q1</span>5.7</div><div class="q y"><span>26Q2</span>5.4</div></div><div class=ev>近兩年未觸發門檻事件</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-16"><span class="audit-chip " data-audit-chip>保留意見（樣板性質常見，非個股特有警訊）</span> <span class="note" style="display:inline">26Q2・安侯建業聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。保留意見在一般上市股出現率約 50%（2026-08-13 抽樣 30 檔），非個股特有警訊。</div></div></td></tr><tr class="main isnew" onclick="tog(this)">
+<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('4419','上櫃',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TPEX%3A4419">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/4419/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="tl"><div class="q y"><span>24Q3</span>5.7</div><div class="q y"><span>24Q4</span>5.2</div><div class="q y"><span>25Q1</span>7.1</div><div class="q y"><span>25Q2</span>6.8</div><div class="q y"><span>25Q3</span>6.4</div><div class="q y"><span>25Q4</span>6.0</div><div class="q y"><span>26Q1</span>5.7</div><div class="q y"><span>26Q2</span>5.4</div></div><div class=ev>近兩年未觸發門檻事件</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-16"><span class="audit-chip " data-audit-chip>保留意見（樣板性質常見，非個股特有警訊）</span> <span class="note" style="display:inline">26Q2・安侯建業聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。保留意見在一般上市股出現率約 50%（2026-08-13 抽樣 30 檔），非個股特有警訊。</div></div><div class="audit-heading">可否放空</div><div class="short-block" data-sbl-fetched-at="2026-08-16"
+     data-sbl-state="ok" data-sbl-avail="0">
+  <div class="ev">融資融券：非融資融券標的（✗ 不可融資）</div>
+  <div class="ev" data-sbl-line>借券：✗ 不在借券標的清單</div>
+  <div class="ev">認售權證：需自行查詢（<a href="https://www.taifex.com.tw/cht/2/callsAndPuts"
+    target="_blank" onclick="event.stopPropagation()">期交所</a>／券商 App）</div>
+  <div class="ev dim">已知管道（融券／借券）皆無；認售權證需自行確認</div>
+</div></td></tr><tr class="main isnew" onclick="tog(this)">
   <td><span class="star" data-code="5205" onclick="event.stopPropagation();togWatch('5205')">☆</span><a href="https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5205" target="_blank" onclick="event.stopPropagation()">5205</a></td>
   <td>中茂 <span class="newb">🆕新財報</span></td><td>上櫃</td>
   <td class="stcell"><span class="chip cstop">非信用交易標的</span></td>
@@ -290,7 +367,14 @@ tr.watched { background:rgba(96,165,250,.07); }
   <td class="num pos">0.51</td>
   <td>26Q2 <span class="exp">▾</span></td>
 </tr>
-<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('5205','上櫃',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TPEX%3A5205">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/5205/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="tl"><div class="q r"><span>24Q3</span>4.8</div><div class="q y"><span>24Q4</span>9.7</div><div class="q y"><span>25Q1</span>7.9</div><div class="q y"><span>25Q2</span>7.6</div><div class="q y"><span>25Q3</span>7.3</div><div class="q y"><span>25Q4</span>6.5</div><div class="q y"><span>26Q1</span>6.1</div><div class="q y"><span>26Q2</span>5.5</div></div><div class="ev">25Q1 已連續兩季淨值 ≥5（24Q4→25Q1）→ 符合櫃買中心業務規則（上櫃）的淨值款恢復條件；⚠️ 若係因其他事由列入（會計師意見/財報未依限公告/重整等），需該原因消滅才恢復</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-16"><span class="audit-chip " data-audit-chip>保留意見（樣板性質常見，非個股特有警訊）</span> <span class="note" style="display:inline">26Q2・眾智聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。保留意見在一般上市股出現率約 50%（2026-08-13 抽樣 30 檔），非個股特有警訊。</div></div></td></tr><tr class="main isnew" onclick="tog(this)">
+<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('5205','上櫃',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TPEX%3A5205">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/5205/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="tl"><div class="q r"><span>24Q3</span>4.8</div><div class="q y"><span>24Q4</span>9.7</div><div class="q y"><span>25Q1</span>7.9</div><div class="q y"><span>25Q2</span>7.6</div><div class="q y"><span>25Q3</span>7.3</div><div class="q y"><span>25Q4</span>6.5</div><div class="q y"><span>26Q1</span>6.1</div><div class="q y"><span>26Q2</span>5.5</div></div><div class="ev">25Q1 已連續兩季淨值 ≥5（24Q4→25Q1）→ 符合櫃買中心業務規則（上櫃）的淨值款恢復條件；⚠️ 若係因其他事由列入（會計師意見/財報未依限公告/重整等），需該原因消滅才恢復</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-16"><span class="audit-chip " data-audit-chip>保留意見（樣板性質常見，非個股特有警訊）</span> <span class="note" style="display:inline">26Q2・眾智聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。保留意見在一般上市股出現率約 50%（2026-08-13 抽樣 30 檔），非個股特有警訊。</div></div><div class="audit-heading">可否放空</div><div class="short-block" data-sbl-fetched-at="2026-08-16"
+     data-sbl-state="ok" data-sbl-avail="0">
+  <div class="ev">融資融券：非融資融券標的（✗ 不可融資）</div>
+  <div class="ev" data-sbl-line>借券：✗ 不在借券標的清單</div>
+  <div class="ev">認售權證：需自行查詢（<a href="https://www.taifex.com.tw/cht/2/callsAndPuts"
+    target="_blank" onclick="event.stopPropagation()">期交所</a>／券商 App）</div>
+  <div class="ev dim">已知管道（融券／借券）皆無；認售權證需自行確認</div>
+</div></td></tr><tr class="main isnew" onclick="tog(this)">
   <td><span class="star" data-code="3494" onclick="event.stopPropagation();togWatch('3494')">☆</span><a href="https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3494" target="_blank" onclick="event.stopPropagation()">3494</a></td>
   <td>誠研 <span class="newb">🆕新財報</span></td><td>上市</td>
   <td class="stcell"><span class="chip cstop">停資停券</span></td>
@@ -299,7 +383,14 @@ tr.watched { background:rgba(96,165,250,.07); }
   <td class="num pos">0.54</td>
   <td>26Q2 <span class="exp">▾</span></td>
 </tr>
-<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('3494','上市',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TWSE%3A3494">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/3494/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="tl"><div class="q y"><span>24Q3</span>5.8</div><div class="q y"><span>24Q4</span>7.9</div><div class="q y"><span>25Q1</span>7.6</div><div class="q y"><span>25Q2</span>7.3</div><div class="q y"><span>25Q3</span>6.8</div><div class="q y"><span>25Q4</span>6.1</div><div class="q y"><span>26Q1</span>5.8</div><div class="q y"><span>26Q2</span>5.5</div></div><div class=ev>近兩年未觸發門檻事件</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-16"><span class="audit-chip " data-audit-chip>保留意見（樣板性質常見，非個股特有警訊）</span> <span class="note" style="display:inline">26Q2・信永中和會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。保留意見在一般上市股出現率約 50%（2026-08-13 抽樣 30 檔），非個股特有警訊。</div></div></td></tr><tr class="main isnew" onclick="tog(this)">
+<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('3494','上市',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TWSE%3A3494">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/3494/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="tl"><div class="q y"><span>24Q3</span>5.8</div><div class="q y"><span>24Q4</span>7.9</div><div class="q y"><span>25Q1</span>7.6</div><div class="q y"><span>25Q2</span>7.3</div><div class="q y"><span>25Q3</span>6.8</div><div class="q y"><span>25Q4</span>6.1</div><div class="q y"><span>26Q1</span>5.8</div><div class="q y"><span>26Q2</span>5.5</div></div><div class=ev>近兩年未觸發門檻事件</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-16"><span class="audit-chip " data-audit-chip>保留意見（樣板性質常見，非個股特有警訊）</span> <span class="note" style="display:inline">26Q2・信永中和會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。保留意見在一般上市股出現率約 50%（2026-08-13 抽樣 30 檔），非個股特有警訊。</div></div><div class="audit-heading">可否放空</div><div class="short-block" data-sbl-fetched-at="2026-08-16"
+     data-sbl-state="ok" data-sbl-avail="0">
+  <div class="ev">融資融券：具融資融券資格（實際狀態見上方官方現況欄）</div>
+  <div class="ev" data-sbl-line>借券：✗ 不在借券標的清單</div>
+  <div class="ev">認售權證：需自行查詢（<a href="https://www.taifex.com.tw/cht/2/callsAndPuts"
+    target="_blank" onclick="event.stopPropagation()">期交所</a>／券商 App）</div>
+  
+</div></td></tr><tr class="main isnew" onclick="tog(this)">
   <td><span class="star" data-code="8937" onclick="event.stopPropagation();togWatch('8937')">☆</span><a href="https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8937" target="_blank" onclick="event.stopPropagation()">8937</a></td>
   <td>合騏* <span class="newb">🆕新財報</span></td><td>上櫃</td>
   <td class="stcell"><span class="chip cstop">停資停券</span></td>
@@ -308,7 +399,14 @@ tr.watched { background:rgba(96,165,250,.07); }
   <td class="num pos">0.54</td>
   <td>26Q2 <span class="exp">▾</span></td>
 </tr>
-<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('8937','上櫃',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TPEX%3A8937">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/8937/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="hist-none">此股面額非 10 元（已按 1/4 校準歷史淨值）</div><div class="tl"><div class="q r"><span>24Q3</span>3.3</div><div class="q r"><span>24Q4</span>2.6</div><div class="q y"><span>25Q1</span>5.1</div><div class="q r"><span>25Q2</span>4.7</div><div class="q y"><span>25Q3</span>6.4</div><div class="q y"><span>25Q4</span>6.1</div><div class="q y"><span>26Q1</span>5.7</div><div class="q y"><span>26Q2</span>5.5</div></div><div class="ev">25Q2 淨值 4.7 跌破 5 元 → 依櫃買中心業務規則（上櫃）應列為全額交割</div><div class="ev">25Q4 已連續兩季淨值 ≥5（25Q3→25Q4）→ 符合櫃買中心業務規則（上櫃）的淨值款恢復條件；⚠️ 若係因其他事由列入（會計師意見/財報未依限公告/重整等），需該原因消滅才恢復</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-16"><span class="audit-chip " data-audit-chip>保留意見（樣板性質常見，非個股特有警訊）</span> <span class="note" style="display:inline">26Q2・正風聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。保留意見在一般上市股出現率約 50%（2026-08-13 抽樣 30 檔），非個股特有警訊。</div></div></td></tr><tr class="main isnew" onclick="tog(this)">
+<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('8937','上櫃',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TPEX%3A8937">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/8937/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="hist-none">此股面額非 10 元（已按 1/4 校準歷史淨值）</div><div class="tl"><div class="q r"><span>24Q3</span>3.3</div><div class="q r"><span>24Q4</span>2.6</div><div class="q y"><span>25Q1</span>5.1</div><div class="q r"><span>25Q2</span>4.7</div><div class="q y"><span>25Q3</span>6.4</div><div class="q y"><span>25Q4</span>6.1</div><div class="q y"><span>26Q1</span>5.7</div><div class="q y"><span>26Q2</span>5.5</div></div><div class="ev">25Q2 淨值 4.7 跌破 5 元 → 依櫃買中心業務規則（上櫃）應列為全額交割</div><div class="ev">25Q4 已連續兩季淨值 ≥5（25Q3→25Q4）→ 符合櫃買中心業務規則（上櫃）的淨值款恢復條件；⚠️ 若係因其他事由列入（會計師意見/財報未依限公告/重整等），需該原因消滅才恢復</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-16"><span class="audit-chip " data-audit-chip>保留意見（樣板性質常見，非個股特有警訊）</span> <span class="note" style="display:inline">26Q2・正風聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。保留意見在一般上市股出現率約 50%（2026-08-13 抽樣 30 檔），非個股特有警訊。</div></div><div class="audit-heading">可否放空</div><div class="short-block" data-sbl-fetched-at="2026-08-16"
+     data-sbl-state="ok" data-sbl-avail="0">
+  <div class="ev">融資融券：具融資融券資格（實際狀態見上方官方現況欄）</div>
+  <div class="ev" data-sbl-line>借券：✗ 不在借券標的清單</div>
+  <div class="ev">認售權證：需自行查詢（<a href="https://www.taifex.com.tw/cht/2/callsAndPuts"
+    target="_blank" onclick="event.stopPropagation()">期交所</a>／券商 App）</div>
+  
+</div></td></tr><tr class="main isnew" onclick="tog(this)">
   <td><span class="star" data-code="2438" onclick="event.stopPropagation();togWatch('2438')">☆</span><a href="https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2438" target="_blank" onclick="event.stopPropagation()">2438</a></td>
   <td>翔耀 <span class="newb">🆕新財報</span></td><td>上市</td>
   <td class="stcell"><span class="chip cstop">停資停券</span></td>
@@ -317,7 +415,14 @@ tr.watched { background:rgba(96,165,250,.07); }
   <td class="num pos">0.58</td>
   <td>26Q2 <span class="exp">▾</span></td>
 </tr>
-<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('2438','上市',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TWSE%3A2438">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/2438/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="tl"><div class="q y"><span>24Q3</span>7.5</div><div class="q y"><span>24Q4</span>7.1</div><div class="q y"><span>25Q1</span>6.9</div><div class="q y"><span>25Q2</span>6.4</div><div class="q y"><span>25Q3</span>5.1</div><div class="q r"><span>25Q4</span>5.0</div><div class="q y"><span>26Q1</span>6.0</div><div class="q y"><span>26Q2</span>5.3</div></div><div class="ev">25Q4 淨值 4.97 跌破 5 元 → 依證交所營業細則第49條應列為全額交割</div><div class="ev">26Q2 已連續兩季淨值 ≥5（26Q1→26Q2）→ 符合證交所營業細則第49條的淨值款恢復條件；⚠️ 若係因其他事由列入（會計師意見/財報未依限公告/重整等），需該原因消滅才恢復</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-16"><span class="audit-chip " data-audit-chip>保留意見（樣板性質常見，非個股特有警訊）</span> <span class="note" style="display:inline">26Q2・國富浩華聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。保留意見在一般上市股出現率約 50%（2026-08-13 抽樣 30 檔），非個股特有警訊。</div></div></td></tr><tr class="main isnew" onclick="tog(this)">
+<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('2438','上市',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TWSE%3A2438">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/2438/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="tl"><div class="q y"><span>24Q3</span>7.5</div><div class="q y"><span>24Q4</span>7.1</div><div class="q y"><span>25Q1</span>6.9</div><div class="q y"><span>25Q2</span>6.4</div><div class="q y"><span>25Q3</span>5.1</div><div class="q r"><span>25Q4</span>5.0</div><div class="q y"><span>26Q1</span>6.0</div><div class="q y"><span>26Q2</span>5.3</div></div><div class="ev">25Q4 淨值 4.97 跌破 5 元 → 依證交所營業細則第49條應列為全額交割</div><div class="ev">26Q2 已連續兩季淨值 ≥5（26Q1→26Q2）→ 符合證交所營業細則第49條的淨值款恢復條件；⚠️ 若係因其他事由列入（會計師意見/財報未依限公告/重整等），需該原因消滅才恢復</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-16"><span class="audit-chip " data-audit-chip>保留意見（樣板性質常見，非個股特有警訊）</span> <span class="note" style="display:inline">26Q2・國富浩華聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。保留意見在一般上市股出現率約 50%（2026-08-13 抽樣 30 檔），非個股特有警訊。</div></div><div class="audit-heading">可否放空</div><div class="short-block" data-sbl-fetched-at="2026-08-16"
+     data-sbl-state="ok" data-sbl-avail="0">
+  <div class="ev">融資融券：具融資融券資格（實際狀態見上方官方現況欄）</div>
+  <div class="ev" data-sbl-line>借券：✗ 不在借券標的清單</div>
+  <div class="ev">認售權證：需自行查詢（<a href="https://www.taifex.com.tw/cht/2/callsAndPuts"
+    target="_blank" onclick="event.stopPropagation()">期交所</a>／券商 App）</div>
+  
+</div></td></tr><tr class="main isnew" onclick="tog(this)">
   <td><span class="star" data-code="3085" onclick="event.stopPropagation();togWatch('3085')">☆</span><a href="https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3085" target="_blank" onclick="event.stopPropagation()">3085</a></td>
   <td>新零售 <span class="newb">🆕新財報</span></td><td>上櫃</td>
   <td class="stcell"><span class="chip cstop">停資停券</span></td>
@@ -326,7 +431,14 @@ tr.watched { background:rgba(96,165,250,.07); }
   <td class="num pos">0.60</td>
   <td>26Q2 <span class="exp">▾</span></td>
 </tr>
-<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('3085','上櫃',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TPEX%3A3085">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/3085/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="tl"><div class="q y"><span>24Q3</span>6.8</div><div class="q y"><span>24Q4</span>6.4</div><div class="q y"><span>25Q1</span>6.2</div><div class="q y"><span>25Q2</span>6.1</div><div class="q y"><span>25Q3</span>6.1</div><div class="q y"><span>25Q4</span>6.0</div><div class="q y"><span>26Q1</span>5.7</div><div class="q y"><span>26Q2</span>5.6</div></div><div class=ev>近兩年未觸發門檻事件</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-16"><span class="audit-chip " data-audit-chip>保留意見（樣板性質常見，非個股特有警訊）</span> <span class="note" style="display:inline">26Q2・馬施云大華聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。保留意見在一般上市股出現率約 50%（2026-08-13 抽樣 30 檔），非個股特有警訊。</div></div></td></tr><tr class="main isnew" onclick="tog(this)">
+<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('3085','上櫃',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TPEX%3A3085">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/3085/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="tl"><div class="q y"><span>24Q3</span>6.8</div><div class="q y"><span>24Q4</span>6.4</div><div class="q y"><span>25Q1</span>6.2</div><div class="q y"><span>25Q2</span>6.1</div><div class="q y"><span>25Q3</span>6.1</div><div class="q y"><span>25Q4</span>6.0</div><div class="q y"><span>26Q1</span>5.7</div><div class="q y"><span>26Q2</span>5.6</div></div><div class=ev>近兩年未觸發門檻事件</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-16"><span class="audit-chip " data-audit-chip>保留意見（樣板性質常見，非個股特有警訊）</span> <span class="note" style="display:inline">26Q2・馬施云大華聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。保留意見在一般上市股出現率約 50%（2026-08-13 抽樣 30 檔），非個股特有警訊。</div></div><div class="audit-heading">可否放空</div><div class="short-block" data-sbl-fetched-at="2026-08-16"
+     data-sbl-state="ok" data-sbl-avail="0">
+  <div class="ev">融資融券：具融資融券資格（實際狀態見上方官方現況欄）</div>
+  <div class="ev" data-sbl-line>借券：✗ 不在借券標的清單</div>
+  <div class="ev">認售權證：需自行查詢（<a href="https://www.taifex.com.tw/cht/2/callsAndPuts"
+    target="_blank" onclick="event.stopPropagation()">期交所</a>／券商 App）</div>
+  
+</div></td></tr><tr class="main isnew" onclick="tog(this)">
   <td><span class="star" data-code="3191" onclick="event.stopPropagation();togWatch('3191')">☆</span><a href="https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3191" target="_blank" onclick="event.stopPropagation()">3191</a></td>
   <td>雲嘉南 <span class="newb">🆕新財報</span></td><td>上櫃</td>
   <td class="stcell"><span class="chip cstop">停資停券</span></td>
@@ -335,7 +447,14 @@ tr.watched { background:rgba(96,165,250,.07); }
   <td class="num pos">0.60</td>
   <td>26Q2 <span class="exp">▾</span></td>
 </tr>
-<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('3191','上櫃',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TPEX%3A3191">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/3191/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="tl"><div class="q y"><span>24Q3</span>5.2</div><div class="q y"><span>24Q4</span>5.1</div><div class="q y"><span>25Q1</span>5.0</div><div class="q r"><span>25Q2</span>4.6</div><div class="q y"><span>25Q3</span>5.8</div><div class="q y"><span>25Q4</span>5.8</div><div class="q y"><span>26Q1</span>5.5</div><div class="q y"><span>26Q2</span>5.6</div></div><div class="ev">25Q2 淨值 4.64 跌破 5 元 → 依櫃買中心業務規則（上櫃）應列為全額交割</div><div class="ev">25Q4 已連續兩季淨值 ≥5（25Q3→25Q4）→ 符合櫃買中心業務規則（上櫃）的淨值款恢復條件；⚠️ 若係因其他事由列入（會計師意見/財報未依限公告/重整等），需該原因消滅才恢復</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-16"><span class="audit-chip " data-audit-chip>保留意見（樣板性質常見，非個股特有警訊）</span> <span class="note" style="display:inline">26Q2・馬施云大華聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。保留意見在一般上市股出現率約 50%（2026-08-13 抽樣 30 檔），非個股特有警訊。</div></div></td></tr><tr class="main isnew" onclick="tog(this)">
+<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('3191','上櫃',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TPEX%3A3191">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/3191/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="tl"><div class="q y"><span>24Q3</span>5.2</div><div class="q y"><span>24Q4</span>5.1</div><div class="q y"><span>25Q1</span>5.0</div><div class="q r"><span>25Q2</span>4.6</div><div class="q y"><span>25Q3</span>5.8</div><div class="q y"><span>25Q4</span>5.8</div><div class="q y"><span>26Q1</span>5.5</div><div class="q y"><span>26Q2</span>5.6</div></div><div class="ev">25Q2 淨值 4.64 跌破 5 元 → 依櫃買中心業務規則（上櫃）應列為全額交割</div><div class="ev">25Q4 已連續兩季淨值 ≥5（25Q3→25Q4）→ 符合櫃買中心業務規則（上櫃）的淨值款恢復條件；⚠️ 若係因其他事由列入（會計師意見/財報未依限公告/重整等），需該原因消滅才恢復</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-16"><span class="audit-chip " data-audit-chip>保留意見（樣板性質常見，非個股特有警訊）</span> <span class="note" style="display:inline">26Q2・馬施云大華聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。保留意見在一般上市股出現率約 50%（2026-08-13 抽樣 30 檔），非個股特有警訊。</div></div><div class="audit-heading">可否放空</div><div class="short-block" data-sbl-fetched-at="2026-08-16"
+     data-sbl-state="ok" data-sbl-avail="0">
+  <div class="ev">融資融券：具融資融券資格（實際狀態見上方官方現況欄）</div>
+  <div class="ev" data-sbl-line>借券：✗ 不在借券標的清單</div>
+  <div class="ev">認售權證：需自行查詢（<a href="https://www.taifex.com.tw/cht/2/callsAndPuts"
+    target="_blank" onclick="event.stopPropagation()">期交所</a>／券商 App）</div>
+  
+</div></td></tr><tr class="main isnew" onclick="tog(this)">
   <td><span class="star" data-code="5345" onclick="event.stopPropagation();togWatch('5345')">☆</span><a href="https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5345" target="_blank" onclick="event.stopPropagation()">5345</a></td>
   <td>馥鴻 <span class="newb">🆕新財報</span></td><td>上櫃</td>
   <td class="stcell"><span class="chip cstop">停資停券</span></td>
@@ -344,7 +463,14 @@ tr.watched { background:rgba(96,165,250,.07); }
   <td class="num pos">0.63</td>
   <td>26Q2 <span class="exp">▾</span></td>
 </tr>
-<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('5345','上櫃',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TPEX%3A5345">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/5345/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="tl"><div class="q y"><span>24Q3</span>6.4</div><div class="q y"><span>24Q4</span>6.0</div><div class="q y"><span>25Q1</span>5.9</div><div class="q y"><span>25Q2</span>5.7</div><div class="q y"><span>25Q3</span>5.7</div><div class="q y"><span>25Q4</span>5.7</div><div class="q y"><span>26Q1</span>5.6</div><div class="q y"><span>26Q2</span>5.6</div></div><div class=ev>近兩年未觸發門檻事件</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-16"><span class="audit-chip g" data-audit-chip>無保留意見</span> <span class="note" style="display:inline">26Q2・安侯建業聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。</div></div></td></tr><tr class="main isnew" onclick="tog(this)">
+<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('5345','上櫃',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TPEX%3A5345">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/5345/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="tl"><div class="q y"><span>24Q3</span>6.4</div><div class="q y"><span>24Q4</span>6.0</div><div class="q y"><span>25Q1</span>5.9</div><div class="q y"><span>25Q2</span>5.7</div><div class="q y"><span>25Q3</span>5.7</div><div class="q y"><span>25Q4</span>5.7</div><div class="q y"><span>26Q1</span>5.6</div><div class="q y"><span>26Q2</span>5.6</div></div><div class=ev>近兩年未觸發門檻事件</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-16"><span class="audit-chip g" data-audit-chip>無保留意見</span> <span class="note" style="display:inline">26Q2・安侯建業聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。</div></div><div class="audit-heading">可否放空</div><div class="short-block" data-sbl-fetched-at="2026-08-16"
+     data-sbl-state="ok" data-sbl-avail="0">
+  <div class="ev">融資融券：具融資融券資格（實際狀態見上方官方現況欄）</div>
+  <div class="ev" data-sbl-line>借券：✗ 不在借券標的清單</div>
+  <div class="ev">認售權證：需自行查詢（<a href="https://www.taifex.com.tw/cht/2/callsAndPuts"
+    target="_blank" onclick="event.stopPropagation()">期交所</a>／券商 App）</div>
+  
+</div></td></tr><tr class="main isnew" onclick="tog(this)">
   <td><span class="star" data-code="1799" onclick="event.stopPropagation();togWatch('1799')">☆</span><a href="https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1799" target="_blank" onclick="event.stopPropagation()">1799</a></td>
   <td>易威 <span class="newb">🆕新財報</span></td><td>上櫃</td>
   <td class="stcell"><span class="chip cstop">停資停券</span></td>
@@ -353,7 +479,14 @@ tr.watched { background:rgba(96,165,250,.07); }
   <td class="num pos">0.69</td>
   <td>26Q2 <span class="exp">▾</span></td>
 </tr>
-<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('1799','上櫃',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TPEX%3A1799">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/1799/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="tl"><div class="q y"><span>24Q3</span>6.0</div><div class="q y"><span>24Q4</span>5.9</div><div class="q y"><span>25Q1</span>5.9</div><div class="q y"><span>25Q2</span>5.2</div><div class="q y"><span>25Q3</span>5.4</div><div class="q y"><span>25Q4</span>5.5</div><div class="q y"><span>26Q1</span>5.8</div><div class="q y"><span>26Q2</span>5.7</div></div><div class=ev>近兩年未觸發門檻事件</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-16"><span class="audit-chip g" data-audit-chip>無保留意見</span> <span class="note" style="display:inline">26Q2・資誠聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。</div></div></td></tr><tr class="main isnew" onclick="tog(this)">
+<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('1799','上櫃',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TPEX%3A1799">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/1799/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="tl"><div class="q y"><span>24Q3</span>6.0</div><div class="q y"><span>24Q4</span>5.9</div><div class="q y"><span>25Q1</span>5.9</div><div class="q y"><span>25Q2</span>5.2</div><div class="q y"><span>25Q3</span>5.4</div><div class="q y"><span>25Q4</span>5.5</div><div class="q y"><span>26Q1</span>5.8</div><div class="q y"><span>26Q2</span>5.7</div></div><div class=ev>近兩年未觸發門檻事件</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-16"><span class="audit-chip g" data-audit-chip>無保留意見</span> <span class="note" style="display:inline">26Q2・資誠聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。</div></div><div class="audit-heading">可否放空</div><div class="short-block" data-sbl-fetched-at="2026-08-16"
+     data-sbl-state="ok" data-sbl-avail="0">
+  <div class="ev">融資融券：具融資融券資格（實際狀態見上方官方現況欄）</div>
+  <div class="ev" data-sbl-line>借券：✗ 不在借券標的清單</div>
+  <div class="ev">認售權證：需自行查詢（<a href="https://www.taifex.com.tw/cht/2/callsAndPuts"
+    target="_blank" onclick="event.stopPropagation()">期交所</a>／券商 App）</div>
+  
+</div></td></tr><tr class="main isnew" onclick="tog(this)">
   <td><span class="star" data-code="6276" onclick="event.stopPropagation();togWatch('6276')">☆</span><a href="https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6276" target="_blank" onclick="event.stopPropagation()">6276</a></td>
   <td>安鈦克 <span class="newb">🆕新財報</span></td><td>上櫃</td>
   <td class="stcell"><span class="chip cstop">停資停券</span></td>
@@ -362,7 +495,14 @@ tr.watched { background:rgba(96,165,250,.07); }
   <td class="num pos">0.71</td>
   <td>26Q2 <span class="exp">▾</span></td>
 </tr>
-<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('6276','上櫃',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TPEX%3A6276">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/6276/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="tl"><div class="q y"><span>24Q3</span>9.3</div><div class="q y"><span>24Q4</span>9.5</div><div class="q g"><span>25Q1</span>10.5</div><div class="q y"><span>25Q2</span>9.7</div><div class="q g"><span>25Q3</span>10.1</div><div class="q g"><span>25Q4</span>10.5</div><div class="q y"><span>26Q1</span>9.6</div><div class="q y"><span>26Q2</span>5.7</div></div><div class="ev">25Q1 淨值 10.47 回到 10 元以上 → 符合有價證券得為融資融券標準恢復條件（單季即可）；⚠️ 若仍為全額交割股，期間一律停止信用交易</div><div class="ev">25Q2 淨值 9.73 跌破 10 元 → 依有價證券得為融資融券標準應停止融資融券</div><div class="ev">25Q3 淨值 10.1 回到 10 元以上 → 符合有價證券得為融資融券標準恢復條件（單季即可）；⚠️ 若仍為全額交割股，期間一律停止信用交易</div><div class="ev">26Q1 淨值 9.58 跌破 10 元 → 依有價證券得為融資融券標準應停止融資融券</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-16"><span class="audit-chip g" data-audit-chip>無保留意見</span> <span class="note" style="display:inline">26Q2・安侯建業聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。</div></div></td></tr><tr class="main isnew" onclick="tog(this)">
+<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('6276','上櫃',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TPEX%3A6276">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/6276/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="tl"><div class="q y"><span>24Q3</span>9.3</div><div class="q y"><span>24Q4</span>9.5</div><div class="q g"><span>25Q1</span>10.5</div><div class="q y"><span>25Q2</span>9.7</div><div class="q g"><span>25Q3</span>10.1</div><div class="q g"><span>25Q4</span>10.5</div><div class="q y"><span>26Q1</span>9.6</div><div class="q y"><span>26Q2</span>5.7</div></div><div class="ev">25Q1 淨值 10.47 回到 10 元以上 → 符合有價證券得為融資融券標準恢復條件（單季即可）；⚠️ 若仍為全額交割股，期間一律停止信用交易</div><div class="ev">25Q2 淨值 9.73 跌破 10 元 → 依有價證券得為融資融券標準應停止融資融券</div><div class="ev">25Q3 淨值 10.1 回到 10 元以上 → 符合有價證券得為融資融券標準恢復條件（單季即可）；⚠️ 若仍為全額交割股，期間一律停止信用交易</div><div class="ev">26Q1 淨值 9.58 跌破 10 元 → 依有價證券得為融資融券標準應停止融資融券</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-16"><span class="audit-chip g" data-audit-chip>無保留意見</span> <span class="note" style="display:inline">26Q2・安侯建業聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。</div></div><div class="audit-heading">可否放空</div><div class="short-block" data-sbl-fetched-at="2026-08-16"
+     data-sbl-state="ok" data-sbl-avail="0">
+  <div class="ev">融資融券：具融資融券資格（實際狀態見上方官方現況欄）</div>
+  <div class="ev" data-sbl-line>借券：✗ 不在借券標的清單</div>
+  <div class="ev">認售權證：需自行查詢（<a href="https://www.taifex.com.tw/cht/2/callsAndPuts"
+    target="_blank" onclick="event.stopPropagation()">期交所</a>／券商 App）</div>
+  
+</div></td></tr><tr class="main isnew" onclick="tog(this)">
   <td><span class="star" data-code="3523" onclick="event.stopPropagation();togWatch('3523')">☆</span><a href="https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3523" target="_blank" onclick="event.stopPropagation()">3523</a></td>
   <td>迎輝 <span class="newb">🆕新財報</span></td><td>上櫃</td>
   <td class="stcell"><span class="chip cstop">停資停券</span></td>
@@ -371,7 +511,14 @@ tr.watched { background:rgba(96,165,250,.07); }
   <td class="num pos">0.74</td>
   <td>26Q2 <span class="exp">▾</span></td>
 </tr>
-<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('3523','上櫃',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TPEX%3A3523">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/3523/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="tl"><div class="q y"><span>24Q3</span>7.2</div><div class="q y"><span>24Q4</span>8.1</div><div class="q y"><span>25Q1</span>7.7</div><div class="q y"><span>25Q2</span>7.0</div><div class="q y"><span>25Q3</span>6.6</div><div class="q y"><span>25Q4</span>6.6</div><div class="q y"><span>26Q1</span>6.2</div><div class="q y"><span>26Q2</span>5.7</div></div><div class=ev>近兩年未觸發門檻事件</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-16"><span class="audit-chip " data-audit-chip>保留意見（樣板性質常見，非個股特有警訊）</span> <span class="note" style="display:inline">26Q2・安永聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。保留意見在一般上市股出現率約 50%（2026-08-13 抽樣 30 檔），非個股特有警訊。</div></div></td></tr><tr class="main isnew" onclick="tog(this)">
+<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('3523','上櫃',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TPEX%3A3523">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/3523/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="tl"><div class="q y"><span>24Q3</span>7.2</div><div class="q y"><span>24Q4</span>8.1</div><div class="q y"><span>25Q1</span>7.7</div><div class="q y"><span>25Q2</span>7.0</div><div class="q y"><span>25Q3</span>6.6</div><div class="q y"><span>25Q4</span>6.6</div><div class="q y"><span>26Q1</span>6.2</div><div class="q y"><span>26Q2</span>5.7</div></div><div class=ev>近兩年未觸發門檻事件</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-16"><span class="audit-chip " data-audit-chip>保留意見（樣板性質常見，非個股特有警訊）</span> <span class="note" style="display:inline">26Q2・安永聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。保留意見在一般上市股出現率約 50%（2026-08-13 抽樣 30 檔），非個股特有警訊。</div></div><div class="audit-heading">可否放空</div><div class="short-block" data-sbl-fetched-at="2026-08-16"
+     data-sbl-state="ok" data-sbl-avail="0">
+  <div class="ev">融資融券：具融資融券資格（實際狀態見上方官方現況欄）</div>
+  <div class="ev" data-sbl-line>借券：✗ 不在借券標的清單</div>
+  <div class="ev">認售權證：需自行查詢（<a href="https://www.taifex.com.tw/cht/2/callsAndPuts"
+    target="_blank" onclick="event.stopPropagation()">期交所</a>／券商 App）</div>
+  
+</div></td></tr><tr class="main isnew" onclick="tog(this)">
   <td><span class="star" data-code="6919" onclick="event.stopPropagation();togWatch('6919')">☆</span><a href="https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6919" target="_blank" onclick="event.stopPropagation()">6919</a></td>
   <td>康霈* <span class="newb">🆕新財報</span></td><td>上市</td>
   <td class="stcell"><span class="chip cstop">停資停券</span></td>
@@ -380,7 +527,14 @@ tr.watched { background:rgba(96,165,250,.07); }
   <td class="num pos">0.92</td>
   <td>26Q2 <span class="exp">▾</span></td>
 </tr>
-<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('6919','上市',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TWSE%3A6919">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/6919/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="hist-none">此股面額非 10 元（已按 1/20 校準歷史淨值）</div><div class="tl"><div class="q y"><span>24Q3</span>6.3</div><div class="q y"><span>24Q4</span>6.3</div><div class="q y"><span>25Q1</span>6.2</div><div class="q y"><span>25Q2</span>6.1</div><div class="q y"><span>25Q3</span>6.0</div><div class="q y"><span>25Q4</span>6.1</div><div class="q y"><span>26Q1</span>6.0</div><div class="q y"><span>26Q2</span>5.9</div></div><div class=ev>近兩年未觸發門檻事件</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-16"><span class="audit-chip " data-audit-chip>保留意見（樣板性質常見，非個股特有警訊）</span> <span class="note" style="display:inline">26Q2・安侯建業聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。保留意見在一般上市股出現率約 50%（2026-08-13 抽樣 30 檔），非個股特有警訊。</div></div></td></tr><tr class="main isnew" onclick="tog(this)">
+<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('6919','上市',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TWSE%3A6919">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/6919/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="hist-none">此股面額非 10 元（已按 1/20 校準歷史淨值）</div><div class="tl"><div class="q y"><span>24Q3</span>6.3</div><div class="q y"><span>24Q4</span>6.3</div><div class="q y"><span>25Q1</span>6.2</div><div class="q y"><span>25Q2</span>6.1</div><div class="q y"><span>25Q3</span>6.0</div><div class="q y"><span>25Q4</span>6.1</div><div class="q y"><span>26Q1</span>6.0</div><div class="q y"><span>26Q2</span>5.9</div></div><div class=ev>近兩年未觸發門檻事件</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-16"><span class="audit-chip " data-audit-chip>保留意見（樣板性質常見，非個股特有警訊）</span> <span class="note" style="display:inline">26Q2・安侯建業聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。保留意見在一般上市股出現率約 50%（2026-08-13 抽樣 30 檔），非個股特有警訊。</div></div><div class="audit-heading">可否放空</div><div class="short-block" data-sbl-fetched-at="2026-08-16"
+     data-sbl-state="ok" data-sbl-avail="0">
+  <div class="ev">融資融券：具融資融券資格（實際狀態見上方官方現況欄）</div>
+  <div class="ev" data-sbl-line>借券：✗ 不在借券標的清單</div>
+  <div class="ev">認售權證：需自行查詢（<a href="https://www.taifex.com.tw/cht/2/callsAndPuts"
+    target="_blank" onclick="event.stopPropagation()">期交所</a>／券商 App）</div>
+  
+</div></td></tr><tr class="main isnew" onclick="tog(this)">
   <td><span class="star" data-code="2208" onclick="event.stopPropagation();togWatch('2208')">☆</span><a href="https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2208" target="_blank" onclick="event.stopPropagation()">2208</a></td>
   <td>台船 <span class="newb">🆕新財報</span></td><td>上市</td>
   <td class="stcell"><span class="chip cstop">停資停券</span></td>
@@ -389,7 +543,14 @@ tr.watched { background:rgba(96,165,250,.07); }
   <td class="num pos">0.96</td>
   <td>26Q2 <span class="exp">▾</span></td>
 </tr>
-<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('2208','上市',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TWSE%3A2208">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/2208/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="tl"><div class="q y"><span>24Q3</span>8.2</div><div class="q y"><span>24Q4</span>7.1</div><div class="q y"><span>25Q1</span>6.6</div><div class="q y"><span>25Q2</span>5.2</div><div class="q y"><span>25Q3</span>5.3</div><div class="q y"><span>25Q4</span>5.6</div><div class="q y"><span>26Q1</span>5.8</div><div class="q y"><span>26Q2</span>6.0</div></div><div class=ev>近兩年未觸發門檻事件</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-16"><span class="audit-chip g" data-audit-chip>無保留意見</span> <span class="note" style="display:inline">26Q2・資誠聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。</div></div></td></tr><tr class="main" onclick="tog(this)">
+<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('2208','上市',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TWSE%3A2208">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/2208/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="tl"><div class="q y"><span>24Q3</span>8.2</div><div class="q y"><span>24Q4</span>7.1</div><div class="q y"><span>25Q1</span>6.6</div><div class="q y"><span>25Q2</span>5.2</div><div class="q y"><span>25Q3</span>5.3</div><div class="q y"><span>25Q4</span>5.6</div><div class="q y"><span>26Q1</span>5.8</div><div class="q y"><span>26Q2</span>6.0</div></div><div class=ev>近兩年未觸發門檻事件</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-16"><span class="audit-chip g" data-audit-chip>無保留意見</span> <span class="note" style="display:inline">26Q2・資誠聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。</div></div><div class="audit-heading">可否放空</div><div class="short-block" data-sbl-fetched-at="2026-08-16"
+     data-sbl-state="ok" data-sbl-avail="0">
+  <div class="ev">融資融券：具融資融券資格（實際狀態見上方官方現況欄）</div>
+  <div class="ev" data-sbl-line>借券：✗ 不在借券標的清單</div>
+  <div class="ev">認售權證：需自行查詢（<a href="https://www.taifex.com.tw/cht/2/callsAndPuts"
+    target="_blank" onclick="event.stopPropagation()">期交所</a>／券商 App）</div>
+  
+</div></td></tr><tr class="main" onclick="tog(this)">
   <td><span class="star" data-code="6550" onclick="event.stopPropagation();togWatch('6550')">☆</span><a href="https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6550" target="_blank" onclick="event.stopPropagation()">6550</a></td>
   <td>北極星藥業-KY </td><td>上市</td>
   <td class="stcell"><span class="chip cstop">停資停券</span></td>
@@ -398,7 +559,14 @@ tr.watched { background:rgba(96,165,250,.07); }
   <td class="num pos">0.58</td>
   <td>26Q1 <span class="exp">▾</span></td>
 </tr>
-<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('6550','上市',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TWSE%3A6550">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/6550/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="tl"><div class="q y"><span>24Q2</span>9.2</div><div class="q y"><span>24Q3</span>8.2</div><div class="q y"><span>24Q4</span>8.7</div><div class="q y"><span>25Q1</span>8.0</div><div class="q y"><span>25Q2</span>6.1</div><div class="q y"><span>25Q3</span>5.4</div><div class="q y"><span>25Q4</span>6.2</div><div class="q y"><span>26Q1</span>5.6</div></div><div class=ev>近兩年未觸發門檻事件</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-16"><span class="audit-chip " data-audit-chip>保留意見（樣板性質常見，非個股特有警訊）</span> <span class="note" style="display:inline">26Q1・資誠聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。保留意見在一般上市股出現率約 50%（2026-08-13 抽樣 30 檔），非個股特有警訊。</div></div></td></tr><tr class="main" onclick="tog(this)">
+<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('6550','上市',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TWSE%3A6550">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/6550/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="tl"><div class="q y"><span>24Q2</span>9.2</div><div class="q y"><span>24Q3</span>8.2</div><div class="q y"><span>24Q4</span>8.7</div><div class="q y"><span>25Q1</span>8.0</div><div class="q y"><span>25Q2</span>6.1</div><div class="q y"><span>25Q3</span>5.4</div><div class="q y"><span>25Q4</span>6.2</div><div class="q y"><span>26Q1</span>5.6</div></div><div class=ev>近兩年未觸發門檻事件</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-16"><span class="audit-chip " data-audit-chip>保留意見（樣板性質常見，非個股特有警訊）</span> <span class="note" style="display:inline">26Q1・資誠聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。保留意見在一般上市股出現率約 50%（2026-08-13 抽樣 30 檔），非個股特有警訊。</div></div><div class="audit-heading">可否放空</div><div class="short-block" data-sbl-fetched-at="2026-08-16"
+     data-sbl-state="ok" data-sbl-avail="0">
+  <div class="ev">融資融券：具融資融券資格（實際狀態見上方官方現況欄）</div>
+  <div class="ev" data-sbl-line>借券：✗ 不在借券標的清單</div>
+  <div class="ev">認售權證：需自行查詢（<a href="https://www.taifex.com.tw/cht/2/callsAndPuts"
+    target="_blank" onclick="event.stopPropagation()">期交所</a>／券商 App）</div>
+  
+</div></td></tr><tr class="main" onclick="tog(this)">
   <td><span class="star" data-code="6431" onclick="event.stopPropagation();togWatch('6431')">☆</span><a href="https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6431" target="_blank" onclick="event.stopPropagation()">6431</a></td>
   <td>光麗-KY </td><td>上市</td>
   <td class="stcell"><span class="chip cstop">停資停券</span></td>
@@ -407,7 +575,14 @@ tr.watched { background:rgba(96,165,250,.07); }
   <td class="num pos">0.68</td>
   <td>26Q1 <span class="exp">▾</span></td>
 </tr>
-<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('6431','上市',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TWSE%3A6431">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/6431/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="tl"><div class="q y"><span>24Q2</span>7.6</div><div class="q y"><span>24Q3</span>7.3</div><div class="q y"><span>24Q4</span>6.3</div><div class="q y"><span>25Q1</span>7.8</div><div class="q y"><span>25Q2</span>6.4</div><div class="q y"><span>25Q3</span>6.3</div><div class="q y"><span>25Q4</span>5.9</div><div class="q y"><span>26Q1</span>5.7</div></div><div class=ev>近兩年未觸發門檻事件</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-16"><span class="audit-chip g" data-audit-chip>無保留意見</span> <span class="note" style="display:inline">26Q1・馬施云大華聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。</div></div></td></tr></tbody></table>
+<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('6431','上市',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TWSE%3A6431">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/6431/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="tl"><div class="q y"><span>24Q2</span>7.6</div><div class="q y"><span>24Q3</span>7.3</div><div class="q y"><span>24Q4</span>6.3</div><div class="q y"><span>25Q1</span>7.8</div><div class="q y"><span>25Q2</span>6.4</div><div class="q y"><span>25Q3</span>6.3</div><div class="q y"><span>25Q4</span>5.9</div><div class="q y"><span>26Q1</span>5.7</div></div><div class=ev>近兩年未觸發門檻事件</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-16"><span class="audit-chip g" data-audit-chip>無保留意見</span> <span class="note" style="display:inline">26Q1・馬施云大華聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。</div></div><div class="audit-heading">可否放空</div><div class="short-block" data-sbl-fetched-at="2026-08-16"
+     data-sbl-state="ok" data-sbl-avail="0">
+  <div class="ev">融資融券：具融資融券資格（實際狀態見上方官方現況欄）</div>
+  <div class="ev" data-sbl-line>借券：✗ 不在借券標的清單</div>
+  <div class="ev">認售權證：需自行查詢（<a href="https://www.taifex.com.tw/cht/2/callsAndPuts"
+    target="_blank" onclick="event.stopPropagation()">期交所</a>／券商 App）</div>
+  
+</div></td></tr></tbody></table>
 </section><section class="panel" data-t="margin_risk">
   <p class="desc">淨值 6~10——低於 10 元將停止融資融券（依「有價證券得為融資融券標準」，上市上櫃同適用；恢復單季回 10 即可）。</p>
   <table><thead><tr><th>代號</th><th>名稱</th><th>市場</th><th>官方現況</th><th>股價</th>
@@ -5643,6 +5818,24 @@ document.querySelectorAll('[data-audit-fetched-at]').forEach(el => {
       chip.classList.add('stale');
       chip.textContent = '資料已過期 ' + d + ' 天（不顯示查核結論）';
     }
+  }
+});
+
+/* 借券資格過期時絕不顯示「具借券資格」，一律回退成未知（§8 freshness 契約）——
+   state 已在產生網頁時判斷過一次，這裡補的是「build 時 state=ok，但頁面被看到時
+   已經是好幾天前的舊 build」這個無法在產生當下預知的情境，跟 DEGRADED 共用同一個
+   「額外來源」壞掉門檻（DEG_BAD=3 天）以維持全站一致 */
+const SBL_STALE_DAYS = DEG_BAD;
+document.querySelectorAll('[data-sbl-fetched-at]').forEach(el => {
+  const ts = el.dataset.sblFetchedAt;
+  const state = el.dataset.sblState;
+  const avail = el.dataset.sblAvail === '1';
+  const line = el.querySelector('[data-sbl-line]');
+  if (!line) return;
+  const d = ts ? ageDays(ts) : null;
+  const stale = state !== 'ok' || d === null || !isFinite(d) || d > SBL_STALE_DAYS;
+  if (stale && avail) {
+    line.textContent = '借券：借券資格未知（資料' + (d === null || !isFinite(d) ? '時間未知' : d + ' 天前') + '，暫無法判斷）';
   }
 });
 
