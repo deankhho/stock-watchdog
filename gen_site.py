@@ -18,6 +18,8 @@ NV_FILE = BASE / "data" / "netvalue.json"
 NV_HISTORY_DIR = BASE / "data" / "netvalue_history"
 NV_HISTORY_STATUS = BASE / "data" / "netvalue_history_status.json"
 AUDIT_FILE = BASE / "data" / "audit.json"
+OFFICIAL_FILE = BASE / "data" / "official.json"
+SBL_FILE = BASE / "data" / "sbl.json"
 DOCS = BASE / "docs"
 
 
@@ -74,6 +76,41 @@ def render_audit_block(code: str, audit: dict) -> str:
            f'<div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。'
            f'{extra_note}</div>'
            f'</div>')
+
+
+def render_short_channel_block(code: str, margin_status: dict, sbl: dict) -> str:
+    """放空管道揭露（發現 K／§8）：只用於 predict_in／edge 頁籤展開列。
+    🔴 三個管道語意各自獨立，不可合併成單一結論：
+      融資融券：不在 margin_status 表內 → ✗（既有資料，不必新抓）
+      借券 SBL：不在清單 → ✗；在清單內只講「具資格」，不講「有券可借」（發現 K 的語意上限）
+      認售權證：沒有逐檔資料源，永遠「未知」，不可判 ✗（文案不可寫「三者皆✗」，該條件不可達）
+    sbl 資料過期或降級時，一律回退成「借券資格未知」，不可顯示 ✓／具資格（見 §8 freshness 契約）。"""
+    margin_ok = code in margin_status
+    margin_text = "非融資融券標的（✗ 不可融資）" if not margin_ok else None
+
+    sbl_state = sbl.get("state")
+    sbl_fetched_at = sbl.get("fetched_at", "")
+    sbl_avail = code in (sbl.get("codes") or [])
+    sbl_degraded = sbl_state not in ("ok",)
+
+    if sbl_degraded:
+        sbl_text = "借券資格未知（資料降級，暫無法判斷）"
+    elif sbl_avail:
+        sbl_text = "具借券資格，實際可借量需洽券商"
+    else:
+        sbl_text = "✗ 不在借券標的清單"
+
+    both_neg = (not margin_ok) and (not sbl_degraded) and (not sbl_avail)
+    summary = ("已知管道（融券／借券）皆無；認售權證需自行確認" if both_neg else "")
+
+    return (f'''<div class="short-block" data-sbl-fetched-at="{sbl_fetched_at}"
+     data-sbl-state="{sbl_state or ''}" data-sbl-avail="{'1' if sbl_avail else '0'}">
+  <div class="ev">融資融券：{margin_text or '具融資融券資格（實際狀態見上方官方現況欄）'}</div>
+  <div class="ev" data-sbl-line>借券：{sbl_text}</div>
+  <div class="ev">認售權證：需自行查詢（<a href="https://www.taifex.com.tw/cht/2/callsAndPuts"
+    target="_blank" onclick="event.stopPropagation()">期交所</a>／券商 App）</div>
+  {f'<div class="ev dim">{summary}</div>' if summary else ''}
+</div>''')
 
 CROSS_STATE_LABEL = {
     "confirmed": ("🔴", "確認掉落"), "no_drop": ("🟢", "未掉落"),
@@ -206,11 +243,14 @@ RULE_NOTE = ("⚠️ 上市／上櫃規定不同：上市依證交所營業細�
              "（上櫃另有管理股票/分盤交易制度）——表格「市場」欄區分適用規定，細節見規則頁")
 
 TABS = [
-    ("predict_in", "🔴 預測打入", "淨值<5、尚未列全額交割——下次財報後恐公告，提前留意。" + RULE_NOTE),
+    ("predict_in", "🔴 預測打入", "淨值<5、尚未列全額交割——下次財報後恐公告，提前留意。" + RULE_NOTE
+     + " ⚠️ 本站只判斷淨值門檻，不代表存在可執行的交易機會；展開列「可否放空」逐檔顯示融資融券／借券資格，"
+       "認售權證請自行查詢，勿依單一管道推論其餘管道狀態。"),
     ("recover", "🟢 恢復候選", "已全額交割但最新淨值≥5。⚠️ 淨值只是列入事由之一（營業細則49條共有多款：會計師意見、財報未依限公告、重整等）——"
      "若係因淨值列入，連兩季達標可恢復；若因其他事由列入，淨值回升不生效（如大飲淨值11元仍在名單）。"
      "各股實際列入原因官方 API 不提供，需查證交所/櫃買公告。"),
-    ("edge", "🟠 危險邊緣", "淨值 5~6——再虧一季恐跌破 5 元門檻。" + RULE_NOTE),
+    ("edge", "🟠 危險邊緣", "淨值 5~6——再虧一季恐跌破 5 元門檻。" + RULE_NOTE
+     + " ⚠️ 展開列「可否放空」逐檔顯示融資融券／借券資格，不代表存在可執行的交易機會。"),
     ("margin_risk", "🟡 信用警戒", "淨值 6~10——低於 10 元將停止融資融券（依「有價證券得為融資融券標準」，上市上櫃同適用；恢復單季回 10 即可）。"),
     ("official", "⚪ 全額交割中", "官方現行變更交易方法名單（上市：證交所 TWT85U；上櫃：櫃買 cmode）。"),
     ("dropped", "⬇️ 最近一季掉落", "前季淨值 ≥10、最新季 <10——已跌破融資融券標準。各檔比較期間不同，逐列標示。"),
@@ -407,6 +447,18 @@ def main():
     except Exception:
         audit = {"state": "empty", "rows": {}}
 
+    # §8：放空管道揭露（predict_in／edge 專用）。margin_status 來自 official.json（既有資料，
+    # 不必新抓）；sbl 獨立檔案，缺檔或壞檔一律等同 state:empty，絕不讓整站產不出來
+    try:
+        official_raw = json.loads(OFFICIAL_FILE.read_text()) if OFFICIAL_FILE.exists() else {}
+    except Exception:
+        official_raw = {}
+    margin_status = official_raw.get("margin_status", {})
+    try:
+        sbl = json.loads(SBL_FILE.read_text()) if SBL_FILE.exists() else {"state": "empty", "codes": []}
+    except Exception:
+        sbl = {"state": "empty", "codes": []}
+
     tab_btns, panels = [], []
     for key, label, desc in TABS:
         if key == "dropped":
@@ -448,6 +500,9 @@ def main():
             badge, delta = nr_badge(r)
             # S8：TradingView symbol 前綴（上市 TWSE、上櫃 TPEX）
             tvp = 'TWSE' if r.get('market') == '上市' else 'TPEX'
+            short_html = (f'<div class="audit-heading">可否放空</div>'
+                         f'{render_short_channel_block(r["code"], margin_status, sbl)}'
+                         if key in ("predict_in", "edge") else "")
             trs_list.append(f"""<tr class="main{' isnew' if badge else ''}" onclick="tog(this)">
   <td><span class="star" data-code="{r['code']}" onclick="event.stopPropagation();togWatch('{r['code']}')">☆</span><a href="{r['goodinfo_url']}" target="_blank" onclick="event.stopPropagation()">{r['code']}</a></td>
   <td>{r['name']} {badge}</td><td>{r.get('market','')}</td>
@@ -457,7 +512,7 @@ def main():
   <td class="num {'neg' if (r.get('gap') or 0) < 0 else 'pos'}">{fmt(r.get('gap'))}</td>
   <td>{r.get('nv_quarter','')}{('<span class=note>' + r['note'] + '</span>') if r.get('note') else ''} <span class="exp">▾</span></td>
 </tr>
-<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('{r['code']}','{r.get('market','')}',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol={tvp}%3A{r['code']}">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/{r['code']}/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div>{history_row(r['code'], bt_stocks, r.get('market',''), listing)}<div class="audit-heading">會計師查核意見</div>{render_audit_block(r['code'], audit)}</td></tr>""")
+<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('{r['code']}','{r.get('market','')}',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol={tvp}%3A{r['code']}">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/{r['code']}/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div>{history_row(r['code'], bt_stocks, r.get('market',''), listing)}<div class="audit-heading">會計師查核意見</div>{render_audit_block(r['code'], audit)}{short_html}</td></tr>""")
         trs = "".join(trs_list)
         panels.append(f"""<section class="panel" data-t="{key}">
   <p class="desc">{desc}</p>
@@ -613,6 +668,24 @@ document.querySelectorAll('[data-audit-fetched-at]').forEach(el => {{
       chip.classList.add('stale');
       chip.textContent = '資料已過期 ' + d + ' 天（不顯示查核結論）';
     }}
+  }}
+}});
+
+/* 借券資格過期時絕不顯示「具借券資格」，一律回退成未知（§8 freshness 契約）——
+   state 已在產生網頁時判斷過一次，這裡補的是「build 時 state=ok，但頁面被看到時
+   已經是好幾天前的舊 build」這個無法在產生當下預知的情境，跟 DEGRADED 共用同一個
+   「額外來源」壞掉門檻（DEG_BAD=3 天）以維持全站一致 */
+const SBL_STALE_DAYS = DEG_BAD;
+document.querySelectorAll('[data-sbl-fetched-at]').forEach(el => {{
+  const ts = el.dataset.sblFetchedAt;
+  const state = el.dataset.sblState;
+  const avail = el.dataset.sblAvail === '1';
+  const line = el.querySelector('[data-sbl-line]');
+  if (!line) return;
+  const d = ts ? ageDays(ts) : null;
+  const stale = state !== 'ok' || d === null || !isFinite(d) || d > SBL_STALE_DAYS;
+  if (stale && avail) {{
+    line.textContent = '借券：借券資格未知（資料' + (d === null || !isFinite(d) ? '時間未知' : d + ' 天前') + '，暫無法判斷）';
   }}
 }});
 
