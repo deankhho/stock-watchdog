@@ -74,6 +74,12 @@ def fetch_balance(code: str) -> list:
     r = requests.get(FINMIND_URL, params={
         "dataset": "TaiwanStockBalanceSheet",
         "data_id": code, "start_date": START}, timeout=20)
+    # 🔴 FinMind 配額用完回 HTTP 402、data 給空陣列，r.json() 不會拋例外——
+    # 沒有 raise_for_status() 會把「額度用完」誤判成「這檔真的沒有歷史資料」，
+    # 靜默寫出空 rows 快取（同一個 bug 2026-08-15 在 fetch_netvalue_history.py 實測抓到過，
+    # 見 feedback_silent_failure_contract.md；此處無重試，main() 既有的 try/except 會接住例外
+    # 並記進 failed list，不需要額外處理）
+    r.raise_for_status()
     rows = r.json().get("data", [])
     # 整理成 {date: {type: value}}
     by_date = {}
@@ -225,6 +231,31 @@ def selftest():
         rows, fa = read_cache(fp)
         assert rows == q2 and fa == "2026-08-10", (rows, fa)
         assert list(Path(td).glob("*.tmp")) == [], "不應留下暫存檔"
+
+        # 🔴 配額用完（HTTP 402，data 空陣列）必須拋例外，不可靜默寫出空 rows 快取
+        # （fetch_netvalue_history.py 2026-08-15 實測踩過同一個 bug，這裡補齊同款回歸測試）
+        # ⚠️ 跑腳本時本模組是 __main__，`import backtest as m` 會重新載入成第二份獨立模組，
+        # patch 它的屬性不影響正在執行的 fetch_balance()（曾經因此讓假 bug 誤判成「測試通過」，
+        # 已用故意留 bug 反證抓到——見 feedback_falsify_tests_that_pass_first_try）。
+        # 改用「patch requests 套件本體的 get」＋「global 直接改本模組的 CACHE」才會真的生效。
+        class _Fake402:
+            def raise_for_status(self):
+                raise requests.HTTPError("402 Requests reach the upper limit")
+            def json(self):
+                return {"data": [], "msg": "Requests reach the upper limit"}
+        global CACHE
+        orig_get, orig_cache = requests.get, CACHE
+        requests.get = lambda *a, **kw: _Fake402()
+        CACHE = Path(td)
+        try:
+            try:
+                fetch_balance("9999")
+                raise AssertionError("402 應該要拋例外，不可靜默寫出空 rows 快取")
+            except requests.HTTPError:
+                pass
+            assert not (Path(td) / "9999.json").exists(), "不應該寫出快取檔"
+        finally:
+            requests.get, CACHE = orig_get, orig_cache
 
     print("selftest OK")
 
