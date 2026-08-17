@@ -1,7 +1,7 @@
 {
- "state": "ok",
+ "state": "degraded",
  "fetched_at": "2026-08-17",
- "reason": null,
+ "reason": "抓取失敗：ReadTimeout: HTTPSConnectionPool(host='www.twse.com.tw', port=443): Read timed out. (read timeout=20)",
  "codes": [
   "00400A",
   "00401A",
