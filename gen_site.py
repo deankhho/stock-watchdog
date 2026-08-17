@@ -5,6 +5,7 @@ gen_site.py — S4：靜態網站（docs/index.html + docs/rules.html）
 """
 
 import json
+import sys
 from datetime import datetime
 from pathlib import Path
 
@@ -116,7 +117,7 @@ def render_short_channel_block(code: str, status: dict, sbl: dict, warrants: dic
 
     warrants_state = warrants.get("state")
     warrants_fetched_at = warrants.get("fetched_at", "")
-    warrant_avail = code in (warrants.get("codes") or [])
+    warrant_avail = code in (warrants.get("put_codes") or [])
     warrants_degraded = warrants_state not in ("ok",)
 
     if warrants_degraded:
@@ -147,6 +148,50 @@ def render_short_channel_block(code: str, status: dict, sbl: dict, warrants: dic
   <div class="ev">融資融券：{margin_text or '具融資融券資格（可信用交易）'}</div>
   <div class="ev" data-sbl-line>借券：{sbl_text}</div>
   <div class="ev" data-warrants-line>認售權證：{warrant_text}</div>
+  {f'<div class="ev dim">{summary}</div>' if summary else ''}
+</div>''')
+
+
+def render_long_channel_block(code: str, status: dict, warrants: dict) -> str:
+    """作多管道揭露：只用於 recover 頁籤展開列（跟放空區塊對稱，2026-08-17 使用者要求——
+    了解股票脫離全額交割時，除了直接買股票，還有哪些工具可用）。
+    🔴 融資的可用判斷跟放空區塊刻意不同：這裡只在意「融資買進」本身，
+    credit=='停止融券'（只停放空用的融券）不影響融資買進，要算可用；
+    放空區塊只認 credit=='可信用交易' 是它自己的既有邏輯，此處不動、不比照。
+    認購權證：跟認售權證共用同一套資料／freshness 契約（fetch_warrants.py），
+    降級/未取得時一律回退「未知」，不可誤顯示 ✓。"""
+    credit = (status or {}).get("credit", "")
+    margin_ok = credit in ("可信用交易", "停止融券")
+    if margin_ok:
+        margin_text = None
+    elif credit == "非信用交易標的":
+        margin_text = "✗ 非融資標的"
+    elif credit:
+        margin_text = f"✗ 結構上為信用交易標的，但現況「{credit}」不可用"
+    else:
+        margin_text = "融資狀態未知"
+
+    warrants_state = warrants.get("state")
+    warrants_fetched_at = warrants.get("fetched_at", "")
+    call_avail = code in (warrants.get("call_codes") or [])
+    warrants_degraded = warrants_state not in ("ok",)
+
+    if warrants_degraded:
+        call_text = ("需自行查詢（資料未取得）"
+                     '（<a href="https://www.twse.com.tw/zh/products/warrant/summary.html" '
+                     'target="_blank" onclick="event.stopPropagation()">TWSE 權證專區</a>）')
+    elif call_avail:
+        call_text = "具有效認購權證，實際成交量／流動性需另查"
+    else:
+        call_text = "✗ 目前無有效認購權證"
+
+    all_neg = (not margin_ok) and (not warrants_degraded) and (not call_avail)
+    summary = "已知管道（融資／認購權證）皆無可用作多工具" if all_neg else ""
+
+    return (f'''<div class="long-block" data-call-fetched-at="{warrants_fetched_at}"
+     data-call-state="{warrants_state or ''}" data-call-avail="{'1' if call_avail else '0'}">
+  <div class="ev">融資：{margin_text or '具融資資格'}</div>
+  <div class="ev" data-call-line>認購權證：{call_text}</div>
   {f'<div class="ev dim">{summary}</div>' if summary else ''}
 </div>''')
 
@@ -494,9 +539,9 @@ def main():
         sbl = {"state": "empty", "codes": []}
     try:
         warrants = (json.loads(WARRANTS_FILE.read_text()) if WARRANTS_FILE.exists()
-                   else {"state": "empty", "codes": []})
+                   else {"state": "empty", "put_codes": [], "call_codes": []})
     except Exception:
-        warrants = {"state": "empty", "codes": []}
+        warrants = {"state": "empty", "put_codes": [], "call_codes": []}
 
     tab_btns, panels = [], []
     for key, label, desc in TABS:
@@ -542,6 +587,9 @@ def main():
             short_html = (f'<div class="audit-heading">可否放空</div>'
                          f'{render_short_channel_block(r["code"], r.get("status"), sbl, warrants)}'
                          if key in ("predict_in", "edge") else "")
+            long_html = (f'<div class="audit-heading">可否作多</div>'
+                        f'{render_long_channel_block(r["code"], r.get("status"), warrants)}'
+                        if key == "recover" else "")
             trs_list.append(f"""<tr class="main{' isnew' if badge else ''}" onclick="tog(this)">
   <td><span class="star" data-code="{r['code']}" onclick="event.stopPropagation();togWatch('{r['code']}')">☆</span><a href="{r['goodinfo_url']}" target="_blank" onclick="event.stopPropagation()">{r['code']}</a></td>
   <td>{r['name']} {badge}</td><td>{r.get('market','')}</td>
@@ -551,7 +599,7 @@ def main():
   <td class="num {'neg' if (r.get('gap') or 0) < 0 else 'pos'}">{fmt(r.get('gap'))}</td>
   <td>{r.get('nv_quarter','')}{('<span class=note>' + r['note'] + '</span>') if r.get('note') else ''} <span class="exp">▾</span></td>
 </tr>
-<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('{r['code']}','{r.get('market','')}',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol={tvp}%3A{r['code']}">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/{r['code']}/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div>{history_row(r['code'], bt_stocks, r.get('market',''), listing)}<div class="audit-heading">會計師查核意見</div>{render_audit_block(r['code'], audit)}{short_html}</td></tr>""")
+<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('{r['code']}','{r.get('market','')}',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol={tvp}%3A{r['code']}">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/{r['code']}/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div>{history_row(r['code'], bt_stocks, r.get('market',''), listing)}<div class="audit-heading">會計師查核意見</div>{render_audit_block(r['code'], audit)}{short_html}{long_html}</td></tr>""")
         trs = "".join(trs_list)
         panels.append(f"""<section class="panel" data-t="{key}">
   <p class="desc">{desc}</p>
@@ -743,6 +791,20 @@ document.querySelectorAll('[data-warrants-fetched-at]').forEach(el => {{
   }}
 }});
 
+/* 認購權證同款過期回退（作多區塊，同一套 freshness 契約，同一份 warrants.json 來源） */
+document.querySelectorAll('[data-call-fetched-at]').forEach(el => {{
+  const ts = el.dataset.callFetchedAt;
+  const state = el.dataset.callState;
+  const avail = el.dataset.callAvail === '1';
+  const line = el.querySelector('[data-call-line]');
+  if (!line) return;
+  const d = ts ? ageDays(ts) : null;
+  const stale = state !== 'ok' || d === null || !isFinite(d) || d > SBL_STALE_DAYS;
+  if (stale && avail) {{
+    line.textContent = '認購權證：需自行查詢（資料' + (d === null || !isFinite(d) ? '時間未知' : d + ' 天前') + '，暫無法判斷）';
+  }}
+}});
+
 (function(){{
   const box = document.getElementById('freshness');
   const nvEl = document.querySelector('[data-testid="nv-age"]');
@@ -871,5 +933,47 @@ th,td {{ border:1px solid rgba(255,255,255,.12); padding:8px; text-align:left; }
     print(f"已生成 docs/index.html + rules.html" + ("+ backtest.html" if bt else "（backtest.json 未就緒，略過歷史頁）"))
 
 
+def selftest():
+    """render_long_channel_block()：融資／認購權證兩管道，只用於 recover 頁籤展開列。"""
+    # 1. 融資可用（可信用交易）＋ 認購權證存在，state=ok
+    html = render_long_channel_block("1234", {"credit": "可信用交易"},
+                                     {"state": "ok", "fetched_at": "2026-08-17", "call_codes": ["1234"]})
+    assert "具融資資格" in html, html
+    assert "具有效認購權證" in html, html
+    assert "認售" not in html, html          # 不能把認售的文字複製貼過來
+
+    # 2. 「停止融券」只擋放空，不擋融資買進——跟放空區塊（只認「可信用交易」）刻意不同
+    html = render_long_channel_block("1234", {"credit": "停止融券"},
+                                     {"state": "empty", "call_codes": []})
+    assert "具融資資格" in html, html
+
+    # 3. 「停止融資」才真的擋到融資買進，要顯示現況、不可顯示可用
+    html = render_long_channel_block("1234", {"credit": "停止融資"},
+                                     {"state": "empty", "call_codes": []})
+    assert "具融資資格" not in html, html
+    assert "停止融資" in html, html
+
+    # 4. 非信用交易標的
+    html = render_long_channel_block("1234", {"credit": "非信用交易標的"},
+                                     {"state": "empty", "call_codes": []})
+    assert "✗ 非融資標的" in html, html
+
+    # 5. 該代號沒有認購權證、資料新鮮 → 顯示明確的 ✗，不迴避
+    html = render_long_channel_block("9999", {"credit": "可信用交易"},
+                                     {"state": "ok", "fetched_at": "2026-08-17", "call_codes": ["1234"]})
+    assert "✗ 目前無有效認購權證" in html, html
+
+    # 6. 認購權證資料降級 → 一律回退「未知」，即使代號剛好在舊清單裡也不能顯示 ✓
+    html = render_long_channel_block("1234", {"credit": "可信用交易"},
+                                     {"state": "degraded", "call_codes": ["1234"]})
+    assert "需自行查詢" in html, html
+    assert "具有效認購權證" not in html, html
+
+    print("selftest OK")
+
+
 if __name__ == "__main__":
+    if "--selftest" in sys.argv:
+        selftest()
+        sys.exit(0)
     main()
