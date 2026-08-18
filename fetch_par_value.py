@@ -8,11 +8,18 @@ fetch_par_value.py — 上市/上櫃普通股每股面額 → data/par_value.jso
 的個股（實測 TWSE 1095 檔中 20 檔、TPEx 890 檔中 15 檔，合計約 35 檔）門檻套錯。
 
 資料源：
-  TWSE openapi t187ap03_L（上市公司基本資料）欄位「普通股每股面額」
-  TPEx openapi mopsfin_t187ap03_O（上櫃公司基本資料）欄位 ParValueOfCommonStock
-兩者格式相同，都是「新台幣                 10.0000元」這種字串，非新台幣計價
+  TWSE openapi t187ap03_L（上市公司基本資料）欄位「普通股每股面額」／
+    「已發行普通股數或TDR原股發行股數」
+  TPEx openapi mopsfin_t187ap03_O（上櫃公司基本資料）欄位 ParValueOfCommonStock／IssueShares
+面額欄位格式相同，都是「新台幣                 10.0000元」這種字串，非新台幣計價
 （美元／泰銖／港幣，實測各僅 1 檔）或「無面額」「不適用」的一律標記為 None（無法判定），
 不可用 5.0 硬套，交給 analyze.py 用預設值 fallback。
+
+2026-08-18 追加：多抓「已發行股數」欄，供全額交割恢復判定的 3 億元子項使用
+（見 analyze.py::recover_eligibility()）。schema 改成
+{code: {"par": float, "shares": int|None}}——面額抓不到才整筆不收錄；面額查得到但
+股數查不到，該筆仍保留、shares 記 None（兩者分開判斷，避免下游測不到「缺股數」
+這個真實情境）。
 
 用法：python fetch_par_value.py [--selftest]
 """
@@ -52,8 +59,26 @@ def _parse_ntd(raw: str):
     return float(m.group(1))
 
 
+def _parse_shares(raw):
+    """已發行股數→int；非數值/空字串/逗號千分位一律 None，不可拋例外或回 0。"""
+    if raw is None:
+        return None
+    if isinstance(raw, int):
+        return raw
+    if isinstance(raw, float):
+        return int(raw)
+    s = str(raw).replace(",", "").strip()
+    if not s:
+        return None
+    try:
+        return int(float(s))
+    except ValueError:
+        return None
+
+
 def fetch_par_twse() -> dict:
-    """→ {code: par_value}，非新台幣計價/無面額的代號不收錄。"""
+    """→ {code: {"par": float, "shares": int|None}}，非新台幣計價/無面額的代號不收錄；
+    面額查得到但股數查不到，該筆仍保留（shares=None）。"""
     r = requests.get(TWSE_URL, timeout=TIMEOUT)
     r.raise_for_status()
     data = r.json()
@@ -62,12 +87,13 @@ def fetch_par_twse() -> dict:
         code = x.get("公司代號")
         par = _parse_ntd(x.get("普通股每股面額", ""))
         if code and par is not None:
-            out[code] = par
+            out[code] = {"par": par, "shares": _parse_shares(x.get("已發行普通股數或TDR原股發行股數"))}
     return out
 
 
 def fetch_par_tpex() -> dict:
-    """→ {code: par_value}，非新台幣計價/無面額的代號不收錄。
+    """→ {code: {"par": float, "shares": int|None}}，非新台幣計價/無面額的代號不收錄；
+    面額查得到但股數查不到，該筆仍保留（shares=None）。
     🔴 TPEx openapi SSL 憑證缺 SKI，比照 fetch_official.py 既有做法用 verify=False。"""
     r = requests.get(TPEX_URL, timeout=TIMEOUT, verify=False)
     r.raise_for_status()
@@ -77,12 +103,12 @@ def fetch_par_tpex() -> dict:
         code = x.get("SecuritiesCompanyCode")
         par = _parse_ntd(x.get("ParValueOfCommonStock", ""))
         if code and par is not None:
-            out[code] = par
+            out[code] = {"par": par, "shares": _parse_shares(x.get("IssueShares"))}
     return out
 
 
 def fetch_par_values(fetch_twse=fetch_par_twse, fetch_tpex=fetch_par_tpex) -> dict:
-    """→ {code: par_value}，兩個市場合併（代號不重複，直接合併即可）。"""
+    """→ {code: {"par": float, "shares": int|None}}，兩個市場合併（代號不重複，直接合併即可）。"""
     merged = {}
     merged.update(fetch_twse())
     merged.update(fetch_tpex())
@@ -168,15 +194,30 @@ def selftest():
     assert _parse_ntd("") is None
     assert _parse_ntd(None) is None
 
-    # === 2. fetch_par_values()：TWSE／TPEx 合併，非新台幣個股不收錄 ===
+    # === 1b. _parse_shares()：非數值/空字串/逗號千分位一律 None，不可拋例外或回 0 ===
+    assert _parse_shares("1,234,567") == 1234567
+    assert _parse_shares("1234567") == 1234567
+    assert _parse_shares(1234567) == 1234567
+    assert _parse_shares("") is None
+    assert _parse_shares(None) is None
+    assert _parse_shares("N/A") is None
+    assert _parse_shares("-") is None
+
+    # === 2. fetch_par_values()：TWSE／TPEx 合併，非新台幣個股不收錄，schema 為
+    #    {code: {"par": float, "shares": int|None}} ===
     def fake_twse():
-        return {"2330": 10.0, "7835": 10.0}
+        return {"2330": {"par": 10.0, "shares": 25900000000}, "7835": {"par": 10.0, "shares": None}}
 
     def fake_tpex():
-        return {"6488": 10.0, "1259": 1.0}
+        return {"6488": {"par": 10.0, "shares": 500000000}, "1259": {"par": 1.0, "shares": None}}
 
     merged = fetch_par_values(fake_twse, fake_tpex)
-    assert merged == {"2330": 10.0, "7835": 10.0, "6488": 10.0, "1259": 1.0}, merged
+    assert merged == {
+        "2330": {"par": 10.0, "shares": 25900000000},
+        "7835": {"par": 10.0, "shares": None},
+        "6488": {"par": 10.0, "shares": 500000000},
+        "1259": {"par": 1.0, "shares": None},
+    }, merged
 
     # === 3. classify_fetch() ===
     assert classify_fetch(0) == (False, "reject", "空清單，視為失敗")
@@ -217,8 +258,12 @@ def selftest():
 
     # === 7. 本機 http.server：端到端測 fetch_par_twse() 真的能解析真實 API 回應格式 ===
     fixture = json.dumps([
-        {"公司代號": "2330", "公司名稱": "台積電", "普通股每股面額": "新台幣                 10.0000元"},
-        {"公司代號": "9999", "公司名稱": "測試無面額", "普通股每股面額": "無面額"},
+        {"公司代號": "2330", "公司名稱": "台積電", "普通股每股面額": "新台幣                 10.0000元",
+         "已發行普通股數或TDR原股發行股數": "25,900,000,000"},
+        {"公司代號": "9999", "公司名稱": "測試無面額", "普通股每股面額": "無面額",
+         "已發行普通股數或TDR原股發行股數": "1,000,000"},
+        {"公司代號": "8888", "公司名稱": "測試缺股數", "普通股每股面額": "新台幣                  1.0000元",
+         "已發行普通股數或TDR原股發行股數": ""},
     ]).encode("utf-8")
 
     class Handler(http.server.BaseHTTPRequestHandler):
@@ -239,7 +284,11 @@ def selftest():
     TWSE_URL = f"http://127.0.0.1:{port}"
     try:
         par = fetch_par_twse()
-        assert par == {"2330": 10.0}, par         # 9999(無面額) 不收錄
+        # 9999(無面額) 不收錄；8888(有面額、缺股數) 仍保留，shares=None
+        assert par == {
+            "2330": {"par": 10.0, "shares": 25900000000},
+            "8888": {"par": 1.0, "shares": None},
+        }, par
     finally:
         TWSE_URL = orig_url
         srv.shutdown()

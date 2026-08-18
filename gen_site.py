@@ -196,6 +196,32 @@ def render_long_channel_block(code: str, status: dict, warrants: dict) -> str:
   {f'<div class="ev dim">{summary}</div>' if summary else ''}
 </div>''')
 
+RECOVER_STATE_LABEL = {
+    "eligible": "🟢 淨值條件已符合（估算）",
+    "not_yet": "🟡 淨值條件尚未符合",
+    "unknown": "❔ 資料不足，無法確認",
+}
+
+
+def render_recover_status_block(recover_status: dict) -> str:
+    """恢復資格三態呈現，只用於 recover 頁籤展開列。
+    🔴 不得直接顯示內部 state token（英文 eligible/not_yet/unknown）給使用者，
+    一律轉成完整中文句子，避免使用者把內部技術狀態誤讀成官方認定結果。
+    detail 一律顯示；eligible 狀態如果 detail 非空（代表帶精度但書），額外顯示
+    ⚠️ 警示行，不能讓最需要看到的但書被藏起來。"""
+    if not recover_status:
+        return ""
+    state = recover_status.get("state")
+    detail = recover_status.get("detail", "")
+    label = RECOVER_STATE_LABEL.get(state, RECOVER_STATE_LABEL["unknown"])
+    lines = [f'<div class="ev">恢復資格：{label}</div>']
+    if detail:
+        cls = "warn" if state == "eligible" else "dim"
+        prefix = "⚠️ " if state == "eligible" else ""
+        lines.append(f'<div class="ev {cls}">{prefix}{detail}</div>')
+    return f'<div class="recover-block">{"".join(lines)}</div>'
+
+
 CROSS_STATE_LABEL = {
     "confirmed": ("🔴", "確認掉落"), "no_drop": ("🟢", "未掉落"),
     "unknown": ("❔", "資料不明"), "unreliable": ("⚠️", "資料不可靠"),
@@ -346,6 +372,7 @@ h1 {{ font-size:20px; }} a {{ color:#60a5fa; text-decoration:none; }}
 .q.g {{ background:#14532d; color:#bbf7d0; }}
 .ev {{ font-size:12px; color:#93c5fd; margin-top:6px; line-height:1.7; }}
 .ev.dim {{ color:#5C6474; }}
+.ev.warn {{ color:#fbbf24; font-weight:600; }}
 </style></head><body>
 <h1>歷史驗證：近兩年每季淨值</h1>
 <div class="meta"><a href="index.html">← 回預警表</a>・紅=淨值&lt;5（全額交割門檻）・
@@ -635,6 +662,8 @@ def main():
             long_html = (f'<div class="audit-heading">可否作多</div>'
                         f'{render_long_channel_block(r["code"], r.get("status"), warrants)}'
                         if key == "recover" else "")
+            recover_status_html = (render_recover_status_block(r.get("recover_status"))
+                                   if key == "recover" else "")
             trs_list.append(f"""<tr class="main{' isnew' if badge else ''}" onclick="tog(this)">
   <td><span class="star" data-code="{r['code']}" onclick="event.stopPropagation();togWatch('{r['code']}')">☆</span><a href="{r['goodinfo_url']}" target="_blank" onclick="event.stopPropagation()">{r['code']}</a></td>
   <td>{r['name']} {badge}</td><td>{r.get('market','')}</td>
@@ -644,7 +673,7 @@ def main():
   <td class="num {'neg' if (r.get('gap') or 0) < 0 else 'pos'}"{f' title="面額非10元，全額交割門檻為每股{r["fd_threshold"]}元"' if r.get('fd_threshold') not in (None, 5.0) else ''}>{fmt(r.get('gap'))}</td>
   <td>{r.get('nv_quarter','')}{('<span class=note>' + r['note'] + '</span>') if r.get('note') else ''} <span class="exp">▾</span></td>
 </tr>
-<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('{r['code']}','{r.get('market','')}',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol={tvp}%3A{r['code']}">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/{r['code']}/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div>{history_row(r['code'], bt_stocks, r.get('market',''), listing)}<div class="audit-heading">會計師查核意見</div>{render_audit_block(r['code'], audit)}{short_html}{long_html}</td></tr>""")
+<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('{r['code']}','{r.get('market','')}',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol={tvp}%3A{r['code']}">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/{r['code']}/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div>{history_row(r['code'], bt_stocks, r.get('market',''), listing)}<div class="audit-heading">會計師查核意見</div>{render_audit_block(r['code'], audit)}{short_html}{recover_status_html}{long_html}</td></tr>""")
         trs = "".join(trs_list)
         panels.append(f"""<section class="panel" data-t="{key}">
   <p class="desc">{desc}</p>
@@ -704,6 +733,7 @@ tr.detail td {{ padding:12px; }}
 .q.lowconf {{ opacity:.55; border:1px dashed rgba(255,255,255,.35); }}
 .ev {{ font-size:12px; color:#93c5fd; line-height:1.7; }}
 .ev.dim {{ color:#5C6474; }}
+.ev.warn {{ color:#fbbf24; font-weight:600; }}
 .hist-none {{ font-size:12px; color:#5C6474; }}
 .tc-item {{ background:#13151B; border:1px solid rgba(255,255,255,.08); border-radius:10px;
   padding:12px; margin-bottom:10px; }}
@@ -936,7 +966,7 @@ th,td {{ border:1px solid rgba(255,255,255,.12); padding:8px; text-align:left; }
 <table>
 <tr><th>分級</th><th>條件</th><th>意涵</th></tr>
 <tr><td>🔴 預測打入</td><td>每股淨值 &lt; 5 元且未列官方名單</td><td>下次財報公布後恐被公告變更交易方法（全額交割），公告常伴隨連續跌停</td></tr>
-<tr><td>🟢 恢復候選</td><td>已列名單但最新淨值 ≥ 5 元</td><td>淨值回升，實際恢復條件上市／上櫃不同（見下表「恢復普通交易」），恢復常伴隨行情</td></tr>
+<tr><td>🟢 恢復候選</td><td>已列名單但最新淨值 ≥ 5 元</td><td>淨值回升，實際恢復條件上市／上櫃不同（見下表「恢復普通交易」），恢復常伴隨行情。展開列「恢復資格」是本站依此表條件算出的輔助判定（淨值條件已符合／尚未符合／資料不足無法確認），不是官方認定的替代品——是否真的恢復仍需無其他列入事由，請查官方公告</td></tr>
 <tr><td>🟠 危險邊緣</td><td>淨值 5 ~ 6 元</td><td>再虧損一季可能跌破門檻</td></tr>
 <tr><td>🟡 信用警戒</td><td>淨值 6 ~ 10 元</td><td>低於 10 元將停止融資融券（融資斷頭賣壓）</td></tr>
 <tr><td>⚪ 全額交割中</td><td>官方現行名單</td><td>買賣需預收全額款券</td></tr>
@@ -987,7 +1017,33 @@ th,td {{ border:1px solid rgba(255,255,255,.12); padding:8px; text-align:left; }
 
 
 def selftest():
-    """render_long_channel_block()：融資／認購權證兩管道，只用於 recover 頁籤展開列。"""
+    """render_recover_status_block()：恢復資格三態呈現，只用於 recover 頁籤展開列。
+    🔴 前端不得直接顯示內部 state token（英文 eligible/not_yet/unknown），一律轉成
+    完整中文句子——避免使用者把內部技術狀態誤讀成官方認定結果。"""
+    # 1. eligible 且 detail 非空（精度但書）→ 顯示中文標籤＋⚠️但書，不可裸露 "eligible"
+    html = render_recover_status_block({"state": "eligible",
+        "detail": "淨值條件已符合（26Q1/26Q2，以目前股數估算，個股曾減資/增資者可能失真）"})
+    assert "淨值條件已符合" in html, html
+    assert "⚠️" in html and "個股曾減資/增資者可能失真" in html, html
+    assert "eligible" not in html, html
+
+    # 2. not_yet：顯示 detail 說明，不可裸露 "not_yet"
+    html = render_recover_status_block({"state": "not_yet",
+        "detail": "每股淨值已達標，但淨值總額（26Q1/26Q2，以目前股數估算）未逾3億元"})
+    assert "未逾3億元" in html, html
+    assert "not_yet" not in html, html
+
+    # 3. unknown：顯示 detail 說明，不可裸露 "unknown"
+    html = render_recover_status_block({"state": "unknown",
+        "detail": "每股淨值已達標，缺股數資料無法確認3億元門檻"})
+    assert "缺股數資料" in html, html
+    assert "unknown" not in html, html
+
+    # 4. 沒有 recover_status（非本輪範圍的舊資料/官方名單補漏那種 item）→ 空字串
+    assert render_recover_status_block(None) == ""
+    assert render_recover_status_block({}) == ""
+
+    # === render_long_channel_block()：融資／認購權證兩管道，只用於 recover 頁籤展開列 ===
     # 1. 融資可用（可信用交易）＋ 認購權證存在，state=ok
     html = render_long_channel_block("1234", {"credit": "可信用交易"},
                                      {"state": "ok", "fetched_at": "2026-08-17", "call_codes": ["1234"]})

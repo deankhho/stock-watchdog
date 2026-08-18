@@ -14,10 +14,12 @@ done
 .venv/bin/python fetch_warrants.py || echo "⚠️ 認售權證標的清單抓取失敗，沿用舊資料（warrants.json state 會標記 degraded/empty）"
 .venv/bin/python fetch_trading_changes.py || echo "⚠️ 變更交易公告抓取失敗，沿用舊累積紀錄（trading_changes.json state 會標記 degraded/empty）"
 .venv/bin/python fetch_par_value.py || echo "⚠️ 面額資料抓取失敗，全額交割門檻沿用舊資料或退回固定5元（par_value.json state 會標記 degraded/empty）"
-.venv/bin/python analyze.py
-# fetch_netvalue_history／fetch_audit／backtest 三者互不依賴，順序不拘（各自獨立資料源，
-# fetch_audit 排在 analyze 之後讀到最終股池；失敗不阻斷，state 寫在 audit.json 檔案本身）
+# 🔴 fetch_netvalue_history 必須排在 analyze.py 之前：analyze.py::recover_eligibility()
+# 依賴它產出的 data/netvalue_history/ 校準判定恢復資格，兩者不再互不依賴（2026-08-18，
+# 全額交割恢復精確判定）。fetch_audit 仍排在 analyze 之後讀到最終股池，且失敗不阻斷，
+# state 寫在 audit.json 檔案本身，backtest 也是各自獨立資料源，順序不拘。
 .venv/bin/python fetch_netvalue_history.py
+.venv/bin/python analyze.py
 .venv/bin/python fetch_audit.py || echo "⚠️ 會計師查核意見抓取失敗，沿用舊資料（audit.json state 會標記 degraded/empty）"
 .venv/bin/python backtest.py          # 有快取，只補新季度
 .venv/bin/python fetch_listing_dates.py   # 列入日期（有快取）

@@ -6,8 +6,10 @@ fetch_netvalue_history.py — crossings.py 專用的淨值歷史抓取器
 不是 data/history/）、不寫進 backtest.json（寫 data/netvalue_history_status.json）。
 這樣「掉落偵測出錯」與「backtest 原本的交易預測回測出錯」才能互不牽連、可分開歸因。
 
-股池＝ data/netvalue.json 中 net_value <10 的全部代號——與 crossings.py 母體同一定義，
-不經 report groups（避免 KY `*` 股被 analyze.py 排除掉造成的落差，見計畫發現 T）。
+股池＝ data/netvalue.json 中 net_value <10 的全部代號（與 crossings.py 母體同一定義，
+不經 report groups，避免 KY `*` 股被 analyze.py 排除掉造成的落差，見計畫發現 T）
+∪ data/official.json 的 full_delivery 清單代號（2026-08-18 追加：recover 分類本身
+沒有淨值上限，只收低淨值股會系統性漏抓 nv>=10 的 recover 候選，見 build_pool()）。
 
 只保留最新 4 季（判定用 2 季 + 2 季供 crossings.py 的多季回溯 trail 顯示），
 不比照 backtest.py 留 8 季——面額 factor 只在同季比對時計算並只套用最新一個季度跨距，
@@ -39,6 +41,7 @@ from crossings import low_netvalue_pool
 
 BASE = Path(__file__).parent
 NV_FILE = BASE / "data" / "netvalue.json"
+OF_FILE = BASE / "data" / "official.json"
 CACHE = BASE / "data" / "netvalue_history"
 STATUS_OUT = BASE / "data" / "netvalue_history_status.json"
 
@@ -200,9 +203,28 @@ def run_budgeted_fetch(pool: list, cache_lookup: dict, today: date,
     }
 
 
+def build_pool(nv_data: dict, official_data: dict) -> list:
+    """抓取母體 = low_netvalue_pool(nv_data) ∪ official.json 的 full_delivery 清單代號。
+
+    🔴 `recover` 分類本身沒有淨值上限（classify() 對 in_official=True 的分支只要求
+    nv>=threshold，不設上限），但這裡的母體原本只收 net_value<CROSS_NV(10.0) 的股票——
+    兩者不是子集關係。2026-08-18 用真實資料驗證過：1213 大飲 nv=10.98 是當時 6 檔
+    recover 候選之一，因為母體定義從一開始就沒把它算進去，`1213.json` 確實不存在，
+    會被下游 `recover_eligibility()` 系統性判成 unknown（不是真的缺資料）。
+
+    official_data 讀取失敗、缺 `full_delivery` 或整包為 None/{}（降級/缺檔）時，
+    優雅退回只用 low_netvalue_pool()——多抓是加分，不是必要條件，不可讓整支腳本掛掉。"""
+    codes = {r["code"] for r in low_netvalue_pool(nv_data)}
+    full_delivery = (official_data or {}).get("full_delivery")
+    if full_delivery:
+        codes |= {x["code"] for x in full_delivery}
+    return sorted(codes)
+
+
 def main():
     nv_data = json.loads(NV_FILE.read_text())
-    pool = sorted({r["code"] for r in low_netvalue_pool(nv_data)})
+    of_data = json.loads(OF_FILE.read_text()) if OF_FILE.exists() else {}
+    pool = build_pool(nv_data, of_data)
     today = taipei_today()
 
     cache_lookup = {}
@@ -226,7 +248,8 @@ def main():
     STATUS_OUT.parent.mkdir(exist_ok=True)
     STATUS_OUT.write_text(json.dumps(status, ensure_ascii=False, indent=1))
 
-    print(f"淨值歷史抓取股池 {status['pool_size']} 檔（netvalue <10，與 crossings.py 母體同一定義）")
+    print(f"淨值歷史抓取股池 {status['pool_size']} 檔（netvalue <10 ∪ 官方全額交割清單，"
+          f"後者確保 nv>=10 的 recover 候選不被漏抓）")
     print(f"P1（缺資料，必抓）{status['p1_count']} 檔／P2（補早鳥）{status['p2_count']} 檔／"
           f"實際抓取 P1 {status['fetched_count']}＋P2 {status['p2_fetched_count']} 檔／"
           f"request {status['req_count']}（上限 {MAX_REQ}）／未完成 {len(status['incomplete_codes'])} 檔")
@@ -237,6 +260,23 @@ def main():
 
 def selftest():
     today = date(2026, 8, 14)
+
+    # 0. build_pool()：母體 = low_netvalue_pool() ∪ official.json 的 full_delivery 清單
+    #    （2026-08-18 用真實資料驗證：1213 大飲 nv=10.98 曾因母體只收低淨值股被漏抓）
+    nv_data_0 = {"rows": [
+        {"code": "1111", "name": "低淨值股", "net_value": 5.0},
+        {"code": "2222", "name": "已恢復但仍偏低", "net_value": 9.0},
+    ]}
+    official_0 = {"full_delivery": [
+        {"code": "2222", "name": "已恢復但仍偏低", "market": "上市"},
+        {"code": "3333", "name": "大飲型（nv>=10）", "market": "上市"},
+    ]}
+    assert build_pool(nv_data_0, official_0) == ["1111", "2222", "3333"], build_pool(nv_data_0, official_0)
+
+    # 0b. official.json 缺失/降級（無 full_delivery）→ 優雅退回只用 low_netvalue_pool()
+    assert build_pool(nv_data_0, {}) == ["1111", "2222"]
+    assert build_pool(nv_data_0, {"state": "degraded"}) == ["1111", "2222"]
+    assert build_pool(nv_data_0, None) == ["1111", "2222"]
 
     # 1. classify_priority：空 rows 一律 P1（發現 X 的回歸測試）
     assert classify_priority([], None, today) == "P1"

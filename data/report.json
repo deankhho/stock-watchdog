@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-18T16:16:42.255488+08:00",
+ "generated_at": "2026-08-18T16:37:02.413359+08:00",
  "nv_fetched_at": "2026-08-17T12:51:56.640944+08:00",
  "official_fetched_at": "2026-08-17T12:52:29.484881+08:00",
  "nv_age_days": 1,
@@ -3522,7 +3522,11 @@
     },
     "gap": 0.1,
     "fd_threshold": 5.0,
-    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3508"
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3508",
+    "recover_status": {
+     "state": "eligible",
+     "detail": "淨值條件已符合（26Q1→26Q2 較前期增加）"
+    }
    },
    {
     "code": "2321",
@@ -3545,7 +3549,11 @@
     },
     "gap": 1.24,
     "fd_threshold": 5.0,
-    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2321"
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2321",
+    "recover_status": {
+     "state": "not_yet",
+     "detail": "每股淨值已達標，但淨值總額（26Q1/26Q2，以目前股數估算）未逾3億元"
+    }
    },
    {
     "code": "5301",
@@ -3568,7 +3576,11 @@
     },
     "gap": 2.72,
     "fd_threshold": 5.0,
-    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5301"
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5301",
+    "recover_status": {
+     "state": "not_yet",
+     "detail": "每股淨值未達標或未較前期（26Q1）增加"
+    }
    },
    {
     "code": "8093",
@@ -3591,7 +3603,11 @@
     },
     "gap": 4.7,
     "fd_threshold": 5.0,
-    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8093"
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8093",
+    "recover_status": {
+     "state": "eligible",
+     "detail": "淨值條件已符合（26Q1→26Q2 較前期增加）"
+    }
    },
    {
     "code": "2380",
@@ -3614,7 +3630,11 @@
     },
     "gap": 4.84,
     "fd_threshold": 5.0,
-    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2380"
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2380",
+    "recover_status": {
+     "state": "eligible",
+     "detail": "淨值條件已符合（26Q1/26Q2，以目前股數估算，個股曾減資/增資者可能失真）"
+    }
    },
    {
     "code": "1213",
@@ -3637,7 +3657,11 @@
     },
     "gap": 5.98,
     "fd_threshold": 5.0,
-    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1213"
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1213",
+    "recover_status": {
+     "state": "eligible",
+     "detail": "淨值條件已符合（26Q1/26Q2，以目前股數估算，個股曾減資/增資者可能失真）"
+    }
    }
   ],
   "official": [

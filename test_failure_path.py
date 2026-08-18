@@ -28,6 +28,7 @@ from zoneinfo import ZoneInfo
 BASE = Path(__file__).parent
 TPE = ZoneInfo("Asia/Taipei")
 SCRIPTS = ["analyze.py", "gen_site.py"]
+DEPS = ["crossings.py"]   # analyze.py 依賴（2026-08-18 recover_eligibility()），不是獨立跑的腳本
 
 
 def iso_days_ago(n: int) -> str:
@@ -36,7 +37,7 @@ def iso_days_ago(n: int) -> str:
 
 def build_env(tmp: Path, nv_days_ago: int, degraded: dict) -> Path:
     """在暫存目錄搭一套可獨立執行的專案（腳本＋捏造資料）"""
-    for s in SCRIPTS:
+    for s in SCRIPTS + DEPS:
         shutil.copy(BASE / s, tmp / s)
     data = tmp / "data"
     data.mkdir()

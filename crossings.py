@@ -41,6 +41,37 @@ def _latest_by_quarter(hist_rows: list) -> dict:
     return by_q
 
 
+def calibrate_history(code: str, cur_nv: float, nv_q: str, hist_rows: list):
+    """建立面額校準 factor，並用它校準 hist_rows 全部已知季度。
+    只拿「同季」FinMind 值與 goodinfo cur_nv 比較算 factor（不可跨季比，見發現 W），
+    抽自 detect_margin_drops() 既有邏輯，供它與 recover_eligibility() 共用。
+
+    hist_rows 為空、nv_q 不在其中（quarter_mismatch）、或 ratio 對不到
+    PAR_FACTORS（unreliable）→ None。
+    成功 → {"factor": float, "rows": {quarter: calibrated_net_value}}
+    （全部已知季度都校準，不只判定用的那兩季；缺季/相鄰性判斷交給呼叫端）。"""
+    if not hist_rows:
+        return None
+    by_q = _latest_by_quarter(hist_rows)
+    if nv_q not in by_q:
+        return None
+    finmind_cur = by_q[nv_q]["net_value"]
+    if cur_nv == 0:
+        factor = 1
+    else:
+        ratio = finmind_cur / cur_nv
+        if ratio > 1.5 or ratio < 0.67:
+            snapped = round(ratio)
+            if snapped in PAR_FACTORS:
+                factor = snapped
+            else:
+                return None
+        else:
+            factor = 1
+    rows = {q: round(v["net_value"] / factor, 2) for q, v in by_q.items()}
+    return {"factor": factor, "rows": rows}
+
+
 def detect_margin_drops(netvalue: dict, history: dict, status: dict) -> dict:
     """該檔最新相鄰兩季：前季淨值 ≥10、後季 <10。
     history/status 來自 fetch_netvalue_history.py，不是 backtest.json（第 4 節）。
@@ -92,66 +123,52 @@ def detect_margin_drops(netvalue: dict, history: dict, status: dict) -> dict:
 
         h = history.get(code)
         hist_rows = h.get("rows", []) if h else []
-        if not hist_rows:
-            add_row(code, name, market, nv_q, "unknown", "no_prev")
-            continue
-
-        by_q = _latest_by_quarter(hist_rows)
-        if nv_q not in by_q:
-            add_row(code, name, market, nv_q, "unknown", "quarter_mismatch")
-            continue
-
-        # 面額 factor：只拿「同季」兩來源值計算，不可跨季比（發現 W）
-        finmind_cur = by_q[nv_q]["net_value"]
-        if cur_nv == 0:
-            factor = 1
-        else:
-            ratio = finmind_cur / cur_nv
-            if ratio > 1.5 or ratio < 0.67:
-                snapped = round(ratio)
-                if snapped in PAR_FACTORS:
-                    factor = snapped
-                else:
-                    add_row(code, name, market, nv_q, "unreliable")
-                    continue
+        calib = calibrate_history(code, cur_nv, nv_q, hist_rows)
+        if calib is None:
+            # calibrate_history() 只回 None，不分原因；為維持既有分項計數，這裡用
+            # 廉價的重新檢查判斷是哪一種（不重算 factor/ratio，只是分類已失敗的原因）。
+            if not hist_rows:
+                add_row(code, name, market, nv_q, "unknown", "no_prev")
+            elif nv_q not in _latest_by_quarter(hist_rows):
+                add_row(code, name, market, nv_q, "unknown", "quarter_mismatch")
             else:
-                factor = 1
+                add_row(code, name, market, nv_q, "unreliable")
+            continue
 
-        # 多季回溯顯示用（不影響判定）：把 by_q 全部季度用同一組 factor 校準、排序。
+        # 多季回溯顯示用（不影響判定）：calibrate_history() 已把 by_q 全部季度用同一組
+        # factor 校準好，這裡只需要排序＋標 confidence。
         # 🔴 factor 只在 nv_q 這一季有跨來源校準依據；nv_q 與緊鄰前一季（判定用的那一對）
         # 是 Phase A 正式邏輯已驗證的範圍，再更早的季度是「套用同一比例回推，未逐季驗證」
         # （同計畫發現 W續：無法排除更早期間曾發生面額變更），trail 逐項標 confidence 讓
         # 前端能視覺區分，不可讓使用者誤以為整條 trail 都跟判定同等可信。
         idx = quarter_index(nv_q)
-        trail = [{"quarter": q, "net_value": round(v["net_value"] / factor, 2),
+        rows_calibrated = calib["rows"]
+        trail = [{"quarter": q, "net_value": v,
                  "confidence": "high" if quarter_index(q) >= idx - 1 else "extrapolated"}
-                for q, v in sorted(by_q.items(), key=lambda kv: quarter_index(kv[0]))]
+                for q, v in sorted(rows_calibrated.items(), key=lambda kv: quarter_index(kv[0]))]
 
         # 只有當季自己一筆（無任何前季資料）→ no_prev；
         # 有前季但不是緊鄰前一季（中間缺季）→ not_adjacent
-        if len(by_q) < 2:
+        if len(rows_calibrated) < 2:
             add_row(code, name, market, nv_q, "unknown", "no_prev", trail=trail)
             continue
-        prev_candidates = [v for k, v in by_q.items() if quarter_index(k) == idx - 1]
+        prev_candidates = [(q, v) for q, v in rows_calibrated.items() if quarter_index(q) == idx - 1]
         if not prev_candidates:
             add_row(code, name, market, nv_q, "unknown", "not_adjacent", trail=trail)
             continue
-        prev_row = prev_candidates[0]
-
-        # factor 只套用在這一個季度跨距（前一季＋最新季），不套更早的資料（發現 W 續）
-        prev_nv = round(prev_row["net_value"] / factor, 2)
-        cur_nv_calibrated = round(finmind_cur / factor, 2)
+        prev_q, prev_nv = prev_candidates[0]
+        cur_nv_calibrated = rows_calibrated[nv_q]
 
         # 可信度守門：prev/cur 任一 <=0 或符號翻轉 → suspect（不算倍率，除零／負值防呆）
         if prev_nv <= 0 or cur_nv_calibrated <= 0 or (prev_nv > 0) != (cur_nv_calibrated > 0):
             add_row(code, name, market, nv_q, "suspect",
-                    from_q=prev_row["quarter"], prev_nv=prev_nv, cur_nv=cur_nv_calibrated,
+                    from_q=prev_q, prev_nv=prev_nv, cur_nv=cur_nv_calibrated,
                     trail=trail)
             continue
         ratio2 = max(prev_nv, cur_nv_calibrated) / min(prev_nv, cur_nv_calibrated)
         if ratio2 > SUSPECT_RATIO:
             add_row(code, name, market, nv_q, "suspect",
-                    from_q=prev_row["quarter"], prev_nv=prev_nv, cur_nv=cur_nv_calibrated,
+                    from_q=prev_q, prev_nv=prev_nv, cur_nv=cur_nv_calibrated,
                     trail=trail)
             continue
 
@@ -160,13 +177,13 @@ def detect_margin_drops(netvalue: dict, history: dict, status: dict) -> dict:
         if abs(cur_nv_calibrated - cur_nv) > SOURCE_CONFLICT_TOLERANCE and \
            (cur_nv_calibrated >= CROSS_NV) != (cur_nv >= CROSS_NV):
             add_row(code, name, market, nv_q, "source_conflict",
-                    from_q=prev_row["quarter"], prev_nv=prev_nv, cur_nv=cur_nv_calibrated,
+                    from_q=prev_q, prev_nv=prev_nv, cur_nv=cur_nv_calibrated,
                     trail=trail)
             continue
 
         data_state = "confirmed" if prev_nv >= CROSS_NV > cur_nv_calibrated else "no_drop"
         add_row(code, name, market, nv_q, data_state,
-                from_q=prev_row["quarter"], prev_nv=prev_nv, cur_nv=cur_nv_calibrated,
+                from_q=prev_q, prev_nv=prev_nv, cur_nv=cur_nv_calibrated,
                 trail=trail)
 
     return {"rows": rows, "universe": universe, "counts": counts,
@@ -174,14 +191,51 @@ def detect_margin_drops(netvalue: dict, history: dict, status: dict) -> dict:
 
 
 def selftest():
+    def hrow(date_, quarter, net_value):
+        return {"date": date_, "quarter": quarter, "net_value": net_value}
+
+    # === 0. calibrate_history()：純計算，抽出後供 detect_margin_drops／
+    #    recover_eligibility 共用 ===
+    # 0a. 同面額（ratio 在 [0.67,1.5] 內）→ factor=1，全部已知季度都校準（原樣，只是取整）
+    calib = calibrate_history("1111", 9.5, "26Q2",
+        [hrow("2025-12-31", "25Q4", 10.5), hrow("2026-03-31", "26Q1", 10.2),
+         hrow("2026-06-30", "26Q2", 9.5)])
+    assert calib == {"factor": 1, "rows": {"25Q4": 10.5, "26Q1": 10.2, "26Q2": 9.5}}, calib
+
+    # 0b. 面額異常股：finmind 值恆為 goodinfo 的 10 倍 → factor=10，全部季度校準
+    calib = calibrate_history("3086", 0.95, "26Q1",
+        [hrow("2025-12-31", "25Q4", 10.5), hrow("2026-03-31", "26Q1", 9.5)])
+    assert calib == {"factor": 10, "rows": {"25Q4": 1.05, "26Q1": 0.95}}, calib
+
+    # 0c. ratio 比對不到 PAR_FACTORS → None（不可信）
+    calib = calibrate_history("7777", 8.0, "26Q2",
+        [hrow("2026-03-31", "26Q1", 274.0), hrow("2026-06-30", "26Q2", 274.4)])
+    assert calib is None, calib
+
+    # 0d. hist_rows 空 → None
+    assert calibrate_history("4444", 9.0, "26Q2", []) is None
+
+    # 0e. nv_q 不在歷史資料中（quarter_mismatch）→ None
+    calib = calibrate_history("6666", 9.0, "26Q2",
+        [hrow("2025-12-31", "25Q4", 11.0), hrow("2026-03-31", "26Q1", 10.5)])
+    assert calib is None, calib
+
+    # 0f. cur_nv==0 → factor=1（除零防呆，不崩潰）
+    calib = calibrate_history("0000", 0, "26Q1", [hrow("2026-03-31", "26Q1", 5.0)])
+    assert calib == {"factor": 1, "rows": {"26Q1": 5.0}}, calib
+
+    # 0g. 同季多筆更正申報 → 取 date 最新一筆算 ratio／校準
+    calib = calibrate_history("1357", 9.0, "26Q2",
+        [hrow("2026-03-31", "26Q1", 11.0),
+         hrow("2026-06-30", "26Q2", 15.0),
+         hrow("2026-07-20", "26Q2", 9.0)])
+    assert calib == {"factor": 1, "rows": {"26Q1": 11.0, "26Q2": 9.0}}, calib
+
     def nv(rows):
         return {"rows": rows}
 
     def h(code, rows, fetched_at="2026-08-14"):
         return {code: {"fetched_at": fetched_at, "rows": rows}}
-
-    def hrow(date_, quarter, net_value):
-        return {"date": date_, "quarter": quarter, "net_value": net_value}
 
     empty_status = {"incomplete_codes": {}}
 
