@@ -22,6 +22,7 @@ from zoneinfo import ZoneInfo
 BASE = Path(__file__).parent
 NV_FILE = BASE / "data" / "netvalue.json"
 OF_FILE = BASE / "data" / "official.json"
+PAR_FILE = BASE / "data" / "par_value.json"
 OUT = BASE / "data" / "report.json"
 
 # 🔴 兩套時間語意，不得混用（計畫實作護欄 A）：
@@ -101,10 +102,12 @@ def days_to_next_report(today: date = None) -> tuple:
 # safe 不進 report.json 的 groups，但淨值與季度仍寫入 quarter_seen.json（detect_new_reports
 # 迭代全部 netvalue rows，不是 report groups）。勿因「抓了卻沒用在分級」而把
 # STOP_NET_VALUE 改回 12——那會讓 crossings.py 的母體重新失去前季基準。
-def classify(nv: float, in_official: bool) -> str:
+def classify(nv: float, in_official: bool, threshold: float = NET_VALUE_FULL_DELIVERY) -> str:
+    """threshold：全額交割門檻，預設 5.0（面額10元股適用）。面額非10元的個股
+    應傳入面額二分之一（見 fetch_par_value.py），不可全部套固定 5.0。"""
     if in_official:
-        return "recover" if nv >= NET_VALUE_FULL_DELIVERY else "official"
-    if nv < NET_VALUE_FULL_DELIVERY:
+        return "recover" if nv >= threshold else "official"
+    if nv < threshold:
         return "predict_in"
     if nv < 6.0:
         return "edge"
@@ -113,6 +116,14 @@ def classify(nv: float, in_official: bool) -> str:
     if nv < NET_VALUE_WATCH:
         return "watch"
     return "safe"
+
+
+def full_delivery_threshold(code: str, par: dict) -> float:
+    """全額交割門檻＝面額二分之一（營業細則第49條：淨值低於股本二分之一）。
+    查無面額資料（未收錄／par_value.json 整包缺失或降級）一律回退固定 5.0（面額10元股適用，
+    佔母體98%以上），不可用 0 或 None 之類的假值硬套。"""
+    p = par.get(code)
+    return p / 2 if p else NET_VALUE_FULL_DELIVERY
 
 
 def selftest():
@@ -125,6 +136,17 @@ def selftest():
     assert classify(14.99, False) == "watch"
     assert classify(15.0, False) == "safe"
     assert classify(16.5, False) == "safe"
+    # 面額非10元的個股：全額交割門檻是面額二分之一，不是固定5元（2026-08-17修正，
+    # 查證營業細則第49條：「淨值已低於財務報告所列示股本二分之一」）
+    assert classify(0.6, False, threshold=0.5) == "edge"          # 高於自己門檻(0.5)，不是 predict_in
+    assert classify(0.4, False, threshold=0.5) == "predict_in"    # 低於自己門檻(0.5)
+    assert classify(3.0, True, threshold=0.5) == "recover"        # 面額1元股，淨值3遠高於門檻0.5
+    assert classify(0.3, True, threshold=0.5) == "official"       # 面額1元股仍全額交割中
+    assert classify(4.2, False) == "predict_in"                   # 沒給 threshold 時預設仍是5.0，行為不變
+    # full_delivery_threshold()：查得到面額用面額二分之一，查不到／未收錄一律回退5.0
+    assert full_delivery_threshold("3086", {"3086": 1.0}) == 0.5
+    assert full_delivery_threshold("2330", {"3086": 1.0}) == 5.0    # 沒收錄，回退固定值
+    assert full_delivery_threshold("2330", {}) == 5.0                # par 資料整包缺失，回退固定值
     d, s = days_to_next_report(date(2026, 7, 6))
     assert s == "2026-08-14" and d == 39, (d, s)
 
@@ -224,6 +246,12 @@ def main():
     official_codes = {x["code"] for x in of_data["full_delivery"]}
     official_by_code = {x["code"]: x for x in of_data["full_delivery"]}
     market_map = of_data["market_map"]
+    try:
+        par_data = (json.loads(PAR_FILE.read_text()) if PAR_FILE.exists()
+                   else {"state": "empty", "par": {}})
+    except Exception:
+        par_data = {"state": "empty", "par": {}}
+    par = par_data.get("par", {})
 
     days, next_dl = days_to_next_report()
     new_reports = detect_new_reports(nv_data["rows"])
@@ -232,7 +260,8 @@ def main():
 
     seen = set()
     for r in nv_data["rows"]:
-        cat = classify(r["net_value"], r["code"] in official_codes)
+        threshold = full_delivery_threshold(r["code"], par)
+        cat = classify(r["net_value"], r["code"] in official_codes, threshold)
         if cat == "safe":
             continue
         # KY (* in name): FinMind net_value unreliable -> skip predict_in
@@ -246,7 +275,8 @@ def main():
                                       of_data.get("margin_status", {}),
                                       market_map.get(r["code"], ""))
         item["market"] = market_map.get(r["code"], "")
-        item["gap"] = round(r["net_value"] - NET_VALUE_FULL_DELIVERY, 2)
+        item["gap"] = round(r["net_value"] - threshold, 2)
+        item["fd_threshold"] = threshold
         item["goodinfo_url"] = f"https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID={r['code']}"
         groups[cat].append(item)
         seen.add(r["code"])

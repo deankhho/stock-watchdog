@@ -21,6 +21,7 @@ NV_HISTORY_STATUS = BASE / "data" / "netvalue_history_status.json"
 AUDIT_FILE = BASE / "data" / "audit.json"
 SBL_FILE = BASE / "data" / "sbl.json"
 WARRANTS_FILE = BASE / "data" / "warrants.json"
+TRADING_CHANGES_FILE = BASE / "data" / "trading_changes.json"
 DOCS = BASE / "docs"
 
 
@@ -269,6 +270,39 @@ def render_dropped_panel(cross: dict) -> tuple:
     return tab_btn, panel
 
 
+def render_trading_changes_panel(tc: dict) -> tuple:
+    """trading_changes 頁籤：回傳 (tab_btn_html, panel_html)。
+    資料來自 fetch_trading_changes.py 每日累積的 data/trading_changes.json，
+    不經 report.json 的 groups（跟 dropped 頁籤同一種特例處理）。"""
+    matched = tc.get("matched") or []
+    state = tc.get("state")
+    fetched_at = tc.get("fetched_at", "")
+
+    tab_btn = (f'<button class="tab" data-t="trading_changes">📋 變更交易公告'
+              f'<span class="n">{len(matched)}</span></button>')
+
+    items_sorted = sorted(matched, key=lambda m: (m.get("filed_date", ""), m.get("filed_time", "")),
+                          reverse=True)
+    cards = []
+    for m in items_sorted:
+        content_html = m.get("content", "").replace("\n", "<br>")
+        cards.append(f"""<div class="tc-item">
+  <div class="tc-meta">{m.get('announce_date','')} 公告・{m.get('category','')}・{m.get('department','')}</div>
+  <div class="tc-content">{content_html}</div>
+</div>""")
+    body = "".join(cards) or '<div class="empty">（累積 0 則，每日自動檢查中，出現符合條件的公告才會列出）</div>'
+
+    staleness = '' if state == 'ok' else '（🔴 資料降級，沿用上次成功檢查的累積紀錄）'
+    panel = f"""<section class="panel" data-t="trading_changes">
+  <p class="desc">每日自動檢查證交所公告系統（本日公告），逐日累積本季「變更交易方法／信用交易」
+  相關公告（已排除處置股／注意股）。⚠️ 用關鍵字比對輔助判斷，非官方逐檔 API，
+  正式事由與細節請以<a href="https://mops.twse.com.tw/" target="_blank">公開資訊觀測站</a>公告全文為準。
+  最後檢查：{fetched_at}{staleness}</p>
+  {body}
+</section>"""
+    return tab_btn, panel
+
+
 def gen_backtest_page():
     """docs/backtest.html — 近兩年每季淨值時間線（<5 紅、<10 黃、其餘綠）"""
     if not BACKTEST.exists():
@@ -338,6 +372,7 @@ TABS = [
     ("official", "⚪ 全額交割中", "官方現行變更交易方法名單（上市：證交所 TWT85U；上櫃：櫃買 cmode）。"),
     ("dropped", "⬇️ 最近一季掉落", "前季淨值 ≥10、最新季 <10——已跌破融資融券標準。各檔比較期間不同，逐列標示。"),
     ("watch", "🔵 觀察池 10~15", "淨值 10~15 且未列官方名單——尚未觸及停信用門檻，再虧一季可能跌破 10 元。"),
+    ("trading_changes", "📋 變更交易公告", "每日檢查證交所公告系統，逐日累積本季「變更交易方法／信用交易」相關公告（已排除處置股／注意股）。"),
 ]
 
 
@@ -542,11 +577,21 @@ def main():
                    else {"state": "empty", "put_codes": [], "call_codes": []})
     except Exception:
         warrants = {"state": "empty", "put_codes": [], "call_codes": []}
+    try:
+        trading_changes = (json.loads(TRADING_CHANGES_FILE.read_text())
+                           if TRADING_CHANGES_FILE.exists() else {"state": "empty", "matched": []})
+    except Exception:
+        trading_changes = {"state": "empty", "matched": []}
 
     tab_btns, panels = [], []
     for key, label, desc in TABS:
         if key == "dropped":
             tab_btn, panel = render_dropped_panel(cross)
+            tab_btns.append(tab_btn)
+            panels.append(panel)
+            continue
+        if key == "trading_changes":
+            tab_btn, panel = render_trading_changes_panel(trading_changes)
             tab_btns.append(tab_btn)
             panels.append(panel)
             continue
@@ -596,7 +641,7 @@ def main():
   <td class="stcell">{status_chip(r)}</td>
   <td class="num">{fmt(r.get('price'))}</td>
   <td class="num nv">{fmt(r.get('net_value'))}{delta}</td>
-  <td class="num {'neg' if (r.get('gap') or 0) < 0 else 'pos'}">{fmt(r.get('gap'))}</td>
+  <td class="num {'neg' if (r.get('gap') or 0) < 0 else 'pos'}"{f' title="面額非10元，全額交割門檻為每股{r["fd_threshold"]}元"' if r.get('fd_threshold') not in (None, 5.0) else ''}>{fmt(r.get('gap'))}</td>
   <td>{r.get('nv_quarter','')}{('<span class=note>' + r['note'] + '</span>') if r.get('note') else ''} <span class="exp">▾</span></td>
 </tr>
 <tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('{r['code']}','{r.get('market','')}',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol={tvp}%3A{r['code']}">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/{r['code']}/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div>{history_row(r['code'], bt_stocks, r.get('market',''), listing)}<div class="audit-heading">會計師查核意見</div>{render_audit_block(r['code'], audit)}{short_html}{long_html}</td></tr>""")
@@ -604,7 +649,7 @@ def main():
         panels.append(f"""<section class="panel" data-t="{key}">
   <p class="desc">{desc}</p>
   <table><thead><tr><th>代號</th><th>名稱</th><th>市場</th><th>官方現況</th><th>股價</th>
-    <th>每股淨值</th><th>距5元</th><th>財報季度</th></tr></thead>
+    <th>每股淨值</th><th>距門檻</th><th>財報季度</th></tr></thead>
   <tbody>{trs or '<tr><td colspan=8 class=empty>（目前無）</td></tr>'}</tbody></table>
 </section>""")
 
@@ -660,6 +705,10 @@ tr.detail td {{ padding:12px; }}
 .ev {{ font-size:12px; color:#93c5fd; line-height:1.7; }}
 .ev.dim {{ color:#5C6474; }}
 .hist-none {{ font-size:12px; color:#5C6474; }}
+.tc-item {{ background:#13151B; border:1px solid rgba(255,255,255,.08); border-radius:10px;
+  padding:12px; margin-bottom:10px; }}
+.tc-meta {{ font-size:11px; color:#9BA3B4; margin-bottom:6px; }}
+.tc-content {{ font-size:13px; line-height:1.7; white-space:normal; }}
 .audit-heading {{ font-size:11px; color:#5C6474; text-transform:uppercase; letter-spacing:.04em;
   margin:12px 0 6px; padding-top:10px; border-top:1px solid rgba(255,255,255,.08); }}
 .audit-block {{ font-size:12px; }}
@@ -887,7 +936,7 @@ th,td {{ border:1px solid rgba(255,255,255,.12); padding:8px; text-align:left; }
 <table>
 <tr><th>分級</th><th>條件</th><th>意涵</th></tr>
 <tr><td>🔴 預測打入</td><td>每股淨值 &lt; 5 元且未列官方名單</td><td>下次財報公布後恐被公告變更交易方法（全額交割），公告常伴隨連續跌停</td></tr>
-<tr><td>🟢 恢復候選</td><td>已列名單但最新淨值 ≥ 5 元</td><td>連續兩次財報淨值 ≥5 可恢復普通交易，恢復常伴隨行情</td></tr>
+<tr><td>🟢 恢復候選</td><td>已列名單但最新淨值 ≥ 5 元</td><td>淨值回升，實際恢復條件上市／上櫃不同（見下表「恢復普通交易」），恢復常伴隨行情</td></tr>
 <tr><td>🟠 危險邊緣</td><td>淨值 5 ~ 6 元</td><td>再虧損一季可能跌破門檻</td></tr>
 <tr><td>🟡 信用警戒</td><td>淨值 6 ~ 10 元</td><td>低於 10 元將停止融資融券（融資斷頭賣壓）</td></tr>
 <tr><td>⚪ 全額交割中</td><td>官方現行名單</td><td>買賣需預收全額款券</td></tr>
@@ -897,18 +946,22 @@ th,td {{ border:1px solid rgba(255,255,255,.12); padding:8px; text-align:left; }
 <table>
 <tr><th></th><th>上市（證交所）</th><th>上櫃（櫃買中心）</th></tr>
 <tr><td><b>打入全額交割</b></td>
-<td>營業細則第 49 條：最近期財報每股淨值低於 5 元 → 列為變更交易方法股票</td>
-<td>業務規則（櫃買）：最近期財報每股淨值低於 5 元 → 變更交易；另有<b>管理股票、分盤交易、停止買賣</b>等狀態（本站「全額交割中」籤頁另列旗標）</td></tr>
+<td>營業細則第 49 條：最近期財報淨值低於「財報所列示股本二分之一」→ 列為變更交易方法股票
+（面額 10 元股即每股淨值 5 元，面額非 10 元的個股門檻不同，見下方重要限制）</td>
+<td>業務規則第12條：條文與上市相同（最近期個別財務報告淨值低於股本二分之一）；另有<b>管理股票、分盤交易、停止買賣</b>等狀態（本站「全額交割中」籤頁另列旗標）——淨值進一步探底於股本<b>十分之三</b>以下者，額外採行分盤交易（每30分鐘撮合一次）</td></tr>
 <tr><td><b>恢復普通交易</b></td>
-<td>連續兩次財務報告每股淨值達 5 元以上 → 恢復</td>
-<td>同為連續兩次財報達 5 元以上，但依櫃買中心規則認定（時點與程序可能與上市不同，以櫃買公告為準）</td></tr>
+<td>營業細則第49條第2項第1款：<b>最近「二」期</b>財務報告均淨值逾<b>3億元</b>並達股本二分之一以上 → 恢復</td>
+<td>業務規則第12條第4項第1款：<b>最近「一」期</b>財務報告淨值達股本二分之一以上，<b>且較前期增加</b> → 恢復（不需連續兩期，也沒有3億元下限，比上市寬鬆）</td></tr>
 <tr><td><b>⚠️ 重要限制</b></td>
-<td colspan="2">變更交易方法的列入事由<b>不只淨值一款</b>（營業細則第49條列有多款：淨值低於5元、
+<td colspan="2">變更交易方法的列入事由<b>不只淨值一款</b>（營業細則第49條列有多款：淨值低於股本二分之一、
 財報未依限公告申報、會計師出具無法表示意見/否定意見或繼續經營疑慮、聲請重整、存款不足退票、
 董事/監察人不足、資金貸與或背書保證違規等）。<b>本站僅能監測淨值款</b>——因其他事由列入者，
 淨值回升不會恢復，必須該事由消滅（官方 API 無原因欄位，實際事由請查
 <a href="https://mops.twse.com.tw/" target="_blank">公開資訊觀測站</a>公告）。
-實例：大飲(1213) 淨值 11 元仍在全額交割名單。</td></tr>
+實例：大飲(1213) 淨值 11 元仍在全額交割名單。<br>
+🔴 「淨值低於股本二分之一」不是固定 5 元：面額 10 元的股票股本二分之一剛好等於每股淨值 5 元
+（母體約 98% 屬此類），但面額 1／2.5／5 元等個股（實測約 23 檔）門檻不同，本站已按個股實際面額換算，
+展開列淨值欄位標示「距門檻」而非固定「距5元」，游標移到數字上可看到該股實際門檻。</td></tr>
 <tr><td><b>停止信用交易</b></td>
 <td colspan="2">「有價證券得為融資融券標準」：每股淨值低於 10 元 → 停止融資融券（上市上櫃同適用）；最近期財報回 10 元以上 → 恢復（單季即可，與全額交割的「連續兩季」不同）</td></tr>
 </table>

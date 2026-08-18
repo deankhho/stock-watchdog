@@ -44,6 +44,10 @@ tr.detail td { padding:12px; }
 .ev { font-size:12px; color:#93c5fd; line-height:1.7; }
 .ev.dim { color:#5C6474; }
 .hist-none { font-size:12px; color:#5C6474; }
+.tc-item { background:#13151B; border:1px solid rgba(255,255,255,.08); border-radius:10px;
+  padding:12px; margin-bottom:10px; }
+.tc-meta { font-size:11px; color:#9BA3B4; margin-bottom:6px; }
+.tc-content { font-size:13px; line-height:1.7; white-space:normal; }
 .audit-heading { font-size:11px; color:#5C6474; text-transform:uppercase; letter-spacing:.04em;
   margin:12px 0 6px; padding-top:10px; border-top:1px solid rgba(255,255,255,.08); }
 .audit-block { font-size:12px; }
@@ -113,11 +117,11 @@ tr.watched { background:rgba(96,165,250,.07); }
 （跌破5元恐列全額交割／跌破10元恐停信用／回升）——各表 🆕 列已排最前，
 淨值欄顯示變化量 ▲▼</div>
 <div id="watchbar"></div>
-<div class="tabs"><button class="tab" data-t="predict_in">🔴 預測打入<span class="n">5</span></button><button class="tab" data-t="recover">🟢 恢復候選<span class="n">6</span></button><button class="tab" data-t="edge">🟠 危險邊緣<span class="n">20</span></button><button class="tab" data-t="margin_risk">🟡 信用警戒<span class="n">129</span></button><button class="tab" data-t="official">⚪ 全額交割中<span class="n">22</span></button><button class="tab" data-t="dropped">⬇️ 最近一季掉落<span class="n">3</span></button><button class="tab" data-t="watch">🔵 觀察池 10~15<span class="n">262</span></button></div>
+<div class="tabs"><button class="tab" data-t="predict_in">🔴 預測打入<span class="n">5</span></button><button class="tab" data-t="recover">🟢 恢復候選<span class="n">6</span></button><button class="tab" data-t="edge">🟠 危險邊緣<span class="n">21</span></button><button class="tab" data-t="margin_risk">🟡 信用警戒<span class="n">129</span></button><button class="tab" data-t="official">⚪ 全額交割中<span class="n">22</span></button><button class="tab" data-t="dropped">⬇️ 最近一季掉落<span class="n">3</span></button><button class="tab" data-t="watch">🔵 觀察池 10~15<span class="n">262</span></button><button class="tab" data-t="trading_changes">📋 變更交易公告<span class="n">1</span></button></div>
 <section class="panel" data-t="predict_in">
   <p class="desc">淨值<5、尚未列全額交割——下次財報後恐公告，提前留意。⚠️ 上市／上櫃規定不同：上市依證交所營業細則第49條、上櫃依櫃買中心業務規則（上櫃另有管理股票/分盤交易制度）——表格「市場」欄區分適用規定，細節見規則頁 ⚠️ 本站只判斷淨值門檻，不代表存在可執行的交易機會；展開列「可否放空」逐檔顯示融資融券／借券資格，認售權證請自行查詢，勿依單一管道推論其餘管道狀態。</p>
   <table><thead><tr><th>代號</th><th>名稱</th><th>市場</th><th>官方現況</th><th>股價</th>
-    <th>每股淨值</th><th>距5元</th><th>財報季度</th></tr></thead>
+    <th>每股淨值</th><th>距門檻</th><th>財報季度</th></tr></thead>
   <tbody><tr class="main isnew" onclick="tog(this)">
   <td><span class="star" data-code="7835" onclick="event.stopPropagation();togWatch('7835')">☆</span><a href="https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=7835" target="_blank" onclick="event.stopPropagation()">7835</a></td>
   <td>永悅健康-創 <span class="newb">🆕新財報</span></td><td>上市</td>
@@ -207,7 +211,7 @@ tr.watched { background:rgba(96,165,250,.07); }
 </section><section class="panel" data-t="recover">
   <p class="desc">已全額交割但最新淨值≥5。⚠️ 淨值只是列入事由之一（營業細則49條共有多款：會計師意見、財報未依限公告、重整等）——若係因淨值列入，連兩季達標可恢復；若因其他事由列入，淨值回升不生效（如大飲淨值11元仍在名單）。各股實際列入原因官方 API 不提供，需查證交所/櫃買公告。</p>
   <table><thead><tr><th>代號</th><th>名稱</th><th>市場</th><th>官方現況</th><th>股價</th>
-    <th>每股淨值</th><th>距5元</th><th>財報季度</th></tr></thead>
+    <th>每股淨值</th><th>距門檻</th><th>財報季度</th></tr></thead>
   <tbody><tr class="main isnew" onclick="tog(this)">
   <td><span class="star" data-code="3508" onclick="event.stopPropagation();togWatch('3508')">☆</span><a href="https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3508" target="_blank" onclick="event.stopPropagation()">3508</a></td>
   <td>位速 <span class="newb">🆕新財報</span></td><td>上櫃</td>
@@ -296,8 +300,25 @@ tr.watched { background:rgba(96,165,250,.07); }
 </section><section class="panel" data-t="edge">
   <p class="desc">淨值 5~6——再虧一季恐跌破 5 元門檻。⚠️ 上市／上櫃規定不同：上市依證交所營業細則第49條、上櫃依櫃買中心業務規則（上櫃另有管理股票/分盤交易制度）——表格「市場」欄區分適用規定，細節見規則頁 ⚠️ 展開列「可否放空」逐檔顯示融資融券／借券資格，不代表存在可執行的交易機會。</p>
   <table><thead><tr><th>代號</th><th>名稱</th><th>市場</th><th>官方現況</th><th>股價</th>
-    <th>每股淨值</th><th>距5元</th><th>財報季度</th></tr></thead>
+    <th>每股淨值</th><th>距門檻</th><th>財報季度</th></tr></thead>
   <tbody><tr class="main isnew" onclick="tog(this)">
+  <td><span class="star" data-code="3086" onclick="event.stopPropagation();togWatch('3086')">☆</span><a href="https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3086" target="_blank" onclick="event.stopPropagation()">3086</a></td>
+  <td>華義* <span class="newb">🆕新財報</span></td><td>上櫃</td>
+  <td class="stcell"><span class="chip cstop">停資停券</span></td>
+  <td class="num">26.50</td>
+  <td class="num nv">1.10<span class="delta neg">▼0.05（26Q1→）</span></td>
+  <td class="num pos" title="面額非10元，全額交割門檻為每股0.5元">0.60</td>
+  <td>26Q2 <span class="exp">▾</span></td>
+</tr>
+<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('3086','上櫃',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TPEX%3A3086">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/3086/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="hist-none">近八季資料未納入回測股池（v1 僅含預測打入/邊緣/恢復/名單股）</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-17"><span class="audit-chip g" data-audit-chip>無保留意見</span> <span class="note" style="display:inline">26Q2・勤業眾信聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。</div></div><div class="audit-heading">可否放空</div><div class="short-block" data-sbl-fetched-at="2026-08-17"
+     data-sbl-state="ok" data-sbl-avail="1"
+     data-warrants-fetched-at="2026-08-17" data-warrants-state="ok"
+     data-warrants-avail="0">
+  <div class="ev">融資融券：✗ 結構上為信用交易標的，但現況「停資停券」不可用</div>
+  <div class="ev" data-sbl-line>借券：具借券資格，實際可借量需洽券商</div>
+  <div class="ev" data-warrants-line>認售權證：✗ 目前無有效認售權證</div>
+  
+</div></td></tr><tr class="main isnew" onclick="tog(this)">
   <td><span class="star" data-code="1516" onclick="event.stopPropagation();togWatch('1516')">☆</span><a href="https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1516" target="_blank" onclick="event.stopPropagation()">1516</a></td>
   <td>川飛 <span class="newb">🆕新財報</span></td><td>上市</td>
   <td class="stcell"><span class="chip cstop">停資停券</span></td>
@@ -439,7 +460,7 @@ tr.watched { background:rgba(96,165,250,.07); }
   <td class="stcell"><span class="chip cstop">停資停券</span></td>
   <td class="num">24.00</td>
   <td class="num nv">5.54<span class="delta neg">▼0.14（26Q1→）</span></td>
-  <td class="num pos">0.54</td>
+  <td class="num pos" title="面額非10元，全額交割門檻為每股1.25元">4.29</td>
   <td>26Q2 <span class="exp">▾</span></td>
 </tr>
 <tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('8937','上櫃',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TPEX%3A8937">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/8937/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="hist-none">此股面額非 10 元（已按 1/4 校準歷史淨值）</div><div class="tl"><div class="q r"><span>24Q3</span>3.29</div><div class="q r"><span>24Q4</span>2.62</div><div class="q y"><span>25Q1</span>5.14</div><div class="q r"><span>25Q2</span>4.70</div><div class="q y"><span>25Q3</span>6.43</div><div class="q y"><span>25Q4</span>6.09</div><div class="q y"><span>26Q1</span>5.66</div><div class="q y"><span>26Q2</span>5.51</div></div><div class="ev">25Q2 淨值 4.7 跌破 5 元 → 依櫃買中心業務規則（上櫃）應列為全額交割</div><div class="ev">25Q4 已連續兩季淨值 ≥5（25Q3→25Q4）→ 符合櫃買中心業務規則（上櫃）的淨值款恢復條件；⚠️ 若係因其他事由列入（會計師意見/財報未依限公告/重整等），需該原因消滅才恢復</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-17"><span class="audit-chip " data-audit-chip>保留意見（樣板性質常見，非個股特有警訊）</span> <span class="note" style="display:inline">26Q2・正風聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。保留意見在一般上市股出現率約 50%（2026-08-13 抽樣 30 檔），非個股特有警訊。</div></div><div class="audit-heading">可否放空</div><div class="short-block" data-sbl-fetched-at="2026-08-17"
@@ -575,7 +596,7 @@ tr.watched { background:rgba(96,165,250,.07); }
   <td class="stcell"><span class="chip cstop">停資停券</span></td>
   <td class="num">104.00</td>
   <td class="num nv">5.92<span class="delta neg">▼0.10（26Q1→）</span></td>
-  <td class="num pos">0.92</td>
+  <td class="num pos" title="面額非10元，全額交割門檻為每股0.25元">5.67</td>
   <td>26Q2 <span class="exp">▾</span></td>
 </tr>
 <tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('6919','上市',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TWSE%3A6919">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/6919/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="hist-none">此股面額非 10 元（已按 1/20 校準歷史淨值）</div><div class="tl"><div class="q y"><span>24Q3</span>6.34</div><div class="q y"><span>24Q4</span>6.30</div><div class="q y"><span>25Q1</span>6.18</div><div class="q y"><span>25Q2</span>6.06</div><div class="q y"><span>25Q3</span>6.05</div><div class="q y"><span>25Q4</span>6.06</div><div class="q y"><span>26Q1</span>6.01</div><div class="q y"><span>26Q2</span>5.91</div></div><div class=ev>近兩年未觸發門檻事件</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-17"><span class="audit-chip " data-audit-chip>保留意見（樣板性質常見，非個股特有警訊）</span> <span class="note" style="display:inline">26Q2・安侯建業聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。保留意見在一般上市股出現率約 50%（2026-08-13 抽樣 30 檔），非個股特有警訊。</div></div><div class="audit-heading">可否放空</div><div class="short-block" data-sbl-fetched-at="2026-08-17"
@@ -641,14 +662,14 @@ tr.watched { background:rgba(96,165,250,.07); }
 </section><section class="panel" data-t="margin_risk">
   <p class="desc">淨值 6~10——低於 10 元將停止融資融券（依「有價證券得為融資融券標準」，上市上櫃同適用；恢復單季回 10 即可）。</p>
   <table><thead><tr><th>代號</th><th>名稱</th><th>市場</th><th>官方現況</th><th>股價</th>
-    <th>每股淨值</th><th>距5元</th><th>財報季度</th></tr></thead>
+    <th>每股淨值</th><th>距門檻</th><th>財報季度</th></tr></thead>
   <tbody><tr class="main isnew" onclick="tog(this)">
   <td><span class="star" data-code="7780" onclick="event.stopPropagation();togWatch('7780')">☆</span><a href="https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=7780" target="_blank" onclick="event.stopPropagation()">7780</a></td>
   <td>大研生醫* <span class="newb">🆕新財報</span></td><td>上市</td>
   <td class="stcell"><span class="chip cok">可信用</span></td>
   <td class="num">16.60</td>
   <td class="num nv">6.05<span class="delta neg">▼0.76（26Q1→）</span></td>
-  <td class="num pos">1.05</td>
+  <td class="num pos" title="面額非10元，全額交割門檻為每股0.5元">5.55</td>
   <td>26Q2 <span class="exp">▾</span></td>
 </tr>
 <tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('7780','上市',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TWSE%3A7780">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/7780/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="hist-none">近八季資料未納入回測股池（v1 僅含預測打入/邊緣/恢復/名單股）</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-17"><span class="audit-chip g" data-audit-chip>無保留意見</span> <span class="note" style="display:inline">26Q2・資誠聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。</div></div></td></tr><tr class="main isnew" onclick="tog(this)">
@@ -666,7 +687,7 @@ tr.watched { background:rgba(96,165,250,.07); }
   <td class="stcell"><span class="chip cok">可信用</span></td>
   <td class="num">16.20</td>
   <td class="num nv">6.19<span class="delta neg">▼0.33（26Q1→）</span></td>
-  <td class="num pos">1.19</td>
+  <td class="num pos" title="面額非10元，全額交割門檻為每股0.25元">5.94</td>
   <td>26Q2 <span class="exp">▾</span></td>
 </tr>
 <tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('5314','上櫃',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TPEX%3A5314">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/5314/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="hist-none">近八季資料未納入回測股池（v1 僅含預測打入/邊緣/恢復/名單股）</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-17"><span class="audit-chip " data-audit-chip>保留意見（樣板性質常見，非個股特有警訊）</span> <span class="note" style="display:inline">26Q2・安侯建業聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。保留意見在一般上市股出現率約 50%（2026-08-13 抽樣 30 檔），非個股特有警訊。</div></div></td></tr><tr class="main isnew" onclick="tog(this)">
@@ -855,7 +876,7 @@ tr.watched { background:rgba(96,165,250,.07); }
   <td class="stcell"><span class="chip cok">可信用</span></td>
   <td class="num">108.00</td>
   <td class="num nv">6.93<span class="delta neg">▼0.19（26Q1→）</span></td>
-  <td class="num pos">1.93</td>
+  <td class="num pos" title="面額非10元，全額交割門檻為每股1.25元">5.68</td>
   <td>26Q2 <span class="exp">▾</span></td>
 </tr>
 <tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('8932','上櫃',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TPEX%3A8932">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/8932/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="hist-none">近八季資料未納入回測股池（v1 僅含預測打入/邊緣/恢復/名單股）</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-17"><span class="audit-chip " data-audit-chip>保留意見（樣板性質常見，非個股特有警訊）</span> <span class="note" style="display:inline">26Q2・勤業眾信聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。保留意見在一般上市股出現率約 50%（2026-08-13 抽樣 30 檔），非個股特有警訊。</div></div></td></tr><tr class="main isnew" onclick="tog(this)">
@@ -999,7 +1020,7 @@ tr.watched { background:rgba(96,165,250,.07); }
   <td class="stcell"><span class="chip cok">可信用</span></td>
   <td class="num">26.40</td>
   <td class="num nv">7.57<span class="delta neg">▼1.94（26Q1→）</span></td>
-  <td class="num pos">2.57</td>
+  <td class="num pos" title="面額非10元，全額交割門檻為每股0.5元">7.07</td>
   <td>26Q2 <span class="exp">▾</span></td>
 </tr>
 <tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('8422','上市',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TWSE%3A8422">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/8422/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="hist-none">近八季資料未納入回測股池（v1 僅含預測打入/邊緣/恢復/名單股）</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-17"><span class="audit-chip " data-audit-chip>保留意見（樣板性質常見，非個股特有警訊）</span> <span class="note" style="display:inline">26Q2・勤業眾信聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。保留意見在一般上市股出現率約 50%（2026-08-13 抽樣 30 檔），非個股特有警訊。</div></div></td></tr><tr class="main isnew" onclick="tog(this)">
@@ -1807,7 +1828,7 @@ tr.watched { background:rgba(96,165,250,.07); }
 </section><section class="panel" data-t="official">
   <p class="desc">官方現行變更交易方法名單（上市：證交所 TWT85U；上櫃：櫃買 cmode）。</p>
   <table><thead><tr><th>代號</th><th>名稱</th><th>市場</th><th>官方現況</th><th>股價</th>
-    <th>每股淨值</th><th>距5元</th><th>財報季度</th></tr></thead>
+    <th>每股淨值</th><th>距門檻</th><th>財報季度</th></tr></thead>
   <tbody><tr class="main isnew" onclick="tog(this)">
   <td><span class="star" data-code="2314" onclick="event.stopPropagation();togWatch('2314')">☆</span><a href="https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2314" target="_blank" onclick="event.stopPropagation()">2314</a></td>
   <td>台揚 <span class="newb">🆕新財報</span></td><td>上市</td>
@@ -3474,7 +3495,7 @@ tr.watched { background:rgba(96,165,250,.07); }
 </section><section class="panel" data-t="watch">
   <p class="desc">淨值 10~15 且未列官方名單——尚未觸及停信用門檻，再虧一季可能跌破 10 元。</p>
   <table><thead><tr><th>代號</th><th>名稱</th><th>市場</th><th>官方現況</th><th>股價</th>
-    <th>每股淨值</th><th>距5元</th><th>財報季度</th></tr></thead>
+    <th>每股淨值</th><th>距門檻</th><th>財報季度</th></tr></thead>
   <tbody><tr class="main isnew" onclick="tog(this)">
   <td><span class="star" data-code="3041" onclick="event.stopPropagation();togWatch('3041')">☆</span><a href="https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3041" target="_blank" onclick="event.stopPropagation()">3041</a></td>
   <td>揚智 <span class="newb">🆕新財報</span></td><td>上市</td>
@@ -3634,7 +3655,7 @@ tr.watched { background:rgba(96,165,250,.07); }
   <td class="stcell"><span class="chip cstop">非信用交易標的</span></td>
   <td class="num">33.05</td>
   <td class="num nv">10.58<span class="delta neg">▼0.76（26Q1→）</span></td>
-  <td class="num pos">5.58</td>
+  <td class="num pos" title="面額非10元，全額交割門檻為每股2.5元">8.08</td>
   <td>26Q2 <span class="exp">▾</span></td>
 </tr>
 <tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('6875','上櫃',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TPEX%3A6875">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/6875/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="hist-none">近八季資料未納入回測股池（v1 僅含預測打入/邊緣/恢復/名單股）</div><div class="audit-heading">會計師查核意見</div><div class="hist-none">本輪尚無查核資料</div></td></tr><tr class="main isnew" onclick="tog(this)">
@@ -3724,7 +3745,7 @@ tr.watched { background:rgba(96,165,250,.07); }
   <td class="stcell"><span class="chip cok">可信用</span></td>
   <td class="num">47.00</td>
   <td class="num nv">10.84<span class="delta pos">▲4.27（26Q1→）</span><span class="cross">⚡回升10元以上（信用恢復條件）</span></td>
-  <td class="num pos">5.84</td>
+  <td class="num pos" title="面額非10元，全額交割門檻為每股1.25元">9.59</td>
   <td>26Q2 <span class="exp">▾</span></td>
 </tr>
 <tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('3093','上櫃',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TPEX%3A3093">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/3093/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="hist-none">近八季資料未納入回測股池（v1 僅含預測打入/邊緣/恢復/名單股）</div><div class="audit-heading">會計師查核意見</div><div class="hist-none">本輪尚無查核資料</div></td></tr><tr class="main isnew" onclick="tog(this)">
@@ -4012,7 +4033,7 @@ tr.watched { background:rgba(96,165,250,.07); }
   <td class="stcell"><span class="chip cok">可信用</span></td>
   <td class="num">20.10</td>
   <td class="num nv">11.56<span class="delta pos">▲0.04（26Q1→）</span></td>
-  <td class="num pos">6.56</td>
+  <td class="num pos" title="面額非10元，全額交割門檻為每股2.5元">9.06</td>
   <td>26Q2 <span class="exp">▾</span></td>
 </tr>
 <tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('8476','上市',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TWSE%3A8476">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/8476/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="hist-none">近八季資料未納入回測股池（v1 僅含預測打入/邊緣/恢復/名單股）</div><div class="audit-heading">會計師查核意見</div><div class="hist-none">本輪尚無查核資料</div></td></tr><tr class="main isnew" onclick="tog(this)">
@@ -4480,7 +4501,7 @@ tr.watched { background:rgba(96,165,250,.07); }
   <td class="stcell"><span class="chip cok">可信用</span></td>
   <td class="num">72.60</td>
   <td class="num nv">14.03<span class="delta pos">▲1.79（26Q1→）</span></td>
-  <td class="num pos">9.03</td>
+  <td class="num pos" title="面額非10元，全額交割門檻為每股0.2元">13.83</td>
   <td>26Q2 <span class="exp">▾</span></td>
 </tr>
 <tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('6548','上櫃',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TPEX%3A6548">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/6548/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="hist-none">近八季資料未納入回測股池（v1 僅含預測打入/邊緣/恢復/名單股）</div><div class="audit-heading">會計師查核意見</div><div class="hist-none">本輪尚無查核資料</div></td></tr><tr class="main isnew" onclick="tog(this)">
@@ -4705,7 +4726,7 @@ tr.watched { background:rgba(96,165,250,.07); }
   <td class="stcell"><span class="chip cok">可信用</span></td>
   <td class="num">24.45</td>
   <td class="num nv">12.50</td>
-  <td class="num pos">7.50</td>
+  <td class="num pos" title="面額非10元，全額交割門檻為每股0.5元">12.00</td>
   <td>26Q2 <span class="exp">▾</span></td>
 </tr>
 <tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('5278','上櫃',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TPEX%3A5278">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/5278/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="hist-none">近八季資料未納入回測股池（v1 僅含預測打入/邊緣/恢復/名單股）</div><div class="audit-heading">會計師查核意見</div><div class="hist-none">本輪尚無查核資料</div></td></tr><tr class="main" onclick="tog(this)">
@@ -5834,6 +5855,15 @@ tr.watched { background:rgba(96,165,250,.07); }
   <td>26Q2 <span class="exp">▾</span></td>
 </tr>
 <tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('2419','上市',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TWSE%3A2419">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/2419/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="hist-none">近八季資料未納入回測股池（v1 僅含預測打入/邊緣/恢復/名單股）</div><div class="audit-heading">會計師查核意見</div><div class="hist-none">本輪尚無查核資料</div></td></tr></tbody></table>
+</section><section class="panel" data-t="trading_changes">
+  <p class="desc">每日自動檢查證交所公告系統（本日公告），逐日累積本季「變更交易方法／信用交易」
+  相關公告（已排除處置股／注意股）。⚠️ 用關鍵字比對輔助判斷，非官方逐檔 API，
+  正式事由與細節請以<a href="https://mops.twse.com.tw/" target="_blank">公開資訊觀測站</a>公告全文為準。
+  最後檢查：2026-08-17</p>
+  <div class="tc-item">
+  <div class="tc-meta">115/08/17 公告・上市-其他・上市一部</div>
+  <div class="tc-content">本公司經形式審閱國內上市公司115年第2季財務報告之相關處置如后 ，並已公告自115年8月19日起執行處置措施： 一、停止買賣： 凌巨科技股份有限公司（代號：8105）未依法令期限公告申報115年 第2季財務報告，核有本公司營業細則（下稱同細則）第50條第1項第 1款規定情事，爰將其上市有價證券停止買賣。 二、併案列為變更交易方法： 華冠通訊股份有限公司（代號：8101）前因有同細則第49條第1項第1 款規定情事，其上市有價證券經列為變更交易方法在案。嗣查該公司 最近期公告申報之財務報告，經會計師出具繼續經營能力存在重大不 確定性之核閱報告，符合同細則第49條第1項第3款規定，爰將其上市 有價證券併案列為變更交易方法。 三、恢復交易方法： 虹光精密工業股份有限公司（代號：2380）前因有同細則第49條第1 項第1款及第49條之2第1項第4款規定情事，其上市有價證券經列為變 更交易方法併採行分盤集合競價交易方式在案。嗣查該公司最近二期 公告申報之財務報告顯示，淨值均逾三億元並達所列示股本二分之一 以上，核已符合同細則第49條第2項第1款及第49條之2第2項第4款規 定，且無其他應列為變更交易方法及採行分盤集合競價交易方式情事 ，爰將其上市有價證券恢復交易方法。</div>
+</div>
 </section>
 <script>
 /* 資料新鮮度：年齡一律在瀏覽器端、以「經過時間」計算。
