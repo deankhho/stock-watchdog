@@ -91,6 +91,35 @@ def parse_bulletin(html_text: str) -> list:
     return rows
 
 
+# 2026-08-18 追加：從 content 抓「公司名（代號：XXXX）」＋所屬動作，讓使用者不必逐字讀
+# 法規公文才知道是哪幾檔股票。真實公告常見「一、二、三、」編號複合列出多家公司、
+# 各自不同動作（見 selftest 1b 的真實案例：同一則公告同時有停止買賣/列為變更交易方法/
+# 恢復交易方法三種動作，分屬三檔不同股票，不能只抓第一個代號了事）。
+NUMBERED_ITEM_RE = re.compile(r"[一二三四五六七八九十]+、")
+ACTION_HEADING_RE = re.compile(r"^[一二三四五六七八九十]+、\s*([^：:]{2,20})[：:]")
+CODE_NAME_RE = re.compile(r"([^、，。：:\s（）]{2,30})（代號[：:]\s*(\d{4})\s*）")
+
+
+def extract_stock_refs(content: str) -> list:
+    """→ [{"code":.., "name":.., "action": str|None}, ...]。
+    action 是該段落編號標題（如「恢復交易方法」），沒有編號清單（單一公司單一動作
+    的簡單公告）時一律 None——不強行從內文猜動作，避免誤判。"""
+    refs = []
+    if NUMBERED_ITEM_RE.search(content):
+        markers = list(NUMBERED_ITEM_RE.finditer(content))
+        bounds = [m.start() for m in markers] + [len(content)]
+        for i, marker in enumerate(markers):
+            seg = content[marker.start():bounds[i + 1]]
+            m = ACTION_HEADING_RE.match(seg)
+            action = m.group(1).strip() if m else None
+            for name_m in CODE_NAME_RE.finditer(seg):
+                refs.append({"code": name_m.group(2), "name": name_m.group(1), "action": action})
+    else:
+        for name_m in CODE_NAME_RE.finditer(content):
+            refs.append({"code": name_m.group(2), "name": name_m.group(1), "action": None})
+    return refs
+
+
 def is_relevant(row: dict) -> bool:
     if row.get("department") in EXCLUDE_DEPARTMENTS:
         return False
@@ -158,6 +187,10 @@ def run(fetch_fn=fetch_today_rows, prev: dict = None) -> dict:
             matched.append(item)
             seen_keys.add(key)
     matched = matched[-HISTORY_KEEP:]
+    # 新項目與既有累積紀錄的舊項目都要有 stocks 欄位——自我修復，不需要另外的
+    # 一次性 migration 腳本，沿用既有資料重跑一次就自動補上。
+    for item in matched:
+        item["stocks"] = extract_stock_refs(item.get("content", ""))
 
     return {"state": "ok", "fetched_at": today, "reason": None, "matched": matched}
 
@@ -181,6 +214,40 @@ def selftest():
     # === 1. _cell_text()：<br> 轉空白，不黏字 ===
     frag = lxml.html.fromstring("<td>變更交易<br>方法為全額交割</td>")
     assert _cell_text(frag) == "變更交易 方法為全額交割", _cell_text(frag)
+
+    # === 1b. extract_stock_refs()：從 content 抓「公司名（代號：XXXX）」＋所屬動作 ===
+    # 2026-08-17 真實案例（第一筆真實抓到的公告，逐字複製，不是捏造的 fixture）：
+    # 同一則公告用「一、二、三、」編號複合列出三家不同動作的公司，是本站目前
+    # 唯一驗證過的真實格式——單一公司單一動作的簡單案例只是理論上也該支援，
+    # 沒有真實樣本可對答案（同檔案開頭「尚未有真實案例驗證過」的既有教訓）。
+    real_content = (
+        "本公司經形式審閱國內上市公司115年第2季財務報告之相關處置如后 ，並已公告自115"
+        "年8月19日起執行處置措施： 一、停止買賣： 凌巨科技股份有限公司（代號：8105）"
+        "未依法令期限公告申報115年 第2季財務報告，核有本公司營業細則（下稱同細則）第50"
+        "條第1項第 1款規定情事，爰將其上市有價證券停止買賣。 二、併案列為變更交易方法："
+        "華冠通訊股份有限公司（代號：8101）前因有同細則第49條第1項第1 款規定情事，其上"
+        "市有價證券經列為變更交易方法在案。嗣查該公司 最近期公告申報之財務報告，經會計"
+        "師出具繼續經營能力存在重大不 確定性之核閱報告，符合同細則第49條第1項第3款規定，"
+        "爰將其上市 有價證券併案列為變更交易方法。 三、恢復交易方法： 虹光精密工業股份有"
+        "限公司（代號：2380）前因有同細則第49條第1 項第1款及第49條之2第1項第4款規定情事，"
+        "其上市有價證券經列為變 更交易方法併採行分盤集合競價交易方式在案。嗣查該公司最近"
+        "二期 公告申報之財務報告顯示，淨值均逾三億元並達所列示股本二分之一 以上，核已符"
+        "合同細則第49條第2項第1款及第49條之2第2項第4款規 定，且無其他應列為變更交易方法"
+        "及採行分盤集合競價交易方式情事 ，爰將其上市有價證券恢復交易方法。"
+    )
+    refs = extract_stock_refs(real_content)
+    assert refs == [
+        {"code": "8105", "name": "凌巨科技股份有限公司", "action": "停止買賣"},
+        {"code": "8101", "name": "華冠通訊股份有限公司", "action": "併案列為變更交易方法"},
+        {"code": "2380", "name": "虹光精密工業股份有限公司", "action": "恢復交易方法"},
+    ], refs
+
+    # 1c. 沒有編號清單的簡單案例（單一公司單一動作）——理論案例，尚無真實樣本
+    refs = extract_stock_refs("測試股份有限公司（代號：1234）自115/08/19起變更交易方法為全額交割。")
+    assert refs == [{"code": "1234", "name": "測試股份有限公司", "action": None}], refs
+
+    # 1d. content 完全沒提到代號 → 空清單，不可拋例外
+    assert extract_stock_refs("除權除息公告，無關代號") == []
 
     # === 2. is_relevant()：部門排除＋關鍵字判斷 ===
     assert is_relevant({"department": "交易部", "content": "OO自115/08/19起變更交易方法為全額交割"})
@@ -234,9 +301,19 @@ def selftest():
     assert out["state"] == "ok", out
     assert len(out["matched"]) == 1, out              # 監視部那筆被排除
     assert out["matched"][0]["content"] == "測試股A變更交易方法為全額交割", out
+    assert out["matched"][0]["stocks"] == [], out       # 這筆 content 沒有「代號：」，空清單
 
     out2 = run(fetch_two_rows, prev=out)               # 同樣內容重跑一次
     assert len(out2["matched"]) == 1, out2              # 沒有重複累積
+
+    # 5b. 既有累積紀錄裡缺 stocks 欄位的舊項目，重跑一次要自我修復補上（不需要另外
+    # 的一次性 migration 腳本）
+    prev_missing_stocks = {"state": "ok", "fetched_at": "2026-08-17", "reason": None, "matched": [
+        {"content": "虹光精密工業股份有限公司（代號：2380）恢復交易方法。",
+         "filed_date": "115/08/17", "filed_time": "16:25:19"}]}
+    out3 = run(fetch_two_rows, prev=prev_missing_stocks)
+    assert out3["matched"][0]["stocks"] == [{"code": "2380", "name": "虹光精密工業股份有限公司",
+                                             "action": None}], out3
 
     # === 6. run()：0 筆符合關鍵字＝正常，state 仍是 ok（不是失敗！） ===
     def fetch_none_relevant():

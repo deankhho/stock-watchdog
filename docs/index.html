@@ -77,6 +77,9 @@ tr.isnew { background:rgba(250,204,21,.06); }
 .chip.cdisp { background:#7c2d12; color:#fdba74; }
 .chip.cstop { background:#7f1d1d; color:#fecaca; }
 .chip.cok { background:#14532d; color:#86efac; }
+.chip.cstock { background:#1e293b; color:#93c5fd; font-size:11px; }
+.tc-stocks { margin-bottom:8px; }
+.recover-announce { margin-top:6px; padding-top:6px; border-top:1px dashed rgba(255,255,255,.12); }
 @media (max-width:640px) {
   th:nth-child(5), td:nth-child(5) { display:none; }   /* 手機藏股價，保留現況 */
 }
@@ -278,7 +281,7 @@ tr.watched { background:rgba(96,165,250,.07); }
   <td class="num pos">4.84</td>
   <td>26Q2 <span class="exp">▾</span></td>
 </tr>
-<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('2380','上市',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TWSE%3A2380">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/2380/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="tl"><div class="q r"><span>24Q3</span>2.23</div><div class="q r"><span>24Q4</span>1.74</div><div class="q r"><span>25Q1</span>1.95</div><div class="q r"><span>25Q2</span>1.98</div><div class="q r"><span>25Q3</span>1.95</div><div class="q r"><span>25Q4</span>2.58</div><div class="q y"><span>26Q1</span>9.53</div><div class="q y"><span>26Q2</span>9.83</div></div><div class="ev">📅 2024-07-01 觀測窗起點前已列為全額交割（列入超過兩年，依證交所營業細則第49條）</div><div class="ev">26Q2 已連續兩季淨值 ≥5（26Q1→26Q2）→ 符合證交所營業細則第49條的淨值款恢復條件；⚠️ 若係因其他事由列入（會計師意見/財報未依限公告/重整等），需該原因消滅才恢復</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-17"><span class="audit-chip " data-audit-chip>保留意見（樣板性質常見，非個股特有警訊）</span> <span class="note" style="display:inline">26Q2・建智聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。保留意見在一般上市股出現率約 50%（2026-08-13 抽樣 30 檔），非個股特有警訊。</div></div><div class="recover-block"><div class="ev">恢復資格：🟢 淨值條件已符合（估算）</div><div class="ev warn">⚠️ 淨值條件已符合（26Q1/26Q2，以目前股數估算，個股曾減資/增資者可能失真）</div></div><div class="audit-heading">可否作多</div><div class="long-block" data-call-fetched-at="2026-08-17"
+<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('2380','上市',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol=TWSE%3A2380">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/2380/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div><div class="tl"><div class="q r"><span>24Q3</span>2.23</div><div class="q r"><span>24Q4</span>1.74</div><div class="q r"><span>25Q1</span>1.95</div><div class="q r"><span>25Q2</span>1.98</div><div class="q r"><span>25Q3</span>1.95</div><div class="q r"><span>25Q4</span>2.58</div><div class="q y"><span>26Q1</span>9.53</div><div class="q y"><span>26Q2</span>9.83</div></div><div class="ev">📅 2024-07-01 觀測窗起點前已列為全額交割（列入超過兩年，依證交所營業細則第49條）</div><div class="ev">26Q2 已連續兩季淨值 ≥5（26Q1→26Q2）→ 符合證交所營業細則第49條的淨值款恢復條件；⚠️ 若係因其他事由列入（會計師意見/財報未依限公告/重整等），需該原因消滅才恢復</div><div class="audit-heading">會計師查核意見</div><div class="audit-block" data-audit-fetched-at="2026-08-17"><span class="audit-chip " data-audit-chip>保留意見（樣板性質常見，非個股特有警訊）</span> <span class="note" style="display:inline">26Q2・建智聯合會計師事務所・<span data-audit-age></span></span><div class="ev dim">此為該公司最新可得的查核資訊，未必對應本次淨值轉折的那一季。保留意見在一般上市股出現率約 50%（2026-08-13 抽樣 30 檔），非個股特有警訊。</div></div><div class="recover-block"><div class="ev">恢復資格：🟢 淨值條件已符合（估算）</div><div class="ev warn">⚠️ 淨值條件已符合（26Q1/26Q2，以目前股數估算，個股曾減資/增資者可能失真）</div></div><div class="recover-announce"><div class="ev">📋 115/08/17 官方公告：恢復交易方法</div></div><div class="audit-heading">可否作多</div><div class="long-block" data-call-fetched-at="2026-08-17"
      data-call-state="ok" data-call-avail="0">
   <div class="ev">融資：✗ 結構上為信用交易標的，但現況「停止信用（全額交割）」不可用</div>
   <div class="ev" data-call-line>認購權證：✗ 目前無有效認購權證</div>
@@ -5860,9 +5863,10 @@ tr.watched { background:rgba(96,165,250,.07); }
   <p class="desc">每日自動檢查證交所公告系統（本日公告），逐日累積本季「變更交易方法／信用交易」
   相關公告（已排除處置股／注意股）。⚠️ 用關鍵字比對輔助判斷，非官方逐檔 API，
   正式事由與細節請以<a href="https://mops.twse.com.tw/" target="_blank">公開資訊觀測站</a>公告全文為準。
-  最後檢查：2026-08-17</p>
+  最後檢查：2026-08-18</p>
   <div class="tc-item">
   <div class="tc-meta">115/08/17 公告・上市-其他・上市一部</div>
+  <div class="tc-stocks"><span class="chip cstock">8105 凌巨科技 · 停止買賣</span><span class="chip cstock">8101 華冠通訊 · 併案列為變更交易方法</span><span class="chip cstock">2380 虹光精密工業 · 恢復交易方法</span></div>
   <div class="tc-content">本公司經形式審閱國內上市公司115年第2季財務報告之相關處置如后 ，並已公告自115年8月19日起執行處置措施： 一、停止買賣： 凌巨科技股份有限公司（代號：8105）未依法令期限公告申報115年 第2季財務報告，核有本公司營業細則（下稱同細則）第50條第1項第 1款規定情事，爰將其上市有價證券停止買賣。 二、併案列為變更交易方法： 華冠通訊股份有限公司（代號：8101）前因有同細則第49條第1項第1 款規定情事，其上市有價證券經列為變更交易方法在案。嗣查該公司 最近期公告申報之財務報告，經會計師出具繼續經營能力存在重大不 確定性之核閱報告，符合同細則第49條第1項第3款規定，爰將其上市 有價證券併案列為變更交易方法。 三、恢復交易方法： 虹光精密工業股份有限公司（代號：2380）前因有同細則第49條第1 項第1款及第49條之2第1項第4款規定情事，其上市有價證券經列為變 更交易方法併採行分盤集合競價交易方式在案。嗣查該公司最近二期 公告申報之財務報告顯示，淨值均逾三億元並達所列示股本二分之一 以上，核已符合同細則第49條第2項第1款及第49條之2第2項第4款規 定，且無其他應列為變更交易方法及採行分盤集合競價交易方式情事 ，爰將其上市有價證券恢復交易方法。</div>
 </div>
 </section>

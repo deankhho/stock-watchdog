@@ -296,6 +296,44 @@ def render_dropped_panel(cross: dict) -> tuple:
     return tab_btn, panel
 
 
+def _short_company_name(name: str) -> str:
+    """「虹光精密工業股份有限公司」→「虹光精密工業」，跟站內其他地方的短名慣例一致。"""
+    return name[:-6] if name.endswith("股份有限公司") else name
+
+
+def render_stock_refs_chips(stocks: list) -> str:
+    """變更交易公告頁籤用：把 content 裡抓出的股號/股名/動作做成醒目 chip，
+    不必逐字讀法規公文才知道是哪幾檔股票（2026-08-18 使用者要求）。"""
+    if not stocks:
+        return ""
+    chips = []
+    for s in stocks:
+        label = f'{s["code"]} {_short_company_name(s["name"])}'
+        if s.get("action"):
+            label += f' · {s["action"]}'
+        chips.append(f'<span class="chip cstock">{label}</span>')
+    return f'<div class="tc-stocks">{"".join(chips)}</div>'
+
+
+def render_recover_announcement_block(code: str, trading_changes: dict) -> str:
+    """把官方「變更交易方法」公告連結回 recover 頁籤展開列（2026-08-18 使用者要求）——
+    使用者能直接對照本站 recover_eligibility() 的估算跟官方是否真的已經公告恢復，
+    不必自己去對照兩個頁籤。trading_changes 缺檔/降級或查無提及這個代號的公告 →
+    一律回空字串，不特別顯示「查無資料」這種容易被誤讀成警訊的文字。"""
+    if not trading_changes:
+        return ""
+    lines = []
+    for m in trading_changes.get("matched") or []:
+        for ref in m.get("stocks") or []:
+            if ref["code"] != code:
+                continue
+            action = ref.get("action") or "變更交易方法"
+            lines.append(f'<div class="ev">📋 {m.get("announce_date","")} 官方公告：{action}</div>')
+    if not lines:
+        return ""
+    return f'<div class="recover-announce">{"".join(lines)}</div>'
+
+
 def render_trading_changes_panel(tc: dict) -> tuple:
     """trading_changes 頁籤：回傳 (tab_btn_html, panel_html)。
     資料來自 fetch_trading_changes.py 每日累積的 data/trading_changes.json，
@@ -314,6 +352,7 @@ def render_trading_changes_panel(tc: dict) -> tuple:
         content_html = m.get("content", "").replace("\n", "<br>")
         cards.append(f"""<div class="tc-item">
   <div class="tc-meta">{m.get('announce_date','')} 公告・{m.get('category','')}・{m.get('department','')}</div>
+  {render_stock_refs_chips(m.get("stocks") or [])}
   <div class="tc-content">{content_html}</div>
 </div>""")
     body = "".join(cards) or '<div class="empty">（累積 0 則，每日自動檢查中，出現符合條件的公告才會列出）</div>'
@@ -664,6 +703,8 @@ def main():
                         if key == "recover" else "")
             recover_status_html = (render_recover_status_block(r.get("recover_status"))
                                    if key == "recover" else "")
+            recover_announce_html = (render_recover_announcement_block(r["code"], trading_changes)
+                                     if key == "recover" else "")
             trs_list.append(f"""<tr class="main{' isnew' if badge else ''}" onclick="tog(this)">
   <td><span class="star" data-code="{r['code']}" onclick="event.stopPropagation();togWatch('{r['code']}')">☆</span><a href="{r['goodinfo_url']}" target="_blank" onclick="event.stopPropagation()">{r['code']}</a></td>
   <td>{r['name']} {badge}</td><td>{r.get('market','')}</td>
@@ -673,7 +714,7 @@ def main():
   <td class="num {'neg' if (r.get('gap') or 0) < 0 else 'pos'}"{f' title="面額非10元，全額交割門檻為每股{r["fd_threshold"]}元"' if r.get('fd_threshold') not in (None, 5.0) else ''}>{fmt(r.get('gap'))}</td>
   <td>{r.get('nv_quarter','')}{('<span class=note>' + r['note'] + '</span>') if r.get('note') else ''} <span class="exp">▾</span></td>
 </tr>
-<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('{r['code']}','{r.get('market','')}',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol={tvp}%3A{r['code']}">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/{r['code']}/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div>{history_row(r['code'], bt_stocks, r.get('market',''), listing)}<div class="audit-heading">會計師查核意見</div>{render_audit_block(r['code'], audit)}{short_html}{recover_status_html}{long_html}</td></tr>""")
+<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('{r['code']}','{r.get('market','')}',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol={tvp}%3A{r['code']}">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/{r['code']}/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div>{history_row(r['code'], bt_stocks, r.get('market',''), listing)}<div class="audit-heading">會計師查核意見</div>{render_audit_block(r['code'], audit)}{short_html}{recover_status_html}{recover_announce_html}{long_html}</td></tr>""")
         trs = "".join(trs_list)
         panels.append(f"""<section class="panel" data-t="{key}">
   <p class="desc">{desc}</p>
@@ -767,6 +808,9 @@ tr.isnew {{ background:rgba(250,204,21,.06); }}
 .chip.cdisp {{ background:#7c2d12; color:#fdba74; }}
 .chip.cstop {{ background:#7f1d1d; color:#fecaca; }}
 .chip.cok {{ background:#14532d; color:#86efac; }}
+.chip.cstock {{ background:#1e293b; color:#93c5fd; font-size:11px; }}
+.tc-stocks {{ margin-bottom:8px; }}
+.recover-announce {{ margin-top:6px; padding-top:6px; border-top:1px dashed rgba(255,255,255,.12); }}
 @media (max-width:640px) {{
   th:nth-child(5), td:nth-child(5) {{ display:none; }}   /* 手機藏股價，保留現況 */
 }}
@@ -1042,6 +1086,38 @@ def selftest():
     # 4. 沒有 recover_status（非本輪範圍的舊資料/官方名單補漏那種 item）→ 空字串
     assert render_recover_status_block(None) == ""
     assert render_recover_status_block({}) == ""
+
+    # === render_stock_refs_chips()：變更交易公告頁籤用，把 content 裡抓出的
+    # 股號/股名/動作做成醒目 chip，不必逐字讀法規公文才知道是哪幾檔股票 ===
+    html = render_stock_refs_chips([
+        {"code": "8105", "name": "凌巨科技股份有限公司", "action": "停止買賣"},
+        {"code": "2380", "name": "虹光精密工業股份有限公司", "action": "恢復交易方法"},
+    ])
+    assert "8105" in html and "凌巨科技" in html and "停止買賣" in html, html
+    assert "2380" in html and "虹光精密工業" in html and "恢復交易方法" in html, html
+    # 「股份有限公司」尾綴修剪成短名，跟站內其他地方的短名慣例一致
+    assert "股份有限公司" not in html, html
+    # 1b. action=None（沒有編號清單的簡單公告）→ 只顯示代號/股名，不留空字樣
+    html = render_stock_refs_chips([{"code": "1234", "name": "測試股份有限公司", "action": None}])
+    assert "1234" in html and "測試" in html, html
+    # 1c. 空清單 → 空字串
+    assert render_stock_refs_chips([]) == ""
+
+    # === render_recover_announcement_block()：把官方變更交易公告連結回恢復候選展開列
+    # ——使用者能直接對照本站估算的「恢復資格」跟官方是否真的已經公告恢復 ===
+    tc_with_match = {"matched": [
+        {"content": "…", "announce_date": "115/08/17", "filed_date": "115/08/17",
+         "stocks": [{"code": "2380", "name": "虹光精密工業股份有限公司", "action": "恢復交易方法"},
+                    {"code": "8105", "name": "凌巨科技股份有限公司", "action": "停止買賣"}]},
+    ]}
+    html = render_recover_announcement_block("2380", tc_with_match)
+    assert "恢復交易方法" in html and "115/08/17" in html, html
+    assert "凌巨科技" not in html, html   # 同一則公告裡不相干的其他代號不能混進來
+    # 2b. 沒有任何公告提到這個代號 → 空字串（不是「查無資料」這種容易被誤讀成警訊的文字）
+    assert render_recover_announcement_block("9999", tc_with_match) == ""
+    # 2c. trading_changes 缺檔/降級 → 空字串，不可拋例外
+    assert render_recover_announcement_block("2380", {}) == ""
+    assert render_recover_announcement_block("2380", None) == ""
 
     # === render_long_channel_block()：融資／認購權證兩管道，只用於 recover 頁籤展開列 ===
     # 1. 融資可用（可信用交易）＋ 認購權證存在，state=ok
