@@ -196,6 +196,27 @@ def render_long_channel_block(code: str, status: dict, warrants: dict) -> str:
   {f'<div class="ev dim">{summary}</div>' if summary else ''}
 </div>''')
 
+
+CREDIT_ELIGIBILITY_LABEL = {
+    "可": "🟢 無累積虧損（可信用交易資格）",
+    "否": "🔴 有累積虧損（信用交易資格不符）",
+    "未知": "❔ 資料不足，無法確認",
+}
+
+
+def render_credit_eligibility_block(credit_elig) -> str:
+    """面額非10元股的信用交易資格（Phase 0，2026-08-20，《有價證券得為融資融券標準》
+    第2/4條：面額非10元股門檻看「有無累積虧損」，不是淨值）。所有頁籤展開列共用（不像
+    放空/作多管道只限特定頁籤）——這一欄跟淨值分級（危險邊緣/信用警戒/觀察池）是兩個獨立
+    判斷軸，面額10元股兩者剛好重合，credit_elig 傳 None 時不渲染任何東西（不是這檔股票
+    該回答的問題，不可悶掉顯示成「未知」或「否」）。"""
+    if credit_elig is None:
+        return ""
+    label = CREDIT_ELIGIBILITY_LABEL.get(credit_elig, "❔ 資料不足，無法確認")
+    return (f'<div class="audit-heading">信用交易資格（面額非10元股）</div>'
+           f'<div class="ev">{label}</div>')
+
+
 RECOVER_STATE_LABEL = {
     "eligible": "🟢 淨值條件已符合（估算）",
     "not_yet": "🟡 淨值條件尚未符合",
@@ -425,20 +446,53 @@ h1 {{ font-size:20px; }} a {{ color:#60a5fa; text-decoration:none; }}
 RULE_NOTE = ("⚠️ 上市／上櫃規定不同：上市依證交所營業細則第49條、上櫃依櫃買中心業務規則"
              "（上櫃另有管理股票/分盤交易制度）——表格「市場」欄區分適用規定，細節見規則頁")
 
+# Phase A（2026-08-20，計畫全文見 ~/.claude/plans/deep-stargazing-tide.md）：全面改寫成
+# Phase 0 定義的雙軸語言——淨值緩衝區（距全額交割門檻遠近）× 信用交易資格（面額10元股跟
+# 緩衝區重合；非10元面額股是獨立判斷，見展開列「信用交易資格」區塊，不是同一件事）。
+BUFFER_NOTE = ("⚠️ 這是「市場觀察緩衝區」，不是法規門檻本身——面額10元股緩衝區跟信用交易10元"
+              "門檻剛好重合；非10元面額股緩衝區只反映全額交割門檻遠近，信用交易資格是獨立判斷"
+              "（看有無累積虧損，不是淨值），見展開列「信用交易資格」區塊。")
+
 TABS = [
-    ("predict_in", "🔴 預測打入", "淨值<5、尚未列全額交割——下次財報後恐公告，提前留意。" + RULE_NOTE
-     + " ⚠️ 本站只判斷淨值門檻，不代表存在可執行的交易機會；展開列「可否放空」逐檔顯示融資融券／借券資格，"
+    ("predict_in", "🔴 預測打入",
+     "已達成個股全額交割門檻（面額10元股為5元，非10元面額股依面額換算）、但官方尚未公告——"
+     "財報審閱到變更交易方法生效通常有數個工作日～一週的作業時間差（依交易所/櫃買排程而定），"
+     "本站是提前偵測到已達門檻的空窗期，不是預測未來。" + RULE_NOTE
+     + " ⚠️ 不代表存在可執行的交易機會；展開列「可否放空」逐檔顯示融資融券／借券資格，"
        "認售權證請自行查詢，勿依單一管道推論其餘管道狀態。"),
-    ("recover", "🟢 恢復候選", "已全額交割但最新淨值≥5。⚠️ 淨值只是列入事由之一（營業細則49條共有多款：會計師意見、財報未依限公告、重整等）——"
-     "若係因淨值列入，連兩季達標可恢復；若因其他事由列入，淨值回升不生效（如大飲淨值11元仍在名單）。"
-     "各股實際列入原因官方 API 不提供，需查證交所/櫃買公告。"),
-    ("edge", "🟠 危險邊緣", "淨值 5~6——再虧一季恐跌破 5 元門檻。" + RULE_NOTE
-     + " ⚠️ 展開列「可否放空」逐檔顯示融資融券／借券資格，不代表存在可執行的交易機會。"),
-    ("margin_risk", "🟡 信用警戒", "淨值 6~10——低於 10 元將停止融資融券（依「有價證券得為融資融券標準」，上市上櫃同適用；恢復單季回 10 即可）。"),
-    ("official", "⚪ 全額交割中", "官方現行變更交易方法名單（上市：證交所 TWT85U；上櫃：櫃買 cmode）。"),
-    ("dropped", "⬇️ 最近一季掉落", "前季淨值 ≥10、最新季 <10——已跌破融資融券標準。各檔比較期間不同，逐列標示。"),
-    ("watch", "🔵 觀察池 10~15", "淨值 10~15 且未列官方名單——尚未觸及停信用門檻，再虧一季可能跌破 10 元。"),
-    ("trading_changes", "📋 變更交易公告", "每日檢查證交所公告系統，逐日累積本季「變更交易方法／信用交易」相關公告（已排除處置股／注意股）。"),
+    ("recover", "🟢 恢復候選",
+     "是「全額交割中」頁籤的子集——同樣在官方全額交割名單上，差別只在淨值已回升到門檻以上。"
+     "恢復條件依市場不同：上市（營業細則第49條）要最新兩期財報淨值皆達標且淨值總額逾3億元；"
+     "上櫃（業務規則第12條）只要最新一期達標且較前期增加，無3億元門檻，較上市寬鬆。"
+     "⚠️ 淨值只是列入事由之一（另有會計師意見、財報未依限公告、重整等款）——若係因淨值列入，"
+     "達標後可望下次審查恢復；若因其他事由列入，淨值回升不生效（如大飲淨值11元仍在名單）。"
+     "各股實際列入原因官方 API 不提供，需查證交所/櫃買公告。"
+     "⚠️ 淨值總額以目前股數估算，個股曾減資/增資者可能失真（既有限制）。"
+     "目標使用方式：「全額交割中」代表目前仍受交割限制、交易不便；「恢復候選」代表淨值已達標，"
+     "若通過下次審查有機會摘帽恢復普通交易，市場可能提前反應「摘帽行情」——搭配展開列"
+     "「可否作多」判斷有沒有現成工具可以布局。"),
+    ("edge", "🟠 危險邊緣",
+     "淨值介於個股全額交割門檻與 6 元之間——再虧一季恐跌破全額交割門檻。" + BUFFER_NOTE
+     + RULE_NOTE
+     + " ⚠️ 展開列「可否放空」逐檔顯示放空管道（SBL 借券／認售權證）狀態，管道存在不代表"
+       "實際可成交/有量，仍需自行確認。"),
+    ("margin_risk", "🟡 信用警戒",
+     "淨值 6~10。" + BUFFER_NOTE
+     + " 面額10元股：低於 10 元將停止融資融券（依「有價證券得為融資融券標準」，上市上櫃同適用；"
+       "審查按季排定，恢復生效約在申報截止後5個營業日，實際生效日以官方公告為準）。"),
+    ("official", "⚪ 全額交割中",
+     "官方現行變更交易方法名單（上市：證交所 TWT85U；上櫃：櫃買 cmode），淨值仍未達門檻。"
+     "淨值已回升的子集另外歸在「恢復候選」頁籤，兩者不是並列分類。"),
+    ("dropped", "⬇️ 最近一季掉落",
+     "跌破的是融資融券 10 元門檻，跟全額交割無關（除非同時也跌破全額交割門檻）——"
+     "白話講：這批股票剛失去信用交易（融資融券）資格，還能正常買賣，只是不能再融資融券。"
+     "各檔比較期間不同，逐列標示。"),
+    ("watch", "🔵 觀察池 10~15",
+     "淨值 10~15 且未列官方名單。" + BUFFER_NOTE),
+    ("trading_changes", "📋 變更交易公告",
+     "每日檢查公開資訊觀測站（MOPS）底下彙整證交所／櫃買中心公告的系統，逐日累積本季"
+     "「變更交易方法／信用交易」相關公告（已排除處置股／注意股）——內容就是證交所/櫃買中心"
+     "自己發的公告，只是透過這個彙整入口一次涵蓋兩個交易所，不是另一套獨立資料源。"),
 ]
 
 
@@ -705,6 +759,7 @@ def main():
                                    if key == "recover" else "")
             recover_announce_html = (render_recover_announcement_block(r["code"], trading_changes)
                                      if key == "recover" else "")
+            credit_elig_html = render_credit_eligibility_block(r.get("credit_eligibility"))
             trs_list.append(f"""<tr class="main{' isnew' if badge else ''}" onclick="tog(this)">
   <td><span class="star" data-code="{r['code']}" onclick="event.stopPropagation();togWatch('{r['code']}')">☆</span><a href="{r['goodinfo_url']}" target="_blank" onclick="event.stopPropagation()">{r['code']}</a></td>
   <td>{r['name']} {badge}</td><td>{r.get('market','')}</td>
@@ -714,7 +769,7 @@ def main():
   <td class="num {'neg' if (r.get('gap') or 0) < 0 else 'pos'}"{f' title="面額非10元，全額交割門檻為每股{r["fd_threshold"]}元"' if r.get('fd_threshold') not in (None, 5.0) else ''}>{fmt(r.get('gap'))}</td>
   <td>{r.get('nv_quarter','')}{('<span class=note>' + r['note'] + '</span>') if r.get('note') else ''} <span class="exp">▾</span></td>
 </tr>
-<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('{r['code']}','{r.get('market','')}',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol={tvp}%3A{r['code']}">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/{r['code']}/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div>{history_row(r['code'], bt_stocks, r.get('market',''), listing)}<div class="audit-heading">會計師查核意見</div>{render_audit_block(r['code'], audit)}{short_html}{recover_status_html}{recover_announce_html}{long_html}</td></tr>""")
+<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('{r['code']}','{r.get('market','')}',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol={tvp}%3A{r['code']}">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/{r['code']}/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div>{history_row(r['code'], bt_stocks, r.get('market',''), listing)}<div class="audit-heading">會計師查核意見</div>{render_audit_block(r['code'], audit)}{credit_elig_html}{short_html}{recover_status_html}{recover_announce_html}{long_html}</td></tr>""")
         trs = "".join(trs_list)
         panels.append(f"""<section class="panel" data-t="{key}">
   <p class="desc">{desc}</p>
@@ -1007,13 +1062,19 @@ th,td {{ border:1px solid rgba(255,255,255,.12); padding:8px; text-align:left; }
 <h1>分級規則與法規依據</h1><p><a href="index.html">← 回預警表</a></p>
 
 <h2>本站分級邏輯</h2>
+<p class="src">⚠️ 下表「距門檻」一欄是<b>個股全額交割門檻</b>（面額10元股為5元，面額非10元股依面額
+換算，見下方「重要限制」），不是固定 5 元；「淨值緩衝區」是本站自訂的市場觀察範圍，不是法規
+門檻本身——面額10元股緩衝區跟信用交易10元門檻剛好重合，面額非10元股緩衝區只反映全額交割
+門檻遠近，信用交易資格是獨立判斷（看有無累積虧損，不是淨值），見「停止信用交易」一節。</p>
 <table>
 <tr><th>分級</th><th>條件</th><th>意涵</th></tr>
-<tr><td>🔴 預測打入</td><td>每股淨值 &lt; 5 元且未列官方名單</td><td>下次財報公布後恐被公告變更交易方法（全額交割），公告常伴隨連續跌停</td></tr>
-<tr><td>🟢 恢復候選</td><td>已列名單但最新淨值 ≥ 5 元</td><td>淨值回升，實際恢復條件上市／上櫃不同（見下表「恢復普通交易」），恢復常伴隨行情。展開列「恢復資格」是本站依此表條件算出的輔助判定（淨值條件已符合／尚未符合／資料不足無法確認），不是官方認定的替代品——是否真的恢復仍需無其他列入事由，請查官方公告</td></tr>
-<tr><td>🟠 危險邊緣</td><td>淨值 5 ~ 6 元</td><td>再虧損一季可能跌破門檻</td></tr>
-<tr><td>🟡 信用警戒</td><td>淨值 6 ~ 10 元</td><td>低於 10 元將停止融資融券（融資斷頭賣壓）</td></tr>
-<tr><td>⚪ 全額交割中</td><td>官方現行名單</td><td>買賣需預收全額款券</td></tr>
+<tr><td>🔴 預測打入</td><td>淨值 &lt; 個股全額交割門檻 且未列官方名單</td><td>已達成門檻但官方審查/公告生效有作業時間差（通常數個工作日～一週），本站是提前偵測到已達門檻的空窗期，不是預測未來</td></tr>
+<tr><td>🟢 恢復候選</td><td>已列名單但最新淨值 ≥ 個股全額交割門檻</td><td>是「⚪ 全額交割中」的子集——淨值回升，實際恢復條件上市／上櫃不同（見下表「恢復普通交易」），恢復常伴隨行情。展開列「恢復資格」是本站依此表條件算出的輔助判定（淨值條件已符合／尚未符合／資料不足無法確認），不是官方認定的替代品——是否真的恢復仍需無其他列入事由，請查官方公告</td></tr>
+<tr><td>🟠 危險邊緣</td><td>個股全額交割門檻 ~ 6 元</td><td>再虧損一季可能跌破門檻；展開列「可否放空」逐檔顯示放空管道（SBL借券/認售權證）狀態</td></tr>
+<tr><td>🟡 信用警戒</td><td>淨值 6 ~ 10 元</td><td>面額10元股：低於 10 元將停止融資融券；面額非10元股此區間不代表信用警戒，資格看展開列「信用交易資格」</td></tr>
+<tr><td>⚪ 全額交割中</td><td>官方現行名單</td><td>買賣需預收全額款券；淨值已回升的子集另列「🟢 恢復候選」</td></tr>
+<tr><td>🔵 觀察池</td><td>淨值 10 ~ 15 元</td><td>尚未觸及信用交易/全額交割相關門檻的市場觀察範圍，非法規分級</td></tr>
+<tr><td>⬇️ 最近一季掉落</td><td>前季淨值 ≥10、最新季 &lt;10</td><td>跌破的是融資融券10元門檻，跟全額交割無關（除非同時也跌破全額交割門檻）</td></tr>
 </table>
 
 <h2>法規依據（上市／上櫃分別適用）</h2>
@@ -1037,14 +1098,17 @@ th,td {{ border:1px solid rgba(255,255,255,.12); padding:8px; text-align:left; }
 （母體約 98% 屬此類），但面額 1／2.5／5 元等個股（實測約 23 檔）門檻不同，本站已按個股實際面額換算，
 展開列淨值欄位標示「距門檻」而非固定「距5元」，游標移到數字上可看到該股實際門檻。</td></tr>
 <tr><td><b>停止信用交易</b></td>
-<td colspan="2">「有價證券得為融資融券標準」：每股淨值低於 10 元 → 停止融資融券（上市上櫃同適用）；最近期財報回 10 元以上 → 恢復（單季即可，與全額交割的「連續兩季」不同）</td></tr>
+<td colspan="2">「有價證券得為融資融券標準」第2/4條——<b>面額10元股</b>：每股淨值低於票面(10元)
+→ 停止融資融券，回升達10元以上恢復；<b>無面額或非10元面額股</b>：門檻不是淨值，是
+「最近一個會計年度決算<b>有無累積虧損</b>」→ 有累積虧損停止、消滅後恢復（本站讀官方資產
+負債表「保留盈餘」科目判斷，負值視為有累積虧損，見展開列「信用交易資格」）。
+審查按季排定（年報+Q1約每年5月、Q2/半年報約8-9月、Q3約11月），生效日約在財報法定申報
+截止日後5個營業日——本站僅提供預估區間，實際生效日以官方公告為準，個股實際申報時間可能
+早於法定截止日，本站無法逐股追蹤。</td></tr>
 </table>
 <p class="src">出處：<a href="https://twse-regulation.twse.com.tw/" target="_blank">證交所法規知識庫</a>／
 <a href="https://www.tpex.org.tw/" target="_blank">櫃買中心</a>／
 <a href="https://law.moj.gov.tw/" target="_blank">全國法規資料庫</a>（條文全文以官方最新版本為準；兩市場規定細節不同，實際以主管機關公告日為準）</p>
-<p><b>停止融資融券</b>：「有價證券得為融資融券標準」——每股淨值低於 10 元者停止融資融券；
-回升達 10 元以上恢復。<br>
-<span class="src">出處：<a href="https://law.moj.gov.tw/" target="_blank">全國法規資料庫</a></span></p>
 <p><b>財報申報期限</b>（一般上市櫃公司）：年報 3/31、Q1 5/15、Q2 8/14、Q3 11/14；
 金控、銀行、保險等另有規定。<br>
 <span class="src">出處：<a href="https://www.fsc.gov.tw/" target="_blank">金管會</a>「公開發行公司財務報告及營運情形公告申報特殊適用範圍辦法」</span></p>
