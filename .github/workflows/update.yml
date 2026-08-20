@@ -30,7 +30,12 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      # 2026-08-19 實測：apt-get 安裝 playwright 系統相依套件時可能卡在連線
+      # azure.archive.ubuntu.com 鏡像站，會一路卡到整個 job 的 40 分鐘上限才被砍，
+      # 導致 analyze.py 等後續步驟連跑都沒跑到。這裡加 step 級逾時，卡住時快速失敗
+      # （明天排程會自然重試），不要吃掉整個 job 的時間預算。
       - name: 安裝依賴
+        timeout-minutes: 5
         run: |
           pip install playwright pandas requests lxml
           playwright install chromium --with-deps

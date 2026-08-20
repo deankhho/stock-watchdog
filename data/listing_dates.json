@@ -118,5 +118,17 @@
  "8933": {
   "since": "2026-05-20",
   "precision": "day"
+ },
+ "2067": {
+  "since": "2025-05-20",
+  "precision": "day"
+ },
+ "3259": {
+  "since": null,
+  "precision": "not_found_in_window"
+ },
+ "3625": {
+  "since": null,
+  "precision": "not_found_in_window"
  }
 }
