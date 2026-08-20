@@ -1,0 +1,9194 @@
+{
+ "state": "ok",
+ "fetched_at": "2026-08-20",
+ "reason": null,
+ "rows": {
+  "2812": {
+   "retained_earnings": 27388159.0,
+   "quarter": "26Q2",
+   "name": "台中銀"
+  },
+  "1101": {
+   "retained_earnings": 62929089.0,
+   "quarter": "26Q2",
+   "name": "台泥"
+  },
+  "1102": {
+   "retained_earnings": 125602305.0,
+   "quarter": "26Q2",
+   "name": "亞泥"
+  },
+  "1103": {
+   "retained_earnings": 10099318.0,
+   "quarter": "26Q2",
+   "name": "嘉泥"
+  },
+  "1104": {
+   "retained_earnings": 14450405.0,
+   "quarter": "26Q2",
+   "name": "環泥"
+  },
+  "1108": {
+   "retained_earnings": 1420917.0,
+   "quarter": "26Q2",
+   "name": "幸福"
+  },
+  "1109": {
+   "retained_earnings": 4750573.0,
+   "quarter": "26Q2",
+   "name": "信大"
+  },
+  "1110": {
+   "retained_earnings": 2634692.0,
+   "quarter": "26Q2",
+   "name": "東泥"
+  },
+  "1201": {
+   "retained_earnings": 2870495.0,
+   "quarter": "26Q2",
+   "name": "味全"
+  },
+  "1203": {
+   "retained_earnings": 3745309.0,
+   "quarter": "26Q2",
+   "name": "味王"
+  },
+  "1210": {
+   "retained_earnings": 11394216.0,
+   "quarter": "26Q2",
+   "name": "大成"
+  },
+  "1213": {
+   "retained_earnings": 32665.0,
+   "quarter": "26Q2",
+   "name": "大飲"
+  },
+  "1215": {
+   "retained_earnings": 7116792.0,
+   "quarter": "26Q2",
+   "name": "卜蜂"
+  },
+  "1216": {
+   "retained_earnings": 76878798.0,
+   "quarter": "26Q2",
+   "name": "統一"
+  },
+  "1217": {
+   "retained_earnings": 1351666.0,
+   "quarter": "26Q2",
+   "name": "愛之味"
+  },
+  "1218": {
+   "retained_earnings": 5724910.0,
+   "quarter": "26Q2",
+   "name": "泰山"
+  },
+  "1219": {
+   "retained_earnings": 556689.0,
+   "quarter": "26Q2",
+   "name": "福壽"
+  },
+  "1220": {
+   "retained_earnings": 496934.0,
+   "quarter": "26Q2",
+   "name": "台榮"
+  },
+  "1225": {
+   "retained_earnings": 1303157.0,
+   "quarter": "26Q2",
+   "name": "福懋油"
+  },
+  "1227": {
+   "retained_earnings": 8560485.0,
+   "quarter": "26Q2",
+   "name": "佳格"
+  },
+  "1229": {
+   "retained_earnings": 16497966.0,
+   "quarter": "26Q2",
+   "name": "聯華"
+  },
+  "1231": {
+   "retained_earnings": 4097695.0,
+   "quarter": "26Q2",
+   "name": "聯華食"
+  },
+  "1232": {
+   "retained_earnings": 3884176.0,
+   "quarter": "26Q2",
+   "name": "大統益"
+  },
+  "1233": {
+   "retained_earnings": 547308.0,
+   "quarter": "26Q2",
+   "name": "天仁"
+  },
+  "1234": {
+   "retained_earnings": 14123584.0,
+   "quarter": "26Q2",
+   "name": "黑松"
+  },
+  "1235": {
+   "retained_earnings": 1044390.0,
+   "quarter": "26Q2",
+   "name": "興泰"
+  },
+  "1236": {
+   "retained_earnings": 1352674.0,
+   "quarter": "26Q2",
+   "name": "宏亞"
+  },
+  "1301": {
+   "retained_earnings": 210746809.0,
+   "quarter": "26Q2",
+   "name": "台塑"
+  },
+  "1303": {
+   "retained_earnings": 264856051.0,
+   "quarter": "26Q2",
+   "name": "南亞"
+  },
+  "1304": {
+   "retained_earnings": 5312084.0,
+   "quarter": "26Q2",
+   "name": "台聚"
+  },
+  "1305": {
+   "retained_earnings": 1829733.0,
+   "quarter": "26Q2",
+   "name": "華夏"
+  },
+  "1307": {
+   "retained_earnings": 5581927.0,
+   "quarter": "26Q2",
+   "name": "三芳"
+  },
+  "1308": {
+   "retained_earnings": 4347977.0,
+   "quarter": "26Q2",
+   "name": "亞聚"
+  },
+  "1309": {
+   "retained_earnings": 1215480.0,
+   "quarter": "26Q2",
+   "name": "台達化"
+  },
+  "1310": {
+   "retained_earnings": 401064.0,
+   "quarter": "26Q2",
+   "name": "台苯"
+  },
+  "1312": {
+   "retained_earnings": 14178810.0,
+   "quarter": "26Q2",
+   "name": "國喬"
+  },
+  "1313": {
+   "retained_earnings": 1328252.0,
+   "quarter": "26Q2",
+   "name": "聯成"
+  },
+  "1314": {
+   "retained_earnings": 36278173.0,
+   "quarter": "26Q2",
+   "name": "中石化"
+  },
+  "1315": {
+   "retained_earnings": 7767700.0,
+   "quarter": "26Q2",
+   "name": "達新"
+  },
+  "1316": {
+   "retained_earnings": -609019.0,
+   "quarter": "26Q2",
+   "name": "上曜"
+  },
+  "1319": {
+   "retained_earnings": 16717647.0,
+   "quarter": "26Q2",
+   "name": "東陽"
+  },
+  "1321": {
+   "retained_earnings": 3529632.0,
+   "quarter": "26Q2",
+   "name": "大洋"
+  },
+  "1323": {
+   "retained_earnings": 1684796.0,
+   "quarter": "26Q2",
+   "name": "永裕"
+  },
+  "1324": {
+   "retained_earnings": 155701.0,
+   "quarter": "26Q2",
+   "name": "地球"
+  },
+  "1325": {
+   "retained_earnings": 1689600.0,
+   "quarter": "26Q2",
+   "name": "恆大"
+  },
+  "1326": {
+   "retained_earnings": 195672638.0,
+   "quarter": "26Q2",
+   "name": "台化"
+  },
+  "1339": {
+   "retained_earnings": 2300559.0,
+   "quarter": "26Q2",
+   "name": "昭輝"
+  },
+  "1342": {
+   "retained_earnings": 800625.0,
+   "quarter": "26Q2",
+   "name": "八貫"
+  },
+  "1402": {
+   "retained_earnings": 155554388.0,
+   "quarter": "26Q2",
+   "name": "遠東新"
+  },
+  "1410": {
+   "retained_earnings": 411613.0,
+   "quarter": "26Q2",
+   "name": "南染"
+  },
+  "1413": {
+   "retained_earnings": -157250.0,
+   "quarter": "26Q2",
+   "name": "宏洲"
+  },
+  "1414": {
+   "retained_earnings": 1125033.0,
+   "quarter": "26Q2",
+   "name": "東和"
+  },
+  "1416": {
+   "retained_earnings": 1902134.0,
+   "quarter": "26Q2",
+   "name": "廣豐"
+  },
+  "1417": {
+   "retained_earnings": 229838.0,
+   "quarter": "26Q2",
+   "name": "嘉裕"
+  },
+  "1418": {
+   "retained_earnings": -907061.0,
+   "quarter": "26Q2",
+   "name": "東華"
+  },
+  "1419": {
+   "retained_earnings": 8860441.0,
+   "quarter": "26Q2",
+   "name": "新紡"
+  },
+  "1423": {
+   "retained_earnings": 818624.0,
+   "quarter": "26Q2",
+   "name": "利華"
+  },
+  "1432": {
+   "retained_earnings": 38266.0,
+   "quarter": "26Q2",
+   "name": "大魯閣"
+  },
+  "1434": {
+   "retained_earnings": 19845961.0,
+   "quarter": "26Q2",
+   "name": "福懋"
+  },
+  "1435": {
+   "retained_earnings": -301289.0,
+   "quarter": "26Q2",
+   "name": "中福"
+  },
+  "1436": {
+   "retained_earnings": 2453806.0,
+   "quarter": "26Q2",
+   "name": "華友聯"
+  },
+  "1437": {
+   "retained_earnings": 5705585.0,
+   "quarter": "26Q2",
+   "name": "勤益控"
+  },
+  "1438": {
+   "retained_earnings": 326713.0,
+   "quarter": "26Q2",
+   "name": "三地開發"
+  },
+  "1439": {
+   "retained_earnings": 2024681.0,
+   "quarter": "26Q2",
+   "name": "雋揚"
+  },
+  "1440": {
+   "retained_earnings": 10716067.0,
+   "quarter": "26Q2",
+   "name": "南紡"
+  },
+  "1441": {
+   "retained_earnings": -319045.0,
+   "quarter": "26Q2",
+   "name": "大東"
+  },
+  "1442": {
+   "retained_earnings": 2715916.0,
+   "quarter": "26Q2",
+   "name": "名軒"
+  },
+  "1443": {
+   "retained_earnings": 311532.0,
+   "quarter": "26Q2",
+   "name": "立益物流"
+  },
+  "1444": {
+   "retained_earnings": 165052.0,
+   "quarter": "26Q2",
+   "name": "力麗"
+  },
+  "1445": {
+   "retained_earnings": 627304.0,
+   "quarter": "26Q2",
+   "name": "大宇"
+  },
+  "1446": {
+   "retained_earnings": 1265519.0,
+   "quarter": "26Q2",
+   "name": "宏和"
+  },
+  "1447": {
+   "retained_earnings": -472272.0,
+   "quarter": "26Q2",
+   "name": "力鵬"
+  },
+  "1449": {
+   "retained_earnings": 197850.0,
+   "quarter": "26Q2",
+   "name": "佳和"
+  },
+  "1451": {
+   "retained_earnings": 5481170.0,
+   "quarter": "26Q2",
+   "name": "年興"
+  },
+  "1452": {
+   "retained_earnings": 930567.0,
+   "quarter": "26Q2",
+   "name": "宏益"
+  },
+  "1453": {
+   "retained_earnings": 333701.0,
+   "quarter": "26Q2",
+   "name": "大將"
+  },
+  "1454": {
+   "retained_earnings": 47679.0,
+   "quarter": "26Q2",
+   "name": "台富"
+  },
+  "1455": {
+   "retained_earnings": 806596.0,
+   "quarter": "26Q2",
+   "name": "集盛"
+  },
+  "1456": {
+   "retained_earnings": 880784.0,
+   "quarter": "26Q2",
+   "name": "怡華"
+  },
+  "1457": {
+   "retained_earnings": 1882949.0,
+   "quarter": "26Q2",
+   "name": "宜進"
+  },
+  "1459": {
+   "retained_earnings": 658051.0,
+   "quarter": "26Q2",
+   "name": "聯發"
+  },
+  "1460": {
+   "retained_earnings": -1131740.0,
+   "quarter": "26Q2",
+   "name": "宏遠"
+  },
+  "1463": {
+   "retained_earnings": 411725.0,
+   "quarter": "26Q2",
+   "name": "強盛新"
+  },
+  "1464": {
+   "retained_earnings": 1029810.0,
+   "quarter": "26Q2",
+   "name": "得力"
+  },
+  "1465": {
+   "retained_earnings": 269758.0,
+   "quarter": "26Q2",
+   "name": "偉全"
+  },
+  "1466": {
+   "retained_earnings": 40973.0,
+   "quarter": "26Q2",
+   "name": "聚隆"
+  },
+  "1467": {
+   "retained_earnings": 148920.0,
+   "quarter": "26Q2",
+   "name": "南緯"
+  },
+  "1468": {
+   "retained_earnings": -254159.0,
+   "quarter": "26Q2",
+   "name": "昶和"
+  },
+  "1470": {
+   "retained_earnings": 143892.0,
+   "quarter": "26Q2",
+   "name": "大統新創"
+  },
+  "1471": {
+   "retained_earnings": -122729.0,
+   "quarter": "26Q2",
+   "name": "首利"
+  },
+  "1472": {
+   "retained_earnings": 782700.0,
+   "quarter": "26Q2",
+   "name": "三洋實業"
+  },
+  "1473": {
+   "retained_earnings": 1530108.0,
+   "quarter": "26Q2",
+   "name": "台南"
+  },
+  "1474": {
+   "retained_earnings": 818886.0,
+   "quarter": "26Q2",
+   "name": "弘裕"
+  },
+  "1475": {
+   "retained_earnings": 730833.0,
+   "quarter": "26Q2",
+   "name": "業旺"
+  },
+  "1476": {
+   "retained_earnings": 22208961.0,
+   "quarter": "26Q2",
+   "name": "儒鴻"
+  },
+  "1477": {
+   "retained_earnings": 5017142.0,
+   "quarter": "26Q2",
+   "name": "聚陽"
+  },
+  "1503": {
+   "retained_earnings": 22963921.0,
+   "quarter": "26Q2",
+   "name": "士電"
+  },
+  "1504": {
+   "retained_earnings": 35158096.0,
+   "quarter": "26Q2",
+   "name": "東元"
+  },
+  "1506": {
+   "retained_earnings": -506794.0,
+   "quarter": "26Q2",
+   "name": "正道"
+  },
+  "1512": {
+   "retained_earnings": -879237.0,
+   "quarter": "26Q2",
+   "name": "瑞利"
+  },
+  "1513": {
+   "retained_earnings": 8577257.0,
+   "quarter": "26Q2",
+   "name": "中興電"
+  },
+  "1514": {
+   "retained_earnings": 2393694.0,
+   "quarter": "26Q2",
+   "name": "亞力"
+  },
+  "1515": {
+   "retained_earnings": 2181460.0,
+   "quarter": "26Q2",
+   "name": "力山"
+  },
+  "1516": {
+   "retained_earnings": -212811.0,
+   "quarter": "26Q2",
+   "name": "川飛"
+  },
+  "1517": {
+   "retained_earnings": 1046260.0,
+   "quarter": "26Q2",
+   "name": "利奇"
+  },
+  "1519": {
+   "retained_earnings": 5682567.0,
+   "quarter": "26Q2",
+   "name": "華城"
+  },
+  "1521": {
+   "retained_earnings": 1056390.0,
+   "quarter": "26Q2",
+   "name": "大億"
+  },
+  "1522": {
+   "retained_earnings": 3323093.0,
+   "quarter": "26Q2",
+   "name": "堤維西"
+  },
+  "1524": {
+   "retained_earnings": 1247059.0,
+   "quarter": "26Q2",
+   "name": "耿鼎"
+  },
+  "1525": {
+   "retained_earnings": 4333156.0,
+   "quarter": "26Q2",
+   "name": "江申"
+  },
+  "1526": {
+   "retained_earnings": 597166.0,
+   "quarter": "26Q2",
+   "name": "日馳"
+  },
+  "1527": {
+   "retained_earnings": 3354862.0,
+   "quarter": "26Q2",
+   "name": "鑽全"
+  },
+  "1528": {
+   "retained_earnings": 7866.0,
+   "quarter": "26Q2",
+   "name": "恩德"
+  },
+  "1529": {
+   "retained_earnings": 164503.0,
+   "quarter": "26Q2",
+   "name": "樂事綠能"
+  },
+  "1530": {
+   "retained_earnings": 2080940.0,
+   "quarter": "26Q2",
+   "name": "亞崴"
+  },
+  "1531": {
+   "retained_earnings": 1685264.0,
+   "quarter": "26Q2",
+   "name": "高林股"
+  },
+  "1532": {
+   "retained_earnings": 7998193.0,
+   "quarter": "26Q2",
+   "name": "勤美"
+  },
+  "1533": {
+   "retained_earnings": 1311893.0,
+   "quarter": "26Q2",
+   "name": "車王電"
+  },
+  "1535": {
+   "retained_earnings": 1927803.0,
+   "quarter": "26Q2",
+   "name": "中宇"
+  },
+  "1536": {
+   "retained_earnings": 772945.0,
+   "quarter": "26Q2",
+   "name": "和大"
+  },
+  "1537": {
+   "retained_earnings": 2488582.0,
+   "quarter": "26Q2",
+   "name": "廣隆"
+  },
+  "1538": {
+   "retained_earnings": -195701.0,
+   "quarter": "26Q2",
+   "name": "正峰"
+  },
+  "1539": {
+   "retained_earnings": 953626.0,
+   "quarter": "26Q2",
+   "name": "巨庭"
+  },
+  "1540": {
+   "retained_earnings": 405423.0,
+   "quarter": "26Q2",
+   "name": "喬福"
+  },
+  "1541": {
+   "retained_earnings": 1368849.0,
+   "quarter": "26Q2",
+   "name": "錩泰"
+  },
+  "1558": {
+   "retained_earnings": 3123554.0,
+   "quarter": "26Q2",
+   "name": "伸興"
+  },
+  "1560": {
+   "retained_earnings": 5426824.0,
+   "quarter": "26Q2",
+   "name": "中砂"
+  },
+  "1563": {
+   "retained_earnings": 4395529.0,
+   "quarter": "26Q2",
+   "name": "巧新"
+  },
+  "1568": {
+   "retained_earnings": 711102.0,
+   "quarter": "26Q2",
+   "name": "倉佑"
+  },
+  "1582": {
+   "retained_earnings": 2699615.0,
+   "quarter": "26Q2",
+   "name": "信錦"
+  },
+  "1583": {
+   "retained_earnings": 4192443.0,
+   "quarter": "26Q2",
+   "name": "程泰"
+  },
+  "1587": {
+   "retained_earnings": 243683.0,
+   "quarter": "26Q2",
+   "name": "吉茂"
+  },
+  "1597": {
+   "retained_earnings": 1273010.0,
+   "quarter": "26Q2",
+   "name": "直得"
+  },
+  "1598": {
+   "retained_earnings": 89069.0,
+   "quarter": "26Q2",
+   "name": "岱宇"
+  },
+  "1603": {
+   "retained_earnings": 6528405.0,
+   "quarter": "26Q2",
+   "name": "華電"
+  },
+  "1604": {
+   "retained_earnings": 5199656.0,
+   "quarter": "26Q2",
+   "name": "聲寶"
+  },
+  "1605": {
+   "retained_earnings": 71105809.0,
+   "quarter": "26Q2",
+   "name": "華新"
+  },
+  "1608": {
+   "retained_earnings": 5525845.0,
+   "quarter": "26Q2",
+   "name": "華榮"
+  },
+  "1609": {
+   "retained_earnings": 7277927.0,
+   "quarter": "26Q2",
+   "name": "大亞"
+  },
+  "1611": {
+   "retained_earnings": 697308.0,
+   "quarter": "26Q2",
+   "name": "中電"
+  },
+  "1612": {
+   "retained_earnings": 4839123.0,
+   "quarter": "26Q2",
+   "name": "宏泰"
+  },
+  "1614": {
+   "retained_earnings": 2567804.0,
+   "quarter": "26Q2",
+   "name": "三洋電"
+  },
+  "1615": {
+   "retained_earnings": 2130325.0,
+   "quarter": "26Q2",
+   "name": "大山"
+  },
+  "1616": {
+   "retained_earnings": 178907.0,
+   "quarter": "26Q2",
+   "name": "億泰"
+  },
+  "1617": {
+   "retained_earnings": 413088.0,
+   "quarter": "26Q2",
+   "name": "榮星"
+  },
+  "1618": {
+   "retained_earnings": 3710922.0,
+   "quarter": "26Q2",
+   "name": "合機"
+  },
+  "1623": {
+   "retained_earnings": 1442026.0,
+   "quarter": "26Q2",
+   "name": "大東電"
+  },
+  "1626": {
+   "retained_earnings": 113500.0,
+   "quarter": "26Q2",
+   "name": "艾美特-KY"
+  },
+  "1702": {
+   "retained_earnings": 3960686.0,
+   "quarter": "26Q2",
+   "name": "南僑"
+  },
+  "1707": {
+   "retained_earnings": 5846941.0,
+   "quarter": "26Q2",
+   "name": "葡萄王"
+  },
+  "1708": {
+   "retained_earnings": 4874905.0,
+   "quarter": "26Q2",
+   "name": "東鹼"
+  },
+  "1709": {
+   "retained_earnings": 3633113.0,
+   "quarter": "26Q2",
+   "name": "和益"
+  },
+  "1710": {
+   "retained_earnings": 4771400.0,
+   "quarter": "26Q2",
+   "name": "東聯"
+  },
+  "1711": {
+   "retained_earnings": 2449618.0,
+   "quarter": "26Q2",
+   "name": "永光"
+  },
+  "1712": {
+   "retained_earnings": 3651277.0,
+   "quarter": "26Q2",
+   "name": "興農"
+  },
+  "1713": {
+   "retained_earnings": 1893222.0,
+   "quarter": "26Q2",
+   "name": "國化"
+  },
+  "1714": {
+   "retained_earnings": 4225478.0,
+   "quarter": "26Q2",
+   "name": "和桐"
+  },
+  "1717": {
+   "retained_earnings": 15731518.0,
+   "quarter": "26Q2",
+   "name": "長興"
+  },
+  "1720": {
+   "retained_earnings": 4096796.0,
+   "quarter": "26Q2",
+   "name": "生達"
+  },
+  "1721": {
+   "retained_earnings": -318016.0,
+   "quarter": "26Q2",
+   "name": "三晃"
+  },
+  "1722": {
+   "retained_earnings": 36621794.0,
+   "quarter": "26Q2",
+   "name": "台肥"
+  },
+  "1723": {
+   "retained_earnings": 4963171.0,
+   "quarter": "26Q2",
+   "name": "中碳"
+  },
+  "1725": {
+   "retained_earnings": 1358988.0,
+   "quarter": "26Q2",
+   "name": "元禎"
+  },
+  "1726": {
+   "retained_earnings": 8936519.0,
+   "quarter": "26Q2",
+   "name": "永記"
+  },
+  "1727": {
+   "retained_earnings": 459060.0,
+   "quarter": "26Q2",
+   "name": "中華化"
+  },
+  "1730": {
+   "retained_earnings": 1163280.0,
+   "quarter": "26Q2",
+   "name": "花仙子"
+  },
+  "1731": {
+   "retained_earnings": 651382.0,
+   "quarter": "26Q2",
+   "name": "美吾華"
+  },
+  "1732": {
+   "retained_earnings": 78651.0,
+   "quarter": "26Q2",
+   "name": "毛寶"
+  },
+  "1733": {
+   "retained_earnings": 779354.0,
+   "quarter": "26Q2",
+   "name": "五鼎"
+  },
+  "1734": {
+   "retained_earnings": 575072.0,
+   "quarter": "26Q2",
+   "name": "杏輝"
+  },
+  "1735": {
+   "retained_earnings": 438786.0,
+   "quarter": "26Q2",
+   "name": "日勝化"
+  },
+  "1736": {
+   "retained_earnings": 11488649.0,
+   "quarter": "26Q2",
+   "name": "喬山"
+  },
+  "1737": {
+   "retained_earnings": 2219390.0,
+   "quarter": "26Q2",
+   "name": "臺鹽"
+  },
+  "1752": {
+   "retained_earnings": 1233418.0,
+   "quarter": "26Q2",
+   "name": "南光"
+  },
+  "1760": {
+   "retained_earnings": 284168.0,
+   "quarter": "26Q2",
+   "name": "寶齡富錦"
+  },
+  "1762": {
+   "retained_earnings": 2150097.0,
+   "quarter": "26Q2",
+   "name": "中化生"
+  },
+  "1773": {
+   "retained_earnings": 8236220.0,
+   "quarter": "26Q2",
+   "name": "勝一"
+  },
+  "1776": {
+   "retained_earnings": 325174.0,
+   "quarter": "26Q2",
+   "name": "展宇"
+  },
+  "1783": {
+   "retained_earnings": 487028.0,
+   "quarter": "26Q2",
+   "name": "和康生"
+  },
+  "1786": {
+   "retained_earnings": 186237.0,
+   "quarter": "26Q2",
+   "name": "科妍"
+  },
+  "1789": {
+   "retained_earnings": 1062028.0,
+   "quarter": "26Q2",
+   "name": "神隆"
+  },
+  "1795": {
+   "retained_earnings": 16405105.0,
+   "quarter": "26Q2",
+   "name": "美時"
+  },
+  "1802": {
+   "retained_earnings": 20744220.0,
+   "quarter": "26Q2",
+   "name": "台玻"
+  },
+  "1805": {
+   "retained_earnings": 65870.0,
+   "quarter": "26Q2",
+   "name": "寶徠"
+  },
+  "1806": {
+   "retained_earnings": 843041.0,
+   "quarter": "26Q2",
+   "name": "冠軍"
+  },
+  "1808": {
+   "retained_earnings": 4507438.0,
+   "quarter": "26Q2",
+   "name": "潤隆"
+  },
+  "1809": {
+   "retained_earnings": 1225322.0,
+   "quarter": "26Q2",
+   "name": "中釉"
+  },
+  "1810": {
+   "retained_earnings": 4396285.0,
+   "quarter": "26Q2",
+   "name": "和成"
+  },
+  "1817": {
+   "retained_earnings": 1597117.0,
+   "quarter": "26Q2",
+   "name": "凱撒衛"
+  },
+  "1903": {
+   "retained_earnings": 412957.0,
+   "quarter": "26Q2",
+   "name": "士紙"
+  },
+  "1904": {
+   "retained_earnings": 19080221.0,
+   "quarter": "26Q2",
+   "name": "正隆"
+  },
+  "1905": {
+   "retained_earnings": 1658826.0,
+   "quarter": "26Q2",
+   "name": "華紙"
+  },
+  "1906": {
+   "retained_earnings": 2647986.0,
+   "quarter": "26Q2",
+   "name": "寶隆"
+  },
+  "1907": {
+   "retained_earnings": 24088331.0,
+   "quarter": "26Q2",
+   "name": "永豐餘"
+  },
+  "1909": {
+   "retained_earnings": 4994602.0,
+   "quarter": "26Q2",
+   "name": "榮成"
+  },
+  "2002": {
+   "retained_earnings": 107661539.0,
+   "quarter": "26Q2",
+   "name": "中鋼"
+  },
+  "2006": {
+   "retained_earnings": 19534889.0,
+   "quarter": "26Q2",
+   "name": "東和鋼鐵"
+  },
+  "2007": {
+   "retained_earnings": -1817657.0,
+   "quarter": "26Q2",
+   "name": "燁興"
+  },
+  "2008": {
+   "retained_earnings": 1554800.0,
+   "quarter": "26Q2",
+   "name": "高興昌"
+  },
+  "2009": {
+   "retained_earnings": 606131.0,
+   "quarter": "26Q2",
+   "name": "第一銅"
+  },
+  "2010": {
+   "retained_earnings": 6057923.0,
+   "quarter": "26Q2",
+   "name": "春源"
+  },
+  "2012": {
+   "retained_earnings": 1033067.0,
+   "quarter": "26Q2",
+   "name": "春雨"
+  },
+  "2013": {
+   "retained_earnings": 2273612.0,
+   "quarter": "26Q2",
+   "name": "中鋼構"
+  },
+  "2014": {
+   "retained_earnings": -824290.0,
+   "quarter": "26Q2",
+   "name": "中鴻"
+  },
+  "2015": {
+   "retained_earnings": 15990188.0,
+   "quarter": "26Q2",
+   "name": "豐興"
+  },
+  "2017": {
+   "retained_earnings": -224668.0,
+   "quarter": "26Q2",
+   "name": "官田鋼"
+  },
+  "2020": {
+   "retained_earnings": 1303494.0,
+   "quarter": "26Q2",
+   "name": "美亞"
+  },
+  "2022": {
+   "retained_earnings": -215352.0,
+   "quarter": "26Q2",
+   "name": "聚亨"
+  },
+  "2023": {
+   "retained_earnings": 9192865.0,
+   "quarter": "26Q2",
+   "name": "燁輝"
+  },
+  "2024": {
+   "retained_earnings": 155114.0,
+   "quarter": "26Q2",
+   "name": "志聯"
+  },
+  "2025": {
+   "retained_earnings": -131346.0,
+   "quarter": "26Q2",
+   "name": "千興"
+  },
+  "2027": {
+   "retained_earnings": 26839643.0,
+   "quarter": "26Q2",
+   "name": "大成鋼"
+  },
+  "2028": {
+   "retained_earnings": 1225836.0,
+   "quarter": "26Q2",
+   "name": "威致"
+  },
+  "2029": {
+   "retained_earnings": 5419961.0,
+   "quarter": "26Q2",
+   "name": "盛餘"
+  },
+  "2030": {
+   "retained_earnings": 2086349.0,
+   "quarter": "26Q2",
+   "name": "彰源"
+  },
+  "2031": {
+   "retained_earnings": 7712861.0,
+   "quarter": "26Q2",
+   "name": "新光鋼"
+  },
+  "2032": {
+   "retained_earnings": 400516.0,
+   "quarter": "26Q2",
+   "name": "新鋼"
+  },
+  "2033": {
+   "retained_earnings": 171885.0,
+   "quarter": "26Q2",
+   "name": "佳大"
+  },
+  "2034": {
+   "retained_earnings": 1459754.0,
+   "quarter": "26Q2",
+   "name": "允強"
+  },
+  "2038": {
+   "retained_earnings": 466259.0,
+   "quarter": "26Q2",
+   "name": "海光"
+  },
+  "2049": {
+   "retained_earnings": 25882157.0,
+   "quarter": "26Q2",
+   "name": "上銀"
+  },
+  "2059": {
+   "retained_earnings": 31977369.0,
+   "quarter": "26Q2",
+   "name": "川湖"
+  },
+  "2062": {
+   "retained_earnings": 3719109.0,
+   "quarter": "26Q2",
+   "name": "橋椿"
+  },
+  "2069": {
+   "retained_earnings": 1461076.0,
+   "quarter": "26Q2",
+   "name": "運錩"
+  },
+  "2072": {
+   "retained_earnings": 3389966.0,
+   "quarter": "26Q2",
+   "name": "世紀風電"
+  },
+  "2101": {
+   "retained_earnings": 7416814.0,
+   "quarter": "26Q2",
+   "name": "南港"
+  },
+  "2102": {
+   "retained_earnings": 283691.0,
+   "quarter": "26Q2",
+   "name": "泰豐"
+  },
+  "2103": {
+   "retained_earnings": 11030696.0,
+   "quarter": "26Q2",
+   "name": "台橡"
+  },
+  "2104": {
+   "retained_earnings": 2541762.0,
+   "quarter": "26Q2",
+   "name": "國際中橡"
+  },
+  "2105": {
+   "retained_earnings": 56200252.0,
+   "quarter": "26Q2",
+   "name": "正新"
+  },
+  "2106": {
+   "retained_earnings": 10216048.0,
+   "quarter": "26Q2",
+   "name": "建大"
+  },
+  "2107": {
+   "retained_earnings": 9275587.0,
+   "quarter": "26Q2",
+   "name": "厚生"
+  },
+  "2108": {
+   "retained_earnings": 9462904.0,
+   "quarter": "26Q2",
+   "name": "南帝"
+  },
+  "2109": {
+   "retained_earnings": 650820.0,
+   "quarter": "26Q2",
+   "name": "華豐"
+  },
+  "2114": {
+   "retained_earnings": 1973811.0,
+   "quarter": "26Q2",
+   "name": "鑫永銓"
+  },
+  "2201": {
+   "retained_earnings": 35605180.0,
+   "quarter": "26Q2",
+   "name": "裕隆"
+  },
+  "2204": {
+   "retained_earnings": 24853989.0,
+   "quarter": "26Q2",
+   "name": "中華"
+  },
+  "2206": {
+   "retained_earnings": 17490304.0,
+   "quarter": "26Q2",
+   "name": "三陽工業"
+  },
+  "2208": {
+   "retained_earnings": -5283028.0,
+   "quarter": "26Q2",
+   "name": "台船"
+  },
+  "2211": {
+   "retained_earnings": 12227608.0,
+   "quarter": "26Q2",
+   "name": "長榮鋼"
+  },
+  "2227": {
+   "retained_earnings": 9035633.0,
+   "quarter": "26Q2",
+   "name": "裕日車"
+  },
+  "2228": {
+   "retained_earnings": 2960255.0,
+   "quarter": "26Q2",
+   "name": "劍麟"
+  },
+  "2231": {
+   "retained_earnings": 1661046.0,
+   "quarter": "26Q2",
+   "name": "為升"
+  },
+  "2233": {
+   "retained_earnings": 2609291.0,
+   "quarter": "26Q2",
+   "name": "宇隆"
+  },
+  "2237": {
+   "retained_earnings": 279666.0,
+   "quarter": "26Q2",
+   "name": "華德動能-創"
+  },
+  "2241": {
+   "retained_earnings": -847549.0,
+   "quarter": "26Q2",
+   "name": "艾姆勒"
+  },
+  "2247": {
+   "retained_earnings": 7534644.0,
+   "quarter": "26Q2",
+   "name": "汎德永業"
+  },
+  "2250": {
+   "retained_earnings": 704264.0,
+   "quarter": "26Q2",
+   "name": "IKKA-KY"
+  },
+  "2254": {
+   "retained_earnings": -134861.0,
+   "quarter": "26Q2",
+   "name": "巨鎧精密-創"
+  },
+  "2258": {
+   "retained_earnings": -12194444.0,
+   "quarter": "26Q2",
+   "name": "鴻華先進-創"
+  },
+  "2301": {
+   "retained_earnings": 53924633.0,
+   "quarter": "26Q2",
+   "name": "光寶科"
+  },
+  "2302": {
+   "retained_earnings": 306676.0,
+   "quarter": "26Q2",
+   "name": "麗正"
+  },
+  "2303": {
+   "retained_earnings": 262764860.0,
+   "quarter": "26Q2",
+   "name": "聯電"
+  },
+  "2305": {
+   "retained_earnings": 116859.0,
+   "quarter": "26Q2",
+   "name": "全友"
+  },
+  "2308": {
+   "retained_earnings": 199126013.0,
+   "quarter": "26Q2",
+   "name": "台達電"
+  },
+  "2312": {
+   "retained_earnings": 3450301.0,
+   "quarter": "26Q2",
+   "name": "金寶"
+  },
+  "2313": {
+   "retained_earnings": 33803663.0,
+   "quarter": "26Q2",
+   "name": "華通"
+  },
+  "2314": {
+   "retained_earnings": -816279.0,
+   "quarter": "26Q2",
+   "name": "台揚"
+  },
+  "2316": {
+   "retained_earnings": 11177250.0,
+   "quarter": "26Q2",
+   "name": "楠梓電"
+  },
+  "2317": {
+   "retained_earnings": 1474252130.0,
+   "quarter": "26Q2",
+   "name": "鴻海"
+  },
+  "2321": {
+   "retained_earnings": -128870.0,
+   "quarter": "26Q2",
+   "name": "東訊"
+  },
+  "2323": {
+   "retained_earnings": 2594412.0,
+   "quarter": "26Q2",
+   "name": "中環"
+  },
+  "2324": {
+   "retained_earnings": 78610789.0,
+   "quarter": "26Q2",
+   "name": "仁寶"
+  },
+  "2327": {
+   "retained_earnings": 116249185.0,
+   "quarter": "26Q2",
+   "name": "國巨*"
+  },
+  "2328": {
+   "retained_earnings": 8591227.0,
+   "quarter": "26Q2",
+   "name": "廣宇"
+  },
+  "2329": {
+   "retained_earnings": 4754751.0,
+   "quarter": "26Q2",
+   "name": "華泰"
+  },
+  "2330": {
+   "retained_earnings": 6051113099.0,
+   "quarter": "26Q2",
+   "name": "台積電"
+  },
+  "2331": {
+   "retained_earnings": 2204131.0,
+   "quarter": "26Q2",
+   "name": "精英"
+  },
+  "2332": {
+   "retained_earnings": 2482580.0,
+   "quarter": "26Q2",
+   "name": "友訊"
+  },
+  "2337": {
+   "retained_earnings": 29637565.0,
+   "quarter": "26Q2",
+   "name": "旺宏"
+  },
+  "2338": {
+   "retained_earnings": -169445.0,
+   "quarter": "26Q2",
+   "name": "光罩"
+  },
+  "2340": {
+   "retained_earnings": 332371.0,
+   "quarter": "26Q2",
+   "name": "台亞"
+  },
+  "2342": {
+   "retained_earnings": 213022.0,
+   "quarter": "26Q2",
+   "name": "茂矽"
+  },
+  "2344": {
+   "retained_earnings": 64211055.0,
+   "quarter": "26Q2",
+   "name": "華邦電"
+  },
+  "2345": {
+   "retained_earnings": 62443627.0,
+   "quarter": "26Q2",
+   "name": "智邦"
+  },
+  "2347": {
+   "retained_earnings": 57218659.0,
+   "quarter": "26Q2",
+   "name": "聯強"
+  },
+  "2348": {
+   "retained_earnings": 4147966.0,
+   "quarter": "26Q2",
+   "name": "海悅"
+  },
+  "2349": {
+   "retained_earnings": -1923039.0,
+   "quarter": "26Q2",
+   "name": "錸德"
+  },
+  "2351": {
+   "retained_earnings": 4980128.0,
+   "quarter": "26Q2",
+   "name": "順德"
+  },
+  "2352": {
+   "retained_earnings": 15844141.0,
+   "quarter": "26Q2",
+   "name": "佳世達"
+  },
+  "2353": {
+   "retained_earnings": 17448480.0,
+   "quarter": "26Q2",
+   "name": "宏碁"
+  },
+  "2354": {
+   "retained_earnings": 95337812.0,
+   "quarter": "26Q2",
+   "name": "鴻準"
+  },
+  "2355": {
+   "retained_earnings": 11636389.0,
+   "quarter": "26Q2",
+   "name": "敬鵬"
+  },
+  "2356": {
+   "retained_earnings": 37660020.0,
+   "quarter": "26Q2",
+   "name": "英業達"
+  },
+  "2357": {
+   "retained_earnings": 199652823.0,
+   "quarter": "26Q2",
+   "name": "華碩"
+  },
+  "2359": {
+   "retained_earnings": 3892521.0,
+   "quarter": "26Q2",
+   "name": "所羅門"
+  },
+  "2360": {
+   "retained_earnings": 23252693.0,
+   "quarter": "26Q2",
+   "name": "致茂"
+  },
+  "2362": {
+   "retained_earnings": 41661769.0,
+   "quarter": "26Q2",
+   "name": "藍天"
+  },
+  "2363": {
+   "retained_earnings": 4797705.0,
+   "quarter": "26Q2",
+   "name": "矽統"
+  },
+  "2364": {
+   "retained_earnings": 289610.0,
+   "quarter": "26Q2",
+   "name": "倫飛"
+  },
+  "2365": {
+   "retained_earnings": 1188312.0,
+   "quarter": "26Q2",
+   "name": "昆盈"
+  },
+  "2367": {
+   "retained_earnings": 1130062.0,
+   "quarter": "26Q2",
+   "name": "燿華"
+  },
+  "2368": {
+   "retained_earnings": 23510812.0,
+   "quarter": "26Q2",
+   "name": "金像電"
+  },
+  "2369": {
+   "retained_earnings": 302470.0,
+   "quarter": "26Q2",
+   "name": "菱生"
+  },
+  "2371": {
+   "retained_earnings": 20618239.0,
+   "quarter": "26Q2",
+   "name": "大同"
+  },
+  "2373": {
+   "retained_earnings": 3662819.0,
+   "quarter": "26Q2",
+   "name": "震旦行"
+  },
+  "2374": {
+   "retained_earnings": 3122845.0,
+   "quarter": "26Q2",
+   "name": "佳能"
+  },
+  "2375": {
+   "retained_earnings": 4292012.0,
+   "quarter": "26Q2",
+   "name": "凱美"
+  },
+  "2376": {
+   "retained_earnings": 41831605.0,
+   "quarter": "26Q2",
+   "name": "技嘉"
+  },
+  "2377": {
+   "retained_earnings": 48483963.0,
+   "quarter": "26Q2",
+   "name": "微星"
+  },
+  "2379": {
+   "retained_earnings": 37862666.0,
+   "quarter": "26Q2",
+   "name": "瑞昱"
+  },
+  "2380": {
+   "retained_earnings": -87808.0,
+   "quarter": "26Q2",
+   "name": "虹光"
+  },
+  "2382": {
+   "retained_earnings": 174909702.0,
+   "quarter": "26Q2",
+   "name": "廣達"
+  },
+  "2383": {
+   "retained_earnings": 40999533.0,
+   "quarter": "26Q2",
+   "name": "台光電"
+  },
+  "2385": {
+   "retained_earnings": 25006543.0,
+   "quarter": "26Q2",
+   "name": "群光"
+  },
+  "2387": {
+   "retained_earnings": 8516135.0,
+   "quarter": "26Q2",
+   "name": "精元"
+  },
+  "2388": {
+   "retained_earnings": 8139922.0,
+   "quarter": "26Q2",
+   "name": "威盛"
+  },
+  "2390": {
+   "retained_earnings": -161875.0,
+   "quarter": "26Q2",
+   "name": "云辰"
+  },
+  "2392": {
+   "retained_earnings": 13266447.0,
+   "quarter": "26Q2",
+   "name": "正崴"
+  },
+  "2393": {
+   "retained_earnings": 6461874.0,
+   "quarter": "26Q2",
+   "name": "億光"
+  },
+  "2395": {
+   "retained_earnings": 33159968.0,
+   "quarter": "26Q2",
+   "name": "研華"
+  },
+  "2397": {
+   "retained_earnings": 1387245.0,
+   "quarter": "26Q2",
+   "name": "友通"
+  },
+  "2399": {
+   "retained_earnings": 969901.0,
+   "quarter": "26Q2",
+   "name": "映泰"
+  },
+  "2401": {
+   "retained_earnings": 1922108.0,
+   "quarter": "26Q2",
+   "name": "凌陽"
+  },
+  "2402": {
+   "retained_earnings": 1515120.0,
+   "quarter": "26Q2",
+   "name": "毅嘉"
+  },
+  "2404": {
+   "retained_earnings": 15208841.0,
+   "quarter": "26Q2",
+   "name": "漢唐"
+  },
+  "2405": {
+   "retained_earnings": 66326.0,
+   "quarter": "26Q2",
+   "name": "輔信"
+  },
+  "2406": {
+   "retained_earnings": -35681.0,
+   "quarter": "26Q2",
+   "name": "國碩"
+  },
+  "2408": {
+   "retained_earnings": 175705438.0,
+   "quarter": "26Q2",
+   "name": "南亞科"
+  },
+  "2409": {
+   "retained_earnings": 32088850.0,
+   "quarter": "26Q2",
+   "name": "友達"
+  },
+  "2412": {
+   "retained_earnings": 115625007.0,
+   "quarter": "26Q2",
+   "name": "中華電"
+  },
+  "2413": {
+   "retained_earnings": 969511.0,
+   "quarter": "26Q2",
+   "name": "環科"
+  },
+  "2414": {
+   "retained_earnings": 1244988.0,
+   "quarter": "26Q2",
+   "name": "精技"
+  },
+  "2415": {
+   "retained_earnings": 517408.0,
+   "quarter": "26Q2",
+   "name": "錩新"
+  },
+  "2417": {
+   "retained_earnings": 1134168.0,
+   "quarter": "26Q2",
+   "name": "圓剛"
+  },
+  "2419": {
+   "retained_earnings": 230178.0,
+   "quarter": "26Q2",
+   "name": "仲琦"
+  },
+  "2420": {
+   "retained_earnings": 2205656.0,
+   "quarter": "26Q2",
+   "name": "新巨"
+  },
+  "2421": {
+   "retained_earnings": 4796297.0,
+   "quarter": "26Q2",
+   "name": "建準"
+  },
+  "2423": {
+   "retained_earnings": 1632221.0,
+   "quarter": "26Q2",
+   "name": "固緯"
+  },
+  "2424": {
+   "retained_earnings": -345761.0,
+   "quarter": "26Q2",
+   "name": "隴華"
+  },
+  "2425": {
+   "retained_earnings": 1495827.0,
+   "quarter": "26Q2",
+   "name": "承啟"
+  },
+  "2426": {
+   "retained_earnings": 585347.0,
+   "quarter": "26Q2",
+   "name": "鼎元"
+  },
+  "2427": {
+   "retained_earnings": 1168733.0,
+   "quarter": "26Q2",
+   "name": "三商電"
+  },
+  "2428": {
+   "retained_earnings": 9764300.0,
+   "quarter": "26Q2",
+   "name": "興勤"
+  },
+  "2429": {
+   "retained_earnings": -587082.0,
+   "quarter": "26Q2",
+   "name": "銘旺科"
+  },
+  "2430": {
+   "retained_earnings": 1977813.0,
+   "quarter": "26Q2",
+   "name": "燦坤"
+  },
+  "2431": {
+   "retained_earnings": -168576.0,
+   "quarter": "26Q2",
+   "name": "聯昌"
+  },
+  "2432": {
+   "retained_earnings": 263224.0,
+   "quarter": "26Q2",
+   "name": "倚天酷碁-創"
+  },
+  "2433": {
+   "retained_earnings": 1298840.0,
+   "quarter": "26Q2",
+   "name": "互盛電"
+  },
+  "2434": {
+   "retained_earnings": -18115.0,
+   "quarter": "26Q2",
+   "name": "統懋"
+  },
+  "2436": {
+   "retained_earnings": 1771292.0,
+   "quarter": "26Q2",
+   "name": "偉詮電"
+  },
+  "2438": {
+   "retained_earnings": -325239.0,
+   "quarter": "26Q2",
+   "name": "翔耀"
+  },
+  "2439": {
+   "retained_earnings": 6677337.0,
+   "quarter": "26Q2",
+   "name": "美律"
+  },
+  "2440": {
+   "retained_earnings": -50115.0,
+   "quarter": "26Q2",
+   "name": "太空梭"
+  },
+  "2441": {
+   "retained_earnings": 17077070.0,
+   "quarter": "26Q2",
+   "name": "超豐"
+  },
+  "2442": {
+   "retained_earnings": 2776166.0,
+   "quarter": "26Q2",
+   "name": "新美齊"
+  },
+  "2444": {
+   "retained_earnings": -494126.0,
+   "quarter": "26Q2",
+   "name": "兆勁"
+  },
+  "2449": {
+   "retained_earnings": 31191243.0,
+   "quarter": "26Q2",
+   "name": "京元電子"
+  },
+  "2450": {
+   "retained_earnings": 2921177.0,
+   "quarter": "26Q2",
+   "name": "神腦"
+  },
+  "2451": {
+   "retained_earnings": 30946458.0,
+   "quarter": "26Q2",
+   "name": "創見"
+  },
+  "2453": {
+   "retained_earnings": 1068718.0,
+   "quarter": "26Q2",
+   "name": "凌群"
+  },
+  "2454": {
+   "retained_earnings": 329762727.0,
+   "quarter": "26Q2",
+   "name": "聯發科"
+  },
+  "2455": {
+   "retained_earnings": 1380753.0,
+   "quarter": "26Q2",
+   "name": "全新"
+  },
+  "2457": {
+   "retained_earnings": 186244.0,
+   "quarter": "26Q2",
+   "name": "飛宏"
+  },
+  "2458": {
+   "retained_earnings": 7257880.0,
+   "quarter": "26Q2",
+   "name": "義隆"
+  },
+  "2459": {
+   "retained_earnings": 4252909.0,
+   "quarter": "26Q2",
+   "name": "敦吉"
+  },
+  "2460": {
+   "retained_earnings": -58360.0,
+   "quarter": "26Q2",
+   "name": "建通"
+  },
+  "2461": {
+   "retained_earnings": 859564.0,
+   "quarter": "26Q2",
+   "name": "光群雷"
+  },
+  "2462": {
+   "retained_earnings": 1313467.0,
+   "quarter": "26Q2",
+   "name": "良得電"
+  },
+  "2464": {
+   "retained_earnings": 1821117.0,
+   "quarter": "26Q2",
+   "name": "盟立"
+  },
+  "2465": {
+   "retained_earnings": 261923.0,
+   "quarter": "26Q2",
+   "name": "麗臺"
+  },
+  "2466": {
+   "retained_earnings": 222370.0,
+   "quarter": "26Q2",
+   "name": "冠西電"
+  },
+  "2467": {
+   "retained_earnings": 1932446.0,
+   "quarter": "26Q2",
+   "name": "志聖"
+  },
+  "2468": {
+   "retained_earnings": 487068.0,
+   "quarter": "26Q2",
+   "name": "華經"
+  },
+  "2471": {
+   "retained_earnings": 238639.0,
+   "quarter": "26Q2",
+   "name": "資通"
+  },
+  "2472": {
+   "retained_earnings": 5468325.0,
+   "quarter": "26Q2",
+   "name": "立隆電"
+  },
+  "2474": {
+   "retained_earnings": 116395788.0,
+   "quarter": "26Q2",
+   "name": "可成"
+  },
+  "2476": {
+   "retained_earnings": 5606533.0,
+   "quarter": "26Q2",
+   "name": "鉅祥"
+  },
+  "2477": {
+   "retained_earnings": 2411066.0,
+   "quarter": "26Q2",
+   "name": "美隆電"
+  },
+  "2478": {
+   "retained_earnings": 4556784.0,
+   "quarter": "26Q2",
+   "name": "大毅"
+  },
+  "2480": {
+   "retained_earnings": 1981428.0,
+   "quarter": "26Q2",
+   "name": "敦陽科"
+  },
+  "2481": {
+   "retained_earnings": 5234015.0,
+   "quarter": "26Q2",
+   "name": "強茂"
+  },
+  "2482": {
+   "retained_earnings": 142939.0,
+   "quarter": "26Q2",
+   "name": "連宇"
+  },
+  "2483": {
+   "retained_earnings": 1196732.0,
+   "quarter": "26Q2",
+   "name": "百容"
+  },
+  "2484": {
+   "retained_earnings": 1981719.0,
+   "quarter": "26Q2",
+   "name": "希華"
+  },
+  "2485": {
+   "retained_earnings": 1677350.0,
+   "quarter": "26Q2",
+   "name": "兆赫"
+  },
+  "2486": {
+   "retained_earnings": 409346.0,
+   "quarter": "26Q2",
+   "name": "一詮"
+  },
+  "2488": {
+   "retained_earnings": 1957287.0,
+   "quarter": "26Q2",
+   "name": "漢平"
+  },
+  "2489": {
+   "retained_earnings": 4794507.0,
+   "quarter": "26Q2",
+   "name": "瑞軒"
+  },
+  "2491": {
+   "retained_earnings": 2485355.0,
+   "quarter": "26Q2",
+   "name": "吉祥全"
+  },
+  "2492": {
+   "retained_earnings": 39742308.0,
+   "quarter": "26Q2",
+   "name": "華新科"
+  },
+  "2493": {
+   "retained_earnings": 1378120.0,
+   "quarter": "26Q2",
+   "name": "揚博"
+  },
+  "2495": {
+   "retained_earnings": 1695477.0,
+   "quarter": "26Q2",
+   "name": "普安"
+  },
+  "2496": {
+   "retained_earnings": 380780.0,
+   "quarter": "26Q2",
+   "name": "卓越"
+  },
+  "2497": {
+   "retained_earnings": 626388.0,
+   "quarter": "26Q2",
+   "name": "怡利電"
+  },
+  "2498": {
+   "retained_earnings": 4254086.0,
+   "quarter": "26Q2",
+   "name": "宏達電"
+  },
+  "2501": {
+   "retained_earnings": 17089855.0,
+   "quarter": "26Q2",
+   "name": "國建"
+  },
+  "2504": {
+   "retained_earnings": 12702368.0,
+   "quarter": "26Q2",
+   "name": "國產"
+  },
+  "2505": {
+   "retained_earnings": 6379311.0,
+   "quarter": "26Q2",
+   "name": "國揚"
+  },
+  "2506": {
+   "retained_earnings": 2950448.0,
+   "quarter": "26Q2",
+   "name": "太設"
+  },
+  "2509": {
+   "retained_earnings": 1053225.0,
+   "quarter": "26Q2",
+   "name": "全坤建"
+  },
+  "2511": {
+   "retained_earnings": 5376966.0,
+   "quarter": "26Q2",
+   "name": "太子"
+  },
+  "2514": {
+   "retained_earnings": 9049868.0,
+   "quarter": "26Q2",
+   "name": "龍邦"
+  },
+  "2515": {
+   "retained_earnings": 7587826.0,
+   "quarter": "26Q2",
+   "name": "中工"
+  },
+  "2516": {
+   "retained_earnings": -165398.0,
+   "quarter": "26Q2",
+   "name": "新建"
+  },
+  "2520": {
+   "retained_earnings": 16564117.0,
+   "quarter": "26Q2",
+   "name": "冠德"
+  },
+  "2524": {
+   "retained_earnings": 17563856.0,
+   "quarter": "26Q2",
+   "name": "京城"
+  },
+  "2527": {
+   "retained_earnings": 4927438.0,
+   "quarter": "26Q2",
+   "name": "宏璟"
+  },
+  "2528": {
+   "retained_earnings": 898033.0,
+   "quarter": "26Q2",
+   "name": "皇普"
+  },
+  "2530": {
+   "retained_earnings": 548531.0,
+   "quarter": "26Q2",
+   "name": "華建"
+  },
+  "2534": {
+   "retained_earnings": 7190421.0,
+   "quarter": "26Q2",
+   "name": "宏盛"
+  },
+  "2535": {
+   "retained_earnings": 5760287.0,
+   "quarter": "26Q2",
+   "name": "達欣工"
+  },
+  "2536": {
+   "retained_earnings": 7354908.0,
+   "quarter": "26Q2",
+   "name": "宏普"
+  },
+  "2537": {
+   "retained_earnings": 987792.0,
+   "quarter": "26Q2",
+   "name": "聯上發"
+  },
+  "2538": {
+   "retained_earnings": 1174880.0,
+   "quarter": "26Q2",
+   "name": "基泰"
+  },
+  "2539": {
+   "retained_earnings": 5361375.0,
+   "quarter": "26Q2",
+   "name": "櫻花建"
+  },
+  "2540": {
+   "retained_earnings": 828677.0,
+   "quarter": "26Q2",
+   "name": "愛山林"
+  },
+  "2542": {
+   "retained_earnings": 19226966.0,
+   "quarter": "26Q2",
+   "name": "興富發"
+  },
+  "2543": {
+   "retained_earnings": 1472743.0,
+   "quarter": "26Q2",
+   "name": "皇昌"
+  },
+  "2545": {
+   "retained_earnings": 9318422.0,
+   "quarter": "26Q2",
+   "name": "皇翔"
+  },
+  "2546": {
+   "retained_earnings": 4363256.0,
+   "quarter": "26Q2",
+   "name": "根基"
+  },
+  "2547": {
+   "retained_earnings": 2720031.0,
+   "quarter": "26Q2",
+   "name": "日勝生"
+  },
+  "2548": {
+   "retained_earnings": 16588881.0,
+   "quarter": "26Q2",
+   "name": "華固"
+  },
+  "2597": {
+   "retained_earnings": 3126024.0,
+   "quarter": "26Q2",
+   "name": "潤弘"
+  },
+  "2601": {
+   "retained_earnings": -1509218.0,
+   "quarter": "26Q2",
+   "name": "益航"
+  },
+  "2603": {
+   "retained_earnings": 491878155.0,
+   "quarter": "26Q2",
+   "name": "長榮"
+  },
+  "2605": {
+   "retained_earnings": 13483385.0,
+   "quarter": "26Q2",
+   "name": "新興"
+  },
+  "2606": {
+   "retained_earnings": 26994925.0,
+   "quarter": "26Q2",
+   "name": "裕民"
+  },
+  "2607": {
+   "retained_earnings": 16570668.0,
+   "quarter": "26Q2",
+   "name": "榮運"
+  },
+  "2608": {
+   "retained_earnings": 7421212.0,
+   "quarter": "26Q2",
+   "name": "嘉里大榮"
+  },
+  "2609": {
+   "retained_earnings": 263346957.0,
+   "quarter": "26Q2",
+   "name": "陽明"
+  },
+  "2610": {
+   "retained_earnings": 32675825.0,
+   "quarter": "26Q2",
+   "name": "華航"
+  },
+  "2611": {
+   "retained_earnings": 881022.0,
+   "quarter": "26Q2",
+   "name": "志信"
+  },
+  "2612": {
+   "retained_earnings": 11556862.0,
+   "quarter": "26Q2",
+   "name": "中航"
+  },
+  "2613": {
+   "retained_earnings": 2049075.0,
+   "quarter": "26Q2",
+   "name": "中櫃"
+  },
+  "2614": {
+   "retained_earnings": 963217.0,
+   "quarter": "26Q2",
+   "name": "東森"
+  },
+  "2615": {
+   "retained_earnings": 242408185.0,
+   "quarter": "26Q2",
+   "name": "萬海"
+  },
+  "2616": {
+   "retained_earnings": -57189.0,
+   "quarter": "26Q2",
+   "name": "山隆"
+  },
+  "2617": {
+   "retained_earnings": 11091118.0,
+   "quarter": "26Q2",
+   "name": "台航"
+  },
+  "2618": {
+   "retained_earnings": 72176244.0,
+   "quarter": "26Q2",
+   "name": "長榮航"
+  },
+  "2630": {
+   "retained_earnings": 198060.0,
+   "quarter": "26Q2",
+   "name": "亞航"
+  },
+  "2633": {
+   "retained_earnings": 13598561.0,
+   "quarter": "26Q2",
+   "name": "台灣高鐵"
+  },
+  "2634": {
+   "retained_earnings": 8879468.0,
+   "quarter": "26Q2",
+   "name": "漢翔"
+  },
+  "2636": {
+   "retained_earnings": 5714695.0,
+   "quarter": "26Q2",
+   "name": "台驊控股"
+  },
+  "2642": {
+   "retained_earnings": 222652.0,
+   "quarter": "26Q2",
+   "name": "宅配通"
+  },
+  "2645": {
+   "retained_earnings": 7498100.0,
+   "quarter": "26Q2",
+   "name": "長榮航太"
+  },
+  "2646": {
+   "retained_earnings": -72912.0,
+   "quarter": "26Q2",
+   "name": "星宇航空"
+  },
+  "2701": {
+   "retained_earnings": 2965097.0,
+   "quarter": "26Q2",
+   "name": "萬企"
+  },
+  "2702": {
+   "retained_earnings": 1657764.0,
+   "quarter": "26Q2",
+   "name": "華園"
+  },
+  "2704": {
+   "retained_earnings": 7041066.0,
+   "quarter": "26Q2",
+   "name": "國賓"
+  },
+  "2705": {
+   "retained_earnings": -390960.0,
+   "quarter": "26Q2",
+   "name": "六福"
+  },
+  "2706": {
+   "retained_earnings": 3802103.0,
+   "quarter": "26Q2",
+   "name": "第一店"
+  },
+  "2707": {
+   "retained_earnings": 2654354.0,
+   "quarter": "26Q2",
+   "name": "晶華"
+  },
+  "2712": {
+   "retained_earnings": -154142.0,
+   "quarter": "26Q2",
+   "name": "遠雄來"
+  },
+  "2722": {
+   "retained_earnings": 387194.0,
+   "quarter": "26Q2",
+   "name": "夏都"
+  },
+  "2727": {
+   "retained_earnings": 1773256.0,
+   "quarter": "26Q2",
+   "name": "王品"
+  },
+  "2731": {
+   "retained_earnings": 2118573.0,
+   "quarter": "26Q2",
+   "name": "雄獅"
+  },
+  "2739": {
+   "retained_earnings": 283726.0,
+   "quarter": "26Q2",
+   "name": "寒舍"
+  },
+  "2748": {
+   "retained_earnings": 602458.0,
+   "quarter": "26Q2",
+   "name": "雲品"
+  },
+  "2753": {
+   "retained_earnings": 1982401.0,
+   "quarter": "26Q2",
+   "name": "八方雲集"
+  },
+  "2901": {
+   "retained_earnings": 142107.0,
+   "quarter": "26Q2",
+   "name": "欣欣"
+  },
+  "2903": {
+   "retained_earnings": 7677339.0,
+   "quarter": "26Q2",
+   "name": "遠百"
+  },
+  "2904": {
+   "retained_earnings": 369336.0,
+   "quarter": "26Q2",
+   "name": "匯僑"
+  },
+  "2906": {
+   "retained_earnings": 1059390.0,
+   "quarter": "26Q2",
+   "name": "高林"
+  },
+  "2908": {
+   "retained_earnings": 2078326.0,
+   "quarter": "26Q2",
+   "name": "特力"
+  },
+  "2910": {
+   "retained_earnings": 1060032.0,
+   "quarter": "26Q2",
+   "name": "統領"
+  },
+  "2911": {
+   "retained_earnings": -304518.0,
+   "quarter": "26Q2",
+   "name": "麗嬰房"
+  },
+  "2912": {
+   "retained_earnings": 28200975.0,
+   "quarter": "26Q2",
+   "name": "統一超"
+  },
+  "2913": {
+   "retained_earnings": 2292070.0,
+   "quarter": "26Q2",
+   "name": "農林"
+  },
+  "2915": {
+   "retained_earnings": 130725215.0,
+   "quarter": "26Q2",
+   "name": "潤泰全"
+  },
+  "2923": {
+   "retained_earnings": 29406627.0,
+   "quarter": "26Q2",
+   "name": "鼎固-KY"
+  },
+  "2945": {
+   "retained_earnings": 195230.0,
+   "quarter": "26Q2",
+   "name": "三商家購"
+  },
+  "3002": {
+   "retained_earnings": 209541.0,
+   "quarter": "26Q2",
+   "name": "歐格"
+  },
+  "3003": {
+   "retained_earnings": 5087549.0,
+   "quarter": "26Q2",
+   "name": "健和興"
+  },
+  "3004": {
+   "retained_earnings": 1804097.0,
+   "quarter": "26Q2",
+   "name": "豐達科"
+  },
+  "3005": {
+   "retained_earnings": 13288818.0,
+   "quarter": "26Q2",
+   "name": "神基"
+  },
+  "3006": {
+   "retained_earnings": 14761343.0,
+   "quarter": "26Q2",
+   "name": "晶豪科"
+  },
+  "3008": {
+   "retained_earnings": 183393126.0,
+   "quarter": "26Q2",
+   "name": "大立光"
+  },
+  "3010": {
+   "retained_earnings": 16156599.0,
+   "quarter": "26Q2",
+   "name": "華立"
+  },
+  "3011": {
+   "retained_earnings": -429663.0,
+   "quarter": "26Q2",
+   "name": "今皓"
+  },
+  "3013": {
+   "retained_earnings": 2752787.0,
+   "quarter": "26Q2",
+   "name": "晟銘電"
+  },
+  "3014": {
+   "retained_earnings": 3451711.0,
+   "quarter": "26Q2",
+   "name": "聯陽"
+  },
+  "3015": {
+   "retained_earnings": 5773966.0,
+   "quarter": "26Q2",
+   "name": "全漢"
+  },
+  "3016": {
+   "retained_earnings": 550283.0,
+   "quarter": "26Q2",
+   "name": "嘉晶"
+  },
+  "3017": {
+   "retained_earnings": 48958210.0,
+   "quarter": "26Q2",
+   "name": "奇鋐"
+  },
+  "3018": {
+   "retained_earnings": -337981.0,
+   "quarter": "26Q2",
+   "name": "隆銘綠能"
+  },
+  "3019": {
+   "retained_earnings": 6164330.0,
+   "quarter": "26Q2",
+   "name": "亞光"
+  },
+  "3021": {
+   "retained_earnings": 700013.0,
+   "quarter": "26Q2",
+   "name": "鴻名"
+  },
+  "3022": {
+   "retained_earnings": 8729481.0,
+   "quarter": "26Q2",
+   "name": "威強電"
+  },
+  "3023": {
+   "retained_earnings": 10186005.0,
+   "quarter": "26Q2",
+   "name": "信邦"
+  },
+  "3024": {
+   "retained_earnings": 615775.0,
+   "quarter": "26Q2",
+   "name": "憶聲"
+  },
+  "3025": {
+   "retained_earnings": 167630.0,
+   "quarter": "26Q2",
+   "name": "星通"
+  },
+  "3026": {
+   "retained_earnings": 5596623.0,
+   "quarter": "26Q2",
+   "name": "禾伸堂"
+  },
+  "3027": {
+   "retained_earnings": 194946.0,
+   "quarter": "26Q2",
+   "name": "盛達"
+  },
+  "3028": {
+   "retained_earnings": 2835031.0,
+   "quarter": "26Q2",
+   "name": "增你強"
+  },
+  "3029": {
+   "retained_earnings": 1514657.0,
+   "quarter": "26Q2",
+   "name": "零壹"
+  },
+  "3030": {
+   "retained_earnings": 7284056.0,
+   "quarter": "26Q2",
+   "name": "德律"
+  },
+  "3031": {
+   "retained_earnings": 729278.0,
+   "quarter": "26Q2",
+   "name": "佰鴻"
+  },
+  "3032": {
+   "retained_earnings": 892476.0,
+   "quarter": "26Q2",
+   "name": "偉訓"
+  },
+  "3033": {
+   "retained_earnings": 3771348.0,
+   "quarter": "26Q2",
+   "name": "威健"
+  },
+  "3034": {
+   "retained_earnings": 53731003.0,
+   "quarter": "26Q2",
+   "name": "聯詠"
+  },
+  "3035": {
+   "retained_earnings": 4991108.0,
+   "quarter": "26Q2",
+   "name": "智原"
+  },
+  "3036": {
+   "retained_earnings": 45486312.0,
+   "quarter": "26Q2",
+   "name": "文曄"
+  },
+  "3037": {
+   "retained_earnings": 81387226.0,
+   "quarter": "26Q2",
+   "name": "欣興"
+  },
+  "3038": {
+   "retained_earnings": 1125883.0,
+   "quarter": "26Q2",
+   "name": "全台"
+  },
+  "3040": {
+   "retained_earnings": 584935.0,
+   "quarter": "26Q2",
+   "name": "遠見"
+  },
+  "3041": {
+   "retained_earnings": -242027.0,
+   "quarter": "26Q2",
+   "name": "揚智"
+  },
+  "3042": {
+   "retained_earnings": 8178956.0,
+   "quarter": "26Q2",
+   "name": "晶技"
+  },
+  "3043": {
+   "retained_earnings": -89812.0,
+   "quarter": "26Q2",
+   "name": "科風"
+  },
+  "3044": {
+   "retained_earnings": 50362647.0,
+   "quarter": "26Q2",
+   "name": "健鼎"
+  },
+  "3045": {
+   "retained_earnings": 47208347.0,
+   "quarter": "26Q2",
+   "name": "台灣大"
+  },
+  "3046": {
+   "retained_earnings": 499807.0,
+   "quarter": "26Q2",
+   "name": "建碁"
+  },
+  "3047": {
+   "retained_earnings": -137428.0,
+   "quarter": "26Q2",
+   "name": "訊舟"
+  },
+  "3048": {
+   "retained_earnings": 2574263.0,
+   "quarter": "26Q2",
+   "name": "益登"
+  },
+  "3049": {
+   "retained_earnings": -397248.0,
+   "quarter": "26Q2",
+   "name": "精金"
+  },
+  "3050": {
+   "retained_earnings": 431405.0,
+   "quarter": "26Q2",
+   "name": "鈺德"
+  },
+  "3051": {
+   "retained_earnings": 913090.0,
+   "quarter": "26Q2",
+   "name": "力特"
+  },
+  "3052": {
+   "retained_earnings": 1135019.0,
+   "quarter": "26Q2",
+   "name": "夆典"
+  },
+  "3054": {
+   "retained_earnings": 320373.0,
+   "quarter": "26Q2",
+   "name": "立萬利"
+  },
+  "3055": {
+   "retained_earnings": 483450.0,
+   "quarter": "26Q2",
+   "name": "蔚華科"
+  },
+  "3056": {
+   "retained_earnings": 2363798.0,
+   "quarter": "26Q2",
+   "name": "富華新"
+  },
+  "3057": {
+   "retained_earnings": -81443.0,
+   "quarter": "26Q2",
+   "name": "喬鼎"
+  },
+  "3058": {
+   "retained_earnings": -326216.0,
+   "quarter": "26Q2",
+   "name": "立德"
+  },
+  "3059": {
+   "retained_earnings": 4580552.0,
+   "quarter": "26Q2",
+   "name": "華晶科"
+  },
+  "3060": {
+   "retained_earnings": 604049.0,
+   "quarter": "26Q2",
+   "name": "銘異"
+  },
+  "3062": {
+   "retained_earnings": 292216.0,
+   "quarter": "26Q2",
+   "name": "建漢"
+  },
+  "3090": {
+   "retained_earnings": 3303671.0,
+   "quarter": "26Q2",
+   "name": "日電貿"
+  },
+  "3092": {
+   "retained_earnings": -172628.0,
+   "quarter": "26Q2",
+   "name": "鴻碩"
+  },
+  "3094": {
+   "retained_earnings": 151059.0,
+   "quarter": "26Q2",
+   "name": "聯傑"
+  },
+  "3130": {
+   "retained_earnings": 813430.0,
+   "quarter": "26Q2",
+   "name": "一零四"
+  },
+  "3135": {
+   "retained_earnings": 2191480.0,
+   "quarter": "26Q2",
+   "name": "凌航"
+  },
+  "3138": {
+   "retained_earnings": 682319.0,
+   "quarter": "26Q2",
+   "name": "耀登"
+  },
+  "3149": {
+   "retained_earnings": -370247.0,
+   "quarter": "26Q2",
+   "name": "正達"
+  },
+  "3150": {
+   "retained_earnings": 19441.0,
+   "quarter": "26Q2",
+   "name": "鈺寶-創"
+  },
+  "3164": {
+   "retained_earnings": 81424.0,
+   "quarter": "26Q2",
+   "name": "景岳"
+  },
+  "3167": {
+   "retained_earnings": 2450138.0,
+   "quarter": "26Q2",
+   "name": "大量"
+  },
+  "3168": {
+   "retained_earnings": 447314.0,
+   "quarter": "26Q2",
+   "name": "眾福科"
+  },
+  "3189": {
+   "retained_earnings": 22025189.0,
+   "quarter": "26Q2",
+   "name": "景碩"
+  },
+  "3209": {
+   "retained_earnings": 2133413.0,
+   "quarter": "26Q2",
+   "name": "全科"
+  },
+  "3229": {
+   "retained_earnings": -51458.0,
+   "quarter": "26Q2",
+   "name": "晟鈦"
+  },
+  "3231": {
+   "retained_earnings": 73736726.0,
+   "quarter": "26Q2",
+   "name": "緯創"
+  },
+  "3257": {
+   "retained_earnings": 601969.0,
+   "quarter": "26Q2",
+   "name": "虹冠電"
+  },
+  "3266": {
+   "retained_earnings": 1879395.0,
+   "quarter": "26Q2",
+   "name": "昇陽"
+  },
+  "3296": {
+   "retained_earnings": 188542.0,
+   "quarter": "26Q2",
+   "name": "勝德"
+  },
+  "3305": {
+   "retained_earnings": 2717485.0,
+   "quarter": "26Q2",
+   "name": "昇貿"
+  },
+  "3308": {
+   "retained_earnings": 550225.0,
+   "quarter": "26Q2",
+   "name": "聯德"
+  },
+  "3311": {
+   "retained_earnings": 1727896.0,
+   "quarter": "26Q2",
+   "name": "閎暉"
+  },
+  "3312": {
+   "retained_earnings": 1118729.0,
+   "quarter": "26Q2",
+   "name": "弘憶股"
+  },
+  "3321": {
+   "retained_earnings": -148797.0,
+   "quarter": "26Q2",
+   "name": "同泰"
+  },
+  "3338": {
+   "retained_earnings": 767714.0,
+   "quarter": "26Q2",
+   "name": "泰碩"
+  },
+  "3346": {
+   "retained_earnings": 621631.0,
+   "quarter": "26Q2",
+   "name": "麗清"
+  },
+  "3356": {
+   "retained_earnings": 1798987.0,
+   "quarter": "26Q2",
+   "name": "奇偶"
+  },
+  "3376": {
+   "retained_earnings": 12553843.0,
+   "quarter": "26Q2",
+   "name": "新日興"
+  },
+  "3380": {
+   "retained_earnings": 1675230.0,
+   "quarter": "26Q2",
+   "name": "明泰"
+  },
+  "3406": {
+   "retained_earnings": 15432461.0,
+   "quarter": "26Q2",
+   "name": "玉晶光"
+  },
+  "3413": {
+   "retained_earnings": 8619351.0,
+   "quarter": "26Q2",
+   "name": "京鼎"
+  },
+  "3416": {
+   "retained_earnings": 1614757.0,
+   "quarter": "26Q2",
+   "name": "融程電"
+  },
+  "3419": {
+   "retained_earnings": -254410.0,
+   "quarter": "26Q2",
+   "name": "譁裕"
+  },
+  "3432": {
+   "retained_earnings": -265151.0,
+   "quarter": "26Q2",
+   "name": "台端"
+  },
+  "3437": {
+   "retained_earnings": -175700.0,
+   "quarter": "26Q2",
+   "name": "榮創"
+  },
+  "3443": {
+   "retained_earnings": 12076903.0,
+   "quarter": "26Q2",
+   "name": "創意"
+  },
+  "3447": {
+   "retained_earnings": 275566.0,
+   "quarter": "26Q2",
+   "name": "展達"
+  },
+  "3450": {
+   "retained_earnings": 3451406.0,
+   "quarter": "26Q2",
+   "name": "聯鈞"
+  },
+  "3481": {
+   "retained_earnings": 45827043.0,
+   "quarter": "26Q2",
+   "name": "群創"
+  },
+  "3494": {
+   "retained_earnings": -531918.0,
+   "quarter": "26Q2",
+   "name": "誠研"
+  },
+  "3501": {
+   "retained_earnings": 4054380.0,
+   "quarter": "26Q2",
+   "name": "維熹"
+  },
+  "3504": {
+   "retained_earnings": 136179.0,
+   "quarter": "26Q2",
+   "name": "揚明光"
+  },
+  "3515": {
+   "retained_earnings": 5098408.0,
+   "quarter": "26Q2",
+   "name": "華擎"
+  },
+  "3518": {
+   "retained_earnings": 131548.0,
+   "quarter": "26Q2",
+   "name": "柏騰"
+  },
+  "3528": {
+   "retained_earnings": 1179886.0,
+   "quarter": "26Q2",
+   "name": "安馳"
+  },
+  "3530": {
+   "retained_earnings": 539477.0,
+   "quarter": "26Q2",
+   "name": "晶相光"
+  },
+  "3532": {
+   "retained_earnings": 14777594.0,
+   "quarter": "26Q2",
+   "name": "台勝科"
+  },
+  "3533": {
+   "retained_earnings": 28580202.0,
+   "quarter": "26Q2",
+   "name": "嘉澤"
+  },
+  "3535": {
+   "retained_earnings": 238850.0,
+   "quarter": "26Q2",
+   "name": "晶彩科"
+  },
+  "3543": {
+   "retained_earnings": 216452.0,
+   "quarter": "26Q2",
+   "name": "州巧"
+  },
+  "3545": {
+   "retained_earnings": 612580.0,
+   "quarter": "26Q2",
+   "name": "敦泰"
+  },
+  "3550": {
+   "retained_earnings": 314959.0,
+   "quarter": "26Q2",
+   "name": "聯穎"
+  },
+  "3557": {
+   "retained_earnings": 987837.0,
+   "quarter": "26Q2",
+   "name": "嘉威"
+  },
+  "3563": {
+   "retained_earnings": 3120867.0,
+   "quarter": "26Q2",
+   "name": "牧德"
+  },
+  "3576": {
+   "retained_earnings": -4424684.0,
+   "quarter": "26Q2",
+   "name": "聯合再生"
+  },
+  "3583": {
+   "retained_earnings": 4081467.0,
+   "quarter": "26Q2",
+   "name": "辛耘"
+  },
+  "3588": {
+   "retained_earnings": 814410.0,
+   "quarter": "26Q2",
+   "name": "通嘉"
+  },
+  "3591": {
+   "retained_earnings": 53183.0,
+   "quarter": "26Q2",
+   "name": "艾笛森"
+  },
+  "3592": {
+   "retained_earnings": 5988425.0,
+   "quarter": "26Q2",
+   "name": "瑞鼎"
+  },
+  "3593": {
+   "retained_earnings": -497422.0,
+   "quarter": "26Q2",
+   "name": "力銘"
+  },
+  "3596": {
+   "retained_earnings": 10919029.0,
+   "quarter": "26Q2",
+   "name": "智易"
+  },
+  "3605": {
+   "retained_earnings": 3950712.0,
+   "quarter": "26Q2",
+   "name": "宏致"
+  },
+  "3607": {
+   "retained_earnings": 38770.0,
+   "quarter": "26Q2",
+   "name": "谷崧"
+  },
+  "3617": {
+   "retained_earnings": 5582086.0,
+   "quarter": "26Q2",
+   "name": "碩天"
+  },
+  "3622": {
+   "retained_earnings": 2415790.0,
+   "quarter": "26Q2",
+   "name": "洋華"
+  },
+  "3645": {
+   "retained_earnings": 1181513.0,
+   "quarter": "26Q2",
+   "name": "達邁"
+  },
+  "3652": {
+   "retained_earnings": 263762.0,
+   "quarter": "26Q2",
+   "name": "精聯"
+  },
+  "3653": {
+   "retained_earnings": 9263316.0,
+   "quarter": "26Q2",
+   "name": "健策"
+  },
+  "3669": {
+   "retained_earnings": 1876295.0,
+   "quarter": "26Q2",
+   "name": "圓展"
+  },
+  "3679": {
+   "retained_earnings": 3295031.0,
+   "quarter": "26Q2",
+   "name": "新至陞"
+  },
+  "3686": {
+   "retained_earnings": -112287.0,
+   "quarter": "26Q2",
+   "name": "達能"
+  },
+  "3694": {
+   "retained_earnings": 976343.0,
+   "quarter": "26Q2",
+   "name": "海華"
+  },
+  "3701": {
+   "retained_earnings": 647530.0,
+   "quarter": "26Q2",
+   "name": "大眾控"
+  },
+  "3702": {
+   "retained_earnings": 52995484.0,
+   "quarter": "26Q2",
+   "name": "大聯大"
+  },
+  "3703": {
+   "retained_earnings": 10664920.0,
+   "quarter": "26Q2",
+   "name": "欣陸"
+  },
+  "3704": {
+   "retained_earnings": 4739833.0,
+   "quarter": "26Q2",
+   "name": "合勤控"
+  },
+  "3705": {
+   "retained_earnings": 3006807.0,
+   "quarter": "26Q2",
+   "name": "永信"
+  },
+  "3706": {
+   "retained_earnings": 29665367.0,
+   "quarter": "26Q2",
+   "name": "神達"
+  },
+  "3708": {
+   "retained_earnings": 5902385.0,
+   "quarter": "26Q2",
+   "name": "上緯投控"
+  },
+  "3711": {
+   "retained_earnings": 145934560.0,
+   "quarter": "26Q2",
+   "name": "日月光投控"
+  },
+  "3712": {
+   "retained_earnings": 527533.0,
+   "quarter": "26Q2",
+   "name": "永崴投控"
+  },
+  "3714": {
+   "retained_earnings": 1303955.0,
+   "quarter": "26Q2",
+   "name": "富采"
+  },
+  "3715": {
+   "retained_earnings": 1603635.0,
+   "quarter": "26Q2",
+   "name": "定穎投控"
+  },
+  "3716": {
+   "retained_earnings": 542660.0,
+   "quarter": "26Q2",
+   "name": "中化控股"
+  },
+  "3717": {
+   "retained_earnings": 304893.0,
+   "quarter": "26Q2",
+   "name": "聯嘉投控"
+  },
+  "4104": {
+   "retained_earnings": 3464065.0,
+   "quarter": "26Q2",
+   "name": "佳醫"
+  },
+  "4106": {
+   "retained_earnings": 1221162.0,
+   "quarter": "26Q2",
+   "name": "雃博"
+  },
+  "4108": {
+   "retained_earnings": -303672.0,
+   "quarter": "26Q2",
+   "name": "懷特"
+  },
+  "4119": {
+   "retained_earnings": 1885478.0,
+   "quarter": "26Q2",
+   "name": "旭富"
+  },
+  "4133": {
+   "retained_earnings": 197579.0,
+   "quarter": "26Q2",
+   "name": "亞諾法"
+  },
+  "4142": {
+   "retained_earnings": -199996.0,
+   "quarter": "26Q2",
+   "name": "國光生"
+  },
+  "4155": {
+   "retained_earnings": 323771.0,
+   "quarter": "26Q2",
+   "name": "訊映"
+  },
+  "4164": {
+   "retained_earnings": 1105268.0,
+   "quarter": "26Q2",
+   "name": "承業醫"
+  },
+  "4169": {
+   "retained_earnings": -4445.0,
+   "quarter": "26Q2",
+   "name": "泰宗"
+  },
+  "4195": {
+   "retained_earnings": -222657.0,
+   "quarter": "26Q2",
+   "name": "基米-創"
+  },
+  "4306": {
+   "retained_earnings": 3634023.0,
+   "quarter": "26Q2",
+   "name": "炎洲"
+  },
+  "4414": {
+   "retained_earnings": -68679.0,
+   "quarter": "26Q2",
+   "name": "如興"
+  },
+  "4426": {
+   "retained_earnings": -14506.0,
+   "quarter": "26Q2",
+   "name": "利勤"
+  },
+  "4438": {
+   "retained_earnings": 4026173.0,
+   "quarter": "26Q2",
+   "name": "廣越"
+  },
+  "4439": {
+   "retained_earnings": 1389531.0,
+   "quarter": "26Q2",
+   "name": "冠星-KY"
+  },
+  "4440": {
+   "retained_earnings": 372177.0,
+   "quarter": "26Q2",
+   "name": "宜新實業"
+  },
+  "4441": {
+   "retained_earnings": 3744576.0,
+   "quarter": "26Q2",
+   "name": "振大環球"
+  },
+  "4526": {
+   "retained_earnings": 600327.0,
+   "quarter": "26Q2",
+   "name": "東台"
+  },
+  "4532": {
+   "retained_earnings": 4837293.0,
+   "quarter": "26Q2",
+   "name": "瑞智"
+  },
+  "4536": {
+   "retained_earnings": 7023820.0,
+   "quarter": "26Q2",
+   "name": "拓凱"
+  },
+  "4540": {
+   "retained_earnings": 28786.0,
+   "quarter": "26Q2",
+   "name": "全球傳動"
+  },
+  "4545": {
+   "retained_earnings": 522626.0,
+   "quarter": "26Q2",
+   "name": "銘鈺"
+  },
+  "4551": {
+   "retained_earnings": 4267340.0,
+   "quarter": "26Q2",
+   "name": "智伸科"
+  },
+  "4555": {
+   "retained_earnings": 1527958.0,
+   "quarter": "26Q2",
+   "name": "氣立"
+  },
+  "4562": {
+   "retained_earnings": -338976.0,
+   "quarter": "26Q2",
+   "name": "穎漢"
+  },
+  "4564": {
+   "retained_earnings": -160440.0,
+   "quarter": "26Q2",
+   "name": "元翎"
+  },
+  "4566": {
+   "retained_earnings": 1067821.0,
+   "quarter": "26Q2",
+   "name": "時碩工業"
+  },
+  "4572": {
+   "retained_earnings": 1389046.0,
+   "quarter": "26Q2",
+   "name": "駐龍"
+  },
+  "4576": {
+   "retained_earnings": 1416323.0,
+   "quarter": "26Q2",
+   "name": "大銀微系統"
+  },
+  "4582": {
+   "retained_earnings": 483898.0,
+   "quarter": "26Q2",
+   "name": "聚恆-創"
+  },
+  "4583": {
+   "retained_earnings": 8408745.0,
+   "quarter": "26Q2",
+   "name": "台灣精銳"
+  },
+  "4585": {
+   "retained_earnings": 482913.0,
+   "quarter": "26Q2",
+   "name": "達明"
+  },
+  "4588": {
+   "retained_earnings": 155951.0,
+   "quarter": "26Q2",
+   "name": "玖鼎電力"
+  },
+  "4590": {
+   "retained_earnings": 502869.0,
+   "quarter": "26Q2",
+   "name": "富田-創"
+  },
+  "4720": {
+   "retained_earnings": 393361.0,
+   "quarter": "26Q2",
+   "name": "德淵"
+  },
+  "4722": {
+   "retained_earnings": 1674335.0,
+   "quarter": "26Q2",
+   "name": "國精化"
+  },
+  "4736": {
+   "retained_earnings": 8087769.0,
+   "quarter": "26Q2",
+   "name": "泰博"
+  },
+  "4737": {
+   "retained_earnings": -133362.0,
+   "quarter": "26Q2",
+   "name": "華廣"
+  },
+  "4739": {
+   "retained_earnings": 1430237.0,
+   "quarter": "26Q2",
+   "name": "康普"
+  },
+  "4746": {
+   "retained_earnings": 2688109.0,
+   "quarter": "26Q2",
+   "name": "台耀"
+  },
+  "4755": {
+   "retained_earnings": 3926604.0,
+   "quarter": "26Q2",
+   "name": "三福化"
+  },
+  "4764": {
+   "retained_earnings": 1254014.0,
+   "quarter": "26Q2",
+   "name": "雙鍵"
+  },
+  "4766": {
+   "retained_earnings": 9355006.0,
+   "quarter": "26Q2",
+   "name": "南寶"
+  },
+  "4770": {
+   "retained_earnings": 5293548.0,
+   "quarter": "26Q2",
+   "name": "上品"
+  },
+  "4771": {
+   "retained_earnings": 1601493.0,
+   "quarter": "26Q2",
+   "name": "望隼"
+  },
+  "4904": {
+   "retained_earnings": 31428521.0,
+   "quarter": "26Q2",
+   "name": "遠傳"
+  },
+  "4906": {
+   "retained_earnings": 1711543.0,
+   "quarter": "26Q2",
+   "name": "正文"
+  },
+  "4915": {
+   "retained_earnings": 11732206.0,
+   "quarter": "26Q2",
+   "name": "致伸"
+  },
+  "4916": {
+   "retained_earnings": 1138965.0,
+   "quarter": "26Q2",
+   "name": "事欣科"
+  },
+  "4919": {
+   "retained_earnings": 3183456.0,
+   "quarter": "26Q2",
+   "name": "新唐"
+  },
+  "4930": {
+   "retained_earnings": 745701.0,
+   "quarter": "26Q2",
+   "name": "燦星網"
+  },
+  "4934": {
+   "retained_earnings": -345258.0,
+   "quarter": "26Q2",
+   "name": "太極"
+  },
+  "4938": {
+   "retained_earnings": 91059389.0,
+   "quarter": "26Q2",
+   "name": "和碩"
+  },
+  "4942": {
+   "retained_earnings": 5040411.0,
+   "quarter": "26Q2",
+   "name": "嘉彰"
+  },
+  "4949": {
+   "retained_earnings": 497536.0,
+   "quarter": "26Q2",
+   "name": "有成精密"
+  },
+  "4952": {
+   "retained_earnings": 991413.0,
+   "quarter": "26Q2",
+   "name": "凌通"
+  },
+  "4956": {
+   "retained_earnings": 256357.0,
+   "quarter": "26Q2",
+   "name": "光鋐"
+  },
+  "4958": {
+   "retained_earnings": 61885417.0,
+   "quarter": "26Q2",
+   "name": "臻鼎-KY"
+  },
+  "4960": {
+   "retained_earnings": 1212831.0,
+   "quarter": "26Q2",
+   "name": "誠美材"
+  },
+  "4961": {
+   "retained_earnings": 7473374.0,
+   "quarter": "26Q2",
+   "name": "天鈺"
+  },
+  "4967": {
+   "retained_earnings": 6396481.0,
+   "quarter": "26Q2",
+   "name": "十銓"
+  },
+  "4968": {
+   "retained_earnings": 870753.0,
+   "quarter": "26Q2",
+   "name": "立積"
+  },
+  "4976": {
+   "retained_earnings": -222806.0,
+   "quarter": "26Q2",
+   "name": "佳凌"
+  },
+  "4989": {
+   "retained_earnings": -408392.0,
+   "quarter": "26Q2",
+   "name": "榮科"
+  },
+  "4994": {
+   "retained_earnings": 169894.0,
+   "quarter": "26Q2",
+   "name": "傳奇"
+  },
+  "4999": {
+   "retained_earnings": 1973912.0,
+   "quarter": "26Q2",
+   "name": "鑫禾"
+  },
+  "5007": {
+   "retained_earnings": 3556634.0,
+   "quarter": "26Q2",
+   "name": "三星"
+  },
+  "5203": {
+   "retained_earnings": 1509275.0,
+   "quarter": "26Q2",
+   "name": "訊連"
+  },
+  "5222": {
+   "retained_earnings": 508830.0,
+   "quarter": "26Q2",
+   "name": "全訊"
+  },
+  "5225": {
+   "retained_earnings": 1096009.0,
+   "quarter": "26Q2",
+   "name": "東科-KY"
+  },
+  "5234": {
+   "retained_earnings": 2246713.0,
+   "quarter": "26Q2",
+   "name": "達興材料"
+  },
+  "5236": {
+   "retained_earnings": 758115.0,
+   "quarter": "26Q2",
+   "name": "凌陽創新"
+  },
+  "5244": {
+   "retained_earnings": 612909.0,
+   "quarter": "26Q2",
+   "name": "弘凱"
+  },
+  "5258": {
+   "retained_earnings": 2573613.0,
+   "quarter": "26Q2",
+   "name": "虹堡"
+  },
+  "5269": {
+   "retained_earnings": 13603805.0,
+   "quarter": "26Q2",
+   "name": "祥碩"
+  },
+  "5283": {
+   "retained_earnings": 3273689.0,
+   "quarter": "26Q2",
+   "name": "禾聯碩"
+  },
+  "5285": {
+   "retained_earnings": 1761745.0,
+   "quarter": "26Q2",
+   "name": "界霖"
+  },
+  "5288": {
+   "retained_earnings": 4667919.0,
+   "quarter": "26Q2",
+   "name": "豐祥-KY"
+  },
+  "5292": {
+   "retained_earnings": 1125211.0,
+   "quarter": "26Q2",
+   "name": "華懋"
+  },
+  "5306": {
+   "retained_earnings": 6506615.0,
+   "quarter": "26Q2",
+   "name": "桂盟"
+  },
+  "5388": {
+   "retained_earnings": 7307539.0,
+   "quarter": "26Q2",
+   "name": "中磊"
+  },
+  "5434": {
+   "retained_earnings": 13930831.0,
+   "quarter": "26Q2",
+   "name": "崇越"
+  },
+  "5469": {
+   "retained_earnings": 21620217.0,
+   "quarter": "26Q2",
+   "name": "瀚宇博"
+  },
+  "5471": {
+   "retained_earnings": 1794413.0,
+   "quarter": "26Q2",
+   "name": "松翰"
+  },
+  "5484": {
+   "retained_earnings": -196584.0,
+   "quarter": "26Q2",
+   "name": "慧友"
+  },
+  "5515": {
+   "retained_earnings": 3492820.0,
+   "quarter": "26Q2",
+   "name": "建國"
+  },
+  "5519": {
+   "retained_earnings": 3305822.0,
+   "quarter": "26Q2",
+   "name": "隆大"
+  },
+  "5521": {
+   "retained_earnings": 885348.0,
+   "quarter": "26Q2",
+   "name": "工信"
+  },
+  "5522": {
+   "retained_earnings": 30885031.0,
+   "quarter": "26Q2",
+   "name": "遠雄"
+  },
+  "5525": {
+   "retained_earnings": 2417128.0,
+   "quarter": "26Q2",
+   "name": "順天"
+  },
+  "5531": {
+   "retained_earnings": 322885.0,
+   "quarter": "26Q2",
+   "name": "鄉林"
+  },
+  "5533": {
+   "retained_earnings": 6641785.0,
+   "quarter": "26Q2",
+   "name": "皇鼎"
+  },
+  "5534": {
+   "retained_earnings": 15236581.0,
+   "quarter": "26Q2",
+   "name": "長虹"
+  },
+  "5607": {
+   "retained_earnings": 3133946.0,
+   "quarter": "26Q2",
+   "name": "遠雄港"
+  },
+  "5608": {
+   "retained_earnings": 2127750.0,
+   "quarter": "26Q2",
+   "name": "四維航"
+  },
+  "5706": {
+   "retained_earnings": 544910.0,
+   "quarter": "26Q2",
+   "name": "鳳凰"
+  },
+  "6108": {
+   "retained_earnings": 1266691.0,
+   "quarter": "26Q2",
+   "name": "競國"
+  },
+  "6112": {
+   "retained_earnings": 1181386.0,
+   "quarter": "26Q2",
+   "name": "邁達特"
+  },
+  "6115": {
+   "retained_earnings": 2327547.0,
+   "quarter": "26Q2",
+   "name": "鎰勝"
+  },
+  "6116": {
+   "retained_earnings": 2356493.0,
+   "quarter": "26Q2",
+   "name": "彩晶"
+  },
+  "6117": {
+   "retained_earnings": 790202.0,
+   "quarter": "26Q2",
+   "name": "迎廣"
+  },
+  "6120": {
+   "retained_earnings": 1691352.0,
+   "quarter": "26Q2",
+   "name": "達運"
+  },
+  "6128": {
+   "retained_earnings": 200240.0,
+   "quarter": "26Q2",
+   "name": "上福"
+  },
+  "6133": {
+   "retained_earnings": 302336.0,
+   "quarter": "26Q2",
+   "name": "金橋"
+  },
+  "6136": {
+   "retained_earnings": 407886.0,
+   "quarter": "26Q2",
+   "name": "富爾特"
+  },
+  "6139": {
+   "retained_earnings": 13034885.0,
+   "quarter": "26Q2",
+   "name": "亞翔"
+  },
+  "6141": {
+   "retained_earnings": -956812.0,
+   "quarter": "26Q2",
+   "name": "柏承"
+  },
+  "6142": {
+   "retained_earnings": -359609.0,
+   "quarter": "26Q2",
+   "name": "友勁"
+  },
+  "6152": {
+   "retained_earnings": -358738.0,
+   "quarter": "26Q2",
+   "name": "百一"
+  },
+  "6153": {
+   "retained_earnings": -541787.0,
+   "quarter": "26Q2",
+   "name": "嘉聯益"
+  },
+  "6155": {
+   "retained_earnings": 413357.0,
+   "quarter": "26Q2",
+   "name": "鈞寶"
+  },
+  "6164": {
+   "retained_earnings": 212378.0,
+   "quarter": "26Q2",
+   "name": "華興"
+  },
+  "6165": {
+   "retained_earnings": 230437.0,
+   "quarter": "26Q2",
+   "name": "浪凡"
+  },
+  "6166": {
+   "retained_earnings": 2663593.0,
+   "quarter": "26Q2",
+   "name": "凌華"
+  },
+  "6168": {
+   "retained_earnings": 281972.0,
+   "quarter": "26Q2",
+   "name": "宏齊"
+  },
+  "6176": {
+   "retained_earnings": 29425066.0,
+   "quarter": "26Q2",
+   "name": "瑞儀"
+  },
+  "6177": {
+   "retained_earnings": 5673947.0,
+   "quarter": "26Q2",
+   "name": "達麗"
+  },
+  "6183": {
+   "retained_earnings": 1220154.0,
+   "quarter": "26Q2",
+   "name": "關貿"
+  },
+  "6184": {
+   "retained_earnings": 951758.0,
+   "quarter": "26Q2",
+   "name": "大豐電"
+  },
+  "6189": {
+   "retained_earnings": 1948098.0,
+   "quarter": "26Q2",
+   "name": "豐藝"
+  },
+  "6191": {
+   "retained_earnings": 13373788.0,
+   "quarter": "26Q2",
+   "name": "精成科"
+  },
+  "6192": {
+   "retained_earnings": 6479366.0,
+   "quarter": "26Q2",
+   "name": "巨路"
+  },
+  "6196": {
+   "retained_earnings": 11002972.0,
+   "quarter": "26Q2",
+   "name": "帆宣"
+  },
+  "6197": {
+   "retained_earnings": 3130692.0,
+   "quarter": "26Q2",
+   "name": "佳必琪"
+  },
+  "6201": {
+   "retained_earnings": 1523777.0,
+   "quarter": "26Q2",
+   "name": "亞弘電"
+  },
+  "6202": {
+   "retained_earnings": 1477260.0,
+   "quarter": "26Q2",
+   "name": "盛群"
+  },
+  "6205": {
+   "retained_earnings": 1303648.0,
+   "quarter": "26Q2",
+   "name": "詮欣"
+  },
+  "6206": {
+   "retained_earnings": 3345000.0,
+   "quarter": "26Q2",
+   "name": "飛捷"
+  },
+  "6209": {
+   "retained_earnings": 776707.0,
+   "quarter": "26Q2",
+   "name": "今國光"
+  },
+  "6213": {
+   "retained_earnings": 8793517.0,
+   "quarter": "26Q2",
+   "name": "聯茂"
+  },
+  "6214": {
+   "retained_earnings": 7292903.0,
+   "quarter": "26Q2",
+   "name": "精誠"
+  },
+  "6215": {
+   "retained_earnings": 728573.0,
+   "quarter": "26Q2",
+   "name": "和椿"
+  },
+  "6216": {
+   "retained_earnings": 403915.0,
+   "quarter": "26Q2",
+   "name": "居易"
+  },
+  "6224": {
+   "retained_earnings": 1136371.0,
+   "quarter": "26Q2",
+   "name": "聚鼎"
+  },
+  "6225": {
+   "retained_earnings": -188119.0,
+   "quarter": "26Q2",
+   "name": "天瀚"
+  },
+  "6226": {
+   "retained_earnings": -20527.0,
+   "quarter": "26Q2",
+   "name": "光鼎"
+  },
+  "6230": {
+   "retained_earnings": 4207301.0,
+   "quarter": "26Q2",
+   "name": "尼得科超眾"
+  },
+  "6235": {
+   "retained_earnings": 2169710.0,
+   "quarter": "26Q2",
+   "name": "華孚"
+  },
+  "6239": {
+   "retained_earnings": 50607942.0,
+   "quarter": "26Q2",
+   "name": "力成"
+  },
+  "6243": {
+   "retained_earnings": -10127.0,
+   "quarter": "26Q2",
+   "name": "迅杰"
+  },
+  "6257": {
+   "retained_earnings": 15342962.0,
+   "quarter": "26Q2",
+   "name": "矽格"
+  },
+  "6269": {
+   "retained_earnings": 16208619.0,
+   "quarter": "26Q2",
+   "name": "台郡"
+  },
+  "6271": {
+   "retained_earnings": 10394569.0,
+   "quarter": "26Q2",
+   "name": "同欣電"
+  },
+  "6272": {
+   "retained_earnings": 533868.0,
+   "quarter": "26Q2",
+   "name": "驊陞"
+  },
+  "6277": {
+   "retained_earnings": 3454965.0,
+   "quarter": "26Q2",
+   "name": "宏正"
+  },
+  "6278": {
+   "retained_earnings": 17193826.0,
+   "quarter": "26Q2",
+   "name": "台表科"
+  },
+  "6281": {
+   "retained_earnings": 1358403.0,
+   "quarter": "26Q2",
+   "name": "全國電"
+  },
+  "6282": {
+   "retained_earnings": 4083771.0,
+   "quarter": "26Q2",
+   "name": "康舒"
+  },
+  "6283": {
+   "retained_earnings": -325619.0,
+   "quarter": "26Q2",
+   "name": "淳安"
+  },
+  "6285": {
+   "retained_earnings": 15131554.0,
+   "quarter": "26Q2",
+   "name": "啟碁"
+  },
+  "6405": {
+   "retained_earnings": 1232637.0,
+   "quarter": "26Q2",
+   "name": "悅城"
+  },
+  "6409": {
+   "retained_earnings": 5447328.0,
+   "quarter": "26Q2",
+   "name": "旭隼"
+  },
+  "6412": {
+   "retained_earnings": 8312173.0,
+   "quarter": "26Q2",
+   "name": "群電"
+  },
+  "6414": {
+   "retained_earnings": 9069644.0,
+   "quarter": "26Q2",
+   "name": "樺漢"
+  },
+  "6416": {
+   "retained_earnings": 1507297.0,
+   "quarter": "26Q2",
+   "name": "瑞祺電通"
+  },
+  "6426": {
+   "retained_earnings": 139446.0,
+   "quarter": "26Q2",
+   "name": "統新"
+  },
+  "6438": {
+   "retained_earnings": 1944426.0,
+   "quarter": "26Q2",
+   "name": "迅得"
+  },
+  "6442": {
+   "retained_earnings": 3888807.0,
+   "quarter": "26Q2",
+   "name": "光聖"
+  },
+  "6443": {
+   "retained_earnings": -2120367.0,
+   "quarter": "26Q2",
+   "name": "元晶"
+  },
+  "6446": {
+   "retained_earnings": 10959079.0,
+   "quarter": "26Q2",
+   "name": "藥華藥"
+  },
+  "6449": {
+   "retained_earnings": 2081561.0,
+   "quarter": "26Q2",
+   "name": "鈺邦"
+  },
+  "6456": {
+   "retained_earnings": 18116305.0,
+   "quarter": "26Q2",
+   "name": "GIS-KY"
+  },
+  "6464": {
+   "retained_earnings": 3576202.0,
+   "quarter": "26Q2",
+   "name": "台數科"
+  },
+  "6472": {
+   "retained_earnings": 7652392.0,
+   "quarter": "26Q2",
+   "name": "保瑞"
+  },
+  "6477": {
+   "retained_earnings": 622817.0,
+   "quarter": "26Q2",
+   "name": "安集"
+  },
+  "6491": {
+   "retained_earnings": 6943188.0,
+   "quarter": "26Q2",
+   "name": "晶碩"
+  },
+  "6504": {
+   "retained_earnings": 2509989.0,
+   "quarter": "26Q2",
+   "name": "南六"
+  },
+  "6505": {
+   "retained_earnings": 210576824.0,
+   "quarter": "26Q2",
+   "name": "台塑化"
+  },
+  "6515": {
+   "retained_earnings": 3412462.0,
+   "quarter": "26Q2",
+   "name": "穎崴"
+  },
+  "6525": {
+   "retained_earnings": 2773250.0,
+   "quarter": "26Q2",
+   "name": "捷敏-KY"
+  },
+  "6526": {
+   "retained_earnings": 7860902.0,
+   "quarter": "26Q2",
+   "name": "達發"
+  },
+  "6531": {
+   "retained_earnings": 5057235.0,
+   "quarter": "26Q2",
+   "name": "愛普*"
+  },
+  "6533": {
+   "retained_earnings": -173031.0,
+   "quarter": "26Q2",
+   "name": "晶心科"
+  },
+  "6534": {
+   "retained_earnings": 1065905.0,
+   "quarter": "26Q2",
+   "name": "正瀚-創"
+  },
+  "6552": {
+   "retained_earnings": -36245.0,
+   "quarter": "26Q2",
+   "name": "易華電"
+  },
+  "6558": {
+   "retained_earnings": 87887.0,
+   "quarter": "26Q2",
+   "name": "興能高"
+  },
+  "6579": {
+   "retained_earnings": 1817117.0,
+   "quarter": "26Q2",
+   "name": "研揚"
+  },
+  "6581": {
+   "retained_earnings": 2271280.0,
+   "quarter": "26Q2",
+   "name": "鋼聯"
+  },
+  "6582": {
+   "retained_earnings": 3672677.0,
+   "quarter": "26Q2",
+   "name": "申豐"
+  },
+  "6585": {
+   "retained_earnings": 2215761.0,
+   "quarter": "26Q2",
+   "name": "鼎基"
+  },
+  "6589": {
+   "retained_earnings": -335758.0,
+   "quarter": "26Q2",
+   "name": "台康生技"
+  },
+  "6591": {
+   "retained_earnings": 624457.0,
+   "quarter": "26Q2",
+   "name": "動力-KY"
+  },
+  "6592": {
+   "retained_earnings": 13475952.0,
+   "quarter": "26Q2",
+   "name": "和潤企業"
+  },
+  "6605": {
+   "retained_earnings": 16089099.0,
+   "quarter": "26Q2",
+   "name": "帝寶"
+  },
+  "6606": {
+   "retained_earnings": 412739.0,
+   "quarter": "26Q2",
+   "name": "建德工業"
+  },
+  "6614": {
+   "retained_earnings": 391286.0,
+   "quarter": "26Q2",
+   "name": "資拓宏宇"
+  },
+  "6625": {
+   "retained_earnings": 619942.0,
+   "quarter": "26Q2",
+   "name": "必應"
+  },
+  "6645": {
+   "retained_earnings": -203790.0,
+   "quarter": "26Q2",
+   "name": "金萬林-創"
+  },
+  "6655": {
+   "retained_earnings": 676459.0,
+   "quarter": "26Q2",
+   "name": "科定"
+  },
+  "6657": {
+   "retained_earnings": -194238.0,
+   "quarter": "26Q2",
+   "name": "華安"
+  },
+  "6658": {
+   "retained_earnings": 425036.0,
+   "quarter": "26Q2",
+   "name": "聯策"
+  },
+  "6668": {
+   "retained_earnings": -89339.0,
+   "quarter": "26Q2",
+   "name": "中揚光"
+  },
+  "6669": {
+   "retained_earnings": 81510574.0,
+   "quarter": "26Q2",
+   "name": "緯穎"
+  },
+  "6670": {
+   "retained_earnings": 10292755.0,
+   "quarter": "26Q2",
+   "name": "復盛應用"
+  },
+  "6672": {
+   "retained_earnings": 2121575.0,
+   "quarter": "26Q2",
+   "name": "騰輝電子-KY"
+  },
+  "6674": {
+   "retained_earnings": -132969.0,
+   "quarter": "26Q2",
+   "name": "鋐寶科技"
+  },
+  "6689": {
+   "retained_earnings": 271302.0,
+   "quarter": "26Q2",
+   "name": "伊雲谷"
+  },
+  "6691": {
+   "retained_earnings": 4180431.0,
+   "quarter": "26Q2",
+   "name": "洋基工程"
+  },
+  "6695": {
+   "retained_earnings": -585939.0,
+   "quarter": "26Q2",
+   "name": "芯鼎"
+  },
+  "6698": {
+   "retained_earnings": -80344.0,
+   "quarter": "26Q2",
+   "name": "旭暉應材"
+  },
+  "6706": {
+   "retained_earnings": 824668.0,
+   "quarter": "26Q2",
+   "name": "惠特"
+  },
+  "6715": {
+   "retained_earnings": 932149.0,
+   "quarter": "26Q2",
+   "name": "嘉基"
+  },
+  "6719": {
+   "retained_earnings": 2515594.0,
+   "quarter": "26Q2",
+   "name": "力智"
+  },
+  "6722": {
+   "retained_earnings": 571471.0,
+   "quarter": "26Q2",
+   "name": "輝創"
+  },
+  "6742": {
+   "retained_earnings": -61624.0,
+   "quarter": "26Q2",
+   "name": "澤米"
+  },
+  "6743": {
+   "retained_earnings": 813984.0,
+   "quarter": "26Q2",
+   "name": "安普新"
+  },
+  "6753": {
+   "retained_earnings": 2729501.0,
+   "quarter": "26Q2",
+   "name": "龍德造船"
+  },
+  "6754": {
+   "retained_earnings": 879694.0,
+   "quarter": "26Q2",
+   "name": "匯僑設計"
+  },
+  "6756": {
+   "retained_earnings": 603706.0,
+   "quarter": "26Q2",
+   "name": "威鋒電子"
+  },
+  "6757": {
+   "retained_earnings": 3287178.0,
+   "quarter": "26Q2",
+   "name": "台灣虎航"
+  },
+  "6770": {
+   "retained_earnings": 29318765.0,
+   "quarter": "26Q2",
+   "name": "力積電"
+  },
+  "6771": {
+   "retained_earnings": 237040.0,
+   "quarter": "26Q2",
+   "name": "平和環保-創"
+  },
+  "6776": {
+   "retained_earnings": 840640.0,
+   "quarter": "26Q2",
+   "name": "展碁國際"
+  },
+  "6782": {
+   "retained_earnings": 2191175.0,
+   "quarter": "26Q2",
+   "name": "視陽"
+  },
+  "6789": {
+   "retained_earnings": 7880257.0,
+   "quarter": "26Q2",
+   "name": "采鈺"
+  },
+  "6790": {
+   "retained_earnings": 1659898.0,
+   "quarter": "26Q2",
+   "name": "永豐實"
+  },
+  "6792": {
+   "retained_earnings": 548094.0,
+   "quarter": "26Q2",
+   "name": "詠業"
+  },
+  "6794": {
+   "retained_earnings": -768326.0,
+   "quarter": "26Q2",
+   "name": "向榮生技"
+  },
+  "6796": {
+   "retained_earnings": 37870.0,
+   "quarter": "26Q2",
+   "name": "晉弘"
+  },
+  "6799": {
+   "retained_earnings": 657640.0,
+   "quarter": "26Q2",
+   "name": "來頡"
+  },
+  "6805": {
+   "retained_earnings": 4971062.0,
+   "quarter": "26Q2",
+   "name": "富世達"
+  },
+  "6830": {
+   "retained_earnings": 429363.0,
+   "quarter": "26Q2",
+   "name": "汎銓"
+  },
+  "6831": {
+   "retained_earnings": 411374.0,
+   "quarter": "26Q2",
+   "name": "邁科"
+  },
+  "6834": {
+   "retained_earnings": 239314.0,
+   "quarter": "26Q2",
+   "name": "天二科技"
+  },
+  "6835": {
+   "retained_earnings": 605971.0,
+   "quarter": "26Q2",
+   "name": "圓裕"
+  },
+  "6838": {
+   "retained_earnings": -2319400.0,
+   "quarter": "26Q2",
+   "name": "台新藥"
+  },
+  "6854": {
+   "retained_earnings": -6305954.0,
+   "quarter": "26Q2",
+   "name": "錼創科技-KY創"
+  },
+  "6861": {
+   "retained_earnings": 754509.0,
+   "quarter": "26Q2",
+   "name": "睿生光電"
+  },
+  "6863": {
+   "retained_earnings": 1072121.0,
+   "quarter": "26Q2",
+   "name": "永道-KY"
+  },
+  "6869": {
+   "retained_earnings": 298345.0,
+   "quarter": "26Q2",
+   "name": "雲豹能源"
+  },
+  "6873": {
+   "retained_earnings": 1139855.0,
+   "quarter": "26Q2",
+   "name": "泓德能源"
+  },
+  "6885": {
+   "retained_earnings": -803852.0,
+   "quarter": "26Q2",
+   "name": "全福生技"
+  },
+  "6901": {
+   "retained_earnings": 1889763.0,
+   "quarter": "26Q2",
+   "name": "鑽石投資"
+  },
+  "6902": {
+   "retained_earnings": 38098.0,
+   "quarter": "26Q2",
+   "name": "GOGOLOOK"
+  },
+  "6906": {
+   "retained_earnings": 76134.0,
+   "quarter": "26Q2",
+   "name": "現觀科"
+  },
+  "6908": {
+   "retained_earnings": 37972.0,
+   "quarter": "26Q2",
+   "name": "宏碁遊戲-創"
+  },
+  "6909": {
+   "retained_earnings": 119770.0,
+   "quarter": "26Q2",
+   "name": "創控"
+  },
+  "6914": {
+   "retained_earnings": 1169336.0,
+   "quarter": "26Q2",
+   "name": "阜爾運通"
+  },
+  "6916": {
+   "retained_earnings": 142006.0,
+   "quarter": "26Q2",
+   "name": "華凌"
+  },
+  "6918": {
+   "retained_earnings": 331654.0,
+   "quarter": "26Q2",
+   "name": "愛派司"
+  },
+  "6919": {
+   "retained_earnings": -250228.0,
+   "quarter": "26Q2",
+   "name": "康霈*"
+  },
+  "6921": {
+   "retained_earnings": -55020.0,
+   "quarter": "26Q2",
+   "name": "嘉雨思-創"
+  },
+  "6923": {
+   "retained_earnings": 482080.0,
+   "quarter": "26Q2",
+   "name": "中台"
+  },
+  "6928": {
+   "retained_earnings": 19583.0,
+   "quarter": "26Q2",
+   "name": "攸泰科技"
+  },
+  "6931": {
+   "retained_earnings": 243161.0,
+   "quarter": "26Q2",
+   "name": "青松健康"
+  },
+  "6934": {
+   "retained_earnings": -759551.0,
+   "quarter": "26Q2",
+   "name": "心誠鎂"
+  },
+  "6936": {
+   "retained_earnings": 414513.0,
+   "quarter": "26Q2",
+   "name": "永鴻生技"
+  },
+  "6937": {
+   "retained_earnings": 1212099.0,
+   "quarter": "26Q2",
+   "name": "天虹"
+  },
+  "6944": {
+   "retained_earnings": 4208218.0,
+   "quarter": "26Q2",
+   "name": "兆聯實業"
+  },
+  "6947": {
+   "retained_earnings": 550548.0,
+   "quarter": "26Q2",
+   "name": "台鎔科技"
+  },
+  "6949": {
+   "retained_earnings": -1796683.0,
+   "quarter": "26Q2",
+   "name": "沛爾生醫-創"
+  },
+  "6951": {
+   "retained_earnings": 236326.0,
+   "quarter": "26Q2",
+   "name": "青新-創"
+  },
+  "6952": {
+   "retained_earnings": 362491.0,
+   "quarter": "26Q2",
+   "name": "大武山"
+  },
+  "6955": {
+   "retained_earnings": 101802.0,
+   "quarter": "26Q2",
+   "name": "邦睿生技-創"
+  },
+  "6958": {
+   "retained_earnings": 185793.0,
+   "quarter": "26Q2",
+   "name": "日盛台駿"
+  },
+  "6962": {
+   "retained_earnings": 9399891.0,
+   "quarter": "26Q2",
+   "name": "奕力-KY"
+  },
+  "6969": {
+   "retained_earnings": -226771.0,
+   "quarter": "26Q2",
+   "name": "成信實業*-創"
+  },
+  "6988": {
+   "retained_earnings": -73058.0,
+   "quarter": "26Q2",
+   "name": "威力暘-創"
+  },
+  "6994": {
+   "retained_earnings": 289783.0,
+   "quarter": "26Q2",
+   "name": "富威電力"
+  },
+  "7610": {
+   "retained_earnings": 1617464.0,
+   "quarter": "26Q2",
+   "name": "聯友金屬-創"
+  },
+  "7631": {
+   "retained_earnings": 374967.0,
+   "quarter": "26Q2",
+   "name": "聚賢研發-創"
+  },
+  "7689": {
+   "retained_earnings": 800345.0,
+   "quarter": "26Q2",
+   "name": "大鵬科CLMX"
+  },
+  "7705": {
+   "retained_earnings": 305543.0,
+   "quarter": "26Q2",
+   "name": "三商餐飲"
+  },
+  "7711": {
+   "retained_earnings": 1678632.0,
+   "quarter": "26Q2",
+   "name": "永擎"
+  },
+  "7721": {
+   "retained_earnings": 97196.0,
+   "quarter": "26Q2",
+   "name": "微程式"
+  },
+  "7722": {
+   "retained_earnings": 1760889.0,
+   "quarter": "26Q2",
+   "name": "LINEPAY"
+  },
+  "7730": {
+   "retained_earnings": 341053.0,
+   "quarter": "26Q2",
+   "name": "暉盛-創"
+  },
+  "7732": {
+   "retained_earnings": 456264.0,
+   "quarter": "26Q2",
+   "name": "金興精密"
+  },
+  "7736": {
+   "retained_earnings": 2052154.0,
+   "quarter": "26Q2",
+   "name": "虎山"
+  },
+  "7740": {
+   "retained_earnings": 403280.0,
+   "quarter": "26Q2",
+   "name": "熙特爾-創"
+  },
+  "7750": {
+   "retained_earnings": 6785732.0,
+   "quarter": "26Q2",
+   "name": "新代"
+  },
+  "7760": {
+   "retained_earnings": 609015.0,
+   "quarter": "26Q2",
+   "name": "享溫馨"
+  },
+  "7765": {
+   "retained_earnings": 418610.0,
+   "quarter": "26Q2",
+   "name": "中華資安"
+  },
+  "7768": {
+   "retained_earnings": 296001.0,
+   "quarter": "26Q2",
+   "name": "頌勝科技"
+  },
+  "7769": {
+   "retained_earnings": 20113502.0,
+   "quarter": "26Q2",
+   "name": "鴻勁"
+  },
+  "7780": {
+   "retained_earnings": 204658.0,
+   "quarter": "26Q2",
+   "name": "大研生醫*"
+  },
+  "7786": {
+   "retained_earnings": 3820251.0,
+   "quarter": "26Q2",
+   "name": "東方風能"
+  },
+  "7788": {
+   "retained_earnings": 1797632.0,
+   "quarter": "26Q2",
+   "name": "松川精密"
+  },
+  "7791": {
+   "retained_earnings": 773004.0,
+   "quarter": "26Q2",
+   "name": "皇家可口"
+  },
+  "7795": {
+   "retained_earnings": 573515.0,
+   "quarter": "26Q2",
+   "name": "長廣"
+  },
+  "7799": {
+   "retained_earnings": -164997.0,
+   "quarter": "26Q2",
+   "name": "禾榮科"
+  },
+  "7803": {
+   "retained_earnings": -479439.0,
+   "quarter": "26Q2",
+   "name": "雲象科技-創"
+  },
+  "7818": {
+   "retained_earnings": 5146458.0,
+   "quarter": "26Q2",
+   "name": "溢泰實業"
+  },
+  "7821": {
+   "retained_earnings": 369671.0,
+   "quarter": "26Q2",
+   "name": "神數"
+  },
+  "7822": {
+   "retained_earnings": 733273.0,
+   "quarter": "26Q2",
+   "name": "倍利科"
+  },
+  "7835": {
+   "retained_earnings": -394381.0,
+   "quarter": "26Q2",
+   "name": "永悅健康-創"
+  },
+  "7855": {
+   "retained_earnings": 4250996.0,
+   "quarter": "26Q2",
+   "name": "和運租車"
+  },
+  "8011": {
+   "retained_earnings": 288148.0,
+   "quarter": "26Q2",
+   "name": "台通"
+  },
+  "8016": {
+   "retained_earnings": 8890645.0,
+   "quarter": "26Q2",
+   "name": "矽創"
+  },
+  "8021": {
+   "retained_earnings": 2537435.0,
+   "quarter": "26Q2",
+   "name": "尖點"
+  },
+  "8028": {
+   "retained_earnings": 1489908.0,
+   "quarter": "26Q2",
+   "name": "昇陽半導體"
+  },
+  "8033": {
+   "retained_earnings": -354305.0,
+   "quarter": "26Q2",
+   "name": "雷虎"
+  },
+  "8039": {
+   "retained_earnings": 5515958.0,
+   "quarter": "26Q2",
+   "name": "台虹"
+  },
+  "8045": {
+   "retained_earnings": 192600.0,
+   "quarter": "26Q2",
+   "name": "達運光電"
+  },
+  "8046": {
+   "retained_earnings": 24589472.0,
+   "quarter": "26Q2",
+   "name": "南電"
+  },
+  "8070": {
+   "retained_earnings": 5870054.0,
+   "quarter": "26Q2",
+   "name": "長華*"
+  },
+  "8072": {
+   "retained_earnings": 1452827.0,
+   "quarter": "26Q2",
+   "name": "陞泰"
+  },
+  "8081": {
+   "retained_earnings": 4799247.0,
+   "quarter": "26Q2",
+   "name": "致新"
+  },
+  "8101": {
+   "retained_earnings": -425323.0,
+   "quarter": "26Q2",
+   "name": "華冠"
+  },
+  "8103": {
+   "retained_earnings": 2122162.0,
+   "quarter": "26Q2",
+   "name": "瀚荃"
+  },
+  "8104": {
+   "retained_earnings": 439496.0,
+   "quarter": "26Q2",
+   "name": "錸寶"
+  },
+  "8110": {
+   "retained_earnings": 5880437.0,
+   "quarter": "26Q2",
+   "name": "華東"
+  },
+  "8112": {
+   "retained_earnings": 9359380.0,
+   "quarter": "26Q2",
+   "name": "至上"
+  },
+  "8114": {
+   "retained_earnings": 3742285.0,
+   "quarter": "26Q2",
+   "name": "振樺電"
+  },
+  "8131": {
+   "retained_earnings": 6395761.0,
+   "quarter": "26Q2",
+   "name": "福懋科"
+  },
+  "8150": {
+   "retained_earnings": 12461614.0,
+   "quarter": "26Q2",
+   "name": "南茂"
+  },
+  "8162": {
+   "retained_earnings": 477336.0,
+   "quarter": "26Q2",
+   "name": "微矽電子-創"
+  },
+  "8163": {
+   "retained_earnings": 3619396.0,
+   "quarter": "26Q2",
+   "name": "達方"
+  },
+  "8201": {
+   "retained_earnings": -222149.0,
+   "quarter": "26Q2",
+   "name": "無敵"
+  },
+  "8210": {
+   "retained_earnings": 9308133.0,
+   "quarter": "26Q2",
+   "name": "勤誠"
+  },
+  "8213": {
+   "retained_earnings": 10847459.0,
+   "quarter": "26Q2",
+   "name": "志超"
+  },
+  "8215": {
+   "retained_earnings": 1337690.0,
+   "quarter": "26Q2",
+   "name": "明基材"
+  },
+  "8222": {
+   "retained_earnings": 194096.0,
+   "quarter": "26Q2",
+   "name": "寶一"
+  },
+  "8249": {
+   "retained_earnings": 2149413.0,
+   "quarter": "26Q2",
+   "name": "菱光"
+  },
+  "8261": {
+   "retained_earnings": 1570274.0,
+   "quarter": "26Q2",
+   "name": "富鼎"
+  },
+  "8271": {
+   "retained_earnings": 6711081.0,
+   "quarter": "26Q2",
+   "name": "宇瞻"
+  },
+  "8341": {
+   "retained_earnings": 1336857.0,
+   "quarter": "26Q2",
+   "name": "日友"
+  },
+  "8367": {
+   "retained_earnings": 1560669.0,
+   "quarter": "26Q2",
+   "name": "建新國際"
+  },
+  "8374": {
+   "retained_earnings": 571111.0,
+   "quarter": "26Q2",
+   "name": "羅昇"
+  },
+  "8422": {
+   "retained_earnings": 4163204.0,
+   "quarter": "26Q2",
+   "name": "可寧衛*"
+  },
+  "8438": {
+   "retained_earnings": 684403.0,
+   "quarter": "26Q2",
+   "name": "昶昕"
+  },
+  "8443": {
+   "retained_earnings": -137854.0,
+   "quarter": "26Q2",
+   "name": "阿瘦"
+  },
+  "8454": {
+   "retained_earnings": 4122528.0,
+   "quarter": "26Q2",
+   "name": "富邦媒"
+  },
+  "8462": {
+   "retained_earnings": 688998.0,
+   "quarter": "26Q2",
+   "name": "柏文"
+  },
+  "8463": {
+   "retained_earnings": 455308.0,
+   "quarter": "26Q2",
+   "name": "潤泰材"
+  },
+  "8464": {
+   "retained_earnings": 20463417.0,
+   "quarter": "26Q2",
+   "name": "億豐"
+  },
+  "8473": {
+   "retained_earnings": 489055.0,
+   "quarter": "26Q2",
+   "name": "山林水"
+  },
+  "8476": {
+   "retained_earnings": 625959.0,
+   "quarter": "26Q2",
+   "name": "台境*"
+  },
+  "8478": {
+   "retained_earnings": 4569684.0,
+   "quarter": "26Q2",
+   "name": "東哥遊艇"
+  },
+  "8481": {
+   "retained_earnings": 865762.0,
+   "quarter": "26Q2",
+   "name": "政伸"
+  },
+  "8487": {
+   "retained_earnings": 149158.0,
+   "quarter": "26Q2",
+   "name": "愛爾達-創"
+  },
+  "8926": {
+   "retained_earnings": 6436598.0,
+   "quarter": "26Q2",
+   "name": "台汽電"
+  },
+  "8940": {
+   "retained_earnings": 23995.0,
+   "quarter": "26Q2",
+   "name": "新天地"
+  },
+  "8996": {
+   "retained_earnings": 2172160.0,
+   "quarter": "26Q2",
+   "name": "高力"
+  },
+  "9802": {
+   "retained_earnings": 5858342.0,
+   "quarter": "26Q2",
+   "name": "鈺齊-KY"
+  },
+  "9902": {
+   "retained_earnings": 269724.0,
+   "quarter": "26Q2",
+   "name": "台火"
+  },
+  "9904": {
+   "retained_earnings": 136796296.0,
+   "quarter": "26Q2",
+   "name": "寶成"
+  },
+  "9905": {
+   "retained_earnings": 4362803.0,
+   "quarter": "26Q2",
+   "name": "大華"
+  },
+  "9906": {
+   "retained_earnings": 391279.0,
+   "quarter": "26Q2",
+   "name": "欣巴巴"
+  },
+  "9907": {
+   "retained_earnings": 5286253.0,
+   "quarter": "26Q2",
+   "name": "統一實"
+  },
+  "9908": {
+   "retained_earnings": 5980338.0,
+   "quarter": "26Q2",
+   "name": "大台北"
+  },
+  "9910": {
+   "retained_earnings": 14416645.0,
+   "quarter": "26Q2",
+   "name": "豐泰"
+  },
+  "9911": {
+   "retained_earnings": 4035653.0,
+   "quarter": "26Q2",
+   "name": "櫻花"
+  },
+  "9912": {
+   "retained_earnings": -128226.0,
+   "quarter": "26Q2",
+   "name": "偉聯"
+  },
+  "9914": {
+   "retained_earnings": 14900350.0,
+   "quarter": "26Q2",
+   "name": "美利達"
+  },
+  "9917": {
+   "retained_earnings": 7033897.0,
+   "quarter": "26Q2",
+   "name": "中保科"
+  },
+  "9918": {
+   "retained_earnings": 1531305.0,
+   "quarter": "26Q2",
+   "name": "欣天然"
+  },
+  "9919": {
+   "retained_earnings": -211066.0,
+   "quarter": "26Q2",
+   "name": "康那香"
+  },
+  "9921": {
+   "retained_earnings": 25969991.0,
+   "quarter": "26Q2",
+   "name": "巨大"
+  },
+  "9924": {
+   "retained_earnings": 4814681.0,
+   "quarter": "26Q2",
+   "name": "福興"
+  },
+  "9925": {
+   "retained_earnings": 6037096.0,
+   "quarter": "26Q2",
+   "name": "新保"
+  },
+  "9926": {
+   "retained_earnings": 1649884.0,
+   "quarter": "26Q2",
+   "name": "新海"
+  },
+  "9927": {
+   "retained_earnings": 3580278.0,
+   "quarter": "26Q2",
+   "name": "泰銘"
+  },
+  "9928": {
+   "retained_earnings": 986961.0,
+   "quarter": "26Q2",
+   "name": "中視"
+  },
+  "9929": {
+   "retained_earnings": -25272.0,
+   "quarter": "26Q2",
+   "name": "秋雨"
+  },
+  "9930": {
+   "retained_earnings": 3654857.0,
+   "quarter": "26Q2",
+   "name": "中聯資源"
+  },
+  "9931": {
+   "retained_earnings": 1346188.0,
+   "quarter": "26Q2",
+   "name": "欣高"
+  },
+  "9933": {
+   "retained_earnings": 8617731.0,
+   "quarter": "26Q2",
+   "name": "中鼎"
+  },
+  "9934": {
+   "retained_earnings": 1420158.0,
+   "quarter": "26Q2",
+   "name": "成霖"
+  },
+  "9935": {
+   "retained_earnings": 889568.0,
+   "quarter": "26Q2",
+   "name": "慶豐富"
+  },
+  "9937": {
+   "retained_earnings": 2408350.0,
+   "quarter": "26Q2",
+   "name": "全國"
+  },
+  "9938": {
+   "retained_earnings": 9108383.0,
+   "quarter": "26Q2",
+   "name": "百和"
+  },
+  "9939": {
+   "retained_earnings": 12383419.0,
+   "quarter": "26Q2",
+   "name": "宏全"
+  },
+  "9940": {
+   "retained_earnings": 5848466.0,
+   "quarter": "26Q2",
+   "name": "信義"
+  },
+  "9941": {
+   "retained_earnings": 18929680.0,
+   "quarter": "26Q2",
+   "name": "裕融"
+  },
+  "9942": {
+   "retained_earnings": 3185015.0,
+   "quarter": "26Q2",
+   "name": "茂順"
+  },
+  "9943": {
+   "retained_earnings": 2505736.0,
+   "quarter": "26Q2",
+   "name": "好樂迪"
+  },
+  "9944": {
+   "retained_earnings": 2103037.0,
+   "quarter": "26Q2",
+   "name": "新麗"
+  },
+  "9945": {
+   "retained_earnings": 119493528.0,
+   "quarter": "26Q2",
+   "name": "潤泰新"
+  },
+  "9946": {
+   "retained_earnings": 3825495.0,
+   "quarter": "26Q2",
+   "name": "三發地產"
+  },
+  "9955": {
+   "retained_earnings": -667246.0,
+   "quarter": "26Q2",
+   "name": "佳龍"
+  },
+  "9958": {
+   "retained_earnings": 2328856.0,
+   "quarter": "26Q2",
+   "name": "世紀鋼"
+  },
+  "1240": {
+   "retained_earnings": 795286.0,
+   "quarter": "26Q2",
+   "name": "茂生農經"
+  },
+  "1259": {
+   "retained_earnings": 1064487.0,
+   "quarter": "26Q2",
+   "name": "安心"
+  },
+  "1264": {
+   "retained_earnings": 2470077.0,
+   "quarter": "26Q2",
+   "name": "德麥"
+  },
+  "1268": {
+   "retained_earnings": 837322.0,
+   "quarter": "26Q2",
+   "name": "漢來美食"
+  },
+  "1294": {
+   "retained_earnings": 167526.0,
+   "quarter": "26Q2",
+   "name": "漢田生技"
+  },
+  "1295": {
+   "retained_earnings": 544313.0,
+   "quarter": "26Q2",
+   "name": "生合"
+  },
+  "1336": {
+   "retained_earnings": 568976.0,
+   "quarter": "26Q2",
+   "name": "台翰"
+  },
+  "1565": {
+   "retained_earnings": 5378133.0,
+   "quarter": "26Q2",
+   "name": "精華"
+  },
+  "1569": {
+   "retained_earnings": -262910.0,
+   "quarter": "26Q2",
+   "name": "濱川"
+  },
+  "1570": {
+   "retained_earnings": 427118.0,
+   "quarter": "26Q2",
+   "name": "力肯"
+  },
+  "1580": {
+   "retained_earnings": 2394243.0,
+   "quarter": "26Q2",
+   "name": "新麥"
+  },
+  "1584": {
+   "retained_earnings": 520231.0,
+   "quarter": "26Q2",
+   "name": "精剛"
+  },
+  "1586": {
+   "retained_earnings": 339400.0,
+   "quarter": "26Q2",
+   "name": "和勤"
+  },
+  "1593": {
+   "retained_earnings": 436763.0,
+   "quarter": "26Q2",
+   "name": "祺驊"
+  },
+  "1595": {
+   "retained_earnings": 1328612.0,
+   "quarter": "26Q2",
+   "name": "川寶"
+  },
+  "1599": {
+   "retained_earnings": 796955.0,
+   "quarter": "26Q2",
+   "name": "宏佳騰"
+  },
+  "1742": {
+   "retained_earnings": 165721.0,
+   "quarter": "26Q2",
+   "name": "台蠟"
+  },
+  "1777": {
+   "retained_earnings": 1147254.0,
+   "quarter": "26Q2",
+   "name": "生泰"
+  },
+  "1780": {
+   "retained_earnings": 211017.0,
+   "quarter": "26Q2",
+   "name": "立弘"
+  },
+  "1781": {
+   "retained_earnings": -154501.0,
+   "quarter": "26Q2",
+   "name": "合世"
+  },
+  "1784": {
+   "retained_earnings": 89315.0,
+   "quarter": "26Q2",
+   "name": "訊聯"
+  },
+  "1785": {
+   "retained_earnings": 5967203.0,
+   "quarter": "26Q2",
+   "name": "光洋科"
+  },
+  "1788": {
+   "retained_earnings": 943997.0,
+   "quarter": "26Q2",
+   "name": "杏昌"
+  },
+  "1796": {
+   "retained_earnings": 76396.0,
+   "quarter": "26Q2",
+   "name": "金穎生技"
+  },
+  "1799": {
+   "retained_earnings": -607925.0,
+   "quarter": "26Q2",
+   "name": "易威"
+  },
+  "1813": {
+   "retained_earnings": 24814.0,
+   "quarter": "26Q2",
+   "name": "寶利徠"
+  },
+  "1815": {
+   "retained_earnings": 2020619.0,
+   "quarter": "26Q2",
+   "name": "富喬"
+  },
+  "2035": {
+   "retained_earnings": -1136528.0,
+   "quarter": "26Q2",
+   "name": "唐榮公司"
+  },
+  "2061": {
+   "retained_earnings": 61065.0,
+   "quarter": "26Q2",
+   "name": "風青"
+  },
+  "2063": {
+   "retained_earnings": 385616.0,
+   "quarter": "26Q2",
+   "name": "世鎧精密"
+  },
+  "2064": {
+   "retained_earnings": 151012.0,
+   "quarter": "26Q2",
+   "name": "晉椿"
+  },
+  "2065": {
+   "retained_earnings": 586854.0,
+   "quarter": "26Q2",
+   "name": "世豐"
+  },
+  "2066": {
+   "retained_earnings": 1233719.0,
+   "quarter": "26Q2",
+   "name": "世德"
+  },
+  "2067": {
+   "retained_earnings": -411095.0,
+   "quarter": "26Q2",
+   "name": "嘉鋼"
+  },
+  "2070": {
+   "retained_earnings": 647618.0,
+   "quarter": "26Q2",
+   "name": "精湛"
+  },
+  "2073": {
+   "retained_earnings": 66710.0,
+   "quarter": "26Q2",
+   "name": "雄順"
+  },
+  "2221": {
+   "retained_earnings": 601742.0,
+   "quarter": "26Q2",
+   "name": "大甲"
+  },
+  "2230": {
+   "retained_earnings": 150498.0,
+   "quarter": "26Q2",
+   "name": "泰茂"
+  },
+  "2235": {
+   "retained_earnings": 339513.0,
+   "quarter": "26Q2",
+   "name": "謚源"
+  },
+  "2596": {
+   "retained_earnings": 967737.0,
+   "quarter": "26Q2",
+   "name": "綠意"
+  },
+  "2640": {
+   "retained_earnings": 914610.0,
+   "quarter": "26Q2",
+   "name": "大車隊"
+  },
+  "2641": {
+   "retained_earnings": 2968815.0,
+   "quarter": "26Q2",
+   "name": "正德"
+  },
+  "2643": {
+   "retained_earnings": 1115632.0,
+   "quarter": "26Q2",
+   "name": "捷迅"
+  },
+  "2718": {
+   "retained_earnings": 4581967.0,
+   "quarter": "26Q2",
+   "name": "全心投控"
+  },
+  "2719": {
+   "retained_earnings": 38573.0,
+   "quarter": "26Q2",
+   "name": "燦星旅"
+  },
+  "2729": {
+   "retained_earnings": 605841.0,
+   "quarter": "26Q2",
+   "name": "瓦城"
+  },
+  "2732": {
+   "retained_earnings": 380497.0,
+   "quarter": "26Q2",
+   "name": "六角"
+  },
+  "2734": {
+   "retained_earnings": -196110.0,
+   "quarter": "26Q2",
+   "name": "易飛網"
+  },
+  "2736": {
+   "retained_earnings": -36331.0,
+   "quarter": "26Q2",
+   "name": "富野"
+  },
+  "2740": {
+   "retained_earnings": -96088.0,
+   "quarter": "26Q2",
+   "name": "華軒"
+  },
+  "2743": {
+   "retained_earnings": 453123.0,
+   "quarter": "26Q2",
+   "name": "山富"
+  },
+  "2745": {
+   "retained_earnings": 456015.0,
+   "quarter": "26Q2",
+   "name": "五福"
+  },
+  "2751": {
+   "retained_earnings": 71046.0,
+   "quarter": "26Q2",
+   "name": "王座"
+  },
+  "2752": {
+   "retained_earnings": 495960.0,
+   "quarter": "26Q2",
+   "name": "豆府"
+  },
+  "2754": {
+   "retained_earnings": 772855.0,
+   "quarter": "26Q2",
+   "name": "亞洲藏壽司"
+  },
+  "2755": {
+   "retained_earnings": 360409.0,
+   "quarter": "26Q2",
+   "name": "揚秦"
+  },
+  "2756": {
+   "retained_earnings": 135837.0,
+   "quarter": "26Q2",
+   "name": "聯發國際"
+  },
+  "2916": {
+   "retained_earnings": 431194.0,
+   "quarter": "26Q2",
+   "name": "滿心"
+  },
+  "2924": {
+   "retained_earnings": -274951.0,
+   "quarter": "26Q2",
+   "name": "宏太-KY"
+  },
+  "2926": {
+   "retained_earnings": 19123.0,
+   "quarter": "26Q2",
+   "name": "誠品生活"
+  },
+  "2937": {
+   "retained_earnings": 482569.0,
+   "quarter": "26Q2",
+   "name": "集雅社"
+  },
+  "2941": {
+   "retained_earnings": 41263.0,
+   "quarter": "26Q2",
+   "name": "米斯特"
+  },
+  "2947": {
+   "retained_earnings": 283680.0,
+   "quarter": "26Q2",
+   "name": "振宇五金"
+  },
+  "2948": {
+   "retained_earnings": 257135.0,
+   "quarter": "26Q2",
+   "name": "寶陞"
+  },
+  "2949": {
+   "retained_earnings": 369432.0,
+   "quarter": "26Q2",
+   "name": "欣新網"
+  },
+  "3064": {
+   "retained_earnings": -86931.0,
+   "quarter": "26Q2",
+   "name": "泰偉"
+  },
+  "3066": {
+   "retained_earnings": 326060.0,
+   "quarter": "26Q2",
+   "name": "李洲"
+  },
+  "3067": {
+   "retained_earnings": 29687.0,
+   "quarter": "26Q2",
+   "name": "全域"
+  },
+  "3071": {
+   "retained_earnings": 363951.0,
+   "quarter": "26Q2",
+   "name": "協禧"
+  },
+  "3073": {
+   "retained_earnings": 6092.0,
+   "quarter": "26Q2",
+   "name": "天方能源"
+  },
+  "3078": {
+   "retained_earnings": 4221874.0,
+   "quarter": "26Q2",
+   "name": "僑威"
+  },
+  "3081": {
+   "retained_earnings": 1904344.0,
+   "quarter": "26Q2",
+   "name": "聯亞"
+  },
+  "3083": {
+   "retained_earnings": 29326.0,
+   "quarter": "26Q2",
+   "name": "網龍"
+  },
+  "3085": {
+   "retained_earnings": -309637.0,
+   "quarter": "26Q2",
+   "name": "新零售"
+  },
+  "3086": {
+   "retained_earnings": -536.0,
+   "quarter": "26Q2",
+   "name": "華義*"
+  },
+  "3088": {
+   "retained_earnings": 3009503.0,
+   "quarter": "26Q2",
+   "name": "艾訊"
+  },
+  "3093": {
+   "retained_earnings": 612870.0,
+   "quarter": "26Q2",
+   "name": "港建*"
+  },
+  "3095": {
+   "retained_earnings": -67011.0,
+   "quarter": "26Q2",
+   "name": "及成"
+  },
+  "3105": {
+   "retained_earnings": 19658326.0,
+   "quarter": "26Q2",
+   "name": "穩懋"
+  },
+  "3114": {
+   "retained_earnings": 717592.0,
+   "quarter": "26Q2",
+   "name": "好德"
+  },
+  "3115": {
+   "retained_earnings": -185121.0,
+   "quarter": "26Q2",
+   "name": "富榮綱"
+  },
+  "3118": {
+   "retained_earnings": 159003.0,
+   "quarter": "26Q2",
+   "name": "進階"
+  },
+  "3122": {
+   "retained_earnings": -85485.0,
+   "quarter": "26Q2",
+   "name": "笙泉"
+  },
+  "3128": {
+   "retained_earnings": 128140.0,
+   "quarter": "26Q2",
+   "name": "昇銳"
+  },
+  "3131": {
+   "retained_earnings": 2741306.0,
+   "quarter": "26Q2",
+   "name": "弘塑"
+  },
+  "3141": {
+   "retained_earnings": 1568010.0,
+   "quarter": "26Q2",
+   "name": "晶宏"
+  },
+  "3147": {
+   "retained_earnings": 1264281.0,
+   "quarter": "26Q2",
+   "name": "大綜"
+  },
+  "3152": {
+   "retained_earnings": 2682072.0,
+   "quarter": "26Q2",
+   "name": "璟德"
+  },
+  "3158": {
+   "retained_earnings": 306663.0,
+   "quarter": "26Q2",
+   "name": "嘉實"
+  },
+  "3162": {
+   "retained_earnings": 247538.0,
+   "quarter": "26Q2",
+   "name": "精確"
+  },
+  "3163": {
+   "retained_earnings": 1766178.0,
+   "quarter": "26Q2",
+   "name": "波若威"
+  },
+  "3169": {
+   "retained_earnings": 653949.0,
+   "quarter": "26Q2",
+   "name": "亞信"
+  },
+  "3171": {
+   "retained_earnings": 250805.0,
+   "quarter": "26Q2",
+   "name": "炎洲流通"
+  },
+  "3176": {
+   "retained_earnings": -132161.0,
+   "quarter": "26Q2",
+   "name": "基亞"
+  },
+  "3178": {
+   "retained_earnings": 587065.0,
+   "quarter": "26Q2",
+   "name": "公準"
+  },
+  "3188": {
+   "retained_earnings": 1225289.0,
+   "quarter": "26Q2",
+   "name": "鑫龍騰"
+  },
+  "3191": {
+   "retained_earnings": -195306.0,
+   "quarter": "26Q2",
+   "name": "雲嘉南"
+  },
+  "3205": {
+   "retained_earnings": -47891.0,
+   "quarter": "26Q2",
+   "name": "佰研"
+  },
+  "3206": {
+   "retained_earnings": 716951.0,
+   "quarter": "26Q2",
+   "name": "志豐"
+  },
+  "3207": {
+   "retained_earnings": -60647.0,
+   "quarter": "26Q2",
+   "name": "耀勝"
+  },
+  "3211": {
+   "retained_earnings": 5152695.0,
+   "quarter": "26Q2",
+   "name": "順達"
+  },
+  "3213": {
+   "retained_earnings": 2917224.0,
+   "quarter": "26Q2",
+   "name": "茂訊"
+  },
+  "3217": {
+   "retained_earnings": 1825829.0,
+   "quarter": "26Q2",
+   "name": "優群"
+  },
+  "3218": {
+   "retained_earnings": 2534895.0,
+   "quarter": "26Q2",
+   "name": "大學光"
+  },
+  "3219": {
+   "retained_earnings": 555897.0,
+   "quarter": "26Q2",
+   "name": "倚強科"
+  },
+  "3221": {
+   "retained_earnings": 674135.0,
+   "quarter": "26Q2",
+   "name": "台嘉碩"
+  },
+  "3224": {
+   "retained_earnings": -343560.0,
+   "quarter": "26Q2",
+   "name": "三顧"
+  },
+  "3226": {
+   "retained_earnings": 1201817.0,
+   "quarter": "26Q2",
+   "name": "龍鋒"
+  },
+  "3227": {
+   "retained_earnings": 5990738.0,
+   "quarter": "26Q2",
+   "name": "原相"
+  },
+  "3228": {
+   "retained_earnings": -328135.0,
+   "quarter": "26Q2",
+   "name": "金麗科"
+  },
+  "3230": {
+   "retained_earnings": -213211.0,
+   "quarter": "26Q2",
+   "name": "錦明"
+  },
+  "3232": {
+   "retained_earnings": 45063.0,
+   "quarter": "26Q2",
+   "name": "昱捷"
+  },
+  "3234": {
+   "retained_earnings": -717275.0,
+   "quarter": "26Q2",
+   "name": "光環"
+  },
+  "3236": {
+   "retained_earnings": 367665.0,
+   "quarter": "26Q2",
+   "name": "千如"
+  },
+  "3252": {
+   "retained_earnings": 1144288.0,
+   "quarter": "26Q2",
+   "name": "海灣"
+  },
+  "3259": {
+   "retained_earnings": -391311.0,
+   "quarter": "26Q2",
+   "name": "鑫創"
+  },
+  "3260": {
+   "retained_earnings": 27208975.0,
+   "quarter": "26Q2",
+   "name": "威剛"
+  },
+  "3264": {
+   "retained_earnings": 13284873.0,
+   "quarter": "26Q2",
+   "name": "欣銓"
+  },
+  "3265": {
+   "retained_earnings": 4484154.0,
+   "quarter": "26Q2",
+   "name": "台星科"
+  },
+  "3268": {
+   "retained_earnings": 34117.0,
+   "quarter": "26Q2",
+   "name": "海德威"
+  },
+  "3272": {
+   "retained_earnings": -242646.0,
+   "quarter": "26Q2",
+   "name": "東碩"
+  },
+  "3276": {
+   "retained_earnings": 115801.0,
+   "quarter": "26Q2",
+   "name": "宇環"
+  },
+  "3284": {
+   "retained_earnings": 335241.0,
+   "quarter": "26Q2",
+   "name": "太普高"
+  },
+  "3285": {
+   "retained_earnings": 184027.0,
+   "quarter": "26Q2",
+   "name": "微端"
+  },
+  "3287": {
+   "retained_earnings": 354459.0,
+   "quarter": "26Q2",
+   "name": "廣寰科"
+  },
+  "3288": {
+   "retained_earnings": -75811.0,
+   "quarter": "26Q2",
+   "name": "點晶"
+  },
+  "3289": {
+   "retained_earnings": 673841.0,
+   "quarter": "26Q2",
+   "name": "宜特"
+  },
+  "3290": {
+   "retained_earnings": 1155285.0,
+   "quarter": "26Q2",
+   "name": "東浦"
+  },
+  "3293": {
+   "retained_earnings": 11834636.0,
+   "quarter": "26Q2",
+   "name": "鈊象"
+  },
+  "3294": {
+   "retained_earnings": -71592.0,
+   "quarter": "26Q2",
+   "name": "英濟"
+  },
+  "3297": {
+   "retained_earnings": 132392.0,
+   "quarter": "26Q2",
+   "name": "杭特"
+  },
+  "3303": {
+   "retained_earnings": 1034877.0,
+   "quarter": "26Q2",
+   "name": "岱稜"
+  },
+  "3306": {
+   "retained_earnings": 241404.0,
+   "quarter": "26Q2",
+   "name": "鼎天"
+  },
+  "3310": {
+   "retained_earnings": 821648.0,
+   "quarter": "26Q2",
+   "name": "佳穎"
+  },
+  "3313": {
+   "retained_earnings": -695359.0,
+   "quarter": "26Q2",
+   "name": "斐成"
+  },
+  "3317": {
+   "retained_earnings": 1720357.0,
+   "quarter": "26Q2",
+   "name": "尼克森"
+  },
+  "3322": {
+   "retained_earnings": -134555.0,
+   "quarter": "26Q2",
+   "name": "建舜電"
+  },
+  "3323": {
+   "retained_earnings": 256899.0,
+   "quarter": "26Q2",
+   "name": "加百裕"
+  },
+  "3324": {
+   "retained_earnings": 8571189.0,
+   "quarter": "26Q2",
+   "name": "雙鴻"
+  },
+  "3325": {
+   "retained_earnings": -438829.0,
+   "quarter": "26Q2",
+   "name": "旭品"
+  },
+  "3332": {
+   "retained_earnings": 1199580.0,
+   "quarter": "26Q2",
+   "name": "幸康"
+  },
+  "3339": {
+   "retained_earnings": -252244.0,
+   "quarter": "26Q2",
+   "name": "泰谷"
+  },
+  "3349": {
+   "retained_earnings": -238944.0,
+   "quarter": "26Q2",
+   "name": "寶德"
+  },
+  "3354": {
+   "retained_earnings": 62230.0,
+   "quarter": "26Q2",
+   "name": "律勝"
+  },
+  "3357": {
+   "retained_earnings": 5094915.0,
+   "quarter": "26Q2",
+   "name": "臺慶科"
+  },
+  "3360": {
+   "retained_earnings": 1957.0,
+   "quarter": "26Q2",
+   "name": "尚立"
+  },
+  "3362": {
+   "retained_earnings": 473990.0,
+   "quarter": "26Q2",
+   "name": "先進光"
+  },
+  "3363": {
+   "retained_earnings": 141591.0,
+   "quarter": "26Q2",
+   "name": "上詮"
+  },
+  "3372": {
+   "retained_earnings": -402494.0,
+   "quarter": "26Q2",
+   "name": "典範"
+  },
+  "3373": {
+   "retained_earnings": 283955.0,
+   "quarter": "26Q2",
+   "name": "熱映"
+  },
+  "3374": {
+   "retained_earnings": 6749876.0,
+   "quarter": "26Q2",
+   "name": "精材"
+  },
+  "3379": {
+   "retained_earnings": 33831.0,
+   "quarter": "26Q2",
+   "name": "彬台"
+  },
+  "3388": {
+   "retained_earnings": 2125431.0,
+   "quarter": "26Q2",
+   "name": "崇越電"
+  },
+  "3390": {
+   "retained_earnings": 9885.0,
+   "quarter": "26Q2",
+   "name": "旭軟"
+  },
+  "3402": {
+   "retained_earnings": 1297248.0,
+   "quarter": "26Q2",
+   "name": "漢科"
+  },
+  "3430": {
+   "retained_earnings": 678092.0,
+   "quarter": "26Q2",
+   "name": "奇鈦科"
+  },
+  "3434": {
+   "retained_earnings": 42458.0,
+   "quarter": "26Q2",
+   "name": "哲固"
+  },
+  "3438": {
+   "retained_earnings": 565800.0,
+   "quarter": "26Q2",
+   "name": "類比科"
+  },
+  "3441": {
+   "retained_earnings": 345412.0,
+   "quarter": "26Q2",
+   "name": "聯一光電"
+  },
+  "3444": {
+   "retained_earnings": 372752.0,
+   "quarter": "26Q2",
+   "name": "利機"
+  },
+  "3455": {
+   "retained_earnings": 1616541.0,
+   "quarter": "26Q2",
+   "name": "由田"
+  },
+  "3465": {
+   "retained_earnings": 118215.0,
+   "quarter": "26Q2",
+   "name": "進泰電子"
+  },
+  "3466": {
+   "retained_earnings": -45921.0,
+   "quarter": "26Q2",
+   "name": "德晉"
+  },
+  "3467": {
+   "retained_earnings": 112237.0,
+   "quarter": "26Q2",
+   "name": "台灣精材"
+  },
+  "3479": {
+   "retained_earnings": 1478659.0,
+   "quarter": "26Q2",
+   "name": "安勤"
+  },
+  "3483": {
+   "retained_earnings": 1469136.0,
+   "quarter": "26Q2",
+   "name": "力致"
+  },
+  "3484": {
+   "retained_earnings": 1468037.0,
+   "quarter": "26Q2",
+   "name": "崧騰"
+  },
+  "3485": {
+   "retained_earnings": 904286.0,
+   "quarter": "26Q2",
+   "name": "敘豐"
+  },
+  "3489": {
+   "retained_earnings": 17161.0,
+   "quarter": "26Q2",
+   "name": "森寶"
+  },
+  "3490": {
+   "retained_earnings": 690045.0,
+   "quarter": "26Q2",
+   "name": "單井"
+  },
+  "3491": {
+   "retained_earnings": 963357.0,
+   "quarter": "26Q2",
+   "name": "昇達科"
+  },
+  "3492": {
+   "retained_earnings": 270463.0,
+   "quarter": "26Q2",
+   "name": "長盛"
+  },
+  "3498": {
+   "retained_earnings": 609539.0,
+   "quarter": "26Q2",
+   "name": "陽程"
+  },
+  "3499": {
+   "retained_earnings": -141082.0,
+   "quarter": "26Q2",
+   "name": "環天科"
+  },
+  "3508": {
+   "retained_earnings": -2608763.0,
+   "quarter": "26Q2",
+   "name": "位速"
+  },
+  "3511": {
+   "retained_earnings": -6747.0,
+   "quarter": "26Q2",
+   "name": "矽瑪"
+  },
+  "3512": {
+   "retained_earnings": 379144.0,
+   "quarter": "26Q2",
+   "name": "皇龍"
+  },
+  "3516": {
+   "retained_earnings": 117198.0,
+   "quarter": "26Q2",
+   "name": "亞帝歐"
+  },
+  "3520": {
+   "retained_earnings": 47124.0,
+   "quarter": "26Q2",
+   "name": "華盈"
+  },
+  "3521": {
+   "retained_earnings": 287422.0,
+   "quarter": "26Q2",
+   "name": "台鋼建設"
+  },
+  "3522": {
+   "retained_earnings": -461735.0,
+   "quarter": "26Q2",
+   "name": "御嵿"
+  },
+  "3523": {
+   "retained_earnings": -790952.0,
+   "quarter": "26Q2",
+   "name": "迎輝"
+  },
+  "3526": {
+   "retained_earnings": 1926164.0,
+   "quarter": "26Q2",
+   "name": "凡甲"
+  },
+  "3527": {
+   "retained_earnings": 496075.0,
+   "quarter": "26Q2",
+   "name": "聚積"
+  },
+  "3529": {
+   "retained_earnings": 2617329.0,
+   "quarter": "26Q2",
+   "name": "力旺"
+  },
+  "3531": {
+   "retained_earnings": 678800.0,
+   "quarter": "26Q2",
+   "name": "先益"
+  },
+  "3537": {
+   "retained_earnings": 629540.0,
+   "quarter": "26Q2",
+   "name": "堡達"
+  },
+  "3540": {
+   "retained_earnings": 520656.0,
+   "quarter": "26Q2",
+   "name": "曜越"
+  },
+  "3541": {
+   "retained_earnings": -36557.0,
+   "quarter": "26Q2",
+   "name": "西柏"
+  },
+  "3546": {
+   "retained_earnings": 672169.0,
+   "quarter": "26Q2",
+   "name": "宇峻"
+  },
+  "3548": {
+   "retained_earnings": 3086849.0,
+   "quarter": "26Q2",
+   "name": "兆利"
+  },
+  "3551": {
+   "retained_earnings": 3614951.0,
+   "quarter": "26Q2",
+   "name": "世禾"
+  },
+  "3552": {
+   "retained_earnings": 2648059.0,
+   "quarter": "26Q2",
+   "name": "同致"
+  },
+  "3555": {
+   "retained_earnings": 213051.0,
+   "quarter": "26Q2",
+   "name": "博士旺"
+  },
+  "3556": {
+   "retained_earnings": 549515.0,
+   "quarter": "26Q2",
+   "name": "禾瑞亞"
+  },
+  "3558": {
+   "retained_earnings": 3577637.0,
+   "quarter": "26Q2",
+   "name": "神準"
+  },
+  "3564": {
+   "retained_earnings": 223693.0,
+   "quarter": "26Q2",
+   "name": "其陽"
+  },
+  "3567": {
+   "retained_earnings": 170846.0,
+   "quarter": "26Q2",
+   "name": "逸昌"
+  },
+  "3570": {
+   "retained_earnings": 827387.0,
+   "quarter": "26Q2",
+   "name": "大塚"
+  },
+  "3577": {
+   "retained_earnings": 759968.0,
+   "quarter": "26Q2",
+   "name": "泓格"
+  },
+  "3580": {
+   "retained_earnings": 415393.0,
+   "quarter": "26Q2",
+   "name": "友威科"
+  },
+  "3581": {
+   "retained_earnings": 286295.0,
+   "quarter": "26Q2",
+   "name": "博磊"
+  },
+  "3587": {
+   "retained_earnings": 1975160.0,
+   "quarter": "26Q2",
+   "name": "閎康"
+  },
+  "3594": {
+   "retained_earnings": 498486.0,
+   "quarter": "26Q2",
+   "name": "磐儀"
+  },
+  "3597": {
+   "retained_earnings": 138269.0,
+   "quarter": "26Q2",
+   "name": "映興"
+  },
+  "3609": {
+   "retained_earnings": -71976.0,
+   "quarter": "26Q2",
+   "name": "三一東林"
+  },
+  "3611": {
+   "retained_earnings": 4020481.0,
+   "quarter": "26Q2",
+   "name": "鼎翰"
+  },
+  "3615": {
+   "retained_earnings": 267722.0,
+   "quarter": "26Q2",
+   "name": "安可"
+  },
+  "3623": {
+   "retained_earnings": 24572.0,
+   "quarter": "26Q2",
+   "name": "富晶通"
+  },
+  "3624": {
+   "retained_earnings": 1647359.0,
+   "quarter": "26Q2",
+   "name": "光頡"
+  },
+  "3625": {
+   "retained_earnings": -582264.0,
+   "quarter": "26Q2",
+   "name": "西勝"
+  },
+  "3628": {
+   "retained_earnings": 449259.0,
+   "quarter": "26Q2",
+   "name": "盈正"
+  },
+  "3629": {
+   "retained_earnings": -272380.0,
+   "quarter": "26Q2",
+   "name": "地心引力"
+  },
+  "3630": {
+   "retained_earnings": -1688462.0,
+   "quarter": "26Q2",
+   "name": "新鉅科"
+  },
+  "3631": {
+   "retained_earnings": -28807.0,
+   "quarter": "26Q2",
+   "name": "晟楠"
+  },
+  "3632": {
+   "retained_earnings": -264986.0,
+   "quarter": "26Q2",
+   "name": "研勤"
+  },
+  "3646": {
+   "retained_earnings": 46835.0,
+   "quarter": "26Q2",
+   "name": "艾恩特"
+  },
+  "3663": {
+   "retained_earnings": 730604.0,
+   "quarter": "26Q2",
+   "name": "鑫科"
+  },
+  "3666": {
+   "retained_earnings": -342396.0,
+   "quarter": "26Q2",
+   "name": "光耀"
+  },
+  "3672": {
+   "retained_earnings": -161330.0,
+   "quarter": "26Q2",
+   "name": "康聯訊"
+  },
+  "3675": {
+   "retained_earnings": 446778.0,
+   "quarter": "26Q2",
+   "name": "德微"
+  },
+  "3680": {
+   "retained_earnings": 2866219.0,
+   "quarter": "26Q2",
+   "name": "家登"
+  },
+  "3684": {
+   "retained_earnings": 287679.0,
+   "quarter": "26Q2",
+   "name": "榮昌"
+  },
+  "3685": {
+   "retained_earnings": -34161.0,
+   "quarter": "26Q2",
+   "name": "元創精密"
+  },
+  "3687": {
+   "retained_earnings": 203024.0,
+   "quarter": "26Q2",
+   "name": "歐買尬"
+  },
+  "3689": {
+   "retained_earnings": 2546179.0,
+   "quarter": "26Q2",
+   "name": "湧德"
+  },
+  "3691": {
+   "retained_earnings": 464852.0,
+   "quarter": "26Q2",
+   "name": "碩禾"
+  },
+  "3693": {
+   "retained_earnings": 2846040.0,
+   "quarter": "26Q2",
+   "name": "營邦"
+  },
+  "3707": {
+   "retained_earnings": -224159.0,
+   "quarter": "26Q2",
+   "name": "漢磊"
+  },
+  "3709": {
+   "retained_earnings": 2024980.0,
+   "quarter": "26Q2",
+   "name": "鑫聯大投控"
+  },
+  "3710": {
+   "retained_earnings": -1506051.0,
+   "quarter": "26Q2",
+   "name": "連展投控"
+  },
+  "3713": {
+   "retained_earnings": -419724.0,
+   "quarter": "26Q2",
+   "name": "新晶投控"
+  },
+  "4102": {
+   "retained_earnings": 89829.0,
+   "quarter": "26Q2",
+   "name": "永日"
+  },
+  "4105": {
+   "retained_earnings": 4157726.0,
+   "quarter": "26Q2",
+   "name": "東洋"
+  },
+  "4107": {
+   "retained_earnings": 2493934.0,
+   "quarter": "26Q2",
+   "name": "邦特"
+  },
+  "4109": {
+   "retained_earnings": 282578.0,
+   "quarter": "26Q2",
+   "name": "加捷生醫"
+  },
+  "4111": {
+   "retained_earnings": 756901.0,
+   "quarter": "26Q2",
+   "name": "濟生"
+  },
+  "4113": {
+   "retained_earnings": 558866.0,
+   "quarter": "26Q2",
+   "name": "聯上"
+  },
+  "4114": {
+   "retained_earnings": 899221.0,
+   "quarter": "26Q2",
+   "name": "健喬"
+  },
+  "4116": {
+   "retained_earnings": 364108.0,
+   "quarter": "26Q2",
+   "name": "明基醫"
+  },
+  "4120": {
+   "retained_earnings": 3212107.0,
+   "quarter": "26Q2",
+   "name": "友華"
+  },
+  "4121": {
+   "retained_earnings": 287866.0,
+   "quarter": "26Q2",
+   "name": "優盛"
+  },
+  "4123": {
+   "retained_earnings": 4149948.0,
+   "quarter": "26Q2",
+   "name": "晟德"
+  },
+  "4126": {
+   "retained_earnings": 1785561.0,
+   "quarter": "26Q2",
+   "name": "太醫"
+  },
+  "4127": {
+   "retained_earnings": 71612.0,
+   "quarter": "26Q2",
+   "name": "天良"
+  },
+  "4128": {
+   "retained_earnings": -12121.0,
+   "quarter": "26Q2",
+   "name": "中天"
+  },
+  "4129": {
+   "retained_earnings": 697417.0,
+   "quarter": "26Q2",
+   "name": "聯合"
+  },
+  "4131": {
+   "retained_earnings": -100334.0,
+   "quarter": "26Q2",
+   "name": "浩泰"
+  },
+  "4138": {
+   "retained_earnings": 434080.0,
+   "quarter": "26Q2",
+   "name": "曜亞"
+  },
+  "4147": {
+   "retained_earnings": -1360542.0,
+   "quarter": "26Q2",
+   "name": "中裕"
+  },
+  "4153": {
+   "retained_earnings": 100448.0,
+   "quarter": "26Q2",
+   "name": "鈺緯"
+  },
+  "4160": {
+   "retained_earnings": 63038.0,
+   "quarter": "26Q2",
+   "name": "訊聯基因"
+  },
+  "4161": {
+   "retained_earnings": 124910.0,
+   "quarter": "26Q2",
+   "name": "聿新科"
+  },
+  "4162": {
+   "retained_earnings": 1970508.0,
+   "quarter": "26Q2",
+   "name": "智擎"
+  },
+  "4163": {
+   "retained_earnings": 1743968.0,
+   "quarter": "26Q2",
+   "name": "鐿鈦"
+  },
+  "4166": {
+   "retained_earnings": 96153.0,
+   "quarter": "26Q2",
+   "name": "友霖"
+  },
+  "4167": {
+   "retained_earnings": 944779.0,
+   "quarter": "26Q2",
+   "name": "松瑞藥"
+  },
+  "4168": {
+   "retained_earnings": -262865.0,
+   "quarter": "26Q2",
+   "name": "醣聯"
+  },
+  "4171": {
+   "retained_earnings": -126577.0,
+   "quarter": "26Q2",
+   "name": "瑞基"
+  },
+  "4173": {
+   "retained_earnings": 220482.0,
+   "quarter": "26Q2",
+   "name": "久裕"
+  },
+  "4174": {
+   "retained_earnings": -9254107.0,
+   "quarter": "26Q2",
+   "name": "浩鼎"
+  },
+  "4175": {
+   "retained_earnings": 326743.0,
+   "quarter": "26Q2",
+   "name": "杏一"
+  },
+  "4183": {
+   "retained_earnings": -2250.0,
+   "quarter": "26Q2",
+   "name": "福永生技"
+  },
+  "4188": {
+   "retained_earnings": -281711.0,
+   "quarter": "26Q2",
+   "name": "安克"
+  },
+  "4192": {
+   "retained_earnings": -96129.0,
+   "quarter": "26Q2",
+   "name": "杏國"
+  },
+  "4198": {
+   "retained_earnings": -90965.0,
+   "quarter": "26Q2",
+   "name": "欣大健康"
+  },
+  "4205": {
+   "retained_earnings": 1138524.0,
+   "quarter": "26Q2",
+   "name": "中華食"
+  },
+  "4207": {
+   "retained_earnings": 967496.0,
+   "quarter": "26Q2",
+   "name": "環泰"
+  },
+  "4303": {
+   "retained_earnings": 1856851.0,
+   "quarter": "26Q2",
+   "name": "信立"
+  },
+  "4304": {
+   "retained_earnings": -461581.0,
+   "quarter": "26Q2",
+   "name": "勝昱"
+  },
+  "4305": {
+   "retained_earnings": 656628.0,
+   "quarter": "26Q2",
+   "name": "世坤"
+  },
+  "4401": {
+   "retained_earnings": 1357510.0,
+   "quarter": "26Q2",
+   "name": "東隆興"
+  },
+  "4402": {
+   "retained_earnings": -262653.0,
+   "quarter": "26Q2",
+   "name": "郡都開發"
+  },
+  "4406": {
+   "retained_earnings": -36476.0,
+   "quarter": "26Q2",
+   "name": "新昕纖"
+  },
+  "4413": {
+   "retained_earnings": 29602.0,
+   "quarter": "26Q2",
+   "name": "飛寶企業"
+  },
+  "4416": {
+   "retained_earnings": 477171.0,
+   "quarter": "26Q2",
+   "name": "三圓"
+  },
+  "4417": {
+   "retained_earnings": 2490575.0,
+   "quarter": "26Q2",
+   "name": "金洲"
+  },
+  "4419": {
+   "retained_earnings": -1112381.0,
+   "quarter": "26Q2",
+   "name": "皇家美食"
+  },
+  "4420": {
+   "retained_earnings": 820717.0,
+   "quarter": "26Q2",
+   "name": "光明"
+  },
+  "4430": {
+   "retained_earnings": 550684.0,
+   "quarter": "26Q2",
+   "name": "耀億"
+  },
+  "4432": {
+   "retained_earnings": 781038.0,
+   "quarter": "26Q2",
+   "name": "銘旺實"
+  },
+  "4433": {
+   "retained_earnings": 296248.0,
+   "quarter": "26Q2",
+   "name": "興采"
+  },
+  "4502": {
+   "retained_earnings": -234948.0,
+   "quarter": "26Q2",
+   "name": "健信"
+  },
+  "4503": {
+   "retained_earnings": 97975.0,
+   "quarter": "26Q2",
+   "name": "金雨"
+  },
+  "4506": {
+   "retained_earnings": 3929839.0,
+   "quarter": "26Q2",
+   "name": "崇友"
+  },
+  "4510": {
+   "retained_earnings": 354858.0,
+   "quarter": "26Q2",
+   "name": "高鋒"
+  },
+  "4513": {
+   "retained_earnings": -173254.0,
+   "quarter": "26Q2",
+   "name": "福裕"
+  },
+  "4523": {
+   "retained_earnings": 969732.0,
+   "quarter": "26Q2",
+   "name": "永彰"
+  },
+  "4527": {
+   "retained_earnings": 883860.0,
+   "quarter": "26Q2",
+   "name": "方方土霖"
+  },
+  "4528": {
+   "retained_earnings": 1401513.0,
+   "quarter": "26Q2",
+   "name": "江興鍛"
+  },
+  "4529": {
+   "retained_earnings": -547527.0,
+   "quarter": "26Q2",
+   "name": "淳紳"
+  },
+  "4530": {
+   "retained_earnings": -11308.0,
+   "quarter": "26Q2",
+   "name": "天意能創"
+  },
+  "4533": {
+   "retained_earnings": 864110.0,
+   "quarter": "26Q2",
+   "name": "協易機"
+  },
+  "4534": {
+   "retained_earnings": -188743.0,
+   "quarter": "26Q2",
+   "name": "慶騰"
+  },
+  "4535": {
+   "retained_earnings": 1653757.0,
+   "quarter": "26Q2",
+   "name": "至興"
+  },
+  "4538": {
+   "retained_earnings": 161934.0,
+   "quarter": "26Q2",
+   "name": "大詠城"
+  },
+  "4541": {
+   "retained_earnings": 239124.0,
+   "quarter": "26Q2",
+   "name": "晟田"
+  },
+  "4542": {
+   "retained_earnings": 133772.0,
+   "quarter": "26Q2",
+   "name": "科嶠"
+  },
+  "4543": {
+   "retained_earnings": 929410.0,
+   "quarter": "26Q2",
+   "name": "萬在"
+  },
+  "4549": {
+   "retained_earnings": 887626.0,
+   "quarter": "26Q2",
+   "name": "桓達"
+  },
+  "4550": {
+   "retained_earnings": 456302.0,
+   "quarter": "26Q2",
+   "name": "長佳"
+  },
+  "4554": {
+   "retained_earnings": 49091.0,
+   "quarter": "26Q2",
+   "name": "橙的"
+  },
+  "4556": {
+   "retained_earnings": 138881.0,
+   "quarter": "26Q2",
+   "name": "旭然"
+  },
+  "4558": {
+   "retained_earnings": 166359.0,
+   "quarter": "26Q2",
+   "name": "寶緯"
+  },
+  "4561": {
+   "retained_earnings": 618702.0,
+   "quarter": "26Q2",
+   "name": "健椿"
+  },
+  "4563": {
+   "retained_earnings": -108186.0,
+   "quarter": "26Q2",
+   "name": "百德"
+  },
+  "4568": {
+   "retained_earnings": 279299.0,
+   "quarter": "26Q2",
+   "name": "科際精密"
+  },
+  "4577": {
+   "retained_earnings": 372518.0,
+   "quarter": "26Q2",
+   "name": "達航科技"
+  },
+  "4580": {
+   "retained_earnings": 1182660.0,
+   "quarter": "26Q2",
+   "name": "捷流閥業"
+  },
+  "4584": {
+   "retained_earnings": 463995.0,
+   "quarter": "26Q2",
+   "name": "君帆"
+  },
+  "4609": {
+   "retained_earnings": -307825.0,
+   "quarter": "26Q2",
+   "name": "唐鋒"
+  },
+  "4702": {
+   "retained_earnings": 558860.0,
+   "quarter": "26Q2",
+   "name": "中美實"
+  },
+  "4706": {
+   "retained_earnings": 765404.0,
+   "quarter": "26Q2",
+   "name": "大恭"
+  },
+  "4707": {
+   "retained_earnings": 1790703.0,
+   "quarter": "26Q2",
+   "name": "磐亞"
+  },
+  "4711": {
+   "retained_earnings": 367236.0,
+   "quarter": "26Q2",
+   "name": "永純"
+  },
+  "4714": {
+   "retained_earnings": 93394.0,
+   "quarter": "26Q2",
+   "name": "永捷"
+  },
+  "4716": {
+   "retained_earnings": 112826.0,
+   "quarter": "26Q2",
+   "name": "大立"
+  },
+  "4721": {
+   "retained_earnings": 765922.0,
+   "quarter": "26Q2",
+   "name": "美琪瑪"
+  },
+  "4726": {
+   "retained_earnings": -740210.0,
+   "quarter": "26Q2",
+   "name": "永昕"
+  },
+  "4728": {
+   "retained_earnings": 872101.0,
+   "quarter": "26Q2",
+   "name": "雙美"
+  },
+  "4729": {
+   "retained_earnings": 130998.0,
+   "quarter": "26Q2",
+   "name": "熒茂"
+  },
+  "4735": {
+   "retained_earnings": 574670.0,
+   "quarter": "26Q2",
+   "name": "豪展"
+  },
+  "4741": {
+   "retained_earnings": 228650.0,
+   "quarter": "26Q2",
+   "name": "泓瀚"
+  },
+  "4743": {
+   "retained_earnings": 160299.0,
+   "quarter": "26Q2",
+   "name": "合一"
+  },
+  "4744": {
+   "retained_earnings": 236595.0,
+   "quarter": "26Q2",
+   "name": "皇將"
+  },
+  "4747": {
+   "retained_earnings": 219382.0,
+   "quarter": "26Q2",
+   "name": "強生製藥"
+  },
+  "4749": {
+   "retained_earnings": 1582104.0,
+   "quarter": "26Q2",
+   "name": "新應材"
+  },
+  "4754": {
+   "retained_earnings": 193059.0,
+   "quarter": "26Q2",
+   "name": "國碳科"
+  },
+  "4760": {
+   "retained_earnings": 544512.0,
+   "quarter": "26Q2",
+   "name": "勤凱科技"
+  },
+  "4767": {
+   "retained_earnings": 593394.0,
+   "quarter": "26Q2",
+   "name": "誠泰科技"
+  },
+  "4768": {
+   "retained_earnings": 24394.0,
+   "quarter": "26Q2",
+   "name": "晶呈科技"
+  },
+  "4772": {
+   "retained_earnings": 920685.0,
+   "quarter": "26Q2",
+   "name": "台特化"
+  },
+  "4806": {
+   "retained_earnings": -309732.0,
+   "quarter": "26Q2",
+   "name": "桂田文創"
+  },
+  "4903": {
+   "retained_earnings": 116362.0,
+   "quarter": "26Q2",
+   "name": "聯光通"
+  },
+  "4905": {
+   "retained_earnings": 2879259.0,
+   "quarter": "26Q2",
+   "name": "台聯電"
+  },
+  "4907": {
+   "retained_earnings": 1790842.0,
+   "quarter": "26Q2",
+   "name": "富宇"
+  },
+  "4908": {
+   "retained_earnings": 881004.0,
+   "quarter": "26Q2",
+   "name": "前鼎"
+  },
+  "4909": {
+   "retained_earnings": 1090616.0,
+   "quarter": "26Q2",
+   "name": "新復興"
+  },
+  "4911": {
+   "retained_earnings": 54134.0,
+   "quarter": "26Q2",
+   "name": "德英"
+  },
+  "4923": {
+   "retained_earnings": -183365.0,
+   "quarter": "26Q2",
+   "name": "力士"
+  },
+  "4931": {
+   "retained_earnings": 673081.0,
+   "quarter": "26Q2",
+   "name": "新盛力"
+  },
+  "4933": {
+   "retained_earnings": 1871453.0,
+   "quarter": "26Q2",
+   "name": "友輝"
+  },
+  "4939": {
+   "retained_earnings": 278115.0,
+   "quarter": "26Q2",
+   "name": "亞電"
+  },
+  "4946": {
+   "retained_earnings": 7763.0,
+   "quarter": "26Q2",
+   "name": "辣椒"
+  },
+  "4950": {
+   "retained_earnings": 16511.0,
+   "quarter": "26Q2",
+   "name": "金耘國際"
+  },
+  "4951": {
+   "retained_earnings": 481320.0,
+   "quarter": "26Q2",
+   "name": "精拓科"
+  },
+  "4953": {
+   "retained_earnings": 2126069.0,
+   "quarter": "26Q2",
+   "name": "緯致"
+  },
+  "4966": {
+   "retained_earnings": 18046386.0,
+   "quarter": "26Q2",
+   "name": "譜瑞-KY"
+  },
+  "4972": {
+   "retained_earnings": 54274.0,
+   "quarter": "26Q2",
+   "name": "湯石照明"
+  },
+  "4973": {
+   "retained_earnings": 1624416.0,
+   "quarter": "26Q2",
+   "name": "廣穎電通"
+  },
+  "4974": {
+   "retained_earnings": 1795589.0,
+   "quarter": "26Q2",
+   "name": "亞泰"
+  },
+  "4979": {
+   "retained_earnings": 1473747.0,
+   "quarter": "26Q2",
+   "name": "華星光"
+  },
+  "4995": {
+   "retained_earnings": 322968.0,
+   "quarter": "26Q2",
+   "name": "晶達"
+  },
+  "5009": {
+   "retained_earnings": 5744135.0,
+   "quarter": "26Q2",
+   "name": "榮剛"
+  },
+  "5011": {
+   "retained_earnings": 56991.0,
+   "quarter": "26Q2",
+   "name": "久陽"
+  },
+  "5013": {
+   "retained_earnings": 2585243.0,
+   "quarter": "26Q2",
+   "name": "強新"
+  },
+  "5014": {
+   "retained_earnings": 508630.0,
+   "quarter": "26Q2",
+   "name": "建錩"
+  },
+  "5015": {
+   "retained_earnings": 554071.0,
+   "quarter": "26Q2",
+   "name": "華祺"
+  },
+  "5016": {
+   "retained_earnings": 1005593.0,
+   "quarter": "26Q2",
+   "name": "松和"
+  },
+  "5201": {
+   "retained_earnings": 84427.0,
+   "quarter": "26Q2",
+   "name": "凱衛"
+  },
+  "5202": {
+   "retained_earnings": 95344.0,
+   "quarter": "26Q2",
+   "name": "力新"
+  },
+  "5205": {
+   "retained_earnings": -13024.0,
+   "quarter": "26Q2",
+   "name": "中茂"
+  },
+  "5206": {
+   "retained_earnings": 2203098.0,
+   "quarter": "26Q2",
+   "name": "坤悅"
+  },
+  "5209": {
+   "retained_earnings": 515868.0,
+   "quarter": "26Q2",
+   "name": "新鼎"
+  },
+  "5210": {
+   "retained_earnings": -132428.0,
+   "quarter": "26Q2",
+   "name": "寶碩"
+  },
+  "5211": {
+   "retained_earnings": -93507.0,
+   "quarter": "26Q2",
+   "name": "蒙恬"
+  },
+  "5212": {
+   "retained_earnings": 166348.0,
+   "quarter": "26Q2",
+   "name": "凌網"
+  },
+  "5213": {
+   "retained_earnings": 2230985.0,
+   "quarter": "26Q2",
+   "name": "亞昕"
+  },
+  "5220": {
+   "retained_earnings": 308659.0,
+   "quarter": "26Q2",
+   "name": "萬達光電"
+  },
+  "5223": {
+   "retained_earnings": 991753.0,
+   "quarter": "26Q2",
+   "name": "安力-KY"
+  },
+  "5227": {
+   "retained_earnings": -798068.0,
+   "quarter": "26Q2",
+   "name": "立凱-KY"
+  },
+  "5228": {
+   "retained_earnings": 124500.0,
+   "quarter": "26Q2",
+   "name": "鈺鎧"
+  },
+  "5230": {
+   "retained_earnings": 194170.0,
+   "quarter": "26Q2",
+   "name": "雷笛克光學"
+  },
+  "5245": {
+   "retained_earnings": -62509.0,
+   "quarter": "26Q2",
+   "name": "智晶"
+  },
+  "5251": {
+   "retained_earnings": 34694.0,
+   "quarter": "26Q2",
+   "name": "天鉞電"
+  },
+  "5263": {
+   "retained_earnings": 85994.0,
+   "quarter": "26Q2",
+   "name": "智崴"
+  },
+  "5272": {
+   "retained_earnings": -58797.0,
+   "quarter": "26Q2",
+   "name": "笙科"
+  },
+  "5274": {
+   "retained_earnings": 5946298.0,
+   "quarter": "26Q2",
+   "name": "信驊"
+  },
+  "5278": {
+   "retained_earnings": 267665.0,
+   "quarter": "26Q2",
+   "name": "尚凡*"
+  },
+  "5287": {
+   "retained_earnings": 1924220.0,
+   "quarter": "26Q2",
+   "name": "數字"
+  },
+  "5289": {
+   "retained_earnings": 20264304.0,
+   "quarter": "26Q2",
+   "name": "宜鼎"
+  },
+  "5291": {
+   "retained_earnings": 424815.0,
+   "quarter": "26Q2",
+   "name": "邑昇"
+  },
+  "5299": {
+   "retained_earnings": 1139010.0,
+   "quarter": "26Q2",
+   "name": "杰力"
+  },
+  "5301": {
+   "retained_earnings": -146791.0,
+   "quarter": "26Q2",
+   "name": "寶得利"
+  },
+  "5302": {
+   "retained_earnings": -348427.0,
+   "quarter": "26Q2",
+   "name": "太欣"
+  },
+  "5309": {
+   "retained_earnings": 204753.0,
+   "quarter": "26Q2",
+   "name": "系統電"
+  },
+  "5310": {
+   "retained_earnings": 45178.0,
+   "quarter": "26Q2",
+   "name": "天剛"
+  },
+  "5312": {
+   "retained_earnings": 2534309.0,
+   "quarter": "26Q2",
+   "name": "寶島科"
+  },
+  "5314": {
+   "retained_earnings": 1359814.0,
+   "quarter": "26Q2",
+   "name": "世紀*"
+  },
+  "5315": {
+   "retained_earnings": 735910.0,
+   "quarter": "26Q2",
+   "name": "光聯"
+  },
+  "5321": {
+   "retained_earnings": -35734.0,
+   "quarter": "26Q2",
+   "name": "美而快"
+  },
+  "5324": {
+   "retained_earnings": -595585.0,
+   "quarter": "26Q2",
+   "name": "士開"
+  },
+  "5328": {
+   "retained_earnings": 213621.0,
+   "quarter": "26Q2",
+   "name": "華容"
+  },
+  "5340": {
+   "retained_earnings": 423699.0,
+   "quarter": "26Q2",
+   "name": "建榮"
+  },
+  "5344": {
+   "retained_earnings": -234099.0,
+   "quarter": "26Q2",
+   "name": "立衛"
+  },
+  "5345": {
+   "retained_earnings": -186647.0,
+   "quarter": "26Q2",
+   "name": "馥鴻"
+  },
+  "5347": {
+   "retained_earnings": 24053146.0,
+   "quarter": "26Q2",
+   "name": "世界"
+  },
+  "5348": {
+   "retained_earnings": -39653.0,
+   "quarter": "26Q2",
+   "name": "正能量智能"
+  },
+  "5351": {
+   "retained_earnings": 1696287.0,
+   "quarter": "26Q2",
+   "name": "鈺創"
+  },
+  "5353": {
+   "retained_earnings": 376614.0,
+   "quarter": "26Q2",
+   "name": "台林"
+  },
+  "5355": {
+   "retained_earnings": -916400.0,
+   "quarter": "26Q2",
+   "name": "佳總"
+  },
+  "5356": {
+   "retained_earnings": 3155538.0,
+   "quarter": "26Q2",
+   "name": "協益"
+  },
+  "5364": {
+   "retained_earnings": -70673.0,
+   "quarter": "26Q2",
+   "name": "力麗店"
+  },
+  "5371": {
+   "retained_earnings": 17103575.0,
+   "quarter": "26Q2",
+   "name": "中光電"
+  },
+  "5381": {
+   "retained_earnings": 79310.0,
+   "quarter": "26Q2",
+   "name": "光譜"
+  },
+  "5386": {
+   "retained_earnings": 2584494.0,
+   "quarter": "26Q2",
+   "name": "青雲"
+  },
+  "5392": {
+   "retained_earnings": 1431876.0,
+   "quarter": "26Q2",
+   "name": "能率"
+  },
+  "5398": {
+   "retained_earnings": 12099.0,
+   "quarter": "26Q2",
+   "name": "慕康生醫"
+  },
+  "5403": {
+   "retained_earnings": 1461445.0,
+   "quarter": "26Q2",
+   "name": "中菲"
+  },
+  "5410": {
+   "retained_earnings": 589504.0,
+   "quarter": "26Q2",
+   "name": "國眾"
+  },
+  "5425": {
+   "retained_earnings": 3580351.0,
+   "quarter": "26Q2",
+   "name": "台半"
+  },
+  "5426": {
+   "retained_earnings": 818232.0,
+   "quarter": "26Q2",
+   "name": "振發"
+  },
+  "5432": {
+   "retained_earnings": 339232.0,
+   "quarter": "26Q2",
+   "name": "新門"
+  },
+  "5438": {
+   "retained_earnings": 1254261.0,
+   "quarter": "26Q2",
+   "name": "東友"
+  },
+  "5439": {
+   "retained_earnings": 2168282.0,
+   "quarter": "26Q2",
+   "name": "高技"
+  },
+  "5443": {
+   "retained_earnings": 631778.0,
+   "quarter": "26Q2",
+   "name": "均豪"
+  },
+  "5450": {
+   "retained_earnings": 276625.0,
+   "quarter": "26Q2",
+   "name": "南良"
+  },
+  "5452": {
+   "retained_earnings": 501588.0,
+   "quarter": "26Q2",
+   "name": "佶優"
+  },
+  "5455": {
+   "retained_earnings": 679119.0,
+   "quarter": "26Q2",
+   "name": "昇益"
+  },
+  "5457": {
+   "retained_earnings": 2148486.0,
+   "quarter": "26Q2",
+   "name": "宣德"
+  },
+  "5460": {
+   "retained_earnings": 158534.0,
+   "quarter": "26Q2",
+   "name": "同協"
+  },
+  "5464": {
+   "retained_earnings": 338466.0,
+   "quarter": "26Q2",
+   "name": "霖宏"
+  },
+  "5465": {
+   "retained_earnings": 607104.0,
+   "quarter": "26Q2",
+   "name": "富驊"
+  },
+  "5468": {
+   "retained_earnings": -148501.0,
+   "quarter": "26Q2",
+   "name": "凱鈺"
+  },
+  "5474": {
+   "retained_earnings": 1560856.0,
+   "quarter": "26Q2",
+   "name": "聰泰"
+  },
+  "5475": {
+   "retained_earnings": -768612.0,
+   "quarter": "26Q2",
+   "name": "德宏"
+  },
+  "5478": {
+   "retained_earnings": 3492095.0,
+   "quarter": "26Q2",
+   "name": "智冠"
+  },
+  "5481": {
+   "retained_earnings": 444040.0,
+   "quarter": "26Q2",
+   "name": "新華"
+  },
+  "5483": {
+   "retained_earnings": 23643332.0,
+   "quarter": "26Q2",
+   "name": "中美晶"
+  },
+  "5487": {
+   "retained_earnings": 233767.0,
+   "quarter": "26Q2",
+   "name": "通泰"
+  },
+  "5488": {
+   "retained_earnings": 54486.0,
+   "quarter": "26Q2",
+   "name": "松普"
+  },
+  "5489": {
+   "retained_earnings": 1263296.0,
+   "quarter": "26Q2",
+   "name": "彩富"
+  },
+  "5490": {
+   "retained_earnings": 372753.0,
+   "quarter": "26Q2",
+   "name": "同亨"
+  },
+  "5493": {
+   "retained_earnings": 1062381.0,
+   "quarter": "26Q2",
+   "name": "三聯"
+  },
+  "5498": {
+   "retained_earnings": 237542.0,
+   "quarter": "26Q2",
+   "name": "凱崴"
+  },
+  "5508": {
+   "retained_earnings": 3071539.0,
+   "quarter": "26Q2",
+   "name": "永信建"
+  },
+  "5511": {
+   "retained_earnings": 5667338.0,
+   "quarter": "26Q2",
+   "name": "德昌"
+  },
+  "5512": {
+   "retained_earnings": 5361463.0,
+   "quarter": "26Q2",
+   "name": "力麒"
+  },
+  "5514": {
+   "retained_earnings": 503308.0,
+   "quarter": "26Q2",
+   "name": "三豐"
+  },
+  "5516": {
+   "retained_earnings": -50285.0,
+   "quarter": "26Q2",
+   "name": "雙喜"
+  },
+  "5520": {
+   "retained_earnings": 2175827.0,
+   "quarter": "26Q2",
+   "name": "力泰"
+  },
+  "5523": {
+   "retained_earnings": 1282299.0,
+   "quarter": "26Q2",
+   "name": "豐謙"
+  },
+  "5529": {
+   "retained_earnings": 127934.0,
+   "quarter": "26Q2",
+   "name": "鉅陞"
+  },
+  "5530": {
+   "retained_earnings": 19100493.0,
+   "quarter": "26Q2",
+   "name": "龍巖"
+  },
+  "5536": {
+   "retained_earnings": 8311960.0,
+   "quarter": "26Q2",
+   "name": "聖暉*"
+  },
+  "5547": {
+   "retained_earnings": 174298.0,
+   "quarter": "26Q2",
+   "name": "久舜"
+  },
+  "5548": {
+   "retained_earnings": 171300.0,
+   "quarter": "26Q2",
+   "name": "安倉"
+  },
+  "5601": {
+   "retained_earnings": 730002.0,
+   "quarter": "26Q2",
+   "name": "台聯櫃"
+  },
+  "5603": {
+   "retained_earnings": 731254.0,
+   "quarter": "26Q2",
+   "name": "陸海"
+  },
+  "5604": {
+   "retained_earnings": 854688.0,
+   "quarter": "26Q2",
+   "name": "中連"
+  },
+  "5609": {
+   "retained_earnings": 4428728.0,
+   "quarter": "26Q2",
+   "name": "中菲行"
+  },
+  "5701": {
+   "retained_earnings": -963996.0,
+   "quarter": "26Q2",
+   "name": "劍湖山"
+  },
+  "5703": {
+   "retained_earnings": -122298.0,
+   "quarter": "26Q2",
+   "name": "亞都麗緻"
+  },
+  "5704": {
+   "retained_earnings": 149597.0,
+   "quarter": "26Q2",
+   "name": "老爺知"
+  },
+  "5878": {
+   "retained_earnings": 187919.0,
+   "quarter": "26Q2",
+   "name": "台名"
+  },
+  "5902": {
+   "retained_earnings": 310458.0,
+   "quarter": "26Q2",
+   "name": "德記"
+  },
+  "5903": {
+   "retained_earnings": 6252189.0,
+   "quarter": "26Q2",
+   "name": "全家"
+  },
+  "5904": {
+   "retained_earnings": 4711297.0,
+   "quarter": "26Q2",
+   "name": "寶雅*"
+  },
+  "5905": {
+   "retained_earnings": -423354.0,
+   "quarter": "26Q2",
+   "name": "南仁湖"
+  },
+  "6028": {
+   "retained_earnings": 394723.0,
+   "quarter": "26Q2",
+   "name": "公勝保經"
+  },
+  "6101": {
+   "retained_earnings": 123529.0,
+   "quarter": "26Q2",
+   "name": "寬魚國際"
+  },
+  "6103": {
+   "retained_earnings": 12994.0,
+   "quarter": "26Q2",
+   "name": "合邦"
+  },
+  "6104": {
+   "retained_earnings": 921960.0,
+   "quarter": "26Q2",
+   "name": "創惟"
+  },
+  "6109": {
+   "retained_earnings": -123636.0,
+   "quarter": "26Q2",
+   "name": "亞元"
+  },
+  "6111": {
+   "retained_earnings": 210134.0,
+   "quarter": "26Q2",
+   "name": "光聚晶電"
+  },
+  "6113": {
+   "retained_earnings": 29369.0,
+   "quarter": "26Q2",
+   "name": "亞矽"
+  },
+  "6114": {
+   "retained_earnings": 999103.0,
+   "quarter": "26Q2",
+   "name": "久威"
+  },
+  "6118": {
+   "retained_earnings": 153959.0,
+   "quarter": "26Q2",
+   "name": "建達"
+  },
+  "6121": {
+   "retained_earnings": 31828555.0,
+   "quarter": "26Q2",
+   "name": "新普"
+  },
+  "6122": {
+   "retained_earnings": 892295.0,
+   "quarter": "26Q2",
+   "name": "擎邦"
+  },
+  "6123": {
+   "retained_earnings": 470746.0,
+   "quarter": "26Q2",
+   "name": "上奇"
+  },
+  "6124": {
+   "retained_earnings": 568687.0,
+   "quarter": "26Q2",
+   "name": "業強"
+  },
+  "6125": {
+   "retained_earnings": 815270.0,
+   "quarter": "26Q2",
+   "name": "廣運"
+  },
+  "6126": {
+   "retained_earnings": 469584.0,
+   "quarter": "26Q2",
+   "name": "信音"
+  },
+  "6127": {
+   "retained_earnings": -110782.0,
+   "quarter": "26Q2",
+   "name": "九豪"
+  },
+  "6129": {
+   "retained_earnings": -241235.0,
+   "quarter": "26Q2",
+   "name": "普誠"
+  },
+  "6130": {
+   "retained_earnings": -77767.0,
+   "quarter": "26Q2",
+   "name": "上亞科技"
+  },
+  "6134": {
+   "retained_earnings": 62410.0,
+   "quarter": "26Q2",
+   "name": "萬旭"
+  },
+  "6138": {
+   "retained_earnings": 2208120.0,
+   "quarter": "26Q2",
+   "name": "茂達"
+  },
+  "6140": {
+   "retained_earnings": -3493.0,
+   "quarter": "26Q2",
+   "name": "訊達電腦"
+  },
+  "6143": {
+   "retained_earnings": 1553989.0,
+   "quarter": "26Q2",
+   "name": "振曜"
+  },
+  "6144": {
+   "retained_earnings": -74090.0,
+   "quarter": "26Q2",
+   "name": "得利影"
+  },
+  "6146": {
+   "retained_earnings": 3197357.0,
+   "quarter": "26Q2",
+   "name": "耕興"
+  },
+  "6147": {
+   "retained_earnings": 36246380.0,
+   "quarter": "26Q2",
+   "name": "頎邦"
+  },
+  "6148": {
+   "retained_earnings": 79173.0,
+   "quarter": "26Q2",
+   "name": "驊宏資"
+  },
+  "6150": {
+   "retained_earnings": 384541.0,
+   "quarter": "26Q2",
+   "name": "撼訊"
+  },
+  "6151": {
+   "retained_earnings": 391153.0,
+   "quarter": "26Q2",
+   "name": "晉倫"
+  },
+  "6154": {
+   "retained_earnings": 473403.0,
+   "quarter": "26Q2",
+   "name": "順發"
+  },
+  "6156": {
+   "retained_earnings": 862641.0,
+   "quarter": "26Q2",
+   "name": "松上"
+  },
+  "6158": {
+   "retained_earnings": 570311.0,
+   "quarter": "26Q2",
+   "name": "禾昌"
+  },
+  "6160": {
+   "retained_earnings": -100058.0,
+   "quarter": "26Q2",
+   "name": "欣技"
+  },
+  "6161": {
+   "retained_earnings": 640493.0,
+   "quarter": "26Q2",
+   "name": "捷波"
+  },
+  "6163": {
+   "retained_earnings": 815444.0,
+   "quarter": "26Q2",
+   "name": "華電網"
+  },
+  "6167": {
+   "retained_earnings": 226168.0,
+   "quarter": "26Q2",
+   "name": "久正"
+  },
+  "6169": {
+   "retained_earnings": -23744.0,
+   "quarter": "26Q2",
+   "name": "昱泉"
+  },
+  "6170": {
+   "retained_earnings": 495203.0,
+   "quarter": "26Q2",
+   "name": "統振"
+  },
+  "6171": {
+   "retained_earnings": 1169757.0,
+   "quarter": "26Q2",
+   "name": "大城地產"
+  },
+  "6173": {
+   "retained_earnings": 4912199.0,
+   "quarter": "26Q2",
+   "name": "信昌電"
+  },
+  "6174": {
+   "retained_earnings": 162424.0,
+   "quarter": "26Q2",
+   "name": "安碁"
+  },
+  "6175": {
+   "retained_earnings": 1823711.0,
+   "quarter": "26Q2",
+   "name": "立敦"
+  },
+  "6179": {
+   "retained_earnings": 216305.0,
+   "quarter": "26Q2",
+   "name": "亞通"
+  },
+  "6180": {
+   "retained_earnings": 1435033.0,
+   "quarter": "26Q2",
+   "name": "橘子"
+  },
+  "6182": {
+   "retained_earnings": 2651969.0,
+   "quarter": "26Q2",
+   "name": "合晶"
+  },
+  "6185": {
+   "retained_earnings": 571394.0,
+   "quarter": "26Q2",
+   "name": "幃翔"
+  },
+  "6186": {
+   "retained_earnings": 1794516.0,
+   "quarter": "26Q2",
+   "name": "新潤"
+  },
+  "6187": {
+   "retained_earnings": 2965519.0,
+   "quarter": "26Q2",
+   "name": "萬潤"
+  },
+  "6188": {
+   "retained_earnings": 4409444.0,
+   "quarter": "26Q2",
+   "name": "廣明"
+  },
+  "6190": {
+   "retained_earnings": 814257.0,
+   "quarter": "26Q2",
+   "name": "萬泰科"
+  },
+  "6194": {
+   "retained_earnings": 1405782.0,
+   "quarter": "26Q2",
+   "name": "育富"
+  },
+  "6195": {
+   "retained_earnings": 503998.0,
+   "quarter": "26Q2",
+   "name": "詩肯"
+  },
+  "6198": {
+   "retained_earnings": -103979.0,
+   "quarter": "26Q2",
+   "name": "瑞築"
+  },
+  "6199": {
+   "retained_earnings": 407301.0,
+   "quarter": "26Q2",
+   "name": "天品"
+  },
+  "6203": {
+   "retained_earnings": 1848719.0,
+   "quarter": "26Q2",
+   "name": "海韻電"
+  },
+  "6204": {
+   "retained_earnings": 131410.0,
+   "quarter": "26Q2",
+   "name": "艾華"
+  },
+  "6207": {
+   "retained_earnings": 864293.0,
+   "quarter": "26Q2",
+   "name": "雷科"
+  },
+  "6208": {
+   "retained_earnings": 1967068.0,
+   "quarter": "26Q2",
+   "name": "日揚"
+  },
+  "6210": {
+   "retained_earnings": -30168.0,
+   "quarter": "26Q2",
+   "name": "慶生"
+  },
+  "6212": {
+   "retained_earnings": 2829245.0,
+   "quarter": "26Q2",
+   "name": "理銘"
+  },
+  "6217": {
+   "retained_earnings": -3687.0,
+   "quarter": "26Q2",
+   "name": "中探針"
+  },
+  "6218": {
+   "retained_earnings": 302014.0,
+   "quarter": "26Q2",
+   "name": "豪勉"
+  },
+  "6219": {
+   "retained_earnings": 381862.0,
+   "quarter": "26Q2",
+   "name": "富旺"
+  },
+  "6220": {
+   "retained_earnings": 661988.0,
+   "quarter": "26Q2",
+   "name": "岳豐"
+  },
+  "6221": {
+   "retained_earnings": 814854.0,
+   "quarter": "26Q2",
+   "name": "晉泰"
+  },
+  "6222": {
+   "retained_earnings": -15195.0,
+   "quarter": "26Q2",
+   "name": "立軒"
+  },
+  "6223": {
+   "retained_earnings": 8807113.0,
+   "quarter": "26Q2",
+   "name": "旺矽"
+  },
+  "6227": {
+   "retained_earnings": 2271902.0,
+   "quarter": "26Q2",
+   "name": "茂綸"
+  },
+  "6228": {
+   "retained_earnings": -56627.0,
+   "quarter": "26Q2",
+   "name": "全譜"
+  },
+  "6229": {
+   "retained_earnings": 191203.0,
+   "quarter": "26Q2",
+   "name": "研通"
+  },
+  "6231": {
+   "retained_earnings": 538714.0,
+   "quarter": "26Q2",
+   "name": "系微"
+  },
+  "6233": {
+   "retained_earnings": 381688.0,
+   "quarter": "26Q2",
+   "name": "旺玖"
+  },
+  "6234": {
+   "retained_earnings": 763294.0,
+   "quarter": "26Q2",
+   "name": "高僑"
+  },
+  "6236": {
+   "retained_earnings": -259137.0,
+   "quarter": "26Q2",
+   "name": "中湛"
+  },
+  "6237": {
+   "retained_earnings": 139450.0,
+   "quarter": "26Q2",
+   "name": "驊訊"
+  },
+  "6240": {
+   "retained_earnings": 132854.0,
+   "quarter": "26Q2",
+   "name": "松崗"
+  },
+  "6241": {
+   "retained_earnings": -118217.0,
+   "quarter": "26Q2",
+   "name": "鑫永洋"
+  },
+  "6242": {
+   "retained_earnings": 328354.0,
+   "quarter": "26Q2",
+   "name": "立康"
+  },
+  "6244": {
+   "retained_earnings": 561184.0,
+   "quarter": "26Q2",
+   "name": "茂迪"
+  },
+  "6245": {
+   "retained_earnings": 2940797.0,
+   "quarter": "26Q2",
+   "name": "立端"
+  },
+  "6246": {
+   "retained_earnings": 8900.0,
+   "quarter": "26Q2",
+   "name": "臺龍"
+  },
+  "6248": {
+   "retained_earnings": 374607.0,
+   "quarter": "26Q2",
+   "name": "沛波"
+  },
+  "6259": {
+   "retained_earnings": 78524.0,
+   "quarter": "26Q2",
+   "name": "百徽"
+  },
+  "6261": {
+   "retained_earnings": 2999269.0,
+   "quarter": "26Q2",
+   "name": "久元"
+  },
+  "6263": {
+   "retained_earnings": 920329.0,
+   "quarter": "26Q2",
+   "name": "普萊德"
+  },
+  "6264": {
+   "retained_earnings": -722536.0,
+   "quarter": "26Q2",
+   "name": "富裔"
+  },
+  "6265": {
+   "retained_earnings": 770796.0,
+   "quarter": "26Q2",
+   "name": "方土昶"
+  },
+  "6266": {
+   "retained_earnings": 577332.0,
+   "quarter": "26Q2",
+   "name": "泰詠"
+  },
+  "6270": {
+   "retained_earnings": 191566.0,
+   "quarter": "26Q2",
+   "name": "倍微"
+  },
+  "6274": {
+   "retained_earnings": 11503893.0,
+   "quarter": "26Q2",
+   "name": "台燿"
+  },
+  "6275": {
+   "retained_earnings": 704684.0,
+   "quarter": "26Q2",
+   "name": "元山"
+  },
+  "6276": {
+   "retained_earnings": -95857.0,
+   "quarter": "26Q2",
+   "name": "安鈦克"
+  },
+  "6279": {
+   "retained_earnings": 5624403.0,
+   "quarter": "26Q2",
+   "name": "胡連"
+  },
+  "6284": {
+   "retained_earnings": 3143363.0,
+   "quarter": "26Q2",
+   "name": "佳邦"
+  },
+  "6290": {
+   "retained_earnings": 3662962.0,
+   "quarter": "26Q2",
+   "name": "良維"
+  },
+  "6291": {
+   "retained_earnings": 503456.0,
+   "quarter": "26Q2",
+   "name": "沛亨"
+  },
+  "6292": {
+   "retained_earnings": 727418.0,
+   "quarter": "26Q2",
+   "name": "迅德"
+  },
+  "6294": {
+   "retained_earnings": 296472.0,
+   "quarter": "26Q2",
+   "name": "智基"
+  },
+  "6411": {
+   "retained_earnings": 2012276.0,
+   "quarter": "26Q2",
+   "name": "晶焱"
+  },
+  "6417": {
+   "retained_earnings": 1003868.0,
+   "quarter": "26Q2",
+   "name": "韋僑"
+  },
+  "6418": {
+   "retained_earnings": 69271.0,
+   "quarter": "26Q2",
+   "name": "詠昇"
+  },
+  "6419": {
+   "retained_earnings": 576175.0,
+   "quarter": "26Q2",
+   "name": "京晨科"
+  },
+  "6423": {
+   "retained_earnings": 33291.0,
+   "quarter": "26Q2",
+   "name": "億而得"
+  },
+  "6425": {
+   "retained_earnings": 74037.0,
+   "quarter": "26Q2",
+   "name": "易發"
+  },
+  "6432": {
+   "retained_earnings": 232010.0,
+   "quarter": "26Q2",
+   "name": "今展科"
+  },
+  "6435": {
+   "retained_earnings": 1360997.0,
+   "quarter": "26Q2",
+   "name": "大中"
+  },
+  "6441": {
+   "retained_earnings": -139814.0,
+   "quarter": "26Q2",
+   "name": "廣錠"
+  },
+  "6461": {
+   "retained_earnings": -214559.0,
+   "quarter": "26Q2",
+   "name": "益得"
+  },
+  "6462": {
+   "retained_earnings": -489587.0,
+   "quarter": "26Q2",
+   "name": "神盾"
+  },
+  "6465": {
+   "retained_earnings": 98314.0,
+   "quarter": "26Q2",
+   "name": "威潤"
+  },
+  "6469": {
+   "retained_earnings": 651102.0,
+   "quarter": "26Q2",
+   "name": "大樹"
+  },
+  "6470": {
+   "retained_earnings": 480421.0,
+   "quarter": "26Q2",
+   "name": "宇智"
+  },
+  "6474": {
+   "retained_earnings": 926855.0,
+   "quarter": "26Q2",
+   "name": "華豫寧"
+  },
+  "6482": {
+   "retained_earnings": 73486.0,
+   "quarter": "26Q2",
+   "name": "弘煜科"
+  },
+  "6485": {
+   "retained_earnings": 633911.0,
+   "quarter": "26Q2",
+   "name": "點序"
+  },
+  "6486": {
+   "retained_earnings": 368190.0,
+   "quarter": "26Q2",
+   "name": "互動"
+  },
+  "6488": {
+   "retained_earnings": 55088756.0,
+   "quarter": "26Q2",
+   "name": "環球晶"
+  },
+  "6492": {
+   "retained_earnings": -241089.0,
+   "quarter": "26Q2",
+   "name": "生華科"
+  },
+  "6494": {
+   "retained_earnings": 511271.0,
+   "quarter": "26Q2",
+   "name": "九齊"
+  },
+  "6496": {
+   "retained_earnings": -30428.0,
+   "quarter": "26Q2",
+   "name": "科懋"
+  },
+  "6498": {
+   "retained_earnings": 671699.0,
+   "quarter": "26Q2",
+   "name": "久禾光"
+  },
+  "6499": {
+   "retained_earnings": -1742798.0,
+   "quarter": "26Q2",
+   "name": "益安"
+  },
+  "6506": {
+   "retained_earnings": 432979.0,
+   "quarter": "26Q2",
+   "name": "雙邦"
+  },
+  "6508": {
+   "retained_earnings": 1397413.0,
+   "quarter": "26Q2",
+   "name": "惠光"
+  },
+  "6509": {
+   "retained_earnings": 2402599.0,
+   "quarter": "26Q2",
+   "name": "聚和"
+  },
+  "6510": {
+   "retained_earnings": 4840669.0,
+   "quarter": "26Q2",
+   "name": "精測"
+  },
+  "6512": {
+   "retained_earnings": -42927.0,
+   "quarter": "26Q2",
+   "name": "啟發電"
+  },
+  "6516": {
+   "retained_earnings": 148552.0,
+   "quarter": "26Q2",
+   "name": "勤崴國際"
+  },
+  "6517": {
+   "retained_earnings": 270115.0,
+   "quarter": "26Q2",
+   "name": "保勝光學"
+  },
+  "6523": {
+   "retained_earnings": 671716.0,
+   "quarter": "26Q2",
+   "name": "達爾膚"
+  },
+  "6527": {
+   "retained_earnings": 573560.0,
+   "quarter": "26Q2",
+   "name": "明達醫"
+  },
+  "6530": {
+   "retained_earnings": 85880.0,
+   "quarter": "26Q2",
+   "name": "創威"
+  },
+  "6532": {
+   "retained_earnings": 606118.0,
+   "quarter": "26Q2",
+   "name": "瑞耘"
+  },
+  "6535": {
+   "retained_earnings": -622159.0,
+   "quarter": "26Q2",
+   "name": "順藥"
+  },
+  "6538": {
+   "retained_earnings": 1078820.0,
+   "quarter": "26Q2",
+   "name": "倉和"
+  },
+  "6542": {
+   "retained_earnings": 42318.0,
+   "quarter": "26Q2",
+   "name": "隆中"
+  },
+  "6546": {
+   "retained_earnings": 437449.0,
+   "quarter": "26Q2",
+   "name": "正基"
+  },
+  "6547": {
+   "retained_earnings": -5530.0,
+   "quarter": "26Q2",
+   "name": "高端疫苗"
+  },
+  "6548": {
+   "retained_earnings": 5042475.0,
+   "quarter": "26Q2",
+   "name": "長科*"
+  },
+  "6556": {
+   "retained_earnings": 912025.0,
+   "quarter": "26Q2",
+   "name": "勝品"
+  },
+  "6560": {
+   "retained_earnings": 112554.0,
+   "quarter": "26Q2",
+   "name": "欣普羅"
+  },
+  "6561": {
+   "retained_earnings": 1457494.0,
+   "quarter": "26Q2",
+   "name": "是方"
+  },
+  "6568": {
+   "retained_earnings": 897430.0,
+   "quarter": "26Q2",
+   "name": "宏觀"
+  },
+  "6569": {
+   "retained_earnings": 419859.0,
+   "quarter": "26Q2",
+   "name": "醫揚"
+  },
+  "6570": {
+   "retained_earnings": 177797.0,
+   "quarter": "26Q2",
+   "name": "維田"
+  },
+  "6574": {
+   "retained_earnings": 591466.0,
+   "quarter": "26Q2",
+   "name": "霈方"
+  },
+  "6576": {
+   "retained_earnings": -6410647.0,
+   "quarter": "26Q2",
+   "name": "逸達"
+  },
+  "6577": {
+   "retained_earnings": 531367.0,
+   "quarter": "26Q2",
+   "name": "勁豐"
+  },
+  "6578": {
+   "retained_earnings": 26450.0,
+   "quarter": "26Q2",
+   "name": "達邦蛋白"
+  },
+  "6584": {
+   "retained_earnings": 1278427.0,
+   "quarter": "26Q2",
+   "name": "南俊國際"
+  },
+  "6588": {
+   "retained_earnings": 21104.0,
+   "quarter": "26Q2",
+   "name": "東典光電"
+  },
+  "6590": {
+   "retained_earnings": 178906.0,
+   "quarter": "26Q2",
+   "name": "普鴻"
+  },
+  "6593": {
+   "retained_earnings": 103010.0,
+   "quarter": "26Q2",
+   "name": "台灣銘板"
+  },
+  "6596": {
+   "retained_earnings": 397390.0,
+   "quarter": "26Q2",
+   "name": "寬宏藝術"
+  },
+  "6597": {
+   "retained_earnings": 144712.0,
+   "quarter": "26Q2",
+   "name": "立誠"
+  },
+  "6603": {
+   "retained_earnings": 860958.0,
+   "quarter": "26Q2",
+   "name": "富強鑫"
+  },
+  "6609": {
+   "retained_earnings": 1501655.0,
+   "quarter": "26Q2",
+   "name": "瀧澤科"
+  },
+  "6612": {
+   "retained_earnings": 461678.0,
+   "quarter": "26Q2",
+   "name": "奈米醫材"
+  },
+  "6613": {
+   "retained_earnings": 2819897.0,
+   "quarter": "26Q2",
+   "name": "朋億*"
+  },
+  "6615": {
+   "retained_earnings": 90757.0,
+   "quarter": "26Q2",
+   "name": "慧智"
+  },
+  "6620": {
+   "retained_earnings": 828775.0,
+   "quarter": "26Q2",
+   "name": "漢達"
+  },
+  "6624": {
+   "retained_earnings": 33461.0,
+   "quarter": "26Q2",
+   "name": "萬年清"
+  },
+  "6637": {
+   "retained_earnings": 488727.0,
+   "quarter": "26Q2",
+   "name": "醫影"
+  },
+  "6640": {
+   "retained_earnings": 506098.0,
+   "quarter": "26Q2",
+   "name": "均華"
+  },
+  "6642": {
+   "retained_earnings": 371307.0,
+   "quarter": "26Q2",
+   "name": "富致"
+  },
+  "6643": {
+   "retained_earnings": 639467.0,
+   "quarter": "26Q2",
+   "name": "M31"
+  },
+  "6649": {
+   "retained_earnings": 31179.0,
+   "quarter": "26Q2",
+   "name": "台生材"
+  },
+  "6651": {
+   "retained_earnings": 670205.0,
+   "quarter": "26Q2",
+   "name": "全宇昕"
+  },
+  "6654": {
+   "retained_earnings": 100961.0,
+   "quarter": "26Q2",
+   "name": "天正國際"
+  },
+  "6661": {
+   "retained_earnings": 13299.0,
+   "quarter": "26Q2",
+   "name": "威健生技"
+  },
+  "6662": {
+   "retained_earnings": 117637.0,
+   "quarter": "26Q2",
+   "name": "樂斯科"
+  },
+  "6664": {
+   "retained_earnings": 2572099.0,
+   "quarter": "26Q2",
+   "name": "群翊"
+  },
+  "6667": {
+   "retained_earnings": 749986.0,
+   "quarter": "26Q2",
+   "name": "信紘科"
+  },
+  "6679": {
+   "retained_earnings": 1032957.0,
+   "quarter": "26Q2",
+   "name": "鈺太"
+  },
+  "6680": {
+   "retained_earnings": 138456.0,
+   "quarter": "26Q2",
+   "name": "鑫創電子"
+  },
+  "6683": {
+   "retained_earnings": 2168056.0,
+   "quarter": "26Q2",
+   "name": "雍智科技"
+  },
+  "6684": {
+   "retained_earnings": -124762.0,
+   "quarter": "26Q2",
+   "name": "安格"
+  },
+  "6690": {
+   "retained_earnings": 468030.0,
+   "quarter": "26Q2",
+   "name": "安碁資訊"
+  },
+  "6692": {
+   "retained_earnings": 123339.0,
+   "quarter": "26Q2",
+   "name": "進能服"
+  },
+  "6693": {
+   "retained_earnings": 214948.0,
+   "quarter": "26Q2",
+   "name": "廣閎科"
+  },
+  "6697": {
+   "retained_earnings": 170965.0,
+   "quarter": "26Q2",
+   "name": "東捷資訊"
+  },
+  "6703": {
+   "retained_earnings": 394758.0,
+   "quarter": "26Q2",
+   "name": "軒郁"
+  },
+  "6708": {
+   "retained_earnings": 2717.0,
+   "quarter": "26Q2",
+   "name": "天擎"
+  },
+  "6712": {
+   "retained_earnings": 343592.0,
+   "quarter": "26Q2",
+   "name": "長聖"
+  },
+  "6716": {
+   "retained_earnings": 400275.0,
+   "quarter": "26Q2",
+   "name": "應廣"
+  },
+  "6720": {
+   "retained_earnings": 88712.0,
+   "quarter": "26Q2",
+   "name": "久昌"
+  },
+  "6721": {
+   "retained_earnings": 246512.0,
+   "quarter": "26Q2",
+   "name": "信實"
+  },
+  "6725": {
+   "retained_earnings": 1087848.0,
+   "quarter": "26Q2",
+   "name": "矽科宏晟"
+  },
+  "6727": {
+   "retained_earnings": 780690.0,
+   "quarter": "26Q2",
+   "name": "亞泰金屬"
+  },
+  "6728": {
+   "retained_earnings": 769885.0,
+   "quarter": "26Q2",
+   "name": "上洋"
+  },
+  "6730": {
+   "retained_earnings": 233796.0,
+   "quarter": "26Q2",
+   "name": "常廣"
+  },
+  "6732": {
+   "retained_earnings": 1435138.0,
+   "quarter": "26Q2",
+   "name": "昇佳電子"
+  },
+  "6733": {
+   "retained_earnings": -522633.0,
+   "quarter": "26Q2",
+   "name": "博晟生醫"
+  },
+  "6735": {
+   "retained_earnings": 145231.0,
+   "quarter": "26Q2",
+   "name": "美達科技"
+  },
+  "6739": {
+   "retained_earnings": 430482.0,
+   "quarter": "26Q2",
+   "name": "竹陞科技"
+  },
+  "6751": {
+   "retained_earnings": 119523.0,
+   "quarter": "26Q2",
+   "name": "智聯服務"
+  },
+  "6752": {
+   "retained_earnings": 764857.0,
+   "quarter": "26Q2",
+   "name": "叡揚"
+  },
+  "6761": {
+   "retained_earnings": 482960.0,
+   "quarter": "26Q2",
+   "name": "穩得"
+  },
+  "6762": {
+   "retained_earnings": 268666.0,
+   "quarter": "26Q2",
+   "name": "達亞"
+  },
+  "6763": {
+   "retained_earnings": 771493.0,
+   "quarter": "26Q2",
+   "name": "綠界科技*"
+  },
+  "6767": {
+   "retained_earnings": -144960.0,
+   "quarter": "26Q2",
+   "name": "台微醫"
+  },
+  "6785": {
+   "retained_earnings": 122427.0,
+   "quarter": "26Q2",
+   "name": "昱展新藥"
+  },
+  "6788": {
+   "retained_earnings": 984352.0,
+   "quarter": "26Q2",
+   "name": "華景電"
+  },
+  "6791": {
+   "retained_earnings": 145789.0,
+   "quarter": "26Q2",
+   "name": "虎門科技"
+  },
+  "6803": {
+   "retained_earnings": 2759912.0,
+   "quarter": "26Q2",
+   "name": "崑鼎"
+  },
+  "6804": {
+   "retained_earnings": 228039.0,
+   "quarter": "26Q2",
+   "name": "明係"
+  },
+  "6811": {
+   "retained_earnings": 1312347.0,
+   "quarter": "26Q2",
+   "name": "宏碁資訊"
+  },
+  "6821": {
+   "retained_earnings": 242681.0,
+   "quarter": "26Q2",
+   "name": "聯寶"
+  },
+  "6823": {
+   "retained_earnings": -143888.0,
+   "quarter": "26Q2",
+   "name": "濾能"
+  },
+  "6829": {
+   "retained_earnings": 346571.0,
+   "quarter": "26Q2",
+   "name": "千附精密"
+  },
+  "6840": {
+   "retained_earnings": 276208.0,
+   "quarter": "26Q2",
+   "name": "東研信超"
+  },
+  "6841": {
+   "retained_earnings": -389.0,
+   "quarter": "26Q2",
+   "name": "長佳智能"
+  },
+  "6843": {
+   "retained_earnings": 188241.0,
+   "quarter": "26Q2",
+   "name": "進典"
+  },
+  "6844": {
+   "retained_earnings": 1419032.0,
+   "quarter": "26Q2",
+   "name": "諾貝兒"
+  },
+  "6846": {
+   "retained_earnings": 388636.0,
+   "quarter": "26Q2",
+   "name": "綠茵"
+  },
+  "6855": {
+   "retained_earnings": 579803.0,
+   "quarter": "26Q2",
+   "name": "數泓科"
+  },
+  "6856": {
+   "retained_earnings": 206476.0,
+   "quarter": "26Q2",
+   "name": "鑫傳"
+  },
+  "6859": {
+   "retained_earnings": 1052110.0,
+   "quarter": "26Q2",
+   "name": "伯特光"
+  },
+  "6865": {
+   "retained_earnings": 42245.0,
+   "quarter": "26Q2",
+   "name": "偉康科技"
+  },
+  "6870": {
+   "retained_earnings": 178040.0,
+   "quarter": "26Q2",
+   "name": "騰雲"
+  },
+  "6872": {
+   "retained_earnings": -760577.0,
+   "quarter": "26Q2",
+   "name": "浩宇生醫"
+  },
+  "6874": {
+   "retained_earnings": 130581.0,
+   "quarter": "26Q2",
+   "name": "倍力"
+  },
+  "6875": {
+   "retained_earnings": -181623.0,
+   "quarter": "26Q2",
+   "name": "國邑*"
+  },
+  "6877": {
+   "retained_earnings": -3392.0,
+   "quarter": "26Q2",
+   "name": "鏵友益"
+  },
+  "6881": {
+   "retained_earnings": 231144.0,
+   "quarter": "26Q2",
+   "name": "潤德"
+  },
+  "6884": {
+   "retained_earnings": 61968.0,
+   "quarter": "26Q2",
+   "name": "海柏特"
+  },
+  "6894": {
+   "retained_earnings": 680950.0,
+   "quarter": "26Q2",
+   "name": "衛司特"
+  },
+  "6895": {
+   "retained_earnings": 19405.0,
+   "quarter": "26Q2",
+   "name": "宏碩系統"
+  },
+  "6899": {
+   "retained_earnings": 1097126.0,
+   "quarter": "26Q2",
+   "name": "創為精密"
+  },
+  "6903": {
+   "retained_earnings": 1886953.0,
+   "quarter": "26Q2",
+   "name": "巨漢"
+  },
+  "6904": {
+   "retained_earnings": 590491.0,
+   "quarter": "26Q2",
+   "name": "伯鑫"
+  },
+  "6907": {
+   "retained_earnings": 512784.0,
+   "quarter": "26Q2",
+   "name": "雅特力-KY"
+  },
+  "6910": {
+   "retained_earnings": 54206.0,
+   "quarter": "26Q2",
+   "name": "德鴻"
+  },
+  "6913": {
+   "retained_earnings": 696669.0,
+   "quarter": "26Q2",
+   "name": "鴻呈"
+  },
+  "6922": {
+   "retained_earnings": 433569.0,
+   "quarter": "26Q2",
+   "name": "宸曜"
+  },
+  "6925": {
+   "retained_earnings": 82622.0,
+   "quarter": "26Q2",
+   "name": "意藍"
+  },
+  "6929": {
+   "retained_earnings": -96303.0,
+   "quarter": "26Q2",
+   "name": "佑全"
+  },
+  "6945": {
+   "retained_earnings": -217293.0,
+   "quarter": "26Q2",
+   "name": "圓祥生技"
+  },
+  "6953": {
+   "retained_earnings": 528606.0,
+   "quarter": "26Q2",
+   "name": "家碩"
+  },
+  "6961": {
+   "retained_earnings": 87952.0,
+   "quarter": "26Q2",
+   "name": "旅天下"
+  },
+  "6967": {
+   "retained_earnings": 282537.0,
+   "quarter": "26Q2",
+   "name": "汎瑋材料"
+  },
+  "6968": {
+   "retained_earnings": 225475.0,
+   "quarter": "26Q2",
+   "name": "萬達寵物"
+  },
+  "6971": {
+   "retained_earnings": 214690.0,
+   "quarter": "26Q2",
+   "name": "惠民實業"
+  },
+  "6982": {
+   "retained_earnings": 53373.0,
+   "quarter": "26Q2",
+   "name": "大井泵浦"
+  },
+  "6983": {
+   "retained_earnings": 116223.0,
+   "quarter": "26Q2",
+   "name": "華洋精機"
+  },
+  "6986": {
+   "retained_earnings": 197845.0,
+   "quarter": "26Q2",
+   "name": "和迅"
+  },
+  "6996": {
+   "retained_earnings": 758266.0,
+   "quarter": "26Q2",
+   "name": "力領科技"
+  },
+  "6997": {
+   "retained_earnings": 25266.0,
+   "quarter": "26Q2",
+   "name": "博弘"
+  },
+  "7402": {
+   "retained_earnings": 49546.0,
+   "quarter": "26Q2",
+   "name": "邑錡"
+  },
+  "7547": {
+   "retained_earnings": 93810.0,
+   "quarter": "26Q2",
+   "name": "碩網"
+  },
+  "7556": {
+   "retained_earnings": 523983.0,
+   "quarter": "26Q2",
+   "name": "意德士科技"
+  },
+  "7584": {
+   "retained_earnings": 87210.0,
+   "quarter": "26Q2",
+   "name": "樂意"
+  },
+  "7642": {
+   "retained_earnings": 304879.0,
+   "quarter": "26Q2",
+   "name": "昶瑞機電"
+  },
+  "7703": {
+   "retained_earnings": 512711.0,
+   "quarter": "26Q2",
+   "name": "銳澤"
+  },
+  "7704": {
+   "retained_earnings": 156377.0,
+   "quarter": "26Q2",
+   "name": "明遠精密"
+  },
+  "7708": {
+   "retained_earnings": 333969.0,
+   "quarter": "26Q2",
+   "name": "全家餐飲"
+  },
+  "7709": {
+   "retained_earnings": 1109335.0,
+   "quarter": "26Q2",
+   "name": "榮田"
+  },
+  "7712": {
+   "retained_earnings": 828440.0,
+   "quarter": "26Q2",
+   "name": "博盛半導體"
+  },
+  "7713": {
+   "retained_earnings": 351745.0,
+   "quarter": "26Q2",
+   "name": "威力德生醫"
+  },
+  "7714": {
+   "retained_earnings": 158553.0,
+   "quarter": "26Q2",
+   "name": "創泓科技"
+  },
+  "7715": {
+   "retained_earnings": 248293.0,
+   "quarter": "26Q2",
+   "name": "裕山"
+  },
+  "7716": {
+   "retained_earnings": 186900.0,
+   "quarter": "26Q2",
+   "name": "昱臺國際"
+  },
+  "7718": {
+   "retained_earnings": 707502.0,
+   "quarter": "26Q2",
+   "name": "友鋮"
+  },
+  "7723": {
+   "retained_earnings": -135984.0,
+   "quarter": "26Q2",
+   "name": "築間"
+  },
+  "7728": {
+   "retained_earnings": 80018.0,
+   "quarter": "26Q2",
+   "name": "光焱科技"
+  },
+  "7734": {
+   "retained_earnings": 2837171.0,
+   "quarter": "26Q2",
+   "name": "印能科技"
+  },
+  "7738": {
+   "retained_earnings": 395481.0,
+   "quarter": "26Q2",
+   "name": "東聯互動"
+  },
+  "7743": {
+   "retained_earnings": 83389.0,
+   "quarter": "26Q2",
+   "name": "金利食安"
+  },
+  "7744": {
+   "retained_earnings": 1098059.0,
+   "quarter": "26Q2",
+   "name": "崴寶"
+  },
+  "7747": {
+   "retained_earnings": 121585.0,
+   "quarter": "26Q2",
+   "name": "昕奇雲端"
+  },
+  "7751": {
+   "retained_earnings": 1327557.0,
+   "quarter": "26Q2",
+   "name": "竑騰"
+  },
+  "7753": {
+   "retained_earnings": 178110.0,
+   "quarter": "26Q2",
+   "name": "星亞"
+  },
+  "7757": {
+   "retained_earnings": 216840.0,
+   "quarter": "26Q2",
+   "name": "金色三麥"
+  },
+  "7767": {
+   "retained_earnings": 433183.0,
+   "quarter": "26Q2",
+   "name": "仁大資訊"
+  },
+  "7770": {
+   "retained_earnings": 115032.0,
+   "quarter": "26Q2",
+   "name": "君曜"
+  },
+  "7772": {
+   "retained_earnings": 158353.0,
+   "quarter": "26Q2",
+   "name": "耀穎"
+  },
+  "7777": {
+   "retained_earnings": 240029.0,
+   "quarter": "26Q2",
+   "name": "能率亞洲"
+  },
+  "7782": {
+   "retained_earnings": 56226.0,
+   "quarter": "26Q2",
+   "name": "光速火箭"
+  },
+  "7792": {
+   "retained_earnings": 1331889.0,
+   "quarter": "26Q2",
+   "name": "安葆"
+  },
+  "7794": {
+   "retained_earnings": 76037.0,
+   "quarter": "26Q2",
+   "name": "宏碁智新"
+  },
+  "7805": {
+   "retained_earnings": 4605461.0,
+   "quarter": "26Q2",
+   "name": "威聯通"
+  },
+  "7810": {
+   "retained_earnings": 200547.0,
+   "quarter": "26Q2",
+   "name": "捷創科技"
+  },
+  "7811": {
+   "retained_earnings": 352461.0,
+   "quarter": "26Q2",
+   "name": "民盛"
+  },
+  "7814": {
+   "retained_earnings": -108300.0,
+   "quarter": "26Q2",
+   "name": "海昌生技"
+  },
+  "7819": {
+   "retained_earnings": 126612.0,
+   "quarter": "26Q2",
+   "name": "精誠金融"
+  },
+  "7820": {
+   "retained_earnings": 145848.0,
+   "quarter": "26Q2",
+   "name": "立盈"
+  },
+  "7828": {
+   "retained_earnings": 312272.0,
+   "quarter": "26Q2",
+   "name": "創新服務"
+  },
+  "7839": {
+   "retained_earnings": 23955.0,
+   "quarter": "26Q2",
+   "name": "達人網"
+  },
+  "7842": {
+   "retained_earnings": 72626.0,
+   "quarter": "26Q2",
+   "name": "天能綠電"
+  },
+  "8024": {
+   "retained_earnings": -57570.0,
+   "quarter": "26Q2",
+   "name": "佑華"
+  },
+  "8027": {
+   "retained_earnings": -51138.0,
+   "quarter": "26Q2",
+   "name": "鈦昇"
+  },
+  "8032": {
+   "retained_earnings": 1335319.0,
+   "quarter": "26Q2",
+   "name": "光菱"
+  },
+  "8034": {
+   "retained_earnings": 103607.0,
+   "quarter": "26Q2",
+   "name": "榮群"
+  },
+  "8038": {
+   "retained_earnings": -282464.0,
+   "quarter": "26Q2",
+   "name": "長園科"
+  },
+  "8040": {
+   "retained_earnings": -21813.0,
+   "quarter": "26Q2",
+   "name": "九暘"
+  },
+  "8042": {
+   "retained_earnings": 1811260.0,
+   "quarter": "26Q2",
+   "name": "金山電"
+  },
+  "8043": {
+   "retained_earnings": 1739994.0,
+   "quarter": "26Q2",
+   "name": "蜜望實"
+  },
+  "8044": {
+   "retained_earnings": -1179134.0,
+   "quarter": "26Q2",
+   "name": "網家"
+  },
+  "8047": {
+   "retained_earnings": -33601.0,
+   "quarter": "26Q2",
+   "name": "星雲"
+  },
+  "8048": {
+   "retained_earnings": 541812.0,
+   "quarter": "26Q2",
+   "name": "德勝"
+  },
+  "8049": {
+   "retained_earnings": 729873.0,
+   "quarter": "26Q2",
+   "name": "晶采"
+  },
+  "8050": {
+   "retained_earnings": 2448246.0,
+   "quarter": "26Q2",
+   "name": "廣積"
+  },
+  "8054": {
+   "retained_earnings": -24716.0,
+   "quarter": "26Q2",
+   "name": "安國"
+  },
+  "8059": {
+   "retained_earnings": -137461.0,
+   "quarter": "26Q2",
+   "name": "凱碩"
+  },
+  "8064": {
+   "retained_earnings": 932528.0,
+   "quarter": "26Q2",
+   "name": "東捷"
+  },
+  "8066": {
+   "retained_earnings": 75269.0,
+   "quarter": "26Q2",
+   "name": "來思達"
+  },
+  "8067": {
+   "retained_earnings": -75827.0,
+   "quarter": "26Q2",
+   "name": "志旭"
+  },
+  "8068": {
+   "retained_earnings": 221307.0,
+   "quarter": "26Q2",
+   "name": "全達"
+  },
+  "8069": {
+   "retained_earnings": 31684901.0,
+   "quarter": "26Q2",
+   "name": "元太"
+  },
+  "8071": {
+   "retained_earnings": -101438.0,
+   "quarter": "26Q2",
+   "name": "能率網通"
+  },
+  "8074": {
+   "retained_earnings": 501500.0,
+   "quarter": "26Q2",
+   "name": "鉅橡"
+  },
+  "8076": {
+   "retained_earnings": 1193976.0,
+   "quarter": "26Q2",
+   "name": "伍豐"
+  },
+  "8077": {
+   "retained_earnings": 262479.0,
+   "quarter": "26Q2",
+   "name": "洛碁"
+  },
+  "8080": {
+   "retained_earnings": -85605.0,
+   "quarter": "26Q2",
+   "name": "泰霖"
+  },
+  "8083": {
+   "retained_earnings": 529572.0,
+   "quarter": "26Q2",
+   "name": "瑞穎"
+  },
+  "8084": {
+   "retained_earnings": -206587.0,
+   "quarter": "26Q2",
+   "name": "巨虹"
+  },
+  "8085": {
+   "retained_earnings": -219772.0,
+   "quarter": "26Q2",
+   "name": "福華"
+  },
+  "8086": {
+   "retained_earnings": 2372112.0,
+   "quarter": "26Q2",
+   "name": "宏捷科"
+  },
+  "8087": {
+   "retained_earnings": 76783.0,
+   "quarter": "26Q2",
+   "name": "麗升能源"
+  },
+  "8088": {
+   "retained_earnings": 309936.0,
+   "quarter": "26Q2",
+   "name": "品安"
+  },
+  "8089": {
+   "retained_earnings": 39655.0,
+   "quarter": "26Q2",
+   "name": "康全電訊"
+  },
+  "8091": {
+   "retained_earnings": 1372253.0,
+   "quarter": "26Q2",
+   "name": "翔名"
+  },
+  "8092": {
+   "retained_earnings": -191189.0,
+   "quarter": "26Q2",
+   "name": "建暐"
+  },
+  "8093": {
+   "retained_earnings": -165905.0,
+   "quarter": "26Q2",
+   "name": "保銳"
+  },
+  "8096": {
+   "retained_earnings": 758755.0,
+   "quarter": "26Q2",
+   "name": "擎亞"
+  },
+  "8097": {
+   "retained_earnings": -24647.0,
+   "quarter": "26Q2",
+   "name": "常珵"
+  },
+  "8099": {
+   "retained_earnings": 556002.0,
+   "quarter": "26Q2",
+   "name": "大世科"
+  },
+  "8102": {
+   "retained_earnings": 88037.0,
+   "quarter": "26Q2",
+   "name": "傑霖科技"
+  },
+  "8107": {
+   "retained_earnings": 678629.0,
+   "quarter": "26Q2",
+   "name": "大億金茂"
+  },
+  "8109": {
+   "retained_earnings": 2022052.0,
+   "quarter": "26Q2",
+   "name": "博大"
+  },
+  "8111": {
+   "retained_earnings": 246617.0,
+   "quarter": "26Q2",
+   "name": "立碁"
+  },
+  "8121": {
+   "retained_earnings": -85984.0,
+   "quarter": "26Q2",
+   "name": "越峰"
+  },
+  "8147": {
+   "retained_earnings": 208613.0,
+   "quarter": "26Q2",
+   "name": "正淩"
+  },
+  "8155": {
+   "retained_earnings": 1592635.0,
+   "quarter": "26Q2",
+   "name": "博智"
+  },
+  "8171": {
+   "retained_earnings": -65989.0,
+   "quarter": "26Q2",
+   "name": "天宇"
+  },
+  "8176": {
+   "retained_earnings": -98846.0,
+   "quarter": "26Q2",
+   "name": "智捷"
+  },
+  "8182": {
+   "retained_earnings": 1748837.0,
+   "quarter": "26Q2",
+   "name": "加高"
+  },
+  "8183": {
+   "retained_earnings": 2314384.0,
+   "quarter": "26Q2",
+   "name": "精星"
+  },
+  "8227": {
+   "retained_earnings": 228968.0,
+   "quarter": "26Q2",
+   "name": "巨有科技"
+  },
+  "8234": {
+   "retained_earnings": 1258494.0,
+   "quarter": "26Q2",
+   "name": "新漢"
+  },
+  "8240": {
+   "retained_earnings": 1793917.0,
+   "quarter": "26Q2",
+   "name": "華宏"
+  },
+  "8255": {
+   "retained_earnings": 3082968.0,
+   "quarter": "26Q2",
+   "name": "朋程"
+  },
+  "8272": {
+   "retained_earnings": 250788.0,
+   "quarter": "26Q2",
+   "name": "全景軟體"
+  },
+  "8277": {
+   "retained_earnings": -532638.0,
+   "quarter": "26Q2",
+   "name": "商丞"
+  },
+  "8279": {
+   "retained_earnings": 1447911.0,
+   "quarter": "26Q2",
+   "name": "生展"
+  },
+  "8284": {
+   "retained_earnings": 609791.0,
+   "quarter": "26Q2",
+   "name": "三竹"
+  },
+  "8289": {
+   "retained_earnings": 589450.0,
+   "quarter": "26Q2",
+   "name": "泰藝"
+  },
+  "8291": {
+   "retained_earnings": -116815.0,
+   "quarter": "26Q2",
+   "name": "尚茂"
+  },
+  "8299": {
+   "retained_earnings": 76795065.0,
+   "quarter": "26Q2",
+   "name": "群聯"
+  },
+  "8342": {
+   "retained_earnings": 664636.0,
+   "quarter": "26Q2",
+   "name": "益張"
+  },
+  "8349": {
+   "retained_earnings": 1894017.0,
+   "quarter": "26Q2",
+   "name": "恒耀國際"
+  },
+  "8354": {
+   "retained_earnings": 1306587.0,
+   "quarter": "26Q2",
+   "name": "冠好"
+  },
+  "8358": {
+   "retained_earnings": 3728843.0,
+   "quarter": "26Q2",
+   "name": "金居"
+  },
+  "8383": {
+   "retained_earnings": 1439487.0,
+   "quarter": "26Q2",
+   "name": "千附"
+  },
+  "8390": {
+   "retained_earnings": 1997430.0,
+   "quarter": "26Q2",
+   "name": "金益鼎"
+  },
+  "8401": {
+   "retained_earnings": 340132.0,
+   "quarter": "26Q2",
+   "name": "白紗科"
+  },
+  "8403": {
+   "retained_earnings": 843964.0,
+   "quarter": "26Q2",
+   "name": "盛弘"
+  },
+  "8409": {
+   "retained_earnings": -83522.0,
+   "quarter": "26Q2",
+   "name": "商之器"
+  },
+  "8410": {
+   "retained_earnings": 1154572.0,
+   "quarter": "26Q2",
+   "name": "森田"
+  },
+  "8415": {
+   "retained_earnings": 12947161.0,
+   "quarter": "26Q2",
+   "name": "大國鋼"
+  },
+  "8416": {
+   "retained_earnings": 1193550.0,
+   "quarter": "26Q2",
+   "name": "實威"
+  },
+  "8421": {
+   "retained_earnings": 205556.0,
+   "quarter": "26Q2",
+   "name": "旭源"
+  },
+  "8424": {
+   "retained_earnings": 683714.0,
+   "quarter": "26Q2",
+   "name": "惠普"
+  },
+  "8431": {
+   "retained_earnings": -88299.0,
+   "quarter": "26Q2",
+   "name": "匯鑽科"
+  },
+  "8432": {
+   "retained_earnings": 565544.0,
+   "quarter": "26Q2",
+   "name": "東生華"
+  },
+  "8433": {
+   "retained_earnings": 1434513.0,
+   "quarter": "26Q2",
+   "name": "弘帆"
+  },
+  "8435": {
+   "retained_earnings": 368925.0,
+   "quarter": "26Q2",
+   "name": "鉅邁"
+  },
+  "8436": {
+   "retained_earnings": 4445635.0,
+   "quarter": "26Q2",
+   "name": "大江"
+  },
+  "8440": {
+   "retained_earnings": 162169.0,
+   "quarter": "26Q2",
+   "name": "綠電"
+  },
+  "8446": {
+   "retained_earnings": 1240899.0,
+   "quarter": "26Q2",
+   "name": "華研"
+  },
+  "8450": {
+   "retained_earnings": -14431.0,
+   "quarter": "26Q2",
+   "name": "霹靂"
+  },
+  "8472": {
+   "retained_earnings": -11674.0,
+   "quarter": "26Q2",
+   "name": "納維康"
+  },
+  "8477": {
+   "retained_earnings": -276781.0,
+   "quarter": "26Q2",
+   "name": "創業家"
+  },
+  "8489": {
+   "retained_earnings": 78330.0,
+   "quarter": "26Q2",
+   "name": "三貝德"
+  },
+  "8905": {
+   "retained_earnings": 1310007.0,
+   "quarter": "26Q2",
+   "name": "裕國"
+  },
+  "8906": {
+   "retained_earnings": -52359.0,
+   "quarter": "26Q2",
+   "name": "花王"
+  },
+  "8908": {
+   "retained_earnings": 1101952.0,
+   "quarter": "26Q2",
+   "name": "欣雄"
+  },
+  "8916": {
+   "retained_earnings": 1746547.0,
+   "quarter": "26Q2",
+   "name": "光隆"
+  },
+  "8917": {
+   "retained_earnings": 977197.0,
+   "quarter": "26Q2",
+   "name": "欣泰"
+  },
+  "8921": {
+   "retained_earnings": 61806.0,
+   "quarter": "26Q2",
+   "name": "沈氏"
+  },
+  "8923": {
+   "retained_earnings": 135314.0,
+   "quarter": "26Q2",
+   "name": "時報"
+  },
+  "8924": {
+   "retained_earnings": 2690039.0,
+   "quarter": "26Q2",
+   "name": "大田"
+  },
+  "8927": {
+   "retained_earnings": 409711.0,
+   "quarter": "26Q2",
+   "name": "北基"
+  },
+  "8928": {
+   "retained_earnings": 604715.0,
+   "quarter": "26Q2",
+   "name": "鉅明"
+  },
+  "8929": {
+   "retained_earnings": 48989.0,
+   "quarter": "26Q2",
+   "name": "富堡"
+  },
+  "8930": {
+   "retained_earnings": 477599.0,
+   "quarter": "26Q2",
+   "name": "青鋼"
+  },
+  "8931": {
+   "retained_earnings": 811104.0,
+   "quarter": "26Q2",
+   "name": "大汽電"
+  },
+  "8932": {
+   "retained_earnings": 895891.0,
+   "quarter": "26Q2",
+   "name": "智通*"
+  },
+  "8933": {
+   "retained_earnings": -1825196.0,
+   "quarter": "26Q2",
+   "name": "愛地雅"
+  },
+  "8935": {
+   "retained_earnings": -239324.0,
+   "quarter": "26Q2",
+   "name": "邦泰"
+  },
+  "8936": {
+   "retained_earnings": 2572408.0,
+   "quarter": "26Q2",
+   "name": "國統"
+  },
+  "8937": {
+   "retained_earnings": -114822.0,
+   "quarter": "26Q2",
+   "name": "合騏*"
+  },
+  "8938": {
+   "retained_earnings": 4072492.0,
+   "quarter": "26Q2",
+   "name": "明安"
+  },
+  "8941": {
+   "retained_earnings": 318422.0,
+   "quarter": "26Q2",
+   "name": "關中"
+  },
+  "8942": {
+   "retained_earnings": 5790538.0,
+   "quarter": "26Q2",
+   "name": "森鉅"
+  },
+  "9949": {
+   "retained_earnings": 32096.0,
+   "quarter": "26Q2",
+   "name": "琉園"
+  },
+  "9950": {
+   "retained_earnings": -293233.0,
+   "quarter": "26Q2",
+   "name": "萬國通"
+  },
+  "9951": {
+   "retained_earnings": 3045497.0,
+   "quarter": "26Q2",
+   "name": "皇田"
+  },
+  "9960": {
+   "retained_earnings": 241682.0,
+   "quarter": "26Q2",
+   "name": "邁達康"
+  },
+  "9962": {
+   "retained_earnings": 172599.0,
+   "quarter": "26Q2",
+   "name": "有益"
+  },
+  "2851": {
+   "retained_earnings": 16606037.0,
+   "quarter": "26Q2",
+   "name": "中再保"
+  },
+  "2867": {
+   "retained_earnings": 100302143.0,
+   "quarter": "26Q2",
+   "name": "三商壽"
+  },
+  "1409": {
+   "retained_earnings": 16677724.0,
+   "quarter": "26Q2",
+   "name": "新纖"
+  },
+  "1718": {
+   "retained_earnings": 3554953.0,
+   "quarter": "26Q2",
+   "name": "中纖"
+  },
+  "2207": {
+   "retained_earnings": 72209372.0,
+   "quarter": "26Q2",
+   "name": "和泰車"
+  },
+  "2905": {
+   "retained_earnings": 44247440.0,
+   "quarter": "26Q2",
+   "name": "三商"
+  }
+ },
+ "count": 1836,
+ "count_history": [
+  {
+   "date": "2026-08-20",
+   "count": 1836
+  }
+ ]
+}

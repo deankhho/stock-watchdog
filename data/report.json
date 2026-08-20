@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-20T10:24:07.878469+08:00",
+ "generated_at": "2026-08-20T23:34:58.820400+08:00",
  "nv_fetched_at": "2026-08-20T10:23:45.752130+08:00",
  "official_fetched_at": "2026-08-20T10:23:09.081616+08:00",
  "nv_age_days": 0,
@@ -25,6 +25,7 @@
     },
     "gap": -1.71,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=7827"
    },
    {
@@ -48,6 +49,7 @@
     },
     "gap": -1.0,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=7835"
    }
   ],
@@ -73,6 +75,7 @@
     },
     "gap": 0.6,
     "fd_threshold": 0.5,
+    "credit_eligibility": "否",
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3086"
    },
    {
@@ -96,6 +99,7 @@
     },
     "gap": 0.03,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1516"
    },
    {
@@ -119,6 +123,7 @@
     },
     "gap": 0.07,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1441"
    },
    {
@@ -142,6 +147,7 @@
     },
     "gap": 0.1,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3508"
    },
    {
@@ -165,6 +171,7 @@
     },
     "gap": 0.1,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4304"
    },
    {
@@ -188,6 +195,7 @@
     },
     "gap": 0.28,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3018"
    },
    {
@@ -211,6 +219,7 @@
     },
     "gap": 0.29,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6141"
    },
    {
@@ -234,6 +243,7 @@
     },
     "gap": 0.38,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4419"
    },
    {
@@ -257,6 +267,7 @@
     },
     "gap": 0.51,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5205"
    },
    {
@@ -280,6 +291,7 @@
     },
     "gap": 0.54,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3494"
    },
    {
@@ -303,6 +315,7 @@
     },
     "gap": 4.29,
     "fd_threshold": 1.25,
+    "credit_eligibility": "否",
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8937"
    },
    {
@@ -326,6 +339,7 @@
     },
     "gap": 0.58,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2438"
    },
    {
@@ -342,6 +356,7 @@
     },
     "gap": 0.58,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6550"
    },
    {
@@ -365,6 +380,7 @@
     },
     "gap": 0.6,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3085"
    },
    {
@@ -388,6 +404,7 @@
     },
     "gap": 0.6,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3191"
    },
    {
@@ -411,6 +428,7 @@
     },
     "gap": 0.63,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5345"
    },
    {
@@ -427,6 +445,7 @@
     },
     "gap": 0.68,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6431"
    },
    {
@@ -450,6 +469,7 @@
     },
     "gap": 0.69,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1799"
    },
    {
@@ -473,6 +493,7 @@
     },
     "gap": 0.71,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6276"
    },
    {
@@ -496,6 +517,7 @@
     },
     "gap": 0.74,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3523"
    },
    {
@@ -519,6 +541,7 @@
     },
     "gap": 5.67,
     "fd_threshold": 0.25,
+    "credit_eligibility": "否",
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6919"
    },
    {
@@ -542,6 +565,7 @@
     },
     "gap": 0.96,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2208"
    }
   ],
@@ -567,6 +591,7 @@
     },
     "gap": 5.55,
     "fd_threshold": 0.5,
+    "credit_eligibility": "可",
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=7780"
    },
    {
@@ -590,6 +615,7 @@
     },
     "gap": 1.15,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=7803"
    },
    {
@@ -613,6 +639,7 @@
     },
     "gap": 5.94,
     "fd_threshold": 0.25,
+    "credit_eligibility": "可",
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5314"
    },
    {
@@ -636,6 +663,7 @@
     },
     "gap": 1.23,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4192"
    },
    {
@@ -659,6 +687,7 @@
     },
     "gap": 1.24,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3234"
    },
    {
@@ -682,6 +711,7 @@
     },
     "gap": 1.36,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5344"
    },
    {
@@ -705,6 +735,7 @@
     },
     "gap": 1.38,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4806"
    },
    {
@@ -721,6 +752,7 @@
     },
     "gap": 1.39,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4154"
    },
    {
@@ -744,6 +776,7 @@
     },
     "gap": 1.4,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1781"
    },
    {
@@ -767,6 +800,7 @@
     },
     "gap": 1.5,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6443"
    },
    {
@@ -790,6 +824,7 @@
     },
     "gap": 1.51,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2258"
    },
    {
@@ -813,6 +848,7 @@
     },
     "gap": 1.51,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5324"
    },
    {
@@ -836,6 +872,7 @@
     },
     "gap": 1.55,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3288"
    },
    {
@@ -859,6 +896,7 @@
     },
     "gap": 1.56,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=9912"
    },
    {
@@ -882,6 +920,7 @@
     },
     "gap": 1.57,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1435"
    },
    {
@@ -905,6 +944,7 @@
     },
     "gap": 1.57,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2444"
    },
    {
@@ -921,6 +961,7 @@
     },
     "gap": 1.57,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6598"
    },
    {
@@ -944,6 +985,7 @@
     },
     "gap": 1.65,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3349"
    },
    {
@@ -967,6 +1009,7 @@
     },
     "gap": 1.76,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6264"
    },
    {
@@ -990,6 +1033,7 @@
     },
     "gap": 1.8,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4726"
    },
    {
@@ -1013,6 +1057,7 @@
     },
     "gap": 1.84,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1512"
    },
    {
@@ -1036,6 +1081,7 @@
     },
     "gap": 1.85,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3522"
    },
    {
@@ -1059,6 +1105,7 @@
     },
     "gap": 1.87,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6872"
    },
    {
@@ -1082,6 +1129,7 @@
     },
     "gap": 1.9,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6492"
    },
    {
@@ -1105,6 +1153,7 @@
     },
     "gap": 1.92,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6645"
    },
    {
@@ -1128,6 +1177,7 @@
     },
     "gap": 5.68,
     "fd_threshold": 1.25,
+    "credit_eligibility": "可",
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8932"
    },
    {
@@ -1151,6 +1201,7 @@
     },
     "gap": 1.97,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3432"
    },
    {
@@ -1174,6 +1225,7 @@
     },
     "gap": 2.02,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8067"
    },
    {
@@ -1197,6 +1249,7 @@
     },
     "gap": 2.04,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2035"
    },
    {
@@ -1213,6 +1266,7 @@
     },
     "gap": 2.08,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2724"
    },
    {
@@ -1236,6 +1290,7 @@
     },
     "gap": 2.16,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3672"
    },
    {
@@ -1259,6 +1314,7 @@
     },
     "gap": 2.16,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8201"
    },
    {
@@ -1282,6 +1338,7 @@
     },
     "gap": 2.17,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4131"
    },
    {
@@ -1305,6 +1362,7 @@
     },
     "gap": 2.29,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=7814"
    },
    {
@@ -1328,6 +1386,7 @@
     },
     "gap": 2.33,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8084"
    },
    {
@@ -1351,6 +1410,7 @@
     },
     "gap": 2.35,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5348"
    },
    {
@@ -1374,6 +1434,7 @@
     },
     "gap": 2.39,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6535"
    },
    {
@@ -1397,6 +1458,7 @@
     },
     "gap": 2.4,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2007"
    },
    {
@@ -1420,6 +1482,7 @@
     },
     "gap": 2.41,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3419"
    },
    {
@@ -1443,6 +1506,7 @@
     },
     "gap": 2.49,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3115"
    },
    {
@@ -1459,6 +1523,7 @@
     },
     "gap": 2.51,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6573"
    },
    {
@@ -1482,6 +1547,7 @@
     },
     "gap": 2.56,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4168"
    },
    {
@@ -1505,6 +1571,7 @@
     },
     "gap": 7.07,
     "fd_threshold": 0.5,
+    "credit_eligibility": "可",
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8422"
    },
    {
@@ -1528,6 +1595,7 @@
     },
     "gap": 2.59,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4934"
    },
    {
@@ -1551,6 +1619,7 @@
     },
     "gap": 2.64,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8935"
    },
    {
@@ -1574,6 +1643,7 @@
     },
     "gap": 2.65,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2740"
    },
    {
@@ -1597,6 +1667,7 @@
     },
     "gap": 2.75,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8038"
    },
    {
@@ -1620,6 +1691,7 @@
     },
     "gap": 2.76,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5302"
    },
    {
@@ -1643,6 +1715,7 @@
     },
     "gap": 2.79,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3499"
    },
    {
@@ -1666,6 +1739,7 @@
     },
     "gap": 2.8,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3321"
    },
    {
@@ -1689,6 +1763,7 @@
     },
     "gap": 2.81,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3058"
    },
    {
@@ -1712,6 +1787,7 @@
     },
     "gap": 2.84,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3713"
    },
    {
@@ -1735,6 +1811,7 @@
     },
     "gap": 2.87,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5703"
    },
    {
@@ -1758,6 +1835,7 @@
     },
     "gap": 2.93,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3576"
    },
    {
@@ -1781,6 +1859,7 @@
     },
     "gap": 2.93,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6152"
    },
    {
@@ -1804,6 +1883,7 @@
     },
     "gap": 2.94,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3122"
    },
    {
@@ -1827,6 +1907,7 @@
     },
     "gap": 2.95,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6733"
    },
    {
@@ -1850,6 +1931,7 @@
     },
     "gap": 2.95,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8450"
    },
    {
@@ -1873,6 +1955,7 @@
     },
     "gap": 2.99,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5227"
    },
    {
@@ -1896,6 +1979,7 @@
     },
     "gap": 3.08,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6576"
    },
    {
@@ -1919,6 +2003,7 @@
     },
     "gap": 3.09,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2349"
    },
    {
@@ -1942,6 +2027,7 @@
     },
     "gap": 3.11,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6461"
    },
    {
@@ -1965,6 +2051,7 @@
     },
     "gap": 3.11,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6657"
    },
    {
@@ -1988,6 +2075,7 @@
     },
     "gap": 3.14,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4188"
    },
    {
@@ -2011,6 +2099,7 @@
     },
     "gap": 3.21,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6144"
    },
    {
@@ -2034,6 +2123,7 @@
     },
     "gap": 3.24,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4534"
    },
    {
@@ -2057,6 +2147,7 @@
     },
     "gap": 3.24,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8080"
    },
    {
@@ -2080,6 +2171,7 @@
     },
     "gap": 3.26,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8085"
    },
    {
@@ -2103,6 +2195,7 @@
     },
     "gap": 3.27,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5484"
    },
    {
@@ -2126,6 +2219,7 @@
     },
     "gap": 3.3,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2429"
    },
    {
@@ -2149,6 +2243,7 @@
     },
     "gap": 3.32,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4195"
    },
    {
@@ -2172,6 +2267,7 @@
     },
     "gap": 3.34,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6921"
    },
    {
@@ -2195,6 +2291,7 @@
     },
     "gap": 3.36,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1460"
    },
    {
@@ -2218,6 +2315,7 @@
     },
     "gap": 3.41,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8477"
    },
    {
@@ -2241,6 +2339,7 @@
     },
     "gap": 3.43,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=9929"
    },
    {
@@ -2264,6 +2363,7 @@
     },
     "gap": 3.44,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4402"
    },
    {
@@ -2280,6 +2380,7 @@
     },
     "gap": 3.44,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5543"
    },
    {
@@ -2303,6 +2404,7 @@
     },
     "gap": 3.44,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=9950"
    },
    {
@@ -2326,6 +2428,7 @@
     },
     "gap": 3.46,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3372"
    },
    {
@@ -2349,6 +2452,7 @@
     },
     "gap": 3.46,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4198"
    },
    {
@@ -2372,6 +2476,7 @@
     },
     "gap": 3.51,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8176"
    },
    {
@@ -2395,6 +2500,7 @@
     },
     "gap": 3.52,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6142"
    },
    {
@@ -2418,6 +2524,7 @@
     },
     "gap": 3.56,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2014"
    },
    {
@@ -2444,6 +2551,7 @@
     },
     "gap": 3.57,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5475"
    },
    {
@@ -2467,6 +2575,7 @@
     },
     "gap": 3.57,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6109"
    },
    {
@@ -2490,6 +2599,7 @@
     },
     "gap": 3.6,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6160"
    },
    {
@@ -2513,6 +2623,7 @@
     },
     "gap": 3.61,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3686"
    },
    {
@@ -2536,6 +2647,7 @@
     },
     "gap": 3.64,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6169"
    },
    {
@@ -2559,6 +2671,7 @@
     },
     "gap": 3.69,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2924"
    },
    {
@@ -2582,6 +2695,7 @@
     },
     "gap": 3.69,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8024"
    },
    {
@@ -2605,6 +2719,7 @@
     },
     "gap": 3.7,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1721"
    },
    {
@@ -2621,6 +2736,7 @@
     },
     "gap": 3.7,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4178"
    },
    {
@@ -2644,6 +2760,7 @@
     },
     "gap": 3.74,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1413"
    },
    {
@@ -2667,6 +2784,7 @@
     },
     "gap": 3.84,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3325"
    },
    {
@@ -2690,6 +2808,7 @@
     },
     "gap": 3.84,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8059"
    },
    {
@@ -2713,6 +2832,7 @@
     },
     "gap": 3.91,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2601"
    },
    {
@@ -2736,6 +2856,7 @@
     },
     "gap": 4.02,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5516"
    },
    {
@@ -2759,6 +2880,7 @@
     },
     "gap": 4.07,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6228"
    },
    {
@@ -2782,6 +2904,7 @@
     },
     "gap": 4.08,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6838"
    },
    {
@@ -2805,6 +2928,7 @@
     },
     "gap": 4.09,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1468"
    },
    {
@@ -2828,6 +2952,7 @@
     },
     "gap": 4.1,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6129"
    },
    {
@@ -2851,6 +2976,7 @@
     },
     "gap": 4.19,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3057"
    },
    {
@@ -2874,6 +3000,7 @@
     },
     "gap": 4.21,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3685"
    },
    {
@@ -2897,6 +3024,7 @@
     },
     "gap": 4.26,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8047"
    },
    {
@@ -2920,6 +3048,7 @@
     },
     "gap": 4.33,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1506"
    },
    {
@@ -2943,6 +3072,7 @@
     },
     "gap": 4.38,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8409"
    },
    {
@@ -2966,6 +3096,7 @@
     },
     "gap": 4.38,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8443"
    },
    {
@@ -2982,6 +3113,7 @@
     },
     "gap": 4.43,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4139"
    },
    {
@@ -3005,6 +3137,7 @@
     },
     "gap": 4.43,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8092"
    },
    {
@@ -3028,6 +3161,7 @@
     },
     "gap": 4.46,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3228"
    },
    {
@@ -3051,6 +3185,7 @@
     },
     "gap": 4.5,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8121"
    },
    {
@@ -3074,6 +3209,7 @@
     },
     "gap": 4.53,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=9919"
    },
    {
@@ -3097,6 +3233,7 @@
     },
     "gap": 4.56,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2712"
    },
    {
@@ -3120,6 +3257,7 @@
     },
     "gap": 4.57,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5468"
    },
    {
@@ -3143,6 +3281,7 @@
     },
     "gap": 4.6,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4502"
    },
    {
@@ -3166,6 +3305,7 @@
     },
     "gap": 4.6,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4950"
    },
    {
@@ -3189,6 +3329,7 @@
     },
     "gap": 4.62,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1447"
    },
    {
@@ -3212,6 +3353,7 @@
     },
     "gap": 4.63,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2460"
    },
    {
@@ -3235,6 +3377,7 @@
     },
     "gap": 4.7,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8093"
    },
    {
@@ -3258,6 +3401,7 @@
     },
     "gap": 4.71,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1471"
    },
    {
@@ -3281,6 +3425,7 @@
     },
     "gap": 4.71,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6210"
    },
    {
@@ -3304,6 +3449,7 @@
     },
     "gap": 4.72,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2431"
    },
    {
@@ -3327,6 +3473,7 @@
     },
     "gap": 4.76,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2516"
    },
    {
@@ -3343,6 +3490,7 @@
     },
     "gap": 4.78,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2726"
    },
    {
@@ -3366,6 +3514,7 @@
     },
     "gap": 4.78,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4108"
    },
    {
@@ -3389,6 +3538,7 @@
     },
     "gap": 4.84,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2380"
    },
    {
@@ -3412,6 +3562,7 @@
     },
     "gap": 4.86,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6140"
    },
    {
@@ -3435,6 +3586,7 @@
     },
     "gap": 4.89,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3313"
    },
    {
@@ -3458,6 +3610,7 @@
     },
     "gap": 4.9,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2022"
    },
    {
@@ -3481,6 +3634,7 @@
     },
     "gap": 4.98,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5905"
    }
   ],
@@ -3506,6 +3660,7 @@
     },
     "gap": 1.24,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2321",
     "recover_status": {
      "state": "not_yet",
@@ -3533,6 +3688,7 @@
     },
     "gap": 2.72,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5301",
     "recover_status": {
      "state": "not_yet",
@@ -3560,6 +3716,7 @@
     },
     "gap": 5.98,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1213",
     "recover_status": {
      "state": "eligible",
@@ -3582,6 +3739,7 @@
     },
     "gap": -4.95,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8444"
    },
    {
@@ -3605,6 +3763,7 @@
     },
     "gap": -4.73,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2314"
    },
    {
@@ -3621,6 +3780,7 @@
     },
     "gap": -4.2,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3664"
    },
    {
@@ -3644,6 +3804,7 @@
     },
     "gap": -3.69,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3629"
    },
    {
@@ -3660,6 +3821,7 @@
     },
     "gap": -3.62,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4943"
    },
    {
@@ -3683,6 +3845,7 @@
     },
     "gap": -2.5,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4529"
    },
    {
@@ -3706,6 +3869,7 @@
     },
     "gap": -2.27,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4609"
    },
    {
@@ -3729,6 +3893,7 @@
     },
     "gap": -2.17,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3632"
    },
    {
@@ -3755,6 +3920,7 @@
     },
     "gap": -1.94,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6225"
    },
    {
@@ -3778,6 +3944,7 @@
     },
     "gap": -1.91,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5701"
    },
    {
@@ -3801,6 +3968,7 @@
     },
     "gap": -1.68,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8291"
    },
    {
@@ -3824,6 +3992,7 @@
     },
     "gap": -1.58,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3593"
    },
    {
@@ -3847,6 +4016,7 @@
     },
     "gap": -1.37,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1538"
    },
    {
@@ -3870,6 +4040,7 @@
     },
     "gap": -1.37,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3710"
    },
    {
@@ -3893,6 +4064,7 @@
     },
     "gap": -1.26,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6236"
    },
    {
@@ -3916,6 +4088,7 @@
     },
     "gap": -1.09,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3064"
    },
    {
@@ -3939,6 +4112,7 @@
     },
     "gap": -0.77,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2424"
    },
    {
@@ -3962,6 +4136,7 @@
     },
     "gap": -0.77,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8101"
    },
    {
@@ -3985,6 +4160,7 @@
     },
     "gap": -0.74,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2067"
    },
    {
@@ -4008,6 +4184,7 @@
     },
     "gap": -0.65,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5355"
    },
    {
@@ -4031,6 +4208,7 @@
     },
     "gap": -0.36,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3259"
    },
    {
@@ -4054,6 +4232,7 @@
     },
     "gap": -0.3,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8933"
    },
    {
@@ -4077,6 +4256,7 @@
     },
     "gap": -0.28,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3625"
    },
    {
@@ -4100,6 +4280,7 @@
     },
     "gap": -0.25,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8277"
    },
    {
@@ -4136,6 +4317,7 @@
     },
     "gap": 5.01,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3041"
    },
    {
@@ -4159,6 +4341,7 @@
     },
     "gap": 5.02,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2405"
    },
    {
@@ -4182,6 +4365,7 @@
     },
     "gap": 5.06,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5531"
    },
    {
@@ -4205,6 +4389,7 @@
     },
     "gap": 5.07,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4171"
    },
    {
@@ -4228,6 +4413,7 @@
     },
     "gap": 5.09,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4426"
    },
    {
@@ -4251,6 +4437,7 @@
     },
     "gap": 5.19,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1444"
    },
    {
@@ -4274,6 +4461,7 @@
     },
     "gap": 5.21,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3049"
    },
    {
@@ -4297,6 +4485,7 @@
     },
     "gap": 5.22,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2646"
    },
    {
@@ -4320,6 +4509,7 @@
     },
     "gap": 5.25,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3011"
    },
    {
@@ -4343,6 +4533,7 @@
     },
     "gap": 5.29,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5210"
    },
    {
@@ -4359,6 +4550,7 @@
     },
     "gap": 5.35,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3489"
    },
    {
@@ -4382,6 +4574,7 @@
     },
     "gap": 5.38,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4562"
    },
    {
@@ -4405,6 +4598,7 @@
     },
     "gap": 5.47,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3149"
    },
    {
@@ -4428,6 +4622,7 @@
     },
     "gap": 5.47,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3230"
    },
    {
@@ -4451,6 +4646,7 @@
     },
     "gap": 5.49,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5398"
    },
    {
@@ -4474,6 +4670,7 @@
     },
     "gap": 5.56,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6113"
    },
    {
@@ -4497,6 +4694,7 @@
     },
     "gap": 5.57,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2406"
    },
    {
@@ -4520,6 +4718,7 @@
     },
     "gap": 5.57,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6127"
    },
    {
@@ -4543,6 +4742,7 @@
     },
     "gap": 8.08,
     "fd_threshold": 2.5,
+    "credit_eligibility": "否",
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6875"
    },
    {
@@ -4566,6 +4766,7 @@
     },
     "gap": 5.6,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3176"
    },
    {
@@ -4589,6 +4790,7 @@
     },
     "gap": 5.61,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3229"
    },
    {
@@ -4612,6 +4814,7 @@
     },
     "gap": 5.64,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5211"
    },
    {
@@ -4635,6 +4838,7 @@
     },
     "gap": 5.68,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1454"
    },
    {
@@ -4651,6 +4855,7 @@
     },
     "gap": 5.74,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4924"
    },
    {
@@ -4674,6 +4879,7 @@
     },
     "gap": 5.78,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2719"
    },
    {
@@ -4697,6 +4903,7 @@
     },
     "gap": 5.81,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6547"
    },
    {
@@ -4720,6 +4927,7 @@
     },
     "gap": 5.83,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3024"
    },
    {
@@ -4743,6 +4951,7 @@
     },
     "gap": 5.83,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3360"
    },
    {
@@ -4766,6 +4975,7 @@
     },
     "gap": 5.83,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5364"
    },
    {
@@ -4789,6 +4999,7 @@
     },
     "gap": 9.59,
     "fd_threshold": 1.25,
+    "credit_eligibility": "可",
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3093"
    },
    {
@@ -4812,6 +5023,7 @@
     },
     "gap": 5.84,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4513"
    },
    {
@@ -4835,6 +5047,7 @@
     },
     "gap": 5.85,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6226"
    },
    {
@@ -4858,6 +5071,7 @@
     },
     "gap": 5.86,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1616"
    },
    {
@@ -4881,6 +5095,7 @@
     },
     "gap": 5.86,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4989"
    },
    {
@@ -4904,6 +5119,7 @@
     },
     "gap": 5.92,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4413"
    },
    {
@@ -4927,6 +5143,7 @@
     },
     "gap": 5.94,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4166"
    },
    {
@@ -4950,6 +5167,7 @@
     },
     "gap": 5.94,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6246"
    },
    {
@@ -4973,6 +5191,7 @@
     },
     "gap": 5.97,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4142"
    },
    {
@@ -4996,6 +5215,7 @@
     },
     "gap": 6.01,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3047"
    },
    {
@@ -5019,6 +5239,7 @@
     },
     "gap": 6.01,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6103"
    },
    {
@@ -5042,6 +5263,7 @@
     },
     "gap": 6.05,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2302"
    },
    {
@@ -5065,6 +5287,7 @@
     },
     "gap": 6.06,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6969"
    },
    {
@@ -5088,6 +5311,7 @@
     },
     "gap": 6.07,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8906"
    },
    {
@@ -5111,6 +5335,7 @@
     },
     "gap": 6.08,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3339"
    },
    {
@@ -5134,6 +5359,7 @@
     },
     "gap": 6.08,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3354"
    },
    {
@@ -5157,6 +5383,7 @@
     },
     "gap": 6.08,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5488"
    },
    {
@@ -5180,6 +5407,7 @@
     },
     "gap": 6.09,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1528"
    },
    {
@@ -5203,6 +5431,7 @@
     },
     "gap": 6.09,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4903"
    },
    {
@@ -5226,6 +5455,7 @@
     },
     "gap": 6.1,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5381"
    },
    {
@@ -5249,6 +5479,7 @@
     },
     "gap": 6.13,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=9949"
    },
    {
@@ -5272,6 +5503,7 @@
     },
     "gap": 6.17,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2466"
    },
    {
@@ -5295,6 +5527,7 @@
     },
     "gap": 6.2,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6283"
    },
    {
@@ -5318,6 +5551,7 @@
     },
     "gap": 6.23,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4183"
    },
    {
@@ -5341,6 +5575,7 @@
     },
     "gap": 6.3,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4174"
    },
    {
@@ -5364,6 +5599,7 @@
     },
     "gap": 6.32,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5498"
    },
    {
@@ -5387,6 +5623,7 @@
     },
     "gap": 6.35,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4127"
    },
    {
@@ -5410,6 +5647,7 @@
     },
     "gap": 6.38,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6674"
    },
    {
@@ -5426,6 +5664,7 @@
     },
     "gap": 6.4,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2540"
    },
    {
@@ -5449,6 +5688,7 @@
     },
     "gap": 6.42,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2734"
    },
    {
@@ -5472,6 +5712,7 @@
     },
     "gap": 6.49,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3322"
    },
    {
@@ -5495,6 +5736,7 @@
     },
     "gap": 6.55,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3520"
    },
    {
@@ -5518,6 +5760,7 @@
     },
     "gap": 6.56,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5310"
    },
    {
@@ -5541,6 +5784,7 @@
     },
     "gap": 9.06,
     "fd_threshold": 2.5,
+    "credit_eligibility": "可",
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8476"
    },
    {
@@ -5564,6 +5808,7 @@
     },
     "gap": 6.59,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6885"
    },
    {
@@ -5580,6 +5825,7 @@
     },
     "gap": 6.62,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3092"
    },
    {
@@ -5596,6 +5842,7 @@
     },
     "gap": 6.67,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1219"
    },
    {
@@ -5619,6 +5866,7 @@
     },
     "gap": 6.67,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1455"
    },
    {
@@ -5635,6 +5883,7 @@
     },
     "gap": 6.68,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3609"
    },
    {
@@ -5658,6 +5907,7 @@
     },
     "gap": 6.7,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2024"
    },
    {
@@ -5681,6 +5931,7 @@
     },
     "gap": 6.7,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4406"
    },
    {
@@ -5704,6 +5955,7 @@
     },
     "gap": 6.71,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1529"
    },
    {
@@ -5720,6 +5972,7 @@
     },
     "gap": 6.72,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1591"
    },
    {
@@ -5743,6 +5996,7 @@
     },
     "gap": 6.72,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6167"
    },
    {
@@ -5766,6 +6020,7 @@
     },
     "gap": 6.72,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6661"
    },
    {
@@ -5789,6 +6044,7 @@
     },
     "gap": 6.75,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6101"
    },
    {
@@ -5812,6 +6068,7 @@
     },
     "gap": 6.76,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1470"
    },
    {
@@ -5835,6 +6092,7 @@
     },
     "gap": 6.77,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6244"
    },
    {
@@ -5851,6 +6109,7 @@
     },
     "gap": 6.8,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5202"
    },
    {
@@ -5874,6 +6133,7 @@
     },
     "gap": 6.83,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2061"
    },
    {
@@ -5897,6 +6157,7 @@
     },
     "gap": 6.87,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5521"
    },
    {
@@ -5913,6 +6174,7 @@
     },
     "gap": 6.88,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1310"
    },
    {
@@ -5936,6 +6198,7 @@
     },
     "gap": 6.88,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2530"
    },
    {
@@ -5959,6 +6222,7 @@
     },
     "gap": 6.89,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1732"
    },
    {
@@ -5982,6 +6246,7 @@
     },
     "gap": 6.89,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6164"
    },
    {
@@ -5998,6 +6263,7 @@
     },
     "gap": 6.91,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8034"
    },
    {
@@ -6021,6 +6287,7 @@
     },
     "gap": 6.91,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=9962"
    },
    {
@@ -6044,6 +6311,7 @@
     },
     "gap": 6.93,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1324"
    },
    {
@@ -6067,6 +6335,7 @@
     },
     "gap": 6.93,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4714"
    },
    {
@@ -6090,6 +6359,7 @@
     },
     "gap": 6.94,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6148"
    },
    {
@@ -6113,6 +6383,7 @@
     },
     "gap": 6.95,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2901"
    },
    {
@@ -6136,6 +6407,7 @@
     },
     "gap": 7.01,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1316"
    },
    {
@@ -6159,6 +6431,7 @@
     },
     "gap": 7.02,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2305"
    },
    {
@@ -6182,6 +6455,7 @@
     },
     "gap": 7.07,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4716"
    },
    {
@@ -6205,6 +6479,7 @@
     },
     "gap": 7.08,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2025"
    },
    {
@@ -6221,6 +6496,7 @@
     },
     "gap": 7.09,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2939"
    },
    {
@@ -6244,6 +6520,7 @@
     },
     "gap": 7.11,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1805"
    },
    {
@@ -6260,6 +6537,7 @@
     },
     "gap": 7.12,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2434"
    },
    {
@@ -6283,6 +6561,7 @@
     },
     "gap": 7.14,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3521"
    },
    {
@@ -6306,6 +6585,7 @@
     },
     "gap": 7.17,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5340"
    },
    {
@@ -6329,6 +6609,7 @@
     },
     "gap": 7.21,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2237"
    },
    {
@@ -6345,6 +6626,7 @@
     },
     "gap": 7.23,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2390"
    },
    {
@@ -6361,6 +6643,7 @@
     },
     "gap": 7.24,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8940"
    },
    {
@@ -6377,6 +6660,7 @@
     },
     "gap": 7.28,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3646"
    },
    {
@@ -6393,6 +6677,7 @@
     },
     "gap": 7.29,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1432"
    },
    {
@@ -6416,6 +6701,7 @@
     },
     "gap": 7.3,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1467"
    },
    {
@@ -6439,6 +6725,7 @@
     },
     "gap": 7.31,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6465"
    },
    {
@@ -6455,6 +6742,7 @@
     },
     "gap": 7.32,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3062"
    },
    {
@@ -6471,6 +6759,7 @@
     },
     "gap": 7.33,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2538"
    },
    {
@@ -6487,6 +6776,7 @@
     },
     "gap": 7.38,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3666"
    },
    {
@@ -6510,6 +6800,7 @@
     },
     "gap": 7.39,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3067"
    },
    {
@@ -6533,6 +6824,7 @@
     },
     "gap": 7.42,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6118"
    },
    {
@@ -6556,6 +6848,7 @@
     },
     "gap": 7.43,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3095"
    },
    {
@@ -6572,6 +6865,7 @@
     },
     "gap": 7.44,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4530"
    },
    {
@@ -6595,6 +6889,7 @@
     },
     "gap": 7.45,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1417"
    },
    {
@@ -6611,6 +6906,7 @@
     },
     "gap": 7.45,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2633"
    },
    {
@@ -6634,6 +6930,7 @@
     },
     "gap": 7.46,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3276"
    },
    {
@@ -6657,6 +6954,7 @@
     },
     "gap": 7.49,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3094"
    },
    {
@@ -6673,6 +6971,7 @@
     },
     "gap": 7.5,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4960"
    },
    {
@@ -6689,6 +6988,7 @@
     },
     "gap": 12.0,
     "fd_threshold": 0.5,
+    "credit_eligibility": "可",
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5278"
    },
    {
@@ -6705,6 +7005,7 @@
     },
     "gap": 7.5,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6616"
    },
    {
@@ -6728,6 +7029,7 @@
     },
     "gap": 7.51,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=7777"
    },
    {
@@ -6751,6 +7053,7 @@
     },
     "gap": 7.52,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1611"
    },
    {
@@ -6767,6 +7070,7 @@
     },
     "gap": 7.53,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2241"
    },
    {
@@ -6783,6 +7087,7 @@
     },
     "gap": 7.6,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3002"
    },
    {
@@ -6799,6 +7104,7 @@
     },
     "gap": 7.65,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1710"
    },
    {
@@ -6815,6 +7121,7 @@
     },
     "gap": 7.67,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5460"
    },
    {
@@ -6838,6 +7145,7 @@
     },
     "gap": 7.67,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8111"
    },
    {
@@ -6861,6 +7169,7 @@
     },
     "gap": 7.68,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2109"
    },
    {
@@ -6877,6 +7186,7 @@
     },
     "gap": 7.68,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6222"
    },
    {
@@ -6893,6 +7203,7 @@
     },
     "gap": 7.69,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6499"
    },
    {
@@ -6916,6 +7227,7 @@
     },
     "gap": 7.72,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6130"
    },
    {
@@ -6932,6 +7244,7 @@
     },
     "gap": 7.74,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1464"
    },
    {
@@ -6948,6 +7261,7 @@
     },
     "gap": 7.75,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8076"
    },
    {
@@ -6971,6 +7285,7 @@
     },
     "gap": 7.76,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2426"
    },
    {
@@ -6994,6 +7309,7 @@
     },
     "gap": 7.79,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5251"
    },
    {
@@ -7010,6 +7326,7 @@
     },
     "gap": 7.81,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2243"
    },
    {
@@ -7026,6 +7343,7 @@
     },
     "gap": 7.81,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2889"
    },
    {
@@ -7042,6 +7360,7 @@
     },
     "gap": 7.86,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6794"
    },
    {
@@ -7065,6 +7384,7 @@
     },
     "gap": 7.88,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=9955"
    },
    {
@@ -7088,6 +7408,7 @@
     },
     "gap": 7.89,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3623"
    },
    {
@@ -7104,6 +7425,7 @@
     },
     "gap": 7.93,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1220"
    },
    {
@@ -7120,6 +7442,7 @@
     },
     "gap": 7.95,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2911"
    },
    {
@@ -7143,6 +7466,7 @@
     },
     "gap": 7.98,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8071"
    },
    {
@@ -7159,6 +7483,7 @@
     },
     "gap": 7.99,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2440"
    },
    {
@@ -7175,6 +7500,7 @@
     },
     "gap": 7.99,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2926"
    },
    {
@@ -7191,6 +7517,7 @@
     },
     "gap": 8.01,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2547"
    },
    {
@@ -7207,6 +7534,7 @@
     },
     "gap": 8.04,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3434"
    },
    {
@@ -7223,6 +7551,7 @@
     },
     "gap": 8.04,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3541"
    },
    {
@@ -7246,6 +7575,7 @@
     },
     "gap": 8.04,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6116"
    },
    {
@@ -7262,6 +7592,7 @@
     },
     "gap": 8.04,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6133"
    },
    {
@@ -7278,6 +7609,7 @@
     },
     "gap": 8.04,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8908"
    },
    {
@@ -7301,6 +7633,7 @@
     },
     "gap": 8.06,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1459"
    },
    {
@@ -7317,6 +7650,7 @@
     },
     "gap": 8.08,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5902"
    },
    {
@@ -7333,6 +7667,7 @@
     },
     "gap": 8.09,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4994"
    },
    {
@@ -7349,6 +7684,7 @@
     },
     "gap": 8.12,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6512"
    },
    {
@@ -7365,6 +7701,7 @@
     },
     "gap": 8.13,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2369"
    },
    {
@@ -7388,6 +7725,7 @@
     },
     "gap": 8.15,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5328"
    },
    {
@@ -7404,6 +7742,7 @@
     },
     "gap": 8.22,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3296"
    },
    {
@@ -7420,6 +7759,7 @@
     },
     "gap": 8.22,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=9907"
    },
    {
@@ -7436,6 +7776,7 @@
     },
     "gap": 8.23,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1789"
    },
    {
@@ -7452,6 +7793,7 @@
     },
     "gap": 8.25,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1305"
    },
    {
@@ -7468,6 +7810,7 @@
     },
     "gap": 8.25,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2033"
    },
    {
@@ -7484,6 +7827,7 @@
     },
     "gap": 8.26,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8440"
    },
    {
@@ -7507,6 +7851,7 @@
     },
     "gap": 8.26,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=9902"
    },
    {
@@ -7523,6 +7868,7 @@
     },
     "gap": 8.27,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1453"
    },
    {
@@ -7539,6 +7885,7 @@
     },
     "gap": 8.3,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3150"
    },
    {
@@ -7555,6 +7902,7 @@
     },
     "gap": 8.35,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=7723"
    },
    {
@@ -7571,6 +7919,7 @@
     },
     "gap": 8.35,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8927"
    },
    {
@@ -7587,6 +7936,7 @@
     },
     "gap": 8.37,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6174"
    },
    {
@@ -7610,6 +7960,7 @@
     },
     "gap": 8.38,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5321"
    },
    {
@@ -7626,6 +7977,7 @@
     },
     "gap": 8.39,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2064"
    },
    {
@@ -7642,6 +7994,7 @@
     },
     "gap": 8.44,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2012"
    },
    {
@@ -7658,6 +8011,7 @@
     },
     "gap": 8.44,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6153"
    },
    {
@@ -7674,6 +8028,7 @@
     },
     "gap": 8.45,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6482"
    },
    {
@@ -7690,6 +8045,7 @@
     },
     "gap": 8.45,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6708"
    },
    {
@@ -7706,6 +8062,7 @@
     },
     "gap": 8.51,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1108"
    },
    {
@@ -7722,6 +8079,7 @@
     },
     "gap": 8.52,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1714"
    },
    {
@@ -7738,6 +8096,7 @@
     },
     "gap": 8.53,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1309"
    },
    {
@@ -7754,6 +8113,7 @@
     },
     "gap": 8.58,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4147"
    },
    {
@@ -7770,6 +8130,7 @@
     },
     "gap": 8.61,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1337"
    },
    {
@@ -7786,6 +8147,7 @@
     },
     "gap": 8.61,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2614"
    },
    {
@@ -7802,6 +8164,7 @@
     },
     "gap": 8.61,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8222"
    },
    {
@@ -7818,6 +8181,7 @@
     },
     "gap": 8.62,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1806"
    },
    {
@@ -7834,6 +8198,7 @@
     },
     "gap": 8.64,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8421"
    },
    {
@@ -7850,6 +8215,7 @@
     },
     "gap": 8.68,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3025"
    },
    {
@@ -7866,6 +8232,7 @@
     },
     "gap": 8.68,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6530"
    },
    {
@@ -7882,6 +8249,7 @@
     },
     "gap": 8.69,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4109"
    },
    {
@@ -7898,6 +8266,7 @@
     },
     "gap": 8.72,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1617"
    },
    {
@@ -7914,6 +8283,7 @@
     },
     "gap": 8.73,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1742"
    },
    {
@@ -7930,6 +8300,7 @@
     },
     "gap": 8.74,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8068"
    },
    {
@@ -7946,6 +8317,7 @@
     },
     "gap": 8.75,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5276"
    },
    {
@@ -7962,6 +8334,7 @@
     },
     "gap": 8.76,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2332"
    },
    {
@@ -7978,6 +8351,7 @@
     },
     "gap": 8.76,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4911"
    },
    {
@@ -7994,6 +8368,7 @@
     },
     "gap": 8.84,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2032"
    },
    {
@@ -8010,6 +8385,7 @@
     },
     "gap": 8.86,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3268"
    },
    {
@@ -8026,6 +8402,7 @@
     },
     "gap": 8.89,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2365"
    },
    {
@@ -8042,6 +8419,7 @@
     },
     "gap": 8.9,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1780"
    },
    {
@@ -8058,6 +8436,7 @@
     },
     "gap": 8.9,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4538"
    },
    {
@@ -8074,6 +8453,7 @@
     },
     "gap": 9.01,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5245"
    },
    {
@@ -8090,6 +8470,7 @@
     },
     "gap": 9.03,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3071"
    },
    {
@@ -8113,6 +8494,7 @@
     },
     "gap": 13.83,
     "fd_threshold": 0.2,
+    "credit_eligibility": "可",
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6548"
    },
    {
@@ -8129,6 +8511,7 @@
     },
     "gap": 9.03,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6578"
    },
    {
@@ -8145,6 +8528,7 @@
     },
     "gap": 9.1,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1466"
    },
    {
@@ -8161,6 +8545,7 @@
     },
     "gap": 9.14,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4102"
    },
    {
@@ -8177,6 +8562,7 @@
     },
     "gap": 9.15,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3607"
    },
    {
@@ -8200,6 +8586,7 @@
     },
     "gap": 9.15,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4167"
    },
    {
@@ -8216,6 +8603,7 @@
     },
     "gap": 9.18,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6558"
    },
    {
@@ -8232,6 +8620,7 @@
     },
     "gap": 9.19,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2482"
    },
    {
@@ -8248,6 +8637,7 @@
     },
     "gap": 9.21,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4720"
    },
    {
@@ -8264,6 +8654,7 @@
     },
     "gap": 9.22,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2908"
    },
    {
@@ -8280,6 +8671,7 @@
     },
     "gap": 9.22,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3535"
    },
    {
@@ -8296,6 +8688,7 @@
     },
     "gap": 9.28,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6185"
    },
    {
@@ -8312,6 +8705,7 @@
     },
     "gap": 9.32,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2073"
    },
    {
@@ -8328,6 +8722,7 @@
     },
     "gap": 9.33,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3284"
    },
    {
@@ -8344,6 +8739,7 @@
     },
     "gap": 9.33,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8431"
    },
    {
@@ -8360,6 +8756,7 @@
     },
     "gap": 9.36,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3630"
    },
    {
@@ -8376,6 +8773,7 @@
     },
     "gap": 9.37,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2401"
    },
    {
@@ -8392,6 +8790,7 @@
     },
     "gap": 9.38,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2836"
    },
    {
@@ -8408,6 +8807,7 @@
     },
     "gap": 9.39,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3055"
    },
    {
@@ -8424,6 +8824,7 @@
     },
     "gap": 9.43,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4976"
    },
    {
@@ -8447,6 +8848,7 @@
     },
     "gap": 9.43,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6901"
    },
    {
@@ -8463,6 +8865,7 @@
     },
     "gap": 9.44,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2515"
    },
    {
@@ -8479,6 +8882,7 @@
     },
     "gap": 9.45,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5014"
    },
    {
@@ -8495,6 +8899,7 @@
     },
     "gap": 9.48,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5490"
    },
    {
@@ -8511,6 +8916,7 @@
     },
     "gap": 9.5,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2340"
    },
    {
@@ -8527,6 +8933,7 @@
     },
     "gap": 9.51,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2465"
    },
    {
@@ -8543,6 +8950,7 @@
     },
     "gap": 9.56,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4207"
    },
    {
@@ -8559,6 +8967,7 @@
     },
     "gap": 9.56,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6015"
    },
    {
@@ -8575,6 +8984,7 @@
     },
     "gap": 9.59,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4414"
    },
    {
@@ -8591,6 +9001,7 @@
     },
     "gap": 9.59,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8472"
    },
    {
@@ -8607,6 +9018,7 @@
     },
     "gap": 9.59,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8923"
    },
    {
@@ -8623,6 +9035,7 @@
     },
     "gap": 9.6,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6767"
    },
    {
@@ -8639,6 +9052,7 @@
     },
     "gap": 9.62,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2342"
    },
    {
@@ -8655,6 +9069,7 @@
     },
     "gap": 9.62,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3631"
    },
    {
@@ -8671,6 +9086,7 @@
     },
     "gap": 9.63,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2845"
    },
    {
@@ -8687,6 +9103,7 @@
     },
     "gap": 9.65,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3285"
    },
    {
@@ -8703,6 +9120,7 @@
     },
     "gap": 9.66,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6934"
    },
    {
@@ -8719,6 +9137,7 @@
     },
     "gap": 9.69,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2611"
    },
    {
@@ -8735,6 +9154,7 @@
     },
     "gap": 9.69,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5450"
    },
    {
@@ -8751,6 +9171,7 @@
     },
     "gap": 9.71,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5452"
    },
    {
@@ -8767,6 +9188,7 @@
     },
     "gap": 9.72,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2897"
    },
    {
@@ -8783,6 +9205,7 @@
     },
     "gap": 9.74,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1776"
    },
    {
@@ -8799,6 +9222,7 @@
     },
     "gap": 9.74,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3272"
    },
    {
@@ -8815,6 +9239,7 @@
     },
     "gap": 9.77,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2028"
    },
    {
@@ -8831,6 +9256,7 @@
     },
     "gap": 9.78,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6910"
    },
    {
@@ -8847,6 +9273,7 @@
     },
     "gap": 9.82,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3205"
    },
    {
@@ -8863,6 +9290,7 @@
     },
     "gap": 9.83,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6496"
    },
    {
@@ -8879,6 +9307,7 @@
     },
     "gap": 9.84,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3232"
    },
    {
@@ -8895,6 +9324,7 @@
     },
     "gap": 9.85,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4729"
    },
    {
@@ -8911,6 +9341,7 @@
     },
     "gap": 9.87,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1813"
    },
    {
@@ -8927,6 +9358,7 @@
     },
     "gap": 9.88,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5272"
    },
    {
@@ -8943,6 +9375,7 @@
     },
     "gap": 9.91,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4923"
    },
    {
@@ -8959,6 +9392,7 @@
     },
     "gap": 9.92,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6418"
    },
    {
@@ -8975,6 +9409,7 @@
     },
     "gap": 9.92,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6698"
    },
    {
@@ -8991,6 +9426,7 @@
     },
     "gap": 9.94,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6134"
    },
    {
@@ -9007,6 +9443,7 @@
     },
     "gap": 9.95,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6606"
    },
    {
@@ -9023,6 +9460,7 @@
     },
     "gap": 9.96,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1463"
    },
    {
@@ -9039,6 +9477,7 @@
     },
     "gap": 9.96,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=6259"
    },
    {
@@ -9055,6 +9494,7 @@
     },
     "gap": 9.97,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8066"
    },
    {
@@ -9071,6 +9511,7 @@
     },
     "gap": 9.97,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8215"
    },
    {
@@ -9087,6 +9528,7 @@
     },
     "gap": 9.98,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3083"
    },
    {
@@ -9103,6 +9545,7 @@
     },
     "gap": 9.99,
     "fd_threshold": 5.0,
+    "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2419"
    }
   ]

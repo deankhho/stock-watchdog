@@ -3,12 +3,19 @@
 analyze.py — S3：分級引擎（純本地）
 讀 data/netvalue.json + data/official.json → data/report.json
 
-五分級（互斥，判定順序：recover → official → predict_in → edge → margin_risk）：
-  recover     在官方全額交割名單 且 最新淨值 >= 5   → 恢復候選（連兩季達標即恢復）
-  official    在官方全額交割名單（淨值仍 <5）        → 現況
-  predict_in  不在名單 且 淨值 < 5                  → 預測下次財報後打入
-  edge        5 <= 淨值 < 6                         → 危險邊緣
-  margin_risk 6 <= 淨值 < 10                        → 信用交易警戒（<10 停融資融券）
+五分級（互斥，判定順序：recover → official → predict_in → edge → margin_risk；門檻
+`threshold` 依面額換算，面額10元股為5，非10元面額股依 full_delivery_threshold()）：
+  recover     在官方全額交割名單 且 最新淨值 >= threshold   → 恢復候選（連兩季達標即恢復）
+  official    在官方全額交割名單（淨值仍 < threshold）      → 現況
+  predict_in  不在名單 且 淨值 < threshold                 → 預測下次財報後打入
+  edge        threshold <= 淨值 < 6                        → 危險邊緣（市場觀察緩衝區，
+                                                              非法規門檻，見 Phase 0 spec）
+  margin_risk 6 <= 淨值 < 10                                → 市場觀察緩衝區；🔴 這一級不等於
+                                                              「信用交易資格」——面額10元股兩者
+                                                              重合，面額非10元股信用交易資格
+                                                              另外看 credit_eligibility()（讀
+                                                              保留盈餘，不是淨值），2026-08-20
+                                                              Phase 0 修正，勿再當同一件事
 
 用法：python analyze.py [--selftest]
 """
@@ -25,6 +32,7 @@ BASE = Path(__file__).parent
 NV_FILE = BASE / "data" / "netvalue.json"
 OF_FILE = BASE / "data" / "official.json"
 PAR_FILE = BASE / "data" / "par_value.json"
+BALANCE_SHEET_FILE = BASE / "data" / "balance_sheet.json"
 NV_HISTORY_DIR = BASE / "data" / "netvalue_history"
 OUT = BASE / "data" / "report.json"
 
@@ -100,6 +108,24 @@ def days_to_next_report(today: date = None) -> tuple:
     return (nxt - today).days, nxt.isoformat()
 
 
+# ══════════════════════════════════════════════════════════════════════════
+# Phase 0 分類語義 spec（2026-08-20 頁籤重新設計，外審3輪定案，
+# 計畫全文＋外審裁決見 ~/.claude/plans/deep-stargazing-tide.md）
+#
+# edge/margin_risk/watch 這三層是「淨值緩衝區」，不是法規門檻本身——這是「市場觀察緩衝區」，
+# 距離 threshold（全額交割門檻，已面額化）越遠風險越低，跟「能不能信用交易」是分開的兩件事：
+#   對面額10元股：緩衝區跟信用交易門檻剛好都用同一個 10 元，兩軸重合，不用另外判斷
+#   對面額非10元股：緩衝區只反映全額交割門檻遠近；信用交易資格另外用 credit_eligibility()
+#     （見下方，讀 fetch_balance_sheet.py 的保留盈餘）判斷，不會因為淨值落在 6~10 就被當成
+#     信用警戒——這是跟舊版最大的差異，舊版把「淨值6~10」跟「信用警戒」直接畫等號
+#
+# 資料品質 state contract：分類語義封閉的是「業務意義」，「用什麼資料算出這個分類」也要
+# 講清楚。full_delivery_threshold() 面額資料缺失時靜默回退固定 5.0（既有行為，範圍外，
+# 不重寫）；但這次新增的 credit_eligibility() 一律三態（可/否/未知），未知時不得顯示成
+# 「不可」或悶掉不顯示，跟 gen_site.py 既有的 SBL/warrants 三值 fail-open 邏輯是同一套
+# 設計語言——之後再加新的資料維度都要比照這個 contract。
+# ══════════════════════════════════════════════════════════════════════════
+
 # 🔴 15~17 元歸 safe 是刻意的（發現 F）：STOP_NET_VALUE 拉高到 17 是為了讓
 # crossings.py 的「前季 ≥10、最新季 <10」判定能有前季基準，不代表 15~17 要在網站分級呈現。
 # safe 不進 report.json 的 groups，但淨值與季度仍寫入 quarter_seen.json（detect_new_reports
@@ -130,6 +156,33 @@ def full_delivery_threshold(code: str, par: dict) -> float:
     if isinstance(p, dict):
         p = p.get("par")
     return p / 2 if p else NET_VALUE_FULL_DELIVERY
+
+
+def credit_eligibility(code: str, par: dict, balance_sheet: dict):
+    """面額非10元股的信用交易（融資融券）資格——《有價證券得為融資融券標準》第2/4條：
+    面額10元股門檻是「淨值≥票面(10元)」（既有 margin_risk/watch 分級已涵蓋，這裡不重複判斷，
+    回 None）；無面額或非10元面額股門檻是「最近一個會計年度決算無累積虧損」，跟淨值無關。
+
+    fetch_balance_sheet.py 抓的「保留盈餘」是淨額（正負併記，官方沒有拆開累積虧損/未分配盈餘
+    兩個獨立欄位）：2026-08-20 用 9 檔真實股票交叉驗證過（台積電/聯發科正值健康；
+    華義*/永悅健康-創/合騏*/康霈* 皆負值，且皆為淨值極低的邊緣/預測打入層股票，跟已知現況
+    相符；KY 股鼎固-KY/艾美特-KY 正常收錄，非結構性缺漏）——負值＝有累積虧損，正值/零＝無。
+
+    回傳 "可"/"否"/"未知"，或 None（代表面額10元股，這欄不適用，不該問這個問題）。
+    None 跟 "未知" 意義不同：None＝這檔股票不該顯示這欄；"未知"＝該顯示但目前答不出來
+    （balance_sheet 資料降級，或這檔本季財報尚未申報／查無資料，如 KY 股個案曾觀察到的
+    申報延遲，不代表整個資料源排除該類公司）——"未知" 一律不得顯示成 "否"（fail-open，
+    跟 gen_site.py 既有 SBL/warrants 三值邏輯同一套設計語言，見 Phase 0 spec）。"""
+    p = par.get(code)
+    face = p.get("par") if isinstance(p, dict) else p
+    if face is None or face == 10.0:
+        return None
+    if balance_sheet.get("state") != "ok":
+        return "未知"
+    row = balance_sheet.get("rows", {}).get(code)
+    if row is None:
+        return "未知"
+    return "否" if row["retained_earnings"] < 0 else "可"
 
 
 def _shares_for(code: str, par: dict):
@@ -296,6 +349,26 @@ def selftest():
     d, s = days_to_next_report(date(2026, 7, 6))
     assert s == "2026-08-14" and d == 39, (d, s)
 
+    # === credit_eligibility()：面額非10元股信用交易資格（Phase 0，2026-08-20）===
+    bs_ok = {"state": "ok", "rows": {
+        "3086": {"retained_earnings": -536.0, "quarter": "26Q2", "name": "華義*"},
+        "2923": {"retained_earnings": 29406627.0, "quarter": "26Q2", "name": "鼎固-KY"},
+    }}
+    # 面額10元股（或面額資料缺失回退預設值）→ None，這欄不適用，不是"未知"
+    assert credit_eligibility("2330", {"2330": {"par": 10.0}}, bs_ok) is None
+    assert credit_eligibility("2330", {}, bs_ok) is None            # 面額資料缺失，回退視同10元
+    # 面額非10元、保留盈餘負值 → "否"
+    assert credit_eligibility("3086", {"3086": {"par": 1.0}}, bs_ok) == "否"
+    # 面額非10元、保留盈餘正值 → "可"（KY股一併驗證，非結構性缺漏）
+    assert credit_eligibility("2923", {"2923": {"par": 5.0}}, bs_ok) == "可"
+    # balance_sheet 整包降級 → "未知"（不可悶成"否"）
+    assert credit_eligibility("3086", {"3086": {"par": 1.0}},
+                              {"state": "degraded", "rows": {}}) == "未知"
+    # 面額非10元但該股本季查無資料（如觀察到的個股申報延遲）→ "未知"，不是"否"
+    assert credit_eligibility("9999", {"9999": {"par": 2.5}}, bs_ok) == "未知"
+    # 面額資料是舊 scalar 格式（遷移期間殘留快取）仍可用
+    assert credit_eligibility("3086", {"3086": 1.0}, bs_ok) == "否"
+
     # --- 資料年齡：elapsed time（絕對時刻相減），不是台北日曆日差 ---
     now = datetime(2026, 8, 10, 11, 55, 21, tzinfo=TPE)
     assert data_age_days("2026-07-14T11:55:21+08:00", now) == 27
@@ -398,6 +471,11 @@ def main():
     except Exception:
         par_data = {"state": "empty", "par": {}}
     par = par_data.get("par", {})
+    try:
+        balance_sheet = (json.loads(BALANCE_SHEET_FILE.read_text()) if BALANCE_SHEET_FILE.exists()
+                        else {"state": "empty", "rows": {}})
+    except Exception:
+        balance_sheet = {"state": "empty", "rows": {}}
     # 🔴 若整批仍是舊 scalar 格式，代表新版 fetch_par_value.py 已部署但資料還沒
     # 重新抓過一次成功——印一行 warning 避免 isinstance 防呆悄悄把「schema 遷移
     # 其實沒發生」吞成看起來正常的大量 unknown（fail-safe 變 fail-silent）。
@@ -433,6 +511,7 @@ def main():
         item["market"] = market_map.get(r["code"], "")
         item["gap"] = round(r["net_value"] - threshold, 2)
         item["fd_threshold"] = threshold
+        item["credit_eligibility"] = credit_eligibility(r["code"], par, balance_sheet)
         item["goodinfo_url"] = f"https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID={r['code']}"
         if cat == "recover":
             hist_rows = history.get(r["code"], {}).get("rows", [])
