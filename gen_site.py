@@ -253,6 +253,39 @@ def render_credit_eligibility_block(credit_elig) -> str:
            f'<div class="ev">{label}</div>')
 
 
+MARGIN_TREND_LABEL = {
+    "up": "🟢 回升中",
+    "down": "🔴 下滑中",
+    "flat": "⚪ 持平",
+}
+MARGIN_TREND_REASON_LABEL = {
+    "no_prev": "缺上一季資料",
+    "not_adjacent": "上一筆資料非緊鄰前一季",
+    "suspect": "數值變動幅度異常，暫不判斷方向",
+    "source_conflict": "資料來源不一致，暫不判斷方向",
+    "unreliable": "面額校準失敗，暫不判斷方向",
+}
+
+
+def render_margin_trend_block(trend: dict) -> str:
+    """margin_risk 頁籤淨值趨勢（Phase D，2026-08-21）：本季 vs 上季比較，不是門檻達成
+    判準——margin_risk tier 定義本身 nv<10，這裡不會也不該出現「已達10元」這種狀態。
+    trend 為 None（非 margin_risk 頁籤的股票，這欄不適用）時不渲染。"""
+    if trend is None:
+        return ""
+    if trend["state"] == "unknown":
+        reason = MARGIN_TREND_REASON_LABEL.get(trend.get("reason"), "資料不足")
+        detail = f"❔ 淨值趨勢無法確認（{reason}）"
+    else:
+        label = MARGIN_TREND_LABEL.get(trend["state"], trend["state"])
+        detail = (f'{label}（{trend["prev_q"]} {trend["prev_nv"]:.2f} → '
+                 f'{trend["cur_nv"]:.2f}）')
+    return (f'<div class="audit-heading">淨值趨勢</div>'
+           f'<div class="ev">{detail}</div>'
+           f'<div class="ev dim">信用交易恢復是單季檢查（原因消滅即可，無需連續達標，見規則頁'
+           f'「停止信用交易」一節），面額10元股淨值達10元以上可望下次審查恢復。</div>')
+
+
 RECOVER_STATE_LABEL = {
     "eligible": "🟢 淨值條件已符合（估算）",
     "not_yet": "🟡 淨值條件尚未符合",
@@ -516,7 +549,9 @@ TABS = [
     ("margin_risk", "🟡 信用警戒",
      "淨值 6~10。" + BUFFER_NOTE
      + " 面額10元股：低於 10 元將停止融資融券（依「有價證券得為融資融券標準」，上市上櫃同適用；"
-       "審查按季排定，恢復生效約在申報截止後5個營業日，實際生效日以官方公告為準）。"),
+       "審查按季排定，恢復生效約在申報截止後5個營業日，實際生效日以官方公告為準；恢復是單季"
+       "檢查，原因消滅即可，不像全額交割要連續兩季達標）。展開列「淨值趨勢」顯示本季 vs 上季"
+       "比較（回升中／下滑中／持平），本頁籤所有股票淨值本來就 &lt;10，不會顯示「已達標」。"),
     ("official", "⚪ 全額交割中",
      "官方現行變更交易方法名單（上市：證交所 TWT85U；上櫃：櫃買 cmode），淨值仍未達門檻。"
      "淨值已回升的子集另外歸在「恢復候選」頁籤，兩者不是並列分類。"),
@@ -805,6 +840,8 @@ def main():
             recover_announce_html = (render_recover_announcement_block(r["code"], trading_changes)
                                      if key == "recover" else "")
             credit_elig_html = render_credit_eligibility_block(r.get("credit_eligibility"))
+            margin_trend_html = (render_margin_trend_block(r.get("margin_trend"))
+                                 if key == "margin_risk" else "")
             trs_list.append(f"""<tr class="main{' isnew' if badge else ''}" onclick="tog(this)">
   <td><span class="star" data-code="{r['code']}" onclick="event.stopPropagation();togWatch('{r['code']}')">☆</span><a href="{r['goodinfo_url']}" target="_blank" onclick="event.stopPropagation()">{r['code']}</a></td>
   <td>{r['name']} {badge}</td><td>{r.get('market','')}</td>
@@ -814,7 +851,7 @@ def main():
   <td class="num {'neg' if (r.get('gap') or 0) < 0 else 'pos'}"{f' title="面額非10元，全額交割門檻為每股{r["fd_threshold"]}元"' if r.get('fd_threshold') not in (None, 5.0) else ''}>{fmt(r.get('gap'))}</td>
   <td>{r.get('nv_quarter','')}{('<span class=note>' + r['note'] + '</span>') if r.get('note') else ''} <span class="exp">▾</span></td>
 </tr>
-<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('{r['code']}','{r.get('market','')}',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol={tvp}%3A{r['code']}">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/{r['code']}/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div>{history_row(r['code'], bt_stocks, r.get('market',''), listing)}<div class="audit-heading">會計師查核意見</div>{render_audit_block(r['code'], audit)}{credit_elig_html}{short_html}{recover_status_html}{recover_announce_html}{long_html}</td></tr>""")
+<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('{r['code']}','{r.get('market','')}',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol={tvp}%3A{r['code']}">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/{r['code']}/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div>{history_row(r['code'], bt_stocks, r.get('market',''), listing)}<div class="audit-heading">會計師查核意見</div>{render_audit_block(r['code'], audit)}{credit_elig_html}{margin_trend_html}{short_html}{recover_status_html}{recover_announce_html}{long_html}</td></tr>""")
         trs = "".join(trs_list)
         panels.append(f"""<section class="panel" data-t="{key}">
   <p class="desc">{desc}</p>
@@ -1116,7 +1153,7 @@ th,td {{ border:1px solid rgba(255,255,255,.12); padding:8px; text-align:left; }
 <tr><td>🔴 預測打入</td><td>淨值 &lt; 個股全額交割門檻 且未列官方名單</td><td>已達成門檻但官方審查/公告生效有作業時間差（通常數個工作日～一週），本站是提前偵測到已達門檻的空窗期，不是預測未來</td></tr>
 <tr><td>🟢 恢復候選</td><td>已列名單但最新淨值 ≥ 個股全額交割門檻</td><td>是「⚪ 全額交割中」的子集——淨值回升，實際恢復條件上市／上櫃不同（見下表「恢復普通交易」），恢復常伴隨行情。展開列「恢復資格」是本站依此表條件算出的輔助判定（淨值條件已符合／尚未符合／資料不足無法確認），不是官方認定的替代品——是否真的恢復仍需無其他列入事由，請查官方公告</td></tr>
 <tr><td>🟠 危險邊緣</td><td>個股全額交割門檻 ~ 6 元</td><td>再虧損一季可能跌破門檻；只列有放空管道（SBL借券/認售權證，資料完整時才排除）的股票，展開列「可否放空」逐檔顯示狀態</td></tr>
-<tr><td>🟡 信用警戒</td><td>淨值 6 ~ 10 元</td><td>面額10元股：低於 10 元將停止融資融券；面額非10元股此區間不代表信用警戒，資格看展開列「信用交易資格」</td></tr>
+<tr><td>🟡 信用警戒</td><td>淨值 6 ~ 10 元</td><td>面額10元股：低於 10 元將停止融資融券（單季檢查，非連兩季）；面額非10元股此區間不代表信用警戒，資格看展開列「信用交易資格」；展開列「淨值趨勢」顯示本季 vs 上季回升/下滑</td></tr>
 <tr><td>⚪ 全額交割中</td><td>官方現行名單</td><td>買賣需預收全額款券；淨值已回升的子集另列「🟢 恢復候選」</td></tr>
 <tr><td>🔵 觀察池</td><td>淨值 10 ~ 15 元</td><td>尚未觸及信用交易/全額交割相關門檻的市場觀察範圍，非法規分級；只列有放空管道的股票（同危險邊緣）</td></tr>
 <tr><td>⬇️ 最近一季掉落</td><td>前季淨值 ≥10、最新季 &lt;10</td><td>跌破的是融資融券10元門檻，跟全額交割無關（除非同時也跌破全額交割門檻）</td></tr>
@@ -1149,7 +1186,9 @@ th,td {{ border:1px solid rgba(255,255,255,.12); padding:8px; text-align:left; }
 負債表「保留盈餘」科目判斷，負值視為有累積虧損，見展開列「信用交易資格」）。
 審查按季排定（年報+Q1約每年5月、Q2/半年報約8-9月、Q3約11月），生效日約在財報法定申報
 截止日後5個營業日——本站僅提供預估區間，實際生效日以官方公告為準，個股實際申報時間可能
-早於法定截止日，本站無法逐股追蹤。</td></tr>
+早於法定截止日，本站無法逐股追蹤。<b>恢復是單季檢查</b>（原因消滅即公告恢復，第4條第2項
+未規定連續期數），跟上表「恢復普通交易」（全額交割，上市連兩期、上櫃較前期增加）不同，
+不要混用兩套條件。</td></tr>
 </table>
 <p class="src">出處：<a href="https://twse-regulation.twse.com.tw/" target="_blank">證交所法規知識庫</a>／
 <a href="https://www.tpex.org.tw/" target="_blank">櫃買中心</a>／

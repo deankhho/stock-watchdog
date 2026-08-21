@@ -519,6 +519,12 @@ def main():
                 r["code"], item["market"], threshold, r["net_value"], r.get("nv_quarter", ""),
                 hist_rows, par)
             item["recover_status"] = {"state": state, "detail": detail}
+        if cat == "margin_risk":
+            # Phase D（2026-08-21）：淨值趨勢，不是門檻達成判準——margin_risk tier 定義本身
+            # nv<10，不可能出現「已達標」，見計畫 Phase D 執行前設計修正
+            hist_rows = history.get(r["code"], {}).get("rows", [])
+            item["margin_trend"] = crossings.margin_risk_trend(
+                r["code"], r["net_value"], r.get("nv_quarter", ""), hist_rows)
         groups[cat].append(item)
         seen.add(r["code"])
 

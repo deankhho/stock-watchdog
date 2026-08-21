@@ -190,6 +190,60 @@ def detect_margin_drops(netvalue: dict, history: dict, status: dict) -> dict:
             "unknown_reasons": unknown_reasons}
 
 
+def margin_risk_trend(code: str, cur_nv: float, nv_q: str, hist_rows: list) -> dict:
+    """margin_risk 頁籤（6<=nv<10）淨值趨勢：本季 vs 上季比較，不是門檻達成判準
+    （2026-08-21 Phase D 執行前修正：信用交易恢復是單季檢查，沒有 recover_eligibility()
+    那種「連兩季/較前期增加」複雜度；margin_risk tier 定義本身 nv<10，不可能出現「已達標」
+    這個結構性事實，原計畫的三態達標分組設計不成立，改成單純的趨勢方向）。
+
+    重用 calibrate_history() 的面額校準機制（跟 detect_margin_drops() 同一套，避免面額不同
+    股票的歷史淨值被誤判方向），只是最終分類條件從「是否跨越10元」換成「本季是否高於上季」。
+
+    回傳 {"state": "up"|"down"|"flat"|"unknown", "reason": str|None,
+          "prev_q": str|None, "prev_nv": float|None, "cur_nv": float}
+    state 判定（沿用 detect_margin_drops() 同款防呆，suspect/source_conflict 情境一律 unknown，
+    不可讓校準異常的資料被誤判成明確的漲跌趨勢）："""
+    calib = calibrate_history(code, cur_nv, nv_q, hist_rows)
+    if calib is None:
+        reason = "no_prev" if not hist_rows else (
+            "quarter_mismatch" if nv_q not in _latest_by_quarter(hist_rows) else None)
+        return {"state": "unknown", "reason": reason or "unreliable",
+               "prev_q": None, "prev_nv": None, "cur_nv": cur_nv}
+
+    idx = quarter_index(nv_q)
+    rows_calibrated = calib["rows"]
+    if len(rows_calibrated) < 2:
+        return {"state": "unknown", "reason": "no_prev",
+               "prev_q": None, "prev_nv": None, "cur_nv": cur_nv}
+    prev_candidates = [(q, v) for q, v in rows_calibrated.items() if quarter_index(q) == idx - 1]
+    if not prev_candidates:
+        return {"state": "unknown", "reason": "not_adjacent",
+               "prev_q": None, "prev_nv": None, "cur_nv": cur_nv}
+    prev_q, prev_nv = prev_candidates[0]
+    cur_nv_calibrated = rows_calibrated[nv_q]
+
+    if prev_nv <= 0 or cur_nv_calibrated <= 0 or (prev_nv > 0) != (cur_nv_calibrated > 0):
+        return {"state": "unknown", "reason": "suspect",
+               "prev_q": prev_q, "prev_nv": prev_nv, "cur_nv": cur_nv_calibrated}
+    ratio2 = max(prev_nv, cur_nv_calibrated) / min(prev_nv, cur_nv_calibrated)
+    if ratio2 > SUSPECT_RATIO:
+        return {"state": "unknown", "reason": "suspect",
+               "prev_q": prev_q, "prev_nv": prev_nv, "cur_nv": cur_nv_calibrated}
+    if abs(cur_nv_calibrated - cur_nv) > SOURCE_CONFLICT_TOLERANCE and \
+       (cur_nv_calibrated >= CROSS_NV) != (cur_nv >= CROSS_NV):
+        return {"state": "unknown", "reason": "source_conflict",
+               "prev_q": prev_q, "prev_nv": prev_nv, "cur_nv": cur_nv_calibrated}
+
+    if cur_nv_calibrated > prev_nv:
+        state = "up"
+    elif cur_nv_calibrated < prev_nv:
+        state = "down"
+    else:
+        state = "flat"
+    return {"state": state, "reason": None,
+           "prev_q": prev_q, "prev_nv": prev_nv, "cur_nv": cur_nv_calibrated}
+
+
 def selftest():
     def hrow(date_, quarter, net_value):
         return {"date": date_, "quarter": quarter, "net_value": net_value}
@@ -387,6 +441,46 @@ def selftest():
             {"code": "bbbb", "name": "M", "market": "上市", "net_value": 12.0, "nv_quarter": "26Q1"}]),
         {}, empty_status)
     assert result["universe"] == 1, result
+
+    # === 15. margin_risk_trend()：本季 vs 上季，非門檻達成判準（Phase D，2026-08-21）===
+    # 15a. 回升中（同面額，factor=1）
+    r = margin_risk_trend("m1", 7.5, "26Q2",
+                          [hrow("2026-03-31", "26Q1", 6.5), hrow("2026-06-30", "26Q2", 7.5)])
+    assert r == {"state": "up", "reason": None, "prev_q": "26Q1", "prev_nv": 6.5, "cur_nv": 7.5}, r
+
+    # 15b. 下滑中
+    r = margin_risk_trend("m2", 6.2, "26Q2",
+                          [hrow("2026-03-31", "26Q1", 7.0), hrow("2026-06-30", "26Q2", 6.2)])
+    assert r["state"] == "down", r
+
+    # 15c. 持平
+    r = margin_risk_trend("m3", 7.0, "26Q2",
+                          [hrow("2026-03-31", "26Q1", 7.0), hrow("2026-06-30", "26Q2", 7.0)])
+    assert r["state"] == "flat", r
+
+    # 15d. 無歷史資料 → unknown/no_prev
+    r = margin_risk_trend("m4", 7.0, "26Q2", [])
+    assert r["state"] == "unknown" and r["reason"] == "no_prev", r
+
+    # 15e. 只有當季一筆（無前季）→ unknown/no_prev
+    r = margin_risk_trend("m5", 7.0, "26Q2", [hrow("2026-06-30", "26Q2", 7.0)])
+    assert r["state"] == "unknown" and r["reason"] == "no_prev", r
+
+    # 15f. 非相鄰季（中間缺季）→ unknown/not_adjacent
+    r = margin_risk_trend("m6", 7.0, "26Q3",
+                          [hrow("2026-03-31", "26Q1", 6.5), hrow("2026-09-30", "26Q3", 7.0)])
+    assert r["state"] == "unknown" and r["reason"] == "not_adjacent", r
+
+    # 15g. 面額非10元股：FinMind 值需按比例校準才能跟 goodinfo cur_nv 同基準比較
+    r = margin_risk_trend("m7", 0.7, "26Q2",
+                          [hrow("2026-03-31", "26Q1", 6.5), hrow("2026-06-30", "26Q2", 7.0)])
+    # cur_nv=0.7 vs FinMind同季7.0 → ratio=10 → factor=10 → calibrated: 26Q1=0.65, 26Q2=0.70
+    assert r["state"] == "up" and r["prev_nv"] == 0.65, r
+
+    # 15h. 疑似異常（倍率超過 SUSPECT_RATIO）→ unknown/suspect，不可誤判方向
+    r = margin_risk_trend("m8", 8.0, "26Q2",
+                          [hrow("2026-03-31", "26Q1", 6.0), hrow("2026-06-30", "26Q2", 40.0)])
+    assert r["state"] == "unknown" and r["reason"] == "suspect", r
 
     print("selftest OK")
 
