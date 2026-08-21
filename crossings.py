@@ -72,7 +72,7 @@ def calibrate_history(code: str, cur_nv: float, nv_q: str, hist_rows: list):
     return {"factor": factor, "rows": rows}
 
 
-def detect_margin_drops(netvalue: dict, history: dict, status: dict) -> dict:
+def detect_margin_drops(netvalue: dict, history: dict, status: dict, par: dict = None) -> dict:
     """該檔最新相鄰兩季：前季淨值 ≥10、後季 <10。
     history/status 來自 fetch_netvalue_history.py，不是 backtest.json（第 4 節）。
 
@@ -90,14 +90,23 @@ def detect_margin_drops(netvalue: dict, history: dict, status: dict) -> dict:
                  （來自 fetch_netvalue_history.py 的 data/netvalue_history/<code>.json，只含最新 3 季）
       status   — data/netvalue_history_status.json 內容，取 incomplete_codes 分辨
                  budget_exhausted（沒輪到）與 fetch_failed（抓了但失敗）
+      par      — data/par_value.json 的 "par" 欄（2026-08-21 新增，可省略＝沿用舊行為）：
+                 《有價證券得為融資融券標準》第2/4條，面額10元股門檻是淨值≥票面(10元)，
+                 但面額非10元股門檻是「有無累積虧損」，跟淨值10元完全無關——面額已知且
+                 非10元的股票，一律回 data_state="not_applicable"，不可套用淨值10元判斷
+                 出「確認掉落」，那對這些股票不是真的法規事件（見 analyze.py::
+                 credit_eligibility()，同一批股票的信用交易資格應該看那邊，不是這裡）。
+                 面額查不到（par 為 None 或整包缺失）沿用舊行為，當成面額10元處理——
+                 跟 full_delivery_threshold() 的既有回退慣例一致。
     """
+    par = par or {}
     incomplete = status.get("incomplete_codes", {}) if status else {}
     universe_rows = low_netvalue_pool(netvalue)
     universe = len(universe_rows)
 
     rows = []
     counts = {"confirmed": 0, "no_drop": 0, "unknown": 0,
-              "unreliable": 0, "suspect": 0, "source_conflict": 0}
+              "unreliable": 0, "suspect": 0, "source_conflict": 0, "not_applicable": 0}
     unknown_reasons = {}
 
     def add_row(code, name, market, nv_q, data_state, reason=None,
@@ -114,6 +123,12 @@ def detect_margin_drops(netvalue: dict, history: dict, status: dict) -> dict:
     for r in universe_rows:
         code, name, market = r["code"], r.get("name", ""), r.get("market", "")
         cur_nv, nv_q = r["net_value"], r.get("nv_quarter", "")
+
+        p = par.get(code)
+        face = p.get("par") if isinstance(p, dict) else p
+        if face is not None and face != 10.0:
+            add_row(code, name, market, nv_q, "not_applicable")
+            continue
 
         if code in incomplete:
             reason = incomplete[code]
@@ -441,6 +456,32 @@ def selftest():
             {"code": "bbbb", "name": "M", "market": "上市", "net_value": 12.0, "nv_quarter": "26Q1"}]),
         {}, empty_status)
     assert result["universe"] == 1, result
+
+    # === 14b. 面額非10元股：淨值10元跟信用交易資格無關，一律 not_applicable
+    #     （2026-08-21，使用者發現「最近一季掉落」對非10元面額股誤判為真的信用交易事件）===
+    result = detect_margin_drops(
+        nv([{"code": "8422", "name": "可寧衛*", "market": "上市", "net_value": 7.57, "nv_quarter": "26Q2"}]),
+        {"8422": {"rows": [hrow("2026-03-31", "26Q1", 10.04), hrow("2026-06-30", "26Q2", 7.57)]}},
+        empty_status, par={"8422": {"par": 1.0, "shares": 100}})
+    assert result["counts"]["not_applicable"] == 1, result
+    assert result["counts"]["confirmed"] == 0, result   # 不可誤判成真的跌破信用交易門檻
+    row = result["rows"][0]
+    assert row["data_state"] == "not_applicable", row
+    assert row["prev_nv"] is None and row["cur_nv"] is None, row   # 不適用時不給誤導性的數字
+
+    # 14c. 面額10元股，同樣情境（同一組淨值）要正常判定 confirmed，證明修正只影響非10元股
+    result = detect_margin_drops(
+        nv([{"code": "9999", "name": "測試", "market": "上市", "net_value": 7.57, "nv_quarter": "26Q2"}]),
+        {"9999": {"rows": [hrow("2026-03-31", "26Q1", 10.04), hrow("2026-06-30", "26Q2", 7.57)]}},
+        empty_status, par={"9999": {"par": 10.0, "shares": 100}})
+    assert result["counts"]["confirmed"] == 1, result
+
+    # 14d. par 查不到面額 → 沿用舊行為當成面額10元（跟 full_delivery_threshold() 回退慣例一致）
+    result = detect_margin_drops(
+        nv([{"code": "8888", "name": "測試", "market": "上市", "net_value": 7.57, "nv_quarter": "26Q2"}]),
+        {"8888": {"rows": [hrow("2026-03-31", "26Q1", 10.04), hrow("2026-06-30", "26Q2", 7.57)]}},
+        empty_status, par={})
+    assert result["counts"]["confirmed"] == 1, result
 
     # === 15. margin_risk_trend()：本季 vs 上季，非門檻達成判準（Phase D，2026-08-21）===
     # 15a. 回升中（同面額，factor=1）

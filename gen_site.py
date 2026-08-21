@@ -18,6 +18,7 @@ LISTING = BASE / "data" / "listing_dates.json"
 NV_FILE = BASE / "data" / "netvalue.json"
 NV_HISTORY_DIR = BASE / "data" / "netvalue_history"
 NV_HISTORY_STATUS = BASE / "data" / "netvalue_history_status.json"
+PAR_FILE = BASE / "data" / "par_value.json"
 AUDIT_FILE = BASE / "data" / "audit.json"
 SBL_FILE = BASE / "data" / "sbl.json"
 WARRANTS_FILE = BASE / "data" / "warrants.json"
@@ -316,6 +317,7 @@ CROSS_STATE_LABEL = {
     "confirmed": ("🔴", "確認掉落"), "no_drop": ("🟢", "未掉落"),
     "unknown": ("❔", "資料不明"), "unreliable": ("⚠️", "資料不可靠"),
     "suspect": ("⚠️", "疑似異常"), "source_conflict": ("⚠️", "來源矛盾"),
+    "not_applicable": ("⚪", "不適用（面額非10元）"),
 }
 CROSS_REASON_LABEL = {
     "fetch_failed": "抓取失敗", "budget_exhausted": "本輪未輪到",
@@ -323,7 +325,7 @@ CROSS_REASON_LABEL = {
     "no_prev": "無前季資料",
 }
 CROSS_STATE_ORDER = {"confirmed": 0, "source_conflict": 1, "suspect": 2,
-                     "unreliable": 3, "unknown": 4, "no_drop": 5}
+                     "unreliable": 3, "unknown": 4, "no_drop": 5, "not_applicable": 6}
 
 
 def render_dropped_panel(cross: dict) -> tuple:
@@ -346,7 +348,8 @@ def render_dropped_panel(cross: dict) -> tuple:
               + (f'（{reason_bits}）' if reason_bits else '') +
               f'・資料不可靠 {counts.get("unreliable", 0)} 檔・'
               f'疑似異常 {counts.get("suspect", 0)} 檔・'
-              f'來源矛盾 {counts.get("source_conflict", 0)} 檔')
+              f'來源矛盾 {counts.get("source_conflict", 0)} 檔・'
+              f'不適用(面額非10元) {counts.get("not_applicable", 0)} 檔')
 
     trs = []
     for r in rows_sorted:
@@ -377,9 +380,12 @@ def render_dropped_panel(cross: dict) -> tuple:
   <tbody>{''.join(trs) or '<tr><td colspan=7 class=empty>（目前無）</td></tr>'}</tbody></table>"""
 
     panel = f"""<section class="panel" data-t="dropped">
-  <p class="desc">前季淨值 ≥10、最新季 &lt;10——已跌破融資融券標準。各檔比較期間不同，逐列標示，
-  點列展開可看多季淨值軌跡。依現有資料判定，不等於已驗證的財報事件；
-  本清單依當前資料每輪重算，公司更正申報後可能異動。</p>
+  <p class="desc">前季淨值 ≥10、最新季 &lt;10——⚠️ 面額10元股才是真的跌破融資融券10元門檻；
+  面額非10元股，淨值10元跟信用交易資格無關（資格看有無累積虧損，本頁籤標「不適用」，
+  請看展開列「信用交易資格」或「淨值趨勢」）。⚠️ 這是偵測到已達成跌破的財報數字，
+  跟官方正式公告暫停融資融券之間有作業時間差（審查按季排定，生效約在財報法定申報截止日
+  後5個營業日，見規則頁「停止信用交易」一節）——不等於已經生效的官方事件，實際以官方
+  公告為準。點列展開可看多季淨值軌跡；本清單依當前資料每輪重算，公司更正申報後可能異動。</p>
   <p class="desc" style="opacity:.8">{summary}</p>
   {table}
 </section>"""
@@ -751,7 +757,12 @@ def main():
             nv_history[fp.stem] = json.loads(fp.read_text())
     nv_history_status = (json.loads(NV_HISTORY_STATUS.read_text())
                          if NV_HISTORY_STATUS.exists() else {})
-    cross = crossings.detect_margin_drops(nv_data, nv_history, nv_history_status)
+    try:
+        par = (json.loads(PAR_FILE.read_text()).get("par", {})
+              if PAR_FILE.exists() else {})
+    except Exception:
+        par = {}
+    cross = crossings.detect_margin_drops(nv_data, nv_history, nv_history_status, par)
 
     # Phase B：讀 audit.json（會計師查核意見）。缺檔或壞檔一律等同 state:empty，
     # 絕不讓整站產不出來（見計畫 §5「讀取端防呆」）
@@ -824,8 +835,13 @@ def main():
                      f'{"▼" if d < 0 else "▲"}{abs(d):.2f}（{nr["prev_q"]}→）</span>{cross}')
             return badge, delta
         trs_list = []
-        # 新財報排前面
-        for r in sorted(rows, key=lambda x: not x.get("new_report")):
+        # 全額交割中：使用者要求淨值最高排最上面（越接近門檻越危險，放最下面最顯眼）；
+        # 淨值缺失（官方名單有、淨值排行未見那種補漏列）排最後，不可讓 None 排序時噴例外
+        if key == "official":
+            row_sort_key = lambda x: (x.get("net_value") is None, -(x.get("net_value") or 0))
+        else:
+            row_sort_key = lambda x: not x.get("new_report")   # 新財報排前面
+        for r in sorted(rows, key=row_sort_key):
             badge, delta = nr_badge(r)
             # S8：TradingView symbol 前綴（上市 TWSE、上櫃 TPEX）
             tvp = 'TWSE' if r.get('market') == '上市' else 'TPEX'
