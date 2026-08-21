@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-08-20T23:36:31.689715+08:00",
+ "generated_at": "2026-08-21T12:55:19.932100+08:00",
  "nv_fetched_at": "2026-08-20T10:23:45.752130+08:00",
- "official_fetched_at": "2026-08-20T12:46:16.469625+08:00",
- "nv_age_days": 0,
+ "official_fetched_at": "2026-08-21T12:51:05.348854+08:00",
+ "nv_age_days": 1,
  "official_age_days": 0,
  "degraded": {},
- "days_to_report": 86,
+ "days_to_report": 85,
  "next_report_deadline": "2026-11-14",
  "new_reports_count": 282,
  "new_reports_crossings": 13,
@@ -6105,7 +6105,7 @@
     "status": {
      "full_delivery": false,
      "disposal": null,
-     "credit": "可信用交易"
+     "credit": "停止融券"
     },
     "gap": 6.8,
     "fd_threshold": 5.0,
@@ -6379,7 +6379,7 @@
     "status": {
      "full_delivery": false,
      "disposal": null,
-     "credit": "可信用交易"
+     "credit": "停止融券"
     },
     "gap": 6.95,
     "fd_threshold": 5.0,
@@ -8211,7 +8211,7 @@
     "status": {
      "full_delivery": false,
      "disposal": null,
-     "credit": "可信用交易"
+     "credit": "停止融券"
     },
     "gap": 8.68,
     "fd_threshold": 5.0,
@@ -9551,6 +9551,14 @@
   ]
  },
  "tpex_other_flags": [
+  {
+   "code": "4747",
+   "name": "強生",
+   "market": "上櫃",
+   "flags": [
+    "SuspensionOfTrading"
+   ]
+  },
   {
    "code": "4804",
    "name": "大略-KY",
