@@ -2550,6 +2550,3692 @@
    "tier": "clean",
    "code": "9950",
    "fetched_at": "2026-08-21"
+  },
+  "1108": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "陳招美",
+    "陳薔旬"
+   ],
+   "audit_date": "115/08/10",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "1108",
+   "fetched_at": "2026-08-21"
+  },
+  "1213": {
+   "state": "ok",
+   "firm": "南台聯合會計師事務所",
+   "auditors": [
+    "張太元",
+    "陳美蓉"
+   ],
+   "audit_date": "115/08/10",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "1213",
+   "fetched_at": "2026-08-21"
+  },
+  "1219": {
+   "state": "ok",
+   "firm": "群智聯合會計師事務所",
+   "auditors": [
+    "呂松裕",
+    "張鈞富"
+   ],
+   "audit_date": "115/08/11",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱、其他",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "1219",
+   "fetched_at": "2026-08-21"
+  },
+  "1220": {
+   "state": "ok",
+   "firm": "立本台灣聯合會計師事務所",
+   "auditors": [
+    "柯俊輝",
+    "陳玉芳"
+   ],
+   "audit_date": "115/08/11",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "1220",
+   "fetched_at": "2026-08-21"
+  },
+  "1305": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "張正修",
+    "劉怡青"
+   ],
+   "audit_date": "115/08/04",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "1305",
+   "fetched_at": "2026-08-21"
+  },
+  "1309": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "陳俊宏",
+    "劉怡青"
+   ],
+   "audit_date": "115/08/05",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "1309",
+   "fetched_at": "2026-08-21"
+  },
+  "1310": {
+   "state": "ok",
+   "firm": "安侯建業聯合會計師事務所",
+   "auditors": [
+    "尹元聖",
+    "王勇勝"
+   ],
+   "audit_date": "115/08/12",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "1310",
+   "fetched_at": "2026-08-21"
+  },
+  "1316": {
+   "state": "ok",
+   "firm": "安侯建業聯合會計師事務所",
+   "auditors": [
+    "高　鈺　倫",
+    "陳　永　祥"
+   ],
+   "audit_date": "115/08/14",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱、其他",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "1316",
+   "fetched_at": "2026-08-21"
+  },
+  "1324": {
+   "state": "ok",
+   "firm": "安永聯合會計師事務所",
+   "auditors": [
+    "徐榮煌",
+    "楊弘斌"
+   ],
+   "audit_date": "115/07/31",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "1324",
+   "fetched_at": "2026-08-21"
+  },
+  "1337": {
+   "state": "ok",
+   "firm": "德昌聯合會計師事務所",
+   "auditors": [
+    "林兆民",
+    "史岱平"
+   ],
+   "audit_date": "115/08/20",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "1337",
+   "fetched_at": "2026-08-21"
+  },
+  "1417": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "陳培德",
+    "許秀明"
+   ],
+   "audit_date": "115/08/05",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "1417",
+   "fetched_at": "2026-08-21"
+  },
+  "1432": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "陳啟東",
+    "王方瑜"
+   ],
+   "audit_date": "115/08/12",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "1432",
+   "fetched_at": "2026-08-21"
+  },
+  "1444": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "黃毅民",
+    "洪國田"
+   ],
+   "audit_date": "115/08/11",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "1444",
+   "fetched_at": "2026-08-21"
+  },
+  "1453": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "楊靜婷",
+    "莊文源"
+   ],
+   "audit_date": "115/08/11",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "1453",
+   "fetched_at": "2026-08-21"
+  },
+  "1454": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "王攀發",
+    "曾建銘"
+   ],
+   "audit_date": "115/08/05",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "1454",
+   "fetched_at": "2026-08-21"
+  },
+  "1455": {
+   "state": "ok",
+   "firm": "國富浩華聯合會計師事務所",
+   "auditors": [
+    "陳桂美",
+    "林志隆"
+   ],
+   "audit_date": "115/08/07",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "1455",
+   "fetched_at": "2026-08-21"
+  },
+  "1459": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "尤盟貴",
+    "池瑞全"
+   ],
+   "audit_date": "115/08/10",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "1459",
+   "fetched_at": "2026-08-21"
+  },
+  "1463": {
+   "state": "ok",
+   "firm": "安侯建業聯合會計師事務所",
+   "auditors": [
+    "黃　泳　華",
+    "余　聖　河"
+   ],
+   "audit_date": "115/08/12",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "1463",
+   "fetched_at": "2026-08-21"
+  },
+  "1464": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "廖鴻儒",
+    "王騰葦"
+   ],
+   "audit_date": "115/08/10",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱、其他",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "1464",
+   "fetched_at": "2026-08-21"
+  },
+  "1466": {
+   "state": "ok",
+   "firm": "建智聯合會計師事務所",
+   "auditors": [
+    "廖年傑",
+    "陳靜宜"
+   ],
+   "audit_date": "115/08/11",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "1466",
+   "fetched_at": "2026-08-21"
+  },
+  "1467": {
+   "state": "ok",
+   "firm": "安侯建業聯合會計師事務所",
+   "auditors": [
+    "鄒　依　芸",
+    "黃　欣　婷"
+   ],
+   "audit_date": "115/08/12",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "1467",
+   "fetched_at": "2026-08-21"
+  },
+  "1470": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "尤盟貴",
+    "張耿禧"
+   ],
+   "audit_date": "115/08/12",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "1470",
+   "fetched_at": "2026-08-21"
+  },
+  "1528": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "劉建良",
+    "吳鈞麟"
+   ],
+   "audit_date": "115/08/11",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "1528",
+   "fetched_at": "2026-08-21"
+  },
+  "1529": {
+   "state": "ok",
+   "firm": "正風聯合會計師事務所",
+   "auditors": [
+    "賴家裕",
+    "傅睿崗"
+   ],
+   "audit_date": "115/08/10",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "1529",
+   "fetched_at": "2026-08-21"
+  },
+  "1591": {
+   "state": "ok",
+   "firm": "立本台灣聯合會計師事務所",
+   "auditors": [
+    "程　建　憲",
+    "鄧　欣　珊"
+   ],
+   "audit_date": "115/07/17",
+   "audit_type": "無保留結論/意見(強調事項或其他事項)-其他事項－前期由其他會計師查核（核閱）",
+   "quarter": "26Q1",
+   "tier": "note",
+   "code": "1591",
+   "fetched_at": "2026-08-21"
+  },
+  "1611": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "謝東儒",
+    "陳昭宇"
+   ],
+   "audit_date": "115/08/12",
+   "audit_type": "無保留結論/意見(強調事項或其他事項)-其他",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "1611",
+   "fetched_at": "2026-08-21"
+  },
+  "1616": {
+   "state": "ok",
+   "firm": "安侯建業聯合會計師事務所",
+   "auditors": [
+    "蔡孟娟",
+    "黃泳華"
+   ],
+   "audit_date": "115/08/11",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "1616",
+   "fetched_at": "2026-08-21"
+  },
+  "1617": {
+   "state": "ok",
+   "firm": "安 侯 建 業 聯 合 會 計 師 事 務 所",
+   "auditors": [
+    "蘇彥達",
+    "許振隆"
+   ],
+   "audit_date": "115/08/12",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "1617",
+   "fetched_at": "2026-08-21"
+  },
+  "1710": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "陳培德",
+    "劉紋伶"
+   ],
+   "audit_date": "115/08/13",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱、其他",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "1710",
+   "fetched_at": "2026-08-21"
+  },
+  "1714": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "徐明釧",
+    "涂展源"
+   ],
+   "audit_date": "115/08/05",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "1714",
+   "fetched_at": "2026-08-21"
+  },
+  "1732": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "馮敏娟",
+    "林雅慧"
+   ],
+   "audit_date": "115/08/12",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "1732",
+   "fetched_at": "2026-08-21"
+  },
+  "1742": {
+   "state": "ok",
+   "firm": "安侯建業聯合會計師事務所",
+   "auditors": [
+    "毛　聖　崴",
+    "張　淑　瑩"
+   ],
+   "audit_date": "115/08/13",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "1742",
+   "fetched_at": "2026-08-21"
+  },
+  "1776": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "方蘇立",
+    "水日皿智源"
+   ],
+   "audit_date": "115/08/12",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "1776",
+   "fetched_at": "2026-08-21"
+  },
+  "1780": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "阮呂曼玉",
+    "林雅慧"
+   ],
+   "audit_date": "115/07/28",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "1780",
+   "fetched_at": "2026-08-21"
+  },
+  "1789": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "葉芳婷",
+    "徐惠榆"
+   ],
+   "audit_date": "115/08/05",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "1789",
+   "fetched_at": "2026-08-21"
+  },
+  "1805": {
+   "state": "ok",
+   "firm": "安侯建業聯合會計師事務所",
+   "auditors": [
+    "潘俊名",
+    "毛聖崴"
+   ],
+   "audit_date": "115/08/05",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "1805",
+   "fetched_at": "2026-08-21"
+  },
+  "1806": {
+   "state": "ok",
+   "firm": "安侯建業聯合會計師事務所",
+   "auditors": [
+    "陳宗哲",
+    "池世欽"
+   ],
+   "audit_date": "115/08/14",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱、其他",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "1806",
+   "fetched_at": "2026-08-21"
+  },
+  "1813": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "趙永祥",
+    "陳彥君"
+   ],
+   "audit_date": "115/08/05",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "1813",
+   "fetched_at": "2026-08-21"
+  },
+  "2012": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "田中玉",
+    "徐惠榆"
+   ],
+   "audit_date": "115/08/06",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱、其他",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "2012",
+   "fetched_at": "2026-08-21"
+  },
+  "2024": {
+   "state": "ok",
+   "firm": "安侯建業聯合會計師事務所",
+   "auditors": [
+    "黃采絹",
+    "吳仲舜"
+   ],
+   "audit_date": "115/08/07",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "2024",
+   "fetched_at": "2026-08-21"
+  },
+  "2025": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "廖鴻儒",
+    "李季珍"
+   ],
+   "audit_date": "115/08/12",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "2025",
+   "fetched_at": "2026-08-21"
+  },
+  "2028": {
+   "state": "ok",
+   "firm": "國富浩華聯合會計師事務所",
+   "auditors": [
+    "李國銘",
+    "蔡淑滿"
+   ],
+   "audit_date": "115/08/12",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "2028",
+   "fetched_at": "2026-08-21"
+  },
+  "2032": {
+   "state": "ok",
+   "firm": "國富浩華聯合會計師事務所",
+   "auditors": [
+    "林志隆",
+    "王戊昌"
+   ],
+   "audit_date": "115/08/05",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "2032",
+   "fetched_at": "2026-08-21"
+  },
+  "2033": {
+   "state": "ok",
+   "firm": "南台聯合會計師事務所",
+   "auditors": [
+    "張太元會計師",
+    "陳美蓉會計師"
+   ],
+   "audit_date": "115/08/05",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "2033",
+   "fetched_at": "2026-08-21"
+  },
+  "2061": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "吳建志",
+    "王駿凱"
+   ],
+   "audit_date": "115/08/12",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "2061",
+   "fetched_at": "2026-08-21"
+  },
+  "2064": {
+   "state": "ok",
+   "firm": "安侯建業聯合會計師事務所",
+   "auditors": [
+    "吳仲舜",
+    "黃采絹"
+   ],
+   "audit_date": "115/08/12",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "2064",
+   "fetched_at": "2026-08-21"
+  },
+  "2073": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "劉承翰",
+    "劉裕祥"
+   ],
+   "audit_date": "115/08/10",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "2073",
+   "fetched_at": "2026-08-21"
+  },
+  "2109": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "吳松源",
+    "陳啟東"
+   ],
+   "audit_date": "115/08/10",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "2109",
+   "fetched_at": "2026-08-21"
+  },
+  "2237": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "劉美蘭",
+    "賴志維"
+   ],
+   "audit_date": "115/08/06",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "2237",
+   "fetched_at": "2026-08-21"
+  },
+  "2241": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "陳晉昌",
+    "廖福銘"
+   ],
+   "audit_date": "115/08/05",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "2241",
+   "fetched_at": "2026-08-21"
+  },
+  "2243": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "陳晉昌",
+    "廖福銘"
+   ],
+   "audit_date": "115/05/08",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q1",
+   "tier": "clean",
+   "code": "2243",
+   "fetched_at": "2026-08-21"
+  },
+  "2302": {
+   "state": "ok",
+   "firm": "安侯建業聯合會計師事務所",
+   "auditors": [
+    "池 世 欽",
+    "黃 欣 婷"
+   ],
+   "audit_date": "115/08/12",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "2302",
+   "fetched_at": "2026-08-21"
+  },
+  "2305": {
+   "state": "ok",
+   "firm": "安侯建業聯合會計師事務所",
+   "auditors": [
+    "吳俊源",
+    "呂倩慧"
+   ],
+   "audit_date": "115/08/11",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "2305",
+   "fetched_at": "2026-08-21"
+  },
+  "2332": {
+   "state": "ok",
+   "firm": "安侯建業聯合會計師事務所",
+   "auditors": [
+    "謝　秋　華",
+    "梅　元　貞"
+   ],
+   "audit_date": "115/08/12",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "2332",
+   "fetched_at": "2026-08-21"
+  },
+  "2340": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "陳致源",
+    "李東峰"
+   ],
+   "audit_date": "115/08/07",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "2340",
+   "fetched_at": "2026-08-21"
+  },
+  "2342": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "白淑蒨",
+    "蔣承翰"
+   ],
+   "audit_date": "115/07/30",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "2342",
+   "fetched_at": "2026-08-21"
+  },
+  "2365": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "吳美慧",
+    "吳鈞麟"
+   ],
+   "audit_date": "115/08/07",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "2365",
+   "fetched_at": "2026-08-21"
+  },
+  "2369": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "吳麗冬",
+    "劉力維"
+   ],
+   "audit_date": "115/08/06",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "2369",
+   "fetched_at": "2026-08-21"
+  },
+  "2390": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "呂宜真",
+    "彭以驊"
+   ],
+   "audit_date": "115/08/12",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "2390",
+   "fetched_at": "2026-08-21"
+  },
+  "2401": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "陳明煇",
+    "方蘇立"
+   ],
+   "audit_date": "115/08/12",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "2401",
+   "fetched_at": "2026-08-21"
+  },
+  "2405": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "錢奕圻",
+    "張嘉銘"
+   ],
+   "audit_date": "115/08/11",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "2405",
+   "fetched_at": "2026-08-21"
+  },
+  "2406": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "林心彤",
+    "林政治"
+   ],
+   "audit_date": "115/08/13",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱、其他",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "2406",
+   "fetched_at": "2026-08-21"
+  },
+  "2419": {
+   "state": "ok",
+   "firm": "安侯建業聯合會計師事務所",
+   "auditors": [
+    "吳　俊　源",
+    "鄭　安　志"
+   ],
+   "audit_date": "115/07/30",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "2419",
+   "fetched_at": "2026-08-21"
+  },
+  "2426": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "蔡美貞",
+    "陳明煇"
+   ],
+   "audit_date": "115/08/10",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "2426",
+   "fetched_at": "2026-08-21"
+  },
+  "2434": {
+   "state": "ok",
+   "firm": "安永聯合會計師事務所",
+   "auditors": [
+    "姚世傑",
+    "邱琬茹"
+   ],
+   "audit_date": "115/08/06",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "2434",
+   "fetched_at": "2026-08-21"
+  },
+  "2440": {
+   "state": "ok",
+   "firm": "安永聯合會計師事務所",
+   "auditors": [
+    "王瑄瑄",
+    "陳智忠"
+   ],
+   "audit_date": "115/08/12",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "2440",
+   "fetched_at": "2026-08-21"
+  },
+  "2465": {
+   "state": "ok",
+   "firm": "安侯建業聯合會計師事務所",
+   "auditors": [
+    "簡　思　娟",
+    "郭　冠　纓"
+   ],
+   "audit_date": "115/08/10",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "2465",
+   "fetched_at": "2026-08-21"
+  },
+  "2466": {
+   "state": "ok",
+   "firm": "德昌聯合會計師事務所",
+   "auditors": [
+    "李定益",
+    "陳裕勳"
+   ],
+   "audit_date": "115/08/07",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "2466",
+   "fetched_at": "2026-08-21"
+  },
+  "2482": {
+   "state": "ok",
+   "firm": "正風聯合會計師事務所",
+   "auditors": [
+    "曾文誠",
+    "彭莉真"
+   ],
+   "audit_date": "115/08/12",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "2482",
+   "fetched_at": "2026-08-21"
+  },
+  "2515": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "周仕杰",
+    "黃堯麟"
+   ],
+   "audit_date": "115/08/13",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "2515",
+   "fetched_at": "2026-08-21"
+  },
+  "2530": {
+   "state": "ok",
+   "firm": "安永聯合會計師事務所",
+   "auditors": [
+    "林素雯",
+    "黃建澤"
+   ],
+   "audit_date": "115/08/12",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "2530",
+   "fetched_at": "2026-08-21"
+  },
+  "2538": {
+   "state": "ok",
+   "firm": "安永聯合會計師事務所",
+   "auditors": [
+    "林素雯",
+    "張巧穎"
+   ],
+   "audit_date": "115/08/05",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱、其他",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "2538",
+   "fetched_at": "2026-08-21"
+  },
+  "2540": {
+   "state": "ok",
+   "firm": "安侯建業聯合會計師事務所",
+   "auditors": [
+    "池世欽",
+    "黃欣婷"
+   ],
+   "audit_date": "115/08/10",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "2540",
+   "fetched_at": "2026-08-21"
+  },
+  "2547": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "方涵妮",
+    "龔則立"
+   ],
+   "audit_date": "115/08/11",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "2547",
+   "fetched_at": "2026-08-21"
+  },
+  "2611": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "方涵妮",
+    "陳昭宇"
+   ],
+   "audit_date": "115/08/13",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "2611",
+   "fetched_at": "2026-08-21"
+  },
+  "2614": {
+   "state": "ok",
+   "firm": "安侯建業聯合會計師事務所",
+   "auditors": [
+    "黃欣婷",
+    "陳宗哲"
+   ],
+   "audit_date": "115/08/12",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱、其他",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "2614",
+   "fetched_at": "2026-08-21"
+  },
+  "2633": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "于智帆",
+    "徐聖忠"
+   ],
+   "audit_date": "115/08/05",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "2633",
+   "fetched_at": "2026-08-21"
+  },
+  "2646": {
+   "state": "ok",
+   "firm": "安永聯合會計師事務所",
+   "auditors": [
+    "余倩如",
+    "黃子評"
+   ],
+   "audit_date": "115/08/11",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "2646",
+   "fetched_at": "2026-08-21"
+  },
+  "2719": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "林秀珊",
+    "田中玉"
+   ],
+   "audit_date": "115/08/12",
+   "audit_type": "無保留結論/意見(強調事項或其他事項)-",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "2719",
+   "fetched_at": "2026-08-21"
+  },
+  "2734": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "蘇郁琇",
+    "彭詩玄"
+   ],
+   "audit_date": "115/08/11",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "2734",
+   "fetched_at": "2026-08-21"
+  },
+  "2836": {
+   "state": "fetch_error",
+   "reason": "結構化欄位解析不完整",
+   "firm": null,
+   "auditors": [],
+   "audit_date": null,
+   "audit_type": null,
+   "quarter": null,
+   "tier": null,
+   "code": "2836",
+   "fetched_at": "2026-08-21"
+  },
+  "2845": {
+   "state": "fetch_error",
+   "reason": "結構化欄位解析不完整",
+   "firm": null,
+   "auditors": [],
+   "audit_date": null,
+   "audit_type": null,
+   "quarter": null,
+   "tier": null,
+   "code": "2845",
+   "fetched_at": "2026-08-21"
+  },
+  "2889": {
+   "state": "fetch_error",
+   "reason": "結構化欄位解析不完整",
+   "firm": null,
+   "auditors": [],
+   "audit_date": null,
+   "audit_type": null,
+   "quarter": null,
+   "tier": null,
+   "code": "2889",
+   "fetched_at": "2026-08-21"
+  },
+  "2897": {
+   "state": "fetch_error",
+   "reason": "結構化欄位解析不完整",
+   "firm": null,
+   "auditors": [],
+   "audit_date": null,
+   "audit_type": null,
+   "quarter": null,
+   "tier": null,
+   "code": "2897",
+   "fetched_at": "2026-08-21"
+  },
+  "2901": {
+   "state": "ok",
+   "firm": "正風聯合會計師事務所",
+   "auditors": [
+    "曾國富",
+    "賴永吉"
+   ],
+   "audit_date": "115/08/11",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "2901",
+   "fetched_at": "2026-08-21"
+  },
+  "2908": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "張至誼",
+    "洪國田"
+   ],
+   "audit_date": "115/08/12",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "2908",
+   "fetched_at": "2026-08-21"
+  },
+  "2911": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "葉淑娟",
+    "翁雅玲"
+   ],
+   "audit_date": "115/08/13",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "2911",
+   "fetched_at": "2026-08-21"
+  },
+  "2926": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "楊蕙慈",
+    "張淑瓊"
+   ],
+   "audit_date": "115/08/12",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "2926",
+   "fetched_at": "2026-08-21"
+  },
+  "2939": {
+   "state": "ok",
+   "firm": "正風聯合會計師事務所",
+   "auditors": [
+    "賴家裕",
+    "林啟平"
+   ],
+   "audit_date": "115/05/14",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q1",
+   "tier": "clean",
+   "code": "2939",
+   "fetched_at": "2026-08-21"
+  },
+  "3002": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "邱口永平",
+    "尤盟貴"
+   ],
+   "audit_date": "115/08/07",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "3002",
+   "fetched_at": "2026-08-21"
+  },
+  "3011": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "黃堯麟",
+    "周仕杰"
+   ],
+   "audit_date": "115/08/12",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "3011",
+   "fetched_at": "2026-08-21"
+  },
+  "3024": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "吳仁杰",
+    "林雅慧"
+   ],
+   "audit_date": "115/08/11",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "3024",
+   "fetched_at": "2026-08-21"
+  },
+  "3025": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "溫智源",
+    "鍾鳴遠"
+   ],
+   "audit_date": "115/08/11",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "3025",
+   "fetched_at": "2026-08-21"
+  },
+  "3041": {
+   "state": "ok",
+   "firm": "安永聯合會計師事務所",
+   "auditors": [
+    "林秀青",
+    "呂倩雯"
+   ],
+   "audit_date": "115/08/14",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "3041",
+   "fetched_at": "2026-08-21"
+  },
+  "3047": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "陳君銘",
+    "龔則立"
+   ],
+   "audit_date": "115/08/07",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "3047",
+   "fetched_at": "2026-08-21"
+  },
+  "3049": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "廖福銘",
+    "林永智"
+   ],
+   "audit_date": "115/08/12",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "3049",
+   "fetched_at": "2026-08-21"
+  },
+  "3055": {
+   "state": "ok",
+   "firm": "大中國際聯合會計師事務所",
+   "auditors": [
+    "林寬照",
+    "溫明郁"
+   ],
+   "audit_date": "115/08/05",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "3055",
+   "fetched_at": "2026-08-21"
+  },
+  "3062": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "林柏全",
+    "胡智華"
+   ],
+   "audit_date": "115/08/11",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "3062",
+   "fetched_at": "2026-08-21"
+  },
+  "3067": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "李冠豪",
+    "馬偉峻"
+   ],
+   "audit_date": "115/08/11",
+   "audit_type": "無保留結論/意見(強調事項或其他事項)-其他事項－前期由其他會計師查核（核閱）",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "3067",
+   "fetched_at": "2026-08-21"
+  },
+  "3071": {
+   "state": "ok",
+   "firm": "安永聯合會計師事務所",
+   "auditors": [
+    "李芳文",
+    "姚世傑"
+   ],
+   "audit_date": "115/08/11",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "3071",
+   "fetched_at": "2026-08-21"
+  },
+  "3083": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "劉明賢",
+    "李冠豪"
+   ],
+   "audit_date": "115/08/11",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "3083",
+   "fetched_at": "2026-08-21"
+  },
+  "3092": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "阮呂曼玉",
+    "王菘澤"
+   ],
+   "audit_date": "115/08/12",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "3092",
+   "fetched_at": "2026-08-21"
+  },
+  "3093": {
+   "state": "ok",
+   "firm": "安永聯合會計師事務所",
+   "auditors": [
+    "楊弘斌",
+    "劉榮進"
+   ],
+   "audit_date": "115/08/11",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "3093",
+   "fetched_at": "2026-08-21"
+  },
+  "3094": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "林瑟凱",
+    "林佳鴻"
+   ],
+   "audit_date": "115/08/07",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "3094",
+   "fetched_at": "2026-08-21"
+  },
+  "3095": {
+   "state": "ok",
+   "firm": "安侯建業聯合會計師事務所",
+   "auditors": [
+    "吳　佳　翰",
+    "趙　敏　如"
+   ],
+   "audit_date": "115/08/11",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "3095",
+   "fetched_at": "2026-08-21"
+  },
+  "3149": {
+   "state": "ok",
+   "firm": "安侯建業聯合會計師事務所",
+   "auditors": [
+    "陳　宗　哲",
+    "鄒　依　芸"
+   ],
+   "audit_date": "115/08/07",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "3149",
+   "fetched_at": "2026-08-21"
+  },
+  "3150": {
+   "state": "ok",
+   "firm": "安永聯合會計師事務所",
+   "auditors": [
+    "楊雨霓",
+    "黃敏如"
+   ],
+   "audit_date": "115/08/04",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "3150",
+   "fetched_at": "2026-08-21"
+  },
+  "3176": {
+   "state": "ok",
+   "firm": "安永聯合會計師事務所",
+   "auditors": [
+    "郭紹彬",
+    "余倩如"
+   ],
+   "audit_date": "115/08/11",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "3176",
+   "fetched_at": "2026-08-21"
+  },
+  "3205": {
+   "state": "ok",
+   "firm": "安侯建業聯合會計師事務所",
+   "auditors": [
+    "許　淑　敏",
+    "江　曉　苓"
+   ],
+   "audit_date": "115/08/11",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "3205",
+   "fetched_at": "2026-08-21"
+  },
+  "3229": {
+   "state": "ok",
+   "firm": "霈昇聯合會計師事務所",
+   "auditors": [
+    "林育雅",
+    "李菡"
+   ],
+   "audit_date": "115/08/12",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "3229",
+   "fetched_at": "2026-08-21"
+  },
+  "3230": {
+   "state": "ok",
+   "firm": "安永聯合會計師事務所",
+   "auditors": [
+    "邱琬茹",
+    "黃靖雅"
+   ],
+   "audit_date": "115/08/11",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "3230",
+   "fetched_at": "2026-08-21"
+  },
+  "3232": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "陳啟東",
+    "周筱姿"
+   ],
+   "audit_date": "115/08/10",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "3232",
+   "fetched_at": "2026-08-21"
+  },
+  "3268": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "賴志維",
+    "王玉娟"
+   ],
+   "audit_date": "115/08/11",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "3268",
+   "fetched_at": "2026-08-21"
+  },
+  "3272": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "于智帆",
+    "黃世鈞"
+   ],
+   "audit_date": "115/08/11",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "3272",
+   "fetched_at": "2026-08-21"
+  },
+  "3276": {
+   "state": "ok",
+   "firm": "安侯建業聯合會計師事務所",
+   "auditors": [
+    "陳　宜　君",
+    "江　曉　苓"
+   ],
+   "audit_date": "115/08/11",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "3276",
+   "fetched_at": "2026-08-21"
+  },
+  "3284": {
+   "state": "ok",
+   "firm": "安永聯合會計師事務所",
+   "auditors": [
+    "洪國森",
+    "李芳文"
+   ],
+   "audit_date": "115/08/10",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "3284",
+   "fetched_at": "2026-08-21"
+  },
+  "3285": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "池瑞全",
+    "蔡宗遠"
+   ],
+   "audit_date": "115/08/13",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "3285",
+   "fetched_at": "2026-08-21"
+  },
+  "3296": {
+   "state": "ok",
+   "firm": "安侯建業聯合會計師事務所",
+   "auditors": [
+    "陳　明　輝",
+    "李　慈　慧"
+   ],
+   "audit_date": "115/08/12",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "3296",
+   "fetched_at": "2026-08-21"
+  },
+  "3322": {
+   "state": "ok",
+   "firm": "安侯建業聯合會計師事務所",
+   "auditors": [
+    "區　耀　軍",
+    "王　怡　文"
+   ],
+   "audit_date": "115/08/06",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "3322",
+   "fetched_at": "2026-08-21"
+  },
+  "3339": {
+   "state": "ok",
+   "firm": "安侯建業聯合會計師事務所",
+   "auditors": [
+    "張　淑　瑩",
+    "潘　俊　名"
+   ],
+   "audit_date": "115/08/12",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "3339",
+   "fetched_at": "2026-08-21"
+  },
+  "3354": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "田中玉",
+    "葉芳婷"
+   ],
+   "audit_date": "115/07/30",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "3354",
+   "fetched_at": "2026-08-21"
+  },
+  "3360": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "張至誼",
+    "彭詩玄"
+   ],
+   "audit_date": "115/08/12",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "3360",
+   "fetched_at": "2026-08-21"
+  },
+  "3434": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "李燕娜",
+    "蔣承翰"
+   ],
+   "audit_date": "115/08/06",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "3434",
+   "fetched_at": "2026-08-21"
+  },
+  "3489": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "陳啟東",
+    "林佳鴻"
+   ],
+   "audit_date": "115/08/12",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "3489",
+   "fetched_at": "2026-08-21"
+  },
+  "3520": {
+   "state": "ok",
+   "firm": "安侯建業聯合會計師事務所",
+   "auditors": [
+    "紀　孟　君",
+    "傅　泓　文"
+   ],
+   "audit_date": "115/08/11",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "3520",
+   "fetched_at": "2026-08-21"
+  },
+  "3521": {
+   "state": "ok",
+   "firm": "安侯建業聯合會計師事務所",
+   "auditors": [
+    "高　鈺　倫",
+    "張　淑　瑩"
+   ],
+   "audit_date": "115/07/27",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "3521",
+   "fetched_at": "2026-08-21"
+  },
+  "3535": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "高逸欣",
+    "陳明煇"
+   ],
+   "audit_date": "115/08/07",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "3535",
+   "fetched_at": "2026-08-21"
+  },
+  "3541": {
+   "state": "ok",
+   "firm": "富 鋒 聯 合 會 計 師 事 務 所",
+   "auditors": [
+    "吳金地",
+    "鄭忠昊"
+   ],
+   "audit_date": "115/08/07",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "3541",
+   "fetched_at": "2026-08-21"
+  },
+  "3607": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "呂宜真",
+    "王攀發"
+   ],
+   "audit_date": "115/08/11",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "3607",
+   "fetched_at": "2026-08-21"
+  },
+  "3609": {
+   "state": "ok",
+   "firm": "安侯建業聯合會計師事務所",
+   "auditors": [
+    "張　淑　瑩",
+    "莊　鈞　維"
+   ],
+   "audit_date": "115/08/13",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "3609",
+   "fetched_at": "2026-08-21"
+  },
+  "3623": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "王菘澤",
+    "楊蕙慈"
+   ],
+   "audit_date": "115/08/06",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "3623",
+   "fetched_at": "2026-08-21"
+  },
+  "3630": {
+   "state": "ok",
+   "firm": "安侯建業聯合會計師事務所",
+   "auditors": [
+    "劉　振　興",
+    "張　字　信"
+   ],
+   "audit_date": "115/08/13",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "3630",
+   "fetched_at": "2026-08-21"
+  },
+  "3631": {
+   "state": "ok",
+   "firm": "國富浩華聯合會計師事務所",
+   "auditors": [
+    "邱繼盛",
+    "林岱樺"
+   ],
+   "audit_date": "115/08/07",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "3631",
+   "fetched_at": "2026-08-21"
+  },
+  "3646": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "吳美慧",
+    "李穗青"
+   ],
+   "audit_date": "115/08/07",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "3646",
+   "fetched_at": "2026-08-21"
+  },
+  "3666": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "李穗青",
+    "龔則立"
+   ],
+   "audit_date": "115/08/11",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "3666",
+   "fetched_at": "2026-08-21"
+  },
+  "4102": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "賴志維",
+    "徐建業"
+   ],
+   "audit_date": "115/08/04",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "4102",
+   "fetched_at": "2026-08-21"
+  },
+  "4109": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "林秀珊",
+    "吳建志"
+   ],
+   "audit_date": "115/08/04",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "4109",
+   "fetched_at": "2026-08-21"
+  },
+  "4127": {
+   "state": "ok",
+   "firm": "正風聯合會計師事務所",
+   "auditors": [
+    "賴家裕",
+    "賴永吉"
+   ],
+   "audit_date": "115/08/10",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "4127",
+   "fetched_at": "2026-08-21"
+  },
+  "4142": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "徐建業",
+    "賴志維"
+   ],
+   "audit_date": "115/08/05",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "4142",
+   "fetched_at": "2026-08-21"
+  },
+  "4147": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "王浚宇",
+    "陳彥君"
+   ],
+   "audit_date": "115/08/06",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "4147",
+   "fetched_at": "2026-08-21"
+  },
+  "4166": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "吳鈞麟",
+    "陳昭宇"
+   ],
+   "audit_date": "115/08/11",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "4166",
+   "fetched_at": "2026-08-21"
+  },
+  "4167": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "鄭旭然",
+    "謝東儒"
+   ],
+   "audit_date": "115/08/06",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "4167",
+   "fetched_at": "2026-08-21"
+  },
+  "4171": {
+   "state": "ok",
+   "firm": "安 侯 建 業 聯 合 會 計 師 事 務 所",
+   "auditors": [
+    "江家齊",
+    "吳佳翰"
+   ],
+   "audit_date": "115/08/10",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "4171",
+   "fetched_at": "2026-08-21"
+  },
+  "4174": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "黃珮娟",
+    "梁華玲"
+   ],
+   "audit_date": "115/08/12",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "4174",
+   "fetched_at": "2026-08-21"
+  },
+  "4183": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "梁盛泰",
+    "尤盟貴"
+   ],
+   "audit_date": "115/08/05",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "4183",
+   "fetched_at": "2026-08-21"
+  },
+  "4207": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "蔡宗遠",
+    "李麗凰"
+   ],
+   "audit_date": "115/08/12",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "4207",
+   "fetched_at": "2026-08-21"
+  },
+  "4406": {
+   "state": "ok",
+   "firm": "安侯建業聯合會計師事務所",
+   "auditors": [
+    "郭仰倫",
+    "謝秋華"
+   ],
+   "audit_date": "115/08/06",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "4406",
+   "fetched_at": "2026-08-21"
+  },
+  "4413": {
+   "state": "ok",
+   "firm": "廣信益群聯合會計師事務所",
+   "auditors": [
+    "黃健豪",
+    "梁宏瑋"
+   ],
+   "audit_date": "115/08/14",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "4413",
+   "fetched_at": "2026-08-21"
+  },
+  "4414": {
+   "state": "ok",
+   "firm": "信永中和聯合會計師事務所",
+   "auditors": [
+    "陳光慧",
+    "郭鎮宇"
+   ],
+   "audit_date": "115/08/14",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "4414",
+   "fetched_at": "2026-08-21"
+  },
+  "4426": {
+   "state": "ok",
+   "firm": "安侯建業聯合會計師事務所",
+   "auditors": [
+    "劉振興",
+    "陳政學"
+   ],
+   "audit_date": "115/08/06",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "4426",
+   "fetched_at": "2026-08-21"
+  },
+  "4513": {
+   "state": "ok",
+   "firm": "安永聯合會計師事務所",
+   "auditors": [
+    "陳政初",
+    "洪國森"
+   ],
+   "audit_date": "115/08/11",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "4513",
+   "fetched_at": "2026-08-21"
+  },
+  "4530": {
+   "state": "ok",
+   "firm": "安侯建業聯合會計師事務所",
+   "auditors": [
+    "張淑瑩",
+    "潘俊名"
+   ],
+   "audit_date": "115/08/13",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "4530",
+   "fetched_at": "2026-08-21"
+  },
+  "4538": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "賴志維",
+    "吳松源"
+   ],
+   "audit_date": "115/08/10",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "4538",
+   "fetched_at": "2026-08-21"
+  },
+  "4562": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "吳長駿",
+    "廖鴻儒"
+   ],
+   "audit_date": "115/08/10",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "4562",
+   "fetched_at": "2026-08-21"
+  },
+  "4714": {
+   "state": "ok",
+   "firm": "安侯建業聯合會計師事務所",
+   "auditors": [
+    "陳　永　祥",
+    "高　鈺　倫"
+   ],
+   "audit_date": "115/08/11",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱、其他",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "4714",
+   "fetched_at": "2026-08-21"
+  },
+  "4716": {
+   "state": "ok",
+   "firm": "安永聯合會計師事務所",
+   "auditors": [
+    "洪國森",
+    "李芳文"
+   ],
+   "audit_date": "115/08/07",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "4716",
+   "fetched_at": "2026-08-21"
+  },
+  "4720": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "蔡侑玲",
+    "尤志峰"
+   ],
+   "audit_date": "115/08/13",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "4720",
+   "fetched_at": "2026-08-21"
+  },
+  "4729": {
+   "state": "ok",
+   "firm": "安永聯合會計師事務所",
+   "auditors": [
+    "李芳文",
+    "姚世傑"
+   ],
+   "audit_date": "115/08/07",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "4729",
+   "fetched_at": "2026-08-21"
+  },
+  "4903": {
+   "state": "ok",
+   "firm": "安侯建業聯合會計師事務所",
+   "auditors": [
+    "高　鈺　倫",
+    "張　淑　瑩"
+   ],
+   "audit_date": "115/08/11",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "4903",
+   "fetched_at": "2026-08-21"
+  },
+  "4911": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "徐惠榆",
+    "葉芳婷"
+   ],
+   "audit_date": "115/08/07",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "4911",
+   "fetched_at": "2026-08-21"
+  },
+  "4923": {
+   "state": "ok",
+   "firm": "安侯建業聯合會計師事務所",
+   "auditors": [
+    "郭　欣　頤",
+    "張　肇　文"
+   ],
+   "audit_date": "115/08/05",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "4923",
+   "fetched_at": "2026-08-21"
+  },
+  "4924": {
+   "state": "ok",
+   "firm": "德昌聯合會計師事務所",
+   "auditors": [
+    "陳裕勳",
+    "陳秀莉"
+   ],
+   "audit_date": "115/05/12",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q1",
+   "tier": "clean",
+   "code": "4924",
+   "fetched_at": "2026-08-21"
+  },
+  "4960": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "廖阿甚",
+    "林秀珊"
+   ],
+   "audit_date": "115/08/05",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "4960",
+   "fetched_at": "2026-08-21"
+  },
+  "4976": {
+   "state": "ok",
+   "firm": "國富浩華聯合會計師事務所",
+   "auditors": [
+    "楊貞瑜 會計師",
+    "邵朝彬 會計師"
+   ],
+   "audit_date": "115/08/12",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "4976",
+   "fetched_at": "2026-08-21"
+  },
+  "4989": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "郭文吉",
+    "劉建良"
+   ],
+   "audit_date": "115/08/13",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "4989",
+   "fetched_at": "2026-08-21"
+  },
+  "4994": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "余正富",
+    "黃金連"
+   ],
+   "audit_date": "115/08/07",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "4994",
+   "fetched_at": "2026-08-21"
+  },
+  "5014": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "李燕娜",
+    "吳偉豪"
+   ],
+   "audit_date": "115/08/11",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "5014",
+   "fetched_at": "2026-08-21"
+  },
+  "5202": {
+   "state": "ok",
+   "firm": "安侯建業聯合會計師事務所",
+   "auditors": [
+    "張　淑　瑩",
+    "高　鈺　倫"
+   ],
+   "audit_date": "115/08/10",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "5202",
+   "fetched_at": "2026-08-21"
+  },
+  "5210": {
+   "state": "ok",
+   "firm": "國富浩華聯合會計師事務所",
+   "auditors": [
+    "張亞荃",
+    "潘金樹"
+   ],
+   "audit_date": "115/08/12",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "5210",
+   "fetched_at": "2026-08-21"
+  },
+  "5211": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "水曰皿智源",
+    "陳彥君"
+   ],
+   "audit_date": "115/08/03",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "5211",
+   "fetched_at": "2026-08-21"
+  },
+  "5245": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "謝明忠",
+    "彭以驊"
+   ],
+   "audit_date": "115/08/12",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "5245",
+   "fetched_at": "2026-08-21"
+  },
+  "5251": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "黃國寧",
+    "黃惠敏"
+   ],
+   "audit_date": "115/08/12",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "5251",
+   "fetched_at": "2026-08-21"
+  },
+  "5272": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "邱鏞銘",
+    "蔡美貞"
+   ],
+   "audit_date": "115/07/29",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "5272",
+   "fetched_at": "2026-08-21"
+  },
+  "5276": {
+   "state": "ok",
+   "firm": "安侯建業聯合會計師事務所",
+   "auditors": [
+    "紀　孟　君",
+    "楊　樹　芝"
+   ],
+   "audit_date": "115/05/12",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q1",
+   "tier": "clean",
+   "code": "5276",
+   "fetched_at": "2026-08-21"
+  },
+  "5278": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "胡智華",
+    "徐潔如"
+   ],
+   "audit_date": "115/08/10",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "5278",
+   "fetched_at": "2026-08-21"
+  },
+  "5310": {
+   "state": "ok",
+   "firm": "安永聯合會計師事務所",
+   "auditors": [
+    "陳智忠",
+    "余倩如"
+   ],
+   "audit_date": "115/08/11",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "5310",
+   "fetched_at": "2026-08-21"
+  },
+  "5321": {
+   "state": "ok",
+   "firm": "國富浩華聯合會計師事務所",
+   "auditors": [
+    "蕭又文",
+    "卓慶全"
+   ],
+   "audit_date": "115/08/12",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "5321",
+   "fetched_at": "2026-08-21"
+  },
+  "5328": {
+   "state": "ok",
+   "firm": "安永聯合會計師事務所",
+   "auditors": [
+    "李芳文",
+    "洪國森"
+   ],
+   "audit_date": "115/08/12",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "5328",
+   "fetched_at": "2026-08-21"
+  },
+  "5340": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "謝智政",
+    "劉倩瑜"
+   ],
+   "audit_date": "115/08/06",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "5340",
+   "fetched_at": "2026-08-21"
+  },
+  "5364": {
+   "state": "ok",
+   "firm": "安侯建業聯合會計師事務所",
+   "auditors": [
+    "張淑瑩",
+    "韓沂璉"
+   ],
+   "audit_date": "115/08/12",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "5364",
+   "fetched_at": "2026-08-21"
+  },
+  "5381": {
+   "state": "ok",
+   "firm": "安永聯合會計師事務所",
+   "auditors": [
+    "許新民",
+    "呂倩雯"
+   ],
+   "audit_date": "115/08/14",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "5381",
+   "fetched_at": "2026-08-21"
+  },
+  "5398": {
+   "state": "ok",
+   "firm": "安永聯合會計師事務所",
+   "auditors": [
+    "黃靖雅",
+    "黃子評"
+   ],
+   "audit_date": "115/08/07",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "5398",
+   "fetched_at": "2026-08-21"
+  },
+  "5450": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "邱政俊",
+    "張正修"
+   ],
+   "audit_date": "115/08/06",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "5450",
+   "fetched_at": "2026-08-21"
+  },
+  "5452": {
+   "state": "ok",
+   "firm": "安侯建業聯合會計師事務所",
+   "auditors": [
+    "江曉苓",
+    "陳宜君"
+   ],
+   "audit_date": "115/08/07",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "5452",
+   "fetched_at": "2026-08-21"
+  },
+  "5460": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "廖婉怡",
+    "謝建新"
+   ],
+   "audit_date": "115/08/10",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "5460",
+   "fetched_at": "2026-08-21"
+  },
+  "5488": {
+   "state": "ok",
+   "firm": "霈 昇 聯 合 會 計 師 事 務 所",
+   "auditors": [
+    "王新元",
+    "邱奕志"
+   ],
+   "audit_date": "115/08/12",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "5488",
+   "fetched_at": "2026-08-21"
+  },
+  "5490": {
+   "state": "ok",
+   "firm": "安侯建業聯合會計師事務所",
+   "auditors": [
+    "鄭安志",
+    "吳俊源"
+   ],
+   "audit_date": "115/08/06",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "5490",
+   "fetched_at": "2026-08-21"
+  },
+  "5498": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "李冠豪",
+    "馬偉峻"
+   ],
+   "audit_date": "115/08/12",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "5498",
+   "fetched_at": "2026-08-21"
+  },
+  "5521": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "文雅芳",
+    "王方瑜"
+   ],
+   "audit_date": "115/08/12",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "5521",
+   "fetched_at": "2026-08-21"
+  },
+  "5531": {
+   "state": "ok",
+   "firm": "國富浩華聯合會計師事務所",
+   "auditors": [
+    "洪淑芬",
+    "蕭又文"
+   ],
+   "audit_date": "115/08/06",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "5531",
+   "fetched_at": "2026-08-21"
+  },
+  "5902": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "徐惠榆",
+    "葉芳婷"
+   ],
+   "audit_date": "115/07/28",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "5902",
+   "fetched_at": "2026-08-21"
+  },
+  "6015": {
+   "state": "ok",
+   "firm": "安永聯合會計師事務所",
+   "auditors": [
+    "馬 君 廷",
+    "林 世 寰"
+   ],
+   "audit_date": "115/05/07",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q1",
+   "tier": "note",
+   "code": "6015",
+   "fetched_at": "2026-08-21"
+  },
+  "6101": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "涂展源",
+    "支秉鈞"
+   ],
+   "audit_date": "115/08/10",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "6101",
+   "fetched_at": "2026-08-21"
+  },
+  "6103": {
+   "state": "ok",
+   "firm": "聯捷聯合會計師事務所",
+   "auditors": [
+    "邱雲超",
+    "黃珮樺"
+   ],
+   "audit_date": "115/08/06",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "6103",
+   "fetched_at": "2026-08-21"
+  },
+  "6113": {
+   "state": "ok",
+   "firm": "安侯建業聯合會計師事務所",
+   "auditors": [
+    "傅泓文",
+    "洪士剛"
+   ],
+   "audit_date": "115/08/07",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "6113",
+   "fetched_at": "2026-08-21"
+  },
+  "6116": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "廖福銘",
+    "林永智"
+   ],
+   "audit_date": "115/07/30",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "6116",
+   "fetched_at": "2026-08-21"
+  },
+  "6118": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "劉書琳",
+    "曾建銘"
+   ],
+   "audit_date": "115/08/12",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "6118",
+   "fetched_at": "2026-08-21"
+  },
+  "6127": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "王攀發",
+    "彭以驊"
+   ],
+   "audit_date": "115/08/11",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "6127",
+   "fetched_at": "2026-08-21"
+  },
+  "6130": {
+   "state": "ok",
+   "firm": "國富浩華聯合會計師事務所",
+   "auditors": [
+    "王戊昌",
+    "陳桂美"
+   ],
+   "audit_date": "115/08/10",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "6130",
+   "fetched_at": "2026-08-21"
+  },
+  "6133": {
+   "state": "ok",
+   "firm": "安侯建業聯合會計師事務所",
+   "auditors": [
+    "羅瑞芝",
+    "余聖河"
+   ],
+   "audit_date": "115/08/13",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "6133",
+   "fetched_at": "2026-08-21"
+  },
+  "6134": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "林柏全",
+    "王菘澤"
+   ],
+   "audit_date": "115/08/11",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "6134",
+   "fetched_at": "2026-08-21"
+  },
+  "6148": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "姚勝雄",
+    "褚世蘭"
+   ],
+   "audit_date": "115/08/04",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "6148",
+   "fetched_at": "2026-08-21"
+  },
+  "6153": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "彭詩玄",
+    "張至誼"
+   ],
+   "audit_date": "115/07/30",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "6153",
+   "fetched_at": "2026-08-21"
+  },
+  "6164": {
+   "state": "ok",
+   "firm": "安永聯合會計師事務所",
+   "auditors": [
+    "羅筱靖",
+    "馬君廷"
+   ],
+   "audit_date": "115/08/12",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "6164",
+   "fetched_at": "2026-08-21"
+  },
+  "6167": {
+   "state": "ok",
+   "firm": "安 侯 建 業 聯 合 會 計 師 事 務 所",
+   "auditors": [
+    "王怡文",
+    "辛郁婷"
+   ],
+   "audit_date": "115/08/11",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "6167",
+   "fetched_at": "2026-08-21"
+  },
+  "6174": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "賴志維",
+    "吳松源"
+   ],
+   "audit_date": "115/08/11",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "6174",
+   "fetched_at": "2026-08-21"
+  },
+  "6185": {
+   "state": "ok",
+   "firm": "大中國際聯合會計師事務所",
+   "auditors": [
+    "林月霞",
+    "張榕枝"
+   ],
+   "audit_date": "115/08/03",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "6185",
+   "fetched_at": "2026-08-21"
+  },
+  "6222": {
+   "state": "ok",
+   "firm": "安 侯 建 業 聯 合 會 計 師 事 務 所",
+   "auditors": [
+    "黃欣婷",
+    "池世欽"
+   ],
+   "audit_date": "115/08/11",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "6222",
+   "fetched_at": "2026-08-21"
+  },
+  "6226": {
+   "state": "ok",
+   "firm": "安侯建業聯合會計師事務所",
+   "auditors": [
+    "郭　仰　倫",
+    "謝　秋　華"
+   ],
+   "audit_date": "115/08/06",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "6226",
+   "fetched_at": "2026-08-21"
+  },
+  "6244": {
+   "state": "ok",
+   "firm": "安侯建業聯合會計師事務所",
+   "auditors": [
+    "楊　雲　筑",
+    "唐　嘉　鍵"
+   ],
+   "audit_date": "115/08/06",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "6244",
+   "fetched_at": "2026-08-21"
+  },
+  "6246": {
+   "state": "ok",
+   "firm": "德昌聯合會計師事務所",
+   "auditors": [
+    "陳裕勳",
+    "陳秀莉"
+   ],
+   "audit_date": "115/08/10",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "6246",
+   "fetched_at": "2026-08-21"
+  },
+  "6259": {
+   "state": "ok",
+   "firm": "馬施云大華聯合會計師事務所",
+   "auditors": [
+    "趙翊棋",
+    "黃俊諺"
+   ],
+   "audit_date": "115/08/12",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "6259",
+   "fetched_at": "2026-08-21"
+  },
+  "6283": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "林永智",
+    "廖福銘"
+   ],
+   "audit_date": "115/08/07",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "6283",
+   "fetched_at": "2026-08-21"
+  },
+  "6418": {
+   "state": "ok",
+   "firm": "安侯建業聯合會計師事務所",
+   "auditors": [
+    "黃　欣　婷",
+    "池　世　欽"
+   ],
+   "audit_date": "115/08/11",
+   "audit_type": "無保留結論/意見(強調事項或其他事項)-其他事項－前期由其他會計師查核（核閱）",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "6418",
+   "fetched_at": "2026-08-21"
+  },
+  "6465": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "于智帆",
+    "葉翠苗"
+   ],
+   "audit_date": "115/07/31",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "6465",
+   "fetched_at": "2026-08-21"
+  },
+  "6482": {
+   "state": "ok",
+   "firm": "安侯建業聯合會計師事務所",
+   "auditors": [
+    "陳　燕　慧",
+    "郭　士　華"
+   ],
+   "audit_date": "115/08/07",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "6482",
+   "fetched_at": "2026-08-21"
+  },
+  "6496": {
+   "state": "ok",
+   "firm": "安侯建業聯合會計師事務所",
+   "auditors": [
+    "黃　柏　淑",
+    "黃　采　絹"
+   ],
+   "audit_date": "115/08/06",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "6496",
+   "fetched_at": "2026-08-21"
+  },
+  "6499": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "林冠宏",
+    "梁華玲"
+   ],
+   "audit_date": "115/08/07",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "6499",
+   "fetched_at": "2026-08-21"
+  },
+  "6512": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "林政治",
+    "陳彥君"
+   ],
+   "audit_date": "115/08/07",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "6512",
+   "fetched_at": "2026-08-21"
+  },
+  "6530": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "王攀發",
+    "彭以驊"
+   ],
+   "audit_date": "115/08/06",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "6530",
+   "fetched_at": "2026-08-21"
+  },
+  "6547": {
+   "state": "ok",
+   "firm": "安永聯合會計師事務所",
+   "auditors": [
+    "黃敏如",
+    "郭紹彬"
+   ],
+   "audit_date": "115/08/07",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "6547",
+   "fetched_at": "2026-08-21"
+  },
+  "6548": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "許瑞軒",
+    "郭麗園"
+   ],
+   "audit_date": "115/08/05",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "6548",
+   "fetched_at": "2026-08-21"
+  },
+  "6558": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "江采燕",
+    "謝智政"
+   ],
+   "audit_date": "115/08/05",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "6558",
+   "fetched_at": "2026-08-21"
+  },
+  "6578": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "徐惠榆",
+    "田中玉"
+   ],
+   "audit_date": "115/08/03",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "6578",
+   "fetched_at": "2026-08-21"
+  },
+  "6606": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "林秀珊",
+    "吳建志"
+   ],
+   "audit_date": "115/08/13",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "6606",
+   "fetched_at": "2026-08-21"
+  },
+  "6616": {
+   "state": "ok",
+   "firm": "安侯建業聯合會計師事務所",
+   "auditors": [
+    "趙敏如",
+    "張純怡"
+   ],
+   "audit_date": "115/05/12",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q1",
+   "tier": "clean",
+   "code": "6616",
+   "fetched_at": "2026-08-21"
+  },
+  "6661": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "陳文香",
+    "蘇郁琇"
+   ],
+   "audit_date": "115/08/11",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "6661",
+   "fetched_at": "2026-08-21"
+  },
+  "6674": {
+   "state": "ok",
+   "firm": "安侯建業聯合會計師事務所",
+   "auditors": [
+    "劉　振　興",
+    "郭　冠　纓"
+   ],
+   "audit_date": "115/08/06",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "6674",
+   "fetched_at": "2026-08-21"
+  },
+  "6698": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "葉芳婷",
+    "徐惠榆"
+   ],
+   "audit_date": "115/08/06",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "6698",
+   "fetched_at": "2026-08-21"
+  },
+  "6708": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "吳鈞麟",
+    "鍾鳴遠"
+   ],
+   "audit_date": "115/08/07",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "6708",
+   "fetched_at": "2026-08-21"
+  },
+  "6767": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "吳少君",
+    "蘇定堅"
+   ],
+   "audit_date": "115/08/07",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "6767",
+   "fetched_at": "2026-08-21"
+  },
+  "6794": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "林冠宏",
+    "王方瑜"
+   ],
+   "audit_date": "115/08/07",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "6794",
+   "fetched_at": "2026-08-21"
+  },
+  "6875": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "楊蕙慈",
+    "顏裕芳"
+   ],
+   "audit_date": "115/08/04",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "6875",
+   "fetched_at": "2026-08-21"
+  },
+  "6885": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "王銘義",
+    "黃珮娟"
+   ],
+   "audit_date": "115/08/07",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "6885",
+   "fetched_at": "2026-08-21"
+  },
+  "6901": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "鄭欽宗",
+    "邱盟捷"
+   ],
+   "audit_date": "115/08/10",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "6901",
+   "fetched_at": "2026-08-21"
+  },
+  "6910": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "黃堯麟",
+    "莊文源"
+   ],
+   "audit_date": "115/07/31",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "6910",
+   "fetched_at": "2026-08-21"
+  },
+  "6934": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "林冠宏",
+    "陳憲正"
+   ],
+   "audit_date": "115/08/13",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "6934",
+   "fetched_at": "2026-08-21"
+  },
+  "6969": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "徐潔如",
+    "田中玉"
+   ],
+   "audit_date": "115/08/06",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "6969",
+   "fetched_at": "2026-08-21"
+  },
+  "7723": {
+   "state": "ok",
+   "firm": "安侯建業聯合會計師事務所",
+   "auditors": [
+    "洪　士　剛",
+    "莊　鈞　維"
+   ],
+   "audit_date": "115/08/12",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "7723",
+   "fetched_at": "2026-08-21"
+  },
+  "7777": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "馮敏娟",
+    "王菘澤"
+   ],
+   "audit_date": "115/08/10",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "7777",
+   "fetched_at": "2026-08-21"
+  },
+  "8034": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "蔣承翰",
+    "謝智政"
+   ],
+   "audit_date": "115/08/07",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "8034",
+   "fetched_at": "2026-08-21"
+  },
+  "8066": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "陳啟東",
+    "林佳鴻"
+   ],
+   "audit_date": "115/08/11",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "8066",
+   "fetched_at": "2026-08-21"
+  },
+  "8068": {
+   "state": "ok",
+   "firm": "安侯建業聯合會計師事務所",
+   "auditors": [
+    "羅　瑞　芝",
+    "余　聖　河"
+   ],
+   "audit_date": "115/08/14",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "8068",
+   "fetched_at": "2026-08-21"
+  },
+  "8071": {
+   "state": "ok",
+   "firm": "佳明聯合會計師事務所",
+   "auditors": [
+    "葉湘萍",
+    "蔡明諺"
+   ],
+   "audit_date": "115/08/13",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "8071",
+   "fetched_at": "2026-08-21"
+  },
+  "8076": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "徐明釧",
+    "支秉鈞"
+   ],
+   "audit_date": "115/08/14",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "8076",
+   "fetched_at": "2026-08-21"
+  },
+  "8111": {
+   "state": "ok",
+   "firm": "國富浩華聯合會計師事務所",
+   "auditors": [
+    "王戊昌",
+    "陳昭惠"
+   ],
+   "audit_date": "115/08/11",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "8111",
+   "fetched_at": "2026-08-21"
+  },
+  "8215": {
+   "state": "ok",
+   "firm": "安侯建業聯合會計師事務所",
+   "auditors": [
+    "高　靚　玟",
+    "施　威　銘"
+   ],
+   "audit_date": "115/07/30",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "8215",
+   "fetched_at": "2026-08-21"
+  },
+  "8222": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "王騰葦",
+    "廖鴻儒"
+   ],
+   "audit_date": "115/08/10",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "8222",
+   "fetched_at": "2026-08-21"
+  },
+  "8421": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "吳偉豪",
+    "李燕娜"
+   ],
+   "audit_date": "115/08/12",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "8421",
+   "fetched_at": "2026-08-21"
+  },
+  "8431": {
+   "state": "ok",
+   "firm": "國富浩華聯合會計師事務所",
+   "auditors": [
+    "蕭又文",
+    "王家祥"
+   ],
+   "audit_date": "115/08/13",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "8431",
+   "fetched_at": "2026-08-21"
+  },
+  "8440": {
+   "state": "ok",
+   "firm": "安侯建業聯合會計師事務所",
+   "auditors": [
+    "陳　富　仁",
+    "李　逢　暉"
+   ],
+   "audit_date": "115/08/12",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "8440",
+   "fetched_at": "2026-08-21"
+  },
+  "8472": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "陳俊宏",
+    "莊碧玉"
+   ],
+   "audit_date": "115/08/10",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "8472",
+   "fetched_at": "2026-08-21"
+  },
+  "8476": {
+   "state": "ok",
+   "firm": "安侯建業聯合會計師事務所",
+   "auditors": [
+    "潘　俊　名",
+    "高　鈺　倫"
+   ],
+   "audit_date": "115/08/13",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "8476",
+   "fetched_at": "2026-08-21"
+  },
+  "8906": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "林佳鴻",
+    "陳憲正"
+   ],
+   "audit_date": "115/08/05",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "8906",
+   "fetched_at": "2026-08-21"
+  },
+  "8908": {
+   "state": "ok",
+   "firm": "安永聯合會計師事務所",
+   "auditors": [
+    "姚世傑",
+    "胡子仁"
+   ],
+   "audit_date": "115/08/12",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "8908",
+   "fetched_at": "2026-08-21"
+  },
+  "8923": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "王浚宇",
+    "陳建瑋"
+   ],
+   "audit_date": "115/08/11",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "8923",
+   "fetched_at": "2026-08-21"
+  },
+  "8927": {
+   "state": "ok",
+   "firm": "安侯建業聯合會計師事務所",
+   "auditors": [
+    "羅　瑞　芝",
+    "黃　泳　華"
+   ],
+   "audit_date": "115/08/14",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "8927",
+   "fetched_at": "2026-08-21"
+  },
+  "8940": {
+   "state": "ok",
+   "firm": "安永聯合會計師事務所",
+   "auditors": [
+    "黃宇廷",
+    "賴書晨"
+   ],
+   "audit_date": "115/08/07",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "8940",
+   "fetched_at": "2026-08-21"
+  },
+  "9110": {
+   "state": "fetch_error",
+   "reason": "結構化欄位解析不完整",
+   "firm": null,
+   "auditors": [],
+   "audit_date": null,
+   "audit_type": null,
+   "quarter": null,
+   "tier": null,
+   "code": "9110",
+   "fetched_at": "2026-08-21"
+  },
+  "9902": {
+   "state": "ok",
+   "firm": "大中國際聯合會計師事務所",
+   "auditors": [
+    "林寬照",
+    "張卉諭"
+   ],
+   "audit_date": "115/08/07",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "9902",
+   "fetched_at": "2026-08-21"
+  },
+  "9907": {
+   "state": "ok",
+   "firm": "資誠聯合會計師事務所",
+   "auditors": [
+    "葉芳婷",
+    "田中玉"
+   ],
+   "audit_date": "115/08/04",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "9907",
+   "fetched_at": "2026-08-21"
+  },
+  "9949": {
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "葉淑娟",
+    "黃國寧"
+   ],
+   "audit_date": "115/08/12",
+   "audit_type": "無保留結論/意見-",
+   "quarter": "26Q2",
+   "tier": "clean",
+   "code": "9949",
+   "fetched_at": "2026-08-21"
+  },
+  "9955": {
+   "state": "ok",
+   "firm": "安永聯合會計師事務所",
+   "auditors": [
+    "林政緯",
+    "羅筱靖"
+   ],
+   "audit_date": "115/08/11",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "9955",
+   "fetched_at": "2026-08-21"
+  },
+  "9962": {
+   "state": "ok",
+   "firm": "國富浩華聯合會計師事務所",
+   "auditors": [
+    "蔡淑滿",
+    "李國銘"
+   ],
+   "audit_date": "115/08/05",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
+   "code": "9962",
+   "fetched_at": "2026-08-21"
   }
  }
 }

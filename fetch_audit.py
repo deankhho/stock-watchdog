@@ -3,8 +3,9 @@
 fetch_audit.py — Phase B：會計師查核報告結論 → data/audit.json
 資料源：公開資訊觀測站 MOPS t163sb03（單一公司最新已申報查核意見，isnew=true）。
 
-股池與 crossings.py／fetch_netvalue_history.py 用同一函式算出（crossings.low_netvalue_pool），
-避免母體定義各自漂移。
+股池：report.json 六個 tier（predict_in/edge/margin_risk/watch/recover/official）聯集
+（Phase E，2026-08-21，見 audit_pool()）——刻意不跟 crossings.py／fetch_netvalue_history.py
+共用 crossings.low_netvalue_pool()（net_value<10，範圍不含 watch，母體用途不同不該共用）。
 
 🔴 無論成敗一律寫出 data/audit.json，狀態寫在檔案本身（不走 exit code，見發現 J/H）：
   {"state": "ok"|"degraded"|"empty", "fetched_at": ..., "reason": null|"...", "rows": {...}}
@@ -24,10 +25,9 @@ from pathlib import Path
 import requests
 
 from analyze import taipei_today
-from crossings import low_netvalue_pool
 
 BASE = Path(__file__).parent
-NV_FILE = BASE / "data" / "netvalue.json"
+REPORT_FILE = BASE / "data" / "report.json"
 OUT = BASE / "data" / "audit.json"
 
 BASE_URL = "https://mopsov.twse.com.tw/mops/web/ajax_t163sb03"  # selftest 會覆寫成本機 http.server
@@ -46,6 +46,34 @@ SURGE_ABS = 20
 
 class Throttled(Exception):
     """HTTP 429/403，視為節流，立即停止整批（不繼續打）"""
+
+
+AUDIT_TIERS = ("predict_in", "edge", "margin_risk", "watch", "recover", "official")
+
+
+def audit_pool(report: dict, prev_rows: dict = None) -> list:
+    """業務母體：report.json 六個 tier（predict_in/edge/margin_risk/watch/recover/official）
+    聯集，用分類名稱定義，不用 net_value<10 這種數值捷徑（Phase E，2026-08-21）——
+    刻意不重用 crossings.low_netvalue_pool()，那是 crossings/fetch_netvalue_history 專用
+    母體，範圍比這裡窄（不含 watch），硬套會讓 watch 頁籤展開列的會計師查核意見結構性缺漏
+    （本輪起因，見計畫 Phase E）。
+
+    🔴 從未成功抓過的代號優先（prev_rows 沒有這個 code），確認過的代號排後面——
+    單輪抓不完全部 444 檔時（MAX_RUNTIME_SEC 提前中止），固定用同一種排序會讓「後面的
+    代號」永遠排不到（sorted() 每天都一樣，尾端代號永遠沒機會），優先序反過來才能保證
+    「還沒抓過的」不會被無限期餓死；已抓過的代號用今天日期做穩定亂序（不是每天都同一個
+    順序），避免長期固定墊底。"""
+    prev_rows = prev_rows or {}
+    codes = set()
+    for t in AUDIT_TIERS:
+        for r in report.get("groups", {}).get(t, []):
+            codes.add(r["code"])
+    never_fetched = sorted(c for c in codes if c not in prev_rows)
+    seen_before = sorted(c for c in codes if c in prev_rows)
+    today_seed = taipei_today().toordinal()
+    rng = random.Random(today_seed)
+    rng.shuffle(seen_before)
+    return never_fetched + seen_before
 
 
 def classify_tier(audit_type: str) -> str:
@@ -193,10 +221,10 @@ def write_atomic(data: dict) -> None:
 
 
 def main():
-    nv_data = json.loads(NV_FILE.read_text())
-    pool = sorted({r["code"] for r in low_netvalue_pool(nv_data)})
+    report = json.loads(REPORT_FILE.read_text())
     prev = load_prev()
     prev_rows, prev_state = prev.get("rows", {}), prev.get("state")
+    pool = audit_pool(report, prev_rows)
 
     def sleep_fn():
         time.sleep(random.uniform(0.8, 1.5))       # 抄 fetch_goodinfo.py 的隨機化作法
@@ -229,7 +257,7 @@ def selftest():
     import http.server
     import threading
 
-    global BASE_URL, OUT, NV_FILE
+    global BASE_URL, OUT, REPORT_FILE
 
     FIXTURES = BASE / "tests" / "fixtures"
     fixture_map = {
@@ -388,15 +416,44 @@ def selftest():
     passed, reason = health_check(rows_ok_many_nfu, prev_ok, "degraded")
     assert passed, (passed, reason)
 
-    # === 7. main() 端到端：degraded 時逐檔差集正確合併（不覆寫成假乾淨）===
+    # === 7. audit_pool()：業務母體（Phase E，report.json 六 tier 聯集），
+    #    從未抓過的代號優先，避免單輪抓不完時尾端代號被永久餓死 ===
+    fake_report = {"groups": {
+        "predict_in": [{"code": "1001"}],
+        "edge": [{"code": "1002"}],
+        "margin_risk": [{"code": "1003"}, {"code": "1004"}],
+        "watch": [{"code": "1005"}],
+        "recover": [{"code": "1002"}],      # 同代號跨 tier 出現（理論上不會，但聯集要去重）
+        "official": [],
+        "dropped": [{"code": "9999"}],       # 不在 AUDIT_TIERS 內，不應被收進母體
+    }}
+    pool = audit_pool(fake_report, prev_rows={})
+    assert sorted(pool) == ["1001", "1002", "1003", "1004", "1005"], pool   # 聯集去重＋排除 dropped
+    assert "9999" not in pool, pool
+
+    # 7b. 有 prev_rows 時，從未抓過的排最前面（1003 沒抓過 → 排最前）
+    prev = {"1001": {"state": "ok"}, "1002": {"state": "ok"},
+           "1004": {"state": "ok"}, "1005": {"state": "ok"}}
+    pool = audit_pool(fake_report, prev_rows=prev)
+    assert pool[0] == "1003", pool          # 唯一沒抓過的排第一，不是照字母序沉在後面
+    assert set(pool[1:]) == {"1001", "1002", "1004", "1005"}, pool
+
+    # 7c. 全部都抓過時，順序取決於當天日期（穩定但非固定字母序），同一天呼叫兩次順序相同
+    prev_all = {c: {"state": "ok"} for c in ["1001", "1002", "1003", "1004", "1005"]}
+    pool_a = audit_pool(fake_report, prev_rows=prev_all)
+    pool_b = audit_pool(fake_report, prev_rows=prev_all)
+    assert pool_a == pool_b, (pool_a, pool_b)   # 同一天呼叫兩次，順序穩定
+
+    # === 8. main() 端到端：degraded 時逐檔差集正確合併（不覆寫成假乾淨）===
     import tempfile
-    orig_out, orig_nv = OUT, NV_FILE
+    orig_out, orig_report = OUT, REPORT_FILE
     with tempfile.TemporaryDirectory() as td:
         OUT = Path(td) / "audit.json"
-        NV_FILE = Path(td) / "netvalue.json"
-        NV_FILE.write_text(json.dumps({"rows": [
-            {"code": "1001", "net_value": 5.0}, {"code": "1002", "net_value": 6.0},
-        ]}))
+        REPORT_FILE = Path(td) / "report.json"
+        REPORT_FILE.write_text(json.dumps({"groups": {
+            "predict_in": [{"code": "1001"}], "edge": [{"code": "1002"}],
+            "margin_risk": [], "watch": [], "recover": [], "official": [],
+        }}))
         # 先寫一份「舊」audit.json（1001 有資料）
         write_atomic({"state": "ok", "fetched_at": "2026-08-01",
                      "reason": None, "rows": {"1001": {"state": "ok", "tier": "note"}}})
@@ -409,7 +466,7 @@ def selftest():
         merged.update({})   # 這輪什麼都沒抓到
         assert "1001" in merged, merged             # 舊資料保留
         assert "1002" not in merged, merged          # 本輪股池新進的 1002 沒有舊資料，正確不出現
-    OUT, NV_FILE, BASE_URL = orig_out, orig_nv, orig_url
+    OUT, REPORT_FILE, BASE_URL = orig_out, orig_report, orig_url
 
     print("selftest OK")
 
