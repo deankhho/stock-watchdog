@@ -254,6 +254,20 @@ def render_credit_eligibility_block(credit_elig) -> str:
            f'<div class="ev">{label}</div>')
 
 
+def render_threshold_calc_block(fd_threshold) -> str:
+    """全額交割門檻計算式（2026-08-21，使用者要求：算出來的門檻要看得到算式，不能只藏在
+    表格數字的 hover tooltip 裡）。營業細則第49條：淨值低於股本二分之一，面額10元股股本
+    二分之一剛好等於淨值5元，非10元面額股門檻＝面額÷2。只在非5.0（即非面額10元或面額
+    資料缺失回退）時顯示，面額10元股的「5元」已經在頁籤說明文字裡講過，不用每列重複。"""
+    if fd_threshold is None or fd_threshold == 5.0:   # 5.0＝面額10元股門檻（analyze.py
+                                                        # NET_VALUE_FULL_DELIVERY，同既有慣例）
+        return ""
+    face = round(fd_threshold * 2, 4)
+    return (f'<div class="audit-heading">全額交割門檻計算</div>'
+           f'<div class="ev">面額 {fmt(face)} 元 ÷ 2 ＝ 門檻 {fmt(fd_threshold)} 元'
+           f'（營業細則第49條：淨值低於股本二分之一）</div>')
+
+
 MARGIN_TREND_LABEL = {
     "up": "🟢 回升中",
     "down": "🔴 下滑中",
@@ -383,9 +397,10 @@ def render_dropped_panel(cross: dict) -> tuple:
   <p class="desc">前季淨值 ≥10、最新季 &lt;10——⚠️ 面額10元股才是真的跌破融資融券10元門檻；
   面額非10元股，淨值10元跟信用交易資格無關（資格看有無累積虧損，本頁籤標「不適用」，
   請看展開列「信用交易資格」或「淨值趨勢」）。⚠️ 這是偵測到已達成跌破的財報數字，
-  跟官方正式公告暫停融資融券之間有作業時間差（審查按季排定，生效約在財報法定申報截止日
-  後5個營業日，見規則頁「停止信用交易」一節）——不等於已經生效的官方事件，實際以官方
-  公告為準。點列展開可看多季淨值軌跡；本清單依當前資料每輪重算，公司更正申報後可能異動。</p>
+  跟官方正式公告暫停融資融券之間有作業時間差（審查按季排定，公告後次2個營業日生效，
+  見規則頁「停止信用交易」一節；官方審查何時進行、多久後公告則沒有固定天數可查，只知道
+  跟在財報申報截止日之後）——不等於已經生效的官方事件，實際以官方公告為準。點列展開可看
+  多季淨值軌跡；本清單依當前資料每輪重算，公司更正申報後可能異動。</p>
   <p class="desc" style="opacity:.8">{summary}</p>
   {table}
 </section>"""
@@ -555,9 +570,10 @@ TABS = [
     ("margin_risk", "🟡 信用警戒",
      "淨值 6~10。" + BUFFER_NOTE
      + " 面額10元股：低於 10 元將停止融資融券（依「有價證券得為融資融券標準」，上市上櫃同適用；"
-       "審查按季排定，恢復生效約在申報截止後5個營業日，實際生效日以官方公告為準；恢復是單季"
-       "檢查，原因消滅即可，不像全額交割要連續兩季達標）。展開列「淨值趨勢」顯示本季 vs 上季"
-       "比較（回升中／下滑中／持平），本頁籤所有股票淨值本來就 &lt;10，不會顯示「已達標」。"),
+       "審查按季排定，公告後次2個營業日生效，跟在財報申報截止日之後、實際幾天沒有固定天數；"
+       "恢復是單季檢查，原因消滅即可，不像全額交割要連續兩季達標）。展開列「淨值趨勢」顯示"
+       "本季 vs 上季比較（回升中／下滑中／持平），本頁籤所有股票淨值本來就 &lt;10，不會顯示"
+       "「已達標」。"),
     ("official", "⚪ 全額交割中",
      "官方現行變更交易方法名單（上市：證交所 TWT85U；上櫃：櫃買 cmode），淨值仍未達門檻。"
      "淨值已回升的子集另外歸在「恢復候選」頁籤，兩者不是並列分類。"),
@@ -855,6 +871,7 @@ def main():
                                    if key == "recover" else "")
             recover_announce_html = (render_recover_announcement_block(r["code"], trading_changes)
                                      if key == "recover" else "")
+            threshold_calc_html = render_threshold_calc_block(r.get("fd_threshold"))
             credit_elig_html = render_credit_eligibility_block(r.get("credit_eligibility"))
             margin_trend_html = (render_margin_trend_block(r.get("margin_trend"))
                                  if key == "margin_risk" else "")
@@ -867,7 +884,7 @@ def main():
   <td class="num {'neg' if (r.get('gap') or 0) < 0 else 'pos'}"{f' title="面額非10元，全額交割門檻為每股{r["fd_threshold"]}元"' if r.get('fd_threshold') not in (None, 5.0) else ''}>{fmt(r.get('gap'))}</td>
   <td>{r.get('nv_quarter','')}{('<span class=note>' + r['note'] + '</span>') if r.get('note') else ''} <span class="exp">▾</span></td>
 </tr>
-<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('{r['code']}','{r.get('market','')}',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol={tvp}%3A{r['code']}">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/{r['code']}/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div>{history_row(r['code'], bt_stocks, r.get('market',''), listing)}<div class="audit-heading">會計師查核意見</div>{render_audit_block(r['code'], audit)}{credit_elig_html}{margin_trend_html}{short_html}{recover_status_html}{recover_announce_html}{long_html}</td></tr>""")
+<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('{r['code']}','{r.get('market','')}',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol={tvp}%3A{r['code']}">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/{r['code']}/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div>{history_row(r['code'], bt_stocks, r.get('market',''), listing)}<div class="audit-heading">會計師查核意見</div>{render_audit_block(r['code'], audit)}{threshold_calc_html}{credit_elig_html}{margin_trend_html}{short_html}{recover_status_html}{recover_announce_html}{long_html}</td></tr>""")
         trs = "".join(trs_list)
         panels.append(f"""<section class="panel" data-t="{key}">
   <p class="desc">{desc}</p>
@@ -1200,11 +1217,12 @@ th,td {{ border:1px solid rgba(255,255,255,.12); padding:8px; text-align:left; }
 → 停止融資融券，回升達10元以上恢復；<b>無面額或非10元面額股</b>：門檻不是淨值，是
 「最近一個會計年度決算<b>有無累積虧損</b>」→ 有累積虧損停止、消滅後恢復（本站讀官方資產
 負債表「保留盈餘」科目判斷，負值視為有累積虧損，見展開列「信用交易資格」）。
-審查按季排定（年報+Q1約每年5月、Q2/半年報約8-9月、Q3約11月），生效日約在財報法定申報
-截止日後5個營業日——本站僅提供預估區間，實際生效日以官方公告為準，個股實際申報時間可能
-早於法定截止日，本站無法逐股追蹤。<b>恢復是單季檢查</b>（原因消滅即公告恢復，第4條第2項
-未規定連續期數），跟上表「恢復普通交易」（全額交割，上市連兩期、上櫃較前期增加）不同，
-不要混用兩套條件。</td></tr>
+審查按季排定（年報+Q1約每年5月、Q2/半年報約8-9月、Q3約11月），<b>公告後次2個營業日生效</b>
+（實測案例：力麗1444/精金3049等4檔2026-08-Q2審查，公告後8/24生效）——但「財報申報截止日
+到官方公告」這段沒有查到固定天數規定，只知道會晚於截止日，本站無法預告確切公告日，實際
+以官方公告為準。個股實際申報時間可能早於法定截止日，本站無法逐股追蹤。<b>恢復是單季檢查</b>
+（原因消滅即公告恢復，第4條第2項未規定連續期數），跟上表「恢復普通交易」（全額交割，上市
+連兩期、上櫃較前期增加）不同，不要混用兩套條件。</td></tr>
 </table>
 <p class="src">出處：<a href="https://twse-regulation.twse.com.tw/" target="_blank">證交所法規知識庫</a>／
 <a href="https://www.tpex.org.tw/" target="_blank">櫃買中心</a>／
