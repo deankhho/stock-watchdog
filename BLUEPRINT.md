@@ -169,3 +169,49 @@ gh api repos/deankhho/stock-watchdog/commits --jq '.[0].sha[0:7]'   # read-back
   沿用 LINE Bot 那支 GAS 加一個 doGet 分支）；或 Actions 直接用 SMTP secret。
   優先 GAS 路線（重用既有基礎設施、免新 secret）。
 - 信件內容：新財報檔數、各檔 代號/名稱/季度/Δ淨值/門檻穿越警示、網站連結
+
+## S10 補記：08-16~08-20 五批既有功能（2026-08-21 補寫，事後追記，本藍圖曾過期超過一個月）
+
+這段本來該在完成當下就寫進來，一直沒補，斷點續作機制因此失效了一個月——下次完成功能
+**當下**就寫，不要事後補（事後補會漏細節，這次就漏了不少，靠 `git log` 對照才補回大概）：
+
+- **`fetch_audit.py`**（`8b79f0e`）：Phase B，會計師查核意見（MOPS `t163sb03`），觀察池頁籤 +
+  展開列查核區塊，`classify_tier()` 三態（clean/note/danger），保留意見（note）在一般上市股
+  出現率約 50%（樣板性質，非個股特有警訊，展開列有註明）
+- **`fetch_sbl.py`**（`2112041`）：Phase B，放空管道揭露（TWSE `TWT60U` 標的證券明細），
+  predict_in/edge 展開列「可否放空」，只做否定判斷（不在清單→確定不能借券，在清單≠有券可借）
+- **`fetch_warrants.py`**（`5273140`+`ec8eec8`）：認售/認購權證有無判定（TWSE `t187ap37_L`＋
+  ISIN cp950 橋接），predict_in/edge「可否放空」補上認售權證、recover「可否作多」加認購權證；
+  big5 解碼曾誤判「碁」字（6285啟碁/2353宏碁），已修
+- **`fetch_par_value.py`**（`21bec56`）：全額交割門檻按面額修正（`full_delivery_threshold()`），
+  面額非10元股（約23~35檔）門檻不再套死5.0；新增變更交易公告頁籤（`fetch_trading_changes.py`，
+  資料源 `mopsov.twse.com.tw/server-java/t39sb01`，是公開資訊觀測站底下彙整證交所/櫃買公告
+  的頁面，不是繞開兩交易所另找的資料源）
+- **`recover_eligibility()` v4**（`3df32d3`）：全額交割恢復資格市場感知精確判定，三態
+  eligible/not_yet/unknown，3億元子項沒過或無法確認絕不回 eligible（3輪外審核心不變式）；
+  同一輪查證信用交易門檻條文（見下方 S11 承接）
+- **`614b4ba`**：變更交易公告抓出股號/股名並連結回恢復候選展開列
+
+## S11 頁籤重新設計 Phase 0~F（2026-08-20~21，計畫檔為單一真實來源）
+
+**背景**：08-20 上午才拍板「結案進入營運期」，下午使用者實際盤點頁籤發現定位/法規依據/
+實用性都有問題，要求重新設計。**計畫全文＋3輪審查裁決記錄見
+`~/.claude/plans/deep-stargazing-tide.md`**——本節只列摘要與關鍵檔案，細節/理由查計畫檔。
+
+- **Phase 0**（`1a96eaa`）：`fetch_balance_sheet.py`（12端點：TWSE/TPEx各6產業別資產負債表，
+  抓「保留盈餘」，負值=有累積虧損）＋`analyze.py::credit_eligibility()`（面額非10元股信用
+  交易資格三態，面額10元股回 None 不適用）。查證過程推翻「t187ap06是資產負債表」的錯誤
+  假設（實為綜合損益表，正確是t187ap07）
+- **Phase A**（`30cb713`）：`gen_site.py` TABS 全面改寫成雙軸語言（淨值緩衝區×信用交易資格）；
+  `docs/rules.html`「本站分級邏輯」表格補齊watch/dropped兩列、修掉跟「重要限制」自相矛盾
+  的舊文字；新增 `render_credit_eligibility_block()` 接進展開列
+- **Phase B**（`7b2b503`）：`gen_site.py::filter_short_channel_tier()`，edge/watch 只留有
+  放空管道（SBL/認售權證）的股票，fail-open三值邏輯（資料降級不誤濾）。實測危險邊緣22→0檔
+  （全部確認無管道，非資料問題，已跟使用者確認維持現狀）
+- **Phase D**（`432a842`）：`crossings.py::margin_risk_trend()`，margin_risk頁籤淨值趨勢
+  （本季vs上季）。實作前查證推翻「沿用recover_eligibility()連兩季判準」的原計畫設計——
+  信用交易恢復第4條第2項沒有連續期數規定，是單季檢查
+- **Phase E**（`0477af1`）：`fetch_audit.py::audit_pool()`，母體改用report.json六tier聯集
+  （不再共用`low_netvalue_pool()`，那個net_value<10母體不含watch，是本輪起因）。實測444檔
+  11m34s全部抓完，新增「從未抓過優先」排序防止尾端代號被永久餓死
+- Phase C（累積虧損接入分類邏輯）併入 Phase 0 一起做完，未獨立成一批 commit

@@ -14,3 +14,9 @@
 - [x] S9 完成 07-07 13:26：GAS sendStockMail（token=stockmail2026）+ Actions 步驟；⚠️ 待使用者重新部署 GAS 生效（與 ppt 佇列同一次部署）
 - [x] S8+ watchlist/線圖 07-19：⭐釘選(localStorage sw_watchlist)+watchbar(predict_in/official亮⚠、點chip跳籤頁展開)+展開列TradingView迷你圖lazy-load(上市TWSE:/上櫃TPEX:，點按鈕才注入embed，防重複)；11項DOM stub測試全過；來源=OpenStock想法分析僅移植功能點子
 - [x] S8 修正 07-19：迷你圖(線圖)→Advanced Chart widget 真K線(style:1蠟燭+工具列可加均線,高440)，使用者回報修正
+- [x] S10 完成 08-16~08-20（補記於08-21，藍圖過期一個月才補上，見教訓）：audit/sbl/warrants/
+  par_value/trading_changes 五支新 fetch 腳本 + recover_eligibility() v4，7個commit全部已推上線
+- [x] S11 頁籤重新設計 Phase 0~E 全數完成 08-20~08-21：`1a96eaa`(Phase0累積虧損)/`30cb713`
+  (PhaseA文字)/`7b2b503`(PhaseB放空過濾)/`432a842`(PhaseD淨值趨勢)/`0477af1`(PhaseE母體擴大)，
+  計畫檔`~/.claude/plans/deep-stargazing-tide.md`含完整3輪審查裁決記錄；**S11-F（本文件同步）
+  即本次更新，完成後 Phase 0~F 全部收工**
