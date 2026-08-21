@@ -80,8 +80,44 @@ def render_audit_block(code: str, audit: dict) -> str:
            f'</div>')
 
 
+def has_short_channel(code: str, sbl: dict, warrants: dict):
+    """回傳 True(確認有放空管道)／False(確認沒有)／None(資料不足無法確認)。
+    Phase B（2026-08-21，計畫見 ~/.claude/plans/deep-stargazing-tide.md）：edge/watch 過濾用。
+    🔴 fail-open 契約：兩個資料源都要 state=="ok" 才能給確定結論；SBL 或 warrants 任一
+    degraded/empty 都回 None，呼叫端把 None 當「保留不濾掉」處理——不可把「不確定」當
+    「沒有」，否則單一 API 故障會讓整個頁籤消失（跟 render_short_channel_block() 展開列
+    的三值邏輯是同一套設計語言，但那裡三個管道各自獨立顯示，這裡是給過濾用的單一布林結論，
+    所以縮成三態不是三個獨立欄位）。"""
+    if sbl.get("state") != "ok" or warrants.get("state") != "ok":
+        return None
+    sbl_avail = code in (sbl.get("codes") or [])
+    warrant_avail = code in (warrants.get("put_codes") or [])
+    return sbl_avail or warrant_avail
+
+
+def filter_short_channel_tier(rows: list, sbl: dict, warrants: dict) -> tuple:
+    """edge/watch 專用：只保留有放空管道的股票；has_short_channel() 回 None（資料降級，
+    無法確認）一律保留（fail-open），不可濾掉。回傳 (kept_rows, filtered_count,
+    fail_open_count)——filtered_count 是「兩個資料源都 ok、確認沒有管道」被濾掉的檔數，
+    fail_open_count 是「資料降級、暫時保留沒濾」的檔數，兩者分開統計供頁籤標題顯示，
+    使用者才看得出檔數變化是資料狀態波動還是真的股票變多/變少。"""
+    kept, filtered_count, fail_open_count = [], 0, 0
+    for r in rows:
+        has = has_short_channel(r["code"], sbl, warrants)
+        if has is None:
+            fail_open_count += 1
+            kept.append(r)
+        elif has:
+            kept.append(r)
+        else:
+            filtered_count += 1
+    return kept, filtered_count, fail_open_count
+
+
 def render_short_channel_block(code: str, status: dict, sbl: dict, warrants: dict) -> str:
-    """放空管道揭露（發現 K／§8）：只用於 predict_in／edge 頁籤展開列。
+    """放空管道揭露（發現 K／§8）：用於 predict_in／edge／watch 頁籤展開列（watch 於
+    2026-08-21 Phase B 併入，因為 edge/watch 都套用 filter_short_channel_tier() 過濾，
+    使用者需要在展開列看到判斷依據）。
     🔴 三個管道語意各自獨立，不可合併成單一結論：
       融資融券：用既有 status['credit']（analyze.stock_status() 已解析 O/X/! mark）——
       🔴 不可只判斷「代號有沒有在 margin_status 表內」：3259 這種「結構上在表內，
@@ -474,8 +510,9 @@ TABS = [
     ("edge", "🟠 危險邊緣",
      "淨值介於個股全額交割門檻與 6 元之間——再虧一季恐跌破全額交割門檻。" + BUFFER_NOTE
      + RULE_NOTE
-     + " ⚠️ 展開列「可否放空」逐檔顯示放空管道（SBL 借券／認售權證）狀態，管道存在不代表"
-       "實際可成交/有量，仍需自行確認。"),
+     + " ⚠️ 本頁籤只列有放空管道（SBL 借券或認售權證，資料完整時才排除）的股票；管道存在"
+       "不代表實際可成交/有量，展開列「可否放空」逐檔顯示狀態，仍需自行確認。放空管道資料"
+       "暫時取得不到時，該檔會先保留不濾掉（標題數字會註明幾檔屬於這種情況）。"),
     ("margin_risk", "🟡 信用警戒",
      "淨值 6~10。" + BUFFER_NOTE
      + " 面額10元股：低於 10 元將停止融資融券（依「有價證券得為融資融券標準」，上市上櫃同適用；"
@@ -488,7 +525,10 @@ TABS = [
      "白話講：這批股票剛失去信用交易（融資融券）資格，還能正常買賣，只是不能再融資融券。"
      "各檔比較期間不同，逐列標示。"),
     ("watch", "🔵 觀察池 10~15",
-     "淨值 10~15 且未列官方名單。" + BUFFER_NOTE),
+     "淨值 10~15 且未列官方名單。" + BUFFER_NOTE
+     + " ⚠️ 本頁籤只列有放空管道（SBL 借券或認售權證，資料完整時才排除）的股票；管道存在"
+       "不代表實際可成交/有量，展開列「可否放空」逐檔顯示狀態，仍需自行確認。放空管道資料"
+       "暫時取得不到時，該檔會先保留不濾掉（標題數字會註明幾檔屬於這種情況）。"),
     ("trading_changes", "📋 變更交易公告",
      "每日檢查公開資訊觀測站（MOPS）底下彙整證交所／櫃買中心公告的系統，逐日累積本季"
      "「變更交易方法／信用交易」相關公告（已排除處置股／注意股）——內容就是證交所/櫃買中心"
@@ -716,8 +756,13 @@ def main():
             panels.append(panel)
             continue
         rows = g.get(key, [])
-        tab_btns.append(f'<button class="tab" data-t="{key}">{label}'
-                        f'<span class="n">{len(rows)}</span></button>')
+        fail_open_count = 0
+        if key in ("edge", "watch"):
+            rows, _filtered_count, fail_open_count = filter_short_channel_tier(rows, sbl, warrants)
+        n_note = (f'<span class="n" title="{fail_open_count} 檔因放空管道資料未取得暫未過濾">'
+                 f'{len(rows)}（{fail_open_count}檔資料未取得暫未過濾）</span>'
+                 if fail_open_count else f'<span class="n">{len(rows)}</span>')
+        tab_btns.append(f'<button class="tab" data-t="{key}">{label}{n_note}</button>')
         def status_chip(r):
             st = r.get("status") or {}
             chips = []
@@ -751,7 +796,7 @@ def main():
             tvp = 'TWSE' if r.get('market') == '上市' else 'TPEX'
             short_html = (f'<div class="audit-heading">可否放空</div>'
                          f'{render_short_channel_block(r["code"], r.get("status"), sbl, warrants)}'
-                         if key in ("predict_in", "edge") else "")
+                         if key in ("predict_in", "edge", "watch") else "")
             long_html = (f'<div class="audit-heading">可否作多</div>'
                         f'{render_long_channel_block(r["code"], r.get("status"), warrants)}'
                         if key == "recover" else "")
@@ -1070,10 +1115,10 @@ th,td {{ border:1px solid rgba(255,255,255,.12); padding:8px; text-align:left; }
 <tr><th>分級</th><th>條件</th><th>意涵</th></tr>
 <tr><td>🔴 預測打入</td><td>淨值 &lt; 個股全額交割門檻 且未列官方名單</td><td>已達成門檻但官方審查/公告生效有作業時間差（通常數個工作日～一週），本站是提前偵測到已達門檻的空窗期，不是預測未來</td></tr>
 <tr><td>🟢 恢復候選</td><td>已列名單但最新淨值 ≥ 個股全額交割門檻</td><td>是「⚪ 全額交割中」的子集——淨值回升，實際恢復條件上市／上櫃不同（見下表「恢復普通交易」），恢復常伴隨行情。展開列「恢復資格」是本站依此表條件算出的輔助判定（淨值條件已符合／尚未符合／資料不足無法確認），不是官方認定的替代品——是否真的恢復仍需無其他列入事由，請查官方公告</td></tr>
-<tr><td>🟠 危險邊緣</td><td>個股全額交割門檻 ~ 6 元</td><td>再虧損一季可能跌破門檻；展開列「可否放空」逐檔顯示放空管道（SBL借券/認售權證）狀態</td></tr>
+<tr><td>🟠 危險邊緣</td><td>個股全額交割門檻 ~ 6 元</td><td>再虧損一季可能跌破門檻；只列有放空管道（SBL借券/認售權證，資料完整時才排除）的股票，展開列「可否放空」逐檔顯示狀態</td></tr>
 <tr><td>🟡 信用警戒</td><td>淨值 6 ~ 10 元</td><td>面額10元股：低於 10 元將停止融資融券；面額非10元股此區間不代表信用警戒，資格看展開列「信用交易資格」</td></tr>
 <tr><td>⚪ 全額交割中</td><td>官方現行名單</td><td>買賣需預收全額款券；淨值已回升的子集另列「🟢 恢復候選」</td></tr>
-<tr><td>🔵 觀察池</td><td>淨值 10 ~ 15 元</td><td>尚未觸及信用交易/全額交割相關門檻的市場觀察範圍，非法規分級</td></tr>
+<tr><td>🔵 觀察池</td><td>淨值 10 ~ 15 元</td><td>尚未觸及信用交易/全額交割相關門檻的市場觀察範圍，非法規分級；只列有放空管道的股票（同危險邊緣）</td></tr>
 <tr><td>⬇️ 最近一季掉落</td><td>前季淨值 ≥10、最新季 &lt;10</td><td>跌破的是融資融券10元門檻，跟全額交割無關（除非同時也跌破全額交割門檻）</td></tr>
 </table>
 
