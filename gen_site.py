@@ -643,9 +643,34 @@ def fmt(v, nd=2):
     return "-" if v is None else f"{v:.{nd}f}" if isinstance(v, float) else str(v)
 
 
-def history_row(code: str, bt_stocks: dict, market: str = "", listing: dict = None) -> str:
+def fallback_history_from_netvalue(code: str, nv_history: dict, nv_by_code: dict):
+    """backtest.py 股池沒收這檔（觀察池 263 檔從 v1 就沒被納入，見 history_row() 開頭
+    註解）時，用 fetch_netvalue_history.py 已經抓好的 data/netvalue_history/<code>.json
+    頂上顯示八季淨值色塊——2026-08-23 使用者要求「至少要看得到淨值」，不重打一次
+    FinMind（配額有限，這批資料已經在手上）。跟 backtest.py 刻意不同：沒有「事件判讀」
+    文字（跨門檻預測敘事屬於 backtest.py 自己的邏輯，不在這次範圍內一併搬過來）。
+    面額校準沿用 crossings.calibrate_history()，跟「掉落偵測」那邊用同一套換算，
+    不能自己另外發明一套面額判斷邏輯。校準失敗（無資料/季別對不上/比例算不出面額）
+    → 回 None，呼叫端會退回原本「未納入回測股池」的提示，不硬掰一個誤導訊息。"""
+    hist = (nv_history or {}).get(code)
+    if not hist or not hist.get("rows"):
+        return None
+    cur = (nv_by_code or {}).get(code)
+    if not cur:
+        return None
+    cur_nv, nv_q = cur
+    cal = crossings.calibrate_history(code, cur_nv, nv_q, hist["rows"])
+    if cal is None:
+        return None
+    history = [{"quarter": q, "net_value": v, "hit5": v < 5, "hit10": v < 10}
+              for q, v in sorted(cal["rows"].items())]
+    return {"history": history, "events": [], "par_factor": cal["factor"], "unreliable": False}
+
+
+def history_row(code: str, bt_stocks: dict, market: str = "", listing: dict = None,
+                nv_history: dict = None, nv_by_code: dict = None) -> str:
     """個股展開列：近八季淨值 chips + 事件判讀（無資料則提示）"""
-    s = bt_stocks.get(code)
+    s = bt_stocks.get(code) or fallback_history_from_netvalue(code, nv_history, nv_by_code)
     if not s:
         return ('<div class="hist-none">近八季資料未納入回測股池'
                 '（v1 僅含預測打入/邊緣/恢復/名單股）</div>')
@@ -819,6 +844,10 @@ def main():
             nv_history[fp.stem] = json.loads(fp.read_text())
     nv_history_status = (json.loads(NV_HISTORY_STATUS.read_text())
                          if NV_HISTORY_STATUS.exists() else {})
+    # history_row() 的觀察池 fallback 用：code → (net_value, nv_quarter)，供
+    # crossings.calibrate_history() 面額校準（2026-08-23 使用者要求，見 fallback_history_from_netvalue()）
+    nv_by_code = {r["code"]: (r["net_value"], r.get("nv_quarter", ""))
+                 for r in nv_data.get("rows", [])}
     try:
         par = (json.loads(PAR_FILE.read_text()).get("par", {})
               if PAR_FILE.exists() else {})
@@ -937,7 +966,7 @@ def main():
   <td class="num {'neg' if (r.get('gap') or 0) < 0 else 'pos'}"{f' title="面額非10元，全額交割門檻為每股{r["fd_threshold"]}元"' if r.get('fd_threshold') not in (None, 5.0) else ''}>{fmt(r.get('gap'))}</td>
   <td>{r.get('nv_quarter','')}{('<span class=note>' + r['note'] + '</span>') if r.get('note') else ''} <span class="exp">▾</span></td>
 </tr>
-<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('{r['code']}','{r.get('market','')}',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol={tvp}%3A{r['code']}">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/{r['code']}/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div>{history_row(r['code'], bt_stocks, r.get('market',''), listing)}<div class="audit-heading">會計師查核意見</div>{render_audit_block(r['code'], audit)}{threshold_calc_html}{credit_elig_html}{margin_trend_html}{short_html}{recover_status_html}{recover_announce_html}{long_html}</td></tr>""")
+<tr class="detail"><td colspan="8"><div class="tvrow"><button class="tvbtn" onclick="loadChart('{r['code']}','{r.get('market','')}',this)">📈 K線圖</button><a class="tvlink" target="_blank" href="https://tw.tradingview.com/chart/?symbol={tvp}%3A{r['code']}">TradingView ↗</a><a class="tvlink" target="_blank" href="https://www.wantgoo.com/stock/{r['code']}/technical-chart">Wantgoo ↗</a></div><div class="tvbox"></div>{history_row(r['code'], bt_stocks, r.get('market',''), listing, nv_history, nv_by_code)}<div class="audit-heading">會計師查核意見</div>{render_audit_block(r['code'], audit)}{threshold_calc_html}{credit_elig_html}{margin_trend_html}{short_html}{recover_status_html}{recover_announce_html}{long_html}</td></tr>""")
         trs = "".join(trs_list)
         panels.append(f"""<section class="panel" data-t="{key}">
   <p class="desc">{desc}</p>
@@ -1405,6 +1434,40 @@ def selftest():
     assert {r["code"] for r in result} == {"1111", "2222"}, result   # 3333 沒 pending，不撈回
     # 已經在 kept 裡的不重複加入
     assert reinstate_pending_rows([{"code": "1111"}], raw, {"1111": {}}) == [{"code": "1111"}]
+
+    # === fallback_history_from_netvalue()／history_row() 觀察池 fallback：backtest.py
+    # 股池沒收的股票（觀察池 263 檔），改用 fetch_netvalue_history.py 已抓好的資料頂上
+    # 顯示八季淨值色塊（2026-08-23 使用者要求：先前只補到判定用資料，畫面上看不到）===
+    nv_hist_ok = {"1234": {"fetched_at": "2026-08-22",
+                           "rows": [{"date": "2025-12-31", "quarter": "25Q4", "net_value": 12.0},
+                                    {"date": "2026-03-31", "quarter": "26Q1", "net_value": 11.5},
+                                    {"date": "2026-06-30", "quarter": "26Q2", "net_value": 12.08}]}}
+    nv_by_code_ok = {"1234": (12.08, "26Q2")}   # goodinfo 現值跟 FinMind 同季一致 → factor=1
+    s = fallback_history_from_netvalue("1234", nv_hist_ok, nv_by_code_ok)
+    assert s is not None, s
+    assert s["par_factor"] == 1, s
+    assert [h["quarter"] for h in s["history"]] == ["25Q4", "26Q1", "26Q2"], s
+    assert s["events"] == [], s   # 沒有事件判讀文字，跟 backtest.py 刻意不同
+
+    # 整合進 history_row()：bt_stocks 沒有這檔 → 改用 fallback，真的渲染出色塊
+    html = history_row("1234", {}, "上市", {}, nv_hist_ok, nv_by_code_ok)
+    assert "12.08" in html and "26Q2" in html, html
+    assert "未納入回測股池" not in html, html
+
+    # bt_stocks 有這檔 → 照樣用 bt_stocks，fallback 完全不介入（優先序不能顛倒）
+    bt_has_it = {"1234": {"history": [{"quarter": "26Q2", "net_value": 99.0,
+                                       "hit5": False, "hit10": False}], "events": []}}
+    html2 = history_row("1234", bt_has_it, "上市", {}, nv_hist_ok, nv_by_code_ok)
+    assert "99.00" in html2 and "12.08" not in html2, html2
+
+    # 兩邊都沒資料（既非 backtest 股池、也沒抓到淨值歷史）→ 退回原本提示，不硬掰
+    assert fallback_history_from_netvalue("9999", {}, {}) is None
+    html3 = history_row("9999", {}, "上市", {}, {}, {})
+    assert "未納入回測股池" in html3, html3
+
+    # 季別對不上（quarter_mismatch，calibrate_history 判定不出面額）→ 退回 None 不硬顯示
+    assert fallback_history_from_netvalue(
+        "1234", nv_hist_ok, {"1234": (12.08, "26Q3")}) is None   # 26Q3 不在 nv_hist_ok 的季別裡
 
     # === render_long_channel_block()：融資／認購權證兩管道，只用於 recover 頁籤展開列 ===
     # 1. 融資可用（可信用交易）＋ 認購權證存在，state=ok
