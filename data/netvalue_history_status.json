@@ -1,10 +1,25 @@
 {
- "pool_size": 183,
- "p1_count": 16,
+ "pool_size": 446,
+ "p1_count": 263,
  "p2_count": 0,
- "fetched_count": 16,
+ "fetched_count": 249,
  "p2_fetched_count": 0,
- "req_count": 16,
- "incomplete_codes": {},
+ "req_count": 249,
+ "incomplete_codes": {
+  "8431": "budget_exhausted",
+  "8440": "budget_exhausted",
+  "8472": "budget_exhausted",
+  "8476": "budget_exhausted",
+  "8906": "budget_exhausted",
+  "8908": "budget_exhausted",
+  "8923": "budget_exhausted",
+  "8927": "budget_exhausted",
+  "8940": "budget_exhausted",
+  "9902": "budget_exhausted",
+  "9907": "budget_exhausted",
+  "9949": "budget_exhausted",
+  "9955": "budget_exhausted",
+  "9962": "budget_exhausted"
+ },
  "generated_at": "2026-08-22"
 }

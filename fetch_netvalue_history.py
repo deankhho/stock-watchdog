@@ -9,12 +9,17 @@ fetch_netvalue_history.py — crossings.py 專用的淨值歷史抓取器
 股池＝ data/netvalue.json 中 net_value <10 的全部代號（與 crossings.py 母體同一定義，
 不經 report groups，避免 KY `*` 股被 analyze.py 排除掉造成的落差，見計畫發現 T）
 ∪ data/official.json 的 full_delivery 清單代號（2026-08-18 追加：recover 分類本身
-沒有淨值上限，只收低淨值股會系統性漏抓 nv>=10 的 recover 候選，見 build_pool()）。
+沒有淨值上限，只收低淨值股會系統性漏抓 nv>=10 的 recover 候選，見 build_pool()）
+∪ net_value 落在 [CROSS_NV, NET_VALUE_WATCH) 的觀察池代號（2026-08-22 追加：
+跟 1213 大飲同一類母體漏抓——analyze.py::classify() 的 watch 分級門檻早就存在
+（NET_VALUE_WATCH=15），但這支腳本的母體從沒把 10~15 這段納入，觀察池股票完全
+沒有淨值歷史/trail，使用者拍板併入）。
 
-只保留最新 4 季（判定用 2 季 + 2 季供 crossings.py 的多季回溯 trail 顯示），
-不比照 backtest.py 留 8 季——面額 factor 只在同季比對時計算並只套用最新一個季度跨距，
-判定（confirmed/no_drop 等）邏輯不變，多出的較舊季度只供 trail 顯示，逐季標
-confidence（見 crossings.py），不可讓使用者誤讀成整條 trail 都經過同等驗證。
+保留最新 8 季（判定用最新 2 季 + 其餘供 crossings.py 的多季回溯 trail 顯示）——
+2026-08-22 使用者拍板從 4 季改成 8 季、跟 backtest.py 一致，不再分開維護兩套
+「保留幾季」的認知負擔。面額 factor 仍只在同季比對時計算並只套用最新一個季度
+跨距，判定（confirmed/no_drop 等）邏輯不變，多出的較舊季度只供 trail 顯示，逐季
+標 confidence（見 crossings.py），不可讓使用者誤讀成整條 trail 都經過同等驗證。
 
 預算：每檔最多 1 次請求 + 1 次重試（最多 2 requests/檔）；MAX_REQ=250（300/hr 留餘裕）。
 優先序：P1（季別落後，真的缺資料，必抓）> P2（公告期內補早鳥，依 fetched_at 舊到新）。
@@ -36,8 +41,8 @@ from pathlib import Path
 
 import requests
 
-from analyze import in_filing_window, latest_expected_quarter, taipei_today
-from crossings import low_netvalue_pool
+from analyze import NET_VALUE_WATCH, in_filing_window, latest_expected_quarter, taipei_today
+from crossings import CROSS_NV, low_netvalue_pool
 
 BASE = Path(__file__).parent
 NV_FILE = BASE / "data" / "netvalue.json"
@@ -46,7 +51,7 @@ CACHE = BASE / "data" / "netvalue_history"
 STATUS_OUT = BASE / "data" / "netvalue_history_status.json"
 
 FINMIND_URL = "https://api.finmindtrade.com/api/v4/data"
-KEEP_QUARTERS = 4            # 判定用最新 2 季 + 2 季供多季回溯顯示，不比照 backtest.py 留 8 季
+KEEP_QUARTERS = 8            # 判定用最新 2 季 + 其餘供多季回溯顯示；2026-08-22 跟 backtest.py 一致
 MAX_REQ = 250                 # FinMind 免 token 300/hr，留 50 餘裕
 
 
@@ -81,11 +86,20 @@ def classify_priority(rows: list, fetched_at, today: date = None) -> str:
     🔴 rows=[]（空 rows 快取）一律視為完全沒有歷史 → P1。
     這不是理論案例——data/history/9110.json 現況就是空 rows（發現 X），
     新抓取器必須一樣正確處理，不可假設 rows 非空。
+
+    🔴 2026-08-22 追加：rows 非空但季數 < KEEP_QUARTERS 也視為 P1，不只看最新季是否落後。
+    起因：KEEP_QUARTERS 4→8 那天，既有快取的最新季本來就已經是當季，quarter-落後判斷
+    不會觸發，會被永久 skip 卡在舊的 4 季（實測：改完後 185 檔停在 4 季，一次強制重抓
+    只補回 56 檔就撞到 FinMind 每小時額度，剩下 129 檔若沒有這條會永遠沒人再理）。
+    跟空 rows 同一種精神：季數不足視同資料不完整，繼續嘗試；長期掛零成本低（真正季數
+    受限的年輕股每天只多花 1 個 request，且會隨時間自然補到 KEEP_QUARTERS 後停止）。
     """
     today = today or taipei_today()
     if fetched_at == today.isoformat():
         return "skip"
     if not rows:
+        return "P1"
+    if len(rows) < KEEP_QUARTERS:
         return "P1"
     if rows[-1]["quarter"] < latest_expected_quarter(today):
         return "P1"
@@ -109,7 +123,9 @@ def fetch_one(code: str) -> tuple:
     for _attempt in range(2):
         used += 1
         try:
-            start = f"{taipei_today().year - 1}-01-01"
+            # KEEP_QUARTERS=8 季，往回抓兩個曆年確保涵蓋（財報公告本身會落後，
+            # 只抓一年可能湊不滿 8 季，見 2026-08-22 4→8 的變更）
+            start = f"{taipei_today().year - 2}-01-01"
             r = requests.get(FINMIND_URL, params={
                 "dataset": "TaiwanStockBalanceSheet",
                 "data_id": code, "start_date": start}, timeout=20)
@@ -204,7 +220,8 @@ def run_budgeted_fetch(pool: list, cache_lookup: dict, today: date,
 
 
 def build_pool(nv_data: dict, official_data: dict) -> list:
-    """抓取母體 = low_netvalue_pool(nv_data) ∪ official.json 的 full_delivery 清單代號。
+    """抓取母體 = low_netvalue_pool(nv_data) ∪ 觀察池代號（[CROSS_NV, NET_VALUE_WATCH)）
+    ∪ official.json 的 full_delivery 清單代號。
 
     🔴 `recover` 分類本身沒有淨值上限（classify() 對 in_official=True 的分支只要求
     nv>=threshold，不設上限），但這裡的母體原本只收 net_value<CROSS_NV(10.0) 的股票——
@@ -212,9 +229,15 @@ def build_pool(nv_data: dict, official_data: dict) -> list:
     recover 候選之一，因為母體定義從一開始就沒把它算進去，`1213.json` 確實不存在，
     會被下游 `recover_eligibility()` 系統性判成 unknown（不是真的缺資料）。
 
+    🔴 2026-08-22 同一類漏抓再發生一次：classify() 的 watch 分級（10~15）早就存在，
+    但母體從沒把這段納入，觀察池股票完全沒有淨值歷史/trail，使用者拍板併入。
+
     official_data 讀取失敗、缺 `full_delivery` 或整包為 None/{}（降級/缺檔）時，
-    優雅退回只用 low_netvalue_pool()——多抓是加分，不是必要條件，不可讓整支腳本掛掉。"""
+    優雅退回只用 low_netvalue_pool() ∪ 觀察池——多抓是加分，不是必要條件，
+    不可讓整支腳本掛掉。"""
     codes = {r["code"] for r in low_netvalue_pool(nv_data)}
+    codes |= {r["code"] for r in nv_data.get("rows", [])
+              if CROSS_NV <= r["net_value"] < NET_VALUE_WATCH}
     full_delivery = (official_data or {}).get("full_delivery")
     if full_delivery:
         codes |= {x["code"] for x in full_delivery}
@@ -248,8 +271,8 @@ def main():
     STATUS_OUT.parent.mkdir(exist_ok=True)
     STATUS_OUT.write_text(json.dumps(status, ensure_ascii=False, indent=1))
 
-    print(f"淨值歷史抓取股池 {status['pool_size']} 檔（netvalue <10 ∪ 官方全額交割清單，"
-          f"後者確保 nv>=10 的 recover 候選不被漏抓）")
+    print(f"淨值歷史抓取股池 {status['pool_size']} 檔（netvalue <10 ∪ 觀察池[10,15) ∪ "
+          f"官方全額交割清單，後兩者確保 nv>=10 的觀察池/recover 候選不被漏抓）")
     print(f"P1（缺資料，必抓）{status['p1_count']} 檔／P2（補早鳥）{status['p2_count']} 檔／"
           f"實際抓取 P1 {status['fetched_count']}＋P2 {status['p2_fetched_count']} 檔／"
           f"request {status['req_count']}（上限 {MAX_REQ}）／未完成 {len(status['incomplete_codes'])} 檔")
@@ -261,39 +284,56 @@ def main():
 def selftest():
     today = date(2026, 8, 14)
 
-    # 0. build_pool()：母體 = low_netvalue_pool() ∪ official.json 的 full_delivery 清單
-    #    （2026-08-18 用真實資料驗證：1213 大飲 nv=10.98 曾因母體只收低淨值股被漏抓）
+    # 0. build_pool()：母體 = low_netvalue_pool() ∪ 觀察池（[CROSS_NV, NET_VALUE_WATCH)）
+    #    ∪ official.json 的 full_delivery 清單
+    #    （2026-08-18 用真實資料驗證：1213 大飲 nv=10.98 曾因母體只收低淨值股被漏抓；
+    #    2026-08-22 同一類漏抓：觀察池 10~15 從沒被納入，使用者拍板併入）
     nv_data_0 = {"rows": [
         {"code": "1111", "name": "低淨值股", "net_value": 5.0},
         {"code": "2222", "name": "已恢復但仍偏低", "net_value": 9.0},
+        {"code": "4444", "name": "觀察池股", "net_value": 12.0},
+        {"code": "5555", "name": "上界剛好卡到，應排除", "net_value": 15.0},
+        {"code": "6666", "name": "觀察池以上，應排除", "net_value": 20.0},
     ]}
     official_0 = {"full_delivery": [
         {"code": "2222", "name": "已恢復但仍偏低", "market": "上市"},
         {"code": "3333", "name": "大飲型（nv>=10）", "market": "上市"},
     ]}
-    assert build_pool(nv_data_0, official_0) == ["1111", "2222", "3333"], build_pool(nv_data_0, official_0)
+    assert build_pool(nv_data_0, official_0) == ["1111", "2222", "3333", "4444"], \
+        build_pool(nv_data_0, official_0)
 
-    # 0b. official.json 缺失/降級（無 full_delivery）→ 優雅退回只用 low_netvalue_pool()
-    assert build_pool(nv_data_0, {}) == ["1111", "2222"]
-    assert build_pool(nv_data_0, {"state": "degraded"}) == ["1111", "2222"]
-    assert build_pool(nv_data_0, None) == ["1111", "2222"]
+    # 0b. official.json 缺失/降級（無 full_delivery）→ 優雅退回只用 low_netvalue_pool() ∪ 觀察池
+    assert build_pool(nv_data_0, {}) == ["1111", "2222", "4444"]
+    assert build_pool(nv_data_0, {"state": "degraded"}) == ["1111", "2222", "4444"]
+    assert build_pool(nv_data_0, None) == ["1111", "2222", "4444"]
 
     # 1. classify_priority：空 rows 一律 P1（發現 X 的回歸測試）
     assert classify_priority([], None, today) == "P1"
     assert classify_priority([], "2026-08-13", today) == "P1"
 
+    # 1b. 2026-08-22 追加：rows 非空但季數 < KEEP_QUARTERS 也是 P1，即使最新季沒有落後、
+    # 也不在公告期（KEEP_QUARTERS 4→8 當天既有快取卡住的真實情境，見 classify_priority docstring）
+    d0925 = date(2026, 9, 25)
+    assert classify_priority([{"quarter": "26Q2"}], "2026-09-20", d0925) == "P1"
+
+    # 下面 2~5 用足 KEEP_QUARTERS 季的 fixture，才是單獨測「季別新舊」這件事，
+    # 不會被新加的季數檢查搶先觸發
+    _full8_q2 = [{"quarter": q} for q in
+                 ["24Q3", "24Q4", "25Q1", "25Q2", "25Q3", "25Q4", "26Q1", "26Q2"]]
+    _full8_q1 = [{"quarter": q} for q in
+                 ["24Q2", "24Q3", "24Q4", "25Q1", "25Q2", "25Q3", "25Q4", "26Q1"]]
+
     # 2. 今天已抓過 → skip
-    assert classify_priority([{"quarter": "26Q2"}], "2026-08-14", today) == "skip"
+    assert classify_priority(_full8_q2, "2026-08-14", today) == "skip"
 
     # 3. 季別落後（截止日已過但快取還在 26Q1）→ P1
-    assert classify_priority([{"quarter": "26Q1"}], "2026-08-13", today) == "P1"
+    assert classify_priority(_full8_q1, "2026-08-13", today) == "P1"
 
     # 4. 季別沒落後、在公告期內 → P2（8/14 屬公告期）
-    assert classify_priority([{"quarter": "26Q2"}], "2026-08-10", today) == "P2"
+    assert classify_priority(_full8_q2, "2026-08-10", today) == "P2"
 
     # 5. 季別沒落後、不在公告期 → skip
-    d0925 = date(2026, 9, 25)
-    assert classify_priority([{"quarter": "26Q2"}], "2026-09-20", d0925) == "skip"
+    assert classify_priority(_full8_q2, "2026-09-20", d0925) == "skip"
 
     # --- run_budgeted_fetch：185 檔全部落後（截止日當天，發現 Q 的真實情境）---
     pool = [f"{i:04d}" for i in range(185)]
@@ -328,7 +368,7 @@ def selftest():
 
     # --- P2 沒輪到不算失敗，不進 incomplete_codes ---
     pool_p2 = [f"p{i:04d}" for i in range(5)]
-    cache_lookup_p2 = {c: ([{"quarter": "26Q2"}], "2026-08-01") for c in pool_p2}  # 季別沒落後、公告期內
+    cache_lookup_p2 = {c: (_full8_q2, "2026-08-01") for c in pool_p2}  # 季別沒落後、公告期內
     status4 = run_budgeted_fetch(pool_p2, cache_lookup_p2, today, fetch_fn=fetch_ok, max_req=0)
     assert status4["p2_count"] == 5, status4
     assert status4["p2_fetched_count"] == 0, status4
@@ -341,7 +381,8 @@ def selftest():
     assert status5["p1_count"] == 1, status5
     assert status5["fetched_count"] == 1, status5
 
-    # --- 只留最新 4 季：fetch_one 的裁切邏輯（純函式部分，不含網路）---
+    # --- 只留最新 8 季：fetch_one 的裁切邏輯（純函式部分，不含網路）---
+    # 2026-08-22 KEEP_QUARTERS 4→8，餵 9 季資料驗證裁切邊界跟著改對，不是還停在舊的 4
     class _FakeResp:
         def __init__(self, rows):
             self._rows = rows
@@ -352,17 +393,17 @@ def selftest():
     import fetch_netvalue_history as m
     orig_get = m.requests.get
     fake_rows = []
-    for q, d_ in [("2025-03-31", 1), ("2025-06-30", 1), ("2025-09-30", 1),
-                  ("2025-12-31", 1), ("2026-03-31", 1)]:
+    for q in ["2024-03-31", "2024-06-30", "2024-09-30", "2024-12-31",
+              "2025-03-31", "2025-06-30", "2025-09-30", "2025-12-31", "2026-03-31"]:
         fake_rows.append({"date": q, "type": "EquityAttributableToOwnersOfParent", "value": 100})
         fake_rows.append({"date": q, "type": "OrdinaryShare", "value": 10})
     m.requests.get = lambda *a, **kw: _FakeResp(fake_rows)
     try:
         rows, used = fetch_one("TEST")
         assert used == 1, used
-        assert len(rows) == 4, rows                 # 5 季資料只留最新 4 季
+        assert len(rows) == 8, rows                 # 9 季資料只留最新 8 季
         assert rows[-1]["quarter"] == "26Q1", rows
-        assert rows[0]["quarter"] == "25Q2", rows    # 確認裁掉的是最舊那季（25Q1），不是隨意砍
+        assert rows[0]["quarter"] == "24Q2", rows    # 確認裁掉的是最舊那季（24Q1），不是隨意砍
     finally:
         m.requests.get = orig_get
 
