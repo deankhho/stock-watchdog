@@ -1,6 +1,6 @@
 {
  "state": "ok",
- "fetched_at": "2026-08-22",
+ "fetched_at": "2026-08-23",
  "reason": null,
  "matched": [
   {
@@ -28,7 +28,8 @@
      "name": "虹光精密工業股份有限公司",
      "action": "恢復交易方法"
     }
-   ]
+   ],
+   "effective_date": "2026-08-19"
   },
   {
    "category": "信用交易—其它",
@@ -70,7 +71,8 @@
      "name": "晟鈦",
      "action": "恢復融資融券"
     }
-   ]
+   ],
+   "effective_date": "2026-08-24"
   },
   {
    "category": "信用交易—其它",
@@ -81,7 +83,8 @@
    "filed_date": "115/08/21",
    "filed_time": "15:02:55",
    "seen_at": "2026-08-22",
-   "stocks": []
+   "stocks": [],
+   "effective_date": "2026-08-24"
   }
  ]
 }

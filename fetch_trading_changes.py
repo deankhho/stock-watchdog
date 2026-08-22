@@ -46,6 +46,7 @@ import json
 import os
 import re
 import sys
+from datetime import date
 from pathlib import Path
 
 import lxml.html
@@ -115,6 +116,27 @@ ARABIC_NUMBERED_ITEM_RE = re.compile(r"(?<=[：:、。\s])\d{1,2}\.(?!\d)")
 ACTION_HEADING_RE = re.compile(r"^[一二三四五六七八九十]+、\s*([^：:]{2,20})[：:]")
 CODE_NAME_RE = re.compile(r"([^、，。：:\s（）]{2,30})（代號[：:]\s*(\d{4})\s*）")
 CODE_NAME_RE2 = re.compile(r"([^\s、，。：:()（）]{1,6}(?:\s[^\s、，。：:()（）]{1,6})?)\((\d{4})\)")
+
+# 2026-08-23 追加：抓「自115年8月19日起執行處置措施」「自本（115）年8月24日起實施」
+# 這類生效日文字——讓 gen_site.py 能判斷公告「尚未生效」而優先置頂該檔股票，
+# 使用者要求只置頂尚未生效的（已生效/過期的公告不用特別提醒）。
+# 兩種真實格式共同點：「自」+（可選「本」）+（可選全形括號）民國年+「年」+月+「日起」。
+# 民國年跟「年」中間可能被來源換行插入空白（真實案例：「自115 年08月24日起」，5310天剛），
+# 跟 CODE_NAME_RE2 已知的「聚 亨」同一種來源換行問題，「月」「日」前後也一併容錯。
+EFFECTIVE_DATE_RE = re.compile(r"自(?:本)?（?(\d{2,3})）?\s*年\s*(\d{1,2})\s*月\s*(\d{1,2})\s*日起")
+
+
+def extract_effective_date(content: str):
+    """→ ISO 日期字串（西元）或 None（公告沒提生效日，或格式無法辨識）。
+    民國年轉西元：+1911。"""
+    m = EFFECTIVE_DATE_RE.search(content)
+    if not m:
+        return None
+    roc_year, month, day = (int(x) for x in m.groups())
+    try:
+        return date(roc_year + 1911, month, day).isoformat()
+    except ValueError:
+        return None
 
 
 def _credit_action_from_heading(text: str):
@@ -223,10 +245,11 @@ def run(fetch_fn=fetch_recent_rows, prev: dict = None) -> dict:
             matched.append(item)
             seen_keys.add(key)
     matched = matched[-HISTORY_KEEP:]
-    # 新項目與既有累積紀錄的舊項目都要有 stocks 欄位——自我修復，不需要另外的
-    # 一次性 migration 腳本，沿用既有資料重跑一次就自動補上。
+    # 新項目與既有累積紀錄的舊項目都要有 stocks／effective_date 欄位——自我修復，
+    # 不需要另外的一次性 migration 腳本，沿用既有資料重跑一次就自動補上。
     for item in matched:
         item["stocks"] = extract_stock_refs(item.get("content", ""))
+        item["effective_date"] = extract_effective_date(item.get("content", ""))
 
     return {"state": "ok", "fetched_at": today, "reason": None, "matched": matched}
 
@@ -306,6 +329,19 @@ def selftest():
         {"code": "3049", "name": "精金", "action": "恢復融資融券"},
         {"code": "3229", "name": "晟鈦", "action": "恢復融資融券"},
     ], refs
+
+    # 1f. extract_effective_date()：兩則真實案例都含「自...年...月...日起」生效日文字，
+    # gen_site.py 靠這個判斷公告是否「尚未生效」以決定要不要優先置頂該檔股票
+    assert extract_effective_date(real_content) == "2026-08-19", extract_effective_date(real_content)
+    assert extract_effective_date(real_content_2) == "2026-08-24", extract_effective_date(real_content_2)
+    assert extract_effective_date("除權除息公告，無關生效日") is None
+    assert extract_effective_date("自115年13月99日起實施") is None   # 月/日非法值不可拋例外
+
+    # 1g. 2026-08-23 真實案例（5310天剛）：民國年跟「年」中間被來源換行插入空白，
+    # 修復前這則的 effective_date 回傳 None（真實 bug，跟「聚 亨」同一種來源換行問題）
+    assert extract_effective_date(
+        "櫃檯買賣中心公告：上櫃有價證券天剛(證券代號：5310)自115 年08月24日起恢復融資融券交易。"
+    ) == "2026-08-24"
 
     # === 2. is_relevant()：部門排除＋關鍵字判斷 ===
     assert is_relevant({"department": "交易部", "content": "OO自115/08/19起變更交易方法為全額交割"})

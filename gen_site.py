@@ -6,10 +6,11 @@ gen_site.py — S4：靜態網站（docs/index.html + docs/rules.html）
 
 import json
 import sys
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 
 import crossings
+from analyze import taipei_today
 
 BASE = Path(__file__).parent
 REPORT = BASE / "data" / "report.json"
@@ -445,6 +446,51 @@ def render_recover_announcement_block(code: str, trading_changes: dict) -> str:
     return f'<div class="recover-announce">{"".join(lines)}</div>'
 
 
+def build_pending_changes(trading_changes: dict) -> dict:
+    """→ {code: {"action":.., "effective_date":.., "announce_date":..}}，只收「尚未生效」
+    （effective_date >= 今天）的公告股票代號——2026-08-23 使用者要求：任何頁籤裡有
+    尚未生效之官方公告動作的股票要優先置頂，但公告會一直累積（含幾個月前已解決的
+    案例，如 2380），不能全部永久置頂，只挑還沒到生效日的。effective_date 缺失
+    （公告沒寫生效日、或格式無法辨識）一律不置頂，避免誤判。同一代號出現在多筆
+    公告時取生效日最近的那筆。"""
+    if not trading_changes:
+        return {}
+    today = taipei_today().isoformat()
+    pending = {}
+    for m in trading_changes.get("matched") or []:
+        eff = m.get("effective_date")
+        if not eff or eff < today:
+            continue
+        for ref in m.get("stocks") or []:
+            code = ref["code"]
+            cur = pending.get(code)
+            if cur is None or eff < cur["effective_date"]:
+                pending[code] = {"action": ref.get("action") or "變更交易",
+                                 "effective_date": eff,
+                                 "announce_date": m.get("announce_date", "")}
+    return pending
+
+
+def reinstate_pending_rows(kept_rows: list, raw_rows: list, pending_by_code: dict) -> list:
+    """edge/watch 頁籤用：filter_short_channel_tier() 把「確認沒有放空管道」的股票濾掉，
+    但尚未生效的官方公告事件能見度比「能不能放空」更重要，不該被這個篩選靜默吃掉
+    （2026-08-23 使用者要求：1444/2025/3229 已恢復信用交易、沒有放空管道，過濾後整列
+    從 watch 頁籤消失，即使置頂邏輯本身是對的也沒用，因為使用者根本看不到那一列）。
+    從 raw_rows（過濾前的原始清單）把有 pending 公告、但被濾掉的股票撈回來接在後面
+    （排序階段自然會靠 pending 置頂排到最前面，這裡不用管順序）。"""
+    kept_codes = {r["code"] for r in kept_rows}
+    return kept_rows + [r for r in raw_rows
+                        if r["code"] in pending_by_code and r["code"] not in kept_codes]
+
+
+def pending_badge(code: str, pending_by_code: dict) -> str:
+    p = pending_by_code.get(code)
+    if not p:
+        return ""
+    return (f'<span class="pendb" title="{p["announce_date"]} 公告，'
+            f'{p["effective_date"]} 生效">📋{p["action"]}（{p["effective_date"][5:]}生效）</span>')
+
+
 def render_trading_changes_panel(tc: dict) -> tuple:
     """trading_changes 頁籤：回傳 (tab_btn_html, panel_html)。
     資料來自 fetch_trading_changes.py 每日累積的 data/trading_changes.json，
@@ -804,6 +850,7 @@ def main():
                            if TRADING_CHANGES_FILE.exists() else {"state": "empty", "matched": []})
     except Exception:
         trading_changes = {"state": "empty", "matched": []}
+    pending_by_code = build_pending_changes(trading_changes)
 
     tab_btns, panels = [], []
     for key, label, desc in TABS:
@@ -820,7 +867,9 @@ def main():
         rows = g.get(key, [])
         fail_open_count = 0
         if key in ("edge", "watch"):
+            raw_rows = rows
             rows, _filtered_count, fail_open_count = filter_short_channel_tier(rows, sbl, warrants)
+            rows = reinstate_pending_rows(rows, raw_rows, pending_by_code)
         n_note = (f'<span class="n" title="{fail_open_count} 檔因放空管道資料未取得暫未過濾">'
                  f'{len(rows)}（{fail_open_count}檔資料未取得暫未過濾）</span>'
                  if fail_open_count else f'<span class="n">{len(rows)}</span>')
@@ -852,13 +901,17 @@ def main():
             return badge, delta
         trs_list = []
         # 全額交割中：使用者要求淨值最高排最上面（越接近門檻越危險，放最下面最顯眼）；
-        # 淨值缺失（官方名單有、淨值排行未見那種補漏列）排最後，不可讓 None 排序時噴例外
+        # 淨值缺失（官方名單有、淨值排行未見那種補漏列）排最後，不可讓 None 排序時噴例外。
+        # 2026-08-23 追加：不管哪個頁籤，有尚未生效的官方公告動作一律優先置頂
+        # （使用者要求，見 build_pending_changes()），排在原本排序依據之前。
         if key == "official":
-            row_sort_key = lambda x: (x.get("net_value") is None, -(x.get("net_value") or 0))
+            row_sort_key = lambda x: (x["code"] not in pending_by_code,
+                                      x.get("net_value") is None, -(x.get("net_value") or 0))
         else:
-            row_sort_key = lambda x: not x.get("new_report")   # 新財報排前面
+            row_sort_key = lambda x: (x["code"] not in pending_by_code, not x.get("new_report"))
         for r in sorted(rows, key=row_sort_key):
             badge, delta = nr_badge(r)
+            pendb = pending_badge(r["code"], pending_by_code)
             # S8：TradingView symbol 前綴（上市 TWSE、上櫃 TPEX）
             tvp = 'TWSE' if r.get('market') == '上市' else 'TPEX'
             short_html = (f'<div class="audit-heading">可否放空</div>'
@@ -877,7 +930,7 @@ def main():
                                  if key == "margin_risk" else "")
             trs_list.append(f"""<tr class="main{' isnew' if badge else ''}" onclick="tog(this)">
   <td><span class="star" data-code="{r['code']}" onclick="event.stopPropagation();togWatch('{r['code']}')">☆</span><a href="{r['goodinfo_url']}" target="_blank" onclick="event.stopPropagation()">{r['code']}</a></td>
-  <td>{r['name']} {badge}</td><td>{r.get('market','')}</td>
+  <td>{r['name']} {badge}{pendb}</td><td>{r.get('market','')}</td>
   <td class="stcell">{status_chip(r)}</td>
   <td class="num">{fmt(r.get('price'))}</td>
   <td class="num nv">{fmt(r.get('net_value'))}{delta}</td>
@@ -967,6 +1020,8 @@ tr.detail td {{ padding:12px; }}
 .age.warn {{ color:#fbbf24; font-weight:600; }}
 .age.bad {{ color:#f87171; font-weight:700; }}
 .newb {{ background:#facc15; color:#713f12; font-size:10px; font-weight:700;
+  padding:1px 6px; border-radius:6px; margin-left:4px; vertical-align:middle; }}
+.pendb {{ background:#fb923c; color:#431407; font-size:10px; font-weight:700;
   padding:1px 6px; border-radius:6px; margin-left:4px; vertical-align:middle; }}
 .delta {{ display:block; font-size:11px; font-weight:400; }}
 .cross {{ display:block; font-size:11px; color:#fbbf24; font-weight:700; }}
@@ -1300,6 +1355,56 @@ def selftest():
     # 2c. trading_changes 缺檔/降級 → 空字串，不可拋例外
     assert render_recover_announcement_block("2380", {}) == ""
     assert render_recover_announcement_block("2380", None) == ""
+
+    # === build_pending_changes()／pending_badge()：任何頁籤裡有尚未生效的官方公告動作
+    # 要優先置頂（2026-08-23 使用者要求：1444/2025/3049/3229 散落各頁籤看不出來有公告）===
+    today = taipei_today()
+    future = (today + timedelta(days=1)).isoformat()
+    past = (today - timedelta(days=1)).isoformat()
+    tc_pending = {"matched": [
+        {"announce_date": "115/08/21", "effective_date": future,
+         "stocks": [{"code": "2025", "name": "千興", "action": "恢復融資融券"}]},
+        {"announce_date": "115/08/17", "effective_date": past,   # 已生效（過期）→ 不置頂
+         "stocks": [{"code": "2380", "name": "虹光精密工業", "action": "恢復交易方法"}]},
+        {"announce_date": "115/08/10", "effective_date": None,   # 生效日辨識不出來 → 不置頂
+         "stocks": [{"code": "9999", "name": "測試", "action": "變更交易方法"}]},
+    ]}
+    pending = build_pending_changes(tc_pending)
+    assert set(pending) == {"2025"}, pending
+    assert pending["2025"]["action"] == "恢復融資融券", pending
+    assert pending["2025"]["effective_date"] == future, pending
+
+    html = pending_badge("2025", pending)
+    assert "恢復融資融券" in html and future[5:] in html, html
+    assert pending_badge("2380", pending) == ""   # 已生效不置頂
+    assert pending_badge("9999", pending) == ""   # 生效日不明不置頂
+    assert pending_badge("0000", {}) == ""        # 完全沒有 pending 資料 → 空字串，不拋例外
+
+    # 同一代號出現在兩則公告，取生效日最近的那筆（不是先出現的那筆）
+    nearer = (today + timedelta(days=3)).isoformat()
+    farther = (today + timedelta(days=10)).isoformat()
+    tc_multi = {"matched": [
+        {"announce_date": "a", "effective_date": farther,
+         "stocks": [{"code": "1234", "name": "測試", "action": "動作A"}]},
+        {"announce_date": "b", "effective_date": nearer,
+         "stocks": [{"code": "1234", "name": "測試", "action": "動作B"}]},
+    ]}
+    pending_multi = build_pending_changes(tc_multi)
+    assert pending_multi["1234"]["action"] == "動作B", pending_multi
+    assert pending_multi["1234"]["effective_date"] == nearer, pending_multi
+
+    assert build_pending_changes({}) == {}
+    assert build_pending_changes(None) == {}
+
+    # reinstate_pending_rows()：filter_short_channel_tier() 濾掉的股票，如果有 pending
+    # 公告要撈回來（1444/2025/3229 實測：確認沒放空管道被濾掉，公告能見度不該被吃掉）
+    raw = [{"code": "1111"}, {"code": "2222"}, {"code": "3333"}]
+    kept_after_filter = [{"code": "1111"}]                       # 2222/3333 被濾掉
+    pending = {"2222": {"action": "恢復融資融券"}}                 # 只有 2222 有 pending 公告
+    result = reinstate_pending_rows(kept_after_filter, raw, pending)
+    assert {r["code"] for r in result} == {"1111", "2222"}, result   # 3333 沒 pending，不撈回
+    # 已經在 kept 裡的不重複加入
+    assert reinstate_pending_rows([{"code": "1111"}], raw, {"1111": {}}) == [{"code": "1111"}]
 
     # === render_long_channel_block()：融資／認購權證兩管道，只用於 recover 頁籤展開列 ===
     # 1. 融資可用（可信用交易）＋ 認購權證存在，state=ok
