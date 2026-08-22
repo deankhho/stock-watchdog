@@ -1,20 +1,20 @@
 {
- "generated_at": "2026-08-21T23:33:05.132152+08:00",
- "nv_fetched_at": "2026-08-20T10:23:45.752130+08:00",
- "official_fetched_at": "2026-08-21T12:51:05.348854+08:00",
- "nv_age_days": 1,
+ "generated_at": "2026-08-22T08:57:08.339427+08:00",
+ "nv_fetched_at": "2026-08-22T08:56:37.146605+08:00",
+ "official_fetched_at": "2026-08-22T08:56:44.134867+08:00",
+ "nv_age_days": 0,
  "official_age_days": 0,
  "degraded": {},
- "days_to_report": 85,
+ "days_to_report": 84,
  "next_report_deadline": "2026-11-14",
- "new_reports_count": 282,
+ "new_reports_count": 285,
  "new_reports_crossings": 13,
  "groups": {
   "predict_in": [
    {
     "code": "7827",
     "name": "漢康-KY創",
-    "price": 153.5,
+    "price": 161.0,
     "net_value": 3.29,
     "nv_quarter": "26Q1",
     "market": "上市",
@@ -31,7 +31,7 @@
    {
     "code": "7835",
     "name": "永悅健康-創",
-    "price": 21.45,
+    "price": 20.65,
     "net_value": 4.0,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -57,7 +57,7 @@
    {
     "code": "3086",
     "name": "華義*",
-    "price": 26.35,
+    "price": 26.7,
     "net_value": 1.1,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -81,7 +81,7 @@
    {
     "code": "1516",
     "name": "川飛",
-    "price": 14.7,
+    "price": 15.2,
     "net_value": 5.03,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -105,7 +105,7 @@
    {
     "code": "1441",
     "name": "大東",
-    "price": 8.8,
+    "price": 8.9,
     "net_value": 5.07,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -129,7 +129,7 @@
    {
     "code": "3508",
     "name": "位速",
-    "price": 22.75,
+    "price": 23.2,
     "net_value": 5.1,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -153,7 +153,7 @@
    {
     "code": "4304",
     "name": "勝昱",
-    "price": 21.3,
+    "price": 25.7,
     "net_value": 5.1,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -177,7 +177,7 @@
    {
     "code": "3018",
     "name": "隆銘綠能",
-    "price": 13.4,
+    "price": 13.95,
     "net_value": 5.28,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -201,7 +201,7 @@
    {
     "code": "6141",
     "name": "柏承",
-    "price": 44.5,
+    "price": 45.4,
     "net_value": 5.29,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -249,7 +249,7 @@
    {
     "code": "5205",
     "name": "中茂",
-    "price": 20.65,
+    "price": 20.55,
     "net_value": 5.51,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -273,7 +273,7 @@
    {
     "code": "3494",
     "name": "誠研",
-    "price": 7.13,
+    "price": 7.1,
     "net_value": 5.54,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -297,7 +297,7 @@
    {
     "code": "8937",
     "name": "合騏*",
-    "price": 25.55,
+    "price": 26.55,
     "net_value": 5.54,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -321,7 +321,7 @@
    {
     "code": "2438",
     "name": "翔耀",
-    "price": 18.05,
+    "price": 17.9,
     "net_value": 5.58,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -345,7 +345,7 @@
    {
     "code": "6550",
     "name": "北極星藥業-KY",
-    "price": 10.15,
+    "price": 12.25,
     "net_value": 5.58,
     "nv_quarter": "26Q1",
     "market": "上市",
@@ -362,7 +362,7 @@
    {
     "code": "3085",
     "name": "新零售",
-    "price": 11.95,
+    "price": 12.0,
     "net_value": 5.6,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -386,7 +386,7 @@
    {
     "code": "3191",
     "name": "雲嘉南",
-    "price": 18.15,
+    "price": 17.9,
     "net_value": 5.6,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -410,7 +410,7 @@
    {
     "code": "5345",
     "name": "馥鴻",
-    "price": 21.45,
+    "price": 22.3,
     "net_value": 5.63,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -434,7 +434,7 @@
    {
     "code": "6431",
     "name": "光麗-KY",
-    "price": 20.0,
+    "price": 20.3,
     "net_value": 5.68,
     "nv_quarter": "26Q1",
     "market": "上市",
@@ -451,7 +451,7 @@
    {
     "code": "1799",
     "name": "易威",
-    "price": 29.95,
+    "price": 30.2,
     "net_value": 5.69,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -475,7 +475,7 @@
    {
     "code": "6276",
     "name": "安鈦克",
-    "price": 19.0,
+    "price": 19.7,
     "net_value": 5.71,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -499,7 +499,7 @@
    {
     "code": "3523",
     "name": "迎輝",
-    "price": 15.05,
+    "price": 15.2,
     "net_value": 5.74,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -523,7 +523,7 @@
    {
     "code": "6919",
     "name": "康霈*",
-    "price": 102.5,
+    "price": 113.5,
     "net_value": 5.92,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -547,7 +547,7 @@
    {
     "code": "2208",
     "name": "台船",
-    "price": 19.05,
+    "price": 19.3,
     "net_value": 5.96,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -573,7 +573,7 @@
    {
     "code": "7780",
     "name": "大研生醫*",
-    "price": 16.55,
+    "price": 17.1,
     "net_value": 6.05,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -604,7 +604,7 @@
    {
     "code": "7803",
     "name": "雲象科技-創",
-    "price": 19.15,
+    "price": 19.6,
     "net_value": 6.15,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -635,7 +635,7 @@
    {
     "code": "5314",
     "name": "世紀*",
-    "price": 21.5,
+    "price": 26.0,
     "net_value": 6.19,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -648,7 +648,10 @@
     },
     "status": {
      "full_delivery": false,
-     "disposal": null,
+     "disposal": {
+      "reason": "因連續3個營業日達本中心作業要點第四條第",
+      "period": "1150824~1150828"
+     },
      "credit": "可信用交易"
     },
     "gap": 5.94,
@@ -666,7 +669,7 @@
    {
     "code": "4192",
     "name": "杏國",
-    "price": 19.5,
+    "price": 20.0,
     "net_value": 6.23,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -697,7 +700,7 @@
    {
     "code": "3234",
     "name": "光環",
-    "price": 147.5,
+    "price": 151.0,
     "net_value": 6.24,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -728,7 +731,7 @@
    {
     "code": "5344",
     "name": "立衛",
-    "price": 13.65,
+    "price": 13.4,
     "net_value": 6.36,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -759,7 +762,7 @@
    {
     "code": "4806",
     "name": "桂田文創",
-    "price": 8.95,
+    "price": 9.27,
     "net_value": 6.38,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -790,7 +793,7 @@
    {
     "code": "4154",
     "name": "樂威科-KY",
-    "price": 11.5,
+    "price": 12.2,
     "net_value": 6.39,
     "nv_quarter": "26Q1",
     "market": "上櫃",
@@ -814,7 +817,7 @@
    {
     "code": "1781",
     "name": "合世",
-    "price": 11.0,
+    "price": 10.9,
     "net_value": 6.4,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -845,7 +848,7 @@
    {
     "code": "6443",
     "name": "元晶",
-    "price": 26.0,
+    "price": 25.95,
     "net_value": 6.5,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -876,7 +879,7 @@
    {
     "code": "2258",
     "name": "鴻華先進-創",
-    "price": 31.05,
+    "price": 32.0,
     "net_value": 6.51,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -938,7 +941,7 @@
    {
     "code": "3288",
     "name": "點晶",
-    "price": 22.25,
+    "price": 21.35,
     "net_value": 6.55,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -969,7 +972,7 @@
    {
     "code": "9912",
     "name": "偉聯",
-    "price": 12.8,
+    "price": 12.9,
     "net_value": 6.56,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -1000,7 +1003,7 @@
    {
     "code": "1435",
     "name": "中福",
-    "price": 24.35,
+    "price": 23.3,
     "net_value": 6.57,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -1062,7 +1065,7 @@
    {
     "code": "6598",
     "name": "ABC-KY",
-    "price": 27.5,
+    "price": 28.55,
     "net_value": 6.57,
     "nv_quarter": "26Q1",
     "market": "上市",
@@ -1086,7 +1089,7 @@
    {
     "code": "3349",
     "name": "寶德",
-    "price": 23.5,
+    "price": 24.2,
     "net_value": 6.65,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -1117,7 +1120,7 @@
    {
     "code": "6264",
     "name": "富裔",
-    "price": 6.02,
+    "price": 6.03,
     "net_value": 6.76,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -1148,7 +1151,7 @@
    {
     "code": "4726",
     "name": "永昕",
-    "price": 24.3,
+    "price": 24.8,
     "net_value": 6.8,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -1179,7 +1182,7 @@
    {
     "code": "1512",
     "name": "瑞利",
-    "price": 6.54,
+    "price": 6.58,
     "net_value": 6.84,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -1210,7 +1213,7 @@
    {
     "code": "3522",
     "name": "御嵿",
-    "price": 11.65,
+    "price": 11.6,
     "net_value": 6.85,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -1241,7 +1244,7 @@
    {
     "code": "6872",
     "name": "浩宇生醫",
-    "price": 15.05,
+    "price": 15.7,
     "net_value": 6.87,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -1272,7 +1275,7 @@
    {
     "code": "6492",
     "name": "生華科",
-    "price": 37.55,
+    "price": 34.8,
     "net_value": 6.9,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -1303,7 +1306,7 @@
    {
     "code": "6645",
     "name": "金萬林-創",
-    "price": 12.7,
+    "price": 13.05,
     "net_value": 6.92,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -1334,7 +1337,7 @@
    {
     "code": "8932",
     "name": "智通*",
-    "price": 109.0,
+    "price": 106.0,
     "net_value": 6.93,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -1348,7 +1351,7 @@
     "status": {
      "full_delivery": false,
      "disposal": null,
-     "credit": "可信用交易"
+     "credit": "停止融券"
     },
     "gap": 5.68,
     "fd_threshold": 1.25,
@@ -1365,7 +1368,7 @@
    {
     "code": "3432",
     "name": "台端",
-    "price": 14.4,
+    "price": 15.1,
     "net_value": 6.97,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -1396,7 +1399,7 @@
    {
     "code": "8067",
     "name": "志旭",
-    "price": 12.7,
+    "price": 12.75,
     "net_value": 7.02,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -1427,7 +1430,7 @@
    {
     "code": "2035",
     "name": "唐榮",
-    "price": 27.15,
+    "price": 27.5,
     "net_value": 7.04,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -1458,7 +1461,7 @@
    {
     "code": "2724",
     "name": "藝舍-KY",
-    "price": 10.55,
+    "price": 10.7,
     "net_value": 7.08,
     "nv_quarter": "26Q1",
     "market": "上櫃",
@@ -1482,7 +1485,7 @@
    {
     "code": "3672",
     "name": "康聯訊",
-    "price": 12.8,
+    "price": 12.3,
     "net_value": 7.16,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -1513,7 +1516,7 @@
    {
     "code": "8201",
     "name": "無敵",
-    "price": 11.8,
+    "price": 11.95,
     "net_value": 7.16,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -1544,7 +1547,7 @@
    {
     "code": "4131",
     "name": "浩泰",
-    "price": 32.3,
+    "price": 31.5,
     "net_value": 7.17,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -1575,7 +1578,7 @@
    {
     "code": "7814",
     "name": "海昌生技",
-    "price": 31.0,
+    "price": 30.2,
     "net_value": 7.29,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -1606,7 +1609,7 @@
    {
     "code": "8084",
     "name": "巨虹",
-    "price": 50.4,
+    "price": 49.1,
     "net_value": 7.33,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -1637,7 +1640,7 @@
    {
     "code": "5348",
     "name": "正能量智能",
-    "price": 16.75,
+    "price": 16.4,
     "net_value": 7.35,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -1668,7 +1671,7 @@
    {
     "code": "6535",
     "name": "順藥",
-    "price": 81.0,
+    "price": 80.9,
     "net_value": 7.39,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -1699,7 +1702,7 @@
    {
     "code": "2007",
     "name": "燁興",
-    "price": 6.94,
+    "price": 7.1,
     "net_value": 7.4,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -1730,7 +1733,7 @@
    {
     "code": "3419",
     "name": "譁裕",
-    "price": 12.05,
+    "price": 12.2,
     "net_value": 7.41,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -1761,7 +1764,7 @@
    {
     "code": "3115",
     "name": "富榮綱",
-    "price": 8.89,
+    "price": 9.09,
     "net_value": 7.49,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -1792,7 +1795,7 @@
    {
     "code": "6573",
     "name": "虹揚-KY",
-    "price": 17.75,
+    "price": 17.1,
     "net_value": 7.51,
     "nv_quarter": "26Q1",
     "market": "上市",
@@ -1816,7 +1819,7 @@
    {
     "code": "4168",
     "name": "醣聯",
-    "price": 22.5,
+    "price": 22.6,
     "net_value": 7.56,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -1847,7 +1850,7 @@
    {
     "code": "8422",
     "name": "可寧衛*",
-    "price": 26.7,
+    "price": 26.85,
     "net_value": 7.57,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -1878,7 +1881,7 @@
    {
     "code": "4934",
     "name": "太極",
-    "price": 14.05,
+    "price": 14.4,
     "net_value": 7.59,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -1909,7 +1912,7 @@
    {
     "code": "8935",
     "name": "邦泰",
-    "price": 17.4,
+    "price": 17.9,
     "net_value": 7.64,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -1940,7 +1943,7 @@
    {
     "code": "2740",
     "name": "華軒",
-    "price": 29.7,
+    "price": 30.6,
     "net_value": 7.65,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -1971,7 +1974,7 @@
    {
     "code": "8038",
     "name": "長園科",
-    "price": 30.7,
+    "price": 30.8,
     "net_value": 7.75,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -2002,7 +2005,7 @@
    {
     "code": "5302",
     "name": "太欣",
-    "price": 10.3,
+    "price": 10.25,
     "net_value": 7.76,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -2033,7 +2036,7 @@
    {
     "code": "3499",
     "name": "環天科",
-    "price": 12.75,
+    "price": 12.6,
     "net_value": 7.79,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -2064,7 +2067,7 @@
    {
     "code": "3321",
     "name": "同泰",
-    "price": 18.05,
+    "price": 18.15,
     "net_value": 7.8,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -2095,7 +2098,7 @@
    {
     "code": "3058",
     "name": "立德",
-    "price": 8.11,
+    "price": 8.26,
     "net_value": 7.81,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -2157,7 +2160,7 @@
    {
     "code": "5703",
     "name": "亞都",
-    "price": 14.95,
+    "price": 15.15,
     "net_value": 7.87,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -2188,7 +2191,7 @@
    {
     "code": "3576",
     "name": "聯合再生",
-    "price": 16.75,
+    "price": 17.3,
     "net_value": 7.93,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -2219,7 +2222,7 @@
    {
     "code": "6152",
     "name": "百一",
-    "price": 13.9,
+    "price": 14.1,
     "net_value": 7.93,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -2250,7 +2253,7 @@
    {
     "code": "3122",
     "name": "笙泉",
-    "price": 25.25,
+    "price": 25.5,
     "net_value": 7.94,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -2281,7 +2284,7 @@
    {
     "code": "6733",
     "name": "博晟生醫",
-    "price": 25.3,
+    "price": 25.75,
     "net_value": 7.95,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -2312,7 +2315,7 @@
    {
     "code": "8450",
     "name": "霹靂",
-    "price": 14.45,
+    "price": 14.7,
     "net_value": 7.95,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -2343,7 +2346,7 @@
    {
     "code": "5227",
     "name": "立凱-KY",
-    "price": 31.5,
+    "price": 31.1,
     "net_value": 7.99,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -2374,7 +2377,7 @@
    {
     "code": "6576",
     "name": "逸達",
-    "price": 79.2,
+    "price": 80.0,
     "net_value": 8.08,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -2436,7 +2439,7 @@
    {
     "code": "6461",
     "name": "益得",
-    "price": 15.9,
+    "price": 15.6,
     "net_value": 8.11,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -2467,7 +2470,7 @@
    {
     "code": "6657",
     "name": "華安",
-    "price": 29.7,
+    "price": 30.6,
     "net_value": 8.11,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -2498,7 +2501,7 @@
    {
     "code": "4188",
     "name": "安克",
-    "price": 10.1,
+    "price": 11.0,
     "net_value": 8.14,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -2529,7 +2532,7 @@
    {
     "code": "6144",
     "name": "得利影",
-    "price": 13.5,
+    "price": 13.7,
     "net_value": 8.21,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -2560,7 +2563,7 @@
    {
     "code": "4534",
     "name": "慶騰",
-    "price": 30.1,
+    "price": 29.8,
     "net_value": 8.24,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -2622,7 +2625,7 @@
    {
     "code": "8085",
     "name": "福華",
-    "price": 12.3,
+    "price": 12.35,
     "net_value": 8.26,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -2684,7 +2687,7 @@
    {
     "code": "2429",
     "name": "銘旺科",
-    "price": 33.0,
+    "price": 31.95,
     "net_value": 8.3,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -2715,7 +2718,7 @@
    {
     "code": "4195",
     "name": "基米-創",
-    "price": 14.2,
+    "price": 14.25,
     "net_value": 8.32,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -2746,7 +2749,7 @@
    {
     "code": "6921",
     "name": "嘉雨思-創",
-    "price": 68.1,
+    "price": 69.7,
     "net_value": 8.34,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -2777,7 +2780,7 @@
    {
     "code": "1460",
     "name": "宏遠",
-    "price": 6.52,
+    "price": 6.74,
     "net_value": 8.36,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -2808,7 +2811,7 @@
    {
     "code": "8477",
     "name": "創業家",
-    "price": 15.9,
+    "price": 15.65,
     "net_value": 8.41,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -2839,7 +2842,7 @@
    {
     "code": "9929",
     "name": "秋雨",
-    "price": 10.85,
+    "price": 11.3,
     "net_value": 8.43,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -2870,7 +2873,7 @@
    {
     "code": "4402",
     "name": "郡都開發",
-    "price": 15.75,
+    "price": 14.8,
     "net_value": 8.44,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -2901,7 +2904,7 @@
    {
     "code": "5543",
     "name": "桓鼎-KY",
-    "price": 24.05,
+    "price": 24.0,
     "net_value": 8.44,
     "nv_quarter": "26Q1",
     "market": "上櫃",
@@ -2925,7 +2928,7 @@
    {
     "code": "9950",
     "name": "萬國通",
-    "price": 10.2,
+    "price": 10.35,
     "net_value": 8.44,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -2956,7 +2959,7 @@
    {
     "code": "3372",
     "name": "典範",
-    "price": 14.85,
+    "price": 15.1,
     "net_value": 8.46,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -2987,7 +2990,7 @@
    {
     "code": "4198",
     "name": "欣大健康",
-    "price": 42.0,
+    "price": 40.95,
     "net_value": 8.46,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -3018,7 +3021,7 @@
    {
     "code": "8176",
     "name": "智捷",
-    "price": 9.96,
+    "price": 9.95,
     "net_value": 8.51,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -3049,7 +3052,7 @@
    {
     "code": "6142",
     "name": "友勁",
-    "price": 9.0,
+    "price": 8.99,
     "net_value": 8.52,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -3080,7 +3083,7 @@
    {
     "code": "2014",
     "name": "中鴻",
-    "price": 16.9,
+    "price": 17.5,
     "net_value": 8.56,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -3111,7 +3114,7 @@
    {
     "code": "5475",
     "name": "德宏",
-    "price": 180.0,
+    "price": 174.5,
     "net_value": 8.57,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -3145,7 +3148,7 @@
    {
     "code": "6109",
     "name": "亞元",
-    "price": 11.1,
+    "price": 10.75,
     "net_value": 8.57,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -3176,7 +3179,7 @@
    {
     "code": "6160",
     "name": "欣技",
-    "price": 13.95,
+    "price": 16.0,
     "net_value": 8.6,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -3207,7 +3210,7 @@
    {
     "code": "3686",
     "name": "達能",
-    "price": 14.25,
+    "price": 14.55,
     "net_value": 8.61,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -3238,7 +3241,7 @@
    {
     "code": "6169",
     "name": "昱泉",
-    "price": 12.6,
+    "price": 12.5,
     "net_value": 8.64,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -3269,7 +3272,7 @@
    {
     "code": "2924",
     "name": "宏太-KY",
-    "price": 17.4,
+    "price": 17.35,
     "net_value": 8.69,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -3331,7 +3334,7 @@
    {
     "code": "1721",
     "name": "三晃",
-    "price": 19.25,
+    "price": 19.65,
     "net_value": 8.7,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -3362,7 +3365,7 @@
    {
     "code": "4178",
     "name": "永笙-KY",
-    "price": 17.0,
+    "price": 17.55,
     "net_value": 8.7,
     "nv_quarter": "26Q1",
     "market": "上市",
@@ -3386,7 +3389,7 @@
    {
     "code": "1413",
     "name": "宏洲",
-    "price": 9.24,
+    "price": 9.37,
     "net_value": 8.74,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -3479,7 +3482,7 @@
    {
     "code": "2601",
     "name": "益航",
-    "price": 6.92,
+    "price": 7.39,
     "net_value": 8.91,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -3510,7 +3513,7 @@
    {
     "code": "5516",
     "name": "雙喜",
-    "price": 11.7,
+    "price": 12.05,
     "net_value": 9.02,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -3541,7 +3544,7 @@
    {
     "code": "6228",
     "name": "全譜",
-    "price": 17.3,
+    "price": 17.5,
     "net_value": 9.07,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -3572,7 +3575,7 @@
    {
     "code": "6838",
     "name": "台新藥",
-    "price": 22.65,
+    "price": 23.2,
     "net_value": 9.08,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -3603,7 +3606,7 @@
    {
     "code": "1468",
     "name": "昶和",
-    "price": 13.05,
+    "price": 13.25,
     "net_value": 9.09,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -3665,7 +3668,7 @@
    {
     "code": "3057",
     "name": "喬鼎",
-    "price": 17.25,
+    "price": 17.1,
     "net_value": 9.19,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -3696,7 +3699,7 @@
    {
     "code": "3685",
     "name": "元創精密",
-    "price": 36.6,
+    "price": 36.7,
     "net_value": 9.21,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -3727,7 +3730,7 @@
    {
     "code": "8047",
     "name": "星雲",
-    "price": 49.15,
+    "price": 46.75,
     "net_value": 9.26,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -3758,7 +3761,7 @@
    {
     "code": "1506",
     "name": "正道",
-    "price": 10.1,
+    "price": 10.3,
     "net_value": 9.33,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -3820,7 +3823,7 @@
    {
     "code": "8443",
     "name": "阿瘦",
-    "price": 11.45,
+    "price": 11.4,
     "net_value": 9.38,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -3851,7 +3854,7 @@
    {
     "code": "4139",
     "name": "馬光-KY",
-    "price": 37.0,
+    "price": 36.0,
     "net_value": 9.43,
     "nv_quarter": "26Q1",
     "market": "上櫃",
@@ -3875,7 +3878,7 @@
    {
     "code": "8092",
     "name": "建暐",
-    "price": 12.35,
+    "price": 12.7,
     "net_value": 9.43,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -3906,7 +3909,7 @@
    {
     "code": "3228",
     "name": "金麗科",
-    "price": 139.0,
+    "price": 141.0,
     "net_value": 9.46,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -3937,7 +3940,7 @@
    {
     "code": "8121",
     "name": "越峰",
-    "price": 27.7,
+    "price": 27.5,
     "net_value": 9.5,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -3968,7 +3971,7 @@
    {
     "code": "9919",
     "name": "康那香",
-    "price": 13.75,
+    "price": 14.0,
     "net_value": 9.53,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -3982,7 +3985,7 @@
     "status": {
      "full_delivery": false,
      "disposal": null,
-     "credit": "可信用交易"
+     "credit": "停資停券"
     },
     "gap": 4.53,
     "fd_threshold": 5.0,
@@ -3999,7 +4002,7 @@
    {
     "code": "2712",
     "name": "遠雄來",
-    "price": 14.4,
+    "price": 14.65,
     "net_value": 9.56,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -4030,7 +4033,7 @@
    {
     "code": "5468",
     "name": "凱鈺",
-    "price": 27.9,
+    "price": 27.95,
     "net_value": 9.57,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -4092,7 +4095,7 @@
    {
     "code": "4950",
     "name": "金耘國際",
-    "price": 16.05,
+    "price": 15.9,
     "net_value": 9.6,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -4123,7 +4126,7 @@
    {
     "code": "1447",
     "name": "力鵬",
-    "price": 6.79,
+    "price": 7.18,
     "net_value": 9.62,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -4154,7 +4157,7 @@
    {
     "code": "2460",
     "name": "建通",
-    "price": 28.4,
+    "price": 28.8,
     "net_value": 9.63,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -4185,7 +4188,7 @@
    {
     "code": "8093",
     "name": "保銳",
-    "price": 22.95,
+    "price": 24.85,
     "net_value": 9.7,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -4216,7 +4219,7 @@
    {
     "code": "1471",
     "name": "首利",
-    "price": 9.41,
+    "price": 9.67,
     "net_value": 9.71,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -4247,7 +4250,7 @@
    {
     "code": "6210",
     "name": "慶生",
-    "price": 17.1,
+    "price": 17.4,
     "net_value": 9.71,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -4278,7 +4281,7 @@
    {
     "code": "2431",
     "name": "聯昌",
-    "price": 10.15,
+    "price": 10.3,
     "net_value": 9.72,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -4309,7 +4312,7 @@
    {
     "code": "2516",
     "name": "新建",
-    "price": 14.0,
+    "price": 14.35,
     "net_value": 9.76,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -4340,7 +4343,7 @@
    {
     "code": "2726",
     "name": "雅茗-KY",
-    "price": 8.5,
+    "price": 8.45,
     "net_value": 9.78,
     "nv_quarter": "26Q1",
     "market": "上櫃",
@@ -4364,7 +4367,7 @@
    {
     "code": "4108",
     "name": "懷特",
-    "price": 10.9,
+    "price": 11.35,
     "net_value": 9.78,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -4395,7 +4398,7 @@
    {
     "code": "2380",
     "name": "虹光",
-    "price": 20.25,
+    "price": 19.6,
     "net_value": 9.84,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -4426,7 +4429,7 @@
    {
     "code": "6140",
     "name": "訊達",
-    "price": 16.3,
+    "price": 17.35,
     "net_value": 9.86,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -4457,7 +4460,7 @@
    {
     "code": "3313",
     "name": "斐成",
-    "price": 10.25,
+    "price": 10.3,
     "net_value": 9.89,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -4488,7 +4491,7 @@
    {
     "code": "2022",
     "name": "聚亨",
-    "price": 7.63,
+    "price": 7.77,
     "net_value": 9.9,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -4502,7 +4505,7 @@
     "status": {
      "full_delivery": false,
      "disposal": null,
-     "credit": "可信用交易"
+     "credit": "停資停券"
     },
     "gap": 4.9,
     "fd_threshold": 5.0,
@@ -4519,7 +4522,7 @@
    {
     "code": "5905",
     "name": "南仁湖",
-    "price": 7.9,
+    "price": 8.01,
     "net_value": 9.98,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -4552,7 +4555,7 @@
    {
     "code": "2321",
     "name": "東訊",
-    "price": 15.0,
+    "price": 15.4,
     "net_value": 6.24,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -4608,7 +4611,7 @@
    {
     "code": "1213",
     "name": "大飲",
-    "price": 7.3,
+    "price": 7.25,
     "net_value": 10.98,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -4638,7 +4641,7 @@
    {
     "code": "8444",
     "name": "綠河-KY",
-    "price": 5.0,
+    "price": 5.28,
     "net_value": 0.05,
     "nv_quarter": "26Q1",
     "market": "上櫃",
@@ -4655,7 +4658,7 @@
    {
     "code": "2314",
     "name": "台揚",
-    "price": 11.05,
+    "price": 10.85,
     "net_value": 0.27,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -4679,7 +4682,7 @@
    {
     "code": "3664",
     "name": "安瑞-KY",
-    "price": 6.0,
+    "price": 5.79,
     "net_value": 0.8,
     "nv_quarter": "26Q1",
     "market": "上櫃",
@@ -4696,7 +4699,7 @@
    {
     "code": "3629",
     "name": "地心引力",
-    "price": 13.85,
+    "price": 13.95,
     "net_value": 1.31,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -4720,7 +4723,7 @@
    {
     "code": "4943",
     "name": "康控-KY",
-    "price": 8.42,
+    "price": 8.55,
     "net_value": 1.38,
     "nv_quarter": "26Q1",
     "market": "上市",
@@ -4737,7 +4740,7 @@
    {
     "code": "4529",
     "name": "淳紳",
-    "price": 3.25,
+    "price": 3.21,
     "net_value": 2.5,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -4785,7 +4788,7 @@
    {
     "code": "3632",
     "name": "研勤",
-    "price": 7.19,
+    "price": 7.18,
     "net_value": 2.83,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -4809,7 +4812,7 @@
    {
     "code": "6225",
     "name": "天瀚",
-    "price": 53.6,
+    "price": 64.7,
     "net_value": 3.06,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -4824,7 +4827,7 @@
      "full_delivery": true,
      "disposal": {
       "reason": "連續三次",
-      "period": "115/08/17～115/08/21"
+      "period": "115/08/20～115/08/26"
      },
      "credit": "停止信用（全額交割）"
     },
@@ -4836,7 +4839,7 @@
    {
     "code": "5701",
     "name": "劍湖山",
-    "price": 4.19,
+    "price": 4.12,
     "net_value": 3.09,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -4860,7 +4863,7 @@
    {
     "code": "8291",
     "name": "尚茂",
-    "price": 33.25,
+    "price": 34.95,
     "net_value": 3.32,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -4884,7 +4887,7 @@
    {
     "code": "3593",
     "name": "力銘",
-    "price": 11.0,
+    "price": 11.35,
     "net_value": 3.42,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -4956,7 +4959,7 @@
    {
     "code": "6236",
     "name": "中湛",
-    "price": 14.95,
+    "price": 15.1,
     "net_value": 3.74,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -4980,7 +4983,7 @@
    {
     "code": "3064",
     "name": "泰偉",
-    "price": 19.55,
+    "price": 18.95,
     "net_value": 3.91,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -5004,7 +5007,7 @@
    {
     "code": "2424",
     "name": "隴華",
-    "price": 8.21,
+    "price": 8.1,
     "net_value": 4.23,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -5028,7 +5031,7 @@
    {
     "code": "8101",
     "name": "華冠",
-    "price": 11.0,
+    "price": 13.15,
     "net_value": 4.23,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -5052,7 +5055,7 @@
    {
     "code": "2067",
     "name": "嘉鋼",
-    "price": 5.75,
+    "price": 5.46,
     "net_value": 4.26,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -5076,7 +5079,7 @@
    {
     "code": "5355",
     "name": "佳總",
-    "price": 5.65,
+    "price": 5.98,
     "net_value": 4.35,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -5100,7 +5103,7 @@
    {
     "code": "3259",
     "name": "鑫創",
-    "price": 11.35,
+    "price": 9.81,
     "net_value": 4.64,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -5124,7 +5127,7 @@
    {
     "code": "8933",
     "name": "愛地雅",
-    "price": 4.44,
+    "price": 4.53,
     "net_value": 4.7,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -5148,7 +5151,7 @@
    {
     "code": "3625",
     "name": "西勝",
-    "price": 12.6,
+    "price": 11.1,
     "net_value": 4.72,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -5172,7 +5175,7 @@
    {
     "code": "8277",
     "name": "商丞",
-    "price": 8.03,
+    "price": 8.1,
     "net_value": 4.75,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -5209,7 +5212,7 @@
    {
     "code": "3041",
     "name": "揚智",
-    "price": 22.3,
+    "price": 22.4,
     "net_value": 10.01,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -5233,7 +5236,7 @@
    {
     "code": "2405",
     "name": "輔信",
-    "price": 15.4,
+    "price": 15.45,
     "net_value": 10.02,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -5257,7 +5260,7 @@
    {
     "code": "5531",
     "name": "鄉林",
-    "price": 7.35,
+    "price": 7.56,
     "net_value": 10.06,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -5281,7 +5284,7 @@
    {
     "code": "4171",
     "name": "瑞基",
-    "price": 17.15,
+    "price": 17.25,
     "net_value": 10.07,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -5305,7 +5308,7 @@
    {
     "code": "4426",
     "name": "利勤",
-    "price": 7.77,
+    "price": 7.81,
     "net_value": 10.09,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -5329,7 +5332,7 @@
    {
     "code": "1444",
     "name": "力麗",
-    "price": 7.14,
+    "price": 7.52,
     "net_value": 10.19,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -5343,7 +5346,7 @@
     "status": {
      "full_delivery": false,
      "disposal": null,
-     "credit": "停資停券"
+     "credit": "可信用交易"
     },
     "gap": 5.19,
     "fd_threshold": 5.0,
@@ -5353,7 +5356,7 @@
    {
     "code": "3049",
     "name": "精金",
-    "price": 10.7,
+    "price": 11.55,
     "net_value": 10.21,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -5367,7 +5370,7 @@
     "status": {
      "full_delivery": false,
      "disposal": null,
-     "credit": "停資停券"
+     "credit": "停止融券"
     },
     "gap": 5.21,
     "fd_threshold": 5.0,
@@ -5377,7 +5380,7 @@
    {
     "code": "2646",
     "name": "星宇航空",
-    "price": 20.9,
+    "price": 21.3,
     "net_value": 10.22,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -5401,7 +5404,7 @@
    {
     "code": "3011",
     "name": "今皓",
-    "price": 10.45,
+    "price": 10.8,
     "net_value": 10.25,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -5425,7 +5428,7 @@
    {
     "code": "5210",
     "name": "寶碩",
-    "price": 28.65,
+    "price": 28.6,
     "net_value": 10.29,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -5449,7 +5452,7 @@
    {
     "code": "3489",
     "name": "森寶",
-    "price": 23.8,
+    "price": 22.2,
     "net_value": 10.35,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -5466,7 +5469,7 @@
    {
     "code": "4562",
     "name": "穎漢",
-    "price": 31.65,
+    "price": 31.15,
     "net_value": 10.38,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -5490,7 +5493,7 @@
    {
     "code": "3149",
     "name": "正達",
-    "price": 64.8,
+    "price": 65.0,
     "net_value": 10.47,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -5514,7 +5517,7 @@
    {
     "code": "3230",
     "name": "錦明",
-    "price": 41.1,
+    "price": 43.25,
     "net_value": 10.47,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -5538,7 +5541,7 @@
    {
     "code": "5398",
     "name": "慕康生醫",
-    "price": 14.2,
+    "price": 14.1,
     "net_value": 10.49,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -5562,7 +5565,7 @@
    {
     "code": "6113",
     "name": "亞矽",
-    "price": 23.15,
+    "price": 22.8,
     "net_value": 10.56,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -5586,7 +5589,7 @@
    {
     "code": "2406",
     "name": "國碩",
-    "price": 28.55,
+    "price": 28.45,
     "net_value": 10.57,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -5610,7 +5613,7 @@
    {
     "code": "6127",
     "name": "九豪",
-    "price": 49.7,
+    "price": 48.7,
     "net_value": 10.57,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -5634,7 +5637,7 @@
    {
     "code": "6875",
     "name": "國邑*",
-    "price": 32.6,
+    "price": 32.2,
     "net_value": 10.58,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -5658,7 +5661,7 @@
    {
     "code": "3176",
     "name": "基亞",
-    "price": 34.0,
+    "price": 37.2,
     "net_value": 10.6,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -5682,7 +5685,7 @@
    {
     "code": "3229",
     "name": "晟鈦",
-    "price": 51.8,
+    "price": 61.8,
     "net_value": 10.61,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -5696,7 +5699,7 @@
     "status": {
      "full_delivery": false,
      "disposal": null,
-     "credit": "停資停券"
+     "credit": "停止融券"
     },
     "gap": 5.61,
     "fd_threshold": 5.0,
@@ -5706,7 +5709,7 @@
    {
     "code": "5211",
     "name": "蒙恬",
-    "price": 19.2,
+    "price": 19.55,
     "net_value": 10.64,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -5730,7 +5733,7 @@
    {
     "code": "1454",
     "name": "台富",
-    "price": 12.3,
+    "price": 12.4,
     "net_value": 10.68,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -5744,7 +5747,7 @@
     "status": {
      "full_delivery": false,
      "disposal": null,
-     "credit": "停止融券"
+     "credit": "可信用交易"
     },
     "gap": 5.68,
     "fd_threshold": 5.0,
@@ -5754,7 +5757,7 @@
    {
     "code": "4924",
     "name": "欣厚-KY",
-    "price": 9.55,
+    "price": 9.59,
     "net_value": 10.74,
     "nv_quarter": "26Q1",
     "market": "上櫃",
@@ -5771,7 +5774,7 @@
    {
     "code": "2719",
     "name": "燦星旅",
-    "price": 21.0,
+    "price": 20.75,
     "net_value": 10.78,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -5795,7 +5798,7 @@
    {
     "code": "6547",
     "name": "高端疫苗",
-    "price": 51.7,
+    "price": 55.7,
     "net_value": 10.81,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -5819,7 +5822,7 @@
    {
     "code": "3024",
     "name": "憶聲",
-    "price": 13.45,
+    "price": 13.85,
     "net_value": 10.83,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -5867,7 +5870,7 @@
    {
     "code": "5364",
     "name": "力麗店",
-    "price": 8.51,
+    "price": 8.58,
     "net_value": 10.83,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -5891,7 +5894,7 @@
    {
     "code": "3093",
     "name": "港建*",
-    "price": 48.2,
+    "price": 45.9,
     "net_value": 10.84,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -5915,7 +5918,7 @@
    {
     "code": "4513",
     "name": "福裕",
-    "price": 16.45,
+    "price": 16.65,
     "net_value": 10.84,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -5939,7 +5942,7 @@
    {
     "code": "6226",
     "name": "光鼎",
-    "price": 21.3,
+    "price": 21.2,
     "net_value": 10.85,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -5963,7 +5966,7 @@
    {
     "code": "1616",
     "name": "億泰",
-    "price": 19.05,
+    "price": 19.4,
     "net_value": 10.86,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -5987,7 +5990,7 @@
    {
     "code": "4989",
     "name": "榮科",
-    "price": 61.7,
+    "price": 61.9,
     "net_value": 10.86,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -6011,7 +6014,7 @@
    {
     "code": "4413",
     "name": "飛寶企業",
-    "price": 19.6,
+    "price": 19.65,
     "net_value": 10.92,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -6035,7 +6038,7 @@
    {
     "code": "4166",
     "name": "友霖",
-    "price": 24.0,
+    "price": 24.05,
     "net_value": 10.94,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -6059,7 +6062,7 @@
    {
     "code": "6246",
     "name": "臺龍",
-    "price": 12.2,
+    "price": 12.45,
     "net_value": 10.94,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -6083,7 +6086,7 @@
    {
     "code": "4142",
     "name": "國光生",
-    "price": 17.25,
+    "price": 18.15,
     "net_value": 10.97,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -6107,7 +6110,7 @@
    {
     "code": "3047",
     "name": "訊舟",
-    "price": 13.7,
+    "price": 13.85,
     "net_value": 11.01,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -6131,7 +6134,7 @@
    {
     "code": "6103",
     "name": "合邦",
-    "price": 28.2,
+    "price": 29.3,
     "net_value": 11.01,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -6155,7 +6158,7 @@
    {
     "code": "2302",
     "name": "麗正",
-    "price": 44.7,
+    "price": 42.45,
     "net_value": 11.05,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -6179,7 +6182,7 @@
    {
     "code": "6969",
     "name": "成信實業*-創",
-    "price": 35.0,
+    "price": 35.25,
     "net_value": 11.06,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -6203,7 +6206,7 @@
    {
     "code": "8906",
     "name": "花王",
-    "price": 27.6,
+    "price": 27.45,
     "net_value": 11.07,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -6227,7 +6230,7 @@
    {
     "code": "3339",
     "name": "泰谷",
-    "price": 37.65,
+    "price": 38.15,
     "net_value": 11.08,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -6251,7 +6254,7 @@
    {
     "code": "3354",
     "name": "律勝",
-    "price": 20.15,
+    "price": 20.3,
     "net_value": 11.08,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -6275,7 +6278,7 @@
    {
     "code": "5488",
     "name": "松普",
-    "price": 12.35,
+    "price": 12.4,
     "net_value": 11.08,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -6299,7 +6302,7 @@
    {
     "code": "1528",
     "name": "恩德",
-    "price": 18.55,
+    "price": 18.6,
     "net_value": 11.09,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -6323,7 +6326,7 @@
    {
     "code": "4903",
     "name": "聯光通",
-    "price": 34.55,
+    "price": 34.7,
     "net_value": 11.09,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -6347,7 +6350,7 @@
    {
     "code": "5381",
     "name": "光譜",
-    "price": 23.7,
+    "price": 24.45,
     "net_value": 11.1,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -6395,7 +6398,7 @@
    {
     "code": "2466",
     "name": "冠西電",
-    "price": 99.0,
+    "price": 104.0,
     "net_value": 11.17,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -6419,7 +6422,7 @@
    {
     "code": "6283",
     "name": "淳安",
-    "price": 19.9,
+    "price": 20.35,
     "net_value": 11.2,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -6443,7 +6446,7 @@
    {
     "code": "4183",
     "name": "福永生技",
-    "price": 14.1,
+    "price": 14.0,
     "net_value": 11.23,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -6467,7 +6470,7 @@
    {
     "code": "4174",
     "name": "浩鼎",
-    "price": 25.6,
+    "price": 26.9,
     "net_value": 11.3,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -6491,7 +6494,7 @@
    {
     "code": "5498",
     "name": "凱崴",
-    "price": 49.2,
+    "price": 50.4,
     "net_value": 11.32,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -6515,7 +6518,7 @@
    {
     "code": "4127",
     "name": "天良",
-    "price": 88.8,
+    "price": 88.5,
     "net_value": 11.35,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -6539,7 +6542,7 @@
    {
     "code": "6674",
     "name": "鋐寶科技",
-    "price": 14.65,
+    "price": 16.3,
     "net_value": 11.38,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -6563,7 +6566,7 @@
    {
     "code": "2540",
     "name": "愛山林",
-    "price": 46.3,
+    "price": 47.55,
     "net_value": 11.4,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -6580,7 +6583,7 @@
    {
     "code": "2734",
     "name": "易飛網",
-    "price": 15.0,
+    "price": 14.95,
     "net_value": 11.42,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -6604,7 +6607,7 @@
    {
     "code": "3322",
     "name": "建舜電",
-    "price": 11.25,
+    "price": 11.2,
     "net_value": 11.49,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -6628,7 +6631,7 @@
    {
     "code": "3520",
     "name": "華盈",
-    "price": 18.25,
+    "price": 18.6,
     "net_value": 11.55,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -6652,7 +6655,7 @@
    {
     "code": "5310",
     "name": "天剛",
-    "price": 25.5,
+    "price": 25.65,
     "net_value": 11.56,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -6666,7 +6669,7 @@
     "status": {
      "full_delivery": false,
      "disposal": null,
-     "credit": "停資停券"
+     "credit": "停止融券"
     },
     "gap": 6.56,
     "fd_threshold": 5.0,
@@ -6676,7 +6679,7 @@
    {
     "code": "8476",
     "name": "台境*",
-    "price": 19.9,
+    "price": 20.05,
     "net_value": 11.56,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -6700,7 +6703,7 @@
    {
     "code": "6885",
     "name": "全福生技",
-    "price": 20.35,
+    "price": 20.7,
     "net_value": 11.59,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -6724,7 +6727,7 @@
    {
     "code": "3092",
     "name": "鴻碩",
-    "price": 23.4,
+    "price": 24.0,
     "net_value": 11.62,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -6741,7 +6744,7 @@
    {
     "code": "1219",
     "name": "福壽",
-    "price": 11.0,
+    "price": 11.25,
     "net_value": 11.67,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -6758,7 +6761,7 @@
    {
     "code": "1455",
     "name": "集盛",
-    "price": 9.99,
+    "price": 10.1,
     "net_value": 11.67,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -6782,7 +6785,7 @@
    {
     "code": "3609",
     "name": "三一東林",
-    "price": 24.0,
+    "price": 21.9,
     "net_value": 11.68,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -6799,7 +6802,7 @@
    {
     "code": "2024",
     "name": "志聯",
-    "price": 13.2,
+    "price": 13.4,
     "net_value": 11.7,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -6823,7 +6826,7 @@
    {
     "code": "4406",
     "name": "新昕纖",
-    "price": 10.0,
+    "price": 10.05,
     "net_value": 11.7,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -6847,7 +6850,7 @@
    {
     "code": "1529",
     "name": "樂事綠能",
-    "price": 16.8,
+    "price": 17.2,
     "net_value": 11.71,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -6871,7 +6874,7 @@
    {
     "code": "1591",
     "name": "駿吉-KY",
-    "price": 35.4,
+    "price": 36.3,
     "net_value": 11.72,
     "nv_quarter": "26Q1",
     "market": "上櫃",
@@ -6912,7 +6915,7 @@
    {
     "code": "6661",
     "name": "威健生技",
-    "price": 17.0,
+    "price": 17.15,
     "net_value": 11.72,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -6936,7 +6939,7 @@
    {
     "code": "6101",
     "name": "寬魚國際",
-    "price": 38.0,
+    "price": 39.1,
     "net_value": 11.75,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -6960,7 +6963,7 @@
    {
     "code": "1470",
     "name": "大統新創",
-    "price": 23.75,
+    "price": 23.7,
     "net_value": 11.76,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -6984,7 +6987,7 @@
    {
     "code": "6244",
     "name": "茂迪",
-    "price": 25.15,
+    "price": 24.55,
     "net_value": 11.77,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -7008,7 +7011,7 @@
    {
     "code": "5202",
     "name": "力新",
-    "price": 11.8,
+    "price": 11.9,
     "net_value": 11.8,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -7025,7 +7028,7 @@
    {
     "code": "2061",
     "name": "風青",
-    "price": 48.85,
+    "price": 50.1,
     "net_value": 11.83,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -7049,7 +7052,7 @@
    {
     "code": "5521",
     "name": "工信",
-    "price": 10.65,
+    "price": 10.95,
     "net_value": 11.87,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -7073,7 +7076,7 @@
    {
     "code": "1310",
     "name": "台苯",
-    "price": 8.1,
+    "price": 8.21,
     "net_value": 11.88,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -7090,7 +7093,7 @@
    {
     "code": "2530",
     "name": "華建",
-    "price": 19.0,
+    "price": 19.9,
     "net_value": 11.88,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -7114,7 +7117,7 @@
    {
     "code": "1732",
     "name": "毛寶",
-    "price": 26.05,
+    "price": 26.3,
     "net_value": 11.89,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -7138,7 +7141,7 @@
    {
     "code": "6164",
     "name": "華興",
-    "price": 11.65,
+    "price": 12.0,
     "net_value": 11.89,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -7162,7 +7165,7 @@
    {
     "code": "8034",
     "name": "榮群",
-    "price": 18.5,
+    "price": 18.35,
     "net_value": 11.91,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -7179,7 +7182,7 @@
    {
     "code": "9962",
     "name": "有益",
-    "price": 10.15,
+    "price": 10.2,
     "net_value": 11.91,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -7203,7 +7206,7 @@
    {
     "code": "1324",
     "name": "地球",
-    "price": 9.99,
+    "price": 10.05,
     "net_value": 11.93,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -7227,7 +7230,7 @@
    {
     "code": "4714",
     "name": "永捷",
-    "price": 10.45,
+    "price": 10.75,
     "net_value": 11.93,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -7251,7 +7254,7 @@
    {
     "code": "6148",
     "name": "驊宏資",
-    "price": 27.6,
+    "price": 27.5,
     "net_value": 11.94,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -7275,7 +7278,7 @@
    {
     "code": "2901",
     "name": "欣欣",
-    "price": 23.25,
+    "price": 24.0,
     "net_value": 11.95,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -7299,7 +7302,7 @@
    {
     "code": "1316",
     "name": "上曜",
-    "price": 10.6,
+    "price": 11.2,
     "net_value": 12.01,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -7323,7 +7326,7 @@
    {
     "code": "2305",
     "name": "全友",
-    "price": 26.8,
+    "price": 26.0,
     "net_value": 12.02,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -7347,7 +7350,7 @@
    {
     "code": "4716",
     "name": "大立",
-    "price": 16.85,
+    "price": 16.95,
     "net_value": 12.07,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -7371,7 +7374,7 @@
    {
     "code": "2025",
     "name": "千興",
-    "price": 12.55,
+    "price": 12.9,
     "net_value": 12.08,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -7385,7 +7388,7 @@
     "status": {
      "full_delivery": false,
      "disposal": null,
-     "credit": "停資停券"
+     "credit": "停止融券"
     },
     "gap": 7.08,
     "fd_threshold": 5.0,
@@ -7395,7 +7398,7 @@
    {
     "code": "2939",
     "name": "永邑-KY",
-    "price": 18.8,
+    "price": 19.55,
     "net_value": 12.09,
     "nv_quarter": "26Q1",
     "market": "上市",
@@ -7412,7 +7415,7 @@
    {
     "code": "1805",
     "name": "寶徠",
-    "price": 10.15,
+    "price": 10.2,
     "net_value": 12.11,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -7436,7 +7439,7 @@
    {
     "code": "2434",
     "name": "統懋",
-    "price": 50.3,
+    "price": 48.65,
     "net_value": 12.12,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -7453,7 +7456,7 @@
    {
     "code": "3521",
     "name": "台鋼建設",
-    "price": 12.1,
+    "price": 12.15,
     "net_value": 12.14,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -7477,7 +7480,7 @@
    {
     "code": "5340",
     "name": "建榮",
-    "price": 75.8,
+    "price": 78.6,
     "net_value": 12.17,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -7501,7 +7504,7 @@
    {
     "code": "2237",
     "name": "華德動能-創",
-    "price": 26.9,
+    "price": 27.45,
     "net_value": 12.21,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -7525,7 +7528,7 @@
    {
     "code": "2390",
     "name": "云辰",
-    "price": 10.1,
+    "price": 10.35,
     "net_value": 12.23,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -7542,7 +7545,7 @@
    {
     "code": "8940",
     "name": "新天地",
-    "price": 15.2,
+    "price": 15.3,
     "net_value": 12.24,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -7559,14 +7562,14 @@
    {
     "code": "3646",
     "name": "艾恩特",
-    "price": 23.0,
+    "price": 23.95,
     "net_value": 12.28,
     "nv_quarter": "26Q2",
     "market": "上櫃",
     "status": {
      "full_delivery": false,
      "disposal": null,
-     "credit": "停止融券"
+     "credit": "可信用交易"
     },
     "gap": 7.28,
     "fd_threshold": 5.0,
@@ -7576,7 +7579,7 @@
    {
     "code": "1432",
     "name": "大魯閣",
-    "price": 15.0,
+    "price": 15.05,
     "net_value": 12.29,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -7593,7 +7596,7 @@
    {
     "code": "1467",
     "name": "南緯",
-    "price": 8.31,
+    "price": 8.65,
     "net_value": 12.3,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -7617,7 +7620,7 @@
    {
     "code": "6465",
     "name": "威潤",
-    "price": 46.1,
+    "price": 46.0,
     "net_value": 12.31,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -7641,7 +7644,7 @@
    {
     "code": "3062",
     "name": "建漢",
-    "price": 20.3,
+    "price": 20.55,
     "net_value": 12.32,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -7658,7 +7661,7 @@
    {
     "code": "2538",
     "name": "基泰",
-    "price": 9.02,
+    "price": 9.13,
     "net_value": 12.33,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -7675,7 +7678,7 @@
    {
     "code": "3666",
     "name": "光耀",
-    "price": 25.0,
+    "price": 25.15,
     "net_value": 12.38,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -7692,7 +7695,7 @@
    {
     "code": "3067",
     "name": "全域",
-    "price": 17.1,
+    "price": 17.3,
     "net_value": 12.39,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -7716,7 +7719,7 @@
    {
     "code": "6118",
     "name": "建達",
-    "price": 15.3,
+    "price": 15.4,
     "net_value": 12.42,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -7740,7 +7743,7 @@
    {
     "code": "3095",
     "name": "及成",
-    "price": 36.7,
+    "price": 36.55,
     "net_value": 12.43,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -7764,7 +7767,7 @@
    {
     "code": "4530",
     "name": "宏易",
-    "price": 26.8,
+    "price": 26.1,
     "net_value": 12.44,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -7781,7 +7784,7 @@
    {
     "code": "1417",
     "name": "嘉裕",
-    "price": 8.18,
+    "price": 8.31,
     "net_value": 12.45,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -7805,7 +7808,7 @@
    {
     "code": "2633",
     "name": "台灣高鐵",
-    "price": 25.9,
+    "price": 26.15,
     "net_value": 12.45,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -7822,7 +7825,7 @@
    {
     "code": "3276",
     "name": "宇環",
-    "price": 14.45,
+    "price": 14.35,
     "net_value": 12.46,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -7846,7 +7849,7 @@
    {
     "code": "3094",
     "name": "聯傑",
-    "price": 36.25,
+    "price": 35.75,
     "net_value": 12.49,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -7870,7 +7873,7 @@
    {
     "code": "4960",
     "name": "誠美材",
-    "price": 20.05,
+    "price": 20.9,
     "net_value": 12.5,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -7887,7 +7890,7 @@
    {
     "code": "5278",
     "name": "尚凡*",
-    "price": 24.3,
+    "price": 24.4,
     "net_value": 12.5,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -7904,7 +7907,7 @@
    {
     "code": "6616",
     "name": "特昇-KY",
-    "price": 8.55,
+    "price": 8.6,
     "net_value": 12.5,
     "nv_quarter": "26Q1",
     "market": "上櫃",
@@ -7921,7 +7924,7 @@
    {
     "code": "7777",
     "name": "能率亞洲",
-    "price": 37.55,
+    "price": 40.9,
     "net_value": 12.51,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -7945,7 +7948,7 @@
    {
     "code": "1611",
     "name": "中電",
-    "price": 11.95,
+    "price": 12.3,
     "net_value": 12.52,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -7969,7 +7972,7 @@
    {
     "code": "2241",
     "name": "艾姆勒",
-    "price": 34.55,
+    "price": 35.1,
     "net_value": 12.53,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -7986,7 +7989,7 @@
    {
     "code": "3002",
     "name": "歐格",
-    "price": 16.65,
+    "price": 17.0,
     "net_value": 12.6,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -8003,7 +8006,7 @@
    {
     "code": "1710",
     "name": "東聯",
-    "price": 14.9,
+    "price": 15.85,
     "net_value": 12.65,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -8020,7 +8023,7 @@
    {
     "code": "5460",
     "name": "同協",
-    "price": 16.0,
+    "price": 16.15,
     "net_value": 12.67,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -8037,7 +8040,7 @@
    {
     "code": "8111",
     "name": "立碁",
-    "price": 55.2,
+    "price": 65.0,
     "net_value": 12.67,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -8061,7 +8064,7 @@
    {
     "code": "2109",
     "name": "華豐",
-    "price": 14.55,
+    "price": 14.85,
     "net_value": 12.68,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -8085,7 +8088,7 @@
    {
     "code": "6222",
     "name": "立軒",
-    "price": 20.1,
+    "price": 20.15,
     "net_value": 12.68,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -8102,7 +8105,7 @@
    {
     "code": "6499",
     "name": "益安",
-    "price": 61.6,
+    "price": 63.5,
     "net_value": 12.69,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -8119,7 +8122,7 @@
    {
     "code": "6130",
     "name": "上亞科技",
-    "price": 28.4,
+    "price": 27.45,
     "net_value": 12.72,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -8143,7 +8146,7 @@
    {
     "code": "1464",
     "name": "得力",
-    "price": 10.1,
+    "price": 10.3,
     "net_value": 12.74,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -8160,7 +8163,7 @@
    {
     "code": "8076",
     "name": "伍豐",
-    "price": 23.15,
+    "price": 23.25,
     "net_value": 12.75,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -8177,7 +8180,7 @@
    {
     "code": "2426",
     "name": "鼎元",
-    "price": 68.0,
+    "price": 82.2,
     "net_value": 12.76,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -8201,7 +8204,7 @@
    {
     "code": "5251",
     "name": "天鉞電",
-    "price": 24.9,
+    "price": 25.0,
     "net_value": 12.79,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -8225,7 +8228,7 @@
    {
     "code": "2243",
     "name": "宏旭-KY",
-    "price": 40.0,
+    "price": 40.1,
     "net_value": 12.81,
     "nv_quarter": "26Q1",
     "market": "上市",
@@ -8242,7 +8245,7 @@
    {
     "code": "2889",
     "name": "國票金",
-    "price": 15.55,
+    "price": 15.75,
     "net_value": 12.81,
     "nv_quarter": "26Q1",
     "market": "上市",
@@ -8259,7 +8262,7 @@
    {
     "code": "6794",
     "name": "向榮生技",
-    "price": 68.7,
+    "price": 71.8,
     "net_value": 12.86,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -8276,7 +8279,7 @@
    {
     "code": "9955",
     "name": "佳龍",
-    "price": 24.2,
+    "price": 24.9,
     "net_value": 12.88,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -8300,7 +8303,7 @@
    {
     "code": "3623",
     "name": "富晶通",
-    "price": 21.55,
+    "price": 21.7,
     "net_value": 12.89,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -8324,7 +8327,7 @@
    {
     "code": "1220",
     "name": "台榮",
-    "price": 10.9,
+    "price": 10.95,
     "net_value": 12.93,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -8341,7 +8344,7 @@
    {
     "code": "2911",
     "name": "麗嬰房",
-    "price": 6.66,
+    "price": 6.72,
     "net_value": 12.95,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -8358,7 +8361,7 @@
    {
     "code": "8071",
     "name": "能率網通",
-    "price": 24.1,
+    "price": 24.05,
     "net_value": 12.98,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -8382,7 +8385,7 @@
    {
     "code": "2440",
     "name": "太空梭",
-    "price": 13.7,
+    "price": 14.05,
     "net_value": 12.99,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -8399,7 +8402,7 @@
    {
     "code": "2926",
     "name": "誠品生活",
-    "price": 30.4,
+    "price": 30.0,
     "net_value": 12.99,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -8416,7 +8419,7 @@
    {
     "code": "2547",
     "name": "日勝生",
-    "price": 10.1,
+    "price": 10.25,
     "net_value": 13.01,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -8433,14 +8436,14 @@
    {
     "code": "3434",
     "name": "哲固",
-    "price": 30.75,
+    "price": 31.1,
     "net_value": 13.04,
     "nv_quarter": "26Q2",
     "market": "上櫃",
     "status": {
      "full_delivery": false,
      "disposal": null,
-     "credit": "停止融券"
+     "credit": "可信用交易"
     },
     "gap": 8.04,
     "fd_threshold": 5.0,
@@ -8450,7 +8453,7 @@
    {
     "code": "3541",
     "name": "西柏",
-    "price": 21.75,
+    "price": 22.0,
     "net_value": 13.04,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -8467,7 +8470,7 @@
    {
     "code": "6116",
     "name": "彩晶",
-    "price": 14.25,
+    "price": 13.8,
     "net_value": 13.04,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -8491,7 +8494,7 @@
    {
     "code": "6133",
     "name": "金橋",
-    "price": 22.15,
+    "price": 22.2,
     "net_value": 13.04,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -8508,7 +8511,7 @@
    {
     "code": "8908",
     "name": "欣雄",
-    "price": 39.6,
+    "price": 40.0,
     "net_value": 13.04,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -8525,7 +8528,7 @@
    {
     "code": "1459",
     "name": "聯發",
-    "price": 14.0,
+    "price": 14.7,
     "net_value": 13.06,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -8549,7 +8552,7 @@
    {
     "code": "5902",
     "name": "德記",
-    "price": 34.4,
+    "price": 34.7,
     "net_value": 13.08,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -8566,7 +8569,7 @@
    {
     "code": "4994",
     "name": "傳奇",
-    "price": 82.1,
+    "price": 83.2,
     "net_value": 13.09,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -8583,7 +8586,7 @@
    {
     "code": "6512",
     "name": "啟發電",
-    "price": 19.95,
+    "price": 20.5,
     "net_value": 13.12,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -8600,7 +8603,7 @@
    {
     "code": "2369",
     "name": "菱生",
-    "price": 30.6,
+    "price": 30.75,
     "net_value": 13.13,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -8617,7 +8620,7 @@
    {
     "code": "5328",
     "name": "華容",
-    "price": 63.1,
+    "price": 61.4,
     "net_value": 13.15,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -8641,7 +8644,7 @@
    {
     "code": "3296",
     "name": "勝德",
-    "price": 24.4,
+    "price": 24.0,
     "net_value": 13.22,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -8658,7 +8661,7 @@
    {
     "code": "9907",
     "name": "統一實",
-    "price": 15.05,
+    "price": 15.3,
     "net_value": 13.22,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -8675,7 +8678,7 @@
    {
     "code": "1789",
     "name": "神隆",
-    "price": 18.95,
+    "price": 19.45,
     "net_value": 13.23,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -8692,7 +8695,7 @@
    {
     "code": "1305",
     "name": "華夏",
-    "price": 11.75,
+    "price": 12.25,
     "net_value": 13.25,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -8709,7 +8712,7 @@
    {
     "code": "2033",
     "name": "佳大",
-    "price": 22.5,
+    "price": 22.0,
     "net_value": 13.25,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -8726,7 +8729,7 @@
    {
     "code": "8440",
     "name": "綠電",
-    "price": 20.3,
+    "price": 20.25,
     "net_value": 13.26,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -8743,7 +8746,7 @@
    {
     "code": "9902",
     "name": "台火",
-    "price": 13.65,
+    "price": 13.85,
     "net_value": 13.26,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -8767,14 +8770,14 @@
    {
     "code": "1453",
     "name": "大將",
-    "price": 11.15,
+    "price": 11.3,
     "net_value": 13.27,
     "nv_quarter": "26Q2",
     "market": "上市",
     "status": {
      "full_delivery": false,
      "disposal": null,
-     "credit": "可信用交易"
+     "credit": "停止融券"
     },
     "gap": 8.27,
     "fd_threshold": 5.0,
@@ -8799,9 +8802,33 @@
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3150"
    },
    {
+    "code": "1337",
+    "name": "再生-KY",
+    "price": 4.68,
+    "net_value": 13.32,
+    "nv_quarter": "26Q2",
+    "market": "上市",
+    "new_report": {
+     "delta": -0.29,
+     "prev_nv": 13.61,
+     "prev_q": "26Q1",
+     "since": "2026-08-22",
+     "crossing": null
+    },
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "可信用交易"
+    },
+    "gap": 8.32,
+    "fd_threshold": 5.0,
+    "credit_eligibility": null,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1337"
+   },
+   {
     "code": "7723",
     "name": "築間",
-    "price": 19.15,
+    "price": 19.2,
     "net_value": 13.35,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -8818,7 +8845,7 @@
    {
     "code": "8927",
     "name": "北基",
-    "price": 19.9,
+    "price": 20.4,
     "net_value": 13.35,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -8835,7 +8862,7 @@
    {
     "code": "6174",
     "name": "安碁",
-    "price": 44.75,
+    "price": 45.15,
     "net_value": 13.37,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -8852,7 +8879,7 @@
    {
     "code": "5321",
     "name": "美而快",
-    "price": 71.0,
+    "price": 72.9,
     "net_value": 13.38,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -8865,7 +8892,10 @@
     },
     "status": {
      "full_delivery": false,
-     "disposal": null,
+     "disposal": {
+      "reason": "最近10個營業日內有6個營業日",
+      "period": "1150824~1150828"
+     },
      "credit": "可信用交易"
     },
     "gap": 8.38,
@@ -8876,7 +8906,7 @@
    {
     "code": "2064",
     "name": "晉椿",
-    "price": 12.45,
+    "price": 12.5,
     "net_value": 13.39,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -8893,7 +8923,7 @@
    {
     "code": "2012",
     "name": "春雨",
-    "price": 14.85,
+    "price": 15.0,
     "net_value": 13.44,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -8927,7 +8957,7 @@
    {
     "code": "6482",
     "name": "弘煜科",
-    "price": 28.5,
+    "price": 28.75,
     "net_value": 13.45,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -8944,7 +8974,7 @@
    {
     "code": "6708",
     "name": "天擎",
-    "price": 39.75,
+    "price": 38.85,
     "net_value": 13.45,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -8961,7 +8991,7 @@
    {
     "code": "1108",
     "name": "幸福",
-    "price": 11.7,
+    "price": 11.8,
     "net_value": 13.51,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -8978,7 +9008,7 @@
    {
     "code": "1714",
     "name": "和桐",
-    "price": 16.75,
+    "price": 17.0,
     "net_value": 13.52,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -8995,7 +9025,7 @@
    {
     "code": "1309",
     "name": "台達化",
-    "price": 12.7,
+    "price": 13.4,
     "net_value": 13.53,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -9012,7 +9042,7 @@
    {
     "code": "4147",
     "name": "中裕",
-    "price": 62.4,
+    "price": 63.1,
     "net_value": 13.58,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -9027,26 +9057,9 @@
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4147"
    },
    {
-    "code": "1337",
-    "name": "再生-KY",
-    "price": 4.58,
-    "net_value": 13.61,
-    "nv_quarter": "26Q1",
-    "market": "上市",
-    "status": {
-     "full_delivery": false,
-     "disposal": null,
-     "credit": "可信用交易"
-    },
-    "gap": 8.61,
-    "fd_threshold": 5.0,
-    "credit_eligibility": null,
-    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1337"
-   },
-   {
     "code": "2614",
     "name": "東森",
-    "price": 18.2,
+    "price": 18.8,
     "net_value": 13.61,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -9063,7 +9076,7 @@
    {
     "code": "8222",
     "name": "寶一",
-    "price": 39.45,
+    "price": 39.5,
     "net_value": 13.61,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -9080,7 +9093,7 @@
    {
     "code": "1806",
     "name": "冠軍",
-    "price": 8.0,
+    "price": 8.06,
     "net_value": 13.62,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -9097,7 +9110,7 @@
    {
     "code": "8421",
     "name": "旭源",
-    "price": 13.15,
+    "price": 13.7,
     "net_value": 13.64,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -9114,7 +9127,7 @@
    {
     "code": "3025",
     "name": "星通",
-    "price": 56.4,
+    "price": 56.1,
     "net_value": 13.68,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -9131,7 +9144,7 @@
    {
     "code": "6530",
     "name": "創威",
-    "price": 79.9,
+    "price": 82.1,
     "net_value": 13.68,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -9165,7 +9178,7 @@
    {
     "code": "1617",
     "name": "榮星",
-    "price": 17.35,
+    "price": 17.55,
     "net_value": 13.72,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -9182,7 +9195,7 @@
    {
     "code": "1742",
     "name": "台蠟",
-    "price": 18.0,
+    "price": 17.8,
     "net_value": 13.73,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -9199,7 +9212,7 @@
    {
     "code": "8068",
     "name": "全達",
-    "price": 16.95,
+    "price": 17.05,
     "net_value": 13.74,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -9216,7 +9229,7 @@
    {
     "code": "5276",
     "name": "達輝-KY",
-    "price": 19.65,
+    "price": 19.95,
     "net_value": 13.75,
     "nv_quarter": "26Q1",
     "market": "上櫃",
@@ -9233,7 +9246,7 @@
    {
     "code": "2332",
     "name": "友訊",
-    "price": 20.7,
+    "price": 20.2,
     "net_value": 13.76,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -9250,7 +9263,7 @@
    {
     "code": "4911",
     "name": "德英",
-    "price": 27.75,
+    "price": 28.9,
     "net_value": 13.76,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -9267,7 +9280,7 @@
    {
     "code": "2032",
     "name": "新鋼",
-    "price": 16.8,
+    "price": 17.3,
     "net_value": 13.84,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -9284,7 +9297,7 @@
    {
     "code": "3268",
     "name": "海德威",
-    "price": 18.4,
+    "price": 17.85,
     "net_value": 13.86,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -9301,7 +9314,7 @@
    {
     "code": "2365",
     "name": "昆盈",
-    "price": 30.05,
+    "price": 30.6,
     "net_value": 13.89,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -9318,7 +9331,7 @@
    {
     "code": "1780",
     "name": "立弘",
-    "price": 24.8,
+    "price": 25.1,
     "net_value": 13.9,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -9335,7 +9348,7 @@
    {
     "code": "4538",
     "name": "大詠城",
-    "price": 17.25,
+    "price": 17.5,
     "net_value": 13.9,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -9352,7 +9365,7 @@
    {
     "code": "5245",
     "name": "智晶",
-    "price": 23.25,
+    "price": 23.45,
     "net_value": 14.01,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -9369,7 +9382,7 @@
    {
     "code": "3071",
     "name": "協禧",
-    "price": 24.4,
+    "price": 24.65,
     "net_value": 14.03,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -9386,7 +9399,7 @@
    {
     "code": "6548",
     "name": "長科*",
-    "price": 71.1,
+    "price": 69.1,
     "net_value": 14.03,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -9410,7 +9423,7 @@
    {
     "code": "6578",
     "name": "達邦蛋白",
-    "price": 18.0,
+    "price": 18.45,
     "net_value": 14.03,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -9427,7 +9440,7 @@
    {
     "code": "1466",
     "name": "聚隆",
-    "price": 16.35,
+    "price": 16.2,
     "net_value": 14.1,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -9444,7 +9457,7 @@
    {
     "code": "4102",
     "name": "永日",
-    "price": 18.9,
+    "price": 19.1,
     "net_value": 14.14,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -9461,7 +9474,7 @@
    {
     "code": "3607",
     "name": "谷崧",
-    "price": 13.9,
+    "price": 14.05,
     "net_value": 14.15,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -9478,7 +9491,7 @@
    {
     "code": "4167",
     "name": "松瑞藥",
-    "price": 19.85,
+    "price": 20.95,
     "net_value": 14.15,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -9519,7 +9532,7 @@
    {
     "code": "2482",
     "name": "連宇",
-    "price": 15.6,
+    "price": 16.15,
     "net_value": 14.19,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -9536,7 +9549,7 @@
    {
     "code": "4720",
     "name": "德淵",
-    "price": 17.7,
+    "price": 18.0,
     "net_value": 14.21,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -9553,7 +9566,7 @@
    {
     "code": "2908",
     "name": "特力",
-    "price": 21.6,
+    "price": 21.95,
     "net_value": 14.22,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -9570,7 +9583,7 @@
    {
     "code": "3535",
     "name": "晶彩科",
-    "price": 87.1,
+    "price": 86.8,
     "net_value": 14.22,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -9587,7 +9600,7 @@
    {
     "code": "6185",
     "name": "幃翔",
-    "price": 13.2,
+    "price": 12.8,
     "net_value": 14.28,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -9604,7 +9617,7 @@
    {
     "code": "2073",
     "name": "雄順",
-    "price": 26.5,
+    "price": 26.3,
     "net_value": 14.32,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -9621,7 +9634,7 @@
    {
     "code": "3284",
     "name": "太普高",
-    "price": 20.6,
+    "price": 20.75,
     "net_value": 14.33,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -9638,7 +9651,7 @@
    {
     "code": "8431",
     "name": "匯鑽科",
-    "price": 44.5,
+    "price": 46.6,
     "net_value": 14.33,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -9655,7 +9668,7 @@
    {
     "code": "3630",
     "name": "新鉅科",
-    "price": 25.15,
+    "price": 25.5,
     "net_value": 14.36,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -9672,7 +9685,7 @@
    {
     "code": "2401",
     "name": "凌陽",
-    "price": 25.7,
+    "price": 25.5,
     "net_value": 14.37,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -9689,7 +9702,7 @@
    {
     "code": "2836",
     "name": "高雄銀",
-    "price": 11.9,
+    "price": 12.1,
     "net_value": 14.38,
     "nv_quarter": "26Q1",
     "market": "上市",
@@ -9706,7 +9719,7 @@
    {
     "code": "3055",
     "name": "蔚華科",
-    "price": 115.0,
+    "price": 108.5,
     "net_value": 14.39,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -9723,7 +9736,7 @@
    {
     "code": "4976",
     "name": "佳凌",
-    "price": 37.1,
+    "price": 38.0,
     "net_value": 14.43,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -9740,7 +9753,7 @@
    {
     "code": "6901",
     "name": "鑽石投資",
-    "price": 16.2,
+    "price": 17.3,
     "net_value": 14.43,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -9764,7 +9777,7 @@
    {
     "code": "2515",
     "name": "中工",
-    "price": 11.85,
+    "price": 12.0,
     "net_value": 14.44,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -9781,7 +9794,7 @@
    {
     "code": "5014",
     "name": "建錩",
-    "price": 10.1,
+    "price": 10.25,
     "net_value": 14.45,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -9798,7 +9811,7 @@
    {
     "code": "5490",
     "name": "同亨",
-    "price": 29.8,
+    "price": 29.35,
     "net_value": 14.48,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -9815,7 +9828,7 @@
    {
     "code": "2340",
     "name": "台亞",
-    "price": 29.9,
+    "price": 31.2,
     "net_value": 14.5,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -9849,7 +9862,7 @@
    {
     "code": "4207",
     "name": "環泰",
-    "price": 20.6,
+    "price": 20.8,
     "net_value": 14.56,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -9866,7 +9879,7 @@
    {
     "code": "6015",
     "name": "宏遠證",
-    "price": 15.45,
+    "price": 15.9,
     "net_value": 14.56,
     "nv_quarter": "26Q1",
     "market": "上櫃",
@@ -9883,7 +9896,7 @@
    {
     "code": "4414",
     "name": "如興",
-    "price": 8.31,
+    "price": 8.48,
     "net_value": 14.59,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -9900,7 +9913,7 @@
    {
     "code": "8472",
     "name": "夠麻吉",
-    "price": 69.3,
+    "price": 67.6,
     "net_value": 14.59,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -9917,7 +9930,7 @@
    {
     "code": "8923",
     "name": "時報",
-    "price": 18.65,
+    "price": 18.6,
     "net_value": 14.59,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -9932,9 +9945,33 @@
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8923"
    },
    {
+    "code": "5906",
+    "name": "台南-KY",
+    "price": 38.0,
+    "net_value": 14.6,
+    "nv_quarter": "26Q2",
+    "market": "上市",
+    "new_report": {
+     "delta": -1.71,
+     "prev_nv": 16.31,
+     "prev_q": "26Q1",
+     "since": "2026-08-22",
+     "crossing": null
+    },
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "可信用交易"
+    },
+    "gap": 9.6,
+    "fd_threshold": 5.0,
+    "credit_eligibility": null,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=5906"
+   },
+   {
     "code": "6767",
     "name": "台微醫",
-    "price": 25.3,
+    "price": 24.6,
     "net_value": 14.6,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -9951,7 +9988,7 @@
    {
     "code": "2342",
     "name": "茂矽",
-    "price": 38.8,
+    "price": 38.65,
     "net_value": 14.62,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -9968,7 +10005,7 @@
    {
     "code": "3631",
     "name": "晟楠",
-    "price": 41.25,
+    "price": 39.7,
     "net_value": 14.62,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -9985,7 +10022,7 @@
    {
     "code": "2845",
     "name": "遠東銀",
-    "price": 13.5,
+    "price": 13.65,
     "net_value": 14.63,
     "nv_quarter": "26Q1",
     "market": "上市",
@@ -10002,7 +10039,7 @@
    {
     "code": "3285",
     "name": "微端",
-    "price": 36.65,
+    "price": 36.8,
     "net_value": 14.65,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -10019,7 +10056,7 @@
    {
     "code": "6934",
     "name": "心誠鎂",
-    "price": 73.0,
+    "price": 72.0,
     "net_value": 14.66,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -10036,7 +10073,7 @@
    {
     "code": "2611",
     "name": "志信",
-    "price": 15.5,
+    "price": 17.2,
     "net_value": 14.69,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -10053,7 +10090,7 @@
    {
     "code": "5450",
     "name": "南良",
-    "price": 15.15,
+    "price": 15.25,
     "net_value": 14.69,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -10070,7 +10107,7 @@
    {
     "code": "5452",
     "name": "佶優",
-    "price": 26.7,
+    "price": 27.05,
     "net_value": 14.71,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -10087,7 +10124,7 @@
    {
     "code": "2897",
     "name": "王道銀行",
-    "price": 10.15,
+    "price": 10.25,
     "net_value": 14.72,
     "nv_quarter": "26Q1",
     "market": "上市",
@@ -10121,7 +10158,7 @@
    {
     "code": "3272",
     "name": "東碩",
-    "price": 14.1,
+    "price": 14.0,
     "net_value": 14.74,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -10138,7 +10175,7 @@
    {
     "code": "2028",
     "name": "威致",
-    "price": 15.55,
+    "price": 15.9,
     "net_value": 14.77,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -10155,7 +10192,7 @@
    {
     "code": "6910",
     "name": "德鴻",
-    "price": 24.2,
+    "price": 24.5,
     "net_value": 14.78,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -10172,7 +10209,7 @@
    {
     "code": "3205",
     "name": "佰研",
-    "price": 48.25,
+    "price": 48.2,
     "net_value": 14.82,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -10189,7 +10226,7 @@
    {
     "code": "6496",
     "name": "科懋",
-    "price": 25.0,
+    "price": 24.2,
     "net_value": 14.83,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -10206,7 +10243,7 @@
    {
     "code": "3232",
     "name": "昱捷",
-    "price": 19.5,
+    "price": 19.9,
     "net_value": 14.84,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -10223,7 +10260,7 @@
    {
     "code": "4729",
     "name": "熒茂",
-    "price": 18.9,
+    "price": 19.0,
     "net_value": 14.85,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -10240,7 +10277,7 @@
    {
     "code": "1813",
     "name": "寶利徠",
-    "price": 11.4,
+    "price": 11.5,
     "net_value": 14.87,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -10257,7 +10294,7 @@
    {
     "code": "5272",
     "name": "笙科",
-    "price": 17.25,
+    "price": 16.9,
     "net_value": 14.88,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -10274,7 +10311,7 @@
    {
     "code": "4923",
     "name": "力士",
-    "price": 53.4,
+    "price": 51.6,
     "net_value": 14.91,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -10291,7 +10328,7 @@
    {
     "code": "6418",
     "name": "詠昇",
-    "price": 32.25,
+    "price": 33.15,
     "net_value": 14.92,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -10308,7 +10345,7 @@
    {
     "code": "6698",
     "name": "旭暉應材",
-    "price": 31.0,
+    "price": 31.4,
     "net_value": 14.92,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -10325,7 +10362,7 @@
    {
     "code": "6134",
     "name": "萬旭",
-    "price": 27.75,
+    "price": 27.8,
     "net_value": 14.94,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -10342,7 +10379,7 @@
    {
     "code": "6606",
     "name": "建德工業",
-    "price": 26.15,
+    "price": 25.65,
     "net_value": 14.95,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -10359,7 +10396,7 @@
    {
     "code": "1463",
     "name": "強盛新",
-    "price": 17.45,
+    "price": 17.6,
     "net_value": 14.96,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -10376,7 +10413,7 @@
    {
     "code": "6259",
     "name": "百徽",
-    "price": 30.6,
+    "price": 29.65,
     "net_value": 14.96,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -10393,7 +10430,7 @@
    {
     "code": "8066",
     "name": "來思達",
-    "price": 14.65,
+    "price": 14.7,
     "net_value": 14.97,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -10410,7 +10447,7 @@
    {
     "code": "8215",
     "name": "明基材",
-    "price": 23.9,
+    "price": 23.95,
     "net_value": 14.97,
     "nv_quarter": "26Q2",
     "market": "上市",
@@ -10427,7 +10464,7 @@
    {
     "code": "3083",
     "name": "網龍",
-    "price": 23.35,
+    "price": 23.4,
     "net_value": 14.98,
     "nv_quarter": "26Q2",
     "market": "上櫃",
@@ -10444,7 +10481,7 @@
    {
     "code": "2419",
     "name": "仲琦",
-    "price": 24.0,
+    "price": 24.65,
     "net_value": 14.99,
     "nv_quarter": "26Q2",
     "market": "上市",
