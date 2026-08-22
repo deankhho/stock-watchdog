@@ -11,12 +11,21 @@ fetch_trading_changes.py — 每日抓「變更交易方法／信用交易」公
      年報截止日（3/31）後 7 個日曆日／5 個營業日，同一批股票精確落在同一天
      （TWSE 分批作業的證據）。跟第9條的「三個工作日」大致吻合。
   3. 因此不做一次性「查本季」的歷史回溯（來源系統 mopsov.twse.com.tw/server-java/t39sb01
-     的日期範圍只有「本日／一週內／一月內」三選一，查不到一個月以前），改成**每天查
-     「本日公告」**，逐日累積寫進本檔，跑得夠久自然涵蓋一整季——架構跟 fetch_sbl.py／
-     fetch_warrants.py 同一套 state/history 模式。
+     的日期範圍只有「本日／一週內／一月內」三選一，查不到一個月以前），改成每天查，
+     逐日累積寫進本檔，跑得夠久自然涵蓋一整季——架構跟 fetch_sbl.py／fetch_warrants.py
+     同一套 state/history 模式。
+
+2026-08-22 修正（發現 8/21 排程當天失敗，`type1=0`「本日公告」沒有補抓機制，那天的
+公告永久漏掉，使用者發現「力麗/精金恢復信用交易」公告沒顯示在網站上）：改用
+`type1=1`（實測回應涵蓋約 07/06~08/21，遠超過字面「一週內」，但範圍夠寬即可）
+取代 `type1=0`，靠既有 `_dedup_key()` 去重機制自然吸收單日失敗——下次成功執行時，
+之前漏掉那天的公告會在回應範圍內被重新看到、判斷是新資料、正常收錄，不需要額外的
+補抓/回溯邏輯。多抓的資料量（171→804列，未篩選前）純粹是多一次解析，無額外外部
+請求成本，dedup 保證不會重複累積。
 
 資料源：mopsov.twse.com.tw/server-java/t39sb01（「臺灣證券交易所 & 證券櫃檯買賣中心 公告」，
-Big5/cp950 編碼舊式系統，非正式 API，但實測可用；type1=0 為「本日公告」）。
+Big5/cp950 編碼舊式系統，非正式 API，但實測可用；`type1=1`＝涵蓋近期較寬時間範圍，
+非字面「本日」，見上方 2026-08-22 修正說明）。
 
 篩選規則（使用者明確要求：不要處置股／注意股，只要因財報而變更交易方法及信用交易的變化）：
   - 排除 部門='監視部'（處置有價證券、注意交易資訊等都在這個部門）
@@ -127,9 +136,12 @@ def is_relevant(row: dict) -> bool:
     return any(kw in content for kw in KEYWORDS)
 
 
-def fetch_today_rows() -> list:
-    """→ list[dict]（未篩選）。拋例外代表抓取失敗（HTTP/逾時/解析）。"""
-    r = requests.post(URL, data={"type0": "0", "type1": "0"}, timeout=TIMEOUT)
+def fetch_recent_rows() -> list:
+    """→ list[dict]（未篩選）。拋例外代表抓取失敗（HTTP/逾時/解析）。
+    2026-08-22 起用 type1=1（實測涵蓋約近1.5個月）取代 type1=0（本日公告）——
+    後者若當天執行失敗就永久漏抓，前者靠呼叫端 run() 既有 dedup 機制自然補回
+    漏抓的日子，不需要額外邏輯，見檔案開頭 2026-08-22 修正說明。"""
+    r = requests.post(URL, data={"type0": "0", "type1": "1"}, timeout=TIMEOUT)
     r.raise_for_status()
     text = r.content.decode("cp950", errors="replace")
     return parse_bulletin(text)
@@ -166,7 +178,7 @@ def build_degraded(prev: dict, reason: str) -> dict:
            "matched": matched}
 
 
-def run(fetch_fn=fetch_today_rows, prev: dict = None) -> dict:
+def run(fetch_fn=fetch_recent_rows, prev: dict = None) -> dict:
     """核心邏輯，純函式方便 selftest 注入。0 筆符合關鍵字是正常狀態，不是失敗
     （跟 fetch_sbl.py／fetch_warrants.py 的「空清單=失敗」刻意不同，見檔案開頭說明）。"""
     prev = prev if prev is not None else load_prev()
@@ -197,7 +209,7 @@ def run(fetch_fn=fetch_today_rows, prev: dict = None) -> dict:
 
 def main():
     prev = load_prev()
-    out = run(fetch_today_rows, prev)
+    out = run(fetch_recent_rows, prev)
     write_atomic(out)
     if out["state"] != "ok":
         print(f"::warning::{out['reason']}，state={out['state']}")
@@ -337,11 +349,15 @@ def selftest():
     assert out["matched"] == prev_good["matched"], out
     assert out["fetched_at"] == "2026-08-18", out         # 舊時間戳，不可假裝今天抓過
 
-    # === 8. 本機 http.server：端到端測 fetch_today_rows() 真的能解析 cp950 回應 ===
+    # === 8. 本機 http.server：端到端測 fetch_recent_rows() 真的能解析 cp950 回應，
+    #    且真的送出 type1=1（2026-08-22 修正核心，不能退回 type1=0 本日公告） ===
     fixture_big5 = fixture_html.encode("cp950")
+    captured_body = {}
 
     class Handler(http.server.BaseHTTPRequestHandler):
         def do_POST(self):
+            length = int(self.headers.get("Content-Length", 0))
+            captured_body["raw"] = self.rfile.read(length).decode("utf-8")
             self.send_response(200)
             self.send_header("Content-Type", "text/html; charset=big5")
             self.send_header("Content-Length", str(len(fixture_big5)))
@@ -357,9 +373,10 @@ def selftest():
     orig_url = URL
     URL = f"http://127.0.0.1:{port}"
     try:
-        rows = fetch_today_rows()
+        rows = fetch_recent_rows()
         assert len(rows) == 2, rows
         assert "全額交割" in rows[0]["content"], rows[0]
+        assert "type1=1" in captured_body["raw"], captured_body   # 不可退回 type1=0
     finally:
         URL = orig_url
         srv.shutdown()
