@@ -104,28 +104,52 @@ def parse_bulletin(html_text: str) -> list:
 # 法規公文才知道是哪幾檔股票。真實公告常見「一、二、三、」編號複合列出多家公司、
 # 各自不同動作（見 selftest 1b 的真實案例：同一則公告同時有停止買賣/列為變更交易方法/
 # 恢復交易方法三種動作，分屬三檔不同股票，不能只抓第一個代號了事）。
+#
+# 2026-08-22 追加第二種真實格式（selftest 1c，9919康那香/2022聚亨案例）：信用交易類公告
+# 常用阿拉伯數字編號「1.」「2.」而非中文數字「一、」，且股票用半形括號「名稱(代號)」，
+# 沒有「代號：」關鍵字；來源文字換行轉空白還會把公司名切開（「聚亨」→「聚 亨」），
+# 比對前要去空白。這種編號的段落標題常超過 20 字放不進 ACTION_HEADING_RE，改用關鍵字
+# （暫停/停止→停止融資融券、恢復→恢復融資融券）判斷動作。
 NUMBERED_ITEM_RE = re.compile(r"[一二三四五六七八九十]+、")
+ARABIC_NUMBERED_ITEM_RE = re.compile(r"(?<=[：:、。\s])\d{1,2}\.(?!\d)")
 ACTION_HEADING_RE = re.compile(r"^[一二三四五六七八九十]+、\s*([^：:]{2,20})[：:]")
 CODE_NAME_RE = re.compile(r"([^、，。：:\s（）]{2,30})（代號[：:]\s*(\d{4})\s*）")
+CODE_NAME_RE2 = re.compile(r"([^\s、，。：:()（）]{1,6}(?:\s[^\s、，。：:()（）]{1,6})?)\((\d{4})\)")
+
+
+def _credit_action_from_heading(text: str):
+    if "恢復" in text:
+        return "恢復融資融券"
+    if "暫停" in text or "停止" in text:
+        return "停止融資融券"
+    return None
+
+
+def _refs_in_segment(seg: str, action) -> list:
+    refs = []
+    for name_m in CODE_NAME_RE.finditer(seg):
+        refs.append({"code": name_m.group(2), "name": name_m.group(1).replace(" ", ""), "action": action})
+    for name_m in CODE_NAME_RE2.finditer(seg):
+        refs.append({"code": name_m.group(2), "name": name_m.group(1).replace(" ", ""), "action": action})
+    return refs
 
 
 def extract_stock_refs(content: str) -> list:
     """→ [{"code":.., "name":.., "action": str|None}, ...]。
-    action 是該段落編號標題（如「恢復交易方法」），沒有編號清單（單一公司單一動作
-    的簡單公告）時一律 None——不強行從內文猜動作，避免誤判。"""
+    action 是該段落編號標題（如「恢復交易方法」）或關鍵字判斷出的動作（阿拉伯數字編號段落），
+    沒有編號清單（單一公司單一動作的簡單公告）時一律 None——不強行從內文猜動作，避免誤判。"""
     refs = []
-    if NUMBERED_ITEM_RE.search(content):
-        markers = list(NUMBERED_ITEM_RE.finditer(content))
+    markers = sorted(list(NUMBERED_ITEM_RE.finditer(content)) + list(ARABIC_NUMBERED_ITEM_RE.finditer(content)),
+                      key=lambda m: m.start())
+    if markers:
         bounds = [m.start() for m in markers] + [len(content)]
         for i, marker in enumerate(markers):
             seg = content[marker.start():bounds[i + 1]]
             m = ACTION_HEADING_RE.match(seg)
-            action = m.group(1).strip() if m else None
-            for name_m in CODE_NAME_RE.finditer(seg):
-                refs.append({"code": name_m.group(2), "name": name_m.group(1), "action": action})
+            action = m.group(1).strip() if m else _credit_action_from_heading(seg[:40])
+            refs.extend(_refs_in_segment(seg, action))
     else:
-        for name_m in CODE_NAME_RE.finditer(content):
-            refs.append({"code": name_m.group(2), "name": name_m.group(1), "action": None})
+        refs.extend(_refs_in_segment(content, None))
     return refs
 
 
@@ -260,6 +284,28 @@ def selftest():
 
     # 1d. content 完全沒提到代號 → 空清單，不可拋例外
     assert extract_stock_refs("除權除息公告，無關代號") == []
+
+    # 1e. 2026-08-22 真實案例（9919康那香/2022聚亨）：阿拉伯數字編號「1.」「2.」＋
+    # 半形括號「名稱(代號)」（無「代號：」關鍵字）＋來源換行把公司名切開（「聚亨」→
+    # 「聚 亨」）。修復前 extract_stock_refs() 對這則公告回傳空清單（真實 bug，見
+    # data/trading_changes.json 該筆記錄曾經 stocks: []）。
+    real_content_2 = (
+        "公告本公司審核國內上市公司（不含金融業）公告並申報之115年第2 季財務報告每股淨值及累"
+        "積虧損資料，符合暫停與恢復融資融券交易 之有價證券調整名單如下： 1.每股淨值低於票面，"
+        "應暫停融資融券交易之有價證券共有2種：聚 亨(2022)、康那香(9919)。 2.每股淨值回復至票面"
+        "以上，應恢復融資融券交易之有價證券共有4 種：力麗(1444)、千興(2025)、精金(3049)、晟鈦"
+        "(3229)。 以上調整作業自本（115）年8月24日起實施，前開應暫停融資融券交 易之原融資買進"
+        "及融券賣出之餘額，得於期限屆滿前了結。"
+    )
+    refs = extract_stock_refs(real_content_2)
+    assert refs == [
+        {"code": "2022", "name": "聚亨", "action": "停止融資融券"},
+        {"code": "9919", "name": "康那香", "action": "停止融資融券"},
+        {"code": "1444", "name": "力麗", "action": "恢復融資融券"},
+        {"code": "2025", "name": "千興", "action": "恢復融資融券"},
+        {"code": "3049", "name": "精金", "action": "恢復融資融券"},
+        {"code": "3229", "name": "晟鈦", "action": "恢復融資融券"},
+    ], refs
 
     # === 2. is_relevant()：部門排除＋關鍵字判斷 ===
     assert is_relevant({"department": "交易部", "content": "OO自115/08/19起變更交易方法為全額交割"})
