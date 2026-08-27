@@ -1,10 +1,10 @@
 {
  "pool_size": 446,
- "p1_count": 29,
+ "p1_count": 27,
  "p2_count": 0,
- "fetched_count": 29,
+ "fetched_count": 27,
  "p2_fetched_count": 0,
- "req_count": 29,
+ "req_count": 27,
  "incomplete_codes": {},
- "generated_at": "2026-08-25"
+ "generated_at": "2026-08-27"
 }

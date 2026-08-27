@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-08-25T12:48:32.877084+08:00",
+ "generated_at": "2026-08-27T23:09:16.606215+08:00",
  "nv_fetched_at": "2026-08-22T08:56:37.146605+08:00",
- "official_fetched_at": "2026-08-25T12:48:03.695559+08:00",
- "nv_age_days": 3,
+ "official_fetched_at": "2026-08-27T23:08:37.601288+08:00",
+ "nv_age_days": 5,
  "official_age_days": 0,
  "degraded": {},
- "days_to_report": 81,
+ "days_to_report": 79,
  "next_report_deadline": "2026-11-14",
- "new_reports_count": 252,
+ "new_reports_count": 239,
  "new_reports_crossings": 13,
  "groups": {
   "predict_in": [
@@ -166,7 +166,10 @@
     },
     "status": {
      "full_delivery": false,
-     "disposal": null,
+     "disposal": {
+      "reason": "因連續3個營業日達本中心作業要點第四條第",
+      "period": "1150825~1150831"
+     },
      "credit": "停資停券"
     },
     "gap": 0.1,
@@ -544,13 +547,6 @@
     "net_value": 5.96,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": 0.2,
-     "prev_nv": 5.76,
-     "prev_q": "26Q1",
-     "since": "2026-08-12",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -580,7 +576,7 @@
     "status": {
      "full_delivery": false,
      "disposal": null,
-     "credit": "可信用交易"
+     "credit": "停止融券"
     },
     "gap": 5.55,
     "fd_threshold": 0.5,
@@ -697,16 +693,12 @@
     "net_value": 6.24,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.15,
-     "prev_nv": 6.39,
-     "prev_q": "26Q1",
-     "since": "2026-08-12",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
-     "disposal": null,
+     "disposal": {
+      "reason": "最近10個營業日內有6個營業日",
+      "period": "1150826~1150901"
+     },
      "credit": "停資停券"
     },
     "gap": 1.24,
@@ -1227,13 +1219,6 @@
     "net_value": 6.87,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.6,
-     "prev_nv": 7.47,
-     "prev_q": "26Q1",
-     "since": "2026-08-12",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -1323,7 +1308,7 @@
     "status": {
      "full_delivery": false,
      "disposal": null,
-     "credit": "停止融券"
+     "credit": "可信用交易"
     },
     "gap": 5.68,
     "fd_threshold": 1.25,
@@ -1406,13 +1391,6 @@
     "net_value": 7.04,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": 0.21,
-     "prev_nv": 6.83,
-     "prev_q": "26Q1",
-     "since": "2026-08-12",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -1640,13 +1618,6 @@
     "net_value": 7.39,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.94,
-     "prev_nv": 8.33,
-     "prev_q": "26Q1",
-     "since": "2026-08-12",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -3036,10 +3007,7 @@
     },
     "status": {
      "full_delivery": false,
-     "disposal": {
-      "reason": "因連續3個營業日達本中心作業要點第四條第",
-      "period": "1150820~1150826"
-     },
+     "disposal": null,
      "credit": "停資停券"
     },
     "gap": 3.57,
@@ -3154,13 +3122,6 @@
     "net_value": 8.64,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.75,
-     "prev_nv": 9.39,
-     "prev_q": "26Q1",
-     "since": "2026-08-12",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -3326,13 +3287,6 @@
     "net_value": 8.84,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.65,
-     "prev_nv": 9.49,
-     "prev_q": "26Q1",
-     "since": "2026-08-12",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -3450,13 +3404,6 @@
     "net_value": 9.07,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.23,
-     "prev_nv": 9.3,
-     "prev_q": "26Q1",
-     "since": "2026-08-12",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -3698,13 +3645,6 @@
     "net_value": 9.38,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.58,
-     "prev_nv": 9.96,
-     "prev_q": "26Q1",
-     "since": "2026-08-12",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -3839,13 +3779,6 @@
     "net_value": 9.5,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.07,
-     "prev_nv": 9.57,
-     "prev_q": "26Q1",
-     "since": "2026-08-12",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -4489,13 +4422,6 @@
     "net_value": 10.98,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": -0.18,
-     "prev_nv": 11.16,
-     "prev_q": "26Q1",
-     "since": "2026-08-12",
-     "crossing": null
-    },
     "status": {
      "full_delivery": true,
      "disposal": null,
@@ -4642,13 +4568,6 @@
     "net_value": 2.73,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.13,
-     "prev_nv": 2.86,
-     "prev_q": "26Q1",
-     "since": "2026-08-12",
-     "crossing": null
-    },
     "status": {
      "full_delivery": true,
      "disposal": null,
@@ -4701,7 +4620,7 @@
      "full_delivery": true,
      "disposal": {
       "reason": "連續三次",
-      "period": "115/08/20～115/08/26"
+      "period": "115/08/25～115/08/31"
      },
      "credit": "停止信用（全額交割）"
     },
@@ -4717,13 +4636,6 @@
     "net_value": 3.09,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.41,
-     "prev_nv": 3.5,
-     "prev_q": "26Q1",
-     "since": "2026-08-12",
-     "crossing": null
-    },
     "status": {
      "full_delivery": true,
      "disposal": null,
@@ -5038,7 +4950,10 @@
     },
     "status": {
      "full_delivery": true,
-     "disposal": null,
+     "disposal": {
+      "reason": "因連續3個營業日達本中心作業要點第四條第",
+      "period": "1150825~1150831"
+     },
      "credit": "停止信用（全額交割）"
     },
     "gap": -0.28,
@@ -6843,7 +6758,7 @@
     "status": {
      "full_delivery": false,
      "disposal": null,
-     "credit": "停止融券"
+     "credit": "可信用交易"
     },
     "gap": 6.8,
     "fd_threshold": 5.0,
@@ -6956,7 +6871,7 @@
     "status": {
      "full_delivery": false,
      "disposal": null,
-     "credit": "可信用交易"
+     "credit": "停止融券"
     },
     "gap": 6.89,
     "fd_threshold": 5.0,
@@ -7110,7 +7025,7 @@
     "status": {
      "full_delivery": false,
      "disposal": null,
-     "credit": "停止融券"
+     "credit": "可信用交易"
     },
     "gap": 6.95,
     "fd_threshold": 5.0,
@@ -7939,7 +7854,7 @@
     "status": {
      "full_delivery": false,
      "disposal": null,
-     "credit": "可信用交易"
+     "credit": "停止融券"
     },
     "gap": 7.75,
     "fd_threshold": 5.0,
@@ -8021,7 +7936,7 @@
     "status": {
      "full_delivery": false,
      "disposal": null,
-     "credit": "可信用交易"
+     "credit": "停止融券"
     },
     "gap": 7.81,
     "fd_threshold": 5.0,
@@ -8287,7 +8202,7 @@
     "status": {
      "full_delivery": false,
      "disposal": null,
-     "credit": "可信用交易"
+     "credit": "停止融券"
     },
     "gap": 8.04,
     "fd_threshold": 5.0,
@@ -8546,7 +8461,7 @@
     "status": {
      "full_delivery": false,
      "disposal": null,
-     "credit": "停止融券"
+     "credit": "可信用交易"
     },
     "gap": 8.27,
     "fd_threshold": 5.0,
@@ -8903,7 +8818,7 @@
     "status": {
      "full_delivery": false,
      "disposal": null,
-     "credit": "停止融券"
+     "credit": "可信用交易"
     },
     "gap": 8.68,
     "fd_threshold": 5.0,
@@ -9798,7 +9713,7 @@
     "status": {
      "full_delivery": false,
      "disposal": null,
-     "credit": "可信用交易"
+     "credit": "停止融券"
     },
     "gap": 9.63,
     "fd_threshold": 5.0,
@@ -10286,14 +10201,6 @@
   {
    "code": "5371",
    "name": "中光電",
-   "market": "上櫃",
-   "flags": [
-    "SuspensionOfTrading"
-   ]
-  },
-  {
-   "code": "6241",
-   "name": "鑫永洋",
    "market": "上櫃",
    "flags": [
     "SuspensionOfTrading"
