@@ -1,14 +1,14 @@
 {
- "generated_at": "2026-08-29T00:32:13.365597+08:00",
+ "generated_at": "2026-08-31T18:46:29.032344+08:00",
  "nv_fetched_at": "2026-08-22T08:56:37.146605+08:00",
- "official_fetched_at": "2026-08-29T00:31:56.448424+08:00",
- "nv_age_days": 6,
+ "official_fetched_at": "2026-08-31T18:46:04.674600+08:00",
+ "nv_age_days": 9,
  "official_age_days": 0,
  "degraded": {},
- "days_to_report": 77,
+ "days_to_report": 75,
  "next_report_deadline": "2026-11-14",
- "new_reports_count": 202,
- "new_reports_crossings": 11,
+ "new_reports_count": 4,
+ "new_reports_crossings": 0,
  "groups": {
   "predict_in": [
    {
@@ -35,13 +35,6 @@
     "net_value": 4.0,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": -1.12,
-     "prev_nv": 5.12,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": "跌破5元（恐列全額交割）"
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -61,13 +54,6 @@
     "net_value": 1.1,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.05,
-     "prev_nv": 1.15,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -85,13 +71,6 @@
     "net_value": 5.03,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": -0.08,
-     "prev_nv": 5.11,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -143,13 +122,6 @@
     "net_value": 5.1,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": 0.08,
-     "prev_nv": 5.02,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": {
@@ -170,13 +142,6 @@
     "net_value": 5.28,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": -1.5,
-     "prev_nv": 6.78,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -194,13 +159,6 @@
     "net_value": 5.29,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": 0.06,
-     "prev_nv": 5.23,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -218,13 +176,6 @@
     "net_value": 5.38,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.3,
-     "prev_nv": 5.68,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -242,13 +193,6 @@
     "net_value": 5.51,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.61,
-     "prev_nv": 6.12,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -266,13 +210,6 @@
     "net_value": 5.54,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": -0.26,
-     "prev_nv": 5.8,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -290,13 +227,6 @@
     "net_value": 5.54,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.14,
-     "prev_nv": 5.68,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -314,13 +244,6 @@
     "net_value": 5.58,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": -0.63,
-     "prev_nv": 6.21,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -372,13 +295,6 @@
     "net_value": 5.6,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": 0.08,
-     "prev_nv": 5.52,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -396,13 +312,6 @@
     "net_value": 5.63,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": 0.0,
-     "prev_nv": 5.63,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -437,13 +346,6 @@
     "net_value": 5.69,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.08,
-     "prev_nv": 5.77,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -461,13 +363,6 @@
     "net_value": 5.71,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -3.87,
-     "prev_nv": 9.58,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -538,13 +433,6 @@
     "net_value": 6.05,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": -0.76,
-     "prev_nv": 6.81,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -569,13 +457,6 @@
     "net_value": 6.15,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": 0.09,
-     "prev_nv": 6.06,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -600,18 +481,11 @@
     "net_value": 6.19,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.33,
-     "prev_nv": 6.52,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": {
       "reason": "因連續3個營業日達本中心作業要點第四條第",
-      "period": "1150824~1150828"
+      "period": "1150827~1150902"
      },
      "credit": "可信用交易"
     },
@@ -634,13 +508,6 @@
     "net_value": 6.23,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.39,
-     "prev_nv": 6.62,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -764,13 +631,6 @@
     "net_value": 6.4,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.17,
-     "prev_nv": 6.57,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -795,13 +655,6 @@
     "net_value": 6.5,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": -0.41,
-     "prev_nv": 6.91,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -850,13 +703,6 @@
     "net_value": 6.51,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": 0.01,
-     "prev_nv": 6.5,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -881,13 +727,6 @@
     "net_value": 6.55,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.04,
-     "prev_nv": 6.59,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -936,13 +775,6 @@
     "net_value": 6.57,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": -0.45,
-     "prev_nv": 7.02,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -967,13 +799,6 @@
     "net_value": 6.57,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": -0.78,
-     "prev_nv": 7.35,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -1046,13 +871,6 @@
     "net_value": 6.76,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.28,
-     "prev_nv": 7.04,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -1077,13 +895,6 @@
     "net_value": 6.8,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.38,
-     "prev_nv": 7.18,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -1108,13 +919,6 @@
     "net_value": 6.84,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": -0.01,
-     "prev_nv": 6.85,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -1139,13 +943,6 @@
     "net_value": 6.85,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.84,
-     "prev_nv": 7.69,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -1194,13 +991,6 @@
     "net_value": 6.9,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.9,
-     "prev_nv": 7.8,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -1249,13 +1039,6 @@
     "net_value": 6.93,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.19,
-     "prev_nv": 7.12,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -1280,13 +1063,6 @@
     "net_value": 6.97,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": -0.15,
-     "prev_nv": 7.12,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -1311,13 +1087,6 @@
     "net_value": 7.02,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": 0.75,
-     "prev_nv": 6.27,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -1390,13 +1159,6 @@
     "net_value": 7.16,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.46,
-     "prev_nv": 7.62,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -1421,13 +1183,6 @@
     "net_value": 7.16,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": -0.05,
-     "prev_nv": 7.21,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -1476,13 +1231,6 @@
     "net_value": 7.29,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": 0.0,
-     "prev_nv": 7.29,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -1507,13 +1255,6 @@
     "net_value": 7.33,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.38,
-     "prev_nv": 7.71,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -1538,13 +1279,6 @@
     "net_value": 7.35,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.28,
-     "prev_nv": 7.63,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -1593,13 +1327,6 @@
     "net_value": 7.4,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": -0.11,
-     "prev_nv": 7.51,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -1624,13 +1351,6 @@
     "net_value": 7.41,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": -0.39,
-     "prev_nv": 7.8,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -1655,13 +1375,6 @@
     "net_value": 7.49,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": 0.03,
-     "prev_nv": 7.46,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -1710,13 +1423,6 @@
     "net_value": 7.56,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.49,
-     "prev_nv": 8.05,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -1741,13 +1447,6 @@
     "net_value": 7.57,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": -1.94,
-     "prev_nv": 9.51,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -1772,13 +1471,6 @@
     "net_value": 7.59,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": 0.8,
-     "prev_nv": 6.79,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -1827,13 +1519,6 @@
     "net_value": 7.65,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.82,
-     "prev_nv": 8.47,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -1858,13 +1543,6 @@
     "net_value": 7.75,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": 0.09,
-     "prev_nv": 7.66,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -1913,13 +1591,6 @@
     "net_value": 7.79,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.29,
-     "prev_nv": 8.08,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -1968,13 +1639,6 @@
     "net_value": 7.81,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": 0.08,
-     "prev_nv": 7.73,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -1999,13 +1663,6 @@
     "net_value": 7.84,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": 0.03,
-     "prev_nv": 7.81,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -2030,13 +1687,6 @@
     "net_value": 7.87,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": 0.16,
-     "prev_nv": 7.71,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -2061,13 +1711,6 @@
     "net_value": 7.93,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": -0.11,
-     "prev_nv": 8.04,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -2164,13 +1807,6 @@
     "net_value": 7.95,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.48,
-     "prev_nv": 8.43,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -2195,13 +1831,6 @@
     "net_value": 7.99,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": 1.59,
-     "prev_nv": 6.4,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -2226,13 +1855,6 @@
     "net_value": 8.08,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.77,
-     "prev_nv": 8.85,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -2257,13 +1879,6 @@
     "net_value": 8.09,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": 0.2,
-     "prev_nv": 7.89,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -2288,13 +1903,6 @@
     "net_value": 8.11,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": 2.55,
-     "prev_nv": 5.56,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -2319,13 +1927,6 @@
     "net_value": 8.11,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": -1.55,
-     "prev_nv": 9.66,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -2377,13 +1978,6 @@
     "net_value": 8.21,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": 0.39,
-     "prev_nv": 7.82,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -2408,13 +2002,6 @@
     "net_value": 8.24,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.01,
-     "prev_nv": 8.25,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -2463,13 +2050,6 @@
     "net_value": 8.26,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.72,
-     "prev_nv": 8.98,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -2494,13 +2074,6 @@
     "net_value": 8.27,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": 0.55,
-     "prev_nv": 7.72,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -2525,13 +2098,6 @@
     "net_value": 8.3,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": -0.26,
-     "prev_nv": 8.56,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -2580,13 +2146,6 @@
     "net_value": 8.34,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": -0.45,
-     "prev_nv": 8.79,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -2611,13 +2170,6 @@
     "net_value": 8.36,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": -0.14,
-     "prev_nv": 8.5,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -2642,13 +2194,6 @@
     "net_value": 8.41,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": 3.09,
-     "prev_nv": 5.32,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -2673,13 +2218,6 @@
     "net_value": 8.43,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": 0.27,
-     "prev_nv": 8.16,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -2704,13 +2242,6 @@
     "net_value": 8.44,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.29,
-     "prev_nv": 8.73,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -2759,13 +2290,6 @@
     "net_value": 8.44,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.29,
-     "prev_nv": 8.73,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -2838,13 +2362,6 @@
     "net_value": 8.51,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": 0.21,
-     "prev_nv": 8.3,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -2869,13 +2386,6 @@
     "net_value": 8.52,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": -0.05,
-     "prev_nv": 8.57,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -2924,13 +2434,6 @@
     "net_value": 8.57,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": 1.08,
-     "prev_nv": 7.49,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -2979,13 +2482,6 @@
     "net_value": 8.6,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.54,
-     "prev_nv": 9.14,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -3010,13 +2506,6 @@
     "net_value": 8.61,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": -0.12,
-     "prev_nv": 8.73,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -3096,13 +2585,6 @@
     "net_value": 8.69,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.19,
-     "prev_nv": 8.88,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -3127,13 +2609,6 @@
     "net_value": 8.7,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": 0.01,
-     "prev_nv": 8.69,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -3230,13 +2705,6 @@
     "net_value": 8.84,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": 2.98,
-     "prev_nv": 5.86,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -3261,13 +2729,6 @@
     "net_value": 8.91,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": -0.21,
-     "prev_nv": 9.12,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -3292,13 +2753,6 @@
     "net_value": 9.02,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.09,
-     "prev_nv": 9.11,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -3371,13 +2825,6 @@
     "net_value": 9.09,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": 0.02,
-     "prev_nv": 9.07,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -3402,13 +2849,6 @@
     "net_value": 9.1,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.03,
-     "prev_nv": 9.13,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -3481,13 +2921,6 @@
     "net_value": 9.26,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.03,
-     "prev_nv": 9.29,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -3512,13 +2945,6 @@
     "net_value": 9.33,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": 0.01,
-     "prev_nv": 9.32,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -3567,13 +2993,6 @@
     "net_value": 9.38,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": -0.24,
-     "prev_nv": 9.62,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -3622,13 +3041,6 @@
     "net_value": 9.43,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": 0.0,
-     "prev_nv": 9.43,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -3701,13 +3113,6 @@
     "net_value": 9.53,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": -0.79,
-     "prev_nv": 10.32,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": "跌破10元（恐停信用交易）"
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -3732,13 +3137,6 @@
     "net_value": 9.56,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": -0.08,
-     "prev_nv": 9.64,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -3787,13 +3185,6 @@
     "net_value": 9.6,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.06,
-     "prev_nv": 9.66,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -3842,13 +3233,6 @@
     "net_value": 9.62,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": 0.6,
-     "prev_nv": 9.02,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -3873,13 +3257,6 @@
     "net_value": 9.63,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": 0.26,
-     "prev_nv": 9.37,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -3904,13 +3281,6 @@
     "net_value": 9.7,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": 2.86,
-     "prev_nv": 6.84,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -3935,13 +3305,6 @@
     "net_value": 9.71,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": 0.13,
-     "prev_nv": 9.58,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -3990,13 +3353,6 @@
     "net_value": 9.72,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": 0.1,
-     "prev_nv": 9.62,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -4021,13 +3377,6 @@
     "net_value": 9.76,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": 0.41,
-     "prev_nv": 9.35,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -4100,13 +3449,6 @@
     "net_value": 9.84,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": 0.3,
-     "prev_nv": 9.54,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -4131,13 +3473,6 @@
     "net_value": 9.86,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": 0.27,
-     "prev_nv": 9.59,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -4186,13 +3521,6 @@
     "net_value": 9.9,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": -0.13,
-     "prev_nv": 10.03,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": "跌破10元（恐停信用交易）"
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -4217,13 +3545,6 @@
     "net_value": 9.98,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": 0.16,
-     "prev_nv": 9.82,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -4271,13 +3592,6 @@
     "net_value": 7.72,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.24,
-     "prev_nv": 7.96,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": true,
      "disposal": null,
@@ -4339,13 +3653,6 @@
     "net_value": 0.27,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": -0.26,
-     "prev_nv": 0.53,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": true,
      "disposal": null,
@@ -4380,13 +3687,6 @@
     "net_value": 1.31,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.09,
-     "prev_nv": 1.4,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": true,
      "disposal": null,
@@ -4421,13 +3721,6 @@
     "net_value": 2.5,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.87,
-     "prev_nv": 3.37,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": true,
      "disposal": null,
@@ -4462,13 +3755,6 @@
     "net_value": 2.83,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.15,
-     "prev_nv": 2.98,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": true,
      "disposal": null,
@@ -4486,13 +3772,6 @@
     "net_value": 3.06,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": 0.06,
-     "prev_nv": 3.0,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": true,
      "disposal": {
@@ -4530,13 +3809,6 @@
     "net_value": 3.32,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.42,
-     "prev_nv": 3.74,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": true,
      "disposal": null,
@@ -4554,13 +3826,6 @@
     "net_value": 3.42,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": -0.72,
-     "prev_nv": 4.14,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": true,
      "disposal": null,
@@ -4578,13 +3843,6 @@
     "net_value": 3.63,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": -0.26,
-     "prev_nv": 3.89,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": true,
      "disposal": null,
@@ -4602,13 +3860,6 @@
     "net_value": 3.63,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.51,
-     "prev_nv": 4.14,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": true,
      "disposal": null,
@@ -4626,13 +3877,6 @@
     "net_value": 3.74,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": 0.0,
-     "prev_nv": 3.74,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": true,
      "disposal": null,
@@ -4650,13 +3894,6 @@
     "net_value": 3.91,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.46,
-     "prev_nv": 4.37,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": true,
      "disposal": null,
@@ -4674,13 +3911,6 @@
     "net_value": 4.23,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": -0.41,
-     "prev_nv": 4.64,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": true,
      "disposal": null,
@@ -4698,13 +3928,6 @@
     "net_value": 4.23,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": -0.52,
-     "prev_nv": 4.75,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": true,
      "disposal": null,
@@ -4722,13 +3945,6 @@
     "net_value": 4.26,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.87,
-     "prev_nv": 5.13,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": "跌破5元（恐列全額交割）"
-    },
     "status": {
      "full_delivery": true,
      "disposal": null,
@@ -4746,13 +3962,6 @@
     "net_value": 4.35,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.03,
-     "prev_nv": 4.38,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": true,
      "disposal": null,
@@ -4770,13 +3979,6 @@
     "net_value": 4.64,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.57,
-     "prev_nv": 5.21,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": "跌破5元（恐列全額交割）"
-    },
     "status": {
      "full_delivery": true,
      "disposal": null,
@@ -4794,13 +3996,6 @@
     "net_value": 4.7,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.24,
-     "prev_nv": 4.94,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": true,
      "disposal": null,
@@ -4818,13 +4013,6 @@
     "net_value": 4.72,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.43,
-     "prev_nv": 5.15,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": "跌破5元（恐列全額交割）"
-    },
     "status": {
      "full_delivery": true,
      "disposal": {
@@ -4845,13 +4033,6 @@
     "net_value": 4.75,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.09,
-     "prev_nv": 4.84,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": true,
      "disposal": null,
@@ -4882,13 +4063,6 @@
     "net_value": 10.01,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": -0.08,
-     "prev_nv": 10.09,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -4940,13 +4114,6 @@
     "net_value": 10.07,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.11,
-     "prev_nv": 10.18,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -4964,13 +4131,6 @@
     "net_value": 10.09,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": -0.51,
-     "prev_nv": 10.6,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -4988,13 +4148,6 @@
     "net_value": 10.19,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": 0.36,
-     "prev_nv": 9.83,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": "回升10元以上（信用恢復條件）"
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -5012,13 +4165,6 @@
     "net_value": 10.21,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": 1.41,
-     "prev_nv": 8.8,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": "回升10元以上（信用恢復條件）"
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -5036,13 +4182,6 @@
     "net_value": 10.22,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": -0.37,
-     "prev_nv": 10.59,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -5060,13 +4199,6 @@
     "net_value": 10.25,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": -0.11,
-     "prev_nv": 10.36,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -5084,13 +4216,6 @@
     "net_value": 10.29,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": 0.29,
-     "prev_nv": 10.0,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -5125,13 +4250,6 @@
     "net_value": 10.38,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": -0.13,
-     "prev_nv": 10.51,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -5149,13 +4267,6 @@
     "net_value": 10.47,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": -0.49,
-     "prev_nv": 10.96,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -5190,13 +4301,6 @@
     "net_value": 10.49,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": 0.11,
-     "prev_nv": 10.38,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -5231,13 +4335,6 @@
     "net_value": 10.57,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": 0.15,
-     "prev_nv": 10.42,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -5255,13 +4352,6 @@
     "net_value": 10.57,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.2,
-     "prev_nv": 10.77,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -5279,13 +4369,6 @@
     "net_value": 10.58,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.76,
-     "prev_nv": 11.34,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -5303,13 +4386,6 @@
     "net_value": 10.6,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.13,
-     "prev_nv": 10.73,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -5395,13 +4471,6 @@
     "net_value": 10.78,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.21,
-     "prev_nv": 10.99,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -5419,13 +4488,6 @@
     "net_value": 10.81,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": 0.1,
-     "prev_nv": 10.71,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -5460,13 +4522,6 @@
     "net_value": 10.83,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": 0.0,
-     "prev_nv": 10.83,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -5484,13 +4539,6 @@
     "net_value": 10.83,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.31,
-     "prev_nv": 11.14,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -5508,13 +4556,6 @@
     "net_value": 10.84,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": 4.27,
-     "prev_nv": 6.57,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": "回升10元以上（信用恢復條件）"
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -5532,13 +4573,6 @@
     "net_value": 10.84,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": 0.76,
-     "prev_nv": 10.08,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -5556,13 +4590,6 @@
     "net_value": 10.85,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": 0.43,
-     "prev_nv": 10.42,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -5580,13 +4607,6 @@
     "net_value": 10.86,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": -1.14,
-     "prev_nv": 12.0,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -5604,13 +4624,6 @@
     "net_value": 10.86,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": 0.09,
-     "prev_nv": 10.77,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -5628,13 +4641,6 @@
     "net_value": 10.92,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.39,
-     "prev_nv": 11.31,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -5652,13 +4658,6 @@
     "net_value": 10.94,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": 0.23,
-     "prev_nv": 10.71,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -5676,13 +4675,6 @@
     "net_value": 10.94,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.09,
-     "prev_nv": 11.03,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -5700,13 +4692,6 @@
     "net_value": 10.97,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": -0.31,
-     "prev_nv": 11.28,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -5761,13 +4746,6 @@
     "net_value": 11.05,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": 0.31,
-     "prev_nv": 10.74,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -5819,13 +4797,6 @@
     "net_value": 11.08,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": 0.8,
-     "prev_nv": 10.28,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -5860,13 +4831,6 @@
     "net_value": 11.08,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": 0.06,
-     "prev_nv": 11.02,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -5901,13 +4865,6 @@
     "net_value": 11.09,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.38,
-     "prev_nv": 11.47,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -5925,13 +4882,6 @@
     "net_value": 11.1,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": 0.18,
-     "prev_nv": 10.92,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -5949,13 +4899,6 @@
     "net_value": 11.13,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.34,
-     "prev_nv": 11.47,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -5973,13 +4916,6 @@
     "net_value": 11.17,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": -0.57,
-     "prev_nv": 11.74,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -6031,13 +4967,6 @@
     "net_value": 11.3,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": 0.16,
-     "prev_nv": 11.14,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -6055,13 +4984,6 @@
     "net_value": 11.32,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": 0.09,
-     "prev_nv": 11.23,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -6096,13 +5018,6 @@
     "net_value": 11.38,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": -0.94,
-     "prev_nv": 12.32,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -6137,13 +5052,6 @@
     "net_value": 11.42,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.16,
-     "prev_nv": 11.58,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -6161,13 +5069,6 @@
     "net_value": 11.49,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.4,
-     "prev_nv": 11.89,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -6185,13 +5086,6 @@
     "net_value": 11.55,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.08,
-     "prev_nv": 11.63,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -6209,13 +5103,6 @@
     "net_value": 11.56,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": 2.07,
-     "prev_nv": 9.49,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": "回升10元以上（信用恢復條件）"
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -6233,13 +5120,6 @@
     "net_value": 11.56,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": 0.04,
-     "prev_nv": 11.52,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -6342,13 +5222,6 @@
     "net_value": 11.7,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": 0.11,
-     "prev_nv": 11.59,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -6417,13 +5290,6 @@
     "net_value": 11.72,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.06,
-     "prev_nv": 11.78,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -6475,13 +5341,6 @@
     "net_value": 11.76,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": 0.28,
-     "prev_nv": 11.48,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -6533,13 +5392,6 @@
     "net_value": 11.83,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": 0.77,
-     "prev_nv": 11.06,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -6557,13 +5409,6 @@
     "net_value": 11.87,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": 0.31,
-     "prev_nv": 11.56,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -6598,13 +5443,6 @@
     "net_value": 11.88,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": -0.07,
-     "prev_nv": 11.95,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -6622,13 +5460,6 @@
     "net_value": 11.89,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": 0.26,
-     "prev_nv": 11.63,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -6646,13 +5477,6 @@
     "net_value": 11.89,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": 0.18,
-     "prev_nv": 11.71,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -6704,13 +5528,6 @@
     "net_value": 11.93,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": 0.06,
-     "prev_nv": 11.87,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -6728,13 +5545,6 @@
     "net_value": 11.93,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": 0.09,
-     "prev_nv": 11.84,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -6752,13 +5562,6 @@
     "net_value": 11.94,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": 0.1,
-     "prev_nv": 11.84,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -6793,13 +5596,6 @@
     "net_value": 12.01,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": -0.43,
-     "prev_nv": 12.44,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -6817,13 +5613,6 @@
     "net_value": 12.02,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": 0.42,
-     "prev_nv": 11.6,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -6858,13 +5647,6 @@
     "net_value": 12.08,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": 2.49,
-     "prev_nv": 9.59,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": "回升10元以上（信用恢復條件）"
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -6967,13 +5749,6 @@
     "net_value": 12.21,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": 0.98,
-     "prev_nv": 11.23,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -7059,13 +5834,6 @@
     "net_value": 12.3,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": -0.05,
-     "prev_nv": 12.35,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -7151,13 +5919,6 @@
     "net_value": 12.39,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": 0.0,
-     "prev_nv": 12.39,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -7175,13 +5936,6 @@
     "net_value": 12.42,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": -0.09,
-     "prev_nv": 12.51,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -7199,13 +5953,6 @@
     "net_value": 12.43,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": 0.45,
-     "prev_nv": 11.98,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -7359,13 +6106,6 @@
     "net_value": 12.51,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": 1.25,
-     "prev_nv": 11.26,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -7383,13 +6123,6 @@
     "net_value": 12.52,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": 0.33,
-     "prev_nv": 12.19,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -7475,13 +6208,6 @@
     "net_value": 12.67,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": 0.64,
-     "prev_nv": 12.03,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -7499,13 +6225,6 @@
     "net_value": 12.68,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": 0.22,
-     "prev_nv": 12.46,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -7557,13 +6276,6 @@
     "net_value": 12.72,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": 0.74,
-     "prev_nv": 11.98,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -7615,13 +6327,6 @@
     "net_value": 12.76,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": 0.25,
-     "prev_nv": 12.51,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -7639,13 +6344,6 @@
     "net_value": 12.79,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": 0.71,
-     "prev_nv": 12.08,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -7714,13 +6412,6 @@
     "net_value": 12.88,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": 0.96,
-     "prev_nv": 11.92,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -7738,13 +6429,6 @@
     "net_value": 12.89,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": 0.39,
-     "prev_nv": 12.5,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -7796,13 +6480,6 @@
     "net_value": 12.98,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": 0.49,
-     "prev_nv": 12.49,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -7905,13 +6582,6 @@
     "net_value": 13.04,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": 1.23,
-     "prev_nv": 11.81,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -7963,13 +6633,6 @@
     "net_value": 13.06,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": 1.91,
-     "prev_nv": 11.15,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -8055,13 +6718,6 @@
     "net_value": 13.15,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": 0.98,
-     "prev_nv": 12.17,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -8181,13 +6837,6 @@
     "net_value": 13.26,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": 0.84,
-     "prev_nv": 12.42,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -8314,19 +6963,9 @@
     "net_value": 13.38,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": 1.49,
-     "prev_nv": 11.89,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
-     "disposal": {
-      "reason": "最近10個營業日內有6個營業日",
-      "period": "1150824~1150828"
-     },
+     "disposal": null,
      "credit": "可信用交易"
     },
     "gap": 8.38,
@@ -8834,13 +7473,6 @@
     "net_value": 14.03,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": 1.79,
-     "prev_nv": 12.24,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -8926,13 +7558,6 @@
     "net_value": 14.15,
     "nv_quarter": "26Q2",
     "market": "上櫃",
-    "new_report": {
-     "delta": 2.49,
-     "prev_nv": 11.66,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -9188,13 +7813,6 @@
     "net_value": 14.43,
     "nv_quarter": "26Q2",
     "market": "上市",
-    "new_report": {
-     "delta": 4.03,
-     "prev_nv": 10.4,
-     "prev_q": "26Q1",
-     "since": "2026-08-16",
-     "crossing": null
-    },
     "status": {
      "full_delivery": false,
      "disposal": null,
@@ -9929,14 +8547,6 @@
   ]
  },
  "tpex_other_flags": [
-  {
-   "code": "4747",
-   "name": "強生",
-   "market": "上櫃",
-   "flags": [
-    "SuspensionOfTrading"
-   ]
-  },
   {
    "code": "4804",
    "name": "大略-KY",
