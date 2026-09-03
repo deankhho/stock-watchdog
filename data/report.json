@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-09-02T16:54:42.372563+08:00",
+ "generated_at": "2026-09-03T17:04:51.470885+08:00",
  "nv_fetched_at": "2026-08-22T08:56:37.146605+08:00",
- "official_fetched_at": "2026-09-02T16:50:22.293089+08:00",
- "nv_age_days": 11,
+ "official_fetched_at": "2026-09-03T17:00:45.471768+08:00",
+ "nv_age_days": 12,
  "official_age_days": 0,
  "degraded": {},
- "days_to_report": 73,
+ "days_to_report": 72,
  "next_report_deadline": "2026-11-14",
  "new_reports_count": 4,
  "new_reports_crossings": 0,
@@ -433,7 +433,7 @@
     "status": {
      "full_delivery": false,
      "disposal": null,
-     "credit": "停止融券"
+     "credit": "可信用交易"
     },
     "gap": 5.55,
     "fd_threshold": 0.5,
@@ -482,7 +482,7 @@
      "full_delivery": false,
      "disposal": {
       "reason": "因連續3個營業日達本中心作業要點第四條第",
-      "period": "1150827~1150902"
+      "period": "1150901~1150907"
      },
      "credit": "可信用交易"
     },
@@ -2846,7 +2846,7 @@
     "status": {
      "full_delivery": false,
      "disposal": null,
-     "credit": "停資停券"
+     "credit": "停止買賣"
     },
     "gap": 4.1,
     "fd_threshold": 5.0,
@@ -6596,7 +6596,7 @@
     "status": {
      "full_delivery": false,
      "disposal": null,
-     "credit": "可信用交易"
+     "credit": "停止融券"
     },
     "gap": 8.04,
     "fd_threshold": 5.0,
@@ -6613,7 +6613,7 @@
     "status": {
      "full_delivery": false,
      "disposal": null,
-     "credit": "停止融券"
+     "credit": "可信用交易"
     },
     "gap": 8.04,
     "fd_threshold": 5.0,
@@ -8550,8 +8550,8 @@
    ]
   },
   {
-   "code": "5371",
-   "name": "中光電",
+   "code": "6129",
+   "name": "普誠",
    "market": "上櫃",
    "flags": [
     "SuspensionOfTrading"
