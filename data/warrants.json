@@ -1,6 +1,6 @@
 {
  "state": "ok",
- "fetched_at": "2026-09-03",
+ "fetched_at": "2026-09-04",
  "reason": null,
  "put_codes": [
   "0050",
@@ -726,6 +726,11 @@
   },
   {
    "date": "2026-09-03",
+   "count_put": 185,
+   "count_call": 465
+  },
+  {
+   "date": "2026-09-04",
    "count_put": 185,
    "count_call": 465
   }
