@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-09-08T17:02:17.775037+08:00",
+ "generated_at": "2026-09-09T17:12:05.214854+08:00",
  "nv_fetched_at": "2026-08-22T08:56:37.146605+08:00",
- "official_fetched_at": "2026-09-08T16:54:25.873783+08:00",
- "nv_age_days": 17,
+ "official_fetched_at": "2026-09-09T17:03:10.174935+08:00",
+ "nv_age_days": 18,
  "official_age_days": 0,
  "degraded": {},
- "days_to_report": 67,
+ "days_to_report": 66,
  "next_report_deadline": "2026-11-14",
  "new_reports_count": 0,
  "new_reports_crossings": 0,
@@ -1897,7 +1897,7 @@
     "status": {
      "full_delivery": false,
      "disposal": null,
-     "credit": "停止買賣"
+     "credit": "停資停券"
     },
     "gap": 3.11,
     "fd_threshold": 5.0,
@@ -3673,10 +3673,7 @@
     "market": "上櫃",
     "status": {
      "full_delivery": true,
-     "disposal": {
-      "reason": "因連續3個營業日達本中心作業要點第四條第",
-      "period": "1150902~1150908"
-     },
+     "disposal": null,
      "credit": "停止信用（全額交割）"
     },
     "gap": -3.69,
@@ -6580,7 +6577,7 @@
     "status": {
      "full_delivery": false,
      "disposal": null,
-     "credit": "停止融券"
+     "credit": "可信用交易"
     },
     "gap": 8.04,
     "fd_threshold": 5.0,
@@ -8522,14 +8519,6 @@
   {
    "code": "6129",
    "name": "普誠",
-   "market": "上櫃",
-   "flags": [
-    "SuspensionOfTrading"
-   ]
-  },
-  {
-   "code": "6461",
-   "name": "益得",
    "market": "上櫃",
    "flags": [
     "SuspensionOfTrading"
