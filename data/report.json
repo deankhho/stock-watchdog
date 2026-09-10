@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-09-09T17:12:05.214854+08:00",
+ "generated_at": "2026-09-10T17:09:37.975957+08:00",
  "nv_fetched_at": "2026-08-22T08:56:37.146605+08:00",
- "official_fetched_at": "2026-09-09T17:03:10.174935+08:00",
- "nv_age_days": 18,
+ "official_fetched_at": "2026-09-10T17:03:39.323675+08:00",
+ "nv_age_days": 19,
  "official_age_days": 0,
  "degraded": {},
- "days_to_report": 66,
+ "days_to_report": 65,
  "next_report_deadline": "2026-11-14",
  "new_reports_count": 0,
  "new_reports_crossings": 0,
@@ -29,6 +29,23 @@
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=7827"
    },
    {
+    "code": "3710",
+    "name": "連展投控",
+    "price": 5.25,
+    "net_value": 3.63,
+    "nv_quarter": "26Q2",
+    "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停止買賣"
+    },
+    "gap": -1.37,
+    "fd_threshold": 5.0,
+    "credit_eligibility": null,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3710"
+   },
+   {
     "code": "7835",
     "name": "永悅健康-創",
     "price": 20.65,
@@ -44,6 +61,23 @@
     "fd_threshold": 5.0,
     "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=7835"
+   },
+   {
+    "code": "8277",
+    "name": "商丞",
+    "price": 8.1,
+    "net_value": 4.75,
+    "nv_quarter": "26Q2",
+    "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停止買賣"
+    },
+    "gap": -0.25,
+    "fd_threshold": 5.0,
+    "credit_eligibility": null,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8277"
    }
   ],
   "edge": [
@@ -124,7 +158,10 @@
     "market": "上櫃",
     "status": {
      "full_delivery": false,
-     "disposal": null,
+     "disposal": {
+      "reason": "因連續3個營業日達本中心作業要點第四條第",
+      "period": "1150910~1150916"
+     },
      "credit": "停資停券"
     },
     "gap": 0.1,
@@ -517,6 +554,30 @@
      "prev_q": "26Q1",
      "prev_nv": 6.62,
      "cur_nv": 6.23
+    }
+   },
+   {
+    "code": "2321",
+    "name": "東訊",
+    "price": 15.4,
+    "net_value": 6.24,
+    "nv_quarter": "26Q2",
+    "market": "上市",
+    "status": {
+     "full_delivery": false,
+     "disposal": null,
+     "credit": "停止買賣"
+    },
+    "gap": 1.24,
+    "fd_threshold": 5.0,
+    "credit_eligibility": null,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2321",
+    "margin_trend": {
+     "state": "up",
+     "reason": null,
+     "prev_q": "26Q1",
+     "prev_nv": 5.8,
+     "cur_nv": 6.24
     }
    },
    {
@@ -960,7 +1021,10 @@
     "market": "上櫃",
     "status": {
      "full_delivery": false,
-     "disposal": null,
+     "disposal": {
+      "reason": "因連續3個營業日達本中心作業要點第四條第",
+      "period": "1150910~1150916"
+     },
      "credit": "非信用交易標的"
     },
     "gap": 1.87,
@@ -2689,7 +2753,7 @@
     "status": {
      "full_delivery": false,
      "disposal": null,
-     "credit": "停資停券"
+     "credit": "停止買賣"
     },
     "gap": 3.84,
     "fd_threshold": 5.0,
@@ -3546,27 +3610,6 @@
   ],
   "recover": [
    {
-    "code": "2321",
-    "name": "東訊",
-    "price": 15.4,
-    "net_value": 6.24,
-    "nv_quarter": "26Q2",
-    "market": "上市",
-    "status": {
-     "full_delivery": true,
-     "disposal": null,
-     "credit": "停止信用（全額交割）"
-    },
-    "gap": 1.24,
-    "fd_threshold": 5.0,
-    "credit_eligibility": null,
-    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2321",
-    "recover_status": {
-     "state": "not_yet",
-     "detail": "每股淨值已達標，但淨值總額（26Q1/26Q2，以目前股數估算）未逾3億元"
-    }
-   },
-   {
     "code": "5301",
     "name": "寶得利",
     "price": 5.5,
@@ -3835,23 +3878,6 @@
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=1538"
    },
    {
-    "code": "3710",
-    "name": "連展投控",
-    "price": 5.25,
-    "net_value": 3.63,
-    "nv_quarter": "26Q2",
-    "market": "上櫃",
-    "status": {
-     "full_delivery": true,
-     "disposal": null,
-     "credit": "停止信用（全額交割）"
-    },
-    "gap": -1.37,
-    "fd_threshold": 5.0,
-    "credit_eligibility": null,
-    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3710"
-   },
-   {
     "code": "6236",
     "name": "中湛",
     "price": 15.1,
@@ -4003,23 +4029,6 @@
     "fd_threshold": 5.0,
     "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3625"
-   },
-   {
-    "code": "8277",
-    "name": "商丞",
-    "price": 8.1,
-    "net_value": 4.75,
-    "nv_quarter": "26Q2",
-    "market": "上櫃",
-    "status": {
-     "full_delivery": true,
-     "disposal": null,
-     "credit": "停止信用（全額交割）"
-    },
-    "gap": -0.25,
-    "fd_threshold": 5.0,
-    "credit_eligibility": null,
-    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8277"
    },
    {
     "code": "9110",
@@ -6696,7 +6705,7 @@
     "status": {
      "full_delivery": false,
      "disposal": null,
-     "credit": "停止融券"
+     "credit": "可信用交易"
     },
     "gap": 8.15,
     "fd_threshold": 5.0,
@@ -7971,7 +7980,7 @@
     "status": {
      "full_delivery": false,
      "disposal": null,
-     "credit": "停止融券"
+     "credit": "可信用交易"
     },
     "gap": 9.6,
     "fd_threshold": 5.0,
@@ -8509,6 +8518,14 @@
  },
  "tpex_other_flags": [
   {
+   "code": "3710",
+   "name": "連展投控",
+   "market": "上櫃",
+   "flags": [
+    "SuspensionOfTrading"
+   ]
+  },
+  {
    "code": "4804",
    "name": "大略-KY",
    "market": "上櫃",
@@ -8519,6 +8536,22 @@
   {
    "code": "6129",
    "name": "普誠",
+   "market": "上櫃",
+   "flags": [
+    "SuspensionOfTrading"
+   ]
+  },
+  {
+   "code": "8059",
+   "name": "凱碩",
+   "market": "上櫃",
+   "flags": [
+    "SuspensionOfTrading"
+   ]
+  },
+  {
+   "code": "8277",
+   "name": "商丞",
    "market": "上櫃",
    "flags": [
     "SuspensionOfTrading"
