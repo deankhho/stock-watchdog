@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-09-10T17:09:37.975957+08:00",
+ "generated_at": "2026-09-11T16:57:10.526387+08:00",
  "nv_fetched_at": "2026-08-22T08:56:37.146605+08:00",
- "official_fetched_at": "2026-09-10T17:03:39.323675+08:00",
- "nv_age_days": 19,
+ "official_fetched_at": "2026-09-11T16:54:13.882233+08:00",
+ "nv_age_days": 20,
  "official_age_days": 0,
  "degraded": {},
- "days_to_report": 65,
+ "days_to_report": 64,
  "next_report_deadline": "2026-11-14",
  "new_reports_count": 0,
  "new_reports_crossings": 0,
@@ -2321,7 +2321,7 @@
     "status": {
      "full_delivery": false,
      "disposal": null,
-     "credit": "停止融券"
+     "credit": "可信用交易"
     },
     "gap": 3.44,
     "fd_threshold": 5.0,
@@ -3696,10 +3696,7 @@
     "market": "上櫃",
     "status": {
      "full_delivery": true,
-     "disposal": {
-      "reason": "因連續3個營業日達本中心作業要點第四條第",
-      "period": "1150904~1150910"
-     },
+     "disposal": null,
      "credit": "停止信用（全額交割）"
     },
     "gap": -4.2,
@@ -4971,7 +4968,7 @@
     "status": {
      "full_delivery": false,
      "disposal": null,
-     "credit": "可信用交易"
+     "credit": "停止融券"
     },
     "gap": 6.32,
     "fd_threshold": 5.0,
