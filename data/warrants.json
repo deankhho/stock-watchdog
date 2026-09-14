@@ -1,7 +1,7 @@
 {
- "state": "ok",
+ "state": "degraded",
  "fetched_at": "2026-09-11",
- "reason": null,
+ "reason": "抓取失敗：ConnectTimeout: HTTPSConnectionPool(host='isin.twse.com.tw', port=443): Max retries exceeded with url: /isin/C_public.jsp?strMode=2 (Caused by ConnectTimeoutError(<HTTPSConnection(host='isin.twse.com.tw', port=443) at 0x7faef4ae76b0>, 'Connection to isin.twse.com.tw timed out. (connect timeout=30)'))",
  "put_codes": [
   "0050",
   "0052",
