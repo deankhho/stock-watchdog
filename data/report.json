@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-10-05T19:29:32.541826+08:00",
+ "generated_at": "2026-10-06T19:18:21.559145+08:00",
  "nv_fetched_at": "2026-08-22T08:56:37.146605+08:00",
- "official_fetched_at": "2026-10-05T19:23:46.183965+08:00",
- "nv_age_days": 44,
+ "official_fetched_at": "2026-10-06T19:14:27.981914+08:00",
+ "nv_age_days": 45,
  "official_age_days": 0,
  "degraded": {},
- "days_to_report": 40,
+ "days_to_report": 39,
  "next_report_deadline": "2026-11-14",
  "new_reports_count": 0,
  "new_reports_crossings": 0,
@@ -1176,7 +1176,10 @@
     "market": "上市",
     "status": {
      "full_delivery": false,
-     "disposal": null,
+     "disposal": {
+      "reason": "連續三次",
+      "period": "115/10/06～115/10/13"
+     },
      "credit": "停資停券"
     },
     "gap": 2.16,
@@ -6783,7 +6786,10 @@
     "market": "上市",
     "status": {
      "full_delivery": false,
-     "disposal": null,
+     "disposal": {
+      "reason": "連續三次",
+      "period": "115/10/06～115/10/13"
+     },
      "credit": "可信用交易"
     },
     "gap": 8.25,
@@ -7110,7 +7116,7 @@
     "status": {
      "full_delivery": false,
      "disposal": null,
-     "credit": "停止融券"
+     "credit": "可信用交易"
     },
     "gap": 8.61,
     "fd_threshold": 5.0,
