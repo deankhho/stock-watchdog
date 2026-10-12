@@ -1,6 +1,6 @@
 {
  "state": "ok",
- "fetched_at": "2026-10-09",
+ "fetched_at": "2026-10-12",
  "reason": null,
  "put_codes": [
   "0050",
@@ -693,11 +693,6 @@
  "count_call": 473,
  "count_history": [
   {
-   "date": "2026-08-27",
-   "count_put": 182,
-   "count_call": 466
-  },
-  {
    "date": "2026-08-29",
    "count_put": 186,
    "count_call": 466
@@ -839,6 +834,11 @@
   },
   {
    "date": "2026-10-09",
+   "count_put": 210,
+   "count_call": 473
+  },
+  {
+   "date": "2026-10-12",
    "count_put": 210,
    "count_call": 473
   }
