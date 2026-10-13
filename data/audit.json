@@ -1,6 +1,6 @@
 {
  "state": "ok",
- "fetched_at": "2026-10-12",
+ "fetched_at": "2026-10-13",
  "reason": null,
  "rows": {
   "1413": {
@@ -29,7 +29,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1435",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "1441": {
    "state": "ok",
@@ -43,7 +43,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1441",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "1447": {
    "state": "ok",
@@ -71,7 +71,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1460",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "1468": {
    "state": "ok",
@@ -85,7 +85,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1468",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "1471": {
    "state": "ok",
@@ -99,7 +99,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "1471",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "1506": {
    "state": "ok",
@@ -113,7 +113,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1506",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "1512": {
    "state": "ok",
@@ -127,7 +127,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1512",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "1516": {
    "state": "ok",
@@ -141,7 +141,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "1516",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "1538": {
    "state": "ok",
@@ -183,7 +183,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1781",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "1799": {
    "state": "ok",
@@ -211,7 +211,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2007",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "2014": {
    "state": "ok",
@@ -225,7 +225,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "2014",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "2022": {
    "state": "ok",
@@ -239,7 +239,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2022",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "2035": {
    "state": "ok",
@@ -309,7 +309,7 @@
    "quarter": "26Q2",
    "tier": "danger",
    "code": "2314",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "2321": {
    "state": "ok",
@@ -323,7 +323,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2321",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "2349": {
    "state": "ok",
@@ -337,7 +337,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2349",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "2380": {
    "state": "ok",
@@ -351,7 +351,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2380",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "2424": {
    "state": "ok",
@@ -379,7 +379,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2429",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "2431": {
    "state": "ok",
@@ -421,7 +421,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2444",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "2460": {
    "state": "ok",
@@ -435,7 +435,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "2460",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "2516": {
    "state": "ok",
@@ -449,7 +449,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2516",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "2601": {
    "state": "ok",
@@ -491,19 +491,21 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "2724",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "2726": {
-   "state": "fetch_error",
-   "reason": "ConnectionError: HTTPSConnectionPool(host='mopsov.twse.com.tw', port=443): Max retries exceeded with url: /mops/web/ajax_t163sb03 (Caused by NewConnectionError(\"HTTPSConnection(host='mopsov.twse.com.tw', port=443): Failed to establish a new connection: [Errno 111] Connection refused\"))",
-   "firm": null,
-   "auditors": [],
-   "audit_date": null,
-   "audit_type": null,
-   "quarter": null,
-   "tier": null,
+   "state": "ok",
+   "firm": "勤業眾信聯合會計師事務所",
+   "auditors": [
+    "張至誼",
+    "洪國田"
+   ],
+   "audit_date": "115/08/28",
+   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
+   "quarter": "26Q2",
+   "tier": "note",
    "code": "2726",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "2740": {
    "state": "ok",
@@ -517,7 +519,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2740",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "2924": {
    "state": "ok",
@@ -531,7 +533,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "2924",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "3018": {
    "state": "ok",
@@ -559,7 +561,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3057",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "3058": {
    "state": "ok",
@@ -573,7 +575,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3058",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "3064": {
    "state": "ok",
@@ -587,7 +589,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "3064",
-   "fetched_at": "2026-10-08"
+   "fetched_at": "2026-10-13"
   },
   "3085": {
    "state": "ok",
@@ -629,7 +631,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3115",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "3122": {
    "state": "ok",
@@ -643,7 +645,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3122",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "3191": {
    "state": "ok",
@@ -657,7 +659,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3191",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "3228": {
    "state": "ok",
@@ -699,7 +701,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "3259",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "3288": {
    "state": "ok",
@@ -727,7 +729,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "3313",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "3321": {
    "state": "ok",
@@ -769,7 +771,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3349",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "3372": {
    "state": "ok",
@@ -797,7 +799,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3419",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "3432": {
    "state": "ok",
@@ -839,7 +841,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "3499",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "3508": {
    "state": "ok",
@@ -867,7 +869,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "3522",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "3523": {
    "state": "ok",
@@ -937,7 +939,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "3629",
-   "fetched_at": "2026-10-06"
+   "fetched_at": "2026-10-13"
   },
   "3632": {
    "state": "ok",
@@ -951,7 +953,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3632",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "3664": {
    "state": "ok",
@@ -965,7 +967,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3664",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "3672": {
    "state": "ok",
@@ -993,7 +995,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3685",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "3686": {
    "state": "ok",
@@ -1007,7 +1009,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "3686",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "3710": {
    "state": "ok",
@@ -1021,7 +1023,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3710",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "3713": {
    "state": "ok",
@@ -1035,7 +1037,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3713",
-   "fetched_at": "2026-10-08"
+   "fetched_at": "2026-10-13"
   },
   "4108": {
    "state": "ok",
@@ -1063,7 +1065,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "4131",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "4139": {
    "state": "ok",
@@ -1077,7 +1079,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "4139",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "4154": {
    "state": "ok",
@@ -1091,7 +1093,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "4154",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "4157": {
    "state": "ok",
@@ -1133,7 +1135,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "4178",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "4188": {
    "state": "ok",
@@ -1147,7 +1149,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "4188",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "4192": {
    "state": "ok",
@@ -1175,7 +1177,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "4195",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "4198": {
    "state": "ok",
@@ -1189,7 +1191,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "4198",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "4304": {
    "state": "ok",
@@ -1203,7 +1205,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "4304",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "4402": {
    "state": "ok",
@@ -1231,7 +1233,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "4419",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "4502": {
    "state": "ok",
@@ -1245,7 +1247,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "4502",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "4529": {
    "state": "ok",
@@ -1259,7 +1261,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "4529",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "4534": {
    "state": "ok",
@@ -1287,7 +1289,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "4609",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "4726": {
    "state": "ok",
@@ -1315,7 +1317,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "4806",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "4934": {
    "state": "ok",
@@ -1371,7 +1373,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "5205",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "5227": {
    "state": "ok",
@@ -1413,7 +1415,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "5302",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "5314": {
    "state": "ok",
@@ -1427,7 +1429,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "5314",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "5324": {
    "state": "ok",
@@ -1441,7 +1443,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "5324",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "5344": {
    "state": "ok",
@@ -1455,7 +1457,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "5344",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "5345": {
    "state": "ok",
@@ -1469,7 +1471,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "5345",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "5348": {
    "state": "ok",
@@ -1483,7 +1485,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "5348",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "5355": {
    "state": "ok",
@@ -1525,7 +1527,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "5475",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "5484": {
    "state": "ok",
@@ -1539,7 +1541,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "5484",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "5516": {
    "state": "ok",
@@ -1553,7 +1555,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "5516",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "5543": {
    "state": "ok",
@@ -1581,7 +1583,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "5701",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "5703": {
    "state": "ok",
@@ -1609,7 +1611,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "5905",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "6109": {
    "state": "ok",
@@ -1623,21 +1625,19 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "6109",
-   "fetched_at": "2026-10-08"
+   "fetched_at": "2026-10-13"
   },
   "6129": {
-   "state": "ok",
-   "firm": "國富浩華聯合會計師事務所",
-   "auditors": [
-    "吳孟達",
-    "潘金樹"
-   ],
-   "audit_date": "115/08/12",
-   "audit_type": "無保留結論/意見-",
-   "quarter": "26Q2",
-   "tier": "clean",
+   "state": "fetch_error",
+   "reason": "ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
+   "firm": null,
+   "auditors": [],
+   "audit_date": null,
+   "audit_type": null,
+   "quarter": null,
+   "tier": null,
    "code": "6129",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "6140": {
    "state": "ok",
@@ -1668,18 +1668,16 @@
    "fetched_at": "2026-10-12"
   },
   "6142": {
-   "state": "ok",
-   "firm": "安侯建業聯合會計師事務所",
-   "auditors": [
-    "辛郁婷",
-    "簡思娟"
-   ],
-   "audit_date": "115/08/12",
-   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
-   "quarter": "26Q2",
-   "tier": "note",
+   "state": "fetch_error",
+   "reason": "ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
+   "firm": null,
+   "auditors": [],
+   "audit_date": null,
+   "audit_type": null,
+   "quarter": null,
+   "tier": null,
    "code": "6142",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "6144": {
    "state": "ok",
@@ -1693,7 +1691,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6144",
-   "fetched_at": "2026-10-05"
+   "fetched_at": "2026-10-13"
   },
   "6152": {
    "state": "ok",
@@ -1721,7 +1719,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "6160",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "6169": {
    "state": "ok",
@@ -1777,7 +1775,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6228",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "6236": {
    "state": "ok",
@@ -1791,7 +1789,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6236",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "6241": {
    "state": "ok",
@@ -1819,7 +1817,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6264",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "6276": {
    "state": "ok",
@@ -1833,7 +1831,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6276",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "6431": {
    "state": "ok",
@@ -1861,7 +1859,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "6443",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "6461": {
    "state": "ok",
@@ -1889,7 +1887,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6492",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "6535": {
    "state": "ok",
@@ -1917,7 +1915,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6550",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "6573": {
    "state": "ok",
@@ -1959,7 +1957,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6598",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "6645": {
    "state": "ok",
@@ -1973,7 +1971,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6645",
-   "fetched_at": "2026-10-08"
+   "fetched_at": "2026-10-13"
   },
   "6657": {
    "state": "ok",
@@ -1987,7 +1985,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6657",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "6733": {
    "state": "ok",
@@ -2029,7 +2027,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6872",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "6919": {
    "state": "ok",
@@ -2085,7 +2083,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "7803",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "7814": {
    "state": "ok",
@@ -2113,7 +2111,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "7827",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "7835": {
    "state": "ok",
@@ -2127,7 +2125,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "7835",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "8024": {
    "state": "ok",
@@ -2141,7 +2139,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "8024",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "8038": {
    "state": "ok",
@@ -2155,7 +2153,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "8038",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "8047": {
    "state": "ok",
@@ -2197,7 +2195,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "8067",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "8080": {
    "state": "ok",
@@ -2225,7 +2223,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "8084",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "8085": {
    "state": "ok",
@@ -2239,7 +2237,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "8085",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "8092": {
    "state": "ok",
@@ -2281,7 +2279,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "8101",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "8121": {
    "state": "ok",
@@ -2295,7 +2293,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "8121",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "8176": {
    "state": "ok",
@@ -2309,7 +2307,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "8176",
-   "fetched_at": "2026-10-06"
+   "fetched_at": "2026-10-13"
   },
   "8201": {
    "state": "ok",
@@ -2337,7 +2335,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "8277",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "8291": {
    "state": "ok",
@@ -2365,7 +2363,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "8409",
-   "fetched_at": "2026-10-08"
+   "fetched_at": "2026-10-13"
   },
   "8422": {
    "state": "ok",
@@ -2393,7 +2391,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "8443",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "8444": {
    "state": "ok",
@@ -2477,7 +2475,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "8935",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "8937": {
    "state": "ok",
@@ -2491,7 +2489,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "8937",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "9912": {
    "state": "ok",
@@ -2505,7 +2503,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "9912",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "9919": {
    "state": "ok",
@@ -2519,7 +2517,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "9919",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "9929": {
    "state": "ok",
@@ -2547,7 +2545,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "9950",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "1108": {
    "state": "ok",
@@ -2561,7 +2559,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1108",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "1213": {
    "state": "ok",
@@ -2575,7 +2573,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1213",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "1219": {
    "state": "ok",
@@ -2589,7 +2587,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1219",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "1220": {
    "state": "ok",
@@ -2631,7 +2629,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1309",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "1310": {
    "state": "ok",
@@ -2645,7 +2643,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1310",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "1316": {
    "state": "ok",
@@ -2659,7 +2657,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1316",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "1324": {
    "state": "ok",
@@ -2673,7 +2671,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "1324",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "1337": {
    "state": "ok",
@@ -2687,7 +2685,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "1337",
-   "fetched_at": "2026-10-08"
+   "fetched_at": "2026-10-13"
   },
   "1417": {
    "state": "ok",
@@ -2701,7 +2699,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1417",
-   "fetched_at": "2026-10-08"
+   "fetched_at": "2026-10-13"
   },
   "1432": {
    "state": "ok",
@@ -2729,7 +2727,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1444",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "1453": {
    "state": "ok",
@@ -2743,7 +2741,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1453",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "1454": {
    "state": "ok",
@@ -2785,7 +2783,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "1459",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "1463": {
    "state": "ok",
@@ -2799,7 +2797,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "1463",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "1464": {
    "state": "ok",
@@ -2813,7 +2811,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1464",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "1466": {
    "state": "ok",
@@ -2827,7 +2825,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1466",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "1467": {
    "state": "ok",
@@ -2841,7 +2839,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "1467",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "1470": {
    "state": "ok",
@@ -2855,7 +2853,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "1470",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "1528": {
    "state": "ok",
@@ -2883,7 +2881,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "1529",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "1591": {
    "state": "ok",
@@ -2897,7 +2895,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "1591",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "1611": {
    "state": "ok",
@@ -2925,7 +2923,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1616",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "1617": {
    "state": "ok",
@@ -2939,7 +2937,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1617",
-   "fetched_at": "2026-10-08"
+   "fetched_at": "2026-10-13"
   },
   "1710": {
    "state": "ok",
@@ -2981,7 +2979,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "1732",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "1742": {
    "state": "ok",
@@ -2995,7 +2993,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1742",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "1776": {
    "state": "ok",
@@ -3009,7 +3007,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1776",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "1780": {
    "state": "ok",
@@ -3037,7 +3035,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1789",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "1805": {
    "state": "ok",
@@ -3051,7 +3049,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "1805",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "1806": {
    "state": "ok",
@@ -3065,7 +3063,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1806",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "1813": {
    "state": "ok",
@@ -3079,7 +3077,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1813",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "2012": {
    "state": "ok",
@@ -3107,7 +3105,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "2024",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "2025": {
    "state": "ok",
@@ -3121,7 +3119,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "2025",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "2028": {
    "state": "ok",
@@ -3163,7 +3161,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2033",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "2061": {
    "state": "ok",
@@ -3177,7 +3175,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "2061",
-   "fetched_at": "2026-10-08"
+   "fetched_at": "2026-10-13"
   },
   "2064": {
    "state": "ok",
@@ -3219,7 +3217,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2109",
-   "fetched_at": "2026-10-08"
+   "fetched_at": "2026-10-13"
   },
   "2237": {
    "state": "ok",
@@ -3233,7 +3231,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2237",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "2241": {
    "state": "ok",
@@ -3247,7 +3245,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2241",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "2243": {
    "state": "ok",
@@ -3261,7 +3259,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "2243",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "2302": {
    "state": "ok",
@@ -3275,7 +3273,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2302",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "2305": {
    "state": "ok",
@@ -3289,7 +3287,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2305",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "2332": {
    "state": "ok",
@@ -3317,7 +3315,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2340",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "2342": {
    "state": "ok",
@@ -3331,7 +3329,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2342",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "2365": {
    "state": "ok",
@@ -3345,7 +3343,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2365",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "2369": {
    "state": "ok",
@@ -3359,7 +3357,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2369",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "2390": {
    "state": "ok",
@@ -3387,7 +3385,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2401",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "2405": {
    "state": "ok",
@@ -3401,7 +3399,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2405",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "2406": {
    "state": "ok",
@@ -3415,7 +3413,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2406",
-   "fetched_at": "2026-10-08"
+   "fetched_at": "2026-10-13"
   },
   "2419": {
    "state": "ok",
@@ -3457,7 +3455,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "2434",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "2440": {
    "state": "ok",
@@ -3471,7 +3469,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "2440",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "2465": {
    "state": "ok",
@@ -3485,7 +3483,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2465",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "2466": {
    "state": "ok",
@@ -3513,7 +3511,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "2482",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "2515": {
    "state": "ok",
@@ -3541,7 +3539,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "2530",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "2538": {
    "state": "ok",
@@ -3555,7 +3553,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2538",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "2540": {
    "state": "ok",
@@ -3569,7 +3567,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "2540",
-   "fetched_at": "2026-10-08"
+   "fetched_at": "2026-10-13"
   },
   "2547": {
    "state": "ok",
@@ -3583,7 +3581,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2547",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "2611": {
    "state": "ok",
@@ -3597,7 +3595,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "2611",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "2614": {
    "state": "ok",
@@ -3611,7 +3609,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2614",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "2633": {
    "state": "ok",
@@ -3639,7 +3637,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "2646",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "2719": {
    "state": "ok",
@@ -3653,7 +3651,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2719",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "2734": {
    "state": "ok",
@@ -3679,7 +3677,7 @@
    "quarter": null,
    "tier": null,
    "code": "2836",
-   "fetched_at": "2026-10-08"
+   "fetched_at": "2026-10-13"
   },
   "2845": {
    "state": "fetch_error",
@@ -3691,7 +3689,7 @@
    "quarter": null,
    "tier": null,
    "code": "2845",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "2889": {
    "state": "fetch_error",
@@ -3715,7 +3713,7 @@
    "quarter": null,
    "tier": null,
    "code": "2897",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "2901": {
    "state": "ok",
@@ -3743,7 +3741,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2908",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "2911": {
    "state": "ok",
@@ -3757,7 +3755,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2911",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "2926": {
    "state": "ok",
@@ -3771,7 +3769,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "2926",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "2939": {
    "state": "ok",
@@ -3785,7 +3783,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "2939",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "3002": {
    "state": "ok",
@@ -3799,7 +3797,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "3002",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "3011": {
    "state": "ok",
@@ -3813,7 +3811,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3011",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "3024": {
    "state": "ok",
@@ -3827,7 +3825,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3024",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "3025": {
    "state": "ok",
@@ -3841,7 +3839,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3025",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "3041": {
    "state": "ok",
@@ -3869,7 +3867,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3047",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "3049": {
    "state": "ok",
@@ -3883,7 +3881,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "3049",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "3055": {
    "state": "ok",
@@ -3897,7 +3895,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3055",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "3062": {
    "state": "ok",
@@ -3911,7 +3909,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3062",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "3067": {
    "state": "ok",
@@ -3939,7 +3937,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3071",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "3083": {
    "state": "ok",
@@ -3953,7 +3951,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3083",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "3092": {
    "state": "ok",
@@ -3967,7 +3965,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3092",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "3093": {
    "state": "ok",
@@ -3981,7 +3979,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3093",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "3094": {
    "state": "ok",
@@ -3995,7 +3993,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3094",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "3095": {
    "state": "ok",
@@ -4009,7 +4007,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "3095",
-   "fetched_at": "2026-10-08"
+   "fetched_at": "2026-10-13"
   },
   "3149": {
    "state": "ok",
@@ -4023,7 +4021,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3149",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "3150": {
    "state": "ok",
@@ -4037,7 +4035,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "3150",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "3176": {
    "state": "ok",
@@ -4051,7 +4049,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3176",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "3205": {
    "state": "ok",
@@ -4093,7 +4091,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3230",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "3232": {
    "state": "ok",
@@ -4107,7 +4105,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "3232",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "3268": {
    "state": "ok",
@@ -4135,7 +4133,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3272",
-   "fetched_at": "2026-10-08"
+   "fetched_at": "2026-10-13"
   },
   "3276": {
    "state": "ok",
@@ -4149,7 +4147,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "3276",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "3284": {
    "state": "ok",
@@ -4163,7 +4161,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3284",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "3285": {
    "state": "ok",
@@ -4177,7 +4175,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "3285",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "3296": {
    "state": "ok",
@@ -4219,7 +4217,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3339",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "3354": {
    "state": "ok",
@@ -4233,7 +4231,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "3354",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "3360": {
    "state": "ok",
@@ -4247,7 +4245,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "3360",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "3434": {
    "state": "ok",
@@ -4261,7 +4259,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "3434",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "3489": {
    "state": "ok",
@@ -4275,7 +4273,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "3489",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "3520": {
    "state": "ok",
@@ -4289,7 +4287,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "3520",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "3521": {
    "state": "ok",
@@ -4303,7 +4301,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "3521",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "3535": {
    "state": "ok",
@@ -4317,7 +4315,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3535",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "3541": {
    "state": "ok",
@@ -4331,7 +4329,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3541",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "3607": {
    "state": "ok",
@@ -4345,7 +4343,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "3607",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "3609": {
    "state": "ok",
@@ -4373,7 +4371,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "3623",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "3630": {
    "state": "ok",
@@ -4387,7 +4385,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "3630",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "3631": {
    "state": "ok",
@@ -4401,7 +4399,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3631",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "3646": {
    "state": "ok",
@@ -4429,7 +4427,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "3666",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "4102": {
    "state": "ok",
@@ -4443,7 +4441,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "4102",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "4109": {
    "state": "ok",
@@ -4488,18 +4486,16 @@
    "fetched_at": "2026-10-12"
   },
   "4147": {
-   "state": "ok",
-   "firm": "勤業眾信聯合會計師事務所",
-   "auditors": [
-    "王浚宇",
-    "陳彥君"
-   ],
-   "audit_date": "115/08/06",
-   "audit_type": "無保留結論/意見-",
-   "quarter": "26Q2",
-   "tier": "clean",
+   "state": "fetch_error",
+   "reason": "ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
+   "firm": null,
+   "auditors": [],
+   "audit_date": null,
+   "audit_type": null,
+   "quarter": null,
+   "tier": null,
    "code": "4147",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "4166": {
    "state": "ok",
@@ -4513,7 +4509,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "4166",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "4167": {
    "state": "ok",
@@ -4527,7 +4523,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "4167",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "4171": {
    "state": "ok",
@@ -4541,7 +4537,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "4171",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "4174": {
    "state": "ok",
@@ -4555,7 +4551,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "4174",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "4183": {
    "state": "ok",
@@ -4569,7 +4565,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "4183",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "4207": {
    "state": "ok",
@@ -4597,7 +4593,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "4406",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "4413": {
    "state": "ok",
@@ -4611,7 +4607,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "4413",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "4414": {
    "state": "ok",
@@ -4639,7 +4635,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "4426",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "4513": {
    "state": "ok",
@@ -4667,7 +4663,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "4530",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "4538": {
    "state": "ok",
@@ -4681,7 +4677,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "4538",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "4562": {
    "state": "ok",
@@ -4695,7 +4691,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "4562",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "4714": {
    "state": "ok",
@@ -4709,7 +4705,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "4714",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "4716": {
    "state": "ok",
@@ -4751,7 +4747,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "4729",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "4903": {
    "state": "ok",
@@ -4765,7 +4761,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "4903",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "4911": {
    "state": "ok",
@@ -4779,7 +4775,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "4911",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "4923": {
    "state": "ok",
@@ -4807,7 +4803,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "4924",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "4960": {
    "state": "ok",
@@ -4821,7 +4817,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "4960",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "4976": {
    "state": "ok",
@@ -4835,7 +4831,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "4976",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "4989": {
    "state": "ok",
@@ -4849,7 +4845,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "4989",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "4994": {
    "state": "ok",
@@ -4863,7 +4859,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "4994",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "5014": {
    "state": "ok",
@@ -4877,7 +4873,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "5014",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "5202": {
    "state": "ok",
@@ -4905,7 +4901,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "5210",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "5211": {
    "state": "ok",
@@ -4919,7 +4915,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "5211",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "5245": {
    "state": "ok",
@@ -4933,7 +4929,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "5245",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "5251": {
    "state": "ok",
@@ -4961,7 +4957,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "5272",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "5276": {
    "state": "ok",
@@ -4975,7 +4971,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "5276",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "5278": {
    "state": "ok",
@@ -5017,7 +5013,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "5321",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "5328": {
    "state": "ok",
@@ -5031,7 +5027,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "5328",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "5340": {
    "state": "ok",
@@ -5045,7 +5041,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "5340",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "5364": {
    "state": "ok",
@@ -5073,7 +5069,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "5381",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "5398": {
    "state": "ok",
@@ -5087,7 +5083,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "5398",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "5450": {
    "state": "ok",
@@ -5101,7 +5097,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "5450",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "5452": {
    "state": "ok",
@@ -5157,7 +5153,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "5490",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "5498": {
    "state": "ok",
@@ -5185,7 +5181,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "5521",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "5531": {
    "state": "ok",
@@ -5199,7 +5195,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "5531",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "5902": {
    "state": "ok",
@@ -5255,7 +5251,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6103",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "6113": {
    "state": "ok",
@@ -5269,7 +5265,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "6113",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "6116": {
    "state": "ok",
@@ -5283,7 +5279,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "6116",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "6118": {
    "state": "ok",
@@ -5297,7 +5293,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "6118",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "6127": {
    "state": "ok",
@@ -5339,7 +5335,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "6133",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "6134": {
    "state": "ok",
@@ -5353,7 +5349,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "6134",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "6148": {
    "state": "ok",
@@ -5367,7 +5363,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6148",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "6153": {
    "state": "ok",
@@ -5409,7 +5405,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6167",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "6174": {
    "state": "ok",
@@ -5437,7 +5433,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6185",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "6222": {
    "state": "ok",
@@ -5451,7 +5447,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6222",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "6226": {
    "state": "ok",
@@ -5468,18 +5464,16 @@
    "fetched_at": "2026-10-09"
   },
   "6244": {
-   "state": "ok",
-   "firm": "安侯建業聯合會計師事務所",
-   "auditors": [
-    "楊　雲　筑",
-    "唐　嘉　鍵"
-   ],
-   "audit_date": "115/08/06",
-   "audit_type": "無保留結論/意見-",
-   "quarter": "26Q2",
-   "tier": "clean",
+   "state": "fetch_error",
+   "reason": "ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
+   "firm": null,
+   "auditors": [],
+   "audit_date": null,
+   "audit_type": null,
+   "quarter": null,
+   "tier": null,
    "code": "6244",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "6246": {
    "state": "ok",
@@ -5493,21 +5487,19 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "6246",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "6259": {
-   "state": "ok",
-   "firm": "馬施云大華聯合會計師事務所",
-   "auditors": [
-    "趙翊棋",
-    "黃俊諺"
-   ],
-   "audit_date": "115/08/12",
-   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
-   "quarter": "26Q2",
-   "tier": "note",
+   "state": "fetch_error",
+   "reason": "ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
+   "firm": null,
+   "auditors": [],
+   "audit_date": null,
+   "audit_type": null,
+   "quarter": null,
+   "tier": null,
    "code": "6259",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "6283": {
    "state": "ok",
@@ -5521,7 +5513,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "6283",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "6418": {
    "state": "ok",
@@ -5535,7 +5527,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "6418",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "6465": {
    "state": "ok",
@@ -5563,7 +5555,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6482",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "6496": {
    "state": "ok",
@@ -5577,7 +5569,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "6496",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "6499": {
    "state": "ok",
@@ -5619,7 +5611,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6530",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "6547": {
    "state": "ok",
@@ -5633,7 +5625,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6547",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "6548": {
    "state": "ok",
@@ -5647,7 +5639,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6548",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "6558": {
    "state": "ok",
@@ -5661,7 +5653,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6558",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "6578": {
    "state": "ok",
@@ -5745,7 +5737,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "6698",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "6708": {
    "state": "ok",
@@ -5759,7 +5751,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6708",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "6767": {
    "state": "ok",
@@ -5773,7 +5765,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6767",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "6794": {
    "state": "ok",
@@ -5801,7 +5793,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6875",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "6885": {
    "state": "ok",
@@ -5843,7 +5835,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6910",
-   "fetched_at": "2026-10-08"
+   "fetched_at": "2026-10-13"
   },
   "6934": {
    "state": "ok",
@@ -5857,7 +5849,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6934",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "6969": {
    "state": "ok",
@@ -5885,21 +5877,19 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "7723",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "7777": {
-   "state": "ok",
-   "firm": "資誠聯合會計師事務所",
-   "auditors": [
-    "馮敏娟",
-    "王菘澤"
-   ],
-   "audit_date": "115/08/10",
-   "audit_type": "無保留結論/意見-",
-   "quarter": "26Q2",
-   "tier": "clean",
+   "state": "fetch_error",
+   "reason": "ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
+   "firm": null,
+   "auditors": [],
+   "audit_date": null,
+   "audit_type": null,
+   "quarter": null,
+   "tier": null,
    "code": "7777",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "8034": {
    "state": "ok",
@@ -5913,7 +5903,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "8034",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "8066": {
    "state": "ok",
@@ -5927,7 +5917,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "8066",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "8068": {
    "state": "ok",
@@ -5941,7 +5931,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "8068",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "8071": {
    "state": "ok",
@@ -5955,7 +5945,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "8071",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "8076": {
    "state": "ok",
@@ -5983,7 +5973,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "8111",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "8215": {
    "state": "ok",
@@ -6025,7 +6015,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "8421",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "8431": {
    "state": "ok",
@@ -6039,7 +6029,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "8431",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "8440": {
    "state": "ok",
@@ -6053,7 +6043,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "8440",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "8472": {
    "state": "ok",
@@ -6067,7 +6057,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "8472",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "8476": {
    "state": "ok",
@@ -6081,7 +6071,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "8476",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "8906": {
    "state": "ok",
@@ -6095,7 +6085,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "8906",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "8908": {
    "state": "ok",
@@ -6109,7 +6099,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "8908",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "8923": {
    "state": "ok",
@@ -6123,7 +6113,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "8923",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "8927": {
    "state": "ok",
@@ -6137,7 +6127,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "8927",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "8940": {
    "state": "ok",
@@ -6151,7 +6141,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "8940",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "9110": {
    "state": "fetch_error",
@@ -6163,7 +6153,7 @@
    "quarter": null,
    "tier": null,
    "code": "9110",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "9902": {
    "state": "ok",
@@ -6177,7 +6167,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "9902",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "9907": {
    "state": "ok",
@@ -6205,7 +6195,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "9949",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   },
   "9955": {
    "state": "ok",
@@ -6219,7 +6209,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "9955",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "9962": {
    "state": "ok",
@@ -6233,7 +6223,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "9962",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   "5906": {
    "state": "ok",
@@ -6247,7 +6237,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "5906",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-13"
   }
  }
 }
