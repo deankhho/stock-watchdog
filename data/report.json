@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-10-14T17:38:18.440837+08:00",
+ "generated_at": "2026-10-15T17:18:20.239038+08:00",
  "nv_fetched_at": "2026-08-22T08:56:37.146605+08:00",
- "official_fetched_at": "2026-10-14T17:31:18.981453+08:00",
- "nv_age_days": 53,
+ "official_fetched_at": "2026-10-15T17:09:32.277832+08:00",
+ "nv_age_days": 54,
  "official_age_days": 0,
  "degraded": {},
- "days_to_report": 31,
+ "days_to_report": 30,
  "next_report_deadline": "2026-11-14",
  "new_reports_count": 0,
  "new_reports_crossings": 0,
@@ -125,7 +125,7 @@
     "status": {
      "full_delivery": false,
      "disposal": null,
-     "credit": "停資停券"
+     "credit": "停止買賣"
     },
     "gap": 0.03,
     "fd_threshold": 5.0,
@@ -2407,7 +2407,7 @@
     "status": {
      "full_delivery": false,
      "disposal": null,
-     "credit": "停資停券"
+     "credit": "停止買賣"
     },
     "gap": 3.52,
     "fd_threshold": 5.0,
@@ -2938,7 +2938,7 @@
     "status": {
      "full_delivery": false,
      "disposal": null,
-     "credit": "停資停券"
+     "credit": "停止買賣"
     },
     "gap": 4.26,
     "fd_threshold": 5.0,
@@ -3610,7 +3610,7 @@
      "full_delivery": true,
      "disposal": {
       "reason": "連續3個營業日",
-      "period": "1151007~1151014"
+      "period": "1151013~1151019"
      },
      "credit": "停止信用（全額交割）"
     },
@@ -6024,10 +6024,7 @@
     "market": "上市",
     "status": {
      "full_delivery": false,
-     "disposal": {
-      "reason": "最近十個營業日已有六次",
-      "period": "115/10/07～115/10/14"
-     },
+     "disposal": null,
      "credit": "可信用交易"
     },
     "gap": 7.49,
@@ -7459,7 +7456,7 @@
     "status": {
      "full_delivery": false,
      "disposal": null,
-     "credit": "停止融券"
+     "credit": "可信用交易"
     },
     "gap": 13.83,
     "fd_threshold": 0.2,
@@ -8428,7 +8425,7 @@
     "status": {
      "full_delivery": false,
      "disposal": null,
-     "credit": "停止融券"
+     "credit": "可信用交易"
     },
     "gap": 9.96,
     "fd_threshold": 5.0,
@@ -8566,6 +8563,14 @@
   {
    "code": "6173",
    "name": "信昌電",
+   "market": "上櫃",
+   "flags": [
+    "SuspensionOfTrading"
+   ]
+  },
+  {
+   "code": "8047",
+   "name": "星雲",
    "market": "上櫃",
    "flags": [
     "SuspensionOfTrading"
