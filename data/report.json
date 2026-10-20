@@ -1,33 +1,16 @@
 {
- "generated_at": "2026-10-15T17:18:20.239038+08:00",
+ "generated_at": "2026-10-20T17:31:09.889831+08:00",
  "nv_fetched_at": "2026-08-22T08:56:37.146605+08:00",
- "official_fetched_at": "2026-10-15T17:09:32.277832+08:00",
- "nv_age_days": 54,
+ "official_fetched_at": "2026-10-20T17:26:00.066885+08:00",
+ "nv_age_days": 59,
  "official_age_days": 0,
  "degraded": {},
- "days_to_report": 30,
+ "days_to_report": 25,
  "next_report_deadline": "2026-11-14",
  "new_reports_count": 0,
  "new_reports_crossings": 0,
  "groups": {
   "predict_in": [
-   {
-    "code": "3632",
-    "name": "研勤",
-    "price": 7.18,
-    "net_value": 2.83,
-    "nv_quarter": "26Q2",
-    "market": "上櫃",
-    "status": {
-     "full_delivery": false,
-     "disposal": null,
-     "credit": "停止買賣"
-    },
-    "gap": -2.17,
-    "fd_threshold": 5.0,
-    "credit_eligibility": null,
-    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3632"
-   },
    {
     "code": "7827",
     "name": "漢康-KY創",
@@ -61,40 +44,6 @@
     "fd_threshold": 5.0,
     "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=7835"
-   },
-   {
-    "code": "2067",
-    "name": "嘉鋼",
-    "price": 5.46,
-    "net_value": 4.26,
-    "nv_quarter": "26Q2",
-    "market": "上櫃",
-    "status": {
-     "full_delivery": false,
-     "disposal": null,
-     "credit": "停止買賣"
-    },
-    "gap": -0.74,
-    "fd_threshold": 5.0,
-    "credit_eligibility": null,
-    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2067"
-   },
-   {
-    "code": "3625",
-    "name": "西勝",
-    "price": 11.1,
-    "net_value": 4.72,
-    "nv_quarter": "26Q2",
-    "market": "上櫃",
-    "status": {
-     "full_delivery": false,
-     "disposal": null,
-     "credit": "停止買賣"
-    },
-    "gap": -0.28,
-    "fd_threshold": 5.0,
-    "credit_eligibility": null,
-    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3625"
    }
   ],
   "edge": [
@@ -245,7 +194,7 @@
      "full_delivery": false,
      "disposal": {
       "reason": "連續3個營業日",
-      "period": "1151008~1151015"
+      "period": "1151014~1151020"
      },
      "credit": "非信用交易標的"
     },
@@ -2454,10 +2403,7 @@
     "market": "上櫃",
     "status": {
      "full_delivery": false,
-     "disposal": {
-      "reason": "最近30個營業日內有12個營業日",
-      "period": "1151012~1151016"
-     },
+     "disposal": null,
      "credit": "停資停券"
     },
     "gap": 3.57,
@@ -3608,10 +3554,7 @@
     "market": "上櫃",
     "status": {
      "full_delivery": true,
-     "disposal": {
-      "reason": "連續3個營業日",
-      "period": "1151013~1151019"
-     },
+     "disposal": null,
      "credit": "停止信用（全額交割）"
     },
     "gap": 2.33,
@@ -3787,6 +3730,23 @@
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=4609"
    },
    {
+    "code": "3632",
+    "name": "研勤",
+    "price": 7.18,
+    "net_value": 2.83,
+    "nv_quarter": "26Q2",
+    "market": "上櫃",
+    "status": {
+     "full_delivery": true,
+     "disposal": null,
+     "credit": "停止信用（全額交割）"
+    },
+    "gap": -2.17,
+    "fd_threshold": 5.0,
+    "credit_eligibility": null,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3632"
+   },
+   {
     "code": "6225",
     "name": "天瀚",
     "price": 64.7,
@@ -3931,7 +3891,10 @@
     "market": "上市",
     "status": {
      "full_delivery": true,
-     "disposal": null,
+     "disposal": {
+      "reason": "連續三次",
+      "period": "115/10/16～115/10/22"
+     },
      "credit": "停止信用（全額交割）"
     },
     "gap": -0.77,
@@ -3955,6 +3918,23 @@
     "fd_threshold": 5.0,
     "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8101"
+   },
+   {
+    "code": "2067",
+    "name": "嘉鋼",
+    "price": 5.46,
+    "net_value": 4.26,
+    "nv_quarter": "26Q2",
+    "market": "上櫃",
+    "status": {
+     "full_delivery": true,
+     "disposal": null,
+     "credit": "停止信用（全額交割）"
+    },
+    "gap": -0.74,
+    "fd_threshold": 5.0,
+    "credit_eligibility": null,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2067"
    },
    {
     "code": "5355",
@@ -4006,6 +3986,23 @@
     "fd_threshold": 5.0,
     "credit_eligibility": null,
     "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8933"
+   },
+   {
+    "code": "3625",
+    "name": "西勝",
+    "price": 11.1,
+    "net_value": 4.72,
+    "nv_quarter": "26Q2",
+    "market": "上櫃",
+    "status": {
+     "full_delivery": true,
+     "disposal": null,
+     "credit": "停止信用（全額交割）"
+    },
+    "gap": -0.28,
+    "fd_threshold": 5.0,
+    "credit_eligibility": null,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=3625"
    },
    {
     "code": "8277",
@@ -4267,7 +4264,10 @@
     "market": "上櫃",
     "status": {
      "full_delivery": false,
-     "disposal": null,
+     "disposal": {
+      "reason": "連續3個營業日",
+      "period": "1151019~1151023"
+     },
      "credit": "可信用交易"
     },
     "gap": 5.47,
@@ -4898,7 +4898,7 @@
      "full_delivery": false,
      "disposal": {
       "reason": "連續三次",
-      "period": "115/10/08～115/10/15"
+      "period": "115/10/14～115/10/20"
      },
      "credit": "可信用交易"
     },
@@ -4950,11 +4950,8 @@
     "market": "上櫃",
     "status": {
      "full_delivery": false,
-     "disposal": {
-      "reason": "連續3個營業日",
-      "period": "1151008~1151015"
-     },
-     "credit": "可信用交易"
+     "disposal": null,
+     "credit": "停止融券"
     },
     "gap": 6.3,
     "fd_threshold": 5.0,
@@ -5277,7 +5274,7 @@
     "status": {
      "full_delivery": false,
      "disposal": null,
-     "credit": "停止買賣"
+     "credit": "可信用交易"
     },
     "gap": 6.72,
     "fd_threshold": 5.0,
@@ -6194,7 +6191,10 @@
     "market": "上櫃",
     "status": {
      "full_delivery": false,
-     "disposal": null,
+     "disposal": {
+      "reason": "最近10個營業日內有6個營業日",
+      "period": "1151016~1151022"
+     },
      "credit": "可信用交易"
     },
     "gap": 7.67,
@@ -6599,11 +6599,11 @@
     "price": 40.0,
     "net_value": 13.04,
     "nv_quarter": "26Q2",
-    "market": "上櫃",
+    "market": "上市",
     "status": {
      "full_delivery": false,
      "disposal": null,
-     "credit": "可信用交易"
+     "credit": "非信用交易標的"
     },
     "gap": 8.04,
     "fd_threshold": 5.0,
@@ -7027,10 +7027,7 @@
     "market": "上櫃",
     "status": {
      "full_delivery": false,
-     "disposal": {
-      "reason": "連續3個營業日",
-      "period": "1151012~1151016"
-     },
+     "disposal": null,
      "credit": "可信用交易"
     },
     "gap": 8.45,
@@ -7761,7 +7758,10 @@
     "market": "上市",
     "status": {
      "full_delivery": false,
-     "disposal": null,
+     "disposal": {
+      "reason": "連續三次",
+      "period": "115/10/19～115/10/23"
+     },
      "credit": "可信用交易"
     },
     "gap": 9.39,
@@ -8204,7 +8204,7 @@
     "status": {
      "full_delivery": false,
      "disposal": null,
-     "credit": "可信用交易"
+     "credit": "停止融券"
     },
     "gap": 9.77,
     "fd_threshold": 5.0,
@@ -8521,48 +8521,8 @@
  },
  "tpex_other_flags": [
   {
-   "code": "2067",
-   "name": "嘉鋼",
-   "market": "上櫃",
-   "flags": [
-    "SuspensionOfTrading"
-   ]
-  },
-  {
-   "code": "3625",
-   "name": "西勝",
-   "market": "上櫃",
-   "flags": [
-    "SuspensionOfTrading"
-   ]
-  },
-  {
-   "code": "3632",
-   "name": "研勤",
-   "market": "上櫃",
-   "flags": [
-    "SuspensionOfTrading"
-   ]
-  },
-  {
    "code": "4804",
    "name": "大略-KY",
-   "market": "上櫃",
-   "flags": [
-    "SuspensionOfTrading"
-   ]
-  },
-  {
-   "code": "6167",
-   "name": "久正",
-   "market": "上櫃",
-   "flags": [
-    "SuspensionOfTrading"
-   ]
-  },
-  {
-   "code": "6173",
-   "name": "信昌電",
    "market": "上櫃",
    "flags": [
     "SuspensionOfTrading"
