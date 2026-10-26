@@ -1,7 +1,7 @@
 {
- "state": "degraded",
- "fetched_at": "2026-10-22",
- "reason": "抓取失敗：JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+ "state": "ok",
+ "fetched_at": "2026-10-26",
+ "reason": null,
  "put_codes": [
   "0050",
   "1101",
@@ -282,7 +282,6 @@
   "2034",
   "2049",
   "2059",
-  "2072",
   "2101",
   "2103",
   "2104",
@@ -689,13 +688,8 @@
   "9958"
  ],
  "count_put": 208,
- "count_call": 474,
+ "count_call": 473,
  "count_history": [
-  {
-   "date": "2026-09-04",
-   "count_put": 185,
-   "count_call": 465
-  },
   {
    "date": "2026-09-07",
    "count_put": 188,
@@ -840,6 +834,11 @@
    "date": "2026-10-22",
    "count_put": 208,
    "count_call": 474
+  },
+  {
+   "date": "2026-10-26",
+   "count_put": 208,
+   "count_call": 473
   }
  ]
 }
