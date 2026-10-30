@@ -1,6 +1,6 @@
 {
  "state": "ok",
- "fetched_at": "2026-10-28",
+ "fetched_at": "2026-10-30",
  "reason": null,
  "rows": {
   "1413": {
@@ -15,7 +15,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "1413",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "1435": {
    "state": "ok",
@@ -29,7 +29,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1435",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "1441": {
    "state": "ok",
@@ -71,7 +71,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1460",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "1468": {
    "state": "ok",
@@ -85,7 +85,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1468",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "1471": {
    "state": "ok",
@@ -113,7 +113,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1506",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "1512": {
    "state": "ok",
@@ -155,7 +155,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "1538",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "1721": {
    "state": "ok",
@@ -169,7 +169,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "1721",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "1781": {
    "state": "ok",
@@ -197,7 +197,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "1799",
-   "fetched_at": "2026-10-23"
+   "fetched_at": "2026-10-30"
   },
   "2007": {
    "state": "ok",
@@ -225,7 +225,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "2014",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "2022": {
    "state": "ok",
@@ -248,12 +248,12 @@
     "黃欣婷",
     "韓沂璉"
    ],
-   "audit_date": "115/08/10",
+   "audit_date": "115/10/28",
    "audit_type": "無保留結論/意見-",
-   "quarter": "26Q2",
+   "quarter": "26Q3",
    "tier": "clean",
    "code": "2035",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "2067": {
    "state": "ok",
@@ -267,7 +267,7 @@
    "quarter": "26Q2",
    "tier": "danger",
    "code": "2067",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "2208": {
    "state": "ok",
@@ -281,7 +281,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "2208",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "2258": {
    "state": "ok",
@@ -309,7 +309,7 @@
    "quarter": "26Q2",
    "tier": "danger",
    "code": "2314",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "2321": {
    "state": "ok",
@@ -365,7 +365,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2424",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "2429": {
    "state": "ok",
@@ -379,7 +379,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2429",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "2431": {
    "state": "ok",
@@ -393,7 +393,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "2431",
-   "fetched_at": "2026-10-14"
+   "fetched_at": "2026-10-30"
   },
   "2438": {
    "state": "ok",
@@ -407,7 +407,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2438",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "2444": {
    "state": "ok",
@@ -421,7 +421,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2444",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "2460": {
    "state": "ok",
@@ -449,7 +449,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2516",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "2601": {
    "state": "ok",
@@ -463,7 +463,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2601",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "2712": {
    "state": "ok",
@@ -491,7 +491,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "2724",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "2726": {
    "state": "ok",
@@ -519,7 +519,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2740",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "2924": {
    "state": "ok",
@@ -533,7 +533,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "2924",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "3018": {
    "state": "ok",
@@ -561,7 +561,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3057",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "3058": {
    "state": "ok",
@@ -575,7 +575,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3058",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "3064": {
    "state": "ok",
@@ -589,7 +589,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "3064",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "3085": {
    "state": "ok",
@@ -603,7 +603,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3085",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "3086": {
    "state": "ok",
@@ -645,7 +645,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3122",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "3191": {
    "state": "ok",
@@ -659,7 +659,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3191",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "3228": {
    "state": "ok",
@@ -687,7 +687,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "3234",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "3259": {
    "state": "ok",
@@ -701,7 +701,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "3259",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "3288": {
    "state": "ok",
@@ -715,21 +715,19 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "3288",
-   "fetched_at": "2026-10-20"
+   "fetched_at": "2026-10-30"
   },
   "3313": {
-   "state": "ok",
-   "firm": "安侯建業聯合會計師事務所",
-   "auditors": [
-    "高　鈺　倫",
-    "陳　永　祥"
-   ],
-   "audit_date": "115/08/11",
-   "audit_type": "無保留結論/意見-",
-   "quarter": "26Q2",
-   "tier": "clean",
+   "state": "fetch_error",
+   "reason": "ConnectionError: HTTPSConnectionPool(host='mopsov.twse.com.tw', port=443): Max retries exceeded with url: /mops/web/ajax_t163sb03 (Caused by NewConnectionError(\"HTTPSConnection(host='mopsov.twse.com.tw', port=443): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+   "firm": null,
+   "auditors": [],
+   "audit_date": null,
+   "audit_type": null,
+   "quarter": null,
+   "tier": null,
    "code": "3313",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "3321": {
    "state": "ok",
@@ -743,7 +741,7 @@
    "quarter": "26Q3",
    "tier": "clean",
    "code": "3321",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "3325": {
    "state": "ok",
@@ -757,7 +755,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3325",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "3349": {
    "state": "ok",
@@ -771,7 +769,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3349",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "3372": {
    "state": "ok",
@@ -869,7 +867,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "3522",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "3523": {
    "state": "ok",
@@ -911,7 +909,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "3593",
-   "fetched_at": "2026-10-23"
+   "fetched_at": "2026-10-30"
   },
   "3625": {
    "state": "ok",
@@ -925,7 +923,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "3625",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "3629": {
    "state": "ok",
@@ -967,7 +965,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3664",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "3672": {
    "state": "ok",
@@ -981,7 +979,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3672",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "3685": {
    "state": "ok",
@@ -995,7 +993,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3685",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "3686": {
    "state": "ok",
@@ -1051,7 +1049,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "4108",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "4131": {
    "state": "ok",
@@ -1079,7 +1077,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "4139",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "4154": {
    "state": "ok",
@@ -1121,7 +1119,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "4168",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "4178": {
    "state": "ok",
@@ -1135,7 +1133,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "4178",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "4188": {
    "state": "ok",
@@ -1163,7 +1161,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "4192",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "4195": {
    "state": "ok",
@@ -1177,7 +1175,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "4195",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "4198": {
    "state": "ok",
@@ -1191,7 +1189,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "4198",
-   "fetched_at": "2026-10-20"
+   "fetched_at": "2026-10-30"
   },
   "4304": {
    "state": "ok",
@@ -1205,7 +1203,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "4304",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "4402": {
    "state": "ok",
@@ -1233,7 +1231,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "4419",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "4502": {
    "state": "ok",
@@ -1289,7 +1287,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "4609",
-   "fetched_at": "2026-10-22"
+   "fetched_at": "2026-10-30"
   },
   "4726": {
    "state": "ok",
@@ -1317,7 +1315,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "4806",
-   "fetched_at": "2026-10-23"
+   "fetched_at": "2026-10-30"
   },
   "4934": {
    "state": "ok",
@@ -1331,7 +1329,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "4934",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "4943": {
    "state": "ok",
@@ -1345,7 +1343,7 @@
    "quarter": "26Q2",
    "tier": "danger",
    "code": "4943",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "4950": {
    "state": "ok",
@@ -1359,7 +1357,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "4950",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "5205": {
    "state": "ok",
@@ -1387,7 +1385,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "5227",
-   "fetched_at": "2026-10-22"
+   "fetched_at": "2026-10-30"
   },
   "5301": {
    "state": "ok",
@@ -1401,7 +1399,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "5301",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "5302": {
    "state": "ok",
@@ -1415,7 +1413,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "5302",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "5314": {
    "state": "ok",
@@ -1429,7 +1427,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "5314",
-   "fetched_at": "2026-10-22"
+   "fetched_at": "2026-10-30"
   },
   "5324": {
    "state": "ok",
@@ -1457,7 +1455,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "5344",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "5345": {
    "state": "ok",
@@ -1499,7 +1497,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "5355",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "5468": {
    "state": "ok",
@@ -1513,7 +1511,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "5468",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "5475": {
    "state": "ok",
@@ -1527,7 +1525,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "5475",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "5484": {
    "state": "ok",
@@ -1541,7 +1539,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "5484",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "5516": {
    "state": "ok",
@@ -1555,7 +1553,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "5516",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "5543": {
    "state": "ok",
@@ -1569,7 +1567,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "5543",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "5701": {
    "state": "ok",
@@ -1583,7 +1581,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "5701",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "5703": {
    "state": "ok",
@@ -1611,7 +1609,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "5905",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "6109": {
    "state": "ok",
@@ -1625,7 +1623,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "6109",
-   "fetched_at": "2026-10-23"
+   "fetched_at": "2026-10-30"
   },
   "6129": {
    "state": "ok",
@@ -1653,7 +1651,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "6140",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "6141": {
    "state": "ok",
@@ -1681,7 +1679,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "6142",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "6144": {
    "state": "ok",
@@ -1695,7 +1693,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6144",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "6152": {
    "state": "ok",
@@ -1723,7 +1721,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "6160",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "6169": {
    "state": "ok",
@@ -1737,7 +1735,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "6169",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "6210": {
    "state": "ok",
@@ -1751,7 +1749,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6210",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "6225": {
    "state": "ok",
@@ -1765,7 +1763,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "6225",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "6228": {
    "state": "ok",
@@ -1793,7 +1791,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6236",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "6241": {
    "state": "ok",
@@ -1821,7 +1819,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6264",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "6276": {
    "state": "ok",
@@ -1849,7 +1847,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6431",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "6443": {
    "state": "ok",
@@ -1863,7 +1861,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "6443",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "6461": {
    "state": "ok",
@@ -1905,7 +1903,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6535",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "6550": {
    "state": "ok",
@@ -1933,7 +1931,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "6573",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "6576": {
    "state": "ok",
@@ -1947,7 +1945,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6576",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "6598": {
    "state": "ok",
@@ -1961,7 +1959,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6598",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "6645": {
    "state": "ok",
@@ -1975,7 +1973,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6645",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "6657": {
    "state": "ok",
@@ -1989,7 +1987,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6657",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "6733": {
    "state": "ok",
@@ -2003,7 +2001,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6733",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "6838": {
    "state": "ok",
@@ -2017,7 +2015,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6838",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "6872": {
    "state": "ok",
@@ -2031,7 +2029,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6872",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "6919": {
    "state": "ok",
@@ -2059,7 +2057,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6921",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "7780": {
    "state": "ok",
@@ -2073,7 +2071,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "7780",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "7803": {
    "state": "ok",
@@ -2087,7 +2085,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "7803",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "7814": {
    "state": "ok",
@@ -2115,7 +2113,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "7827",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "7835": {
    "state": "ok",
@@ -2157,7 +2155,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "8038",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "8047": {
    "state": "ok",
@@ -2171,7 +2169,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "8047",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "8059": {
    "state": "ok",
@@ -2185,7 +2183,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "8059",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "8067": {
    "state": "ok",
@@ -2199,7 +2197,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "8067",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "8080": {
    "state": "ok",
@@ -2213,7 +2211,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "8080",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "8084": {
    "state": "ok",
@@ -2241,7 +2239,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "8085",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "8092": {
    "state": "ok",
@@ -2269,7 +2267,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "8093",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "8101": {
    "state": "ok",
@@ -2283,7 +2281,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "8101",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "8121": {
    "state": "ok",
@@ -2297,7 +2295,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "8121",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "8176": {
    "state": "ok",
@@ -2311,7 +2309,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "8176",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "8201": {
    "state": "ok",
@@ -2339,7 +2337,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "8277",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "8291": {
    "state": "ok",
@@ -2353,7 +2351,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "8291",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "8409": {
    "state": "ok",
@@ -2367,7 +2365,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "8409",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "8422": {
    "state": "ok",
@@ -2381,7 +2379,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "8422",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "8443": {
    "state": "ok",
@@ -2395,7 +2393,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "8443",
-   "fetched_at": "2026-10-23"
+   "fetched_at": "2026-10-30"
   },
   "8444": {
    "state": "ok",
@@ -2409,7 +2407,7 @@
    "quarter": "26Q2",
    "tier": "danger",
    "code": "8444",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "8450": {
    "state": "ok",
@@ -2437,7 +2435,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "8477",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "8932": {
    "state": "ok",
@@ -2451,7 +2449,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "8932",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "8933": {
    "state": "ok",
@@ -2479,7 +2477,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "8935",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "8937": {
    "state": "ok",
@@ -2493,7 +2491,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "8937",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "9912": {
    "state": "ok",
@@ -2507,7 +2505,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "9912",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "9919": {
    "state": "ok",
@@ -2521,7 +2519,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "9919",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "9929": {
    "state": "ok",
@@ -2535,7 +2533,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "9929",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "9950": {
    "state": "ok",
@@ -2549,7 +2547,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "9950",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "1108": {
    "state": "ok",
@@ -2591,7 +2589,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1219",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "1220": {
    "state": "ok",
@@ -2605,7 +2603,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1220",
-   "fetched_at": "2026-10-20"
+   "fetched_at": "2026-10-30"
   },
   "1305": {
    "state": "ok",
@@ -2619,7 +2617,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1305",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "1309": {
    "state": "ok",
@@ -2633,7 +2631,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1309",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "1310": {
    "state": "ok",
@@ -2647,7 +2645,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1310",
-   "fetched_at": "2026-10-22"
+   "fetched_at": "2026-10-30"
   },
   "1316": {
    "state": "ok",
@@ -2661,7 +2659,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1316",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "1324": {
    "state": "ok",
@@ -2675,7 +2673,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "1324",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "1337": {
    "state": "ok",
@@ -2689,7 +2687,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "1337",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "1417": {
    "state": "ok",
@@ -2703,7 +2701,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1417",
-   "fetched_at": "2026-10-23"
+   "fetched_at": "2026-10-30"
   },
   "1432": {
    "state": "ok",
@@ -2717,7 +2715,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1432",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "1444": {
    "state": "ok",
@@ -2731,7 +2729,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1444",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "1453": {
    "state": "ok",
@@ -2773,7 +2771,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1455",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "1459": {
    "state": "ok",
@@ -2787,7 +2785,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "1459",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "1463": {
    "state": "ok",
@@ -2815,7 +2813,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1464",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "1466": {
    "state": "ok",
@@ -2829,7 +2827,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1466",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "1467": {
    "state": "ok",
@@ -2843,7 +2841,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "1467",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "1470": {
    "state": "ok",
@@ -2871,7 +2869,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1528",
-   "fetched_at": "2026-10-20"
+   "fetched_at": "2026-10-30"
   },
   "1529": {
    "state": "ok",
@@ -2885,7 +2883,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "1529",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "1591": {
    "state": "ok",
@@ -2899,7 +2897,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "1591",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "1611": {
    "state": "ok",
@@ -2913,7 +2911,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1611",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "1616": {
    "state": "ok",
@@ -2927,7 +2925,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1616",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "1617": {
    "state": "ok",
@@ -2941,7 +2939,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1617",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "1710": {
    "state": "ok",
@@ -2955,7 +2953,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1710",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "1714": {
    "state": "ok",
@@ -3011,7 +3009,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1776",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "1780": {
    "state": "ok",
@@ -3025,7 +3023,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "1780",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "1789": {
    "state": "ok",
@@ -3039,7 +3037,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1789",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "1805": {
    "state": "ok",
@@ -3067,7 +3065,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1806",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "1813": {
    "state": "ok",
@@ -3081,7 +3079,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1813",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "2012": {
    "state": "ok",
@@ -3109,7 +3107,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "2024",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "2025": {
    "state": "ok",
@@ -3123,7 +3121,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "2025",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "2028": {
    "state": "ok",
@@ -3137,7 +3135,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "2028",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "2032": {
    "state": "ok",
@@ -3165,7 +3163,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2033",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "2061": {
    "state": "ok",
@@ -3179,7 +3177,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "2061",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "2064": {
    "state": "ok",
@@ -3193,7 +3191,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2064",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "2073": {
    "state": "ok",
@@ -3221,7 +3219,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2109",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "2237": {
    "state": "ok",
@@ -3235,7 +3233,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2237",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "2241": {
    "state": "ok",
@@ -3249,7 +3247,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2241",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "2243": {
    "state": "ok",
@@ -3277,7 +3275,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2302",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "2305": {
    "state": "ok",
@@ -3291,7 +3289,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2305",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "2332": {
    "state": "ok",
@@ -3305,7 +3303,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2332",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "2340": {
    "state": "ok",
@@ -3319,7 +3317,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2340",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "2342": {
    "state": "ok",
@@ -3333,7 +3331,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2342",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "2365": {
    "state": "ok",
@@ -3361,7 +3359,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2369",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "2390": {
    "state": "ok",
@@ -3389,7 +3387,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2401",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "2405": {
    "state": "ok",
@@ -3403,7 +3401,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2405",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "2406": {
    "state": "ok",
@@ -3417,7 +3415,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2406",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "2419": {
    "state": "ok",
@@ -3445,7 +3443,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2426",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "2434": {
    "state": "ok",
@@ -3487,7 +3485,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2465",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "2466": {
    "state": "ok",
@@ -3501,7 +3499,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2466",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "2482": {
    "state": "ok",
@@ -3529,7 +3527,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2515",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "2530": {
    "state": "ok",
@@ -3543,7 +3541,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "2530",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "2538": {
    "state": "ok",
@@ -3557,7 +3555,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2538",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "2540": {
    "state": "ok",
@@ -3599,7 +3597,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "2611",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "2614": {
    "state": "ok",
@@ -3613,7 +3611,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2614",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "2633": {
    "state": "ok",
@@ -3627,7 +3625,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "2633",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "2646": {
    "state": "ok",
@@ -3655,7 +3653,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2719",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "2734": {
    "state": "ok",
@@ -3705,7 +3703,7 @@
    "quarter": null,
    "tier": null,
    "code": "2889",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "2897": {
    "state": "fetch_error",
@@ -3717,7 +3715,7 @@
    "quarter": null,
    "tier": null,
    "code": "2897",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "2901": {
    "state": "ok",
@@ -3731,7 +3729,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "2901",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "2908": {
    "state": "ok",
@@ -3745,7 +3743,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2908",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "2911": {
    "state": "ok",
@@ -3759,7 +3757,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2911",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "2926": {
    "state": "ok",
@@ -3787,7 +3785,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "2939",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "3002": {
    "state": "ok",
@@ -3801,7 +3799,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "3002",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "3011": {
    "state": "ok",
@@ -3815,7 +3813,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3011",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "3024": {
    "state": "ok",
@@ -3829,7 +3827,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3024",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "3025": {
    "state": "ok",
@@ -3857,7 +3855,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3041",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "3047": {
    "state": "ok",
@@ -3899,7 +3897,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3055",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "3062": {
    "state": "ok",
@@ -3913,7 +3911,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3062",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "3067": {
    "state": "ok",
@@ -3969,7 +3967,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3092",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "3093": {
    "state": "ok",
@@ -3983,7 +3981,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3093",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "3094": {
    "state": "ok",
@@ -3997,7 +3995,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3094",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "3095": {
    "state": "ok",
@@ -4011,7 +4009,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "3095",
-   "fetched_at": "2026-10-22"
+   "fetched_at": "2026-10-30"
   },
   "3149": {
    "state": "ok",
@@ -4025,7 +4023,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3149",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "3150": {
    "state": "ok",
@@ -4053,7 +4051,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3176",
-   "fetched_at": "2026-10-23"
+   "fetched_at": "2026-10-30"
   },
   "3205": {
    "state": "ok",
@@ -4109,7 +4107,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "3232",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "3268": {
    "state": "ok",
@@ -4137,7 +4135,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3272",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "3276": {
    "state": "ok",
@@ -4151,7 +4149,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "3276",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "3284": {
    "state": "ok",
@@ -4165,7 +4163,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3284",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "3285": {
    "state": "ok",
@@ -4179,7 +4177,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "3285",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-30"
   },
   "3296": {
    "state": "ok",
@@ -4193,7 +4191,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "3296",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "3322": {
    "state": "ok",
@@ -4207,7 +4205,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3322",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "3339": {
    "state": "ok",
@@ -4221,7 +4219,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3339",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "3354": {
    "state": "ok",
@@ -4235,7 +4233,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "3354",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "3360": {
    "state": "ok",
@@ -4263,7 +4261,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "3434",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "3489": {
    "state": "ok",
@@ -4277,7 +4275,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "3489",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "3520": {
    "state": "ok",
@@ -4291,7 +4289,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "3520",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "3521": {
    "state": "ok",
@@ -4305,7 +4303,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "3521",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "3535": {
    "state": "ok",
@@ -4347,7 +4345,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "3607",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "3609": {
    "state": "ok",
@@ -4361,7 +4359,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3609",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "3623": {
    "state": "ok",
@@ -4389,7 +4387,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "3630",
-   "fetched_at": "2026-10-23"
+   "fetched_at": "2026-10-30"
   },
   "3631": {
    "state": "ok",
@@ -4403,7 +4401,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3631",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "3646": {
    "state": "ok",
@@ -4459,7 +4457,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "4109",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "4127": {
    "state": "ok",
@@ -4473,7 +4471,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "4127",
-   "fetched_at": "2026-10-20"
+   "fetched_at": "2026-10-30"
   },
   "4142": {
    "state": "ok",
@@ -4501,7 +4499,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "4147",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "4166": {
    "state": "ok",
@@ -4515,7 +4513,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "4166",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "4167": {
    "state": "ok",
@@ -4529,7 +4527,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "4167",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "4171": {
    "state": "ok",
@@ -4543,7 +4541,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "4171",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "4174": {
    "state": "ok",
@@ -4571,7 +4569,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "4183",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "4207": {
    "state": "ok",
@@ -4613,7 +4611,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "4413",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "4414": {
    "state": "ok",
@@ -4641,7 +4639,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "4426",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "4513": {
    "state": "ok",
@@ -4655,7 +4653,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "4513",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "4530": {
    "state": "ok",
@@ -4669,7 +4667,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "4530",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "4538": {
    "state": "ok",
@@ -4683,7 +4681,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "4538",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "4562": {
    "state": "ok",
@@ -4725,7 +4723,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "4716",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "4720": {
    "state": "ok",
@@ -4739,7 +4737,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "4720",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-30"
   },
   "4729": {
    "state": "ok",
@@ -4753,7 +4751,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "4729",
-   "fetched_at": "2026-10-22"
+   "fetched_at": "2026-10-30"
   },
   "4903": {
    "state": "ok",
@@ -4809,7 +4807,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "4924",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "4960": {
    "state": "ok",
@@ -4823,7 +4821,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "4960",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "4976": {
    "state": "ok",
@@ -4837,7 +4835,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "4976",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "4989": {
    "state": "ok",
@@ -4851,7 +4849,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "4989",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "4994": {
    "state": "ok",
@@ -4865,7 +4863,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "4994",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "5014": {
    "state": "ok",
@@ -4893,7 +4891,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "5202",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "5210": {
    "state": "ok",
@@ -4907,7 +4905,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "5210",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "5211": {
    "state": "ok",
@@ -4921,7 +4919,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "5211",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "5245": {
    "state": "ok",
@@ -4935,7 +4933,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "5245",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "5251": {
    "state": "ok",
@@ -4949,7 +4947,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "5251",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "5272": {
    "state": "ok",
@@ -4963,7 +4961,7 @@
    "quarter": "26Q3",
    "tier": "clean",
    "code": "5272",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "5276": {
    "state": "ok",
@@ -4977,7 +4975,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "5276",
-   "fetched_at": "2026-10-23"
+   "fetched_at": "2026-10-30"
   },
   "5278": {
    "state": "ok",
@@ -4991,7 +4989,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "5278",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "5310": {
    "state": "ok",
@@ -5005,7 +5003,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "5310",
-   "fetched_at": "2026-10-22"
+   "fetched_at": "2026-10-30"
   },
   "5321": {
    "state": "ok",
@@ -5033,7 +5031,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "5328",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "5340": {
    "state": "ok",
@@ -5075,7 +5073,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "5381",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "5398": {
    "state": "ok",
@@ -5089,7 +5087,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "5398",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "5450": {
    "state": "ok",
@@ -5103,7 +5101,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "5450",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "5452": {
    "state": "ok",
@@ -5117,7 +5115,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "5452",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "5460": {
    "state": "ok",
@@ -5131,7 +5129,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "5460",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "5488": {
    "state": "ok",
@@ -5187,7 +5185,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "5521",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "5531": {
    "state": "ok",
@@ -5229,7 +5227,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6015",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "6101": {
    "state": "ok",
@@ -5243,7 +5241,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6101",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "6103": {
    "state": "ok",
@@ -5257,7 +5255,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6103",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "6113": {
    "state": "ok",
@@ -5271,7 +5269,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "6113",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "6116": {
    "state": "ok",
@@ -5285,7 +5283,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "6116",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "6118": {
    "state": "ok",
@@ -5313,7 +5311,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "6127",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "6130": {
    "state": "ok",
@@ -5341,7 +5339,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "6133",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "6134": {
    "state": "ok",
@@ -5355,7 +5353,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "6134",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "6148": {
    "state": "ok",
@@ -5397,7 +5395,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6164",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "6167": {
    "state": "ok",
@@ -5411,7 +5409,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6167",
-   "fetched_at": "2026-10-20"
+   "fetched_at": "2026-10-30"
   },
   "6174": {
    "state": "ok",
@@ -5439,7 +5437,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6185",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "6222": {
    "state": "ok",
@@ -5453,7 +5451,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6222",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "6226": {
    "state": "ok",
@@ -5467,7 +5465,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "6226",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "6244": {
    "state": "ok",
@@ -5509,7 +5507,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "6259",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "6283": {
    "state": "ok",
@@ -5523,7 +5521,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "6283",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "6418": {
    "state": "ok",
@@ -5551,7 +5549,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6465",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "6482": {
    "state": "ok",
@@ -5565,7 +5563,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6482",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "6496": {
    "state": "ok",
@@ -5593,7 +5591,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6499",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "6512": {
    "state": "ok",
@@ -5621,7 +5619,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6530",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "6547": {
    "state": "ok",
@@ -5635,7 +5633,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6547",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "6548": {
    "state": "ok",
@@ -5649,7 +5647,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6548",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "6558": {
    "state": "ok",
@@ -5677,7 +5675,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6578",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "6606": {
    "state": "ok",
@@ -5691,7 +5689,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "6606",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "6616": {
    "state": "ok",
@@ -5705,7 +5703,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6616",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "6661": {
    "state": "ok",
@@ -5719,7 +5717,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6661",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "6674": {
    "state": "ok",
@@ -5733,7 +5731,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6674",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "6698": {
    "state": "ok",
@@ -5747,7 +5745,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "6698",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "6708": {
    "state": "ok",
@@ -5803,7 +5801,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6875",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "6885": {
    "state": "ok",
@@ -5817,7 +5815,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6885",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "6901": {
    "state": "ok",
@@ -5831,7 +5829,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6901",
-   "fetched_at": "2026-10-22"
+   "fetched_at": "2026-10-30"
   },
   "6910": {
    "state": "ok",
@@ -5859,7 +5857,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6934",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "6969": {
    "state": "ok",
@@ -5887,7 +5885,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "7723",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "7777": {
    "state": "ok",
@@ -5915,7 +5913,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "8034",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "8066": {
    "state": "ok",
@@ -5929,7 +5927,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "8066",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "8068": {
    "state": "ok",
@@ -5943,7 +5941,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "8068",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "8071": {
    "state": "ok",
@@ -5994,12 +5992,12 @@
     "高　靚　玟",
     "施　威　銘"
    ],
-   "audit_date": "115/07/30",
+   "audit_date": "115/10/29",
    "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
-   "quarter": "26Q2",
+   "quarter": "26Q3",
    "tier": "note",
    "code": "8215",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "8222": {
    "state": "ok",
@@ -6027,7 +6025,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "8421",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "8431": {
    "state": "ok",
@@ -6041,7 +6039,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "8431",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "8440": {
    "state": "ok",
@@ -6055,7 +6053,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "8440",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "8472": {
    "state": "ok",
@@ -6083,7 +6081,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "8476",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "8906": {
    "state": "ok",
@@ -6097,7 +6095,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "8906",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "8908": {
    "state": "ok",
@@ -6125,7 +6123,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "8923",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "8927": {
    "state": "ok",
@@ -6165,7 +6163,7 @@
    "quarter": null,
    "tier": null,
    "code": "9110",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "9902": {
    "state": "ok",
@@ -6207,7 +6205,7 @@
    "quarter": "26Q3",
    "tier": "clean",
    "code": "9949",
-   "fetched_at": "2026-10-27"
+   "fetched_at": "2026-10-30"
   },
   "9955": {
    "state": "ok",
@@ -6221,7 +6219,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "9955",
-   "fetched_at": "2026-10-26"
+   "fetched_at": "2026-10-30"
   },
   "9962": {
    "state": "ok",
@@ -6235,7 +6233,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "9962",
-   "fetched_at": "2026-10-28"
+   "fetched_at": "2026-10-30"
   },
   "5906": {
    "state": "ok",
