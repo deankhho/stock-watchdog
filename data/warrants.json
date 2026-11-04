@@ -1,7 +1,7 @@
 {
- "state": "ok",
+ "state": "degraded",
  "fetched_at": "2026-11-02",
- "reason": null,
+ "reason": "抓取失敗：ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
  "put_codes": [
   "0050",
   "1101",
