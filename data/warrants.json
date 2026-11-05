@@ -1,7 +1,7 @@
 {
- "state": "degraded",
- "fetched_at": "2026-11-02",
- "reason": "抓取失敗：ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
+ "state": "ok",
+ "fetched_at": "2026-11-05",
+ "reason": null,
  "put_codes": [
   "0050",
   "1101",
@@ -560,6 +560,7 @@
   "6139",
   "6155",
   "6166",
+  "6168",
   "6176",
   "6177",
   "6189",
@@ -689,13 +690,8 @@
   "9958"
  ],
  "count_put": 209,
- "count_call": 473,
+ "count_call": 474,
  "count_history": [
-  {
-   "date": "2026-09-11",
-   "count_put": 191,
-   "count_call": 464
-  },
   {
    "date": "2026-09-15",
    "count_put": 198,
@@ -840,6 +836,11 @@
    "date": "2026-11-02",
    "count_put": 209,
    "count_call": 473
+  },
+  {
+   "date": "2026-11-05",
+   "count_put": 209,
+   "count_call": 474
   }
  ]
 }
