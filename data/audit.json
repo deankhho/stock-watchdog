@@ -1,6 +1,6 @@
 {
  "state": "ok",
- "fetched_at": "2026-11-10",
+ "fetched_at": "2026-11-11",
  "reason": null,
  "rows": {
   "1413": {
@@ -57,7 +57,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1447",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "1460": {
    "state": "ok",
@@ -80,12 +80,12 @@
     "郭冠纓",
     "區耀軍"
    ],
-   "audit_date": "115/08/10",
+   "audit_date": "115/11/09",
    "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
-   "quarter": "26Q2",
+   "quarter": "26Q3",
    "tier": "note",
    "code": "1468",
-   "fetched_at": "2026-11-05"
+   "fetched_at": "2026-11-11"
   },
   "1471": {
    "state": "ok",
@@ -113,7 +113,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1506",
-   "fetched_at": "2026-11-09"
+   "fetched_at": "2026-11-11"
   },
   "1512": {
    "state": "ok",
@@ -136,12 +136,12 @@
     "鄭清標",
     "林政緯"
    ],
-   "audit_date": "115/08/11",
+   "audit_date": "115/11/05",
    "audit_type": "無保留結論/意見-",
-   "quarter": "26Q2",
+   "quarter": "26Q3",
    "tier": "clean",
    "code": "1516",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "1538": {
    "state": "ok",
@@ -178,12 +178,12 @@
     "林瑟凱",
     "周筱姿"
    ],
-   "audit_date": "115/08/11",
+   "audit_date": "115/11/10",
    "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
-   "quarter": "26Q2",
+   "quarter": "26Q3",
    "tier": "note",
    "code": "1781",
-   "fetched_at": "2026-11-09"
+   "fetched_at": "2026-11-11"
   },
   "1799": {
    "state": "ok",
@@ -225,7 +225,7 @@
    "quarter": "26Q3",
    "tier": "clean",
    "code": "2014",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "2022": {
    "state": "ok",
@@ -281,7 +281,7 @@
    "quarter": "26Q3",
    "tier": "clean",
    "code": "2208",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "2258": {
    "state": "ok",
@@ -407,7 +407,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2438",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "2444": {
    "state": "ok",
@@ -421,7 +421,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2444",
-   "fetched_at": "2026-11-09"
+   "fetched_at": "2026-11-11"
   },
   "2460": {
    "state": "ok",
@@ -449,7 +449,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2516",
-   "fetched_at": "2026-11-05"
+   "fetched_at": "2026-11-11"
   },
   "2601": {
    "state": "ok",
@@ -519,7 +519,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2740",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "2924": {
    "state": "ok",
@@ -547,7 +547,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3018",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "3057": {
    "state": "ok",
@@ -575,21 +575,21 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3058",
-   "fetched_at": "2026-11-09"
+   "fetched_at": "2026-11-11"
   },
   "3064": {
    "state": "ok",
    "firm": "安永聯合會計師事務所",
    "auditors": [
-    "楊弘斌",
-    "徐榮煌"
+    "劉榮進",
+    "楊弘斌"
    ],
-   "audit_date": "115/08/04",
+   "audit_date": "115/11/04",
    "audit_type": "無保留結論/意見-",
-   "quarter": "26Q2",
+   "quarter": "26Q3",
    "tier": "clean",
    "code": "3064",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "3085": {
    "state": "ok",
@@ -598,12 +598,12 @@
     "吳昆益",
     "吳獻恩"
    ],
-   "audit_date": "115/08/10",
+   "audit_date": "115/11/09",
    "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
-   "quarter": "26Q2",
+   "quarter": "26Q3",
    "tier": "note",
    "code": "3085",
-   "fetched_at": "2026-11-09"
+   "fetched_at": "2026-11-11"
   },
   "3086": {
    "state": "ok",
@@ -631,7 +631,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3115",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "3122": {
    "state": "ok",
@@ -645,7 +645,7 @@
    "quarter": "26Q3",
    "tier": "note",
    "code": "3122",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "3191": {
    "state": "ok",
@@ -701,7 +701,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "3259",
-   "fetched_at": "2026-11-09"
+   "fetched_at": "2026-11-11"
   },
   "3288": {
    "state": "ok",
@@ -813,7 +813,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "3432",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "3494": {
    "state": "ok",
@@ -827,7 +827,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3494",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "3499": {
    "state": "ok",
@@ -869,7 +869,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "3522",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "3523": {
    "state": "ok",
@@ -897,7 +897,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3576",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "3593": {
    "state": "ok",
@@ -911,7 +911,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "3593",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "3625": {
    "state": "ok",
@@ -981,7 +981,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3672",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "3685": {
    "state": "ok",
@@ -1121,7 +1121,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "4168",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "4178": {
    "state": "ok",
@@ -1135,7 +1135,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "4178",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "4188": {
    "state": "ok",
@@ -1158,12 +1158,12 @@
     "林金鳳",
     "張亞荃"
    ],
-   "audit_date": "115/08/10",
+   "audit_date": "115/11/06",
    "audit_type": "無保留結論/意見-",
-   "quarter": "26Q2",
+   "quarter": "26Q3",
    "tier": "clean",
    "code": "4192",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "4195": {
    "state": "ok",
@@ -1205,7 +1205,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "4304",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "4402": {
    "state": "ok",
@@ -1233,7 +1233,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "4419",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "4502": {
    "state": "ok",
@@ -1247,7 +1247,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "4502",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "4529": {
    "state": "ok",
@@ -1261,7 +1261,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "4529",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "4534": {
    "state": "ok",
@@ -1275,7 +1275,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "4534",
-   "fetched_at": "2026-11-09"
+   "fetched_at": "2026-11-11"
   },
   "4609": {
    "state": "ok",
@@ -1345,7 +1345,7 @@
    "quarter": "26Q2",
    "tier": "danger",
    "code": "4943",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "4950": {
    "state": "ok",
@@ -1401,7 +1401,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "5301",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "5302": {
    "state": "ok",
@@ -1429,7 +1429,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "5314",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "5324": {
    "state": "ok",
@@ -1457,7 +1457,7 @@
    "quarter": "26Q3",
    "tier": "clean",
    "code": "5344",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "5345": {
    "state": "ok",
@@ -1471,7 +1471,7 @@
    "quarter": "26Q3",
    "tier": "clean",
    "code": "5345",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "5348": {
    "state": "ok",
@@ -1653,7 +1653,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "6140",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "6141": {
    "state": "ok",
@@ -1737,7 +1737,7 @@
    "quarter": "26Q3",
    "tier": "note",
    "code": "6169",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "6210": {
    "state": "ok",
@@ -1779,7 +1779,7 @@
    "quarter": "26Q3",
    "tier": "clean",
    "code": "6228",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "6236": {
    "state": "ok",
@@ -1793,7 +1793,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6236",
-   "fetched_at": "2026-11-09"
+   "fetched_at": "2026-11-11"
   },
   "6241": {
    "state": "ok",
@@ -1835,7 +1835,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6276",
-   "fetched_at": "2026-11-09"
+   "fetched_at": "2026-11-11"
   },
   "6431": {
    "state": "ok",
@@ -1863,7 +1863,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "6443",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "6461": {
    "state": "ok",
@@ -1919,7 +1919,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6550",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "6573": {
    "state": "ok",
@@ -1933,7 +1933,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "6573",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "6576": {
    "state": "ok",
@@ -1975,7 +1975,7 @@
    "quarter": "26Q3",
    "tier": "clean",
    "code": "6645",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "6657": {
    "state": "ok",
@@ -1989,7 +1989,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6657",
-   "fetched_at": "2026-11-05"
+   "fetched_at": "2026-11-11"
   },
   "6733": {
    "state": "ok",
@@ -2031,7 +2031,7 @@
    "quarter": "26Q3",
    "tier": "clean",
    "code": "6872",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "6919": {
    "state": "ok",
@@ -2059,7 +2059,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6921",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "7780": {
    "state": "ok",
@@ -2073,7 +2073,7 @@
    "quarter": "26Q3",
    "tier": "clean",
    "code": "7780",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "7803": {
    "state": "ok",
@@ -2082,12 +2082,12 @@
     "林冠宏",
     "周筱姿"
    ],
-   "audit_date": "115/08/12",
+   "audit_date": "115/11/04",
    "audit_type": "無保留結論/意見-",
-   "quarter": "26Q2",
+   "quarter": "26Q3",
    "tier": "clean",
    "code": "7803",
-   "fetched_at": "2026-11-09"
+   "fetched_at": "2026-11-11"
   },
   "7814": {
    "state": "ok",
@@ -2115,7 +2115,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "7827",
-   "fetched_at": "2026-11-05"
+   "fetched_at": "2026-11-11"
   },
   "7835": {
    "state": "ok",
@@ -2194,12 +2194,12 @@
     "莊鈞維",
     "許明芳"
    ],
-   "audit_date": "115/08/13",
+   "audit_date": "115/11/10",
    "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
-   "quarter": "26Q2",
+   "quarter": "26Q3",
    "tier": "note",
    "code": "8067",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "8080": {
    "state": "ok",
@@ -2213,7 +2213,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "8080",
-   "fetched_at": "2026-11-05"
+   "fetched_at": "2026-11-11"
   },
   "8084": {
    "state": "ok",
@@ -2255,7 +2255,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "8092",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "8093": {
    "state": "ok",
@@ -2269,7 +2269,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "8093",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "8101": {
    "state": "ok",
@@ -2311,7 +2311,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "8176",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "8201": {
    "state": "ok",
@@ -2320,12 +2320,12 @@
     "陳盈如",
     "郭柔蘭"
    ],
-   "audit_date": "115/08/10",
+   "audit_date": "115/11/09",
    "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
-   "quarter": "26Q2",
+   "quarter": "26Q3",
    "tier": "note",
    "code": "8201",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "8277": {
    "state": "ok",
@@ -2353,7 +2353,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "8291",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "8409": {
    "state": "ok",
@@ -2395,7 +2395,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "8443",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "8444": {
    "state": "ok",
@@ -2451,7 +2451,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "8932",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "8933": {
    "state": "ok",
@@ -2465,7 +2465,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "8933",
-   "fetched_at": "2026-11-09"
+   "fetched_at": "2026-11-11"
   },
   "8935": {
    "state": "ok",
@@ -2549,7 +2549,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "9950",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "1108": {
    "state": "ok",
@@ -2591,7 +2591,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1219",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "1220": {
    "state": "ok",
@@ -2605,7 +2605,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1220",
-   "fetched_at": "2026-11-05"
+   "fetched_at": "2026-11-11"
   },
   "1305": {
    "state": "ok",
@@ -2619,7 +2619,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1305",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "1309": {
    "state": "ok",
@@ -2661,7 +2661,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1316",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "1324": {
    "state": "ok",
@@ -2675,7 +2675,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "1324",
-   "fetched_at": "2026-11-09"
+   "fetched_at": "2026-11-11"
   },
   "1337": {
    "state": "ok",
@@ -2717,7 +2717,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1432",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "1444": {
    "state": "ok",
@@ -2740,12 +2740,12 @@
     "楊靜婷",
     "莊文源"
    ],
-   "audit_date": "115/08/11",
+   "audit_date": "115/11/10",
    "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
-   "quarter": "26Q2",
+   "quarter": "26Q3",
    "tier": "note",
    "code": "1453",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "1454": {
    "state": "ok",
@@ -2787,7 +2787,7 @@
    "quarter": "26Q3",
    "tier": "clean",
    "code": "1459",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "1463": {
    "state": "ok",
@@ -2801,7 +2801,7 @@
    "quarter": "26Q3",
    "tier": "clean",
    "code": "1463",
-   "fetched_at": "2026-11-09"
+   "fetched_at": "2026-11-11"
   },
   "1464": {
    "state": "ok",
@@ -2829,7 +2829,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1466",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "1467": {
    "state": "ok",
@@ -2843,7 +2843,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "1467",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "1470": {
    "state": "ok",
@@ -2880,12 +2880,12 @@
     "賴家裕",
     "傅睿崗"
    ],
-   "audit_date": "115/08/10",
+   "audit_date": "115/11/11",
    "audit_type": "無保留結論/意見-",
-   "quarter": "26Q2",
+   "quarter": "26Q3",
    "tier": "clean",
    "code": "1529",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "1591": {
    "state": "ok",
@@ -2894,12 +2894,12 @@
     "程　建　憲",
     "鄧　欣　珊"
    ],
-   "audit_date": "115/08/26",
+   "audit_date": "115/11/11",
    "audit_type": "無保留結論/意見-",
-   "quarter": "26Q2",
+   "quarter": "26Q3",
    "tier": "clean",
    "code": "1591",
-   "fetched_at": "2026-11-09"
+   "fetched_at": "2026-11-11"
   },
   "1611": {
    "state": "ok",
@@ -2941,7 +2941,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1617",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "1710": {
    "state": "ok",
@@ -3011,7 +3011,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1776",
-   "fetched_at": "2026-11-09"
+   "fetched_at": "2026-11-11"
   },
   "1780": {
    "state": "ok",
@@ -3067,7 +3067,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "1806",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "1813": {
    "state": "ok",
@@ -3216,12 +3216,12 @@
     "吳松源",
     "陳啟東"
    ],
-   "audit_date": "115/08/10",
+   "audit_date": "115/11/11",
    "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
-   "quarter": "26Q2",
+   "quarter": "26Q3",
    "tier": "note",
    "code": "2109",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "2237": {
    "state": "ok",
@@ -3235,7 +3235,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2237",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "2241": {
    "state": "ok",
@@ -3263,7 +3263,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "2243",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "2302": {
    "state": "ok",
@@ -3286,12 +3286,12 @@
     "吳俊源",
     "呂倩慧"
    ],
-   "audit_date": "115/08/11",
+   "audit_date": "115/11/10",
    "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
-   "quarter": "26Q2",
+   "quarter": "26Q3",
    "tier": "note",
    "code": "2305",
-   "fetched_at": "2026-11-05"
+   "fetched_at": "2026-11-11"
   },
   "2332": {
    "state": "ok",
@@ -3300,12 +3300,12 @@
     "謝　秋　華",
     "梅　元　貞"
    ],
-   "audit_date": "115/08/12",
+   "audit_date": "115/11/11",
    "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
-   "quarter": "26Q2",
+   "quarter": "26Q3",
    "tier": "note",
    "code": "2332",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "2340": {
    "state": "ok",
@@ -3319,7 +3319,7 @@
    "quarter": "26Q3",
    "tier": "note",
    "code": "2340",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "2342": {
    "state": "ok",
@@ -3333,7 +3333,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2342",
-   "fetched_at": "2026-11-05"
+   "fetched_at": "2026-11-11"
   },
   "2365": {
    "state": "ok",
@@ -3392,18 +3392,16 @@
    "fetched_at": "2026-11-09"
   },
   "2405": {
-   "state": "ok",
-   "firm": "勤業眾信聯合會計師事務所",
-   "auditors": [
-    "錢奕圻",
-    "張嘉銘"
-   ],
-   "audit_date": "115/08/11",
-   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
-   "quarter": "26Q2",
-   "tier": "note",
+   "state": "fetch_error",
+   "reason": "ConnectTimeout: HTTPSConnectionPool(host='mopsov.twse.com.tw', port=443): Max retries exceeded with url: /mops/web/ajax_t163sb03 (Caused by ConnectTimeoutError(<HTTPSConnection(host='mopsov.twse.com.tw', port=443) at 0x73c89a74dfa0>, 'Connection to mopsov.twse.com.tw timed out. (connect timeout=20)'))",
+   "firm": null,
+   "auditors": [],
+   "audit_date": null,
+   "audit_type": null,
+   "quarter": null,
+   "tier": null,
    "code": "2405",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "2406": {
    "state": "ok",
@@ -3417,7 +3415,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2406",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "2419": {
    "state": "ok",
@@ -3459,7 +3457,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "2434",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "2440": {
    "state": "ok",
@@ -3501,7 +3499,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2466",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "2482": {
    "state": "ok",
@@ -3529,7 +3527,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "2515",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "2530": {
    "state": "ok",
@@ -3599,7 +3597,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "2611",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "2614": {
    "state": "ok",
@@ -3641,7 +3639,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "2646",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "2719": {
    "state": "ok",
@@ -3693,7 +3691,7 @@
    "quarter": null,
    "tier": null,
    "code": "2845",
-   "fetched_at": "2026-11-09"
+   "fetched_at": "2026-11-11"
   },
   "2889": {
    "state": "fetch_error",
@@ -3720,18 +3718,16 @@
    "fetched_at": "2026-11-10"
   },
   "2901": {
-   "state": "ok",
-   "firm": "正風聯合會計師事務所",
-   "auditors": [
-    "曾國富",
-    "賴永吉"
-   ],
-   "audit_date": "115/11/10",
-   "audit_type": "無保留結論/意見-",
-   "quarter": "26Q3",
-   "tier": "clean",
+   "state": "fetch_error",
+   "reason": "ConnectTimeout: HTTPSConnectionPool(host='mopsov.twse.com.tw', port=443): Max retries exceeded with url: /mops/web/ajax_t163sb03 (Caused by ConnectTimeoutError(<HTTPSConnection(host='mopsov.twse.com.tw', port=443) at 0x73c89a74f560>, 'Connection to mopsov.twse.com.tw timed out. (connect timeout=20)'))",
+   "firm": null,
+   "auditors": [],
+   "audit_date": null,
+   "audit_type": null,
+   "quarter": null,
+   "tier": null,
    "code": "2901",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "2908": {
    "state": "ok",
@@ -3768,12 +3764,12 @@
     "楊蕙慈",
     "張淑瓊"
    ],
-   "audit_date": "115/08/12",
+   "audit_date": "115/11/11",
    "audit_type": "無保留結論/意見-",
-   "quarter": "26Q2",
+   "quarter": "26Q3",
    "tier": "clean",
    "code": "2926",
-   "fetched_at": "2026-11-09"
+   "fetched_at": "2026-11-11"
   },
   "2939": {
    "state": "ok",
@@ -3815,7 +3811,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3011",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "3024": {
    "state": "ok",
@@ -3824,12 +3820,12 @@
     "吳仁杰",
     "林雅慧"
    ],
-   "audit_date": "115/08/11",
+   "audit_date": "115/11/10",
    "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
-   "quarter": "26Q2",
+   "quarter": "26Q3",
    "tier": "note",
    "code": "3024",
-   "fetched_at": "2026-11-09"
+   "fetched_at": "2026-11-11"
   },
   "3025": {
    "state": "ok",
@@ -3838,12 +3834,12 @@
     "溫智源",
     "鍾鳴遠"
    ],
-   "audit_date": "115/08/11",
+   "audit_date": "115/11/10",
    "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
-   "quarter": "26Q2",
+   "quarter": "26Q3",
    "tier": "note",
    "code": "3025",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "3041": {
    "state": "ok",
@@ -3888,18 +3884,16 @@
    "fetched_at": "2026-11-10"
   },
   "3055": {
-   "state": "ok",
-   "firm": "大中國際聯合會計師事務所",
-   "auditors": [
-    "林寬照",
-    "溫明郁"
-   ],
-   "audit_date": "115/11/04",
-   "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
-   "quarter": "26Q3",
-   "tier": "note",
+   "state": "fetch_error",
+   "reason": "ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
+   "firm": null,
+   "auditors": [],
+   "audit_date": null,
+   "audit_type": null,
+   "quarter": null,
+   "tier": null,
    "code": "3055",
-   "fetched_at": "2026-11-09"
+   "fetched_at": "2026-11-11"
   },
   "3062": {
    "state": "ok",
@@ -3927,7 +3921,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3067",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "3071": {
    "state": "ok",
@@ -3941,7 +3935,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3071",
-   "fetched_at": "2026-11-09"
+   "fetched_at": "2026-11-11"
   },
   "3083": {
    "state": "ok",
@@ -4067,7 +4061,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3205",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "3229": {
    "state": "ok",
@@ -4179,7 +4173,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "3285",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "3296": {
    "state": "ok",
@@ -4235,7 +4229,7 @@
    "quarter": "26Q3",
    "tier": "clean",
    "code": "3354",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "3360": {
    "state": "ok",
@@ -4249,7 +4243,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "3360",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "3434": {
    "state": "ok",
@@ -4272,12 +4266,12 @@
     "陳啟東",
     "林佳鴻"
    ],
-   "audit_date": "115/08/12",
+   "audit_date": "115/11/11",
    "audit_type": "無保留結論/意見-",
-   "quarter": "26Q2",
+   "quarter": "26Q3",
    "tier": "clean",
    "code": "3489",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "3520": {
    "state": "ok",
@@ -4328,12 +4322,12 @@
     "吳金地",
     "鄭忠昊"
    ],
-   "audit_date": "115/08/07",
+   "audit_date": "115/11/09",
    "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
-   "quarter": "26Q2",
+   "quarter": "26Q3",
    "tier": "note",
    "code": "3541",
-   "fetched_at": "2026-11-09"
+   "fetched_at": "2026-11-11"
   },
   "3607": {
    "state": "ok",
@@ -4361,7 +4355,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3609",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "3623": {
    "state": "ok",
@@ -4375,7 +4369,7 @@
    "quarter": "26Q3",
    "tier": "note",
    "code": "3623",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "3630": {
    "state": "ok",
@@ -4403,7 +4397,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "3631",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "3646": {
    "state": "ok",
@@ -4543,7 +4537,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "4171",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "4174": {
    "state": "ok",
@@ -4613,7 +4607,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "4413",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "4414": {
    "state": "ok",
@@ -4627,7 +4621,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "4414",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "4426": {
    "state": "ok",
@@ -4641,21 +4635,21 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "4426",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "4513": {
    "state": "ok",
    "firm": "安永聯合會計師事務所",
    "auditors": [
-    "陳政初",
-    "洪國森"
+    "洪福讚",
+    "陳政初"
    ],
-   "audit_date": "115/08/11",
+   "audit_date": "115/11/10",
    "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
-   "quarter": "26Q2",
+   "quarter": "26Q3",
    "tier": "note",
    "code": "4513",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "4530": {
    "state": "ok",
@@ -4697,7 +4691,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "4562",
-   "fetched_at": "2026-11-09"
+   "fetched_at": "2026-11-11"
   },
   "4714": {
    "state": "ok",
@@ -4711,7 +4705,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "4714",
-   "fetched_at": "2026-11-02"
+   "fetched_at": "2026-11-11"
   },
   "4716": {
    "state": "ok",
@@ -4725,7 +4719,7 @@
    "quarter": "26Q3",
    "tier": "note",
    "code": "4716",
-   "fetched_at": "2026-11-09"
+   "fetched_at": "2026-11-11"
   },
   "4720": {
    "state": "ok",
@@ -4739,7 +4733,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "4720",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "4729": {
    "state": "ok",
@@ -4753,7 +4747,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "4729",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "4903": {
    "state": "ok",
@@ -4888,12 +4882,12 @@
     "張　淑　瑩",
     "高　鈺　倫"
    ],
-   "audit_date": "115/08/10",
+   "audit_date": "115/11/09",
    "audit_type": "無保留結論/意見-",
-   "quarter": "26Q2",
+   "quarter": "26Q3",
    "tier": "clean",
    "code": "5202",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "5210": {
    "state": "ok",
@@ -4935,7 +4929,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "5245",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "5251": {
    "state": "ok",
@@ -4991,7 +4985,7 @@
    "quarter": "26Q3",
    "tier": "clean",
    "code": "5278",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "5310": {
    "state": "ok",
@@ -5033,7 +5027,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "5328",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "5340": {
    "state": "ok",
@@ -5112,12 +5106,12 @@
     "江曉苓",
     "陳宜君"
    ],
-   "audit_date": "115/08/07",
+   "audit_date": "115/11/09",
    "audit_type": "保留結論/意見-非重要子公司或採用權益法之投資未經會計師查核或核閱",
-   "quarter": "26Q2",
+   "quarter": "26Q3",
    "tier": "note",
    "code": "5452",
-   "fetched_at": "2026-11-05"
+   "fetched_at": "2026-11-11"
   },
   "5460": {
    "state": "ok",
@@ -5173,7 +5167,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "5498",
-   "fetched_at": "2026-11-09"
+   "fetched_at": "2026-11-11"
   },
   "5521": {
    "state": "ok",
@@ -5250,12 +5244,12 @@
     "邱雲超",
     "黃珮樺"
    ],
-   "audit_date": "115/08/06",
+   "audit_date": "115/11/06",
    "audit_type": "無保留結論/意見-",
-   "quarter": "26Q2",
+   "quarter": "26Q3",
    "tier": "clean",
    "code": "6103",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "6113": {
    "state": "ok",
@@ -5297,7 +5291,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "6118",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "6127": {
    "state": "ok",
@@ -5339,7 +5333,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "6133",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "6134": {
    "state": "ok",
@@ -5353,7 +5347,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "6134",
-   "fetched_at": "2026-11-05"
+   "fetched_at": "2026-11-11"
   },
   "6148": {
    "state": "ok",
@@ -5395,7 +5389,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6164",
-   "fetched_at": "2026-11-05"
+   "fetched_at": "2026-11-11"
   },
   "6167": {
    "state": "ok",
@@ -5409,7 +5403,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6167",
-   "fetched_at": "2026-11-09"
+   "fetched_at": "2026-11-11"
   },
   "6174": {
    "state": "ok",
@@ -5465,7 +5459,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "6226",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "6244": {
    "state": "ok",
@@ -5479,7 +5473,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6244",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "6246": {
    "state": "ok",
@@ -5493,7 +5487,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "6246",
-   "fetched_at": "2026-11-09"
+   "fetched_at": "2026-11-11"
   },
   "6259": {
    "state": "ok",
@@ -5507,7 +5501,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "6259",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "6283": {
    "state": "ok",
@@ -5577,7 +5571,7 @@
    "quarter": "26Q3",
    "tier": "note",
    "code": "6496",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "6499": {
    "state": "ok",
@@ -5586,12 +5580,12 @@
     "林冠宏",
     "梁華玲"
    ],
-   "audit_date": "115/08/07",
+   "audit_date": "115/11/06",
    "audit_type": "無保留結論/意見-",
-   "quarter": "26Q2",
+   "quarter": "26Q3",
    "tier": "clean",
    "code": "6499",
-   "fetched_at": "2026-11-04"
+   "fetched_at": "2026-11-11"
   },
   "6512": {
    "state": "ok",
@@ -5633,7 +5627,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6547",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "6548": {
    "state": "ok",
@@ -5689,7 +5683,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "6606",
-   "fetched_at": "2026-11-09"
+   "fetched_at": "2026-11-11"
   },
   "6616": {
    "state": "ok",
@@ -5703,7 +5697,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6616",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "6661": {
    "state": "ok",
@@ -5712,12 +5706,12 @@
     "陳文香",
     "蘇郁琇"
    ],
-   "audit_date": "115/08/11",
+   "audit_date": "115/11/11",
    "audit_type": "無保留結論/意見-",
-   "quarter": "26Q2",
+   "quarter": "26Q3",
    "tier": "clean",
    "code": "6661",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "6674": {
    "state": "ok",
@@ -5745,7 +5739,7 @@
    "quarter": "26Q3",
    "tier": "note",
    "code": "6698",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "6708": {
    "state": "ok",
@@ -5768,12 +5762,12 @@
     "吳少君",
     "蘇定堅"
    ],
-   "audit_date": "115/08/07",
+   "audit_date": "115/11/06",
    "audit_type": "無保留結論/意見-",
-   "quarter": "26Q2",
+   "quarter": "26Q3",
    "tier": "clean",
    "code": "6767",
-   "fetched_at": "2026-11-04"
+   "fetched_at": "2026-11-11"
   },
   "6794": {
    "state": "ok",
@@ -5801,7 +5795,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6875",
-   "fetched_at": "2026-11-09"
+   "fetched_at": "2026-11-11"
   },
   "6885": {
    "state": "ok",
@@ -5829,7 +5823,7 @@
    "quarter": "26Q3",
    "tier": "clean",
    "code": "6901",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "6910": {
    "state": "ok",
@@ -5843,7 +5837,7 @@
    "quarter": "26Q3",
    "tier": "clean",
    "code": "6910",
-   "fetched_at": "2026-11-09"
+   "fetched_at": "2026-11-11"
   },
   "6934": {
    "state": "ok",
@@ -5857,7 +5851,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "6934",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "6969": {
    "state": "ok",
@@ -5866,12 +5860,12 @@
     "徐潔如",
     "田中玉"
    ],
-   "audit_date": "115/08/06",
+   "audit_date": "115/11/05",
    "audit_type": "無保留結論/意見-",
-   "quarter": "26Q2",
+   "quarter": "26Q3",
    "tier": "clean",
    "code": "6969",
-   "fetched_at": "2026-11-09"
+   "fetched_at": "2026-11-11"
   },
   "7723": {
    "state": "ok",
@@ -5885,7 +5879,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "7723",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "7777": {
    "state": "ok",
@@ -5894,12 +5888,12 @@
     "馮敏娟",
     "王菘澤"
    ],
-   "audit_date": "115/08/10",
+   "audit_date": "115/11/11",
    "audit_type": "無保留結論/意見-",
-   "quarter": "26Q2",
+   "quarter": "26Q3",
    "tier": "clean",
    "code": "7777",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "8034": {
    "state": "ok",
@@ -5941,7 +5935,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "8068",
-   "fetched_at": "2026-11-09"
+   "fetched_at": "2026-11-11"
   },
   "8071": {
    "state": "ok",
@@ -5955,7 +5949,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "8071",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "8076": {
    "state": "ok",
@@ -5983,7 +5977,7 @@
    "quarter": "26Q3",
    "tier": "note",
    "code": "8111",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "8215": {
    "state": "ok",
@@ -6011,7 +6005,7 @@
    "quarter": "26Q3",
    "tier": "clean",
    "code": "8222",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "8421": {
    "state": "ok",
@@ -6053,7 +6047,7 @@
    "quarter": "26Q2",
    "tier": "clean",
    "code": "8440",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "8472": {
    "state": "ok",
@@ -6090,12 +6084,12 @@
     "林佳鴻",
     "陳憲正"
    ],
-   "audit_date": "115/08/05",
+   "audit_date": "115/11/04",
    "audit_type": "無保留結論/意見-",
-   "quarter": "26Q2",
+   "quarter": "26Q3",
    "tier": "clean",
    "code": "8906",
-   "fetched_at": "2026-11-05"
+   "fetched_at": "2026-11-11"
   },
   "8908": {
    "state": "ok",
@@ -6137,7 +6131,7 @@
    "quarter": "26Q2",
    "tier": "note",
    "code": "8927",
-   "fetched_at": "2026-11-09"
+   "fetched_at": "2026-11-11"
   },
   "8940": {
    "state": "ok",
@@ -6191,7 +6185,7 @@
    "quarter": "26Q3",
    "tier": "note",
    "code": "9907",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-11"
   },
   "9949": {
    "state": "ok",

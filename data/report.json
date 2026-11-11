@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-11-10T20:37:34.662860+08:00",
+ "generated_at": "2026-11-11T19:59:12.678967+08:00",
  "nv_fetched_at": "2026-08-22T08:56:37.146605+08:00",
- "official_fetched_at": "2026-11-10T20:27:17.842918+08:00",
- "nv_age_days": 80,
+ "official_fetched_at": "2026-11-11T19:52:10.900193+08:00",
+ "nv_age_days": 81,
  "official_age_days": 0,
  "degraded": {},
- "days_to_report": 4,
+ "days_to_report": 3,
  "next_report_deadline": "2026-11-14",
  "new_reports_count": 0,
  "new_reports_crossings": 0,
@@ -4887,10 +4887,7 @@
     "market": "上市",
     "status": {
      "full_delivery": false,
-     "disposal": {
-      "reason": "連續三次",
-      "period": "115/11/04～115/11/10"
-     },
+     "disposal": null,
      "credit": "可信用交易"
     },
     "gap": 6.17,
