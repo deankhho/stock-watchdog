@@ -1,6 +1,6 @@
 {
  "state": "ok",
- "fetched_at": "2026-11-13",
+ "fetched_at": "2026-11-16",
  "reason": null,
  "put_codes": [
   "0050",
@@ -102,7 +102,6 @@
   "3033",
   "3034",
   "3035",
-  "3036",
   "3037",
   "3042",
   "3044",
@@ -684,14 +683,9 @@
   "9945",
   "9958"
  ],
- "count_put": 205,
+ "count_put": 204,
  "count_call": 473,
  "count_history": [
-  {
-   "date": "2026-09-18",
-   "count_put": 210,
-   "count_call": 464
-  },
   {
    "date": "2026-09-21",
    "count_put": 210,
@@ -835,6 +829,11 @@
   {
    "date": "2026-11-13",
    "count_put": 205,
+   "count_call": 473
+  },
+  {
+   "date": "2026-11-16",
+   "count_put": 204,
    "count_call": 473
   }
  ]
