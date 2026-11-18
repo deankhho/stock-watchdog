@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-11-17T21:18:34.830557+08:00",
+ "generated_at": "2026-11-18T20:59:37.174707+08:00",
  "nv_fetched_at": "2026-08-22T08:56:37.146605+08:00",
- "official_fetched_at": "2026-11-17T21:12:23.849394+08:00",
- "nv_age_days": 87,
+ "official_fetched_at": "2026-11-18T20:57:39.046633+08:00",
+ "nv_age_days": 88,
  "official_age_days": 0,
  "degraded": {},
- "days_to_report": 134,
+ "days_to_report": 133,
  "next_report_deadline": "2027-03-31",
  "new_reports_count": 0,
  "new_reports_crossings": 0,
@@ -1237,6 +1237,33 @@
      "prev_q": "26Q1",
      "prev_nv": 7.29,
      "cur_nv": 7.29
+    }
+   },
+   {
+    "code": "8084",
+    "name": "巨虹",
+    "price": 49.1,
+    "net_value": 7.33,
+    "nv_quarter": "26Q2",
+    "market": "上櫃",
+    "status": {
+     "full_delivery": false,
+     "disposal": {
+      "reason": "連續3個營業日",
+      "period": "1151118~1151124"
+     },
+     "credit": "非信用交易標的"
+    },
+    "gap": 2.33,
+    "fd_threshold": 5.0,
+    "credit_eligibility": null,
+    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8084",
+    "margin_trend": {
+     "state": "down",
+     "reason": null,
+     "prev_q": "26Q1",
+     "prev_nv": 7.71,
+     "cur_nv": 7.33
     }
    },
    {
@@ -2603,7 +2630,7 @@
      "state": "down",
      "reason": null,
      "prev_q": "25Q4",
-     "prev_nv": 8.72,
+     "prev_nv": 9.03,
      "cur_nv": 8.71
     }
    },
@@ -3543,30 +3570,6 @@
     "recover_status": {
      "state": "not_yet",
      "detail": "每股淨值已達標，但淨值總額（26Q1/26Q2，以目前股數估算）未逾3億元"
-    }
-   },
-   {
-    "code": "8084",
-    "name": "巨虹",
-    "price": 49.1,
-    "net_value": 7.33,
-    "nv_quarter": "26Q2",
-    "market": "上櫃",
-    "status": {
-     "full_delivery": true,
-     "disposal": {
-      "reason": "連續3個營業日",
-      "period": "1151118~1151124"
-     },
-     "credit": "停止信用（全額交割）"
-    },
-    "gap": 2.33,
-    "fd_threshold": 5.0,
-    "credit_eligibility": null,
-    "goodinfo_url": "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=8084",
-    "recover_status": {
-     "state": "not_yet",
-     "detail": "每股淨值未達標或未較前期（26Q1）增加"
     }
    },
    {
@@ -8517,6 +8520,14 @@
   {
    "code": "4804",
    "name": "大略-KY",
+   "market": "上櫃",
+   "flags": [
+    "SuspensionOfTrading"
+   ]
+  },
+  {
+   "code": "8084",
+   "name": "巨虹",
    "market": "上櫃",
    "flags": [
     "SuspensionOfTrading"
