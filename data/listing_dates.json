@@ -134,5 +134,9 @@
  "8084": {
   "since": null,
   "precision": "not_found_in_window"
+ },
+ "4304": {
+  "since": "2024-11-01",
+  "precision": "before_window"
  }
 }

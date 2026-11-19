@@ -1,6 +1,6 @@
 {
  "state": "ok",
- "fetched_at": "2026-11-18",
+ "fetched_at": "2026-11-19",
  "reason": null,
  "put_codes": [
   "0050",
@@ -144,7 +144,6 @@
   "5292",
   "5388",
   "6112",
-  "6139",
   "6176",
   "6196",
   "6197",
@@ -682,14 +681,9 @@
   "9945",
   "9958"
  ],
- "count_put": 202,
+ "count_put": 201,
  "count_call": 474,
  "count_history": [
-  {
-   "date": "2026-09-23",
-   "count_put": 211,
-   "count_call": 464
-  },
   {
    "date": "2026-09-24",
    "count_put": 211,
@@ -833,6 +827,11 @@
   {
    "date": "2026-11-18",
    "count_put": 202,
+   "count_call": 474
+  },
+  {
+   "date": "2026-11-19",
+   "count_put": 201,
    "count_call": 474
   }
  ]
