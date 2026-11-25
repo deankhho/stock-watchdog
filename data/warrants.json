@@ -1,7 +1,7 @@
 {
- "state": "ok",
+ "state": "degraded",
  "fetched_at": "2026-11-24",
- "reason": null,
+ "reason": "抓取失敗：ChunkedEncodingError: ('Connection broken: IncompleteRead(6386 bytes read, 1805 more expected)', IncompleteRead(6386 bytes read, 1805 more expected))",
  "put_codes": [
   "0050",
   "1101",

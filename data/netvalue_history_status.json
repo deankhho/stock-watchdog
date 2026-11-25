@@ -2,9 +2,12 @@
  "pool_size": 446,
  "p1_count": 2,
  "p2_count": 0,
- "fetched_count": 2,
+ "fetched_count": 0,
  "p2_fetched_count": 0,
- "req_count": 2,
- "incomplete_codes": {},
- "generated_at": "2026-11-24"
+ "req_count": 4,
+ "incomplete_codes": {
+  "9110": "fetch_failed",
+  "2889": "fetch_failed"
+ },
+ "generated_at": "2026-11-25"
 }
