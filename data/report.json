@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-11-26T22:01:15.483925+08:00",
+ "generated_at": "2026-11-27T21:43:25.190063+08:00",
  "nv_fetched_at": "2026-08-22T08:56:37.146605+08:00",
- "official_fetched_at": "2026-11-26T21:48:52.162041+08:00",
- "nv_age_days": 96,
+ "official_fetched_at": "2026-11-27T21:42:11.657037+08:00",
+ "nv_age_days": 97,
  "official_age_days": 0,
  "degraded": {},
- "days_to_report": 125,
+ "days_to_report": 124,
  "next_report_deadline": "2027-03-31",
  "new_reports_count": 0,
  "new_reports_crossings": 0,
@@ -20,7 +20,10 @@
     "market": "上市",
     "status": {
      "full_delivery": false,
-     "disposal": null,
+     "disposal": {
+      "reason": "連續三次",
+      "period": "115/11/27～115/12/03"
+     },
      "credit": "非信用交易標的"
     },
     "gap": -1.71,
@@ -450,7 +453,7 @@
     "status": {
      "full_delivery": false,
      "disposal": null,
-     "credit": "可信用交易"
+     "credit": "停止融券"
     },
     "gap": 5.55,
     "fd_threshold": 0.5,
@@ -2009,10 +2012,7 @@
     "market": "上櫃",
     "status": {
      "full_delivery": false,
-     "disposal": {
-      "reason": "連續3個營業日",
-      "period": "1151120~1151126"
-     },
+     "disposal": null,
      "credit": "可信用交易"
     },
     "gap": 3.24,
